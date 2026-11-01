@@ -58,6 +58,7 @@
     const srcMap = new Map((c.sources || []).map((s) => [s.id, s]));
     function srcMark(sourceId) {
       if (!sourceId) return "";
+      if (Array.isArray(sourceId)) return sourceId.map(srcMark).join("");
       const s = srcMap.get(sourceId);
       const label = s ? s.title || sourceId : sourceId;
       const prim = s && s.primary ? `（${s.primary}）` : "";
