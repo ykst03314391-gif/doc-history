@@ -195,7 +195,6 @@
     { "id": "daiunin-site", "title": "墓碑と墓石｜本山龍池山 大雲院（公式サイト）", "url": "https://www.daiunin.or.jp/tombstones/", "author": "大雲院", "note": "境内に織田信長・信忠父子を弔う石塔があり、その墓碑が寺の創建の機縁になったとする。法名や日付は書かれていない。", "type": "ネット記事" },
     { "id": "amidaji-wikipedia", "title": "阿弥陀寺（京都市上京区）（Wikipedia）", "url": "https://ja.wikipedia.org/wiki/阿弥陀寺_(京都市上京区)", "note": "開山の清玉上人が本能寺の変の後に信長の遺灰を持ち帰って墓を築き、信忠の遺骨も二条新御所から拾い集めて隣に墓を築いたとする伝承を紹介する。典拠として挙がる『信長公阿弥陀寺由緒之記録』（史籍集覧）は未見。", "type": "ネット記事" }
   ],
-  "sourcesChecked": true,
   "tags": ["織田家", "戦国大名", "美濃"],
   "updatedAt": "2026-11-01"
 }

@@ -158,7 +158,6 @@
     { "id": "tamonin-nikki", "title": "多聞院日記", "author": "英俊ほか", "note": "文禄3年3月2日の条の、郡山での金吾殿と秀長の側室の娘の祝言。秀元の名は出ない。大善院のページと同じ箇所。NDLのOCR本文による（原本画像とは未照合）", "type": "史料", "primary": "一次資料" },
     { "id": "wikipedia", "title": "毛利秀元（Wikipedia）", "url": "https://ja.wikipedia.org/wiki/毛利秀元", "note": "生没年・生地・母・継室・子・参議の叙任・分知と石高・関ヶ原・長府藩・墓所などの概要。引き写した事柄は「Wikipedia経由」と書き、原典では確かめていない", "type": "ネット記事" }
   ],
-  "sourcesChecked": true,
   "tags": ["毛利家", "長府藩", "周防・長門"],
   "updatedAt": "2026-11-01"
 }

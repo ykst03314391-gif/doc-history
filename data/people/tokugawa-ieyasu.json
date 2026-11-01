@@ -307,7 +307,6 @@
       "checkWith": ["OpenStreetMap（Nominatim）での名前検索", "久能山東照宮・日光東照宮の公式サイトの由緒", "徳川実紀（東照宮御実紀付録）"]
     }
   ],
-  "sourcesChecked": true,
   "sources": [
     {
       "id": "mikawa-monogatari",
