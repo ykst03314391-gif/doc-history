@@ -238,13 +238,13 @@
     },
     {
       "relation": "子",
-      "name": "織田信雄（奇妙・三介）",
+      "person_id": "oda-nobukatsu", "name": "織田信雄（奇妙・三介）",
       "note": "信長公記は{{奇妙様}}（巻五）、のち{{三介殿}}と書く。",
       "sourceId": "shincho-koki"
     },
     {
       "relation": "子",
-      "name": "織田信孝（神戸三七）",
+      "person_id": "oda-nobutaka", "name": "織田信孝（神戸三七）",
       "note": "信長公記は{{神部三七}}と書く。伊勢の神戸家に入った。",
       "sourceId": "shincho-koki"
     },
@@ -267,7 +267,7 @@
       "sourceId": "shincho-koki"
     },
     {
-      "name": "柴田勝家（権六）",
+      "person_id": "shibata-katsuie", "name": "柴田勝家（権六）",
       "note": "はじめ勘十郎（信勝）に付けられた家老。稲生の合戦では信勝方で戦って敗れた。のちに信勝の動きを信長に知らせたと信長公記が書く。天正3年に越前を任された。",
       "sourceId": "shincho-koki"
     },
@@ -277,7 +277,7 @@
       "sourceId": "shincho-koki"
     },
     {
-      "name": "丹羽長秀（五郎左衛門）",
+      "person_id": "niwa-nagahide", "name": "丹羽長秀（五郎左衛門）",
       "note": "安土城の普請を{{惟住五郎左衛門に被仰付}}（信長公記 巻九）。惟住は長秀が名乗った姓。",
       "sourceId": "shincho-koki"
     },
@@ -563,7 +563,7 @@
       "lat": 35.1556,
       "lng": 136.1392,
       "description": "天正4年1月中旬から安土山の普請を始め、2月23日に安土へ移る（信長公記 巻九）。普請は丹羽長秀が受け持った。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "丹羽長秀", "person_id": "niwa-nagahide"}], "sourceId": "shincho-koki"
     },
     {
       "year": 1576,
@@ -655,7 +655,7 @@
     {
       "title": "上洛と畿内の掌握",
       "description": "足利義昭を奉じて上洛し、のち義昭を追って、朝廷の官位（内大臣・右大臣）を受ける立場になった。",
-      "sourceId": [
+      "links": [{"text": "足利義昭", "person_id": "ashikaga-yoshiaki"}], "sourceId": [
         "shincho-koki",
         "kugyo-bunin"
       ]

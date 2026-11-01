@@ -12,7 +12,7 @@
   ],
   "sides": [
     { "name": "上杉軍", "outcome": "決着つかず", "commanders": [{ "person_id": "uesugi-kenshin", "name": "上杉謙信" }], "participants": [{ "name": "柿崎景家" }, { "name": "直江景綱" }] },
-    { "name": "武田軍", "outcome": "決着つかず", "commanders": [{ "name": "武田信玄" }], "participants": [{ "name": "武田信繁" }, { "name": "山本勘助" }], "note": "第四次合戦では武田信繁・山本勘助らが討死したと伝わる" }
+    { "name": "武田軍", "outcome": "決着つかず", "commanders": [{ "person_id": "takeda-shingen", "name": "武田信玄" }], "participants": [{ "name": "武田信繁" }, { "name": "山本勘助" }], "note": "第四次合戦では武田信繁・山本勘助らが討死したと伝わる" }
   ],
   "result": "数度の対陣を経て、決定的な決着はつかなかった",
   "relatedPeople": ["uesugi-kenshin"],
@@ -25,5 +25,6 @@
     { "id": "koyo-gunkan", "title": "甲陽軍鑑", "note": "武田氏の軍学書。脚色に留意", "type": "書籍", "primary": "二次資料" }
   ],
   "tags": ["上杉謙信", "武田信玄", "信濃"],
+  "links": [{"text": "武田信玄", "person_id": "takeda-shingen"}],
   "updatedAt": "2026-07-07"
 }

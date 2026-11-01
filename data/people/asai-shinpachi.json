@@ -80,7 +80,7 @@
       "relation": "子",
       "name": "浅井長時",
       "note": "幼名は田宮丸。生年は永禄12年（1569）とされる。のち織田信雄に仕え、苅安賀城を預かる家臣に数えられた。天正12年（1584）3月3日、長島城で殺された。甫庵太閤記は天正11年の城主の一覧に{{同苅安賀之城　同臣浅井田宮丸}}と書き、殺された記事では{{浅井田宮丸〈尾州苅安賀城主新八郎長于也〉}}と注する（本文で確認）。生年はWikipedia経由。",
-      "sourceId": [
+      "links": [{"text": "織田信雄", "person_id": "oda-nobukatsu"}], "sourceId": [
         "hoan-taikoki",
         "wikipedia"
       ]
@@ -266,14 +266,14 @@
       "era": "天正12年",
       "title": "子の田宮丸が長島城で殺される",
       "description": "父の死後に苅安賀城を継いだ子の田宮丸（長時）が、同じ織田信雄の家臣の津川玄蕃允・岡田長門守とともに、尾張の長島城で殺された。甫庵太閤記は{{天正十二年三月三日於尾州長島之城}}と日付を書く。新八本人の出来事ではないが、家のゆくえとして最後に置く。",
-      "sourceId": "hoan-taikoki"
+      "links": [{"text": "織田信雄", "person_id": "oda-nobukatsu"}], "sourceId": "hoan-taikoki"
     }
   ],
   "achievements": [
     {
       "title": "箕作城攻めで名を挙げる",
       "description": "永禄11年（1568）の上洛戦で、佐久間信盛・秀吉・丹羽長秀と並んで箕作城攻めを命じられ、夜のうちに落とした。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "丹羽長秀", "person_id": "niwa-nagahide"}], "sourceId": "shincho-koki"
     },
     {
       "title": "長島攻めの先陣に立つ",
@@ -291,7 +291,7 @@
       "title": "子の田宮丸が長島城で殺される",
       "body": "甫庵太閤記は、織田信雄の家臣の津川玄蕃允・岡田長門守・浅井田宮丸が天正12年（1584）3月3日に長島城で殺された話を載せる。秀吉と親しく手紙をやりとりしたのを、近習が{{逆意}}があるとふれ回したためという。甫庵太閤記は脚色の多い二次史料で、理由や経緯をそのまま事実とはできない。",
       "uncertain": true,
-      "sourceId": "hoan-taikoki"
+      "links": [{"text": "織田信雄", "person_id": "oda-nobukatsu"}], "sourceId": "hoan-taikoki"
     },
     {
       "title": "山内一豊とのつながり",

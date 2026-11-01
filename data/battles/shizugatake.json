@@ -12,7 +12,7 @@
   ],
   "sides": [
     { "name": "羽柴軍", "outcome": "勝利", "commanders": [{ "person_id": "toyotomi-hideyoshi", "name": "羽柴秀吉" }], "participants": [{ "name": "加藤清正" }, { "name": "福島正則" }], "note": "加藤清正・福島正則らは「賤ヶ岳の七本槍」と称された" },
-    { "name": "柴田軍", "outcome": "敗北", "commanders": [{ "name": "柴田勝家" }], "participants": [{ "name": "佐久間盛政" }, { "name": "前田利家" }], "note": "前田利家は戦の途中で戦線を離脱した" }
+    { "name": "柴田軍", "outcome": "敗北", "commanders": [{ "person_id": "shibata-katsuie", "name": "柴田勝家" }], "participants": [{ "name": "佐久間盛政" }, { "name": "前田利家" }], "note": "前田利家は戦の途中で戦線を離脱した" }
   ],
   "result": "羽柴秀吉が柴田勝家を破った",
   "relatedPeople": ["toyotomi-hideyoshi"],
@@ -25,5 +25,6 @@
     { "id": "shincho-koki", "title": "信長公記", "author": "太田牛一", "type": "史料", "primary": "一次資料" }
   ],
   "tags": ["羽柴秀吉", "柴田勝家", "賤ヶ岳の七本槍"],
+  "links": [{"text": "柴田勝家", "person_id": "shibata-katsuie"}],
   "updatedAt": "2026-07-07"
 }

@@ -136,18 +136,18 @@
       "sourceId": "shincho-koki"
     },
     {
-      "name": "織田信孝",
+      "person_id": "oda-nobutaka", "name": "織田信孝",
       "from": 1582,
       "to": 1583,
       "note": "清洲会議の後、柴田勝家とともに信孝を立てて秀吉と対立した。天正記（柴田退治記）は{{織田三七信孝。相談柴田滝川云}}と書き、秀吉方から見た経緯を述べる",
-      "sourceId": "tensho-ki"
+      "links": [{"text": "柴田勝家", "person_id": "shibata-katsuie"}], "sourceId": "tensho-ki"
     },
     {
       "person_id": "toyotomi-hideyoshi",
       "name": "羽柴秀吉",
       "from": 1583,
       "note": "賤ヶ岳の戦いの後に長島城を明け渡して降り、のち秀吉方として蟹江城に入った（甫庵太閤記）。甫庵は降った後の一益を{{遊客の身}}と書き、織田信雄の領した伊勢の木造城に在番したともいう",
-      "sourceId": "hoan-taikoki"
+      "links": [{"text": "織田信雄", "person_id": "oda-nobukatsu"}], "sourceId": "hoan-taikoki"
     }
   ],
   "retainers": [
@@ -180,7 +180,7 @@
       "name": "北伊勢（長島城）",
       "prefecture": "三重県",
       "note": "長島一向一揆が滅んだ後に長島城と北伊勢五郡を任されたとされるが、信長公記には一益に長島を与えたという記事がない。甫庵太閤記が{{去年まて北伊勢五郡を領し、長島の城主として有しか}}と書くのに頼る（要確認、ページ末尾の調査メモ）",
-      "sourceId": "hoan-taikoki",
+      "links": [{"text": "織田信雄", "person_id": "oda-nobukatsu"}], "sourceId": "hoan-taikoki",
       "district": [
         "伊勢国桑名郡"
       ],
@@ -246,7 +246,7 @@
           "text": "信長",
           "person_id": "oda-nobunaga"
         }
-      ]
+      , {"text": "柴田勝家", "person_id": "shibata-katsuie"}]
     },
     {
       "year": 1574,
@@ -287,7 +287,7 @@
           "text": "信長",
           "person_id": "oda-nobunaga"
         }
-      ]
+      , {"text": "丹羽長秀", "person_id": "niwa-nagahide"}]
     },
     {
       "year": 1577,
@@ -305,7 +305,7 @@
           "text": "信長",
           "person_id": "oda-nobunaga"
         }
-      ]
+      , {"text": "柴田勝家", "person_id": "shibata-katsuie"}]
     },
     {
       "year": 1578,
@@ -359,7 +359,7 @@
       "month": 9,
       "title": "伊賀攻め",
       "description": "織田信雄の伊賀攻めで、甲賀衆を率いる甲賀口の大将に名が挙がり（信長公記{{甲賀口　甲賀衆　滝川左近　蒲生忠三郎}}）、9月10日には堀秀政とともに足軽を出して敵を討った。10月には信長の御座所を自ら普請して迎えた。多聞院日記も{{瀧川北口}}と、一益が北口から攻めたと書く（OCR本文による。月日は要確認、ページ末尾の調査メモ）。異本小田原記は、この伊賀攻めの後に甲賀まで攻めると申し出た一益を、信長が{{情も知らぬ田舎夫}}と評した話を載せるが、年を天正3年とし、信長公記・多聞院日記と合わない",
-      "sourceId": [
+      "links": [{"text": "織田信雄", "person_id": "oda-nobukatsu"}], "sourceId": [
         "shincho-koki",
         "tamonin-nikki"
       ]
@@ -422,7 +422,7 @@
           "text": "秀吉",
           "person_id": "toyotomi-hideyoshi"
         }
-      ]
+      , {"text": "柴田勝家", "person_id": "shibata-katsuie"}, {"text": "丹羽長秀", "person_id": "niwa-nagahide"}, {"text": "織田信孝", "person_id": "oda-nobutaka"}]
     },
     {
       "year": 1583,
@@ -442,7 +442,7 @@
           "text": "秀吉",
           "person_id": "toyotomi-hideyoshi"
         }
-      ]
+      , {"text": "筒井順慶", "person_id": "tsutsui-junkei"}]
     },
     {
       "year": 1583,
@@ -474,7 +474,7 @@
           "text": "秀吉",
           "person_id": "toyotomi-hideyoshi"
         }
-      ]
+      , {"text": "織田信雄", "person_id": "oda-nobukatsu"}]
     },
     {
       "year": 1586,
@@ -482,7 +482,7 @@
       "day": 9,
       "title": "死去",
       "description": "越前で没した。甫庵太閤記は{{越前の五分一と云所にてをはりにけり}}、川角太閤記は丹羽長秀に預けられて越前へ移り、{{鍋や町}}の屋敷で病んで没したと書く。Wikipediaは没地を越前大野とし、62歳とする（要確認、ページ末尾の調査メモ）",
-      "sourceId": [
+      "links": [{"text": "丹羽長秀", "person_id": "niwa-nagahide"}], "sourceId": [
         "hoan-taikoki",
         "kawasumi-taikoki"
       ]
@@ -509,7 +509,7 @@
       "title": "高野から堺へ",
       "body": "川角太閤記によれば、蟹江城を渡して降った一益は、自分から高野山に入った。秀吉はそれを殊勝に思い、高野山は魚鳥禁制の地なので堺に引き籠もって茶の湯（数奇）をせよと言った。のち丹羽長秀に預けられて越前へ移り、鍋や町の屋敷で病んで没したという。甫庵太閤記が伝える長島城・近江5000石・木造城・蟹江城の順序とは合わず、丹羽長秀は天正13年に亡くなっているので年代にも無理がある。",
       "uncertain": true,
-      "sourceId": "kawasumi-taikoki"
+      "links": [{"text": "丹羽長秀", "person_id": "niwa-nagahide"}], "sourceId": "kawasumi-taikoki"
     },
     {
       "title": "名物の茶入れを望んだ話",
@@ -715,7 +715,7 @@
         "寛政重修諸家譜",
         "福井県史・大野市史の記述",
         "多聞院日記の天正14年の条（第4巻）"
-      ]
+      ], "links": [{"text": "丹羽長秀", "person_id": "niwa-nagahide"}]
     },
     {
       "section": "出生地",

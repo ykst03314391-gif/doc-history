@@ -12,7 +12,7 @@
   ],
   "links": [{ "text": "木下小一郎", "person_id": "toyotomi-hidenaga" }, { "text": "浅井新八", "person_id": "asai-shinpachi" }, { "text": "織田信長", "person_id": "oda-nobunaga" }],
   "sides": [
-    { "name": "織田軍", "outcome": "勝利", "commanders": [{ "person_id": "oda-nobunaga", "name": "織田信長" }, { "person_id": "oda-nobutada", "name": "織田信忠" }], "participants": [{ "person_id": "toyotomi-hidenaga", "name": "木下小一郎（秀長）" }, { "name": "柴田勝家" }, { "name": "佐久間信盛" }, { "name": "丹羽長秀" }, { "name": "九鬼嘉隆" }, { "person_id": "takigawa-kazumasu", "name": "滝川一益" }], "note": "木下小一郎は信長本隊の先陣を務めた（信長公記）" },
+    { "name": "織田軍", "outcome": "勝利", "commanders": [{ "person_id": "oda-nobunaga", "name": "織田信長" }, { "person_id": "oda-nobutada", "name": "織田信忠" }], "participants": [{ "person_id": "toyotomi-hidenaga", "name": "木下小一郎（秀長）" }, { "person_id": "shibata-katsuie", "name": "柴田勝家" }, { "name": "佐久間信盛" }, { "person_id": "niwa-nagahide", "name": "丹羽長秀" }, { "name": "九鬼嘉隆" }, { "person_id": "takigawa-kazumasu", "name": "滝川一益" }], "note": "木下小一郎は信長本隊の先陣を務めた（信長公記）" },
     { "name": "長島一向一揆", "outcome": "敗北", "participants": [{ "name": "長島の門徒衆" }], "note": "本願寺に従う一向宗の門徒。長島の願証寺が中心だったとされる" }
   ],
   "result": "織田軍が長島を落とし、一揆勢は壊滅した",

@@ -95,7 +95,7 @@
       "month": 1,
       "title": "本圀寺の変の後、桂川に布陣",
       "description": "三好勢が将軍・足利義昭の本圀寺を襲った後、信長の命で摂津・山城の諸将が桂川に陣を構えた。信長公記の布陣の一覧に、{{伊丹荒木茨木}}と名字だけ見える。この荒木を村重とする根拠は、同じ摂津の国衆と並ぶことくらいで、要確認。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "足利義昭", "person_id": "ashikaga-yoshiaki"}], "sourceId": "shincho-koki"
     },
     {
       "year": 1573,
@@ -115,7 +115,7 @@
       "day": 16,
       "title": "槇島城攻めに加わる",
       "description": "足利義昭の籠もる槇島城の攻撃の人数に、{{荒木摂津守}}の名が見える。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "足利義昭", "person_id": "ashikaga-yoshiaki"}], "sourceId": "shincho-koki"
     },
     {
       "year": 1574,

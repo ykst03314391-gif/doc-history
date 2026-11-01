@@ -166,7 +166,7 @@
           "text": "明智光秀",
           "person_id": "akechi-mitsuhide"
         }
-      ]
+      , {"text": "斎藤利三", "person_id": "saito-toshimitsu"}]
     },
     {
       "relation": "弟",
@@ -990,7 +990,7 @@
         "『石谷家文書』",
         "『信長公記』『天正記（惟任退治記）』の元親関係の記事",
         "四国説を論じた近年の論文"
-      ]
+      ], "links": [{"text": "斎藤利三", "person_id": "saito-toshimitsu"}]
     },
     {
       "section": "年表",

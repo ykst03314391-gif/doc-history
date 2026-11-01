@@ -62,7 +62,7 @@
       "era": "元亀3年",
       "value": "羽柴藤吉郎",
       "note": "虎御前山の記事の{{羽柴藤吉郎}}。木下から羽柴へ改めた時期と理由は信長公記に書かれない。丹羽長秀・柴田勝家から一字ずつ取ったという説明は、確かめられていない（要確認）。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "柴田勝家", "person_id": "shibata-katsuie"}, {"text": "丹羽長秀", "person_id": "niwa-nagahide"}], "sourceId": "shincho-koki"
     },
     {
       "year": 1573,
@@ -751,7 +751,7 @@
     {
       "title": "信長の死後の主導権",
       "description": "山崎の戦いで光秀を破り、賤ヶ岳の戦いで柴田勝家を破った。",
-      "sourceId": "tensho-ki"
+      "links": [{"text": "柴田勝家", "person_id": "shibata-katsuie"}], "sourceId": "tensho-ki"
     },
     {
       "title": "関白・太政大臣",

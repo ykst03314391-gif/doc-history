@@ -12,7 +12,7 @@
   ],
   "sides": [
     { "name": "織田・徳川連合軍", "outcome": "勝利", "commanders": [{ "person_id": "oda-nobunaga", "name": "織田信長" }, { "name": "徳川家康" }], "participants": [{ "name": "本多忠勝" }, { "name": "榊原康政" }] },
-    { "name": "浅井・朝倉連合軍", "outcome": "敗北", "commanders": [{ "name": "浅井長政" }, { "name": "朝倉景健" }], "participants": [{ "name": "磯野員昌" }, { "name": "真柄直隆" }] }
+    { "name": "浅井・朝倉連合軍", "outcome": "敗北", "commanders": [{ "name": "浅井長政" }, { "name": "朝倉景健" }], "participants": [{ "person_id": "isono-kazumasa", "name": "磯野員昌" }, { "name": "真柄直隆" }] }
   ],
   "result": "織田・徳川連合軍が浅井・朝倉連合軍を破った",
   "relatedPeople": ["oda-nobunaga"],
