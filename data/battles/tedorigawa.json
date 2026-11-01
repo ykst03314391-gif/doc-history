@@ -7,12 +7,12 @@
   "place": { "name": "加賀国・手取川", "prefecture": "石川県", "city": "白山市・能美市周辺", "address": "石川県白山市（手取川古戦場）", "lat": 36.3287, "lng": 136.6412 },
   "description": [
     "能登・加賀へ進出した上杉謙信に対し、織田信長は柴田勝家を総大将とする軍を派遣した。両軍は加賀の手取川付近で対峙した。",
-    "上杉方の記録によれば、謙信は退却する織田軍を追撃し、増水した手取川で大きな打撃を与えたとされる。一方、織田方の一次史料はこの戦いをほとんど伝えておらず、実際の規模には慎重な見方もある。",
+    "上杉方の記録によれば、謙信は退却する織田軍を追撃し、増水した手取川で大きな打撃を与えたとされる。一方、織田方の一次史料『信長公記』は、織田軍が手取川を越えて加賀を焼き払ったことと羽柴秀吉の無断帰陣は記すが、謙信との戦いは記しておらず、実際の規模には慎重な見方もある。",
     "破竹の勢いだった織田軍を、謙信が正面から退けた数少ない例として知られる。詳しい経緯は考察記事で扱う。"
   ],
   "sides": [
     { "name": "上杉軍", "outcome": "勝利", "commanders": [{ "person_id": "uesugi-kenshin", "name": "上杉謙信" }], "participants": [{ "name": "柿崎景家" }, { "name": "直江景綱" }] },
-    { "name": "織田軍", "outcome": "敗北", "commanders": [{ "name": "柴田勝家" }], "participants": [{ "person_id": "toyotomi-hideyoshi", "name": "羽柴秀吉" }, { "name": "丹羽長秀" }, { "person_id": "takigawa-kazumasu", "name": "滝川一益" }], "note": "羽柴秀吉は勝家と対立し戦線を離脱したと伝わる" }
+    { "name": "織田軍", "outcome": "敗北", "commanders": [{ "name": "柴田勝家" }], "participants": [{ "person_id": "toyotomi-hideyoshi", "name": "羽柴秀吉" }, { "name": "丹羽長秀" }, { "person_id": "takigawa-kazumasu", "name": "滝川一益" }], "note": "羽柴秀吉は届けを出さずに帰陣し、信長の怒りを買った（信長公記）。勝家との対立が原因とするのは後の編纂物" }
   ],
   "result": "上杉謙信が織田軍を破ったと伝わる（規模には諸説あり）",
   "relatedPeople": ["uesugi-kenshin", "oda-nobunaga"],
