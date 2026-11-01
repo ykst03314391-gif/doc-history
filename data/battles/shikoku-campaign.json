@@ -11,7 +11,7 @@
     "秀吉が自ら四国へ渡ろうとすると、秀長は書状で「それでは秀長の力が足りないように見え、殿下の御威光も小さく見える」と諫めて止めた（天正記）。奈良の多聞院日記にも、6月から7月にかけて秀吉自身の出馬が何度も伝えられては延び、延期のわけを和議の話があるからかと噂したことが書かれている。7月、秀次らが脇城を攻め、元親はついに降伏した。元親の処遇は秀長と秀次に任され、元親は土佐一国を安堵されて秀長の配下に置かれた。多聞院日記の8月の条は、四国の陣がみな引き払われ、土佐一国は長宗我部に、阿波は蜂須賀に、讃岐の半分は仙石権兵衛（秀久）に、伊予は小早川に与えられ、元親の弟が人質として大坂にいると伝え聞いている。天正記は秀長を「比類なき大将」と称えるが、甫庵太閤記は平定の成功を秀吉の才知に帰している。"
   ],
   "sides": [
-    { "name": "羽柴軍", "outcome": "勝利", "commanders": [{ "person_id": "toyotomi-hidenaga", "name": "羽柴秀長" }], "participants": [{ "person_id": "toyotomi-hidetsugu", "name": "羽柴秀次" }, { "name": "宇喜多秀家" }, { "name": "黒田孝高" }, { "name": "蜂須賀正勝" }, { "name": "仙石秀久" }, { "name": "小早川隆景" }, { "person_id": "tsutsui-sadatsugu", "name": "筒井定次" }], "note": "秀吉は渡海せず、秀長が総大将として軍を率いた" },
+    { "name": "羽柴軍", "outcome": "勝利", "commanders": [{ "person_id": "toyotomi-hidenaga", "name": "羽柴秀長" }], "participants": [{ "person_id": "toyotomi-hidetsugu", "name": "羽柴秀次" }, { "name": "宇喜多秀家" }, { "person_id": "kuroda-yoshitaka", "name": "黒田孝高" }, { "name": "蜂須賀正勝" }, { "person_id": "sengoku-hidehisa", "name": "仙石秀久" }, { "person_id": "kobayakawa-takakage", "name": "小早川隆景" }, { "person_id": "tsutsui-sadatsugu", "name": "筒井定次" }], "note": "秀吉は渡海せず、秀長が総大将として軍を率いた" },
     { "name": "長宗我部軍", "outcome": "敗北", "commanders": [{ "person_id": "chosokabe-motochika", "name": "長宗我部元親" }], "participants": [{ "name": "長宗我部親吉" }, { "name": "東条関兵衛" }], "note": "長宗我部親吉は脇城、東条関兵衛は木津城を守った（天正記）" }
   ],
   "result": "長宗我部元親が降伏し、土佐一国を安堵された",
@@ -27,5 +27,6 @@
     { "id": "tamonin-nikki", "title": "多聞院日記", "author": "英俊ほか", "note": "興福寺多聞院の僧の日記。天正13年6月21日・22日・27日と7月の条（秀吉の出馬の延期、筒井定次が大和の衆を連れて出陣）、8月の条（戦後の国割の伝え聞き）。奈良での伝え聞き。NDLの三教書院版のOCR本文による（原本画像とは未照合）", "type": "史料", "primary": "一次資料" }
   ],
   "tags": ["豊臣秀長", "長宗我部元親", "羽柴秀吉", "四国"],
+  "links": [{"text": "小早川隆景", "person_id": "kobayakawa-takakage"}, {"text": "毛利輝元", "person_id": "mori-terumoto"}, {"text": "黒田孝高", "person_id": "kuroda-yoshitaka"}],
   "updatedAt": "2026-11-01"
 }

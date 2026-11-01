@@ -357,7 +357,7 @@
     }
   ],
   "yorikiNote": {
-    "text": "黒田官兵衛（小寺官兵衛）らの扱いは確かめていない。与力・家臣の全体は、黒田基樹『信長時代の羽柴秀吉』などで確かめる（要確認）。"
+    "text": "黒田官兵衛（小寺官兵衛）らの扱いは確かめていない。与力・家臣の全体は、黒田基樹『信長時代の羽柴秀吉』などで確かめる（要確認）。", "links": [{"text": "黒田官兵衛", "person_id": "kuroda-yoshitaka"}]
   },
   "territories": [
     {
@@ -580,7 +580,7 @@
     },
     {
       "year": 1584,
-      "title": "小牧・長久手",
+      "title": "小牧・長久手", "battle_id": "komaki-nagakute",
       "description": "家康と対陣した。三河物語に記事があるが、本ページでは詳しい内容を確かめていない（要確認）。",
       "sourceId": "mikawa-monogatari"
     },
@@ -640,7 +640,7 @@
       "year": 1590,
       "title": "小田原・奥州",
       "description": "川角太閤記は7月12日に氏政が切腹したと書き、氏直は高野へ上ったとする。小田原城の受取は黒田官兵衛、会津黒川に在陣して木村弥一右衛門に奥州仕置を当座任せたと書く。日付や経緯は史料ごとに食い違う箇所があり、確かめきれていない（要確認）。",
-      "sourceId": [
+      "links": [{"text": "黒田官兵衛", "person_id": "kuroda-yoshitaka"}], "sourceId": [
         "kawasumi-taikoki",
         "hoan-taikoki"
       ]
@@ -983,7 +983,7 @@
       "text": "石田三成・五奉行・黒田官兵衛ら、家臣の記述は確かめていない。",
       "checkWith": [
         "黒田基樹『信長時代の羽柴秀吉』"
-      ]
+      ], "links": [{"text": "黒田官兵衛", "person_id": "kuroda-yoshitaka"}]
     },
     {
       "section": "史跡",

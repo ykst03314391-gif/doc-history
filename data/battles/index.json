@@ -169,6 +169,18 @@
       "sides": [{ "name": "羽柴軍", "outcome": "勝利" }, { "name": "柴田軍", "outcome": "敗北" }]
     },
     {
+      "id": "komaki-nagakute",
+      "name": "小牧・長久手の戦い",
+      "kana": "こまき・ながくてのたたかい",
+      "year": 1584,
+      "summary": "羽柴秀吉と、織田信雄・徳川家康が尾張を中心に争った戦い。長久手で羽柴方が敗れたが、秀吉は信雄と和睦した。",
+      "prefecture": "愛知県",
+      "province": "尾張国",
+      "lat": 35.2916,
+      "lng": 136.9125,
+      "sides": [{ "name": "羽柴軍", "outcome": "和睦" }, { "name": "織田・徳川軍", "outcome": "和睦" }]
+    },
+    {
       "id": "kishu-campaign",
       "photo": {"src": "assets/img/battles/kishu-campaign.jpg", "thumb": "assets/img/battles/thumbs/kishu-campaign.jpg", "caption": "太田城跡の石碑", "author": "Saigen Jiro", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "source": {"name": "Wikimedia Commons", "url": "https://commons.wikimedia.org/wiki/File:Ota_Castle_(Kii),_sekihi.jpg"}},
       "name": "紀州攻め",

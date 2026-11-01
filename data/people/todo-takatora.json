@@ -67,7 +67,7 @@
     {"year": 1585, "name": "紀伊国（粉河）", "prefecture": "和歌山県", "note": "紀州攻めの後に粉河で1万石を得て、秀長の家臣として初めて大名並みの知行を持ったとされる（Wikipedia経由）。同年の四国攻めの後に5,400石が加わって1万石になったともあり、粉河の1万石との関係が記事で明確でない。要確認（ページ末尾の調査メモ）。", "sourceId": "wikipedia", "province": "紀伊国", "district": "紀伊国那賀郡", "until": 1595, "untilNote": "秀保の死後、秀吉の直臣として伊予へ移る（Wikipedia経由、要確認）。", "mapNote": "粉河は那賀郡にあるので郡で塗った。知行の範囲は確かめていない", "place": "粉河", "lat": 34.2797, "lng": 135.4072},
     {"year": 1595, "name": "伊予国（板島・宇和島）", "prefecture": "愛媛県", "note": "秀保の死後、秀吉の直臣となり、5万石を加えられて板島7万石になったとされる（Wikipedia経由）。慶長の役の後に大洲1万石が加わって8万石とも。板島丸串城を改修し、のち宇和島城と呼ばれた。石高と加増の経緯は要確認（ページ末尾の調査メモ）。", "sourceId": "wikipedia", "province": "伊予国", "district": ["伊予国北宇和郡", "伊予国南宇和郡", "伊予国東宇和郡", "伊予国西宇和郡"], "until": 1608, "untilNote": "伊勢・伊賀へ移るとき（Wikipedia経由、要確認）。", "mapNote": "宇和島周辺の宇和郡（1920年の郡名で4郡）を塗った。大洲など範囲は確かめていない", "place": "宇和島城", "lat": 33.2196, "lng": 132.565},
     {"year": 1600, "name": "伊予国（今治）", "prefecture": "愛媛県", "note": "関ヶ原の後に今治で12万石を加えられ、宇和島の8万石と合わせて20万石になったとされる（Wikipedia経由）。今治城を築いて居城とした。要確認（ページ末尾の調査メモ）。", "sourceId": "wikipedia", "province": "伊予国", "district": "伊予国越智郡", "until": 1608, "untilNote": "伊勢・伊賀へ移る。ただし今治周辺の2万石は飛び地として残ったとされる（Wikipedia経由、要確認）。", "mapNote": "今治の越智郡を塗った。12万石がどの郡にわたるかは確かめていない", "place": "今治城", "lat": 34.0647, "lng": 133.0058},
-    {"year": 1608, "name": "伊勢国（津）・伊賀国", "prefecture": "三重県", "note": "慶長13年（1608）、伊賀10万石・伊勢の安濃郡と一志郡で10万石、今治周辺の飛び地2万石、合わせて22万石で津に入り、津藩主となったとされる（Wikipedia経由）。のち加増され、慶長22年（1617）の田丸5万石などを加えて32万3千石とも。伊賀上野城・津城を整えた。津城に入った年は要確認（ページ末尾の調査メモ）。", "sourceId": "wikipedia", "province": ["伊勢国", "伊賀国"], "district": ["伊勢国安濃郡", "伊勢国一志郡", "伊賀国"], "mapNote": "伊勢は安濃郡・一志郡だけを塗った（のちの田丸などは塗っていない）", "place": "津城", "lat": 34.7183, "lng": 136.5058}
+    {"year": 1608, "name": "伊勢国（津）・伊賀国", "prefecture": "三重県", "note": "慶長13年（1608）、伊賀10万石・伊勢の安濃郡と一志郡で10万石、今治周辺の飛び地2万石、合わせて22万石で津に入り、津藩主となったとされる（Wikipedia経由）。のち加増され、慶長22年（1617）の田丸5万石などを加えて32万3千石とも。伊賀上野城・津城を整えた。津城に入った年は要確認（ページ末尾の調査メモ）。", "links": [{"text": "伊賀上野城", "castle_id": "iga-ueno"}], "sourceId": "wikipedia", "province": ["伊勢国", "伊賀国"], "district": ["伊勢国安濃郡", "伊勢国一志郡", "伊賀国"], "mapNote": "伊勢は安濃郡・一志郡だけを塗った（のちの田丸などは塗っていない）", "place": "津城", "lat": 34.7183, "lng": 136.5058}
   ],
   "timeline": [
     {"year": 1556, "month": 2, "day": 16, "title": "誕生", "place": "近江国犬上郡藤堂村", "lat": 35.2, "lng": 136.2, "approx": true, "description": "近江の藤堂村に生まれたとされる（弘治2年1月6日。Wikipedia経由）。", "sourceId": "wikipedia"},
@@ -86,7 +86,7 @@
     {"year": 1598, "title": "秀吉の遺物を受ける", "description": "甫庵太閤記が写す、秀吉の遺物を配った帳面に{{大兼光　藤堂佐渡守}}とあり、兼光の刀を受けた。", "sourceId": "hoan-taikoki"},
     {"year": 1599, "title": "大光院を大徳寺へ移す", "place": "大徳寺（京都市北区）", "lat": 35.0441, "lng": 135.7462, "description": "名将言行録は、慶長4年に高虎が旧主・秀長のために、郡山の大光院を京都の大徳寺の中に移して香花料を寄せたと書く（OCR本文）。Wikipediaも、豊臣家滅亡の後も法要を続けたとする。「四年」を慶長4年（1599）と読んだ。原本画像との照合は未了。", "sourceId": ["meisho-genkoroku", "wikipedia"]},
     {"year": 1600, "month": 9, "title": "関ヶ原の戦い", "battle_id": "sekigahara", "description": "東軍として戦い、戦後に今治を加えられて20万石になったとされる（Wikipedia経由）。名将言行録は、岐阜城攻めの後の評議で西上を急ぐ諸将に対して高虎が内府（家康）の到着を待つべきと言い、のち池田輝政・福島正則が、高虎が河渡へ回って敵の川渡りを防いだ功を称えたと書く（OCR本文で崩れが多く、細部は要確認）。", "links": [{"text": "岐阜城", "castle_id": "gifu"}], "sourceId": ["wikipedia", "meisho-genkoroku"]},
-    {"year": 1608, "title": "伊勢津へ移る", "description": "伊賀・伊勢で22万石に移され、津城・伊賀上野城を拠点とする（Wikipedia経由）。要確認（ページ末尾の調査メモ）。", "place": "津城", "lat": 34.7183, "lng": 136.5058, "sourceId": "wikipedia"},
+    {"year": 1608, "title": "伊勢津へ移る", "description": "伊賀・伊勢で22万石に移され、津城・伊賀上野城を拠点とする（Wikipedia経由）。要確認（ページ末尾の調査メモ）。", "place": "津城", "lat": 34.7183, "lng": 136.5058, "links": [{"text": "伊賀上野城", "castle_id": "iga-ueno"}], "sourceId": "wikipedia"},
     {"year": 1615, "month": 5, "title": "大坂夏の陣（八尾の戦い）", "place": "八尾（大阪府八尾市）", "lat": 34.6272, "lng": 135.6012, "approx": true, "description": "名将言行録は、長宗我部盛親の軍と八尾で戦ったと書く（OCR本文）。常山紀談にも、井伊直孝の軍との働きの違いを語る話がある。", "sourceId": ["meisho-genkoroku", "jozan-kidan"]},
     {"year": 1630, "month": 10, "day": 5, "title": "死去", "place": "江戸（藤堂藩邸）", "lat": 35.6895, "lng": 139.6917, "approx": true, "description": "75歳で没した。江戸の藩邸で没したとされる（Wikipedia経由）。名将言行録は{{寛永七年十月五日卒、年七十五}}と書く。", "sourceId": ["meisho-genkoroku", "wikipedia"]}
   ],
@@ -102,7 +102,7 @@
     {"place": "family", "title": "養子の高吉は誰の子で、なぜ別家になったのか？", "text": "養子の高吉は丹羽長秀の三男とされるが、迎えた事情と、実子の高次の誕生後に別家（名張藤堂家）となった経緯は、今回確かめられていない。", "links": [{"text": "丹羽長秀", "person_id": "niwa-nagahide"}], "sourceId": "wikipedia"}
   ],
   "achievements": [
-    {"title": "築城", "description": "和歌山城の普請、今治城・伊賀上野城・津城の整備、板島丸串城（のちの宇和島城）の改修などを手がけ、江戸城や二条城の改修にも関わったとされる。", "sourceId": "wikipedia"},
+    {"title": "築城", "description": "和歌山城の普請、今治城・伊賀上野城・津城の整備、板島丸串城（のちの宇和島城）の改修などを手がけ、江戸城や二条城の改修にも関わったとされる。", "links": [{"text": "和歌山城", "castle_id": "wakayama"}, {"text": "伊賀上野城", "castle_id": "iga-ueno"}], "sourceId": "wikipedia"},
     {"title": "水軍の将として働く", "description": "文禄の役で水軍の一員として二千人を率い、釜山浦の評議でも案を出したと甫庵太閤記は書く。", "sourceId": "hoan-taikoki"},
     {"title": "大名への出世", "description": "300石の足軽から、紀伊粉河1万石、伊予板島7万石、今治20万石、伊勢津・伊賀22万石（のち30万石超）へ進んだ（石高はWikipedia経由）。", "sourceId": "wikipedia"}
   ],
@@ -120,7 +120,7 @@
   "spots": [
     {"type": "城跡", "name": "宇和島城", "prefecture": "愛媛県", "city": "宇和島市", "lat": 33.2196, "lng": 132.565, "description": "板島丸串城を改修した城。完成後に宇和島城と呼ばれたとされる（Wikipedia経由）。", "sourceId": "wikipedia"},
     {"type": "城跡", "name": "今治城", "prefecture": "愛媛県", "city": "今治市", "lat": 34.0647, "lng": 133.0058, "description": "関ヶ原の後に築いた海城。層塔型の天守を初めて築いたとされる（Wikipedia経由）。", "sourceId": "wikipedia"},
-    {"type": "城跡", "name": "伊賀上野城", "prefecture": "三重県", "city": "伊賀市", "lat": 34.769, "lng": 136.1307, "approx": true, "description": "高石垣で知られる。天下普請で改修した（Wikipedia経由）。", "sourceId": "wikipedia"},
+    {"type": "城跡", "name": "伊賀上野城", "castle_id": "iga-ueno", "prefecture": "三重県", "city": "伊賀市", "lat": 34.769, "lng": 136.1307, "approx": true, "description": "高石垣で知られる。天下普請で改修した（Wikipedia経由）。", "sourceId": "wikipedia"},
     {"type": "城跡", "name": "津城跡", "prefecture": "三重県", "city": "津市", "lat": 34.7183, "lng": 136.5058, "description": "伊勢津に移ってからの居城（Wikipedia経由）。", "sourceId": "wikipedia"},
     {"type": "神社仏閣", "name": "大徳寺 大光院", "prefecture": "京都府", "city": "京都市北区", "lat": 35.0441, "lng": 135.7462, "approx": true, "url": "https://www.rinzai.or.jp/", "urlLabel": "臨済宗の公式サイト（大光院自体のページではない）", "description": "秀長の菩提寺。高虎が大和郡山から大徳寺内へ移したとされる（名将言行録のOCR本文）。", "sourceId": "meisho-genkoroku"}
   ],

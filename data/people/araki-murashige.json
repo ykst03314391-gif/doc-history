@@ -291,13 +291,13 @@
       "title": "安土へ向かうも、家臣に諫められて引き返す",
       "body": "陰徳太平記（毛利方の軍記）は、謀反の前に村重が安土へ向かいかけたが、家臣に「行けば殺される」と諫められて引き返したと語る。中川清秀の兵が大坂へ米を売っていた疑いや、明智光秀が内通していたという話もあわせて語るが、いずれも信長公記にはなく、毛利方の脚色を含むとみて、そのまま事実とはしない（OCR本文による）。",
       "uncertain": true,
-      "sourceId": "intoku-taiheiki"
+      "links": [{"text": "中川清秀", "person_id": "nakagawa-kiyohide"}], "sourceId": "intoku-taiheiki"
     },
     {
       "title": "黒田官兵衛の幽閉",
       "body": "謀反を思いとどまるよう説得に来た黒田官兵衛（小寺官兵衛）を、村重は殺さず、有岡城の牢に閉じ込めた。落城後に栗山善助らが救い出したとされる。常山紀談と陰徳太平記が語る話で、信長公記にはない（OCR本文による）。",
       "uncertain": true,
-      "links": [{"text": "有岡城", "castle_id": "arioka"}], "sourceId": ["jozan-kidan", "intoku-taiheiki"]
+      "links": [{"text": "有岡城", "castle_id": "arioka"}, {"text": "黒田官兵衛", "person_id": "kuroda-yoshitaka"}], "sourceId": ["jozan-kidan", "intoku-taiheiki"]
     },
     {
       "title": "だしの辞世",
@@ -308,7 +308,7 @@
       "title": "茶人「道薫」",
       "body": "武将としての再起はかなわなかったが、茶人「道薫」として堺で茶会に出たと伝わる。千利休の高弟「利休七哲」の一人に数えられることもあるが、利休の没後まもなくの七人衆の一覧には村重が入らず、江戸後期の茶人の系譜書から加わるとされる（要確認）。",
       "uncertain": true,
-      "sourceId": ["wikipedia-rikyu7", "amano-2017"]
+      "links": [{"text": "千利休", "person_id": "sen-no-rikyu"}], "sourceId": ["wikipedia-rikyu7", "amano-2017"]
     }
   ],
   "questions": [
@@ -392,7 +392,7 @@
       "year": 2019,
       "isbn": "9784864033312",
       "affiliateUrl": "https://www.amazon.co.jp/dp/4864033315",
-      "note": "村重の下にいた高山右近・中川清秀の動きから、摂津の国衆と謀反の背景を読む。"
+      "note": "村重の下にいた高山右近・中川清秀の動きから、摂津の国衆と謀反の背景を読む。", "links": [{"text": "中川清秀", "person_id": "nakagawa-kiyohide"}]
     },
     {
       "title": "天正六年十月 荒木村重「逆心」―伊丹有岡城から尼崎城へ",

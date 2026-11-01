@@ -11,7 +11,7 @@
     "雑賀に進んだ羽柴軍は、抵抗を続ける太田城を水攻めにした。周囲に長い堤を築いて川の水を引き込み、大雨で堤が切れても築き直して城を水に沈めた。城方は和議で降り、首謀者とされた者が処刑された。天正記は五十余人とし、多聞院日記（4月26日の条）も、和議で大将分の五十余人の首を討って差し出し、残りの百姓はみな助けられたと伝え聞く。甫庵太閤記は百五十三人の切腹とする。戦後、紀伊・和泉は秀長に与えられた。"
   ],
   "sides": [
-    { "name": "羽柴軍", "outcome": "勝利", "commanders": [{ "person_id": "toyotomi-hideyoshi", "name": "羽柴秀吉" }], "participants": [{ "person_id": "toyotomi-hidenaga", "name": "羽柴秀長" }, { "person_id": "toyotomi-hidetsugu", "name": "羽柴秀次" }, { "name": "中村一氏" }, { "person_id": "tsutsui-sadatsugu", "name": "筒井定次" }, { "name": "仙石秀久" }, { "name": "九鬼嘉隆" }], "note": "秀長・秀次を副将とするのは甫庵太閤記。甫庵太閤記は千石堀攻めの将を「筒井順慶」と書くが、順慶は前年に没しており、多聞院日記によれば筒井勢を率いたのは養子の定次" },
+    { "name": "羽柴軍", "outcome": "勝利", "commanders": [{ "person_id": "toyotomi-hideyoshi", "name": "羽柴秀吉" }], "participants": [{ "person_id": "toyotomi-hidenaga", "name": "羽柴秀長" }, { "person_id": "toyotomi-hidetsugu", "name": "羽柴秀次" }, { "name": "中村一氏" }, { "person_id": "tsutsui-sadatsugu", "name": "筒井定次" }, { "person_id": "sengoku-hidehisa", "name": "仙石秀久" }, { "name": "九鬼嘉隆" }], "note": "秀長・秀次を副将とするのは甫庵太閤記。甫庵太閤記は千石堀攻めの将を「筒井順慶」と書くが、順慶は前年に没しており、多聞院日記によれば筒井勢を率いたのは養子の定次" },
     { "name": "根来・雑賀衆", "outcome": "敗北", "participants": [{ "name": "根来寺の僧兵" }, { "name": "雑賀衆" }, { "name": "土橋平次" }], "note": "鉄砲の扱いに長けた紀伊の勢力" }
   ],
   "result": "羽柴軍が根来寺・雑賀を攻め落とし、紀伊を平定した",

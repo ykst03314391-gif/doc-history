@@ -393,6 +393,95 @@
       "deathYear": 1582,
       "deathEra": "天正10年6月5日",
       "tags": ["織田家", "近江"]
+    },
+    {
+      "id": "sen-no-rikyu",
+      "name": "千利休",
+      "kana": "せんの りきゅう",
+      "category": "other",
+      "summary": "堺の茶人で、信長・秀吉の茶頭。秀吉の側近くにいたが、秀長の死の翌月に秀吉の命で切腹した。",
+      "birthYear": 1522,
+      "birthEra": "大永2年",
+      "deathYear": 1591,
+      "deathEra": "天正19年2月28日",
+      "tags": ["茶人", "堺"]
+    },
+    {
+      "id": "nakagawa-kiyohide",
+      "name": "中川清秀",
+      "kana": "なかがわ きよひで",
+      "summary": "摂津の茨木城主。荒木村重の謀反で織田方に転じ、山崎の戦いで戦ったのち、賤ヶ岳の戦いで討死した。",
+      "birthYear": 1542,
+      "birthEra": "天文11年",
+      "deathYear": 1583,
+      "deathEra": "天正11年4月20日",
+      "tags": ["織田家臣", "摂津"]
+    },
+    {
+      "id": "mashita-nagamori",
+      "name": "増田長盛",
+      "kana": "ました ながもり",
+      "summary": "秀吉の家臣で五奉行の一人。秀保の死後に大和郡山城を与えられたが、関ヶ原の後に所領を失った。",
+      "birthYear": 1545,
+      "birthEra": "天文14年",
+      "deathYear": 1615,
+      "deathEra": "元和元年5月27日",
+      "tags": ["豊臣家臣", "五奉行", "大和"]
+    },
+    {
+      "id": "kobayakawa-takakage",
+      "name": "小早川隆景",
+      "kana": "こばやかわ たかかげ",
+      "summary": "毛利元就の三男で、小早川家を継いだ。秀吉に従って伊予、のち筑前などを与えられた。",
+      "birthYear": 1533,
+      "birthEra": "天文2年",
+      "deathYear": 1597,
+      "deathEra": "慶長2年6月12日",
+      "tags": ["毛利家", "小早川家", "豊臣大名"]
+    },
+    {
+      "id": "mori-terumoto",
+      "name": "毛利輝元",
+      "kana": "もうり てるもと",
+      "summary": "毛利元就の孫で、中国地方の大名。秀吉に従って五大老となり、関ヶ原では西軍の総大将とされた。",
+      "birthYear": 1553,
+      "birthEra": "天文22年",
+      "deathYear": 1625,
+      "deathEra": "寛永2年4月27日",
+      "tags": ["毛利家", "戦国大名", "豊臣大名"]
+    },
+    {
+      "id": "kikkawa-hiroie",
+      "name": "吉川広家",
+      "kana": "きっかわ ひろいえ",
+      "summary": "吉川元春の三男で、吉川家を継いだ。関ヶ原では家康に通じて毛利勢を動かさなかった。",
+      "birthYear": 1561,
+      "birthEra": "永禄4年",
+      "deathYear": 1625,
+      "deathEra": "寛永2年9月21日",
+      "tags": ["毛利家", "吉川家"]
+    },
+    {
+      "id": "kuroda-yoshitaka",
+      "name": "黒田孝高",
+      "kana": "くろだ よしたか",
+      "summary": "官兵衛の名で知られる秀吉の家臣。中国・四国・九州攻めに従い、豊前の6郡を与えられた。",
+      "birthYear": 1546,
+      "birthEra": "天文15年",
+      "deathYear": 1604,
+      "deathEra": "慶長9年3月20日",
+      "tags": ["豊臣家臣", "播磨", "豊前"]
+    },
+    {
+      "id": "sengoku-hidehisa",
+      "name": "仙石秀久",
+      "kana": "せんごく ひでひさ",
+      "summary": "秀吉の古くからの家臣。讃岐を与えられたが、戸次川の戦いで大敗して所領を失い、のち信濃の小諸を領した。",
+      "birthYear": 1552,
+      "birthEra": "天文21年",
+      "deathYear": 1614,
+      "deathEra": "慶長19年5月6日",
+      "tags": ["豊臣家臣", "讃岐", "信濃"]
     }
   ]
 }

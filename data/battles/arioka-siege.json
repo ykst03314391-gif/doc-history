@@ -12,7 +12,7 @@
   ],
   "sides": [
     { "name": "織田軍", "outcome": "勝利", "commanders": [{ "person_id": "oda-nobunaga", "name": "織田信長" }], "participants": [{ "person_id": "toyotomi-hideyoshi", "name": "羽柴秀吉" }, { "person_id": "akechi-mitsuhide", "name": "明智光秀" }, { "person_id": "takigawa-kazumasu", "name": "滝川一益" }] },
-    { "name": "荒木方", "outcome": "敗北", "commanders": [{ "person_id": "araki-murashige", "name": "荒木村重" }], "participants": [{ "name": "荒木村次" }, { "name": "高山右近" }, { "name": "中川清秀" }], "note": "高山右近・中川清秀は早期に織田方へ降った" }
+    { "name": "荒木方", "outcome": "敗北", "commanders": [{ "person_id": "araki-murashige", "name": "荒木村重" }], "participants": [{ "name": "荒木村次" }, { "name": "高山右近" }, { "person_id": "nakagawa-kiyohide", "name": "中川清秀" }], "note": "高山右近・中川清秀は早期に織田方へ降った" }
   ],
   "result": "織田軍が有岡城を落とし、荒木村重は尼崎へ移って生き延びた。一族・家臣は処刑された",
   "relatedPeople": ["araki-murashige", "oda-nobunaga"],

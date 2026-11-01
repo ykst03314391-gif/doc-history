@@ -284,7 +284,7 @@
       "name": "土佐国長岡郡（岡豊城）",
       "prefecture": "高知県",
       "note": "家督を継ぎ、本拠の岡豊城に拠る。名将言行録が{{岡豐城に住す}}と書く（OCR本文）",
-      "sourceId": "meisho-genkoroku",
+      "links": [{"text": "岡豊城", "castle_id": "oko"}], "sourceId": "meisho-genkoroku",
       "until": 1575,
       "untilNote": "土佐全体に勢力を広げる。統一の年は要確認（ページ末尾の調査メモ）",
       "mapNote": "郡の境界データに土佐国の郡がないため、地図は塗らない",
@@ -526,7 +526,7 @@
       "month": 12,
       "title": "戸次川の戦いで信親を失う",
       "description": "九州攻めの先手として、仙石秀久らと豊後へ渡り、戸次川で島津勢と戦って敗れた。川角太閤記は{{長曽我部総領則討死す}}と書く。元親の退き方は伝えが分かれる。甫庵太閤記は、信親が手勢二十二騎とともに討死し、元親は信親の死を知らずに退いたとする。陰徳太平記は、元親が信親の死を見て自らも討死しようとしたが、十市新左衛門に引き立てられて馬に乗せられ、海路で伊予の日振島へ逃れたとする（日付は川角太閤記が12月17・18日ごろ、通説は12月12日。要確認、ページ末尾の調査メモ）",
-      "sourceId": [
+      "links": [{"text": "仙石秀久", "person_id": "sengoku-hidehisa"}], "sourceId": [
         "kawasumi-taikoki",
         "hoan-taikoki",
         "intoku-taiheiki"
@@ -575,7 +575,7 @@
       "month": 9,
       "title": "サン＝フェリペ号の漂着",
       "description": "甫庵太閤記と慶長見聞集は、慶長元年9月8日に南蛮船が浦戸の沖に流れ着き、長宗我部から知らせがあったと書く。甫庵太閤記によれば、長宗我部は水と酒肴・白米を与え、増田長盛に報告した。のちに銀子五千枚を与えられたという。船の大きさや生き残った人数は両書で食い違う（甫庵太閤記は長さ三十間、慶長見聞集は三十六間）。甫庵太閤記は、ここで元親の名を書かず{{長曽我部}}とだけ書く",
-      "sourceId": [
+      "links": [{"text": "増田長盛", "person_id": "mashita-nagamori"}], "sourceId": [
         "hoan-taikoki",
         "keicho-kenmonshu"
       ]
@@ -721,11 +721,11 @@
   "spots": [
     {
       "type": "城跡",
-      "name": "岡豊城跡",
+      "name": "岡豊城跡", "castle_id": "oko",
       "prefecture": "高知県",
       "city": "南国市",
       "description": "長宗我部氏の本拠。元親が家督を継いだ城（名将言行録が岡豊城に住んだと書く）",
-      "sourceId": "meisho-genkoroku",
+      "links": [{"text": "岡豊城", "castle_id": "oko"}], "sourceId": "meisho-genkoroku",
       "lat": 33.596,
       "lng": 133.6235,
       "approx": true
@@ -737,7 +737,7 @@
       "city": "南国市",
       "description": "岡豊城跡に隣接する資料館",
       "lat": 33.596,
-      "lng": 133.6235
+      "lng": 133.6235, "links": [{"text": "岡豊城", "castle_id": "oko"}]
     },
     {
       "type": "城跡",

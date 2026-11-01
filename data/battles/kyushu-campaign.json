@@ -13,7 +13,7 @@
   ],
   "links": [{ "text": "根白坂の戦い", "battle_id": "neshirozaka" }, { "text": "藤堂高虎", "person_id": "todo-takatora" }],
   "sides": [
-    { "name": "豊臣軍", "outcome": "勝利", "commanders": [{ "person_id": "toyotomi-hideyoshi", "name": "豊臣秀吉" }, { "person_id": "toyotomi-hidenaga", "name": "羽柴秀長" }], "participants": [{ "name": "宮部継潤" }, { "person_id": "todo-takatora", "name": "藤堂高虎" }, { "name": "黒田孝高" }, { "name": "小早川隆景" }], "note": "秀吉は肥後・薩摩路、秀長は豊後・日向路の大将" },
+    { "name": "豊臣軍", "outcome": "勝利", "commanders": [{ "person_id": "toyotomi-hideyoshi", "name": "豊臣秀吉" }, { "person_id": "toyotomi-hidenaga", "name": "羽柴秀長" }], "participants": [{ "name": "宮部継潤" }, { "person_id": "todo-takatora", "name": "藤堂高虎" }, { "person_id": "kuroda-yoshitaka", "name": "黒田孝高" }, { "person_id": "kobayakawa-takakage", "name": "小早川隆景" }], "note": "秀吉は肥後・薩摩路、秀長は豊後・日向路の大将" },
     { "name": "島津軍", "outcome": "敗北", "commanders": [{ "name": "島津義久" }], "participants": [{ "name": "島津義弘" }, { "name": "島津家久" }, { "name": "伊集院忠棟" }], "note": "義久は降伏し、本領を安堵された" }
   ],
   "result": "島津義久が降伏し、九州は秀吉に従った",

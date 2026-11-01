@@ -1,0 +1,15 @@
+{
+  "id": "wakayama",
+  "name": "和歌山城",
+  "kana": "わかやまじょう",
+  "type": "平山城",
+  "summary": "紀州攻めの後、羽柴秀長が紀伊の拠点として築かせたとされる城。城代には桑山重晴が置かれ、江戸時代には紀州徳川家の居城となった。",
+  "built": {"year": 1585, "era": "天正13年", "builder": "羽柴秀長", "note": "紀州攻めの後に秀長が築かせたとされ、普請には藤堂高虎らが関わったと伝わる", "uncertain": true},
+  "place": {"name": "紀伊国", "prefecture": "和歌山県", "city": "和歌山市", "address": "和歌山県和歌山市一番丁（和歌山城）", "lat": 34.2277, "lng": 135.1713},
+  "battles": [
+    {"year": 1585, "name": "紀州攻め", "battle_id": "kishu-campaign"}
+  ],
+  "relatedPeople": ["toyotomi-hidenaga", "kuwayama-shigeharu", "todo-takatora"],
+  "tags": ["豊臣家", "紀伊", "国史跡", "日本100名城"],
+  "updatedAt": "2026-11-02"
+}

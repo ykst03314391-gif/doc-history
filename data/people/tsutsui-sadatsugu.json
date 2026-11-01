@@ -479,7 +479,7 @@
     },
     {
       "type": "城跡",
-      "name": "伊賀上野城",
+      "name": "伊賀上野城", "castle_id": "iga-ueno",
       "prefecture": "三重県",
       "city": "伊賀市",
       "lat": 34.7706,

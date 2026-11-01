@@ -11,7 +11,7 @@
     "変からわずか十数日で光秀が敗れたことは「三日天下」と称される。この勝利により、秀吉は信長の後継争いで一気に優位に立った。"
   ],
   "sides": [
-    { "name": "羽柴軍", "outcome": "勝利", "commanders": [{ "person_id": "toyotomi-hideyoshi", "name": "羽柴秀吉" }], "participants": [{ "name": "黒田官兵衛" }, { "name": "池田恒興" }, { "name": "高山右近" }, { "name": "中川清秀" }] },
+    { "name": "羽柴軍", "outcome": "勝利", "commanders": [{ "person_id": "toyotomi-hideyoshi", "name": "羽柴秀吉" }], "participants": [{ "person_id": "kuroda-yoshitaka", "name": "黒田官兵衛" }, { "name": "池田恒興" }, { "name": "高山右近" }, { "person_id": "nakagawa-kiyohide", "name": "中川清秀" }] },
     { "name": "明智軍", "outcome": "敗北", "commanders": [{ "person_id": "akechi-mitsuhide", "name": "明智光秀" }], "participants": [{ "person_id": "saito-toshimitsu", "name": "斎藤利三" }, { "name": "明智秀満" }] }
   ],
   "result": "羽柴秀吉が明智光秀を破った",

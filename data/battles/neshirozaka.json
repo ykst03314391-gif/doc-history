@@ -51,13 +51,13 @@
           "name": "藤堂高虎"
         },
         {
-          "name": "黒田孝高"
+          "person_id": "kuroda-yoshitaka", "name": "黒田孝高"
         },
         {
           "name": "黒田長政"
         },
         {
-          "name": "小早川隆景"
+          "person_id": "kobayakawa-takakage", "name": "小早川隆景"
         },
         {
           "name": "吉川元長"
@@ -176,5 +176,5 @@
       "text": "藤堂高虎",
       "person_id": "todo-takatora"
     }
-  ]
+  , {"text": "小早川隆景", "person_id": "kobayakawa-takakage"}]
 }
