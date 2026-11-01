@@ -11,7 +11,7 @@
     "この敗戦により武田家は多くの重臣を失って勢力を弱め、やがて滅亡へと向かっていく。鉄砲の大量運用が注目される戦いだが、その実態には諸説もある。"
   ],
   "sides": [
-    { "name": "織田・徳川連合軍", "outcome": "勝利", "commanders": [{ "person_id": "oda-nobunaga", "name": "織田信長" }, { "name": "徳川家康" }], "participants": [{ "person_id": "toyotomi-hideyoshi", "name": "羽柴秀吉" }, { "person_id": "akechi-mitsuhide", "name": "明智光秀" }, { "name": "酒井忠次" }] },
+    { "name": "織田・徳川連合軍", "outcome": "勝利", "commanders": [{ "person_id": "oda-nobunaga", "name": "織田信長" }, { "name": "徳川家康" }], "participants": [{ "person_id": "toyotomi-hideyoshi", "name": "羽柴秀吉" }, { "name": "酒井忠次" }] },
     { "name": "武田軍", "outcome": "敗北", "commanders": [{ "name": "武田勝頼" }], "participants": [{ "name": "山県昌景" }, { "name": "馬場信春" }, { "name": "内藤昌豊" }] }
   ],
   "result": "織田・徳川連合軍が武田勝頼の軍を破った",
