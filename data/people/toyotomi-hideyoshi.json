@@ -746,7 +746,7 @@
     {
       "title": "中国攻め",
       "description": "天正5年（1577）に播磨へ入り、三木城・鳥取城を落として備中に至った。信長は佐久間信盛への折檻状で、その働きを{{羽柴藤吉郎数ケ国無比類}}と書く。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "三木城", "castle_id": "miki"}], "sourceId": "shincho-koki"
     },
     {
       "title": "信長の死後の主導権",
@@ -826,7 +826,7 @@
     },
     {
       "type": "城跡",
-      "name": "長浜城",
+      "name": "長浜城", "castle_id": "nagahama",
       "lat": 35.3787,
       "lng": 136.265,
       "approx": true,
@@ -836,7 +836,7 @@
     },
     {
       "type": "城跡",
-      "name": "備中高松城",
+      "name": "備中高松城", "castle_id": "bitchu-takamatsu",
       "lat": 34.6975,
       "lng": 133.8392,
       "approx": true,
@@ -846,7 +846,7 @@
     },
     {
       "type": "城跡",
-      "name": "三木城",
+      "name": "三木城", "castle_id": "miki",
       "lat": 34.7927,
       "lng": 134.9958,
       "approx": true,

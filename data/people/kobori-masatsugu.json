@@ -14,7 +14,7 @@
     "holder": "小堀遠州公顕彰会",
     "note": "部分。作者・制作年代は不明（Commons の「2013年」は画像の日付で、絵の制作年ではない）。いつ描かれたか、没後どれほどたった像かは確かめられていない。Commons の出典記載は長浜市長浜城歴史博物館の図録『戦国大名浅井氏と北近江』",
     "source": {"name": "Wikimedia Commons", "url": "https://commons.wikimedia.org/wiki/File:Kobori_Masatsugu.jpg"},
-    "license": "パブリックドメイン"
+    "license": "パブリックドメイン", "links": [{"text": "長浜城", "castle_id": "nagahama"}]
   },
   "aliases": [
     {"type": "通称", "value": "新介（新助）", "note": "多聞院日記は{{小堀新介}}（まれに{{小堀新助}}）と書く"},
@@ -445,7 +445,7 @@
       "section": "肖像",
       "title": "肖像画の作者・制作年",
       "text": "Commons の説明は作者不明で、所蔵は小堀遠州公顕彰会。出典は長浜市長浜城歴史博物館の図録とされるが、いつ描かれた像かは確かめていない。",
-      "checkWith": ["『戦国大名浅井氏と北近江 ―浅井三代から三姉妹へ―』（長浜市長浜城歴史博物館）の図版解説"]
+      "checkWith": ["『戦国大名浅井氏と北近江 ―浅井三代から三姉妹へ―』（長浜市長浜城歴史博物館）の図版解説"], "links": [{"text": "長浜城", "castle_id": "nagahama"}]
     }
   ],
   "sources": [

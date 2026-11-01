@@ -1,0 +1,16 @@
+{
+  "id": "nanao",
+  "name": "七尾城",
+  "kana": "ななおじょう",
+  "type": "山城",
+  "summary": "能登畠山氏の居城。天正5年（1577）、上杉謙信の攻撃で落城し、直後に手取川の戦いへとつながった。",
+  "built": {"note": "能登守護の畠山氏が16世紀前半に整えたとされる", "uncertain": true},
+  "abandoned": {"note": "天正5年（1577）の落城後、前田利家が入ったが、まもなく小丸山城へ移り、廃されたとされる", "uncertain": true},
+  "place": {"name": "能登国鹿島郡", "prefecture": "石川県", "city": "七尾市", "address": "石川県七尾市古城町（七尾城跡）", "lat": 37.0031, "lng": 136.9819},
+  "battles": [
+    {"year": 1577, "name": "手取川の戦い", "battle_id": "tedorigawa"}
+  ],
+  "relatedPeople": ["uesugi-kenshin"],
+  "tags": ["畠山家", "能登", "国史跡", "日本100名城"],
+  "updatedAt": "2026-11-02"
+}

@@ -165,7 +165,7 @@
     {
       "name": "佐治新介",
       "note": "有岡城の調略で使いを務めた（信長公記）。伊勢攻めでは亀山城に籠もり、金掘りで崩されて降った（天正記では{{佐治新助}}）",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "有岡城", "castle_id": "arioka"}], "sourceId": "shincho-koki"
     },
     {
       "name": "津田次右衛門",
@@ -330,7 +330,7 @@
           "text": "荒木村重",
           "person_id": "araki-murashige"
         }
-      ]
+      , {"text": "有岡城", "castle_id": "arioka"}]
     },
     {
       "year": 1580,
@@ -560,7 +560,7 @@
     {
       "title": "有岡城の調略と武田勝頼の追撃",
       "description": "有岡城で内応を引き出して城内に兵を入れ、甲州征伐では武田勝頼父子を田子で囲んで滅ぼした。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "有岡城", "castle_id": "arioka"}], "sourceId": "shincho-koki"
     },
     {
       "title": "関東の取次を任される",

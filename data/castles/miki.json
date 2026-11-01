@@ -1,0 +1,16 @@
+{
+  "id": "miki",
+  "name": "三木城",
+  "kana": "みきじょう",
+  "type": "平山城",
+  "summary": "播磨別所氏の居城。織田方から離反した別所長治が籠もり、羽柴秀吉の兵糧攻め（三木の干殺し）で開城した。",
+  "built": {"note": "明応年間（1492〜1501）に別所則治が築いたと伝わる", "uncertain": true},
+  "abandoned": {"year": 1615, "era": "元和元年", "note": "一国一城令で廃されたとされる"},
+  "place": {"name": "播磨国美嚢郡", "prefecture": "兵庫県", "city": "三木市", "address": "兵庫県三木市上の丸町（三木城跡）", "lat": 34.7972, "lng": 134.9925},
+  "battles": [
+    {"year": 1578, "name": "三木城攻め", "battle_id": "miki-siege"}
+  ],
+  "relatedPeople": ["toyotomi-hideyoshi", "toyotomi-hidenaga"],
+  "tags": ["別所家", "播磨", "国史跡"],
+  "updatedAt": "2026-11-02"
+}

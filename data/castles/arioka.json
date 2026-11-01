@@ -1,0 +1,17 @@
+{
+  "id": "arioka",
+  "name": "有岡城",
+  "kana": "ありおかじょう",
+  "alias": "伊丹城",
+  "type": "平城",
+  "summary": "荒木村重が伊丹城を改めて本拠とした城。天正6年（1578）に村重が信長に背き、約1年の籠城の末に落城した。",
+  "built": {"note": "伊丹氏の伊丹城を、荒木村重が天正2年（1574）ごろに改めて有岡城と名づけたとされる", "uncertain": true},
+  "abandoned": {"year": 1583, "era": "天正11年", "note": "落城後に池田氏が入ったが、まもなく廃されたとされる", "uncertain": true},
+  "place": {"name": "摂津国川辺郡", "prefecture": "兵庫県", "city": "伊丹市", "address": "兵庫県伊丹市伊丹（有岡城跡）", "lat": 34.7811, "lng": 135.4206},
+  "battles": [
+    {"year": 1578, "name": "有岡城の乱", "battle_id": "arioka-siege"}
+  ],
+  "relatedPeople": ["araki-murashige"],
+  "tags": ["荒木家", "摂津", "国史跡"],
+  "updatedAt": "2026-11-02"
+}

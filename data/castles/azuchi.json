@@ -1,0 +1,16 @@
+{
+  "id": "azuchi",
+  "name": "安土城",
+  "kana": "あづちじょう",
+  "type": "山城",
+  "summary": "織田信長が琵琶湖畔の安土山に築いた本拠。天主を備えた城として知られるが、本能寺の変の後に焼失した。",
+  "built": {"year": 1576, "era": "天正4年", "builder": "織田信長"},
+  "abandoned": {"year": 1585, "era": "天正13年", "note": "本能寺の変の後に天主などが焼け、豊臣秀次が八幡山城を築いたのに伴って廃されたとされる"},
+  "place": {"name": "近江国蒲生郡", "prefecture": "滋賀県", "city": "近江八幡市", "address": "滋賀県近江八幡市安土町下豊浦（安土城跡）", "lat": 35.1556, "lng": 136.1392},
+  "battles": [
+    {"year": 1582, "name": "本能寺の変", "battle_id": "honnoji-no-hen"}
+  ],
+  "relatedPeople": ["oda-nobunaga"],
+  "tags": ["織田家", "近江", "特別史跡", "日本100名城"],
+  "updatedAt": "2026-11-02"
+}

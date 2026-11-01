@@ -32,7 +32,7 @@
     "day": 29,
     "era": "天正6年3月13日",
     "note": "春日山城で没した。甲陽軍鑑は{{越国管領入道上杉謙信輝虎公四十九歳にて天正六年三月十三日に他界病死}}と書く。信長公記も天正6年4月7日の条で{{輝虎被相果付て}}と死去に触れる（Wikisource本文で確認）。月日は和暦の3月13日をグレゴリオ暦に直した（ユリウス暦では4月19日）。死因は、3月9日に倒れ意識が戻らなかったとされ、脳卒中とみる説が多い（Wikipedia経由）。同時代の史料で病名は確かめられない。要確認（ページ末尾の調査メモ）。",
-    "sourceId": ["koyo-gunkan", "shincho-koki", "wikipedia"]
+    "links": [{"text": "春日山城", "castle_id": "kasugayama"}], "sourceId": ["koyo-gunkan", "shincho-koki", "wikipedia"]
   },
   "birthplace": {
     "name": "越後国（春日山城）",
@@ -59,18 +59,18 @@
   ],
   "territories": [
     { "year": 1548, "name": "越後国（春日山城）", "prefecture": "新潟県", "note": "天文17年12月に家督を継いで越後の守護代の家を率いたとされる（Wikipedia経由）。越後全体の支配が固まった時期は確かめていない。要確認（ページ末尾の調査メモ）。", "sourceId": "wikipedia", "province": "越後国", "place": "春日山城跡", "approx": true, "lat": 37.1127, "lng": 138.2144 },
-    { "year": 1577, "name": "能登・越中方面", "prefecture": ["石川県", "富山県"], "note": "天正5年（1577）9月、能登の七尾城を落とし、加賀の手取川まで兵を進めたとされる（Wikipedia経由）。越中・能登のどこまでを直接支配したかは確かめていない。", "sourceId": "wikipedia", "mapNote": "支配の範囲が分からないため塗っていない（ピンは七尾城）", "place": "七尾城跡", "approx": true, "lat": 37.0206, "lng": 136.9553 }
+    { "year": 1577, "name": "能登・越中方面", "prefecture": ["石川県", "富山県"], "note": "天正5年（1577）9月、能登の七尾城を落とし、加賀の手取川まで兵を進めたとされる（Wikipedia経由）。越中・能登のどこまでを直接支配したかは確かめていない。", "links": [{"text": "七尾城", "castle_id": "nanao"}], "sourceId": "wikipedia", "mapNote": "支配の範囲が分からないため塗っていない（ピンは七尾城）", "place": "七尾城跡", "approx": true, "lat": 37.0206, "lng": 136.9553 }
   ],
   "timeline": [
-    { "year": 1530, "title": "誕生", "place": "春日山城", "lat": 37.1127, "lng": 138.2144, "approx": true, "description": "越後に生まれたとされる。甲陽軍鑑は{{享禄三年庚寅歳上杉謙信輝虎公誕生}}と書く。", "sourceId": "koyo-gunkan" },
-    { "year": 1548, "title": "家督を継ぐ", "place": "春日山城", "lat": 37.1127, "lng": 138.2144, "approx": true, "description": "兄・長尾晴景に代わって家督を継いだとされる（12月。Wikipedia経由）。", "sourceId": "wikipedia" },
+    { "year": 1530, "title": "誕生", "place": "春日山城", "castle_id": "kasugayama", "lat": 37.1127, "lng": 138.2144, "approx": true, "description": "越後に生まれたとされる。甲陽軍鑑は{{享禄三年庚寅歳上杉謙信輝虎公誕生}}と書く。", "sourceId": "koyo-gunkan" },
+    { "year": 1548, "title": "家督を継ぐ", "place": "春日山城", "castle_id": "kasugayama", "lat": 37.1127, "lng": 138.2144, "approx": true, "description": "兄・長尾晴景に代わって家督を継いだとされる（12月。Wikipedia経由）。", "sourceId": "wikipedia" },
     { "year": 1553, "title": "川中島の対陣が始まる", "description": "武田信玄と北信濃をめぐって川中島で対陣する。川中島の戦いは何度あったか、いつか、史料によって食い違う。甲陽軍鑑は天文23年（1554）6月の記事を載せ、常山紀談は{{川中島の戦異説多く分明ならず}}の趣旨の注記を付ける（OCR本文による）。ここでは合戦ページに合わせて天文22年（1553）を最初とした。要確認（ページ末尾の調査メモ）。", "battle_id": "kawanakajima", "links": [{"text": "武田信玄", "person_id": "takeda-shingen"}], "sourceId": ["koyo-gunkan", "jozan-kidan"], "uncertain": true },
     { "year": 1561, "month": 3, "title": "関東管領となる", "place": "鶴岡八幡宮（鎌倉市）", "lat": 35.3260, "lng": 139.5565, "approx": true, "description": "鎌倉で上杉憲政から関東管領の職と上杉の名を譲られたとされる（閏3月16日。Wikipedia経由）。甲陽軍鑑は譲渡を天文20年のこととして書く。", "sourceId": ["wikipedia", "koyo-gunkan"] },
     { "year": 1561, "month": 9, "title": "第四次川中島", "description": "武田信玄と最も激しく戦ったとされる合戦。甲陽軍鑑は永禄4年8月に謙信が出陣し、西条山に陣取ったと書く。常山紀談は9月10日の戦いを書くが、同書自身が軍鑑の年月の誤りを指摘している。信玄と謙信の一騎打ちの話は同時代の史料では確かめられない。", "battle_id": "kawanakajima", "links": [{"text": "武田信玄", "person_id": "takeda-shingen"}], "sourceId": ["koyo-gunkan", "jozan-kidan"] },
     { "year": 1570, "month": 12, "title": "法号「謙信」", "description": "不識庵謙信と名乗ったとされる（Wikipedia経由）。", "sourceId": "wikipedia" },
     { "year": 1577, "month": 8, "title": "信長公記が記す柴田勝家の北国出陣", "place": "加賀国・手取川", "lat": 36.5, "lng": 136.6, "approx": true, "description": "信長公記は天正5年8月8日の条に、柴田勝家を大将に滝川一益・羽柴秀吉・丹羽長秀らが北国へ出陣し、{{賀州へ乱入添川手取川打越}}と書く。続けて{{羽柴筑前御届をも不申上帰陣仕候段曲事之由被成御逆鱗}}（秀吉が断りなく帰陣して信長の怒りを買った）と書くが、謙信の名も、合戦そのものも書かない。", "links": [{ "text": "滝川一益", "person_id": "takigawa-kazumasu" }, { "text": "羽柴秀吉", "person_id": "toyotomi-hideyoshi" }, {"text": "柴田勝家", "person_id": "shibata-katsuie"}, {"text": "丹羽長秀", "person_id": "niwa-nagahide"}], "sourceId": "shincho-koki" },
-    { "year": 1577, "month": 9, "title": "七尾城を落とし、手取川の戦い", "place": "七尾城", "lat": 37.0206, "lng": 136.9553, "approx": true, "description": "七尾城の落城を9月15日、手取川の戦いを9月23日とする（Wikipedia経由）。上杉方が織田軍を破ったと伝わるが、織田方の信長公記は合戦を書かない。規模や経過は考察記事で扱う。", "battle_id": "tedorigawa", "sourceId": ["wikipedia", "shincho-koki"] },
-    { "year": 1578, "month": 3, "day": 13, "title": "急死", "place": "春日山城", "lat": 37.1127, "lng": 138.2144, "approx": true, "description": "春日山城で没する。甲陽軍鑑は{{天正六年三月十三日に他界病死}}と書く。3月9日に倒れたとされる（Wikipedia経由）。次の遠征の準備中だったと語られるが、その準備を記す同時代の史料は確かめていない。", "sourceId": ["koyo-gunkan", "wikipedia"] },
+    { "year": 1577, "month": 9, "title": "七尾城を落とし、手取川の戦い", "place": "七尾城", "castle_id": "nanao", "lat": 37.0206, "lng": 136.9553, "approx": true, "description": "七尾城の落城を9月15日、手取川の戦いを9月23日とする（Wikipedia経由）。上杉方が織田軍を破ったと伝わるが、織田方の信長公記は合戦を書かない。規模や経過は考察記事で扱う。", "battle_id": "tedorigawa", "links": [{"text": "七尾城", "castle_id": "nanao"}], "sourceId": ["wikipedia", "shincho-koki"] },
+    { "year": 1578, "month": 3, "day": 13, "title": "急死", "place": "春日山城", "castle_id": "kasugayama", "lat": 37.1127, "lng": 138.2144, "approx": true, "description": "春日山城で没する。甲陽軍鑑は{{天正六年三月十三日に他界病死}}と書く。3月9日に倒れたとされる（Wikipedia経由）。次の遠征の準備中だったと語られるが、その準備を記す同時代の史料は確かめていない。", "links": [{"text": "春日山城", "castle_id": "kasugayama"}], "sourceId": ["koyo-gunkan", "wikipedia"] },
     { "year": 1578, "month": 4, "day": 7, "title": "信長、越中へ手当てをする", "description": "信長公記は天正6年4月7日の条に、越中の神保氏に黄金などを与え、{{輝虎被相果付て}}、佐々権左衛門を添えて越中へ入らせたと書く。織田方が謙信の死を知って動いたことを示す。", "sourceId": "shincho-koki" }
   ],
   "episodes": [
@@ -134,11 +134,11 @@
     }
   ],
   "spots": [
-    { "type": "城跡", "name": "春日山城跡", "prefecture": "新潟県", "city": "上越市", "lat": 37.1127, "lng": 138.2144, "approx": true, "description": "謙信の本拠。国の史跡。", "sourceId": "wikipedia" },
+    { "type": "城跡", "name": "春日山城跡", "castle_id": "kasugayama", "prefecture": "新潟県", "city": "上越市", "lat": 37.1127, "lng": 138.2144, "approx": true, "description": "謙信の本拠。国の史跡。", "sourceId": "wikipedia" },
     { "type": "神社仏閣", "name": "林泉寺（春日山林泉寺）", "prefecture": "新潟県", "city": "上越市", "lat": 37.1083, "lng": 138.2092, "approx": true, "description": "謙信が幼いころ学んだ寺とされ、墓所があるとされる。のち景勝の時代に米沢へも移され、同名の寺が2か所ある（観光案内による）。", "urlLabel": "公式サイトは確かめていない" },
     { "type": "神社仏閣", "name": "上杉神社", "prefecture": "山形県", "city": "米沢市", "lat": 37.9156, "lng": 140.1250, "approx": true, "description": "謙信を祀る。米沢は後の上杉家の本拠。肖像画（上杉謙信像）を所蔵する。" },
     { "type": "その他", "name": "手取川古戦場", "prefecture": "石川県", "city": "白山市", "lat": 36.51, "lng": 136.56, "approx": true, "description": "手取川の戦いの地とされる。町の中心付近のおおよその位置。" },
-    { "type": "城跡", "name": "七尾城跡", "prefecture": "石川県", "city": "七尾市", "lat": 37.0206, "lng": 136.9553, "approx": true, "description": "能登畠山氏の城。天正5年9月に上杉方が落とした。国の史跡。", "sourceId": "wikipedia" }
+    { "type": "城跡", "name": "七尾城跡", "castle_id": "nanao", "prefecture": "石川県", "city": "七尾市", "lat": 37.0206, "lng": 136.9553, "approx": true, "description": "能登畠山氏の城。天正5年9月に上杉方が落とした。国の史跡。", "sourceId": "wikipedia" }
   ],
   "graves": {
     "status": "諸説あり",

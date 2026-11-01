@@ -1,0 +1,16 @@
+{
+  "id": "bitchu-takamatsu",
+  "name": "備中高松城",
+  "kana": "びっちゅうたかまつじょう",
+  "type": "平城",
+  "summary": "湿地に囲まれた毛利方の城。天正10年（1582）、羽柴秀吉が堤を築いて水攻めにし、その最中に本能寺の変の報が届いた。",
+  "built": {"note": "備中の国衆の石川氏が築いたとされ、のち清水宗治が城主となった", "uncertain": true},
+  "abandoned": {"note": "江戸時代の初めに廃されたとされる", "uncertain": true},
+  "place": {"name": "備中国賀陽郡", "prefecture": "岡山県", "city": "岡山市北区", "address": "岡山県岡山市北区高松（備中高松城跡）", "lat": 34.6797, "lng": 133.8072},
+  "battles": [
+    {"year": 1582, "name": "本能寺の変", "battle_id": "honnoji-no-hen"}
+  ],
+  "relatedPeople": ["toyotomi-hideyoshi"],
+  "tags": ["毛利方", "備中", "国史跡", "続日本100名城"],
+  "updatedAt": "2026-11-02"
+}

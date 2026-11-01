@@ -1,0 +1,16 @@
+{
+  "id": "sakamoto",
+  "name": "坂本城",
+  "kana": "さかもとじょう",
+  "type": "平城",
+  "summary": "比叡山焼き討ちの後、明智光秀が琵琶湖畔に築いた居城。山崎の戦いの後、明智秀満が城に火を放ち落城した。",
+  "built": {"year": 1571, "era": "元亀2年", "builder": "明智光秀"},
+  "abandoned": {"year": 1586, "era": "天正14年", "note": "大津城の築城に伴って廃されたとされる", "uncertain": true},
+  "place": {"name": "近江国滋賀郡", "prefecture": "滋賀県", "city": "大津市", "address": "滋賀県大津市下阪本（坂本城跡）", "lat": 35.0644, "lng": 135.8775},
+  "battles": [
+    {"year": 1582, "name": "山崎の戦い", "battle_id": "yamazaki"}
+  ],
+  "relatedPeople": ["akechi-mitsuhide"],
+  "tags": ["明智家", "近江"],
+  "updatedAt": "2026-11-02"
+}

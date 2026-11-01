@@ -14,6 +14,7 @@
       "builtYear": null,
       "builtNote": "南北朝期の築城と伝わる",
       "summary": "越後長尾氏・上杉氏の本拠。上杉謙信が生涯の居城とし、春日山全体に曲輪を連ねた大規模な山城。",
+      "detail": true,
       "relatedPeople": ["uesugi-kenshin"],
       "relatedBattles": [],
       "tags": ["上杉家", "越後", "国史跡", "日本100名城"]
@@ -32,6 +33,7 @@
       "builtYear": null,
       "builtNote": "能登畠山氏が戦国期に整備",
       "summary": "能登畠山氏の居城。天正5年（1577）、上杉謙信の攻撃で落城し、直後に手取川の戦いへとつながった。",
+      "detail": true,
       "relatedPeople": ["uesugi-kenshin"],
       "relatedBattles": ["tedorigawa"],
       "tags": ["畠山家", "能登", "国史跡", "日本100名城"]
@@ -50,6 +52,7 @@
       "builtYear": null,
       "builtNote": "室町期、尾張守護斯波氏が築いたと伝わる",
       "summary": "尾張の中心地。織田信長が那古野から移って本拠とし、本能寺の変後には織田家の後継を決める清洲会議の舞台となった。",
+      "detail": true,
       "relatedPeople": ["oda-nobunaga"],
       "relatedBattles": [],
       "tags": ["織田家", "尾張", "清洲会議"]
@@ -69,6 +72,7 @@
       "builtYear": null,
       "builtNote": "稲葉山城として斎藤氏が整備",
       "summary": "斎藤氏の稲葉山城を永禄10年（1567）に織田信長が攻略し、「岐阜」と改めて本拠とした。のちに嫡男・信忠に譲られた。",
+      "detail": true,
       "relatedPeople": ["oda-nobunaga", "oda-nobutada"],
       "relatedBattles": [],
       "tags": ["織田家", "美濃", "国史跡", "日本100名城"]
@@ -87,6 +91,7 @@
       "builtYear": 1576,
       "builder": "織田信長",
       "summary": "織田信長が琵琶湖畔の安土山に築いた本拠。天主を備えた城として知られるが、本能寺の変の後に焼失した。",
+      "detail": true,
       "relatedPeople": ["oda-nobunaga"],
       "relatedBattles": ["honnoji-no-hen"],
       "tags": ["織田家", "近江", "特別史跡", "日本100名城"]
@@ -105,6 +110,7 @@
       "builtYear": 1575,
       "builder": "羽柴秀吉",
       "summary": "浅井氏滅亡後に北近江を与えられた羽柴秀吉が、今浜を「長浜」と改めて築いた城。秀吉が初めて持った居城。",
+      "detail": true,
       "relatedPeople": ["toyotomi-hideyoshi"],
       "relatedBattles": [],
       "tags": ["豊臣家", "近江"]
@@ -123,6 +129,7 @@
       "builtYear": 1571,
       "builder": "明智光秀",
       "summary": "比叡山焼き討ちの後、明智光秀が琵琶湖畔に築いた居城。山崎の戦いの後、明智秀満が城に火を放ち落城した。",
+      "detail": true,
       "relatedPeople": ["akechi-mitsuhide"],
       "relatedBattles": ["yamazaki"],
       "tags": ["明智家", "近江"]
@@ -141,6 +148,7 @@
       "builtYear": 1577,
       "builder": "明智光秀",
       "summary": "丹波攻略の拠点として明智光秀が築いた城。天正10年（1582）、光秀はここから本能寺へ向けて出陣した。",
+      "detail": true,
       "relatedPeople": ["akechi-mitsuhide"],
       "relatedBattles": ["honnoji-no-hen"],
       "tags": ["明智家", "丹波"]
@@ -180,6 +188,7 @@
       "builtYear": null,
       "builtNote": "伊丹氏の伊丹城を荒木村重が改修・改称",
       "summary": "荒木村重が伊丹城を改めて本拠とした城。天正6年（1578）に村重が信長に背き、約1年の籠城の末に落城した。",
+      "detail": true,
       "relatedPeople": ["araki-murashige"],
       "relatedBattles": ["arioka-siege"],
       "tags": ["荒木家", "摂津", "国史跡"]
@@ -198,6 +207,7 @@
       "builtYear": null,
       "builtNote": "播磨別所氏の居城",
       "summary": "播磨別所氏の居城。織田方から離反した別所長治が籠もり、羽柴秀吉の兵糧攻め（三木の干殺し）で開城した。",
+      "detail": true,
       "relatedPeople": ["toyotomi-hideyoshi", "toyotomi-hidenaga"],
       "relatedBattles": ["miki-siege"],
       "tags": ["別所家", "播磨", "国史跡"]
@@ -216,6 +226,7 @@
       "builtYear": 1583,
       "builder": "羽柴秀吉",
       "summary": "石山本願寺の跡地に羽柴秀吉が築いた天下統一の本拠。現在の城跡の石垣・堀は、江戸時代に徳川幕府が再築したもの。",
+      "detail": true,
       "relatedPeople": ["toyotomi-hideyoshi"],
       "relatedBattles": [],
       "tags": ["豊臣家", "摂津", "特別史跡", "日本100名城"]
@@ -254,6 +265,7 @@
       "builtYear": null,
       "builtNote": "毛利方の清水宗治が守った沼城",
       "summary": "湿地に囲まれた毛利方の城。天正10年（1582）、羽柴秀吉が堤を築いて水攻めにし、その最中に本能寺の変の報が届いた。",
+      "detail": true,
       "relatedPeople": ["toyotomi-hideyoshi"],
       "relatedBattles": ["honnoji-no-hen"],
       "tags": ["毛利方", "備中", "国史跡", "続日本100名城"]

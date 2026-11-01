@@ -215,7 +215,7 @@
       "relation": "兄",
       "name": "織田信広（三郎五郎）",
       "note": "信長公記は{{上総介殿別服の御舎兄三郎五郎殿}}と書く（母が違う兄）。{{美濃国と被仰合}}せて清洲城を乗っ取ろうとしたが、企ては失敗した。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "清洲城", "castle_id": "kiyosu"}], "sourceId": "shincho-koki"
     },
     {
       "relation": "弟",
@@ -279,7 +279,7 @@
     {
       "person_id": "niwa-nagahide", "name": "丹羽長秀（五郎左衛門）",
       "note": "安土城の普請を{{惟住五郎左衛門に被仰付}}（信長公記 巻九）。惟住は長秀が名乗った姓。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "安土城", "castle_id": "azuchi"}], "sourceId": "shincho-koki"
     },
     {
       "person_id": "toyotomi-hideyoshi",
@@ -340,7 +340,7 @@
       "prefecture": "愛知県",
       "province": "尾張国",
       "note": "父から那古野城を譲られ、のち清洲城に入った。信長公記は岩倉の落城のあと{{清洲に至て御居城候也}}と書く。岩倉落城の年は書かれていないので、ここでは永禄2年ごろに置いた（要確認、ページ末尾の調査メモ）。",
-      "sourceId": "shincho-koki",
+      "links": [{"text": "清洲城", "castle_id": "kiyosu"}], "sourceId": "shincho-koki",
       "place": "清洲城",
       "lat": 35.2153,
       "lng": 136.8394
@@ -420,11 +420,11 @@
       "month": 11,
       "day": 2,
       "title": "弟・勘十郎を清洲で殺す",
-      "place": "清洲城",
+      "place": "清洲城", "castle_id": "kiyosu",
       "lat": 35.2153,
       "lng": 136.8394,
       "description": "信長は病と偽り、見舞いに来た弟を、清洲城の北矢蔵の天主次の間で、河尻青貝に命じて殺させた。信長公記は日付を{{弘治四年戊午霜月二日}}と書き、弘治4年は永禄元年（1558）にあたる。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "清洲城", "castle_id": "kiyosu"}], "sourceId": "shincho-koki"
     },
     {
       "year": 1560,
@@ -439,7 +439,7 @@
       "year": 1567,
       "month": 8,
       "title": "稲葉山城を落とし、岐阜と改める",
-      "place": "岐阜城",
+      "place": "岐阜城", "castle_id": "gifu",
       "lat": 35.4339,
       "lng": 136.7822,
       "description": "美濃三人衆が味方に付くと申し出たのち、8月15日に斎藤龍興が稲葉山を退いた。信長公記は{{井口と申を今度改て岐阜と名付させられ}}たと書く。年は書かれていない。",
@@ -559,7 +559,7 @@
       "month": 2,
       "day": 23,
       "title": "安土に移り住む",
-      "place": "安土城",
+      "place": "安土城", "castle_id": "azuchi",
       "lat": 35.1556,
       "lng": 136.1392,
       "description": "天正4年1月中旬から安土山の普請を始め、2月23日に安土へ移る（信長公記 巻九）。普請は丹羽長秀が受け持った。",
@@ -799,7 +799,7 @@
   "spots": [
     {
       "type": "城跡",
-      "name": "岐阜城",
+      "name": "岐阜城", "castle_id": "gifu",
       "lat": 35.4339,
       "lng": 136.7822,
       "prefecture": "岐阜県",
@@ -808,7 +808,7 @@
     },
     {
       "type": "城跡",
-      "name": "安土城跡",
+      "name": "安土城跡", "castle_id": "azuchi",
       "lat": 35.1556,
       "lng": 136.1392,
       "prefecture": "滋賀県",
@@ -817,7 +817,7 @@
     },
     {
       "type": "城跡",
-      "name": "清洲城",
+      "name": "清洲城", "castle_id": "kiyosu",
       "lat": 35.2153,
       "lng": 136.8394,
       "prefecture": "愛知県",

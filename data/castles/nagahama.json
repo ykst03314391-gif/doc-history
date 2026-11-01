@@ -1,0 +1,13 @@
+{
+  "id": "nagahama",
+  "name": "長浜城",
+  "kana": "ながはまじょう",
+  "type": "平城",
+  "summary": "浅井氏滅亡後に北近江を与えられた羽柴秀吉が、今浜を「長浜」と改めて築いた城。秀吉が初めて持った居城。",
+  "built": {"year": 1575, "era": "天正3年", "builder": "羽柴秀吉", "note": "天正2年から築き始めたともいわれる", "uncertain": true},
+  "abandoned": {"year": 1615, "era": "元和元年", "note": "彦根城の築城に伴って廃され、資材が彦根へ運ばれたとされる"},
+  "place": {"name": "近江国坂田郡", "prefecture": "滋賀県", "city": "長浜市", "address": "滋賀県長浜市公園町（豊公園）", "lat": 35.3769, "lng": 136.2614},
+  "relatedPeople": ["toyotomi-hideyoshi"],
+  "tags": ["豊臣家", "近江"],
+  "updatedAt": "2026-11-02"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "tanba-kameyama",
+  "name": "丹波亀山城",
+  "kana": "たんばかめやまじょう",
+  "type": "平山城",
+  "summary": "丹波攻略の拠点として明智光秀が築いた城。天正10年（1582）、光秀はここから本能寺へ向けて出陣した。",
+  "built": {"year": 1577, "era": "天正5年", "builder": "明智光秀", "note": "築城年には諸説がある", "uncertain": true},
+  "abandoned": {"era": "明治初め", "note": "明治の初めに廃され、建物は取り壊された"},
+  "place": {"name": "丹波国桑田郡", "prefecture": "京都府", "city": "亀岡市", "address": "京都府亀岡市荒塚町（亀山城跡）", "lat": 35.0147, "lng": 135.5767},
+  "battles": [
+    {"year": 1582, "name": "本能寺の変", "battle_id": "honnoji-no-hen"}
+  ],
+  "relatedPeople": ["akechi-mitsuhide"],
+  "tags": ["明智家", "丹波"],
+  "updatedAt": "2026-11-02"
+}
