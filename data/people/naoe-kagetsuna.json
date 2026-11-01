@@ -1,0 +1,524 @@
+{
+  "id": "naoe-kagetsuna",
+  "name": "直江景綱",
+  "kana": "なおえ かげつな",
+  "summary": "越後与板の城主。長尾為景・晴景・景虎（のちの上杉謙信）の三代に仕え、奉行として政務を担い、朝廷・幕府・公家との折衝にもあたった。娘のお船は直江信綱、のち直江兼続に嫁ぎ、直江の名跡は兼続が継いだ。天正5年（1577）に没したとされる。",
+  "lens": {
+    "title": "謙信を支えた「奉行」景綱とは何者か",
+    "question": "越後の政務と外交を担った謙信の重臣という景綱の像は、どの史料から描かれ、どこまで同時代の文書で確かめられるのか。",
+    "view": ""
+  },
+  "aliases": [
+    {
+      "type": "通称",
+      "value": "神五郎",
+      "note": "仮名。Wikipedia経由"
+    },
+    {
+      "type": "通称",
+      "value": "与兵衛尉",
+      "note": "別名。Wikipedia経由"
+    },
+    {
+      "type": "その他",
+      "value": "実綱・政綱",
+      "note": "景綱以前の名乗り（Wikipedia経由）"
+    },
+    {
+      "type": "法名",
+      "value": "固岳道監",
+      "note": "戒名。Wikipedia経由"
+    }
+  ],
+  "nameHistory": [
+    {
+      "era": "年不詳",
+      "value": "直江",
+      "note": "甲陽軍鑑は、越後の{{家老侍大将衆}}の一覧に{{直江}}とだけ書き、実名を書かない。第四次川中島の記事でも{{直江二千の侍大将に小荷駄奉行を申付}}と呼ぶ。この{{直江}}が景綱その人と読むのはWikipedia経由の整理による。",
+      "sourceId": [
+        "koyo-gunkan",
+        "wikipedia"
+      ]
+    },
+    {
+      "era": "年不詳",
+      "value": "実綱",
+      "note": "初名。Wikipedia経由で、同時代の文書での確認は未了。",
+      "sourceId": "wikipedia",
+      "uncertain": true
+    },
+    {
+      "year": 1562,
+      "era": "永禄5年",
+      "value": "政綱",
+      "note": "実綱から政綱へ改めたとされる（Wikipedia経由）。この年に大和守に任じられたともされる。",
+      "sourceId": "wikipedia",
+      "uncertain": true
+    },
+    {
+      "year": 1564,
+      "era": "永禄7年",
+      "value": "景綱",
+      "note": "長尾景虎から一字（景）をもらって改めたとされる（Wikipedia経由）。同時代の文書での署名の変化は確かめていない。要確認（ページ末尾の調査メモ）。",
+      "links": [{"text": "長尾景虎", "person_id": "uesugi-kenshin"}], "sourceId": "wikipedia",
+      "uncertain": true
+    }
+  ],
+  "birth": {
+    "year": 1509,
+    "era": "永正6年",
+    "uncertain": true,
+    "note": "没年の享年69から逆算した年とされ、確定していない（Wikipedia経由）。月日は不明。",
+    "sourceId": "wikipedia"
+  },
+  "death": {
+    "year": 1577,
+    "month": 3,
+    "day": 24,
+    "era": "天正5年3月5日",
+    "note": "没年月日と享年69はWikipedia経由。月日は和暦の3月5日をグレゴリオ暦に直した。同時代の文書では確かめていない。要確認（ページ末尾の調査メモ）。",
+    "sourceId": "wikipedia"
+  },
+  "birthplace": {
+    "name": "越後国与板（本与板城）",
+    "prefecture": "新潟県",
+    "city": "長岡市",
+    "lat": 37.518,
+    "lng": 138.813,
+    "approx": true
+  },
+  "ranks": [
+    {
+      "year": 1562,
+      "title": "大和守",
+      "note": "永禄5年に任官したとされる（Wikipedia経由）。口宣案などは確かめていない。要確認（ページ末尾の調査メモ）。",
+      "sourceId": "wikipedia"
+    }
+  ],
+  "family": [
+    {
+      "relation": "父",
+      "name": "直江親綱",
+      "note": "母は不明（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "relation": "その他",
+      "name": "直江重綱・篠井正信",
+      "note": "兄弟とされる（Wikipedia経由）。どちらが兄かは確かめていない。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "relation": "正室",
+      "name": "北条輔広の娘",
+      "note": "越後の北条（きたじょう）氏の出とされ、相模の後北条氏とは別の家（Wikipedia経由。確かめていない）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "relation": "継室",
+      "name": "正国尼（山吉政久の娘）",
+      "note": "実子がなく、のち隠居したとされる（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "relation": "継室",
+      "name": "山吉政応の娘",
+      "note": "山吉豊守の姉。正国尼の隠居後に正室になったとされる（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "relation": "子",
+      "name": "伊勢松",
+      "note": "長男とされる（Wikipedia経由）。のちに家を継いだ形跡は確かめられない。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "relation": "娘",
+      "name": "お船（船・お船の方）",
+      "note": "景綱の娘で、婿養子の直江信綱の妻になったとされる（Wikipedia経由）。景綱の没後、天正9年に信綱が亡くなると、直江兼続が婿となって直江家を継いだ（兼続との縁組は景綱の死後のため、家系の欄には兼続を置かず、兼続のページで扱う）。",
+      "links": [
+        {
+          "text": "直江兼続",
+          "person_id": "naoe-kanetsugu"
+        }
+      ],
+      "sourceId": "wikipedia"
+    },
+    {
+      "relation": "養子",
+      "name": "直江信綱",
+      "note": "娘のお船の婿として直江家に入った婿養子（Wikipedia経由）。景綱の没後、天正9年に亡くなったとされる。",
+      "sourceId": "wikipedia"
+    }
+  ],
+  "lords": [
+    {
+      "person_id": "nagao-tamekage",
+      "name": "長尾為景",
+      "note": "越後守護代。為景に仕えたこと自体はWikipediaの記述による。仕え始めた年は不明。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "name": "長尾晴景",
+      "note": "為景の子。天文16年に晴景と景虎が争ったとき、景虎を支援したとされる（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "person_id": "uesugi-kenshin",
+      "name": "上杉謙信（長尾景虎）",
+      "note": "天文12年ごろ、景虎を守護代に擁立する動きの中心の一人だったとされる（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    }
+  ],
+  "retainers": [],
+  "territories": [
+    {
+      "year": 1514,
+      "name": "越後国与板（本与板城）",
+      "prefecture": "新潟県",
+      "note": "永正11年、長尾為景が飯沼氏を滅ぼしたあと、その居城だった本与板城の城主になったとされる（Wikipedia経由）。ただし景綱は永正6年生まれとされ、そのとき5歳になるため、父の親綱の事績を景綱に重ねている可能性がある。山東郡（三島郡）の城主とされる。要確認（ページ末尾の調査メモ）。",
+      "links": [{"text": "長尾為景", "person_id": "nagao-tamekage"}], "sourceId": "wikipedia",
+      "mapNote": "三島郡全体を領したかは分からず、地図は塗らない（ピンは与板の町の中心付近）。",
+      "place": "本与板城（与板）",
+      "lat": 37.518,
+      "lng": 138.813,
+      "approx": true
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1509,
+      "title": "誕生",
+      "description": "永正6年に生まれたとされる。没年の享年69から逆算した年で、確定していない。",
+      "sourceId": "wikipedia",
+      "uncertain": true
+    },
+    {
+      "year": 1539,
+      "title": "天文の乱で入嗣推進派に加わる",
+      "description": "越後の天文の乱で、中条藤資や平子氏らとともに、伊達家から養子を迎える方針を進める側（入嗣推進派）を形成したとされる（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "year": 1542,
+      "title": "伊達家へ使者に立つ",
+      "description": "天文11年、伊達家へ時宗丸（伊達実元）を迎える使者を務めたとされる（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "year": 1543,
+      "title": "景虎の擁立に動く",
+      "description": "天文12年、長尾景虎を守護代に擁立しようとする動きの中心の一人になったとされる（Wikipedia経由）。",
+      "links": [
+        {
+          "text": "長尾景虎",
+          "person_id": "uesugi-kenshin"
+        }
+      ],
+      "sourceId": "wikipedia"
+    },
+    {
+      "year": 1547,
+      "title": "兄・晴景との抗争で景虎を支援",
+      "description": "天文16年、晴景と景虎が争ったとき、景虎を支援したとされる（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "year": 1556,
+      "title": "奉行として政務を担う",
+      "description": "弘治2年、本庄実乃らとともに奉行として政務の多くを担ったとされる（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "year": 1559,
+      "title": "景虎の上洛で朝廷・幕府と折衝",
+      "description": "永禄2年、景虎の二度目の上洛にあたり、朝廷・幕府との折衝にあたったとされる（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "year": 1560,
+      "title": "近衛前久の来訪を饗応し、春日山城を守る",
+      "description": "永禄3年、公家の近衛前久が越後を訪れたとき饗応役を務め、同じ年に景虎が関東へ出陣したあいだは、吉江景資とともに春日山城の留守居を担ったとされる（Wikipedia経由）。",
+      "links": [
+        {
+          "text": "春日山城",
+          "castle_id": "kasugayama"
+        }
+      ],
+      "sourceId": "wikipedia"
+    },
+    {
+      "year": 1561,
+      "month": 9,
+      "title": "第四次川中島で小荷駄奉行を務める",
+      "description": "甲陽軍鑑は、謙信が{{直江二千の侍大将に小荷駄奉行を申付}}たと書く。武田方の軍学書の記述で、{{直江}}が景綱を指すのはWikipedia経由の整理による。年月の誤りも多い。",
+      "battle_id": "kawanakajima",
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ],
+      "sourceId": [
+        "koyo-gunkan",
+        "wikipedia"
+      ]
+    },
+    {
+      "year": 1575,
+      "title": "上杉家軍役帳で旗本衆に載る",
+      "description": "天正3年の「上杉家軍役帳」で、305人の軍役を課され、旗本衆のなかでも重い立場にあったとされる（Wikipedia経由。軍役帳そのものは未確認）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "year": 1576,
+      "title": "能登遠征で石動山城を守る",
+      "description": "天正4年、能登遠征に従い、石動山城を守ったとされる（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "year": 1577,
+      "month": 3,
+      "day": 24,
+      "title": "没",
+      "description": "天正5年3月5日に没したとされる。享年69といわれる（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    }
+  ],
+  "episodes": [
+    {
+      "title": "川中島の小荷駄奉行",
+      "body": "甲陽軍鑑は、第四次川中島で謙信が{{直江二千の侍大将に小荷駄奉行を申付}}、{{又直江がこにだ奉行の人数}}も、信玄方に追われた越後勢が甘粕近江守の殿（しんがり）に付いて退いた、と書く。軍鑑は名乗りを書かず、{{直江}}が景綱かは軍鑑からは分からない。ある伝承では、景綱がこの戦いで武田義信の隊を退けたとされる（Wikipedia経由）が、確かめられない。",
+      "uncertain": true,
+      "sourceId": [
+        "koyo-gunkan",
+        "wikipedia"
+      ]
+    },
+    {
+      "title": "近衛前久を迎える",
+      "body": "永禄3年、関白近衛前久が越後を訪れたとき、景綱が饗応役を務めたとされる（Wikipedia経由）。景虎が朝廷・幕府とつながるときの窓口の仕事が、景綱に任されていたことを示す話だが、同時代の文書は確かめていない。要確認（ページ末尾の調査メモ）。",
+      "uncertain": true,
+      "sourceId": "wikipedia"
+    }
+  ],
+  "questions": [
+    {
+      "place": "lens",
+      "title": "景綱は「奉行」としてどこまで謙信の政務を担ったのか？",
+      "text": "景綱は本庄実乃らとともに奉行を務め、朝廷・幕府・公家との取次もしたとされる。上杉家文書でどの文書に景綱の名が出るのか、役割の幅を確かめる。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "place": "lens",
+      "title": "甲陽軍鑑の「直江」は景綱なのか？",
+      "text": "甲陽軍鑑は{{直江}}とだけ書き、名乗りを書かない。第四次川中島の小荷駄奉行を景綱と読む根拠は何か、上杉方の史料で確かめる。",
+      "sourceId": "koyo-gunkan"
+    },
+    {
+      "place": "family",
+      "title": "景綱の死後、なぜ直江家は兼続が継いだのか？",
+      "text": "景綱には実子がいたとされるが、家は婿養子の信綱、続いて兼続が継いだ。実子の伊勢松らはどうなったのか、信綱の死と兼続の相続はどう結びつくのかを確かめる。",
+      "links": [
+        {
+          "text": "兼続",
+          "person_id": "naoe-kanetsugu"
+        }
+      ],
+      "sourceId": "wikipedia"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "謙信を守護代に擁立",
+      "description": "天文年間、景虎を守護代に擁立する動きの中心の一人になり、兄・晴景との争いでは景虎を支援したとされる。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "title": "奉行として政務と外交を担う",
+      "description": "本庄実乃らとともに政務を担い、上洛や近衛前久の来訪の折衝にあたったとされる。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "title": "旗本衆の重臣",
+      "description": "天正3年の軍役帳で305人の軍役を課され、与板城主として春日山城の留守居や遠征の守備も任された。",
+      "links": [
+        {
+          "text": "春日山城",
+          "castle_id": "kasugayama"
+        }
+      ],
+      "sourceId": "wikipedia"
+    }
+  ],
+  "reputation": [
+    {
+      "era": "死去後",
+      "title": "武田方の軍学書（甲陽軍鑑）",
+      "body": "越後の{{家老侍大将衆}}の一覧に{{直江}}を挙げ、第四次川中島では{{直江二千の侍大将}}として小荷駄奉行を任された者と書く。名乗りは書かず、人物像にも触れない。敵方の記録にも、直江が謙信の軍の兵站を預かる家として映っていたことが読み取れる。",
+      "sourceId": "koyo-gunkan"
+    },
+    {
+      "era": "死去後",
+      "title": "現代の研究",
+      "body": "近年の整理では、景綱は為景・晴景・謙信の三代に仕え、奉行や取次として政務と外交を担った重臣とされる（Wikipedia経由）。号の「酒椿斎」は、同時代の史料に景綱が名乗った例がないため、現在の研究者は景綱の号とは見ていないという。研究の中身は、論考そのものを確かめていない。",
+      "sourceId": "wikipedia"
+    }
+  ],
+  "references": [
+    {
+      "title": "上杉謙信（人物叢書 新装版）",
+      "author": "山田邦明",
+      "publisher": "吉川弘文館",
+      "year": 2020,
+      "isbn": "9784642053006",
+      "note": "発給文書を中心に謙信の生涯を追う評伝。奉行としての景綱の動きを文書から確かめるのに使う（本は未見。景綱に触れた箇所は未確認）。"
+    }
+  ],
+  "spots": [
+    {
+      "type": "城跡",
+      "name": "与板城跡（本与板城）",
+      "prefecture": "新潟県",
+      "city": "長岡市",
+      "lat": 37.518,
+      "lng": 138.813,
+      "approx": true,
+      "description": "景綱の居城。のち直江兼続も与板城主になった。座標は与板の町の中心付近のおおよその位置。",
+      "links": [{"text": "直江兼続", "person_id": "naoe-kanetsugu"}], "sourceId": "wikipedia",
+      "urlLabel": "公式の案内は確かめていない"
+    },
+    {
+      "type": "神社仏閣",
+      "name": "徳昌寺",
+      "prefecture": "新潟県",
+      "city": "長岡市",
+      "lat": 37.5195,
+      "lng": 138.8105,
+      "approx": true,
+      "description": "景綱の墓所とされる寺（与板）。兼続の位牌も伝わるという（Wikipedia経由）。座標は与板町の中心付近のおおよその位置。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "type": "城跡",
+      "name": "春日山城跡",
+      "castle_id": "kasugayama",
+      "prefecture": "新潟県",
+      "city": "上越市",
+      "lat": 37.1127,
+      "lng": 138.2144,
+      "approx": true,
+      "description": "謙信の本拠。景綱が留守居を務めたとされる。国の史跡。",
+      "sourceId": "wikipedia"
+    }
+  ],
+  "graves": {
+    "status": "現存",
+    "note": "長岡市与板町の徳昌寺が墓所とされる（Wikipedia経由）。現地は確かめていない。",
+    "sourceId": "wikipedia",
+    "places": [
+      {
+        "name": "徳昌寺（与板）",
+        "prefecture": "新潟県",
+        "city": "長岡市",
+        "lat": 37.5195,
+        "lng": 138.8105,
+        "approx": true,
+        "description": "景綱の墓所とされる（Wikipedia経由）。"
+      }
+    ]
+  },
+  "images": [],
+  "toVerify": [
+    {
+      "section": "生年・没年",
+      "title": "生年と没年月日",
+      "text": "永正6年生まれ、天正5年3月5日没、享年69は、いずれもWikipedia経由。生年は没年からの逆算とされ、確かな史料に頼っていない（2026-11-02時点）。",
+      "checkWith": [
+        "上杉家文書の天正5年の書状",
+        "『御家中諸士略系譜』（『上杉家御年譜』二十三）",
+        "山田邦明『上杉謙信』（2020年）"
+      ]
+    },
+    {
+      "section": "呼び名",
+      "title": "実綱・政綱・景綱の改名時期と号",
+      "text": "実綱から政綱（永禄5年）、景綱（永禄7年）への改名はWikipedia経由。同時代の文書の署名で確かめていない。号の「酒椿斎」は、『直江家由緒』と『御家中諸士略系譜』で父か本人かの記述が食い違い、現在は景綱の号とは見られていないとされる。",
+      "checkWith": [
+        "『直江家由緒』",
+        "『御家中諸士略系譜』",
+        "上杉家文書の署名の変化"
+      ]
+    },
+    {
+      "section": "官位",
+      "title": "大和守の任官",
+      "text": "永禄5年の任官はWikipedia経由。口宣案や公家の日記を確かめていない。",
+      "checkWith": [
+        "上杉家文書の叙任に関する文書",
+        "公家の日記（言継卿記など）"
+      ]
+    },
+    {
+      "section": "家系",
+      "title": "親族と継室・子の関係",
+      "text": "父・兄弟・妻・継室・子・婿は、いずれもWikipedia経由。継室の順序、実子の伊勢松と次男のその後、幼女の嫁ぎ先（志駄義秀とされる）を確かめていない。",
+      "checkWith": [
+        "『直江家由緒』",
+        "『御家中諸士略系譜』",
+        "『新潟県史』通史編"
+      ]
+    },
+    {
+      "section": "領地",
+      "title": "与板城主になった年",
+      "text": "永正11年に本与板城の城主になったとするのはWikipedia経由。景綱は永正6年生まれとされ、5歳になるため、父・親綱の事績の可能性がある。また与板の支配の範囲（山東郡・三島郡のどこまでか）を確かめていない。",
+      "checkWith": [
+        "『長岡市史』の与板の項",
+        "『新潟県史』通史編",
+        "与板城・本与板城の発掘調査報告"
+      ]
+    },
+    {
+      "section": "年表",
+      "title": "天文の乱以降の働きと、川中島の小荷駄奉行",
+      "text": "天文8年〜永禄3年の動き、天正3年の軍役、天正4年の石動山城の守備は、Wikipedia経由で、文書の裏付けを確かめていない。甲陽軍鑑の{{直江}}が景綱かどうかも確かめていない。",
+      "checkWith": [
+        "上杉家文書（『新潟県史 資料編』）",
+        "『上杉家軍役帳』",
+        "山田邦明『上杉謙信』（2020年）"
+      ]
+    },
+    {
+      "section": "ゆかりの地",
+      "title": "与板城跡・徳昌寺",
+      "text": "城跡の位置と、墓所とされる徳昌寺の来歴は、観光案内以上には確かめていない。",
+      "checkWith": [
+        "長岡市の文化財解説",
+        "徳昌寺の寺伝"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "koyo-gunkan",
+      "title": "甲陽軍鑑",
+      "note": "武田方の軍学書。越後の{{家老侍大将衆}}の一覧に{{直江}}を挙げ、第四次川中島の記事で{{直江二千の侍大将に小荷駄奉行を申付}}と書く。実名の景綱は書かない。江戸時代初期の編纂物で年次の誤りが多い。Wikisource（内藤傳右衛門・温故堂本を底本とする）の本文で確認。原本画像とは未照合。",
+      "type": "史料",
+      "primary": "二次資料"
+    },
+    {
+      "id": "wikipedia",
+      "title": "直江景綱（Wikipedia）",
+      "url": "https://ja.wikipedia.org/wiki/直江景綱",
+      "note": "生没年・名乗り・官途・家族・事績・居城・墓所を、入口として参照した（2026-11-02）。上杉家軍役帳・直江家由緒・御家中諸士略系譜などの原典は未確認。",
+      "type": "ネット記事"
+    }
+  ],
+  "tags": [
+    "上杉家",
+    "越後",
+    "家老"
+  ],
+  "updatedAt": "2026-11-02"
+}

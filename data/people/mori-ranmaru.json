@@ -1,0 +1,470 @@
+{
+  "id": "mori-ranmaru",
+  "name": "森蘭丸",
+  "kana": "もり らんまる",
+  "summary": "織田信長の近習。森可成の子で、長可の弟。信長の取次ぎ・使いを務め、本能寺の変で兄弟とともに討死した。同時代の史料では「乱」「乱法師」と書かれ、「蘭丸」は後世の軍記の呼び名。",
+  "lens": {
+    "title": "「信長の寵童・蘭丸」の像は本当か",
+    "question": "美少年の小姓として知られる蘭丸は、同時代の史料ではどう書かれ、どこから今の像が作られたのか。",
+    "view": ""
+  },
+  "aliases": [
+    {
+      "type": "通称",
+      "value": "乱（乱法師）",
+      "note": "信長公記は{{森乱}}、{{森乱丸}}とは書かない。同時代の記録は「乱」「乱法師」とする（Wikipedia経由）（要確認、ページ末尾の調査メモ）"
+    },
+    {
+      "type": "通称",
+      "value": "蘭丸（乱丸）",
+      "note": "江戸時代の軍記が書く。祖父物語は{{森乱丸}}、川角太閤記は{{森お乱}}と書く。表記は一定しない",
+      "sourceId": [
+        "oji-monogatari",
+        "kawasumi-taikoki"
+      ]
+    },
+    {
+      "type": "実名",
+      "value": "成利",
+      "note": "本人の署名による実名とされる。寛政重修諸家譜は「長定」、ほかに「長康」とも伝わる（Wikipedia経由）（要確認、ページ末尾の調査メモ）"
+    }
+  ],
+  "nameHistory": [
+    {
+      "year": 1579,
+      "era": "天正7年",
+      "value": "森乱",
+      "note": "信長公記の4月18日の条に御使として{{森乱}}の名が見える。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1582,
+      "era": "天正10年",
+      "value": "森蘭丸",
+      "note": "惟任退治記は、本能寺で{{召森蘭丸問之}}と「蘭丸」の字で書く。",
+      "sourceId": "tensho-ki"
+    }
+  ],
+  "birth": {
+    "year": 1565,
+    "era": "永禄8年",
+    "note": "没年と享年18からの逆算（Wikipedia経由）。同時代の史料で年齢は確かめられていない（要確認、ページ末尾の調査メモ）",
+    "uncertain": true,
+    "sourceId": "wikipedia"
+  },
+  "death": {
+    "year": 1582,
+    "month": 7,
+    "day": 1,
+    "era": "天正10年6月2日",
+    "note": "本能寺の変で討死。信長公記は{{森乱　森力　森坊　兄弟三人}}の討死を書く。月日は和暦の天正10年6月2日をグレゴリオ暦に直したもの（ユリウス暦では1582年6月21日）。",
+    "uncertain": false,
+    "links": [{"text": "本能寺の変", "battle_id": "honnoji-no-hen"}], "sourceId": "shincho-koki"
+  },
+  "ranks": [
+    {
+      "title": "近習（御使）",
+      "note": "信長公記は、御使・取次ぎとして{{森乱}}を書く。官位の記録は当たっていない。",
+      "sourceId": "shincho-koki"
+    }
+  ],
+  "family": [
+    {
+      "relation": "父",
+      "name": "森可成",
+      "note": "信長公記は{{森三左衛門}}と書き、元亀元年（1570）9月の宇佐山で討死したとする。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "relation": "兄",
+      "name": "森長可",
+      "person_id": "mori-nagayoshi",
+      "note": "信長公記に{{是は勝蔵忝次第也}}とある。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "relation": "弟",
+      "name": "森力（長隆）",
+      "note": "信長公記の{{森力}}。本能寺で兄の乱・弟の坊とともに討死。実名はWikipedia経由（要確認、ページ末尾の調査メモ）",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "relation": "弟",
+      "name": "森坊（長氏）",
+      "note": "信長公記の{{森坊}}。本能寺で討死。実名はWikipedia経由（要確認、ページ末尾の調査メモ）",
+      "sourceId": "shincho-koki"
+    }
+  ],
+  "lords": [
+    {
+      "person_id": "oda-nobunaga",
+      "name": "織田信長",
+      "from": 1579,
+      "to": 1582,
+      "note": "信長公記では天正7年4月18日に御使として初めて見える。",
+      "sourceId": "shincho-koki"
+    }
+  ],
+  "territories": [
+    {
+      "year": 1582,
+      "name": "美濃国金山と米田島",
+      "prefecture": "岐阜県",
+      "note": "国割で{{金山よなだ島　森乱　被下　是は勝蔵忝次第也}}（信長公記）。実際に乱が領したかは要確認。Wikipediaは、岩村城主になったとする説もあるという（各務元正が城代）（要確認、ページ末尾の調査メモ）",
+      "sourceId": [
+        "shincho-koki",
+        "wikipedia"
+      ],
+      "until": 1582,
+      "mapNote": "美濃国可児郡の地図データが無く、塗っていない",
+      "place": "金山城趾",
+      "lat": 35.456615,
+      "lng": 137.0971233
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1565,
+      "toYear": 1578,
+      "title": "記録の空白（生年〜天正7年）",
+      "description": "蘭丸の幼少期から出仕までは、同時代の史料から確かめられない。父・可成は元亀元年（1570）9月に討死している。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1579,
+      "month": 4,
+      "day": 18,
+      "title": "御使として名が見える",
+      "description": "信長公記の4月18日の条に、信長の御使として{{森乱}}の名が見える。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1581,
+      "month": 7,
+      "day": 25,
+      "title": "御使を務める",
+      "description": "信長公記は、7月25日の条にも御使として{{森乱}}を書く。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1582,
+      "month": 3,
+      "title": "松尾の本知を安堵する取次ぎに立つ",
+      "description": "信長公記は、信濃の松尾（小笠原）の旧領安堵の取次ぎに{{森乱}}の名を書く（3月）。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1582,
+      "month": 3,
+      "day": 29,
+      "title": "金山・米田島を与えられる",
+      "description": "3月29日の国割で、{{金山よなだ島　森乱　被下　是は勝蔵忝次第也}}。兄・長可の働きによる、という添え書きがある。",
+      "sourceId": "shincho-koki",
+      "links": [
+        {
+          "text": "勝蔵",
+          "person_id": "mori-nagayoshi"
+        }
+      ]
+    },
+    {
+      "year": 1582,
+      "month": 5,
+      "day": 19,
+      "title": "安土で幸若舞の取次ぎをする",
+      "description": "信長公記は、5月19日の幸若の見物の場に{{森乱}}の名を書く。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1582,
+      "month": 6,
+      "day": 2,
+      "title": "本能寺で謀反を告げ、討死する",
+      "description": "信長公記は、変の知らせを{{森乱申様に　明智か者と見え申候}}と書く。惟任退治記は{{召森蘭丸問之}}、謀反を{{申上惟任謀反之由}}と書く。兄弟三人（乱・力・坊）の討死は信長公記にある。",
+      "sourceId": [
+        "shincho-koki",
+        "tensho-ki"
+      ],
+      "battle_id": "honnoji-no-hen",
+      "place": "本能寺跡",
+      "lat": 35.006,
+      "lng": 135.7537,
+      "approx": true,
+      "links": [
+        {
+          "text": "明智",
+          "person_id": "akechi-mitsuhide"
+        }
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "title": "信長の御使・取次ぎを務めた",
+      "description": "信長公記に、天正7年から10年まで御使として名が見える。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "title": "本能寺で変を告げた",
+      "description": "信長に明智の謀反を知らせたと、信長公記・惟任退治記が書く。",
+      "sourceId": [
+        "shincho-koki",
+        "tensho-ki"
+      ]
+    }
+  ],
+  "episodes": [
+    {
+      "title": "本能寺で「明智が者と見え申し候」と告げる",
+      "body": "信長公記は、騒ぎを聞いた信長に森乱が{{明智か者と見え申候}}と答えたと書く。惟任退治記は、信長が{{召森蘭丸問之}}（蘭丸を召して問う）と、謀反を告げられる流れを書く。短い一言の記録。",
+      "sourceId": [
+        "shincho-koki",
+        "tensho-ki"
+      ]
+    },
+    {
+      "title": "光秀召集の使いに立つ",
+      "body": "川角太閤記は、6月1日に光秀を召す取次ぎに{{森お乱}}の名を書く。後世の記録で、日付も含め要確認。",
+      "uncertain": true,
+      "sourceId": "kawasumi-taikoki"
+    },
+    {
+      "title": "刀の鐺の数を言い当てる",
+      "body": "常山紀談は、信長が刀の鐺を人に数えさせるとき、蘭丸が才覚を働かせた話を伝え、{{十六歲にて五萬石の地をあたへらる}}と書く。後世の逸話で、「五万石」は信長公記の記録と合わない。",
+      "uncertain": true,
+      "sourceId": "jozan-kidan"
+    },
+    {
+      "title": "死骸に畳をかぶせる",
+      "body": "祖父物語は、本能寺の後、{{森乱丸}}の死骸に畳を掛けて隠したと伝える。後世の記録。",
+      "uncertain": true,
+      "sourceId": "oji-monogatari"
+    }
+  ],
+  "questions": [
+    {
+      "place": "lens",
+      "title": "「蘭丸」は、いつから美少年の小姓になったか？",
+      "text": "信長公記は御使・取次ぎとして「乱」を書き、容姿や寵愛は書かない。「蘭丸」の字と五万石の話は江戸時代の軍記・逸話集に現れる。いつ、どの本が今の像を作ったかを確かめる。",
+      "sourceId": [
+        "shincho-koki",
+        "jozan-kidan"
+      ]
+    },
+    {
+      "place": "lens",
+      "title": "与えられた所領は何か？",
+      "text": "国割の「金山・米田島」を乱が実際に領したか、岩村城主説との関係を確かめる。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "place": "nameHistory",
+      "title": "「成利」と「長定」のどちらが実名か？",
+      "text": "署名にある「成利」と、寛政重修諸家譜の「長定」の関係を確かめる。",
+      "sourceId": "wikipedia"
+    }
+  ],
+  "reputation": [
+    {
+      "era": "存命時",
+      "title": "信長の取次ぎ役",
+      "body": "信長公記は、御使・取次ぎ・幸若の場の{{森乱}}を淡々と書き、国割では兄の働きの添え書きで金山を与えたと書く。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "era": "死去後",
+      "title": "才敏の小姓",
+      "body": "常山紀談は才敏と五万石を書き、軍記・講談を通じて「蘭丸」の像が広まった。同時代の史料からは確かめられない。",
+      "sourceId": "jozan-kidan"
+    }
+  ],
+  "spots": [
+    {
+      "type": "寺",
+      "name": "阿弥陀寺",
+      "prefecture": "京都府",
+      "city": "京都市",
+      "description": "本能寺の変の後、信長らを葬ったと伝わる寺。蘭丸の墓も伝わる（Wikipedia経由）。",
+      "lat": 35.0337,
+      "lng": 135.7664,
+      "approx": true,
+      "links": [{"text": "本能寺の変", "battle_id": "honnoji-no-hen"}], "sourceId": "wikipedia"
+    },
+    {
+      "type": "寺",
+      "name": "可成寺",
+      "prefecture": "岐阜県",
+      "city": "可児市",
+      "description": "森氏の菩提寺。蘭丸の墓も伝わる（Wikipedia経由）。",
+      "lat": 35.4545851,
+      "lng": 137.0907537,
+      "sourceId": "wikipedia"
+    },
+    {
+      "type": "寺",
+      "name": "大徳寺総見院",
+      "prefecture": "京都府",
+      "city": "京都市",
+      "description": "信長の菩提寺。蘭丸の墓も伝わる（Wikipedia経由）。",
+      "lat": 35.0442,
+      "lng": 135.7445,
+      "approx": true,
+      "sourceId": "wikipedia"
+    }
+  ],
+  "graves": {
+    "status": "諸説あり",
+    "note": "墓は阿弥陀寺・可成寺・大徳寺などに伝わる（Wikipedia経由）。どれが本来の墓所かは要確認（要確認、ページ末尾の調査メモ）",
+    "places": [
+      {
+        "name": "阿弥陀寺",
+        "lat": 35.0337,
+        "lng": 135.7664,
+        "type": "墓",
+        "approx": true
+      },
+      {
+        "name": "可成寺",
+        "lat": 35.4545851,
+        "lng": 137.0907537,
+        "type": "墓"
+      },
+      {
+        "name": "大徳寺総見院",
+        "lat": 35.0442,
+        "lng": 135.7445,
+        "type": "墓",
+        "approx": true
+      }
+    ]
+  },
+  "toVerify": [
+    {
+      "section": "生年",
+      "title": "生年（永禄8年）と享年18",
+      "text": "同時代の史料に年齢は見つかっていない（2026-11-02時点、reference/ の原典の範囲）。常山紀談の{{十六歲}}も後世の記述。",
+      "checkWith": [
+        "寛政重修諸家譜（森氏）",
+        "森家の系図"
+      ]
+    },
+    {
+      "section": "呼び名",
+      "title": "実名（成利・長定・長康）",
+      "text": "署名の「成利」、諸家譜の「長定」、「長康」の関係を確かめていない。",
+      "checkWith": [
+        "蘭丸の発給文書（署名）",
+        "寛政重修諸家譜"
+      ]
+    },
+    {
+      "section": "呼び名",
+      "title": "「蘭丸」「乱丸」の初出",
+      "text": "惟任退治記は「蘭丸」、祖父物語は「乱丸」、川角太閤記は「お乱」と、表記が分かれる。『信長記』（小瀬甫庵）など他書での表記も確かめる。",
+      "checkWith": [
+        "信長記（甫庵）",
+        "当代記"
+      ]
+    },
+    {
+      "section": "領地",
+      "title": "金山・米田島と岩村城主説",
+      "text": "国割の記述と岩村城主説（各務元正が城代）の関係を確かめていない。",
+      "checkWith": [
+        "信長公記の天正10年の記事",
+        "岐阜県史・恵那市史"
+      ]
+    },
+    {
+      "section": "年表",
+      "title": "御使の日付と取次ぎの内容",
+      "text": "天正7年4月18日・天正9年7月25日・天正10年3月の取次ぎと5月19日の幸若は信長公記で確かめたが、原本画像との照合は未了。",
+      "checkWith": [
+        "信長公記（我自刊我書本の原本画像）"
+      ]
+    },
+    {
+      "section": "逸話",
+      "title": "刀の鐺・畳・光秀召集",
+      "text": "常山紀談の鐺の話、祖父物語の畳、川角太閤記の光秀召集は、いずれも後世の記録で、出典の元をたどっていない。",
+      "checkWith": [
+        "常山紀談（原本）",
+        "祖父物語（原本）",
+        "川角太閤記（原本）"
+      ]
+    },
+    {
+      "section": "ゆかりの地",
+      "title": "墓所",
+      "text": "阿弥陀寺・可成寺・大徳寺のどれが蘭丸の墓所か確かめていない。",
+      "checkWith": [
+        "各寺の案内",
+        "京都市史"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "shincho-koki",
+      "title": "信長公記",
+      "author": "太田牛一",
+      "url": "https://ja.wikisource.org/wiki/信長公記",
+      "year": "江戸時代初期成立（池田家文庫本に慶長15年〈1610〉の奥書）",
+      "note": "御使・取次ぎとしての{{森乱}}（天正7年4月18日・天正9年7月25日・天正10年1月26日・2月8日・3月・5月19日）、国割の金山・米田島、本能寺の{{明智か者と見え申候}}、兄弟三人の討死を伝える。成立年はWikipedia「信長公記」による。Wikisource（我自刊我書本を底本とする）の本文で確認。",
+      "type": "史料",
+      "primary": "一次資料"
+    },
+    {
+      "id": "tensho-ki",
+      "title": "天正記（惟任退治記・柴田退治記ほか）",
+      "author": "大村由己",
+      "url": "https://ja.wikisource.org/wiki/天正記",
+      "year": "天正10〜16年（1582〜88）ごろ、編ごとに成立",
+      "note": "本能寺の条で{{召森蘭丸問之}}、{{申上惟任謀反之由}}と「蘭丸」の字で書く。秀吉方の顕彰の文章。Wikisource（続群書類従本を底本とする）の本文で確認。",
+      "type": "史料",
+      "primary": "一次資料"
+    },
+    {
+      "id": "kawasumi-taikoki",
+      "title": "川角太閤記",
+      "url": "https://ja.wikisource.org/wiki/川角太閤記",
+      "year": "江戸初期成立",
+      "note": "6月1日に光秀を召す取次ぎとして{{森お乱}}の名が見える。後世の記録。Wikisource（Wikisource所載の本を底本とする）の本文で確認。",
+      "type": "史料",
+      "primary": "二次資料"
+    },
+    {
+      "id": "oji-monogatari",
+      "title": "祖父物語",
+      "author": "（不詳）",
+      "url": "https://ja.wikisource.org/wiki/祖父物語",
+      "year": "江戸時代前期",
+      "note": "本能寺の後の{{森乱丸}}の死骸の話。後世の記録。Wikisource（Wikisource所載の本を底本とする）の本文で確認。",
+      "type": "史料",
+      "primary": "二次資料"
+    },
+    {
+      "id": "jozan-kidan",
+      "title": "常山紀談",
+      "author": "湯浅常山",
+      "url": "https://dl.ndl.go.jp/pid/778101",
+      "year": "江戸中期（元文〜明和年間）成立",
+      "note": "蘭丸の才敏と五万石の話を伝える（OCR翻刻で、校正前）。江戸中期の逸話集。国立国会図書館デジタルコレクションの翻刻で確認。",
+      "type": "史料",
+      "primary": "二次資料"
+    },
+    {
+      "id": "wikipedia",
+      "title": "森成利（Wikipedia）",
+      "url": "https://ja.wikipedia.org/wiki/森成利",
+      "note": "生没年・実名（成利・長定・長康）・岩村城主説・墓所の入口に使った。2026-11-02に確認。原典は未確認。",
+      "type": "ネット記事"
+    }
+  ],
+  "tags": [
+    "織田家臣",
+    "美濃",
+    "近習"
+  ],
+  "updatedAt": "2026-11-02"
+}

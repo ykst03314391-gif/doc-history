@@ -12,5 +12,6 @@
   ],
   "relatedPeople": ["oda-nobunaga"],
   "tags": ["織田家", "近江", "特別史跡", "日本100名城"],
+  "links": [{"text": "本能寺の変", "battle_id": "honnoji-no-hen"}, {"text": "豊臣秀次", "person_id": "toyotomi-hidetsugu"}],
   "updatedAt": "2026-11-02"
 }

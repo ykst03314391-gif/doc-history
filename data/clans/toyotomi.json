@@ -26,5 +26,6 @@
     { "person_id": "sen-no-rikyu", "name": "千利休", "role": "茶頭。茶の湯で重んじられた", "type": "その他" }
   ],
   "tags": ["豊臣家", "三英傑"],
+  "links": [{"text": "賤ヶ岳の戦い", "battle_id": "shizugatake"}, {"text": "本能寺の変", "battle_id": "honnoji-no-hen"}, {"text": "山崎の戦い", "battle_id": "yamazaki"}, {"text": "織田信長", "person_id": "oda-nobunaga"}, {"text": "明智光秀", "person_id": "akechi-mitsuhide"}, {"text": "徳川家康", "person_id": "tokugawa-ieyasu"}, {"text": "柴田勝家", "person_id": "shibata-katsuie"}, {"text": "羽柴秀吉", "person_id": "toyotomi-hideyoshi"}],
   "updatedAt": "2026-11-01"
 }

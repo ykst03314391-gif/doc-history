@@ -194,7 +194,7 @@
     {
       "name": "十市新二郎",
       "note": "九州攻めのとき、定次の留守を任されたとされる（Wikipedia経由。要確認（ページ末尾の調査メモ））",
-      "sourceId": "wikipedia"
+      "links": [{"text": "九州攻め", "battle_id": "kyushu-campaign"}], "sourceId": "wikipedia"
     }
   ],
   "territories": [
@@ -203,7 +203,7 @@
       "name": "大和国（郡山）",
       "prefecture": "奈良県",
       "note": "順慶の死で家督を継ぎ、大和と郡山城を引き継いだ。陰徳太平記は、順慶の死後{{養子ノ四郞定次家督セラレシガ}}と書く。多聞院日記では、天正12年10月に寺門・国中の与力らがそろって代替わりの礼に参っている。大和一国をそのまま引き継いだかどうかの石高や城の範囲は確かめられていない",
-      "sourceId": ["tamonin-nikki", "intoku-taiheiki"],
+      "links": [{"text": "郡山城", "castle_id": "yamato-koriyama"}], "sourceId": ["tamonin-nikki", "intoku-taiheiki"],
       "province": "大和国",
       "until": 1585,
       "untilNote": "天正13年閏8月、伊賀へ国替え。多聞院日記の同月19日の条に{{伊賀ヘ被仰付了、当国ハ美濃守殿御扶持}}とある",
@@ -367,7 +367,7 @@
           "text": "秀吉",
           "person_id": "toyotomi-hideyoshi"
         }
-      ]
+      , {"text": "前田利家", "person_id": "maeda-toshiie"}]
     },
     {
       "year": 1600,
@@ -379,7 +379,7 @@
       "year": 1608,
       "title": "改易",
       "description": "家臣の中坊秀祐に悪政などを訴えられ、改易されたとされる（筒井騒動。Wikipedia経由）。陰徳太平記は{{家臣中ノ坊左近ト爭論ノ事有テ、左近公儀へ出デ、伊賀守ガ舊惡共言上セシニ由テ}}改易されたと書くが、年を慶長7年（一本に13年）とする。預け先は鳥居忠政とも藤堂高虎ともされ、定まらない（要確認（ページ末尾の調査メモ））",
-      "sourceId": ["intoku-taiheiki", "wikipedia"]
+      "links": [{"text": "藤堂高虎", "person_id": "todo-takatora"}], "sourceId": ["intoku-taiheiki", "wikipedia"]
     },
     {
       "year": 1615,
@@ -629,7 +629,7 @@
         "籔景三『筒井順慶とその一族』（新人物往来社、1985年）",
         "『寛政重修諸家譜』筒井氏の項",
         "『筒井家記』など筒井氏の系図"
-      ]
+      ], "links": [{"text": "織田信長", "person_id": "oda-nobunaga"}, {"text": "明智光秀", "person_id": "akechi-mitsuhide"}]
     },
     {
       "section": "家臣団",
@@ -639,7 +639,7 @@
         "名将言行録の原本画像（NDL）",
         "島左近を扱う研究書",
         "籔景三『筒井順慶とその一族』"
-      ]
+      ], "links": [{"text": "九州攻め", "battle_id": "kyushu-campaign"}]
     },
     {
       "section": "領地",
@@ -658,7 +658,7 @@
         "『日向古文書集成』（reference/ndl/hyuga-komonjo.txt）の九州攻めの文書",
         "『多聞院日記』天正12年・15年の記事",
         "『徳川実紀』『落穂集』など関ヶ原前後の記事"
-      ]
+      ], "links": [{"text": "九州攻め", "battle_id": "kyushu-campaign"}]
     },
     {
       "section": "年表",
@@ -669,7 +669,7 @@
         "『徳川実紀』慶長13年の記事",
         "藤田達生『藤堂高虎論』（塙書房、2018年）",
         "結城了悟『キリシタンになった大名』（聖母文庫、1999年）"
-      ]
+      ], "links": [{"text": "藤堂高虎", "person_id": "todo-takatora"}]
     },
     {
       "section": "ゆかりの地",

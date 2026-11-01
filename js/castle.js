@@ -15,6 +15,31 @@
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
     );
 
+  // 本文中の語をサイト内ページへのリンクにする。links: [{ text, person_id | battle_id | castle_id }]
+  // 各語は最初に出てきた1か所だけをリンクにする
+  function linkText(text, links) {
+    const s = String(text ?? "");
+    if (!links || !links.length) return esc(s);
+    const hrefOf = (l) =>
+      l.person_id ? `person.html?id=${encodeURIComponent(l.person_id)}`
+      : l.battle_id ? `battle.html?id=${encodeURIComponent(l.battle_id)}`
+      : l.castle_id ? `castle.html?id=${encodeURIComponent(l.castle_id)}`
+      : "";
+    const hits = links
+      .filter((l) => l.text && hrefOf(l))
+      .map((l) => ({ l, at: s.indexOf(l.text) }))
+      .filter((h) => h.at >= 0)
+      .sort((a, b) => a.at - b.at);
+    let out = "";
+    let pos = 0;
+    for (const { l, at } of hits) {
+      if (at < pos) continue;
+      out += esc(s.slice(pos, at)) + `<a href="${hrefOf(l)}">${esc(l.text)}</a>`;
+      pos = at + l.text.length;
+    }
+    return out + esc(s.slice(pos));
+  }
+
   const id = new URLSearchParams(location.search).get("id");
   if (!id || !/^[a-z0-9-]+$/.test(id)) {
     el.innerHTML = `<p class="error">城IDが指定されていません。</p>`;
@@ -135,7 +160,7 @@
       const trs = rows.map(([k, v]) => `<tr><th>${k}</th><td>${v}</td></tr>`).join("");
       let inner = `<table class="info-table">${trs}</table>`;
       const notes = [c.built && c.built.note, c.abandoned && c.abandoned.note].filter(Boolean);
-      if (notes.length) inner += notes.map((n) => `<p class="muted info-note">${esc(n)}</p>`).join("");
+      if (notes.length) inner += notes.map((n) => `<p class="muted info-note">${linkText(n, c.links)}</p>`).join("");
       html.push(`<section class="section"><h2>基本情報</h2>${inner}</section>`);
     }
 
@@ -147,7 +172,7 @@
           return `<li>
             ${yrs ? `<span class="lord-years">${yrs}</span>` : ""}
             <b>${personLink(l.name, l.person_id)}</b>${l.role ? `<span class="muted">（${esc(l.role)}）</span>` : ""}${uncertain(l)}
-            ${l.note ? `<br><span class="muted">${esc(l.note)}</span>` : ""}${srcMark(l.sourceId)}
+            ${l.note ? `<br><span class="muted">${linkText(l.note, c.links)}</span>` : ""}${srcMark(l.sourceId)}
           </li>`;
         })
         .join("");
@@ -163,7 +188,7 @@
             : esc(ch.era || "");
           return `<li>
             ${yrs ? `<span class="lord-years">${yrs}</span>` : ""}${ch.kind ? `<span class="change-kind">${esc(ch.kind)}</span>` : ""}<b>${esc(ch.title)}</b>${uncertain(ch)}
-            ${ch.description ? `<br><span class="muted">${esc(ch.description)}</span>` : ""}
+            ${ch.description ? `<br><span class="muted">${linkText(ch.description, c.links)}</span>` : ""}
             ${ch.quote ? `<blockquote class="castle-quote">${esc(ch.quote)}</blockquote>` : ""}
             ${srcMark(ch.sourceId)}
           </li>`;
@@ -175,7 +200,7 @@
     // 城としての特徴
     if (c.features && c.features.length) {
       const items = c.features
-        .map((f) => `<li><b>${esc(f.title)}</b><br><span class="muted">${esc(f.body)}</span>${srcMark(f.sourceId)}</li>`)
+        .map((f) => `<li><b>${esc(f.title)}</b><br><span class="muted">${linkText(f.body, c.links)}</span>${srcMark(f.sourceId)}</li>`)
         .join("");
       html.push(`<section class="section"><h2>城としての特徴</h2><ul class="list">${items}</ul></section>`);
     }
@@ -205,7 +230,7 @@
             : esc(b.name);
           return `<li>
             <span class="lord-years">${fmtYear(b)}</span><b>${name}</b>${uncertain(b)}
-            ${b.description ? `<br><span class="muted">${esc(b.description)}</span>` : ""}
+            ${b.description ? `<br><span class="muted">${linkText(b.description, c.links)}</span>` : ""}
             ${b.quote ? `<blockquote class="castle-quote">${esc(b.quote)}</blockquote>` : ""}
             ${srcMark(b.sourceId)}
           </li>`;
@@ -217,7 +242,7 @@
     // 現在の様子
     if (c.present) {
       let inner = c.present.status ? `<p><b>${esc(c.present.status)}</b></p>` : "";
-      inner += (c.present.description || []).map((p) => `<p>${esc(p)}</p>`).join("");
+      inner += (c.present.description || []).map((p) => `<p>${linkText(p, c.links)}</p>`).join("");
       html.push(`<section class="section"><h2>現在の様子</h2>${inner}</section>`);
     }
 
@@ -267,7 +292,7 @@
               <span class="spot-type">${esc(s.type)}</span>
               <b>${esc(s.name)}</b>
               ${place ? `<span class="spot-place">／ ${place}</span>` : ""}
-              ${s.description ? `<div class="muted">${esc(s.description)}</div>` : ""}
+              ${s.description ? `<div class="muted">${linkText(s.description, c.links)}</div>` : ""}
               ${s.url ? `<div class="spot-link">公式：<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.urlName || "公式サイト")} ↗</a></div>` : ""}
             </div>`;
         })

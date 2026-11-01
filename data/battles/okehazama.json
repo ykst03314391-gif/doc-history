@@ -25,5 +25,6 @@
     { "id": "shincho-koki", "title": "信長公記", "author": "太田牛一", "type": "史料", "primary": "一次資料" }
   ],
   "tags": ["織田信長", "今川義元", "奇襲"],
+  "links": [{"text": "織田信長", "person_id": "oda-nobunaga"}],
   "updatedAt": "2026-07-07"
 }

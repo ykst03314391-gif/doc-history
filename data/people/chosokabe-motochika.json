@@ -21,7 +21,7 @@
     {
       "type": "その他",
       "value": "土佐守",
-      "note": "信長公記（天正8年）に{{長宗我部土佐守}}、甫庵太閤記（九州攻め）に{{長曽我部土佐守}}と見える"
+      "note": "信長公記（天正8年）に{{長宗我部土佐守}}、甫庵太閤記（九州攻め）に{{長曽我部土佐守}}と見える", "links": [{"text": "九州攻め", "battle_id": "kyushu-campaign"}]
     },
     {
       "type": "その他",
@@ -52,7 +52,7 @@
       "era": "天正8年",
       "value": "長宗我部土佐守",
       "note": "信長公記。明智光秀（{{維任日向守}}）の取り次ぎで、信長に鷹と砂糖を贈った記事",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "明智光秀", "person_id": "akechi-mitsuhide"}], "sourceId": "shincho-koki"
     },
     {
       "year": 1583,
@@ -241,7 +241,7 @@
       "from": 1585,
       "to": 1591,
       "note": "天正記に{{長曽我部ハ土佐一国令扶助、属秀長之幕下}}とある。秀長の死（1591年）までとした。天正記は筒井定次については{{為秀長与力}}と書くが、元親には「与力」の語を使っていない",
-      "sourceId": "tensho-ki"
+      "links": [{"text": "筒井定次", "person_id": "tsutsui-sadatsugu"}], "sourceId": "tensho-ki"
     }
   ],
   "retainers": [
@@ -526,7 +526,7 @@
       "month": 12,
       "title": "戸次川の戦いで信親を失う",
       "description": "九州攻めの先手として、仙石秀久らと豊後へ渡り、戸次川で島津勢と戦って敗れた。川角太閤記は{{長曽我部総領則討死す}}と書く。元親の退き方は伝えが分かれる。甫庵太閤記は、信親が手勢二十二騎とともに討死し、元親は信親の死を知らずに退いたとする。陰徳太平記は、元親が信親の死を見て自らも討死しようとしたが、十市新左衛門に引き立てられて馬に乗せられ、海路で伊予の日振島へ逃れたとする（日付は川角太閤記が12月17・18日ごろ、通説は12月12日。要確認、ページ末尾の調査メモ）",
-      "links": [{"text": "仙石秀久", "person_id": "sengoku-hidehisa"}], "sourceId": [
+      "links": [{"text": "仙石秀久", "person_id": "sengoku-hidehisa"}, {"text": "九州攻め", "battle_id": "kyushu-campaign"}], "sourceId": [
         "kawasumi-taikoki",
         "hoan-taikoki",
         "intoku-taiheiki"
@@ -971,7 +971,7 @@
       "checkWith": [
         "『日向古文書集成』の該当頁の原本画像",
         "『長宗我部氏の研究』の軍役の章"
-      ]
+      ], "links": [{"text": "九州攻め", "battle_id": "kyushu-campaign"}]
     },
     {
       "section": "年表",
@@ -990,7 +990,7 @@
         "『石谷家文書』",
         "『信長公記』『天正記（惟任退治記）』の元親関係の記事",
         "四国説を論じた近年の論文"
-      ], "links": [{"text": "斎藤利三", "person_id": "saito-toshimitsu"}]
+      ], "links": [{"text": "斎藤利三", "person_id": "saito-toshimitsu"}, {"text": "本能寺の変", "battle_id": "honnoji-no-hen"}]
     },
     {
       "section": "年表",

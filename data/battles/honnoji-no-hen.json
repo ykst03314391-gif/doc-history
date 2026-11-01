@@ -11,8 +11,8 @@
     "光秀の動機については、怨恨・野望・恐怖・黒幕の存在など、古くから諸説が唱えられ、いまも定説を見ない。"
   ],
   "sides": [
-    { "name": "明智軍", "outcome": "勝利", "commanders": [{ "person_id": "akechi-mitsuhide", "name": "明智光秀" }], "participants": [{ "name": "明智秀満" }, { "person_id": "saito-toshimitsu", "name": "斎藤利三" }] },
-    { "name": "織田方", "outcome": "敗北", "commanders": [{ "person_id": "oda-nobunaga", "name": "織田信長" }, { "person_id": "oda-nobutada", "name": "織田信忠" }], "participants": [{ "name": "森蘭丸" }] }
+    { "name": "明智軍", "outcome": "勝利", "commanders": [{ "person_id": "akechi-mitsuhide", "name": "明智光秀" }], "participants": [{ "person_id": "akechi-hidemitsu", "name": "明智秀満" }, { "person_id": "saito-toshimitsu", "name": "斎藤利三" }] },
+    { "name": "織田方", "outcome": "敗北", "commanders": [{ "person_id": "oda-nobunaga", "name": "織田信長" }, { "person_id": "oda-nobutada", "name": "織田信忠" }], "participants": [{ "person_id": "mori-ranmaru", "name": "森蘭丸" }] }
   ],
   "result": "明智光秀が織田信長・信忠父子を討った",
   "relatedPeople": ["akechi-mitsuhide", "oda-nobunaga", "oda-nobutada"],
@@ -25,5 +25,6 @@
     { "id": "shincho-koki", "title": "信長公記", "author": "太田牛一", "type": "史料", "primary": "一次資料" }
   ],
   "tags": ["明智光秀", "織田信長", "政変"],
+  "links": [{"text": "織田信長", "person_id": "oda-nobunaga"}, {"text": "織田信忠", "person_id": "oda-nobutada"}, {"text": "明智光秀", "person_id": "akechi-mitsuhide"}],
   "updatedAt": "2026-07-07"
 }

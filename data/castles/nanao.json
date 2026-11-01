@@ -12,5 +12,6 @@
   ],
   "relatedPeople": ["uesugi-kenshin"],
   "tags": ["畠山家", "能登", "国史跡", "日本100名城"],
+  "links": [{"text": "前田利家", "person_id": "maeda-toshiie"}],
   "updatedAt": "2026-11-02"
 }

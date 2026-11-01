@@ -10,12 +10,12 @@
     "4月9日、三河を突こうとした池田恒興・森長可・羽柴秀次らの別働隊が、長久手で家康の軍に破られ、恒興と長可が討死した。その後は伊勢・尾張の各地で小さな戦いが続いたが、11月に秀吉は信雄と単独で和睦し、家康も兵を引いた。"
   ],
   "sides": [
-    { "name": "羽柴軍", "outcome": "和睦", "commanders": [{ "person_id": "toyotomi-hideyoshi", "name": "羽柴秀吉" }], "participants": [{ "name": "池田恒興" }, { "name": "森長可" }, { "person_id": "toyotomi-hidetsugu", "name": "羽柴秀次" }, { "name": "堀秀政" }], "note": "長久手で別働隊が敗れ、池田恒興・森長可が討死した" },
+    { "name": "羽柴軍", "outcome": "和睦", "commanders": [{ "person_id": "toyotomi-hideyoshi", "name": "羽柴秀吉" }], "participants": [{ "name": "池田恒興" }, { "person_id": "mori-nagayoshi", "name": "森長可" }, { "person_id": "toyotomi-hidetsugu", "name": "羽柴秀次" }, { "name": "堀秀政" }], "note": "長久手で別働隊が敗れ、池田恒興・森長可が討死した" },
     { "name": "織田・徳川軍", "outcome": "和睦", "commanders": [{ "person_id": "oda-nobukatsu", "name": "織田信雄" }, { "person_id": "tokugawa-ieyasu", "name": "徳川家康" }], "participants": [{ "name": "酒井忠次" }, { "name": "井伊直政" }, { "name": "本多忠勝" }] }
   ],
   "result": "秀吉と信雄が和睦し、家康も兵を引いた。のち家康は秀吉の妹の朝日姫を妻に迎え、上洛して秀吉に従う",
   "relatedPeople": ["toyotomi-hideyoshi", "tokugawa-ieyasu", "oda-nobukatsu", "toyotomi-hidetsugu"],
   "tags": ["羽柴秀吉", "徳川家康", "織田信雄", "尾張"],
-  "links": [{ "text": "織田信雄", "person_id": "oda-nobukatsu" }, { "text": "徳川家康", "person_id": "tokugawa-ieyasu" }, { "text": "羽柴秀次", "person_id": "toyotomi-hidetsugu" }, { "text": "朝日姫", "person_id": "asahi-hime" }],
+  "links": [{ "text": "織田信雄", "person_id": "oda-nobukatsu" }, { "text": "徳川家康", "person_id": "tokugawa-ieyasu" }, { "text": "羽柴秀次", "person_id": "toyotomi-hidetsugu" }, { "text": "朝日姫", "person_id": "asahi-hime" }, {"text": "森長可", "person_id": "mori-nagayoshi"}],
   "updatedAt": "2026-11-02"
 }

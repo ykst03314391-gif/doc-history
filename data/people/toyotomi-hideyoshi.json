@@ -230,7 +230,7 @@
       "person_id": "toyotomi-hidenaga",
       "name": "豊臣秀長",
       "note": "太閤素生記は、弥右衛門の死後に母が竹阿弥（信秀の同朋）に嫁して秀長と朝日姫が生まれたとし、種違いの弟とする。祖父物語は竹アミを信長の同朋とし、甫庵の太閤記は筑阿弥を父とする。異父弟かどうかは下の問いと要確認（調査メモ）に回す。",
-      "sourceId": [
+      "links": [{"text": "朝日姫", "person_id": "asahi-hime"}], "sourceId": [
         "taiko-soseiki",
         "oji-monogatari",
         "hoan-taikoki"
@@ -241,7 +241,7 @@
       "person_id": "asahi-hime",
       "name": "朝日姫",
       "note": "太閤素生記は、徳川家康への嫁入りを{{天正十三乙酉年}}とする。朝日姫のページは天正14年とし、食い違う（要確認）。",
-      "sourceId": "taiko-soseiki"
+      "links": [{"text": "徳川家康", "person_id": "tokugawa-ieyasu"}], "sourceId": "taiko-soseiki"
     },
     {
       "relation": "妻",
@@ -315,7 +315,7 @@
     {
       "name": "加藤清正",
       "note": "太閤記の七本鑓の一人（賀藤虎助）。七本鑓は賤ヶ岳の戦いの話で、甫庵の書くものだから脚色を含む。",
-      "sourceId": "hoan-taikoki"
+      "links": [{"text": "賤ヶ岳の戦い", "battle_id": "shizugatake"}], "sourceId": "hoan-taikoki"
     },
     {
       "name": "福島正則",
@@ -432,7 +432,7 @@
       "day": 12,
       "title": "箕作山攻め",
       "description": "信長公記の初出。{{木下藤吉郎}}が佐久間・丹羽・浅井新八とともに箕作山を攻める。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "浅井新八", "person_id": "asai-shinpachi"}], "sourceId": "shincho-koki"
     },
     {
       "year": 1570,
@@ -467,7 +467,7 @@
       "year": 1577,
       "title": "北国からの無断帰陣",
       "description": "天正5年（1577）の手取川の戦いの出陣で、無断で帰陣したとして、信長から折檻を受けた。信長公記は{{今度北国より帰陣仕御折檻迷惑之故}}と書く。勝家との対立が理由かどうかは、後の編纂物の説明。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "手取川の戦い", "battle_id": "tedorigawa"}], "sourceId": "shincho-koki"
     },
     {
       "year": 1577,
@@ -483,14 +483,14 @@
       "title": "三木城攻め",
       "description": "天正8年（1580）1月17日、別所長治・友之・山城が三木で自害する。信長公記は{{羽柴筑前　一身以覚悟大敵を如此被成退治候之事武勇と言調略と言弓矢面目不可過之}}と書き、秀吉の働きを称える。",
       "battle_id": "miki-siege",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "別所長治", "person_id": "bessho-nagaharu"}], "sourceId": "shincho-koki"
     },
     {
       "year": 1580,
       "month": 8,
       "title": "信長の評",
       "description": "佐久間信盛への折檻状で、信長は{{羽柴藤吉郎数ケ国無比類}}と書く。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "佐久間信盛", "person_id": "sakuma-nobumori"}], "sourceId": "shincho-koki"
     },
     {
       "year": 1581,
@@ -504,7 +504,7 @@
       "year": 1582,
       "title": "備中高松",
       "description": "備中で高松城を水攻めにする。信長は自ら中国へ向かう段取りで、明智光秀らが先陣とされていた。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "明智光秀", "person_id": "akechi-mitsuhide"}], "sourceId": "shincho-koki"
     },
     {
       "year": 1582,
@@ -546,7 +546,7 @@
       "day": 15,
       "title": "信長の葬礼",
       "description": "大徳寺で行われた。秀長が警固大将を務め、輿の前を池田輝政、後ろを羽柴於次丸秀勝が担いだと天正記は書く。",
-      "sourceId": "tensho-ki"
+      "links": [{"text": "於次丸", "person_id": "hashiba-hidekatsu"}], "sourceId": "tensho-ki"
     },
     {
       "year": 1582,
@@ -746,12 +746,12 @@
     {
       "title": "中国攻め",
       "description": "天正5年（1577）に播磨へ入り、三木城・鳥取城を落として備中に至った。信長は佐久間信盛への折檻状で、その働きを{{羽柴藤吉郎数ケ国無比類}}と書く。",
-      "links": [{"text": "三木城", "castle_id": "miki"}], "sourceId": "shincho-koki"
+      "links": [{"text": "三木城", "castle_id": "miki"}, {"text": "佐久間信盛", "person_id": "sakuma-nobumori"}], "sourceId": "shincho-koki"
     },
     {
       "title": "信長の死後の主導権",
       "description": "山崎の戦いで光秀を破り、賤ヶ岳の戦いで柴田勝家を破った。",
-      "links": [{"text": "柴田勝家", "person_id": "shibata-katsuie"}], "sourceId": "tensho-ki"
+      "links": [{"text": "柴田勝家", "person_id": "shibata-katsuie"}, {"text": "賤ヶ岳の戦い", "battle_id": "shizugatake"}, {"text": "山崎の戦い", "battle_id": "yamazaki"}], "sourceId": "tensho-ki"
     },
     {
       "title": "関白・太政大臣",
@@ -764,7 +764,7 @@
       "era": "存命時",
       "title": "信長の評価",
       "body": "天正8年（1580）、信長は佐久間信盛の折檻状に{{羽柴藤吉郎数ケ国無比類}}と書き、秀吉の働きを比べるもののないものとした。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "佐久間信盛", "person_id": "sakuma-nobumori"}], "sourceId": "shincho-koki"
     },
     {
       "era": "存命時",
@@ -852,7 +852,7 @@
       "approx": true,
       "prefecture": "兵庫県",
       "city": "三木市",
-      "description": "別所長治が自害した城。"
+      "description": "別所長治が自害した城。", "links": [{"text": "別所長治", "person_id": "bessho-nagaharu"}]
     },
     {
       "type": "神社仏閣",
@@ -939,7 +939,7 @@
         "多聞院日記の原本",
         "公卿補任",
         "各人物ページの出典"
-      ]
+      ], "links": [{"text": "大政所", "person_id": "omandokoro"}, {"text": "朝日姫", "person_id": "asahi-hime"}]
     },
     {
       "section": "呼び名",

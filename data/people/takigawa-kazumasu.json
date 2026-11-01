@@ -147,14 +147,14 @@
       "name": "羽柴秀吉",
       "from": 1583,
       "note": "賤ヶ岳の戦いの後に長島城を明け渡して降り、のち秀吉方として蟹江城に入った（甫庵太閤記）。甫庵は降った後の一益を{{遊客の身}}と書き、織田信雄の領した伊勢の木造城に在番したともいう",
-      "links": [{"text": "織田信雄", "person_id": "oda-nobukatsu"}], "sourceId": "hoan-taikoki"
+      "links": [{"text": "織田信雄", "person_id": "oda-nobukatsu"}, {"text": "賤ヶ岳の戦い", "battle_id": "shizugatake"}], "sourceId": "hoan-taikoki"
     }
   ],
   "retainers": [
     {
       "name": "滝川益重（儀太夫）",
       "note": "甲州征伐で武田勝頼を囲んだ先陣（信長公記に{{先陣　滝川儀大夫　篠岡平右衛門}}）。伊勢攻めでは峯城を守った（天正記に{{滝川儀太夫所籠之峰城}}）。異本小田原記は、神流川の戦いの前に本能寺の変を告げる一益をいさめた甥として描く",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "本能寺の変", "battle_id": "honnoji-no-hen"}], "sourceId": "shincho-koki"
     },
     {
       "name": "篠岡平右衛門",
@@ -180,7 +180,7 @@
       "name": "北伊勢（長島城）",
       "prefecture": "三重県",
       "note": "長島一向一揆が滅んだ後に長島城と北伊勢五郡を任されたとされるが、信長公記には一益に長島を与えたという記事がない。甫庵太閤記が{{去年まて北伊勢五郡を領し、長島の城主として有しか}}と書くのに頼る（要確認、ページ末尾の調査メモ）",
-      "links": [{"text": "織田信雄", "person_id": "oda-nobukatsu"}], "sourceId": "hoan-taikoki",
+      "links": [{"text": "織田信雄", "person_id": "oda-nobukatsu"}, {"text": "賤ヶ岳の戦い", "battle_id": "shizugatake"}], "sourceId": "hoan-taikoki",
       "district": [
         "伊勢国桑名郡"
       ],
@@ -199,7 +199,7 @@
         "長野県"
       ],
       "note": "信長公記に{{滝川左近被召寄上野国并信州之内二郡被下候}}とあり、天正10年3月29日付の国割の条に{{上野国　滝川左近被下}}、{{チイサカタ　サク　二郡　　滝川左近被下}}とある。はじめ箕輪（三の輪）に入り、のち厩橋（前橋）を居城としたとされるが、史料によって書き方が分かれる（北条五代記は信濃の小室から箕輪、前橋へ。異本小田原記は箕輪と厩橋の両方を居城と書く。要確認、ページ末尾の調査メモ）",
-      "sourceId": [
+      "links": [{"text": "本能寺の変", "battle_id": "honnoji-no-hen"}], "sourceId": [
         "shincho-koki",
         "hojo-godaiki",
         "ihon-odawaraki"
@@ -352,7 +352,7 @@
       "day": 25,
       "title": "大和へ上使として入る",
       "description": "大坂本願寺が退いた後、惟任日向守（明智光秀）とともに安土からの上使として奈良に来た。多聞院日記は{{瀧川左近成身院、惟任日向守吉祥院、今日日中時分ニ來了}}と書き、続いて寺社・国衆に領地の指出（申告）を出させたことを記す（OCR本文による。月日は要確認、ページ末尾の調査メモ）",
-      "sourceId": "tamonin-nikki"
+      "links": [{"text": "明智光秀", "person_id": "akechi-mitsuhide"}], "sourceId": "tamonin-nikki"
     },
     {
       "year": 1581,
@@ -405,7 +405,7 @@
       "day": 19,
       "title": "神流川の戦い",
       "description": "本能寺の変の知らせを受けた後、上野の武士たちを集めて事情を話し、上方へ攻め上ろうとして北条氏直の大軍と戦った。初戦（金窪）では上野衆が北条氏邦を破ったが、続く戦い（玉村）で敗れ、篠岡平右衛門らを失って上方へ退いた。初戦の日付を北条五代記は6月18日、異本小田原記は6月19日とし、続く戦いの日付は五代記には書かれていない（要確認、ページ末尾の調査メモ）。北条側の話の軍記だけが伝える戦いで、信長公記はこの戦いを書かない",
-      "sourceId": [
+      "links": [{"text": "本能寺の変", "battle_id": "honnoji-no-hen"}], "sourceId": [
         "hojo-godaiki",
         "ihon-odawaraki"
       ]
@@ -442,7 +442,7 @@
           "text": "秀吉",
           "person_id": "toyotomi-hideyoshi"
         }
-      , {"text": "筒井順慶", "person_id": "tsutsui-junkei"}]
+      , {"text": "筒井順慶", "person_id": "tsutsui-junkei"}, {"text": "稲葉一鉄", "person_id": "inaba-yoshimichi"}]
     },
     {
       "year": 1583,
@@ -458,7 +458,7 @@
           "text": "秀吉",
           "person_id": "toyotomi-hideyoshi"
         }
-      ]
+      , {"text": "賤ヶ岳の戦い", "battle_id": "shizugatake"}]
     },
     {
       "year": 1584,
@@ -474,7 +474,7 @@
           "text": "秀吉",
           "person_id": "toyotomi-hideyoshi"
         }
-      , {"text": "織田信雄", "person_id": "oda-nobukatsu"}]
+      , {"text": "織田信雄", "person_id": "oda-nobukatsu"}, {"text": "小牧・長久手の戦い", "battle_id": "komaki-nagakute"}, {"text": "徳川家康", "person_id": "tokugawa-ieyasu"}]
     },
     {
       "year": 1586,
@@ -532,7 +532,7 @@
       "place": "lens",
       "title": "神流川の戦いは、どれほどの「大敗」だったのか？",
       "text": "北条五代記は一益が北条方を二千人余り討ち取って敗れたと書き、異本小田原記は滝川方の五百余騎が討たれたと書くなど、数も経過も軍記ごとに違う。戦いを書く同時代の記録は見つかっていない。本能寺の変の後の東国の争いの中で位置づける研究（平山優『天正壬午の乱』）も踏まえ、軍記の描き方と実際の被害を分けて確かめる。",
-      "sourceId": [
+      "links": [{"text": "本能寺の変", "battle_id": "honnoji-no-hen"}], "sourceId": [
         "hojo-godaiki",
         "ihon-odawaraki",
         "hirayama-2015"
@@ -591,7 +591,7 @@
       "era": "江戸",
       "title": "義を守る大将、だが情けを知らない",
       "body": "北条五代記は、本能寺の変を隠さず告げた一益を上野衆が{{義を守り節ををもくする大将}}と感じ入ったと書く。一方、異本小田原記は、伊賀攻めの後に故郷の甲賀まで攻めると申し出た一益を、信長が{{日本に双なき武勇の士なりといへども、情も知らぬ田舎夫なり}}と言ったという話を載せる。どちらも後世の軍記の話で、評価が正反対に割れている。",
-      "sourceId": [
+      "links": [{"text": "本能寺の変", "battle_id": "honnoji-no-hen"}], "sourceId": [
         "hojo-godaiki",
         "ihon-odawaraki"
       ]
@@ -672,7 +672,7 @@
       "description": "小牧・長久手の戦いのときに入り、徳川方に囲まれて明け渡した城",
       "lat": 35.1139,
       "lng": 136.7915,
-      "approx": true
+      "approx": true, "links": [{"text": "小牧・長久手の戦い", "battle_id": "komaki-nagakute"}]
     }
   ],
   "graves": {

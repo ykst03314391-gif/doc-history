@@ -44,12 +44,12 @@
   },
   "ranks": [
     { "year": 1552, "era": "天文21年", "title": "従五位下・弾正少弼", "note": "天文21年4月に叙任されたとされる（Wikipedia経由）。口宣案などは確かめていない。要確認（ページ末尾の調査メモ）。", "sourceId": "wikipedia" },
-    { "year": 1561, "era": "永禄4年閏3月", "title": "関東管領", "note": "鎌倉の鶴岡八幡宮で、関東管領の上杉憲政から職と上杉の名を譲られたとされる（閏3月16日。Wikipedia経由）。甲陽軍鑑は譲渡を天文20年の出来事として書いており、年が合わない。要確認（ページ末尾の調査メモ）。", "sourceId": ["wikipedia", "koyo-gunkan"] }
+    { "year": 1561, "era": "永禄4年閏3月", "title": "関東管領", "note": "鎌倉の鶴岡八幡宮で、関東管領の上杉憲政から職と上杉の名を譲られたとされる（閏3月16日。Wikipedia経由）。甲陽軍鑑は譲渡を天文20年の出来事として書いており、年が合わない。要確認（ページ末尾の調査メモ）。", "links": [{"text": "上杉憲政", "person_id": "uesugi-norimasa"}], "sourceId": ["wikipedia", "koyo-gunkan"] }
   ],
   "family": [
-    { "relation": "父", "name": "長尾為景", "note": "越後守護代。甲陽軍鑑は、謙信が13歳のとき{{我父為景にはなれまいらせても}}と語ったと書く。", "sourceId": "koyo-gunkan" },
-    { "relation": "養子", "name": "上杉景勝", "note": "姉（仙桃院）の子で、長尾政景の子とされる（Wikipedia経由）。謙信の死後に家督を継いだ。信長公記は天正9年の越中の条で{{長尾喜平次}}と呼ぶ。", "sourceId": ["wikipedia", "shincho-koki"] },
-    { "relation": "養子", "name": "上杉景虎", "note": "小田原の北条氏康の子で、上杉家へ養子に入ったとされる（Wikipedia経由）。謙信の死後、景勝と家督を争った（御館の乱）。養子に迎えた時期は要確認（ページ末尾の調査メモ）。", "sourceId": "wikipedia" }
+    { "relation": "父", "person_id": "nagao-tamekage", "name": "長尾為景", "note": "越後守護代。甲陽軍鑑は、謙信が13歳のとき{{我父為景にはなれまいらせても}}と語ったと書く。", "sourceId": "koyo-gunkan" },
+    { "relation": "養子", "person_id": "uesugi-kagekatsu", "name": "上杉景勝", "note": "姉（仙桃院）の子で、長尾政景の子とされる（Wikipedia経由）。謙信の死後に家督を継いだ。信長公記は天正9年の越中の条で{{長尾喜平次}}と呼ぶ。", "sourceId": ["wikipedia", "shincho-koki"] },
+    { "relation": "養子", "person_id": "uesugi-kagetora", "name": "上杉景虎", "note": "小田原の北条氏康の子で、上杉家へ養子に入ったとされる（Wikipedia経由）。謙信の死後、景勝と家督を争った（御館の乱）。養子に迎えた時期は要確認（ページ末尾の調査メモ）。", "links": [{"text": "北条氏康", "person_id": "hojo-ujiyasu"}], "sourceId": "wikipedia" }
   ],
   "lords": [],
   "retainers": [
@@ -65,7 +65,7 @@
     { "year": 1530, "title": "誕生", "place": "春日山城", "castle_id": "kasugayama", "lat": 37.1127, "lng": 138.2144, "approx": true, "description": "越後に生まれたとされる。甲陽軍鑑は{{享禄三年庚寅歳上杉謙信輝虎公誕生}}と書く。", "sourceId": "koyo-gunkan" },
     { "year": 1548, "title": "家督を継ぐ", "place": "春日山城", "castle_id": "kasugayama", "lat": 37.1127, "lng": 138.2144, "approx": true, "description": "兄・長尾晴景に代わって家督を継いだとされる（12月。Wikipedia経由）。", "sourceId": "wikipedia" },
     { "year": 1553, "title": "川中島の対陣が始まる", "description": "武田信玄と北信濃をめぐって川中島で対陣する。川中島の戦いは何度あったか、いつか、史料によって食い違う。甲陽軍鑑は天文23年（1554）6月の記事を載せ、常山紀談は{{川中島の戦異説多く分明ならず}}の趣旨の注記を付ける（OCR本文による）。ここでは合戦ページに合わせて天文22年（1553）を最初とした。要確認（ページ末尾の調査メモ）。", "battle_id": "kawanakajima", "links": [{"text": "武田信玄", "person_id": "takeda-shingen"}], "sourceId": ["koyo-gunkan", "jozan-kidan"], "uncertain": true },
-    { "year": 1561, "month": 3, "title": "関東管領となる", "place": "鶴岡八幡宮（鎌倉市）", "lat": 35.3260, "lng": 139.5565, "approx": true, "description": "鎌倉で上杉憲政から関東管領の職と上杉の名を譲られたとされる（閏3月16日。Wikipedia経由）。甲陽軍鑑は譲渡を天文20年のこととして書く。", "sourceId": ["wikipedia", "koyo-gunkan"] },
+    { "year": 1561, "month": 3, "title": "関東管領となる", "place": "鶴岡八幡宮（鎌倉市）", "lat": 35.3260, "lng": 139.5565, "approx": true, "description": "鎌倉で上杉憲政から関東管領の職と上杉の名を譲られたとされる（閏3月16日。Wikipedia経由）。甲陽軍鑑は譲渡を天文20年のこととして書く。", "links": [{"text": "上杉憲政", "person_id": "uesugi-norimasa"}], "sourceId": ["wikipedia", "koyo-gunkan"] },
     { "year": 1561, "month": 9, "title": "第四次川中島", "description": "武田信玄と最も激しく戦ったとされる合戦。甲陽軍鑑は永禄4年8月に謙信が出陣し、西条山に陣取ったと書く。常山紀談は9月10日の戦いを書くが、同書自身が軍鑑の年月の誤りを指摘している。信玄と謙信の一騎打ちの話は同時代の史料では確かめられない。", "battle_id": "kawanakajima", "links": [{"text": "武田信玄", "person_id": "takeda-shingen"}], "sourceId": ["koyo-gunkan", "jozan-kidan"] },
     { "year": 1570, "month": 12, "title": "法号「謙信」", "description": "不識庵謙信と名乗ったとされる（Wikipedia経由）。", "sourceId": "wikipedia" },
     { "year": 1577, "month": 8, "title": "信長公記が記す柴田勝家の北国出陣", "place": "加賀国・手取川", "lat": 36.5, "lng": 136.6, "approx": true, "description": "信長公記は天正5年8月8日の条に、柴田勝家を大将に滝川一益・羽柴秀吉・丹羽長秀らが北国へ出陣し、{{賀州へ乱入添川手取川打越}}と書く。続けて{{羽柴筑前御届をも不申上帰陣仕候段曲事之由被成御逆鱗}}（秀吉が断りなく帰陣して信長の怒りを買った）と書くが、謙信の名も、合戦そのものも書かない。", "links": [{ "text": "滝川一益", "person_id": "takigawa-kazumasu" }, { "text": "羽柴秀吉", "person_id": "toyotomi-hideyoshi" }, {"text": "柴田勝家", "person_id": "shibata-katsuie"}, {"text": "丹羽長秀", "person_id": "niwa-nagahide"}], "sourceId": "shincho-koki" },
@@ -93,14 +93,14 @@
     }
   ],
   "questions": [
-    { "place": "lens", "title": "手取川で織田軍に大勝したのか？", "text": "上杉方が柴田勝家らの織田軍を破ったと語られるが、織田方の信長公記は、柴田の出陣と羽柴秀吉の無断帰陣は書いても、謙信との戦いは書かない。「大勝」の根拠がどこにあるのか、小規模な戦いだった可能性はどうか、を確かめる。", "links": [{"text": "柴田勝家", "person_id": "shibata-katsuie"}], "sourceId": ["shincho-koki", "fujishiro-2025"], "article_id": "tedorigawa-kenshin" },
+    { "place": "lens", "title": "手取川で織田軍に大勝したのか？", "text": "上杉方が柴田勝家らの織田軍を破ったと語られるが、織田方の信長公記は、柴田の出陣と羽柴秀吉の無断帰陣は書いても、謙信との戦いは書かない。「大勝」の根拠がどこにあるのか、小規模な戦いだった可能性はどうか、を確かめる。", "links": [{"text": "柴田勝家", "person_id": "shibata-katsuie"}, {"text": "羽柴秀吉", "person_id": "toyotomi-hideyoshi"}], "sourceId": ["shincho-koki", "fujishiro-2025"], "article_id": "tedorigawa-kenshin" },
     { "place": "lens", "title": "「敵に塩を送る」は本当にあったのか？", "text": "謙信の「義」を象徴する逸話として知られるが、手元の甲陽軍鑑には見当たらない。話がいつ、誰の本に最初に現れ、どう広まったのかを確かめる。", "sourceId": "koyo-gunkan" },
     { "place": "lens", "title": "謙信は何のために戦ったのか？", "text": "関東管領として秩序を守る「義」の戦いと語られる一方、越後の外へ度々出て、領地や略奪も得ていたとする見方がある。出兵の目的を、同時代の文書から見直す。", "sourceId": "wikipedia" },
     { "title": "謙信の死因は何か？", "text": "脳卒中とみる説が多いが、胃・食道の病気などを推す説もある。同時代の史料は急死を伝えるだけで、病名を書かない。どの説がどの史料に頼っているのかを確かめる。", "sourceId": ["koyo-gunkan", "wikipedia"] }
   ],
   "achievements": [
     { "title": "越後から関東・北信濃・北陸へ", "description": "越後を拠点に、関東へ度々出兵し、北信濃では武田信玄と対陣し、晩年は能登・加賀へ進んだ。", "links": [{"text": "武田信玄", "person_id": "takeda-shingen"}] },
-    { "title": "関東管領の職と名を継ぐ", "description": "上杉憲政から関東管領の職と上杉の名を譲られ、関東の秩序を守る立場を名乗った。" },
+    { "title": "関東管領の職と名を継ぐ", "description": "上杉憲政から関東管領の職と上杉の名を譲られ、関東の秩序を守る立場を名乗った。", "links": [{"text": "上杉憲政", "person_id": "uesugi-norimasa"}] },
     { "title": "手取川で織田軍と対峙", "description": "天正5年、能登から加賀へ進み、柴田勝家の率いる織田軍と対した（戦いの規模は確かめられない）。", "links": [{"text": "柴田勝家", "person_id": "shibata-katsuie"}] }
   ],
   "reputation": [
@@ -137,7 +137,7 @@
     { "type": "城跡", "name": "春日山城跡", "castle_id": "kasugayama", "prefecture": "新潟県", "city": "上越市", "lat": 37.1127, "lng": 138.2144, "approx": true, "description": "謙信の本拠。国の史跡。", "sourceId": "wikipedia" },
     { "type": "神社仏閣", "name": "林泉寺（春日山林泉寺）", "prefecture": "新潟県", "city": "上越市", "lat": 37.1083, "lng": 138.2092, "approx": true, "description": "謙信が幼いころ学んだ寺とされ、墓所があるとされる。のち景勝の時代に米沢へも移され、同名の寺が2か所ある（観光案内による）。", "urlLabel": "公式サイトは確かめていない" },
     { "type": "神社仏閣", "name": "上杉神社", "prefecture": "山形県", "city": "米沢市", "lat": 37.9156, "lng": 140.1250, "approx": true, "description": "謙信を祀る。米沢は後の上杉家の本拠。肖像画（上杉謙信像）を所蔵する。" },
-    { "type": "その他", "name": "手取川古戦場", "prefecture": "石川県", "city": "白山市", "lat": 36.51, "lng": 136.56, "approx": true, "description": "手取川の戦いの地とされる。町の中心付近のおおよその位置。" },
+    { "type": "その他", "name": "手取川古戦場", "prefecture": "石川県", "city": "白山市", "lat": 36.51, "lng": 136.56, "approx": true, "description": "手取川の戦いの地とされる。町の中心付近のおおよその位置。", "links": [{"text": "手取川の戦い", "battle_id": "tedorigawa"}] },
     { "type": "城跡", "name": "七尾城跡", "castle_id": "nanao", "prefecture": "石川県", "city": "七尾市", "lat": 37.0206, "lng": 136.9553, "approx": true, "description": "能登畠山氏の城。天正5年9月に上杉方が落とした。国の史跡。", "sourceId": "wikipedia" }
   ],
   "graves": {
@@ -155,7 +155,7 @@
     { "section": "呼び名", "title": "政虎・輝虎の改名時期と署名", "text": "政虎（永禄4年）・輝虎（同年末）・謙信（元亀元年12月）の時期は、Wikipedia経由。同時代の文書の署名や、天正4年12月の得度との関係を、文書では確かめていない（2026-11-01時点）。", "checkWith": ["山田邦明『上杉謙信』（吉川弘文館、2020年）", "『新潟県史 資料編』の上杉家文書"] },
     { "section": "生年・没年", "title": "生年月日・死因", "text": "享禄3年は甲陽軍鑑で確かめたが、正月21日（月日）と、3月9日に倒れて13日に没したという経過、脳卒中とみる説は、Wikipedia経由。信長公記は死を伝えるが病名は書かない。胃・食道の病気などを推す説の出どころも確かめていない。", "checkWith": ["上杉家御年譜（米沢藩の編纂物）", "山田邦明『上杉謙信』（2020年）213頁付近（Wikipedia経由）"] },
     { "section": "官位", "title": "従五位下・弾正少弼と関東管領の日付", "text": "叙任（天文21年4月）と関東管領就任（永禄4年閏3月16日）はWikipedia経由。口宣案・公家の日記は確かめていない。甲陽軍鑑は管領職の譲渡を天文20年の出来事として書き、年が合わない（軍鑑の年次の誤りとみられる）。", "checkWith": ["上杉家文書の関東管領就任に関する文書", "公家の日記（言継卿記など）の叙任の条"] },
-    { "section": "家系", "title": "景虎を養子に迎えた時期", "text": "北条氏康の子・景虎がいつ上杉家に入ったか、確かめていない。景勝との続柄（姉の子とする説明）もWikipedia経由。", "checkWith": ["山田邦明『上杉謙信』（2020年）", "『新潟県史』通史編"] },
+    { "section": "家系", "title": "景虎を養子に迎えた時期", "text": "北条氏康の子・景虎がいつ上杉家に入ったか、確かめていない。景勝との続柄（姉の子とする説明）もWikipedia経由。", "checkWith": ["山田邦明『上杉謙信』（2020年）", "『新潟県史』通史編"], "links": [{"text": "北条氏康", "person_id": "hojo-ujiyasu"}] },
     { "section": "領地", "title": "越後支配が固まった時期と、越中・能登の支配の範囲", "text": "家督を継いだ天文17年からいつ越後全体を押さえたか、天正5年に能登・越中のどこまでを直接支配したかは確かめていない。", "checkWith": ["山田邦明『上杉謙信』（2020年）", "川名俊「能登畠山氏の権力編成と遊佐氏」（2021年）"] },
     { "section": "年表", "title": "川中島の戦いの年月と一騎打ち", "text": "第一次の年（天文22年とする通説と、甲陽軍鑑の天文23年）、第四次の月日、一騎打ちの有無は、史料で食い違う。常山紀談の注記もOCR本文による。", "checkWith": ["上杉家文書の感状（川中島に関するもの）", "常山紀談の原本画像（NDLデジタルコレクション）", "『長野県史』通史編"] },
     { "section": "年表", "title": "最期の遠征の準備", "text": "死の時に次の遠征の準備中だったと語られるが、その準備を記す同時代の史料を確かめていない。", "checkWith": ["上杉家文書の天正6年初めの動員令", "山田邦明『上杉謙信』（2020年）"] },

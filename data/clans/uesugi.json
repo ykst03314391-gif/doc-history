@@ -13,11 +13,12 @@
   ],
   "members": [
     { "person_id": "uesugi-kenshin", "name": "上杉謙信", "role": "当主", "type": "一門" },
-    { "name": "長尾為景", "role": "父", "type": "一門" },
-    { "name": "上杉景勝", "role": "養子（姉の子＝甥）。跡を継ぐ", "type": "一門" },
-    { "name": "上杉景虎", "role": "養子（北条家より）。景勝と家督を争う", "type": "一門" },
-    { "name": "直江兼続", "role": "景勝を支えた重臣", "type": "家臣" }
+    { "person_id": "nagao-tamekage", "name": "長尾為景", "role": "父", "type": "一門" },
+    { "person_id": "uesugi-kagekatsu", "name": "上杉景勝", "role": "養子（姉の子＝甥）。跡を継ぐ", "type": "一門" },
+    { "person_id": "uesugi-kagetora", "name": "上杉景虎", "role": "養子（北条家より）。景勝と家督を争う", "type": "一門" },
+    { "person_id": "naoe-kanetsugu", "name": "直江兼続", "role": "景勝を支えた重臣", "type": "家臣" }
   ],
   "tags": ["上杉家", "越後"],
+  "links": [{"text": "川中島の戦い", "battle_id": "kawanakajima"}, {"text": "手取川の戦い", "battle_id": "tedorigawa"}, {"text": "関ヶ原の戦い", "battle_id": "sekigahara"}, {"text": "武田信玄", "person_id": "takeda-shingen"}, {"text": "上杉憲政", "person_id": "uesugi-norimasa"}],
   "updatedAt": "2026-07-07"
 }

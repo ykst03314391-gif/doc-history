@@ -13,8 +13,8 @@
   ],
   "members": [
     { "person_id": "oda-nobunaga", "name": "織田信長", "role": "当主", "type": "一門" },
-    { "name": "織田信秀", "role": "父", "type": "一門" },
-    { "name": "濃姫（帰蝶）", "role": "正室", "type": "一門" },
+    { "person_id": "oda-nobuhide", "name": "織田信秀", "role": "父", "type": "一門" },
+    { "person_id": "nohime", "name": "濃姫（帰蝶）", "role": "正室", "type": "一門" },
     { "name": "織田信勝（信行）", "role": "弟。家督を争い誅殺される", "type": "一門" },
     { "person_id": "oda-nobutada", "name": "織田信忠", "role": "嫡男（長男）。家督を継ぐ", "type": "一門" },
     { "person_id": "oda-nobukatsu", "name": "織田信雄", "role": "次男（北畠家を継ぐ）", "type": "一門" },
@@ -27,5 +27,6 @@
     { "name": "近衞前久", "role": "親交のあった関白・公家", "type": "その他" }
   ],
   "tags": ["織田家", "三英傑"],
+  "links": [{"text": "桶狭間の戦い", "battle_id": "okehazama"}, {"text": "本能寺の変", "battle_id": "honnoji-no-hen"}, {"text": "明智光秀", "person_id": "akechi-mitsuhide"}, {"text": "足利義昭", "person_id": "ashikaga-yoshiaki"}, {"text": "安土城", "castle_id": "azuchi"}],
   "updatedAt": "2026-07-07"
 }

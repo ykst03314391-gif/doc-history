@@ -16,6 +16,6 @@
   "result": "東軍が勝ち、家康が天下の実権を握った。慶長8年（1603）に家康は征夷大将軍となる",
   "relatedPeople": ["tokugawa-ieyasu", "todo-takatora", "mori-hidemoto"],
   "tags": ["徳川家康", "石田三成", "美濃", "天下分け目"],
-  "links": [{ "text": "徳川家康", "person_id": "tokugawa-ieyasu" }, { "text": "毛利秀元", "person_id": "mori-hidemoto" }, {"text": "大坂城", "castle_id": "osaka"}, {"text": "毛利輝元", "person_id": "mori-terumoto"}, {"text": "吉川広家", "person_id": "kikkawa-hiroie"}],
+  "links": [{ "text": "徳川家康", "person_id": "tokugawa-ieyasu" }, { "text": "毛利秀元", "person_id": "mori-hidemoto" }, {"text": "大坂城", "castle_id": "osaka"}, {"text": "毛利輝元", "person_id": "mori-terumoto"}, {"text": "吉川広家", "person_id": "kikkawa-hiroie"}, {"text": "上杉景勝", "person_id": "uesugi-kagekatsu"}],
   "updatedAt": "2026-11-02"
 }

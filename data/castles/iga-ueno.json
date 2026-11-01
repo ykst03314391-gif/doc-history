@@ -9,5 +9,6 @@
   "place": {"name": "伊賀国阿拝郡", "prefecture": "三重県", "city": "伊賀市", "address": "三重県伊賀市上野丸之内（上野公園）", "lat": 34.7714, "lng": 136.1264},
   "relatedPeople": ["tsutsui-sadatsugu", "todo-takatora"],
   "tags": ["筒井家", "藤堂家", "伊賀", "国史跡", "日本100名城"],
+  "links": [{"text": "藤堂高虎", "person_id": "todo-takatora"}],
   "updatedAt": "2026-11-02"
 }

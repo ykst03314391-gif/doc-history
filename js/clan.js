@@ -7,6 +7,31 @@
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
     );
 
+  // 本文中の語をサイト内ページへのリンクにする。links: [{ text, person_id | battle_id | castle_id }]
+  // 各語は最初に出てきた1か所だけをリンクにする
+  function linkText(text, links) {
+    const s = String(text ?? "");
+    if (!links || !links.length) return esc(s);
+    const hrefOf = (l) =>
+      l.person_id ? `person.html?id=${encodeURIComponent(l.person_id)}`
+      : l.battle_id ? `battle.html?id=${encodeURIComponent(l.battle_id)}`
+      : l.castle_id ? `castle.html?id=${encodeURIComponent(l.castle_id)}`
+      : "";
+    const hits = links
+      .filter((l) => l.text && hrefOf(l))
+      .map((l) => ({ l, at: s.indexOf(l.text) }))
+      .filter((h) => h.at >= 0)
+      .sort((a, b) => a.at - b.at);
+    let out = "";
+    let pos = 0;
+    for (const { l, at } of hits) {
+      if (at < pos) continue;
+      out += esc(s.slice(pos, at)) + `<a href="${hrefOf(l)}">${esc(l.text)}</a>`;
+      pos = at + l.text.length;
+    }
+    return out + esc(s.slice(pos));
+  }
+
   const id = new URLSearchParams(location.search).get("id");
   if (!id || !/^[a-z0-9-]+$/.test(id)) {
     contentEl.innerHTML = `<p class="error">大名家IDが指定されていません。</p>`;
@@ -67,7 +92,7 @@
 
     // 説明本文（段落配列）
     if (c.description && c.description.length) {
-      const body = c.description.map((p) => `<p>${esc(p)}</p>`).join("");
+      const body = c.description.map((p) => `<p>${linkText(p, c.links)}</p>`).join("");
       html.push(`<section class="section"><h2>この家について</h2>${body}</section>`);
     }
 

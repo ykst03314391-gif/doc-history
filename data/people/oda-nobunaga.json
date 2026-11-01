@@ -106,7 +106,7 @@
     "era": "天文3年",
     "note": "天文3年（1534）は甲陽軍鑑が{{天文三年甲午歳平信長公誕生}}と書くのによる（二次史料）。信長公記は生年も没時の年齢も書かないが、三ノ山・赤塚の合戦の天文22年（1553）を{{十九の御年}}とするのは、数えで1535年の生まれに合う。同書は桶狭間の戦いの年を{{天文廾一壬子}}（1552年）と書いており、年の書き方に誤りも多い。誕生日を5月12日とする話は、このページで当たった原典には見えず、同時代の史料では確かめられない。生誕地（勝幡城か那古野城か）も同様。要確認（ページ末尾の調査メモ）。",
     "uncertain": true,
-    "sourceId": [
+    "links": [{"text": "桶狭間の戦い", "battle_id": "okehazama"}], "sourceId": [
       "koyo-gunkan",
       "shincho-koki"
     ]
@@ -189,7 +189,7 @@
   "family": [
     {
       "relation": "父",
-      "name": "織田信秀",
+      "person_id": "oda-nobuhide", "name": "織田信秀",
       "note": "信長公記は{{備後守}}と書く。{{三月三日御年四十二}}で亡くなり（年は書かれない）、末盛城は弟の勘十郎に譲られた。信長は葬儀で{{抹香をくはつと御つかみ候て仏前へ投懸}}けた。要確認（ページ末尾の調査メモ）。",
       "sourceId": "shincho-koki"
     },
@@ -201,15 +201,15 @@
     },
     {
       "relation": "義父",
-      "name": "斎藤道三",
+      "person_id": "saito-dosan", "name": "斎藤道三",
       "note": "信長公記は、平手政秀の才覚で{{斎藤山城道三聟に取結道三か息女尾州へ呼取候}}と書く。道三と信長は富田の正徳寺で会った。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "平手政秀", "person_id": "hirate-masahide"}], "sourceId": "shincho-koki"
     },
     {
       "relation": "正室",
       "name": "斎藤道三の娘（濃姫・帰蝶とされる）",
       "note": "信長公記は道三の{{息女}}を迎えたと書くだけで、名も、のちの消息も書かない。濃姫・帰蝶という名は信長公記では確かめられない（要確認、ページ末尾の調査メモ）。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "濃姫", "person_id": "nohime"}], "sourceId": "shincho-koki"
     },
     {
       "relation": "兄",
@@ -238,8 +238,8 @@
     },
     {
       "relation": "子",
-      "person_id": "oda-nobukatsu", "name": "織田信雄（奇妙・三介）",
-      "note": "信長公記は{{奇妙様}}（巻五）、のち{{三介殿}}と書く。",
+      "person_id": "oda-nobukatsu", "name": "織田信雄（茶筅・三介）",
+      "note": "信長公記は{{国司お茶筅公}}（巻七）、のち{{三介殿}}と書く。巻五の{{奇妙様}}は嫡男の信忠を指す。",
       "sourceId": "shincho-koki"
     },
     {
@@ -250,19 +250,19 @@
     },
     {
       "relation": "子",
-      "name": "御次丸（のちの羽柴秀勝）",
+      "person_id": "hashiba-hidekatsu", "name": "御次丸（のちの羽柴秀勝）",
       "note": "惟任退治記は{{相公第五男御次丸}}を秀吉が{{猶子}}（養子に近い子）にしたと書く。養子に入ったのは信長の死後なので、この関係は生前のものではない。",
       "sourceId": "tensho-ki"
     }
   ],
   "retainers": [
     {
-      "name": "平手政秀（中務丞）",
+      "person_id": "hirate-masahide", "name": "平手政秀（中務丞）",
       "note": "父・信秀が吉法師に付けた4人の家老の1人（林・平手・青山・内藤）。信長公記は、のちに平手が自害したことを書く（年は書かれない）。",
       "sourceId": "shincho-koki"
     },
     {
-      "name": "林秀貞（佐渡守）",
+      "person_id": "hayashi-hidesada", "name": "林秀貞（佐渡守）",
       "note": "付けられた家老の筆頭。勘十郎を立てようとして敗れた側にいた。",
       "sourceId": "shincho-koki"
     },
@@ -272,7 +272,7 @@
       "sourceId": "shincho-koki"
     },
     {
-      "name": "佐久間信盛（右衛門）",
+      "person_id": "sakuma-nobumori", "name": "佐久間信盛（右衛門）",
       "note": "信長公記に{{佐久間右衛門}}の名でたびたび出る。",
       "sourceId": "shincho-koki"
     },
@@ -317,9 +317,9 @@
       "sourceId": "shincho-koki"
     },
     {
-      "name": "前田利家（又左衛門）",
+      "person_id": "maeda-toshiie", "name": "前田利家（又左衛門）",
       "note": "桶狭間の戦いで、討ち取った頸を持って信長の前に出た者の1人（信長公記に{{前田又左衛門}}）。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "桶狭間の戦い", "battle_id": "okehazama"}], "sourceId": "shincho-koki"
     },
     {
       "name": "美濃三人衆（稲葉良通・氏家卜全・安藤守就）",
@@ -351,7 +351,7 @@
       "prefecture": "岐阜県",
       "province": "美濃国",
       "note": "斎藤龍興の稲葉山城を攻め落とし、{{井口と申を今度改て岐阜と名付させられ}}たと信長公記が書く。年は書かれず、上洛の前年にあたる永禄10年と読んだ（要確認、ページ末尾の調査メモ）。",
-      "sourceId": "shincho-koki",
+      "links": [{"text": "稲葉山城", "castle_id": "gifu"}], "sourceId": "shincho-koki",
       "place": "岐阜城",
       "lat": 35.4339,
       "lng": 136.7822
@@ -401,7 +401,7 @@
       "place": "正徳寺（富田）",
       "approx": true,
       "description": "信長公記は、斎藤道三が{{富田の寺内正徳寺}}での対面を求めたと書く。道三は{{山城か子共たわけか門外に馬を可繋事}}と言ったという。年は書かれておらず、次の章が天文22年4月17日の合戦であることから天文22年4月ごろと置いた（要確認、ページ末尾の調査メモ）。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "斎藤道三", "person_id": "saito-dosan"}], "sourceId": "shincho-koki"
     },
     {
       "year": 1556,
@@ -650,7 +650,7 @@
     {
       "title": "尾張の統一と美濃の攻略",
       "description": "桶狭間で今川義元を破り、尾張を固めたのち、斎藤龍興の稲葉山城を落として岐阜を拠点とした。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "稲葉山城", "castle_id": "gifu"}], "sourceId": "shincho-koki"
     },
     {
       "title": "上洛と畿内の掌握",
@@ -997,7 +997,7 @@
       "checkWith": [
         "『織田信長家臣人名辞典』（吉川弘文館）",
         "谷口克広・柴裕之らの評伝の家族の項"
-      ]
+      ], "links": [{"text": "濃姫", "person_id": "nohime"}]
     },
     {
       "section": "呼び名",

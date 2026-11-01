@@ -1,0 +1,469 @@
+{
+  "id": "hojo-ujiyasu",
+  "name": "北条氏康",
+  "kana": "ほうじょう うじやす",
+  "summary": "後北条氏の三代目当主。北条氏綱の子で、河越の戦いで関東の諸勢力を破り、武蔵・下総へ勢力を広げた。甲斐の武田・駿河の今川と結ぶ三国同盟を成し、上杉謙信の小田原攻めにも耐えた。元亀2年（1571）に小田原で没したとされる。",
+  "lens": {
+    "title": "「相模の獅子」氏康は本当に連戦連勝だったのか",
+    "question": "「一生の間、一度も敵に背を見せなかった」と伝わる氏康の無敗の像は、いつ、どの書物から来て、河越夜戦や上杉・武田との戦いの実際とどこまで合っているのか。",
+    "view": ""
+  },
+  "aliases": [
+    {
+      "type": "幼名",
+      "value": "伊豆千代丸",
+      "note": "Wikipedia経由"
+    },
+    {
+      "type": "通称",
+      "value": "新九郎",
+      "note": "北条家の当主が名乗る通称（Wikipedia経由）"
+    },
+    {
+      "type": "官途",
+      "value": "左京大夫・相模守",
+      "note": "Wikipedia経由。任官の年は要確認"
+    },
+    {
+      "type": "法名",
+      "value": "本光院殿昌渓太光",
+      "note": "Wikipedia経由"
+    }
+  ],
+  "nameHistory": [
+    {
+      "era": "幼少期",
+      "value": "伊豆千代丸",
+      "note": "Wikipedia経由。同時代の文書では確かめていない。",
+      "sourceId": "wikipedia",
+      "uncertain": true
+    },
+    {
+      "year": 1541,
+      "era": "天文10年",
+      "value": "北条氏康（新九郎）",
+      "note": "父氏綱の死により家督を継ぐ。北条五代記は氏綱の没を7月19日とするが、Wikipedia経由では17日説もある。",
+      "sourceId": [
+        "hojo-godaiki",
+        "wikipedia"
+      ]
+    }
+  ],
+  "birth": {
+    "year": 1515,
+    "era": "永正12年",
+    "uncertain": true,
+    "note": "通説の年（Wikipedia経由）。月日は不明。同時代の史料では確かめていない。要確認（ページ末尾の調査メモ）。",
+    "sourceId": "wikipedia"
+  },
+  "death": {
+    "year": 1571,
+    "month": 10,
+    "day": 21,
+    "era": "元亀2年10月3日",
+    "uncertain": true,
+    "note": "甲陽軍鑑・Wikipediaは元亀2年とする。異本小田原記は元亀元年とし、没年に食い違いがある。月日は和暦の10月3日をグレゴリオ暦に直した（Wikipedia経由）。小田原で病没したとされる。要確認（ページ末尾の調査メモ）。",
+    "sourceId": [
+      "koyo-gunkan",
+      "ihon-odawaraki",
+      "wikipedia"
+    ]
+  },
+  "birthplace": {
+    "name": "小田原",
+    "prefecture": "神奈川県",
+    "city": "小田原市",
+    "lat": 35.2563,
+    "lng": 139.1551,
+    "approx": true
+  },
+  "ranks": [
+    {
+      "title": "左京大夫・相模守",
+      "note": "任官の年と根拠は確かめていない（Wikipedia経由）。要確認（ページ末尾の調査メモ）。",
+      "sourceId": "wikipedia"
+    }
+  ],
+  "family": [
+    {
+      "relation": "父",
+      "name": "北条氏綱",
+      "note": "後北条氏の二代目。天文10年に没し、氏康が継いだ。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "relation": "正室",
+      "name": "瑞渓院",
+      "note": "今川氏親の娘とされる（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "relation": "子",
+      "name": "北条氏政",
+      "note": "長男。のち四代目当主（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "relation": "子",
+      "name": "北条氏照",
+      "note": "Wikipedia経由。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "relation": "子",
+      "name": "北条氏邦",
+      "note": "Wikipedia経由。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "relation": "子",
+      "name": "北条氏規",
+      "note": "Wikipedia経由。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "relation": "養子",
+      "person_id": "uesugi-kagetora",
+      "name": "上杉景虎",
+      "note": "氏康の子で、越相同盟のとき上杉謙信の養子に出されたとされる。六男か七男か、また北条幻庵の猶子だったとの説があり、確かでない（Wikipedia経由）。要確認（ページ末尾の調査メモ）。",
+      "links": [{"text": "上杉謙信", "person_id": "uesugi-kenshin"}], "sourceId": "wikipedia"
+    },
+    {
+      "relation": "娘",
+      "name": "早川殿",
+      "note": "今川氏真の正室となったとされる（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    }
+  ],
+  "lords": [],
+  "retainers": [
+    {
+      "name": "北条綱成",
+      "note": "一門衆で河越の戦いで活躍したとされる（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    }
+  ],
+  "territories": [
+    {
+      "year": 1541,
+      "name": "相模国",
+      "prefecture": "神奈川県",
+      "province": "相模国",
+      "note": "父氏綱から継いだ本領。小田原を本拠とした（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "year": 1541,
+      "name": "伊豆国",
+      "prefecture": "静岡県",
+      "province": "伊豆国",
+      "note": "氏綱から継いだ本領（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "year": 1546,
+      "name": "武蔵国南部",
+      "prefecture": "埼玉県・東京都",
+      "note": "河越の戦いの後、南武蔵を固めたとされる（Wikipedia経由）。範囲を示す境界データがなく、国の一部のため塗らない。",
+      "mapNote": "武蔵の一部のため塗らない。",
+      "sourceId": "wikipedia"
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1515,
+      "title": "誕生",
+      "description": "北条氏綱の子として生まれたとされる。",
+      "uncertain": true,
+      "sourceId": "wikipedia"
+    },
+    {
+      "year": 1541,
+      "title": "父氏綱の死、家督を継ぐ",
+      "description": "氏綱の没により、氏康が三代目当主となった。",
+      "sourceId": [
+        "hojo-godaiki",
+        "wikipedia"
+      ]
+    },
+    {
+      "year": 1546,
+      "title": "河越の戦い（河越夜戦）",
+      "description": "河越城をめぐり、関東管領の上杉憲政や古河公方らの連合軍と戦い、これを破ったとされる。通説は4月20日の夜襲とするが、北条五代記は7月20日とするなど、月日と兵力・夜戦だったかに食い違いがある。要確認（ページ末尾の調査メモ）。",
+      "place": "河越城（川越）",
+      "lat": 35.9255,
+      "lng": 139.4855,
+      "approx": true,
+      "links": [
+        {
+          "text": "上杉憲政",
+          "person_id": "uesugi-norimasa"
+        }
+      ],
+      "uncertain": true,
+      "sourceId": [
+        "hojo-godaiki",
+        "wikipedia"
+      ]
+    },
+    {
+      "year": 1554,
+      "title": "甲相駿三国同盟",
+      "description": "武田・今川と結ぶ三国同盟が成ったとされる。年は天文23年とするのが通説だが、北条五代記は弘治2年とするなど食い違う。",
+      "uncertain": true,
+      "links": [
+        {
+          "text": "武田",
+          "person_id": "takeda-shingen"
+        }
+      ],
+      "sourceId": [
+        "hojo-godaiki",
+        "wikipedia"
+      ]
+    },
+    {
+      "year": 1560,
+      "title": "長尾景虎（上杉謙信）の関東出兵",
+      "description": "景虎が関東管領を継ぎ、小田原城を囲んだとされるが、氏康は籠城して耐え、景虎は引き上げた（Wikipedia経由）。",
+      "links": [
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kenshin"
+        }
+      ],
+      "uncertain": true,
+      "sourceId": "wikipedia"
+    },
+    {
+      "year": 1569,
+      "title": "越相同盟",
+      "description": "上杉謙信と同盟を結び、子の三郎（のち景虎）を謙信の養子に出したとされる（Wikipedia経由）。",
+      "uncertain": true,
+      "links": [{"text": "上杉謙信", "person_id": "uesugi-kenshin"}], "sourceId": "wikipedia"
+    },
+    {
+      "year": 1571,
+      "month": 10,
+      "day": 21,
+      "title": "没",
+      "description": "元亀2年10月3日、小田原で病没したとされる。没年には元亀元年とする異本小田原記の説がある。",
+      "uncertain": true,
+      "sourceId": [
+        "koyo-gunkan",
+        "ihon-odawaraki",
+        "wikipedia"
+      ]
+    }
+  ],
+  "episodes": [
+    {
+      "title": "「一度も背を見せなかった」",
+      "body": "異本小田原記は氏康について{{一生の御勝利三十六ヶ度、終に一度も敵にあげまきを見せ給はず}}と書く。顕彰の文章で、数字は書き手の言い方とみられる。戦いごとの勝敗は確かめていない。要確認（ページ末尾の調査メモ）。",
+      "uncertain": true,
+      "sourceId": "ihon-odawaraki"
+    }
+  ],
+  "questions": [
+    {
+      "place": "lens",
+      "title": "氏康は連戦連勝だったのか？",
+      "text": "「一度も敵に背を見せなかった」という像は異本小田原記など後世の書に見える。河越・国府台・小田原囲みなどで実際の勝敗と損害はどうだったかを確かめる。",
+      "sourceId": "ihon-odawaraki"
+    },
+    {
+      "place": "lens",
+      "title": "河越夜戦は本当に「夜襲」だったか？",
+      "text": "通説では4月20日の夜襲とされるが、北条五代記は7月20日とするなど月日が分かれ、兵力も誇張が疑われる。同時代の文書から確かめる。",
+      "sourceId": [
+        "hojo-godaiki",
+        "wikipedia"
+      ]
+    },
+    {
+      "place": "family",
+      "title": "上杉景虎は氏康の六男か、七男か？",
+      "text": "六男説と七男説（北条幻庵の猶子とする説）があり、養子に出された時期も分かれる。",
+      "sourceId": "wikipedia"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "関東での勢力拡大",
+      "description": "河越の戦いのあと、南武蔵から下総へ勢力を広げた。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "title": "三国同盟",
+      "description": "武田・今川と結び、背後を固めて関東経営に当たった。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "title": "小田原城の防衛",
+      "description": "上杉謙信・武田信玄の小田原への出兵に耐えた。",
+      "links": [{"text": "上杉謙信", "person_id": "uesugi-kenshin"}, {"text": "武田信玄", "person_id": "takeda-shingen"}], "sourceId": "wikipedia"
+    }
+  ],
+  "reputation": [
+    {
+      "era": "死去後",
+      "title": "甲陽軍鑑",
+      "body": "甲陽軍鑑は武田方の書で、氏康を武田信玄・上杉謙信と並ぶ有力な大名として扱う。ただし年齢などの数字に誤りが指摘され、氏康の年齢の書き方には鉄炮伝来以前の年にかかる矛盾がある。Wikisourceの本文で確認。",
+      "links": [{"text": "上杉謙信", "person_id": "uesugi-kenshin"}, {"text": "武田信玄", "person_id": "takeda-shingen"}], "sourceId": "koyo-gunkan"
+    },
+    {
+      "era": "死去後",
+      "title": "北条五代記",
+      "body": "北条五代記は、後北条氏五代の事績を伝える江戸時代前期の書で、河越夜戦を7月20日とするなど通説と食い違う記述がある。Wikisourceの本文で確認。",
+      "sourceId": "hojo-godaiki"
+    },
+    {
+      "era": "死去後",
+      "title": "異本小田原記",
+      "body": "異本小田原記は、氏康を{{一生の御勝利三十六ヶ度}}とたたえ、無敗の像を強める。没年は元亀元年とし、ほかの書と食い違う。",
+      "sourceId": "ihon-odawaraki"
+    }
+  ],
+  "references": [],
+  "spots": [
+    {
+      "type": "城跡",
+      "name": "小田原城",
+      "prefecture": "神奈川県",
+      "city": "小田原市",
+      "lat": 35.2563,
+      "lng": 139.1551,
+      "approx": true,
+      "description": "後北条氏の本拠。座標は城跡付近のおおよその位置。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "type": "城跡",
+      "name": "川越城跡",
+      "prefecture": "埼玉県",
+      "city": "川越市",
+      "lat": 35.9255,
+      "lng": 139.4855,
+      "approx": true,
+      "description": "河越の戦いの舞台。座標は川越城跡付近のおおよその位置。",
+      "sourceId": "wikipedia"
+    }
+  ],
+  "graves": {
+    "status": "諸説あり",
+    "note": "墓所は箱根の早雲寺とされる（Wikipedia経由）。現地では確かめていない。要確認（ページ末尾の調査メモ）。",
+    "sourceId": "wikipedia",
+    "places": [
+      {
+        "name": "早雲寺（箱根）",
+        "prefecture": "神奈川県",
+        "city": "箱根町",
+        "lat": 35.2327,
+        "lng": 139.1072,
+        "approx": true,
+        "description": "後北条氏の菩提寺。氏康の墓所とされる（Wikipedia経由）。"
+      }
+    ]
+  },
+  "images": [],
+  "toVerify": [
+    {
+      "section": "生年・没年",
+      "title": "生年・没年と没日",
+      "text": "永正12年生まれ、元亀2年10月3日没は甲陽軍鑑・Wikipedia経由。異本小田原記は元亀元年とし、食い違う。氏綱の没日も17日説と19日説（五代記は19日）がある（2026-11-02時点）。",
+      "checkWith": [
+        "『戦国遺文 後北条氏編』の氏康関係文書",
+        "『小田原市史』",
+        "甲陽軍鑑・異本小田原記の原本画像"
+      ]
+    },
+    {
+      "section": "年表",
+      "title": "河越夜戦の月日・兵力・夜襲か",
+      "text": "通説の4月20日と五代記の7月20日が食い違う。兵力の数も軍記によって大きく異なる。同時代の書状で確かめていない。",
+      "checkWith": [
+        "『戦国遺文 後北条氏編』",
+        "『川越市史』"
+      ]
+    },
+    {
+      "section": "年表",
+      "title": "三国同盟の年・越相同盟・小田原囲み",
+      "text": "三国同盟は天文23年か弘治2年か。越相同盟と上杉謙信の小田原囲みの年月日も、Wikipedia経由で、文書の裏付けを確かめていない。",
+      "checkWith": [
+        "『戦国遺文』",
+        "『神奈川県史 通史編』"
+      ], "links": [{"text": "上杉謙信", "person_id": "uesugi-kenshin"}]
+    },
+    {
+      "section": "官位",
+      "title": "左京大夫・相模守の任官",
+      "text": "任官の年と根拠を確かめていない。",
+      "checkWith": [
+        "口宣案",
+        "公家の日記"
+      ]
+    },
+    {
+      "section": "家系",
+      "title": "上杉景虎の続柄と母",
+      "text": "六男説と七男説、幻庵の猶子説がある。氏康の子の順や、瑞渓院との関係も、Wikipedia経由。",
+      "checkWith": [
+        "『北条家系図』",
+        "『小田原市史』"
+      ]
+    },
+    {
+      "section": "人物評価",
+      "title": "無敗の像と軍鑑の年齢",
+      "text": "{{一生の御勝利三十六ヶ度}}の数字の根拠と、甲陽軍鑑の氏康の年齢の書き方（鉄炮伝来以前の年にかかる矛盾）を、原本画像で確かめていない。",
+      "checkWith": [
+        "異本小田原記・甲陽軍鑑の原本画像（NDLデジタルコレクション）"
+      ]
+    },
+    {
+      "section": "ゆかりの地",
+      "title": "早雲寺の墓所",
+      "text": "氏康の墓所が早雲寺とされる点を、現地で確かめていない。",
+      "checkWith": [
+        "早雲寺・箱根町の公式な案内"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "koyo-gunkan",
+      "title": "甲陽軍鑑",
+      "note": "武田方の軍書。氏康を有力な大名として載せるが、年齢などの数字に誤りがある。Wikisourceの本文で確認。原本画像とは未照合。",
+      "type": "史料",
+      "primary": "二次資料"
+    },
+    {
+      "id": "hojo-godaiki",
+      "title": "北条五代記",
+      "note": "後北条氏五代の事績を伝える江戸時代前期の書。氏綱の没日や河越夜戦の月日を載せる。Wikisourceの本文で確認。",
+      "type": "史料",
+      "primary": "二次資料"
+    },
+    {
+      "id": "ihon-odawaraki",
+      "title": "異本小田原記",
+      "note": "氏康を{{一生の御勝利三十六ヶ度、終に一度も敵にあげまきを見せ給はず}}とたたえる。没年は元亀元年とする。Wikisourceの本文で確認。原本画像とは未照合。",
+      "type": "史料",
+      "primary": "二次資料"
+    },
+    {
+      "id": "wikipedia",
+      "title": "北条氏康（Wikipedia）",
+      "url": "https://ja.wikipedia.org/wiki/北条氏康",
+      "note": "生没年・家族・事績を入口として参照した（2026-11-02）。原典は未確認。",
+      "type": "ネット記事"
+    }
+  ],
+  "tags": [
+    "北条家",
+    "戦国大名",
+    "相模"
+  ],
+  "updatedAt": "2026-11-02"
+}

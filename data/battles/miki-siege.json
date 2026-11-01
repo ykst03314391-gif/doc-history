@@ -25,6 +25,6 @@
     { "id": "shincho-koki", "title": "信長公記", "author": "太田牛一", "note": "別所の籠城、宮之上・鷹の尾攻め、長治の自害を記す", "type": "史料", "primary": "一次資料" }
   ],
   "tags": ["羽柴秀吉", "豊臣秀長", "別所長治", "播磨", "籠城"],
-  "links": [{"text": "三木城", "castle_id": "miki"}],
+  "links": [{"text": "三木城", "castle_id": "miki"}, {"text": "別所長治", "person_id": "bessho-nagaharu"}, {"text": "羽柴秀吉", "person_id": "toyotomi-hideyoshi"}],
   "updatedAt": "2026-10-21"
 }

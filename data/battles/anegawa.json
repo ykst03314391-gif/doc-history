@@ -11,7 +11,7 @@
     "浅井・朝倉との対立はこの後も続き、両家はやがて信長によって滅ぼされることになる。"
   ],
   "sides": [
-    { "name": "織田・徳川連合軍", "outcome": "勝利", "commanders": [{ "person_id": "oda-nobunaga", "name": "織田信長" }, { "name": "徳川家康" }], "participants": [{ "name": "本多忠勝" }, { "name": "榊原康政" }] },
+    { "name": "織田・徳川連合軍", "outcome": "勝利", "commanders": [{ "person_id": "oda-nobunaga", "name": "織田信長" }, { "person_id": "tokugawa-ieyasu", "name": "徳川家康" }], "participants": [{ "name": "本多忠勝" }, { "name": "榊原康政" }] },
     { "name": "浅井・朝倉連合軍", "outcome": "敗北", "commanders": [{ "name": "浅井長政" }, { "name": "朝倉景健" }], "participants": [{ "person_id": "isono-kazumasa", "name": "磯野員昌" }, { "name": "真柄直隆" }] }
   ],
   "result": "織田・徳川連合軍が浅井・朝倉連合軍を破った",
@@ -25,5 +25,6 @@
     { "id": "shincho-koki", "title": "信長公記", "author": "太田牛一", "type": "史料", "primary": "一次資料" }
   ],
   "tags": ["織田信長", "徳川家康", "浅井長政", "朝倉義景"],
+  "links": [{"text": "織田信長", "person_id": "oda-nobunaga"}, {"text": "徳川家康", "person_id": "tokugawa-ieyasu"}],
   "updatedAt": "2026-07-07"
 }

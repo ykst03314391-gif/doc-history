@@ -102,7 +102,7 @@
       "name": "徳川家康",
       "from": 1600,
       "note": "関ヶ原の戦い（慶長5年）で東軍に属したとされる。",
-      "sourceId": ["wikipedia", "kotobank-jinmei"]
+      "links": [{"text": "関ヶ原の戦い", "battle_id": "sekigahara"}], "sourceId": ["wikipedia", "kotobank-jinmei"]
     }
   ],
   "territories": [
@@ -131,7 +131,7 @@
       "name": "備中国（松山）",
       "prefecture": "岡山県",
       "note": "関ヶ原の戦いで東軍に属し、旧領に加えて備中で1万石を加えられ、合わせて約1万4千460石とされる（辞典類）。備中代官として松山城に入り、国務を沙汰したとされる（世界大百科事典「備中国」）。加増の1万石がどこにあたるか、いつ松山に入ったかは確かめられていない（要確認（ページ末尾の調査メモ））。",
-      "sourceId": ["kotobank-jinmei", "wikipedia"],
+      "links": [{"text": "関ヶ原の戦い", "battle_id": "sekigahara"}], "sourceId": ["kotobank-jinmei", "wikipedia"],
       "district": "備中国上房郡",
       "mapNote": "松山城のある上房郡だけを塗った。加増1万石の所在や、代官として預かった範囲は確かめられていない",
       "place": "備中松山城",
@@ -284,7 +284,7 @@
       "place": "lens",
       "title": "秀長の家臣団の中でどの位置にいたのか？",
       "text": "多聞院日記では、小堀新介は一晏法印（横浜一庵とみられる）・井上源五と並んで、興福寺への取り次ぎ役として出る。「家老」とする説明（Wikipedia の小堀政一の項）がある一方、藤堂高虎のような軍事面の家臣とは役割が違ったようにも見える。秀長の家臣団の中での位置を確かめる。",
-      "sourceId": ["tamonin-nikki", "wikipedia"]
+      "links": [{"text": "藤堂高虎", "person_id": "todo-takatora"}], "sourceId": ["tamonin-nikki", "wikipedia"]
     },
     {
       "place": "lords",
@@ -315,7 +315,7 @@
       "era": "死去後",
       "title": "辞典類での扱い",
       "body": "辞典類は、小堀正房の子で小堀遠州の父、浅井長政・豊臣秀吉に仕えたのち徳川家康に従った人として載せ、関ヶ原の後に備中松山1万石を加えられて計1万4460石となったと書く。備中については、備中代官として松山城に入り国務を沙汰した、という説明が見える。いずれも「遠州の父」という立場から書かれた短い項目で、事績の出典は示されていない。江戸時代の軍記や逸話集（手元の信長公記・天正記・太閤記・常山紀談・名将言行録など）には、正次の名は見つけられていない（OCRの誤認識があるので完全な確認ではない。要確認（ページ末尾の調査メモ））。",
-      "sourceId": "kotobank-jinmei"
+      "links": [{"text": "豊臣秀吉", "person_id": "toyotomi-hideyoshi"}, {"text": "徳川家康", "person_id": "tokugawa-ieyasu"}], "sourceId": "kotobank-jinmei"
     }
   ],
   "references": [

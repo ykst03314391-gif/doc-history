@@ -8,7 +8,7 @@
   "description": [
     "天正5年（1577年）、秀吉は但馬の竹田城を落として弟の木下小一郎（秀長）を城代に置いた。天正8年（1580年）、播磨を平定して姫路を居城と定めた秀吉は、小一郎に兵を加えて但馬へ攻め入らせた。信長公記によれば、小一郎は太田垣氏の旧居城（竹田）に入り、要所に兵を置いて但馬を平定した。"
   ],
-  "links": [{ "text": "木下小一郎（秀長）", "person_id": "toyotomi-hidenaga" }, { "text": "秀吉", "person_id": "toyotomi-hideyoshi" }],
+  "links": [{ "text": "木下小一郎（秀長）", "person_id": "toyotomi-hidenaga" }, { "text": "秀吉", "person_id": "toyotomi-hideyoshi" }, {"text": "竹田城", "castle_id": "takeda"}],
   "sides": [
     { "name": "羽柴軍", "outcome": "勝利", "commanders": [{ "person_id": "toyotomi-hidenaga", "name": "木下小一郎（秀長）" }], "note": "兄の秀吉から兵を預かった" },
     { "name": "但馬の諸勢力", "outcome": "敗北" }

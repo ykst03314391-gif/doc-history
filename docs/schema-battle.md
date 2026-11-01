@@ -35,7 +35,7 @@
 | `date` | DateInfo | 発生時期（`year` / `month` / `day` / `era` / `note`） |
 | `place` | Place | 場所（`name` / `prefecture` / `city` / `address`? / `lat`? / `lng`?）。`address`＝古戦場の現代の住所、`lat`/`lng`＝座標。あれば詳細ページに「古戦場（現在地）」として住所＋地図（OpenStreetMap 埋め込み・APIキー不要）を表示 |
 | `description` | string[] | 解説本文（段落の配列） |
-| `links` | { text, person_id? / battle_id? / castle_id? }[] | 解説本文の中の語をサイト内ページへのリンクにする（段落ごとに各語の最初の1か所）。人物の年表の `links` と同じ形 |
+| `links` | { text, person_id? / battle_id? / castle_id? }[] | 説明文（解説・結果・史跡・時系列・逸話の説明）の中の語をサイト内ページへのリンクにする（段落・項目ごとに各語の最初の1か所）。人物の年表の `links` と同じ形 |
 | `sides` | Side[] | 対戦した陣営 |
 | `result` | string | 結果の要約 |
 | `spots` | Spot[] | 関連する史跡（`type` / `name` / `prefecture` / `city` / `description` / `url`? / `urlName`?）。`url` があれば「公式：〈`urlName`〉 ↗」の形で**公式サイト名つき**リンクを表示（史跡・資料館の**実在する公式ページ**のみ。URLは捏造しない）。詳細ページに「関連する史跡」として表示 |

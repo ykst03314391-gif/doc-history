@@ -49,6 +49,7 @@ KamonImage = {
 | `base` | Place | 本拠・勢力圏（`name` / `prefecture`） |
 | `head` | { person_id?, name } | 一門の基準となる主たる人物（当主）。一門の続柄はこの人から見た関係で書く |
 | `description` | string[] | 説明本文（段落の配列。1要素＝1段落） |
+| `links` | { text, person_id? / battle_id? / castle_id? }[] | 説明本文の中の語をサイト内ページへのリンクにする（段落ごとに各語の最初の1か所）。合戦スキーマの `links` と同じ形 |
 | `members` | Member[] | 所属する人物（当主・後継・家臣など） |
 | `tags` | string[] | タグ |
 | `updatedAt` | string | 更新日 |

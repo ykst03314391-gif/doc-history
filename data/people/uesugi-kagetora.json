@@ -1,0 +1,840 @@
+{
+  "id": "uesugi-kagetora",
+  "name": "上杉景虎",
+  "kana": "うえすぎ かげとら",
+  "summary": "北条氏康の子で、上杉謙信の養子となった人物。謙信の死後、同じく養子の上杉景勝と家督を争って御館の乱で敗れ、天正7年に自害した。同じ「景虎」の名で呼ばれる謙信（長尾景虎）とは別人。",
+  "lens": {
+    "title": "「北条の人質」景虎は本当か",
+    "question": "景虎は「北条家から送り込まれた人質」と語られることが多い。だが謙信が自ら望んで迎えた養子とも書かれる。この像は、どの書がどの立場から作ったものか。",
+    "view": ""
+  },
+  "aliases": [
+    {
+      "type": "通称",
+      "value": "三郎",
+      "note": "北条五代記は{{氏康の七男三郎}}と書く。甲陽軍鑑は{{氏政の舎弟三郎}}と書く。"
+    },
+    {
+      "type": "その他",
+      "value": "三郎殿",
+      "note": "北条五代記・異本小田原記が使う敬称"
+    },
+    {
+      "type": "その他",
+      "value": "氏秀",
+      "note": "北条氏にいたころの実名とされる（Wikipedia経由）。同時代の文書では確かめていない。要確認（ページ末尾の調査メモ）。"
+    }
+  ],
+  "nameHistory": [
+    {
+      "era": "北条氏のころ",
+      "value": "三郎（実名は氏秀とされる）",
+      "note": "異本小田原記は、氏康の七男で{{童名郷西堂}}といい、幻庵の猶子（養子）になって三郎と名乗ったと書く。実名の氏秀はWikipedia経由。",
+      "sourceId": [
+        "ihon-odawaraki",
+        "wikipedia"
+      ],
+      "uncertain": true,
+      "links": [
+        {
+          "text": "氏康",
+          "person_id": "hojo-ujiyasu"
+        }
+      ]
+    },
+    {
+      "year": 1570,
+      "era": "元亀元年",
+      "value": "上杉三郎景虎",
+      "note": "謙信の養子になって改めた名。北条五代記は{{上杉三郎景虎と改名し家督をつぎ春日山に居給ひぬ}}、甲陽軍鑑は謙信が{{景虎と名付}}けたと書く。「景虎」は謙信がかつて名乗った名（長尾景虎）と同じで、謙信から譲られたとみられる。",
+      "sourceId": [
+        "hojo-godaiki",
+        "koyo-gunkan"
+      ],
+      "links": [
+        {
+          "text": "長尾景虎",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ]
+    }
+  ],
+  "kamon": {
+    "name": "上杉笹（竹に飛び雀）",
+    "note": "謙信の養子となってからは上杉家の家紋を用いたとみられるが、確かめていない。",
+    "links": [
+      {
+        "text": "謙信",
+        "person_id": "uesugi-kenshin"
+      }
+    ]
+  },
+  "birth": {
+    "year": 1554,
+    "era": "天文23年（北条五代記からの逆算では1553年ごろ）",
+    "uncertain": true,
+    "note": "北条五代記は、三郎殿が永禄12年の春に越後へ越山したときを{{十七歳}}と書く。数え年で逆算すると天文22年（1553）の生まれになる。Wikipediaは天文23年（1554）とする。月日は確かめていない。",
+    "sourceId": [
+      "hojo-godaiki",
+      "wikipedia"
+    ]
+  },
+  "death": {
+    "year": 1579,
+    "month": 4,
+    "day": 19,
+    "era": "天正7年3月24日",
+    "uncertain": true,
+    "note": "天正7年3月24日（グレゴリオ暦1579年4月19日）に自害した（Wikipedia経由）。享年26とされる（同）。最期の経緯は軍記で食い違う（年表を参照）。",
+    "sourceId": "wikipedia"
+  },
+  "birthplace": {
+    "name": "相模国（小田原）",
+    "prefecture": "神奈川県",
+    "approx": true,
+    "note": "北条氏康の子なので小田原の生まれとみられるが、確かめていない。",
+    "links": [
+      {
+        "text": "北条氏康",
+        "person_id": "hojo-ujiyasu"
+      }
+    ]
+  },
+  "ranks": [],
+  "family": [
+    {
+      "relation": "父",
+      "name": "北条氏康",
+      "person_id": "hojo-ujiyasu",
+      "note": "北条五代記は景虎を{{氏康の七男}}と書き、甲陽軍鑑は{{氏康の子息氏政の舎弟三郎}}と書く。同じ氏康の子でも、七男とする数え方には異説があり、Wikipediaは別の数え方をとる（要確認）。",
+      "sourceId": [
+        "hojo-godaiki",
+        "koyo-gunkan"
+      ]
+    },
+    {
+      "relation": "養父",
+      "name": "上杉謙信",
+      "person_id": "uesugi-kenshin",
+      "note": "謙信には実子がなく、北条との和睦のしるしに景虎を迎えたと五代記は書く。景虎を{{景勝成人までは人ぢちに取たる}}ものと家老に言い含めたとする五代記の逸話は、後世の語り。",
+      "sourceId": [
+        "hojo-godaiki"
+      ]
+    },
+    {
+      "relation": "養父",
+      "name": "北条幻庵",
+      "note": "異本小田原記は、氏康の七男の郷西堂が、幻庵の養子として三郎と名乗ったと書く。幻庵は北条早雲の末子とされる（Wikipedia経由。「北条三郎入道長綱法名幻庵」は同書の表記）。",
+      "sourceId": [
+        "ihon-odawaraki"
+      ],
+      "uncertain": true,
+      "links": [
+        {
+          "text": "氏康",
+          "person_id": "hojo-ujiyasu"
+        }
+      ]
+    },
+    {
+      "relation": "兄",
+      "name": "北条氏政",
+      "note": "甲陽軍鑑は{{氏政の舎弟三郎}}と書く。氏康の子で、のち北条家の当主。",
+      "sourceId": "koyo-gunkan",
+      "links": [
+        {
+          "text": "氏康",
+          "person_id": "hojo-ujiyasu"
+        }
+      ]
+    },
+    {
+      "relation": "正室",
+      "name": "景勝の姉（清円院とされる）",
+      "note": "北条五代記は{{甥の長尾喜平次景勝妹を。三郎殿の妻となし}}と書き、異本小田原記は景勝の姉とする。Wikipediaは景勝の姉とし、清円院と呼ぶ（要確認）。",
+      "links": [
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        }
+      ],
+      "sourceId": [
+        "hojo-godaiki",
+        "ihon-odawaraki",
+        "wikipedia"
+      ],
+      "uncertain": true
+    },
+    {
+      "relation": "子",
+      "name": "道満丸",
+      "note": "Wikipedia経由。御館の乱で命を落としたとされる。経緯は確かめていない。",
+      "sourceId": "wikipedia",
+      "uncertain": true
+    },
+    {
+      "relation": "その他",
+      "name": "武田勝頼（妹の夫）",
+      "note": "北条五代記は{{武田勝頼は景虎の妹むこたり}}と書く。勝頼の妻は氏康の娘（氏政の妹）で、景虎の姉妹にあたる。",
+      "sourceId": "hojo-godaiki",
+      "links": [
+        {
+          "text": "氏康",
+          "person_id": "hojo-ujiyasu"
+        }
+      ]
+    },
+    {
+      "relation": "その他",
+      "name": "上杉景勝",
+      "person_id": "uesugi-kagekatsu",
+      "note": "謙信の甥で養子。景虎と同じ謙信の養子で、妻の兄（弟）にあたり、のち家督を争った。",
+      "sourceId": [
+        "hojo-godaiki",
+        "koyo-gunkan"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ]
+    }
+  ],
+  "lords": [
+    {
+      "name": "北条氏康",
+      "person_id": "hojo-ujiyasu",
+      "to": 1569,
+      "note": "実父として、北条氏のもとにいた。氏康は元亀元年10月3日に没したと五代記は書く。",
+      "sourceId": "hojo-godaiki"
+    },
+    {
+      "name": "上杉謙信",
+      "person_id": "uesugi-kenshin",
+      "from": 1569,
+      "note": "養子として春日山城に入り、謙信の没するまで仕えた。養子入りの時期は書によって異なる（年表を参照）。",
+      "sourceId": [
+        "hojo-godaiki",
+        "ihon-odawaraki",
+        "wikipedia"
+      ],
+      "links": [
+        {
+          "text": "春日山城",
+          "castle_id": "kasugayama"
+        }
+      ]
+    }
+  ],
+  "retainers": [
+    {
+      "name": "遠山左衛門尉",
+      "note": "北条五代記は、景虎が越後へ移るとき、家老として{{遠山左衛門尉。山中民部}}を付けたと書く。",
+      "sourceId": "hojo-godaiki"
+    },
+    {
+      "name": "山中民部",
+      "note": "同じく景虎に付けられた家老。異本小田原記は、謙信の死後、景勝が景虎の家老の{{山中兵部}}を追い出したと書く（五代記の山中民部と同じ人物か確かめていない）。",
+      "uncertain": true,
+      "sourceId": [
+        "hojo-godaiki",
+        "ihon-odawaraki"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        }
+      ]
+    },
+    {
+      "name": "北条丹後守",
+      "note": "謙信の老臣。五代記は{{北城丹後守}}と書き、景虎に味方して善光寺に陣取ったが、景勝の夜襲に敗れ、その日に死んだという。上野厩橋の城主の北条弥五郎は子（異本小田原記）。",
+      "sourceId": [
+        "hojo-godaiki",
+        "ihon-odawaraki"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        }
+      ]
+    }
+  ],
+  "territories": [],
+  "timeline": [
+    {
+      "year": 1554,
+      "title": "誕生",
+      "description": "北条氏康の子として生まれたとされる。生年は北条五代記の年齢から1553年ごろ、Wikipediaは1554年とする。",
+      "sourceId": [
+        "hojo-godaiki",
+        "wikipedia"
+      ],
+      "uncertain": true,
+      "links": [
+        {
+          "text": "北条氏康",
+          "person_id": "hojo-ujiyasu"
+        }
+      ]
+    },
+    {
+      "year": 1569,
+      "title": "謙信の養子となる（書によって年が異なる）",
+      "description": "北条五代記は、氏康と謙信が和睦して、永禄12年の春に三郎殿が17歳で越後へ越山したと書く。異本小田原記は、氏康・氏政が協議し、幻庵の養子の三郎殿に決まり、元亀元年正月に夫婦で越後へ移ったと書く。甲陽軍鑑は、謙信が養子に迎えて景虎と名付けたとだけ書く。Wikipediaは永禄12年の越相同盟に伴う養子入りとする。年が書ごとに食い違うので、確かめていない。",
+      "sourceId": [
+        "hojo-godaiki",
+        "ihon-odawaraki",
+        "koyo-gunkan",
+        "wikipedia"
+      ],
+      "uncertain": true,
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "氏康",
+          "person_id": "hojo-ujiyasu"
+        }
+      ]
+    },
+    {
+      "year": 1570,
+      "title": "上杉三郎景虎と名乗る",
+      "place": "春日山城",
+      "castle_id": "kasugayama",
+      "lat": 37.1127,
+      "lng": 138.2144,
+      "approx": true,
+      "description": "北条五代記は、景虎が謙信の家督を継ぎ、春日山城に居たと書く。異本小田原記は、謙信が三郎夫婦を越後へ移し、{{上杉三郎景虎と名付け給ふ}}と書く。養子のあいだ、景虎が春日山城にいたかは書によるため、位置は春日山城のおおよその点。",
+      "sourceId": [
+        "hojo-godaiki",
+        "ihon-odawaraki"
+      ],
+      "uncertain": true,
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ]
+    },
+    {
+      "year": 1578,
+      "month": 3,
+      "day": 13,
+      "title": "謙信が没し、景勝と家督を争う",
+      "place": "春日山城",
+      "castle_id": "kasugayama",
+      "lat": 37.1127,
+      "lng": 138.2144,
+      "approx": true,
+      "description": "謙信の死後、北条五代記は、景勝が本城に入って門を固め、二の曲輪の景虎に弓・鉄砲を撃ちかけたので、景虎は出城して御館（越後府中）の城に籠もったと書く。甲陽軍鑑は、喜平次と三郎が{{謙信の跡をあらそひ}}、本城と二の曲輪で弓・鉄砲のせり合いがあったと書く。異本小田原記は、景勝が謙信の葬礼にも及ばず本城に移って、二の丸にいた三郎殿の家老を追い出したと書く。いずれも北条方に近い軍記の書き方で、景勝側の記録は確かめていない。",
+      "links": [
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        },
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ],
+      "sourceId": [
+        "hojo-godaiki",
+        "koyo-gunkan",
+        "ihon-odawaraki"
+      ]
+    },
+    {
+      "year": 1578,
+      "title": "御館に入り、憲政のもとで評定する",
+      "description": "異本小田原記は、景虎が御館へ入り、{{憲政公の御前にて}}諸老臣を集めて評定したと書く。老臣の過半は景虎の方を道理とし、国を二つに分けて両方で跡を知行することを提案したが、景勝は聞かなかったという。北条丹後守は景虎に付いた。",
+      "links": [
+        {
+          "text": "憲政",
+          "person_id": "uesugi-norimasa"
+        },
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        }
+      ],
+      "sourceId": "ihon-odawaraki",
+      "uncertain": true
+    },
+    {
+      "year": 1578,
+      "title": "善光寺で北条丹後守が敗れる",
+      "description": "北条五代記は、北条丹後守が善光寺に陣を取り、春日山へ人数を送って景勝方と戦ったが、景勝の夜襲に遭って敗れ、府中で死んだと書く。甲陽軍鑑・異本小田原記も同じ筋で、細部は異なる。",
+      "sourceId": [
+        "hojo-godaiki",
+        "koyo-gunkan",
+        "ihon-odawaraki"
+      ],
+      "links": [
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        }
+      ]
+    },
+    {
+      "year": 1578,
+      "title": "武田勝頼を頼る",
+      "description": "景虎の妹聟の武田勝頼は、はじめ景虎を助けて出陣し、景虎は勝頼の陣中に入ったと五代記は書く。のち景勝が謙信の貯えの黄金で勝頼の寵臣を動かしたので、勝頼は景虎を見放したという。金額は五代記が長閑・道印に千両ずつと勝頼に五千両、甲陽軍鑑が二千両ずつなど、書によって異なる。",
+      "sourceId": [
+        "hojo-godaiki",
+        "koyo-gunkan",
+        "ihon-odawaraki"
+      ],
+      "uncertain": true,
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        }
+      ]
+    },
+    {
+      "year": 1579,
+      "month": 4,
+      "day": 19,
+      "title": "自害する",
+      "description": "天正7年3月24日（Wikipedia経由）、景虎は自害した。最期の経緯は軍記で食い違う。北条五代記は、勝頼が寵臣に諫められて{{三郎を害し給ひぬ}}と書く。異本小田原記は{{景勝が為に自害して失せ給ふ}}と書く。Wikipediaは、鮫ヶ尾城（妙高市）に逃れたあと、家臣の堀江宗親の裏切りに遭い、自害したとする（要確認）。",
+      "sourceId": [
+        "hojo-godaiki",
+        "ihon-odawaraki",
+        "wikipedia"
+      ],
+      "uncertain": true
+    }
+  ],
+  "episodes": [
+    {
+      "title": "「甥が成人するまでの預かり」という筋書き",
+      "body": "北条五代記は、ある老人の話として、謙信が景勝を後継ぎに決めていて、自分の死後に北条氏政が越後へ攻めてくるのを防ぐため、氏康の子の三郎を{{景勝成人までは人ぢちに取たる}}ものとして迎えた、と書く。景虎の養子入りを、謙信の最初からの深謀とする説明で、同じ五代記の中で別の老人は、遺言がなくても景勝が後を継ぐのは自然だったとも語る。いずれも、景虎が敗れたあとの理由づけとして読める。",
+      "uncertain": true,
+      "sourceId": "hojo-godaiki",
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "氏康",
+          "person_id": "hojo-ujiyasu"
+        },
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        }
+      ]
+    },
+    {
+      "title": "二つの「三郎」",
+      "body": "異本小田原記には、氏康の七男の郷西堂が、幻庵に与えられて三郎と名乗る話があり、のちに謙信への養子としてその三郎が選ばれた、とある。つまり景虎が、氏康の子で、幻庵の養子で、謙信の養子という三つの家をまたぐ人だったという筋になる。他書は幻庵のことを書かず、幻庵の猶子になった時期も確かめていない。",
+      "uncertain": true,
+      "sourceId": "ihon-odawaraki",
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "氏康",
+          "person_id": "hojo-ujiyasu"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "place": "lens",
+      "title": "景虎は北条の「人質」だったのか？",
+      "text": "北条五代記は、謙信が実子がないので景虎を所望したと書き、異本小田原記は氏康・氏政の評定で景虎に決まったと書く。人質の性格が強かったのか、謙信が望んだ養子だったのか、書状で確かめる。",
+      "sourceId": [
+        "hojo-godaiki",
+        "ihon-odawaraki"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "氏康",
+          "person_id": "hojo-ujiyasu"
+        }
+      ]
+    },
+    {
+      "place": "lens",
+      "title": "養子入りの年と、景虎の実名は？",
+      "text": "永禄12年説と元亀元年説があり、書によって数年のずれがある。実名の氏秀も、同時代の文書での署名を確かめていない。",
+      "sourceId": [
+        "hojo-godaiki",
+        "ihon-odawaraki",
+        "wikipedia"
+      ]
+    },
+    {
+      "title": "景虎はなぜ、どこで亡くなったのか？",
+      "text": "勝頼の差し金とする軍記、景勝の手で自害したとする軍記、鮫ヶ尾城での最期とするWikipediaが並ぶ。同時代の書状から最期の日と場所を確かめる。",
+      "sourceId": [
+        "hojo-godaiki",
+        "ihon-odawaraki",
+        "wikipedia"
+      ],
+      "links": [
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        }
+      ]
+    },
+    {
+      "title": "景虎は謙信の後継者として扱われたのか？",
+      "text": "甲陽軍鑑は景勝と並べて養子にしたと書き、異本小田原記は謙信の遺言で景虎が{{嫡子}}、景勝が別の跡になったと書く。謙信の遺言の有無を、書状で確かめる。",
+      "sourceId": [
+        "koyo-gunkan",
+        "ihon-odawaraki"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        }
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "title": "越相同盟の「かすがい」となる",
+      "description": "謙信と北条氏康の和睦に伴い、北条から上杉へ入った養子となった。両家の結びつきの象徴とされる。",
+      "sourceId": [
+        "hojo-godaiki",
+        "wikipedia"
+      ],
+      "links": [
+        {
+          "text": "北条氏康",
+          "person_id": "hojo-ujiyasu"
+        },
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ]
+    },
+    {
+      "title": "御館の乱で景勝と家督を争う",
+      "description": "謙信の死後、景勝と家督を争い、越後を二分する内乱の一方の主役となった。",
+      "sourceId": [
+        "hojo-godaiki",
+        "koyo-gunkan"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        }
+      ]
+    }
+  ],
+  "reputation": [
+    {
+      "era": "存命時",
+      "title": "北条方から見た景虎（北条五代記）",
+      "body": "北条五代記は、景虎を謙信が自ら所望した養子とし、景勝を{{野心}}を抱いた者として描く。景虎が{{此くはだてを夢にもしらず}}油断していたとも書き、景虎を、人を疑わない、運のなかった人として語る。景虎を養子にした北条家の側の記録で、勝者の景勝を悪く書く向きがある。",
+      "sourceId": "hojo-godaiki",
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        }
+      ]
+    },
+    {
+      "era": "死去後",
+      "title": "上杉・武田方の語り（甲陽軍鑑）",
+      "body": "甲陽軍鑑は、景虎を景勝と並ぶ養子とし、謙信が{{跡を二旗に}}と考えていたと書く。景虎の死は勝頼に責めを帰す形で語られる。武田家の失敗を論じる書の一部で、景虎自身への評はない。",
+      "sourceId": "koyo-gunkan",
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        }
+      ]
+    },
+    {
+      "era": "死去後",
+      "title": "後北条の側の別の語り（異本小田原記）",
+      "body": "異本小田原記は、景虎が謙信の{{嫡子}}で、景勝は景虎に仇のある者としてその後を狙ったと描く。景虎を謙信の正統な後継者とする見方が強く、景勝側の言い分は、父が謙信に殺された恨みの話として語られる。",
+      "sourceId": "ihon-odawaraki",
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "上杉謙信（人物叢書 新装版）",
+      "author": "山田邦明",
+      "publisher": "吉川弘文館",
+      "year": 2020,
+      "isbn": "9784642053006",
+      "note": "謙信の評伝。景虎の養子入りと御館の乱を書状から確かめるのに使う予定（本は未見。謙信のページと同じ本）。",
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ]
+    }
+  ],
+  "spots": [
+    {
+      "type": "城跡",
+      "name": "春日山城跡",
+      "castle_id": "kasugayama",
+      "prefecture": "新潟県",
+      "city": "上越市",
+      "lat": 37.1127,
+      "lng": 138.2144,
+      "approx": true,
+      "description": "謙信の本拠。景虎が二の曲輪にいたと北条五代記が書く。国の史跡。",
+      "sourceId": [
+        "hojo-godaiki",
+        "wikipedia"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ]
+    },
+    {
+      "type": "神社仏閣",
+      "name": "勝福寺（上越市）",
+      "prefecture": "新潟県",
+      "city": "上越市",
+      "lat": 37.05,
+      "lng": 138.2393,
+      "approx": true,
+      "description": "景虎の墓があるとされる（Wikipedia経由）。座標は地名検索によるおおよその点。",
+      "sourceId": "wikipedia",
+      "uncertain": true
+    }
+  ],
+  "graves": {
+    "status": "諸説あり",
+    "note": "上越市の勝福寺に墓があるとされる（Wikipedia経由）。原典と現地は未確認。要確認（ページ末尾の調査メモ）。",
+    "sourceId": "wikipedia",
+    "places": [
+      {
+        "name": "勝福寺（上越市）",
+        "prefecture": "新潟県",
+        "city": "上越市",
+        "lat": 37.05,
+        "lng": 138.2393,
+        "approx": true,
+        "description": "景虎の墓があるとされる（Wikipedia経由）。"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "hojo-godaiki",
+      "title": "北条五代記",
+      "author": "三浦浄心",
+      "type": "史料",
+      "primary": "二次資料",
+      "url": "https://ja.wikisource.org/wiki/北条五代記",
+      "year": "江戸時代成立",
+      "note": "景虎の養子入り（氏康の七男、17歳、永禄12年）、家老の遠山・山中、景勝の妹との婚姻、景勝の本城占拠、景虎の御館への退去、北条丹後守の敗死、勝頼の翻意と景虎の最期、{{人ぢち}}の逸話を載せる。景虎の実家の北条家の側から書いた軍記。Wikisource（新字版）の本文で確認。原本画像とは未照合。",
+      "links": [
+        {
+          "text": "氏康",
+          "person_id": "hojo-ujiyasu"
+        },
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        }
+      ]
+    },
+    {
+      "id": "ihon-odawaraki",
+      "title": "異本小田原記",
+      "type": "史料",
+      "primary": "二次資料",
+      "url": "https://ja.wikisource.org/wiki/異本小田原記",
+      "year": "江戸時代成立",
+      "note": "郷西堂（氏康の七男）が幻庵の猶子として三郎となったこと、元亀元年の養子入り、景勝の本城占拠、御館での評定、景虎の自害を載せる。後北条家の側の軍記で、年などが他書と合わない箇所が多い。Wikisourceの本文で確認。原本画像とは未照合。",
+      "links": [
+        {
+          "text": "氏康",
+          "person_id": "hojo-ujiyasu"
+        },
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        }
+      ]
+    },
+    {
+      "id": "koyo-gunkan",
+      "title": "甲陽軍鑑",
+      "type": "史料",
+      "primary": "二次資料",
+      "url": "https://ja.wikisource.org/wiki/甲陽軍鑑",
+      "note": "三郎（氏政の舎弟）を謙信が養子にして景虎と名付けたこと、景勝も養子に定めたこと、謙信の死後の本城と二の曲輪の争いを載せる。江戸時代初期の編纂物で、年次の誤りが多い。Wikisource（内藤傳右衛門・温故堂本を底本とする）の本文で確認。原本画像とは未照合。",
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        }
+      ]
+    },
+    {
+      "id": "wikipedia",
+      "title": "上杉景虎（Wikipedia）",
+      "url": "https://ja.wikipedia.org/wiki/上杉景虎",
+      "type": "ネット記事",
+      "note": "生没年・実名・妻子・御館の乱の経過・最期・墓所を入口として参照した。原典未確認（2026-11-02）。"
+    }
+  ],
+  "toVerify": [
+    {
+      "section": "生年",
+      "title": "生年（1553年ごろか1554年か）",
+      "text": "北条五代記の年齢（永禄12年に17歳）から逆算すると1553年、Wikipediaは1554年。月日は確かめていない。",
+      "checkWith": [
+        "『小田原市史』または北条氏の系図類",
+        "上杉景虎を扱う論文（CiNii）"
+      ]
+    },
+    {
+      "section": "呼び名",
+      "title": "実名の氏秀",
+      "text": "氏秀という実名はWikipedia経由で、同時代の文書での署名を確かめていない。",
+      "checkWith": [
+        "『戦国遺文 後北条氏編』の景虎関係の文書",
+        "『新潟県史 資料編』"
+      ]
+    },
+    {
+      "section": "家系",
+      "title": "氏康の七男という数え方と幻庵の猶子",
+      "text": "五代記・異本小田原記は七男とするが、Wikipediaは別の数え方をとる。幻庵の猶子になったのは異本小田原記だけが書き、他書では確かめていない。",
+      "checkWith": [
+        "北条氏の系図（『寛政重修諸家譜』など）",
+        "『小田原市史』"
+      ]
+    },
+    {
+      "section": "家系",
+      "title": "妻（景勝の姉か妹か）と子の道満丸",
+      "text": "五代記は妹、異本小田原記とWikipediaは姉とする。道満丸の没の経緯もWikipedia経由。",
+      "checkWith": [
+        "上杉家御年譜",
+        "山田邦明『上杉謙信』（2020年）"
+      ]
+    },
+    {
+      "section": "年表",
+      "title": "養子入りの年",
+      "text": "永禄12年（五代記）、元亀元年正月（異本小田原記）、永禄12年の越相同盟に伴う（Wikipedia）と、書によってずれる。",
+      "checkWith": [
+        "越相同盟関係の書状（『戦国遺文 後北条氏編』・『上杉家文書』）",
+        "『新潟県史 通史編3 中世』"
+      ]
+    },
+    {
+      "section": "年表",
+      "title": "御館の乱の日付と最期",
+      "text": "謙信の没日（天正6年3月13日）と景勝の本城入りは北条五代記に頼る。景虎の最期は、勝頼の差し金（五代記）、景勝の手による自害（異本小田原記）、鮫ヶ尾城での堀江宗親の裏切り（Wikipedia）に分かれ、御館の乱の期間・日付も書ごとに異なる。",
+      "checkWith": [
+        "上杉家文書の天正6〜7年の書状",
+        "『新潟県史 資料編』の御館の乱関係文書",
+        "山田邦明『上杉謙信』（2020年）"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景勝",
+          "person_id": "uesugi-kagekatsu"
+        }
+      ]
+    },
+    {
+      "section": "ゆかりの地",
+      "title": "勝福寺の墓所",
+      "text": "墓所はWikipedia経由で、現地・原典を確かめていない。座標は地名検索によるおおよその点。",
+      "checkWith": [
+        "上越市の文化財の解説",
+        "勝福寺の案内"
+      ]
+    }
+  ],
+  "tags": [
+    "上杉家",
+    "北条家",
+    "養子",
+    "越後"
+  ],
+  "updatedAt": "2026-11-02"
+}

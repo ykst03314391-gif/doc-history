@@ -176,5 +176,5 @@
       "text": "藤堂高虎",
       "person_id": "todo-takatora"
     }
-  , {"text": "小早川隆景", "person_id": "kobayakawa-takakage"}]
+  , {"text": "小早川隆景", "person_id": "kobayakawa-takakage"}, {"text": "九州攻め", "battle_id": "kyushu-campaign"}]
 }

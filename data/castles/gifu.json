@@ -10,5 +10,6 @@
   "place": {"name": "美濃国厚見郡", "prefecture": "岐阜県", "city": "岐阜市", "address": "岐阜県岐阜市金華山（岐阜城）", "lat": 35.4339, "lng": 136.7822},
   "relatedPeople": ["oda-nobunaga", "oda-nobutada"],
   "tags": ["織田家", "美濃", "国史跡", "日本100名城"],
+  "links": [{"text": "関ヶ原の戦い", "battle_id": "sekigahara"}],
   "updatedAt": "2026-11-02"
 }

@@ -138,7 +138,7 @@
         })
         .join(`<div class="side-vs">対</div>`);
       let inner = `<div class="sides">${cards}</div>`;
-      if (b.result) inner += `<p class="battle-result">${esc(b.result)}</p>`;
+      if (b.result) inner += `<p class="battle-result">${linkText(b.result, b.links)}</p>`;
       html.push(`<section class="section"><h2>対戦した陣営</h2>${inner}</section>`);
     }
 
@@ -175,7 +175,7 @@
               <span class="spot-type">${esc(s.type)}</span>
               <b>${esc(s.name)}</b>
               ${place ? `<span class="spot-place">／ ${place}</span>` : ""}
-              ${s.description ? `<div class="muted">${esc(s.description)}</div>` : ""}
+              ${s.description ? `<div class="muted">${linkText(s.description, b.links)}</div>` : ""}
               ${s.url ? `<div class="spot-link">公式：<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.urlName || "公式サイト")} ↗</a></div>` : ""}
             </div>`;
         })
@@ -189,7 +189,7 @@
         .map(
           (t) => `<li>
             <span class="bt-title">${esc(t.title)}</span>
-            ${t.description ? `<br><span class="bt-desc">${esc(t.description)}</span>` : ""}
+            ${t.description ? `<br><span class="bt-desc">${linkText(t.description, b.links)}</span>` : ""}
           </li>`
         )
         .join("");
@@ -202,7 +202,7 @@
         .map(
           (e) => `<li><b>${esc(e.title)}</b>${
             e.uncertain ? ` <span class="uncertain-badge">諸説あり</span>` : ""
-          }<br><span class="muted">${esc(e.body)}</span></li>`
+          }<br><span class="muted">${linkText(e.body, b.links)}</span></li>`
         )
         .join("");
       html.push(`<section class="section"><h2>逸話</h2><ul class="list">${items}</ul></section>`);

@@ -60,6 +60,7 @@ Photo = {
 | `official` | `{ url, name }`? | 公式サイト（実在を確認したURLのみ。捏造しない） |
 | `spots` | Spot[] | 周辺の見どころ（合戦スキーマと同形式） |
 | `relatedPeople` | string[] | 関連人物の `person_id` |
+| `links` | { text, person_id? / battle_id? / castle_id? }[] | 説明文（城主・増改築・特徴・合戦・現在の様子・見どころの説明、築城・廃城の注記）の中の語をサイト内ページへのリンクにする（項目ごとに各語の最初の1か所）。合戦スキーマの `links` と同じ形 |
 | `sources` | Source[] | 出典（人物スキーマと同形式。`note` も表示） |
 | `tags` / `updatedAt` | | 他スキーマと同じ |
 

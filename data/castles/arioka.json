@@ -13,5 +13,6 @@
   ],
   "relatedPeople": ["araki-murashige"],
   "tags": ["荒木家", "摂津", "国史跡"],
+  "links": [{"text": "荒木村重", "person_id": "araki-murashige"}],
   "updatedAt": "2026-11-02"
 }

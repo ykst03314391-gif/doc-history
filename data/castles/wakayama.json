@@ -11,5 +11,6 @@
   ],
   "relatedPeople": ["toyotomi-hidenaga", "kuwayama-shigeharu", "todo-takatora"],
   "tags": ["豊臣家", "紀伊", "国史跡", "日本100名城"],
+  "links": [{"text": "藤堂高虎", "person_id": "todo-takatora"}],
   "updatedAt": "2026-11-02"
 }

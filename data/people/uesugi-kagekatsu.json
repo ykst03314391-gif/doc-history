@@ -1,0 +1,1521 @@
+{
+  "id": "uesugi-kagekatsu",
+  "name": "上杉景勝",
+  "kana": "うえすぎ かげかつ",
+  "summary": "上杉謙信の甥で養子。謙信の死後、御館の乱で養子の上杉景虎を破って家督を継ぎ、越後・佐渡を治めた。のち豊臣政権の「五大老」の一人となり、会津へ移され、関ヶ原の戦いのあとは米沢30万石に減らされて、江戸時代の米沢藩の初代となった。",
+  "lens": {
+    "title": "「謙信の正統な後継者」景勝は本当か",
+    "question": "御館の乱に勝って家を継いだ景勝は「謙信の正統な後継者」と語られる。その像は、どの書から来て、勝者の側の語りとして割り引くべき点はどこか。",
+    "view": ""
+  },
+  "aliases": [
+    {
+      "type": "幼名",
+      "value": "卯松（長尾卯松）",
+      "note": "Wikipedia経由。同時代の史料では確かめていない"
+    },
+    {
+      "type": "その他",
+      "value": "顕景",
+      "note": "初名とされる（Wikipedia経由）。改めた時期は確かめていない"
+    },
+    {
+      "type": "通称",
+      "value": "喜平次",
+      "note": "信長公記は{{長尾喜平次}}、甲陽軍鑑は{{喜平次景勝}}と書く",
+      "links": [
+        {
+          "text": "信長",
+          "person_id": "oda-nobunaga"
+        }
+      ]
+    },
+    {
+      "type": "その他",
+      "value": "越後宰相・会津中納言",
+      "note": "官職による呼び名。太閤記は{{越後宰相景勝}}{{会津中納言景勝}}と書く"
+    },
+    {
+      "type": "法名",
+      "value": "宗心",
+      "note": "Wikipedia経由"
+    }
+  ],
+  "nameHistory": [
+    {
+      "era": "幼少期",
+      "value": "卯松（長尾卯松）",
+      "note": "幼名。Wikipedia経由で、同時代の史料では確かめていない。",
+      "sourceId": "wikipedia",
+      "uncertain": true
+    },
+    {
+      "era": "元服後",
+      "value": "顕景",
+      "note": "初名とされ、のちに景勝へ改めたという（Wikipedia経由）。改名の時期と、同時代の文書での署名は確かめていない。要確認（ページ末尾の調査メモ）。",
+      "sourceId": "wikipedia",
+      "uncertain": true
+    },
+    {
+      "year": 1578,
+      "era": "天正6年",
+      "value": "長尾喜平次景勝",
+      "note": "北条五代記は{{長尾喜平次景勝}}、甲陽軍鑑は{{春日山喜平次景勝}}と書く。どちらも後世の軍記で、同時代の署名ではない。",
+      "sourceId": [
+        "hojo-godaiki",
+        "koyo-gunkan"
+      ]
+    },
+    {
+      "year": 1581,
+      "era": "天正9年",
+      "value": "長尾喜平次",
+      "note": "信長公記は、越中の小出城をめぐる記事で{{長尾喜平次}}と書き、実名は書かない（織田方の呼び名）。",
+      "sourceId": "shincho-koki",
+      "links": [
+        {
+          "text": "信長",
+          "person_id": "oda-nobunaga"
+        }
+      ]
+    },
+    {
+      "year": 1583,
+      "era": "天正11年ごろ",
+      "value": "長尾喜平治景勝（越後守護）",
+      "note": "天正記（柴田退治記）は{{越後守護長尾喜平治景勝}}と書く。守護の称は同書の書き方で、景勝が守護に任じられたかは確かめていない。",
+      "sourceId": "tensho-ki"
+    },
+    {
+      "year": 1590,
+      "era": "天正18年",
+      "value": "越後守上杉弾正忠景勝",
+      "note": "太閤記は、小田原攻めで利家に従った人々に{{越後守上杉弾正忠景勝}}を挙げる。弾正少弼の官名は謙信から譲られたとされる（Wikipedia経由）が、軍記は弾正忠と書く。",
+      "sourceId": [
+        "hoan-taikoki",
+        "wikipedia"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ]
+    },
+    {
+      "year": 1600,
+      "era": "慶長5年",
+      "value": "上杉中納言景勝",
+      "note": "北条五代記は、慶長5年の春、{{上杉中納言景勝}}が陸奥で{{鉾楯}}したと書く。太閤記は晩年の一覧に{{会津中納言景勝}}と書く。",
+      "sourceId": [
+        "hojo-godaiki",
+        "hoan-taikoki"
+      ]
+    }
+  ],
+  "kamon": {
+    "name": "上杉笹（竹に飛び雀）",
+    "note": "上杉家の家紋（謙信のページと同じ）",
+    "links": [
+      {
+        "text": "謙信",
+        "person_id": "uesugi-kenshin"
+      }
+    ]
+  },
+  "birth": {
+    "year": 1556,
+    "month": 1,
+    "day": 8,
+    "era": "弘治元年11月27日",
+    "uncertain": true,
+    "note": "弘治元年11月27日（グレゴリオ暦1556年1月8日）はWikipedia経由で、1555年とする記載もあるという（同）。甲陽軍鑑は、天正6年の景勝を{{景勝此年二十四歳}}、天正10年の景勝を{{景勝此年二十八歳にて後詰}}と書き、数え年で弘治元年（1555〜56）の生まれと合う（Wikisource本文で確認）。月日は軍鑑では確かめられない。",
+    "sourceId": [
+      "wikipedia",
+      "koyo-gunkan"
+    ]
+  },
+  "death": {
+    "year": 1623,
+    "month": 4,
+    "day": 19,
+    "era": "元和9年3月20日",
+    "note": "米沢城で没した（享年69。Wikipedia経由）。元和9年3月20日はグレゴリオ暦1623年4月19日（同）。同時代の史料では確かめていない。",
+    "sourceId": "wikipedia"
+  },
+  "birthplace": {
+    "name": "越後国（坂戸城周辺とされる）",
+    "prefecture": "新潟県",
+    "approx": true,
+    "note": "生まれた場所は確かめていない。父の長尾政景の本拠が坂戸城（南魚沼市）とされる（Wikipedia経由の一般知識）ことから推した。"
+  },
+  "ranks": [
+    {
+      "year": 1575,
+      "era": "天正3年",
+      "title": "弾正少弼",
+      "note": "謙信から譲られた官名とされる（Wikipedia経由）。叙任の文書は確かめていない。要確認（ページ末尾の調査メモ）。",
+      "sourceId": "wikipedia",
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ]
+    },
+    {
+      "year": 1586,
+      "era": "天正14年",
+      "title": "従四位下・左近衛権少将",
+      "note": "Wikipedia経由。口宣案などは確かめていない。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "year": 1588,
+      "era": "天正16年4月10日",
+      "title": "参議",
+      "note": "公卿補任の天正16年の条に、4月10日に景勝と毛利輝元が参議に任じられたと読める記載がある（OCR本文による。表組みが崩れ、名前と日付の対応は不確か）。位階を、公卿補任のOCRは従四位下と読めるが、Wikipediaは従三位とする。要確認（ページ末尾の調査メモ）。",
+      "links": [
+        {
+          "text": "毛利輝元",
+          "person_id": "mori-terumoto"
+        }
+      ],
+      "sourceId": [
+        "kugyo-bunin",
+        "wikipedia"
+      ]
+    },
+    {
+      "year": 1594,
+      "era": "文禄3年8月18日",
+      "title": "権中納言",
+      "note": "公卿補任の文禄3年の条に、景勝が8月18日に権中納言に任じられたと読める記載がある（OCR本文による。名前と日付の対応は不確か）。Wikipediaは文禄3年ごろとする。",
+      "sourceId": [
+        "kugyo-bunin",
+        "wikipedia"
+      ]
+    },
+    {
+      "year": 1598,
+      "era": "慶長3年4月",
+      "title": "権中納言を辞任",
+      "note": "Wikipedia経由。公卿補任の慶長3年の条にも、景勝について4月18日の辞退と読める記載がある（OCR本文による。毛利輝元の名と並び、日付の対応は不確か）。",
+      "links": [
+        {
+          "text": "毛利輝元",
+          "person_id": "mori-terumoto"
+        }
+      ],
+      "sourceId": [
+        "wikipedia",
+        "kugyo-bunin"
+      ]
+    }
+  ],
+  "family": [
+    {
+      "relation": "父",
+      "name": "長尾政景",
+      "note": "謙信の姉（仙桃院）の夫。甲陽軍鑑は{{義景}}の名で{{景虎のあねむこ}}と書き、異本小田原記は{{長尾越前守}}と書いて、謙信が{{信州池尻の水に沈め給ふ}}と伝える。政景の死は景勝の幼少のころ（Wikipediaは永禄7年とする）。死の経緯は要確認（ページ末尾の調査メモ）。",
+      "sourceId": [
+        "koyo-gunkan",
+        "ihon-odawaraki",
+        "wikipedia"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ]
+    },
+    {
+      "relation": "母",
+      "name": "仙桃院",
+      "note": "長尾為景の娘で、謙信の姉（Wikipedia経由）。仙洞院とも書かれる。異本小田原記は、景勝は幼少のころ、姉君（仙桃院）の申し出で命を助けられたと書く。",
+      "links": [
+        {
+          "text": "為景",
+          "person_id": "nagao-tamekage"
+        },
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ],
+      "sourceId": [
+        "wikipedia",
+        "ihon-odawaraki"
+      ]
+    },
+    {
+      "relation": "養父",
+      "name": "上杉謙信",
+      "person_id": "uesugi-kenshin",
+      "note": "母の弟（叔父）。甲陽軍鑑は、謙信が{{甥の喜平次をも、養子に定め}}たと書く。養子になった時期は、永禄7年の父の死ののちとされる（Wikipedia経由）。",
+      "sourceId": [
+        "koyo-gunkan",
+        "wikipedia"
+      ]
+    },
+    {
+      "relation": "その他",
+      "name": "上杉景虎",
+      "person_id": "uesugi-kagetora",
+      "note": "謙信の養子で、景勝の姉（異本・北条五代記は妹と書く）の夫。つまり義兄（弟）にあたる。謙信の死後、家督を争って敗れた（御館の乱）。北条五代記は{{甥の長尾喜平次景勝妹を。三郎殿の妻となし}}と書く（句読点は原文のまま）。",
+      "sourceId": [
+        "hojo-godaiki",
+        "wikipedia"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ]
+    },
+    {
+      "relation": "正室",
+      "name": "菊姫",
+      "note": "武田信玄の娘（Wikipedia経由）。甲陽軍鑑は、景勝を{{武田勝頼公、御妹聟に成り給ふ}}と書き、輿入れを{{同年秋}}とする。勝頼の妹、つまり信玄の娘にあたる。年は軍鑑の書き方が曖昧で、天正7年とされる（Wikipedia経由の一般知識。要確認）。",
+      "links": [
+        {
+          "text": "武田信玄",
+          "person_id": "takeda-shingen"
+        }
+      ],
+      "sourceId": [
+        "koyo-gunkan",
+        "wikipedia"
+      ]
+    },
+    {
+      "relation": "継室",
+      "name": "桂岩院",
+      "note": "Wikipedia経由。出自と年は確かめていない。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "relation": "子",
+      "name": "上杉定勝",
+      "note": "嫡男で、米沢藩の第2代（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "relation": "養子",
+      "name": "畠山義真",
+      "note": "Wikipedia経由。縁組の時期と経緯は確かめていない。",
+      "sourceId": "wikipedia"
+    }
+  ],
+  "lords": [
+    {
+      "name": "上杉謙信",
+      "person_id": "uesugi-kenshin",
+      "from": 1564,
+      "note": "叔父で養父。永禄7年に父を亡くしたのち、謙信のもとで育ち養子になった（Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "name": "豊臣秀吉",
+      "person_id": "toyotomi-hideyoshi",
+      "from": 1583,
+      "note": "天正記（柴田退治記）が、柴田勝家を滅ぼした年（天正11年）の記事で、景勝が秀吉に従ったことを書く。上洛して秀吉に臣従した年は、天正14年とする説明もあり確かめていない。要確認（ページ末尾の調査メモ）。",
+      "sourceId": [
+        "tensho-ki",
+        "wikipedia"
+      ],
+      "links": [
+        {
+          "text": "柴田勝家",
+          "person_id": "shibata-katsuie"
+        }
+      ]
+    },
+    {
+      "name": "徳川家康",
+      "person_id": "tokugawa-ieyasu",
+      "from": 1601,
+      "note": "関ヶ原のあと、会津から米沢へ移されて徳川に従った（Wikipedia経由）。大坂の陣では徳川方に加わったという（同）。",
+      "sourceId": "wikipedia",
+      "links": [
+        {
+          "text": "関ヶ原",
+          "battle_id": "sekigahara"
+        }
+      ]
+    }
+  ],
+  "retainers": [
+    {
+      "name": "直江兼続",
+      "person_id": "naoe-kanetsugu",
+      "note": "重臣。常山紀談は、景勝が奥州で{{百万石}}を与えられたとき、米沢30万石を直江に与え、陪臣では第一の大禄だったと書く（OCR本文による）。",
+      "sourceId": "jozan-kidan"
+    },
+    {
+      "name": "荻田主馬助",
+      "note": "景勝の直臣。甲陽軍鑑は{{荻出主馬助}}と書き、善光寺での夜襲で北条丹後守を追って槍で2度突いた者とする。異本小田原記は、当時17歳の{{荻田孫三郎}}（のちの主馬助）の話として伝える。",
+      "sourceId": [
+        "koyo-gunkan",
+        "ihon-odawaraki"
+      ]
+    },
+    {
+      "name": "河田豊前守",
+      "note": "信長公記は、織田方の越中の城を攻める際、{{河田豊前以調略越後より　長尾喜平次を呼越}}と書き、景勝を越中へ呼び出した人物として名を出す（実名は書かない）。",
+      "sourceId": "shincho-koki",
+      "links": [
+        {
+          "text": "信長",
+          "person_id": "oda-nobunaga"
+        }
+      ]
+    },
+    {
+      "name": "新発田重家（常山紀談は「治長」）",
+      "note": "離反した家臣。常山紀談は、{{治長後景勝の世に及びて二心ありければ}}、景勝が討ったと書く。{{新發田五十野兩城を守りて}}3年のうちに城が落ちたという（OCR本文による）。常山紀談の「治長」と重家が同じ人物か確かめていない。要確認（ページ末尾の調査メモ）。",
+      "uncertain": true,
+      "sourceId": "jozan-kidan"
+    }
+  ],
+  "territories": [
+    {
+      "year": 1578,
+      "name": "越後国・佐渡国",
+      "prefecture": "新潟県",
+      "province": [
+        "越後国",
+        "佐渡国"
+      ],
+      "note": "謙信の死後に家督を継いだ。甲陽軍鑑は、天正10年の景勝を{{越後佐渡二ケ国}}を領する者と書く。景虎方を破って家中をまとめた時期（天正7年）と、越後全体を押さえた時期（新発田重家を討った天正15年）は異なる。",
+      "until": 1598,
+      "untilNote": "慶長3年、会津へ国替えとなった（Wikipedia経由）。川角太閤記は{{景勝国替を被仰付会津々被遣候}}と書き、越後には堀秀治（{{羽柴久太郎}}）らが入ったと書く。",
+      "mapNote": "天正7年に景虎を破っても、越後全体を従えたのは天正15年以降とされる。地図では越後・佐渡全体を塗った",
+      "sourceId": [
+        "koyo-gunkan",
+        "kawasumi-taikoki",
+        "wikipedia"
+      ],
+      "place": "春日山城跡",
+      "approx": true,
+      "lat": 37.1127,
+      "lng": 138.2144,
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "year": 1598,
+      "name": "会津（陸奥国）",
+      "prefecture": "福島県",
+      "note": "慶長3年、会津120万石へ移った（Wikipedia経由）。川角太閤記は、佐渡島と川中島が会津に付けられたとし、景勝には3年間の上洛その他の役の免除が与えられたと書く。会津の石高と領域の範囲は軍記と Wikipedia で書き方が異なり、確かめていない。",
+      "until": 1601,
+      "untilNote": "関ヶ原のあと、米沢30万石へ減らされた（慶長6年ごろ。Wikipedia経由。年譜は慶長5年8月の命とする記載もあるという）。要確認（ページ末尾の調査メモ）。",
+      "mapNote": "陸奥国の一部で、会津の範囲を示す郡データがないため塗っていない（ピンは会津若松）",
+      "sourceId": [
+        "kawasumi-taikoki",
+        "wikipedia"
+      ],
+      "place": "会津若松",
+      "approx": true,
+      "lat": 37.4875,
+      "lng": 139.9298,
+      "links": [
+        {
+          "text": "関ヶ原",
+          "battle_id": "sekigahara"
+        }
+      ]
+    },
+    {
+      "year": 1601,
+      "name": "出羽国米沢",
+      "prefecture": "山形県",
+      "note": "米沢30万石（Wikipedia経由）。江戸時代を通じて米沢藩として続いた。",
+      "mapNote": "出羽国の一部で、米沢の範囲を示す郡データがないため塗っていない（ピンは米沢）",
+      "sourceId": "wikipedia",
+      "place": "米沢",
+      "approx": true,
+      "lat": 37.915,
+      "lng": 140.117
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1556,
+      "month": 1,
+      "day": 8,
+      "title": "誕生",
+      "description": "弘治元年11月27日に生まれたとされる（Wikipedia経由）。甲陽軍鑑が書く年齢（天正6年に24歳）と合う。",
+      "sourceId": [
+        "wikipedia",
+        "koyo-gunkan"
+      ],
+      "uncertain": true
+    },
+    {
+      "year": 1564,
+      "title": "父・長尾政景の死、謙信の養子となる",
+      "description": "父の死ののち、謙信の養子となったとされる（永禄7年。Wikipedia経由）。異本小田原記は、父の長尾越前守を謙信が{{信州池尻の水に沈め給ふ}}と書く（後北条家の側の軍記で、経緯は確かめていない）。",
+      "sourceId": [
+        "wikipedia",
+        "ihon-odawaraki"
+      ],
+      "uncertain": true,
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ]
+    },
+    {
+      "year": 1578,
+      "month": 3,
+      "day": 13,
+      "title": "謙信が没し、春日山城の本城に入る",
+      "place": "春日山城",
+      "castle_id": "kasugayama",
+      "lat": 37.1127,
+      "lng": 138.2144,
+      "approx": true,
+      "description": "北条五代記は、輝虎（謙信）が天正6年3月13日に頓死し、{{景勝同十三日人数引つれ本城へはしり入て}}門を固め、二の曲輪の景虎を弓・鉄砲で攻めたと書く。甲陽軍鑑は、{{喜平次と三郎と、謙信の跡をあらそひ}}、本城と二の曲輪で弓・鉄砲のせり合いがあったと書き、異本小田原記は、景勝が謙信の葬礼にも及ばず{{無理に本城へ移り}}、景虎の家老を追い出したと書く。いずれも景虎を養子に迎えた北条方に近い軍記で、景勝側の記録は確かめていない。",
+      "sourceId": [
+        "hojo-godaiki",
+        "koyo-gunkan",
+        "ihon-odawaraki"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "year": 1578,
+      "title": "北条丹後守を夜襲で破る",
+      "description": "景虎方に付いた北条丹後守が善光寺に陣を取り、景勝方と度々せり合ったが、甲陽軍鑑は{{景勝此年二十四歳}}で、夜半に忍んで善光寺の後ろへ回り、暁に攻め破ったと書く。景勝の家来の荻出主馬助が丹後守を槍で突き、丹後守は{{越後府中において死す}}という。北条五代記・異本小田原記も同じ筋で書くが、細部は異なる。",
+      "sourceId": [
+        "koyo-gunkan",
+        "hojo-godaiki",
+        "ihon-odawaraki"
+      ],
+      "links": [
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "year": 1578,
+      "title": "武田勝頼を味方につける",
+      "description": "景虎を助けようとした武田勝頼を、景勝は金で動かしたと軍記が書く。甲陽軍鑑は、勝頼の寵臣の{{長閑に二千両、大炊介に二千両}}を贈ったと書く。北条五代記は長坂長閑・跡部道印に千両ずつ、勝頼に五千両とし、異本小田原記は数千両と書いて、金額も人名も一致しない。",
+      "sourceId": [
+        "koyo-gunkan",
+        "hojo-godaiki",
+        "ihon-odawaraki"
+      ],
+      "uncertain": true,
+      "links": [
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "year": 1579,
+      "month": 4,
+      "day": 19,
+      "title": "御館の乱に勝ち、景虎が没する",
+      "place": "春日山城",
+      "castle_id": "kasugayama",
+      "lat": 37.1127,
+      "lng": 138.2144,
+      "approx": true,
+      "description": "天正7年3月、景虎が没して御館の乱は景勝の勝利に終わった（景虎の没日は3月24日。Wikipedia経由）。景虎の最期は、甲陽軍鑑・北条五代記が勝頼の差し金とし、異本小田原記は{{三郎殿は、景勝が為に自害して失せ給ふ}}と書いて食い違う。",
+      "sourceId": [
+        "wikipedia",
+        "koyo-gunkan",
+        "hojo-godaiki",
+        "ihon-odawaraki"
+      ],
+      "uncertain": true,
+      "links": [
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "year": 1579,
+      "title": "武田勝頼の妹を迎える",
+      "description": "甲陽軍鑑は、景勝が{{武田勝頼公、御妹聟に成り給ふ}}と書き、輿入れは{{同年秋}}という。天正7年とされる（Wikipedia経由の一般知識）が、軍鑑の年の書き方は曖昧で、確かめていない。",
+      "sourceId": [
+        "koyo-gunkan",
+        "wikipedia"
+      ],
+      "uncertain": true
+    },
+    {
+      "year": 1581,
+      "month": 3,
+      "title": "越中の小出城をめぐって織田方と戦う",
+      "description": "信長公記は天正9年3月の条に、河田豊前が越後から{{長尾喜平次}}を呼び、大将として一揆を起こし、佐々成政の入れ置いた小出城を取り巻いたと書く。長尾喜平次が越中へ出たのは3月15日、陣を払って引いたのは3月24日の条に見える。織田方から見た景勝の動きで、景勝側の記録は確かめていない。",
+      "sourceId": "shincho-koki",
+      "links": [
+        {
+          "text": "信長",
+          "person_id": "oda-nobunaga"
+        }
+      ]
+    },
+    {
+      "year": 1582,
+      "month": 5,
+      "title": "柴田勝家らの北陸攻めに後詰する",
+      "description": "甲陽軍鑑は、勝頼が切腹したのち、信長が柴田修理を大将に前田又左衛門らを加えた4万5千で越後を攻め、景勝は{{景勝此年二十八歳にて後詰}}し、5千で出て陣を取ったと書く。柴田方は臆病とそしられるほど堀と土手で守りを固め、景勝は{{謙信の弓矢強き威光は景勝当五月の手柄なる武勇也}}と評される。軍鑑は城を能登の内と書くが、実際の戦場の場所は確かめていない。要確認（ページ末尾の調査メモ）。",
+      "links": [
+        {
+          "text": "柴田修理",
+          "person_id": "shibata-katsuie"
+        },
+        {
+          "text": "信長",
+          "person_id": "oda-nobunaga"
+        }
+      , {"text": "前田又左衛門", "person_id": "maeda-toshiie"}],
+      "sourceId": "koyo-gunkan"
+    },
+    {
+      "year": 1582,
+      "month": 6,
+      "title": "本能寺の変で柴田らが引く",
+      "description": "甲陽軍鑑は、森勝蔵が川中島から越後へ働いたとの知らせを聞いて景勝が越後へ帰った次の日に、信長が切腹したとの報が来たと書く。景勝が抱えていた城も、佐々内蔵介らに渡されて引いたと書く。",
+      "links": [
+        {
+          "text": "森勝蔵",
+          "person_id": "mori-nagayoshi"
+        },
+        {
+          "text": "信長が切腹",
+          "battle_id": "honnoji-no-hen"
+        }
+      ],
+      "sourceId": "koyo-gunkan"
+    },
+    {
+      "year": 1583,
+      "month": 5,
+      "title": "秀吉に従う",
+      "description": "天正記（柴田退治記）は、柴田勝家を滅ぼした年に、{{越後守護長尾喜平治景勝}}が秀吉に従い、東国は家康、北国は景勝、西国は輝元がみな秀吉に集まったと書く。秀吉方の顕彰の文章で、景勝がいつ、どの形で臣従したかは確かめていない。要確認（ページ末尾の調査メモ）。",
+      "links": [
+        {
+          "text": "輝元",
+          "person_id": "mori-terumoto"
+        },
+        {
+          "text": "柴田勝家",
+          "person_id": "shibata-katsuie"
+        },
+        {
+          "text": "秀吉",
+          "person_id": "toyotomi-hideyoshi"
+        },
+        {
+          "text": "家康",
+          "person_id": "tokugawa-ieyasu"
+        }
+      ],
+      "sourceId": "tensho-ki",
+      "uncertain": true
+    },
+    {
+      "year": 1587,
+      "title": "新発田重家を討つ",
+      "description": "越後をほぼ再統一したのは天正15年とされる（Wikipedia経由）。常山紀談は、新発田が二心を抱いたので景勝が討ち、{{新發田五十野兩城を守りて}}3年のあとに城が落ちたと書く（OCR本文による）。",
+      "sourceId": [
+        "wikipedia",
+        "jozan-kidan"
+      ]
+    },
+    {
+      "year": 1590,
+      "month": 2,
+      "title": "小田原攻めで北国勢に加わる",
+      "place": "松井田城（安中市）",
+      "lat": 36.3283,
+      "lng": 138.7767,
+      "approx": true,
+      "description": "太閤記は、利家・利長が3万騎を率いて2月16日に加賀を立ち、{{越後守上杉弾正忠景勝}}・毛利秀頼（原文は毛利河内守）・真田昌幸（原文は真田源五）の勢と合わせて3万5千が上野の松井田城（原文は松枝の城）を囲んだと書く。城主の大道寺駿河守らは降った。松井田城の位置はおおよその点で、確かめていない。",
+      "sourceId": "hoan-taikoki"
+    },
+    {
+      "year": 1590,
+      "title": "八王子城を攻める",
+      "place": "八王子城（八王子市）",
+      "lat": 35.6419,
+      "lng": 139.265,
+      "approx": true,
+      "description": "常山紀談は、武蔵の八王寺城（八王子城）を前田利家・上杉景勝が攻めたと書く（OCR本文による）。城は落ちたとされる。城主の北条氏照は小田原にいたとも書く。八王子城の位置はおおよその点。",
+      "links": [{"text": "前田利家", "person_id": "maeda-toshiie"}], "sourceId": "jozan-kidan"
+    },
+    {
+      "year": 1592,
+      "title": "朝鮮出兵に加わる",
+      "description": "文禄元年から2年にかけて、朝鮮出兵に参加したとされる（Wikipedia経由）。従軍の経緯は確かめていない。",
+      "sourceId": "wikipedia",
+      "uncertain": true
+    },
+    {
+      "year": 1598,
+      "title": "会津へ国替えとなる",
+      "place": "会津若松",
+      "lat": 37.4875,
+      "lng": 139.9298,
+      "approx": true,
+      "description": "川角太閤記は{{景勝国替を被仰付会津々被遣候}}と書き、佐渡島と川中島が会津に付けられたと伝える。慶長3年（Wikipedia経由）。会津は120万石とされる（同）。越後には堀秀治が入った。川角太閤記は、秀吉の没後に家康が上洛を求めたが、景勝は秀吉が{{三年の間は上洛御免}}と許したと答えたと書く。",
+      "sourceId": [
+        "kawasumi-taikoki",
+        "wikipedia"
+      ],
+      "links": [
+        {
+          "text": "秀吉",
+          "person_id": "toyotomi-hideyoshi"
+        },
+        {
+          "text": "家康",
+          "person_id": "tokugawa-ieyasu"
+        }
+      ]
+    },
+    {
+      "year": 1600,
+      "title": "会津征伐と関ヶ原",
+      "place": "会津若松",
+      "lat": 37.4875,
+      "lng": 139.9298,
+      "approx": true,
+      "description": "三河物語は、会津の景勝が国へ暇を請うて下ったのち、召しても上らなかったので、家康が討とうと出陣した、と書く。川角太閤記は、石田三成が景勝へ内証を入れ、景勝が上洛を断るよう仕向け、家康が奥州へ出馬した跡で挙兵する腹積もりだったと聞こえる、とする（伝聞）。このあと関ヶ原の戦いが起こった。景勝は関ヶ原の本戦に出ていない。",
+      "links": [
+        {
+          "text": "関ヶ原の戦い",
+          "battle_id": "sekigahara"
+        },
+        {
+          "text": "家康",
+          "person_id": "tokugawa-ieyasu"
+        }
+      ],
+      "sourceId": [
+        "mikawa-monogatari",
+        "kawasumi-taikoki"
+      ],
+      "uncertain": true
+    },
+    {
+      "year": 1601,
+      "title": "会津から米沢30万石へ移される",
+      "place": "米沢",
+      "lat": 37.915,
+      "lng": 140.117,
+      "approx": true,
+      "description": "関ヶ原のあと、会津から米沢30万石へ減らされたとされる（慶長6年ごろ。Wikipedia経由。年譜は慶長5年8月の命とする記載もあるという）。三河物語は、景勝・佐竹・島津・毛利らが家康に敵対したのに、討たれず国郡を与えられたのは家康の慈悲だと書く。",
+      "links": [
+        {
+          "text": "家康",
+          "person_id": "tokugawa-ieyasu"
+        },
+        {
+          "text": "関ヶ原",
+          "battle_id": "sekigahara"
+        }
+      ],
+      "sourceId": [
+        "wikipedia",
+        "mikawa-monogatari"
+      ],
+      "uncertain": true
+    },
+    {
+      "year": 1614,
+      "title": "大坂の陣に徳川方として出る",
+      "place": "大坂城",
+      "castle_id": "osaka",
+      "description": "慶長19〜20年の大坂の陣に、徳川方として参加した（Wikipedia経由）。合戦での動きは確かめていない。",
+      "sourceId": "wikipedia",
+      "uncertain": true
+    },
+    {
+      "year": 1623,
+      "month": 4,
+      "day": 19,
+      "title": "没する",
+      "place": "米沢",
+      "lat": 37.915,
+      "lng": 140.117,
+      "approx": true,
+      "description": "元和9年3月20日、米沢城で没した（享年69。Wikipedia経由）。",
+      "sourceId": "wikipedia"
+    }
+  ],
+  "episodes": [
+    {
+      "title": "謙信が残した「二人の養子」",
+      "body": "甲陽軍鑑は、謙信が北条氏康の子の三郎を養子にして景虎と名付け、{{甥の喜平次をも、養子に定め}}、{{跡を二旗に}}と考えていたと書く。一方、北条五代記は、ある老人の話として、謙信が景虎を{{景勝成人までは人ぢちに取たると心得べし}}と家老に言い含めたという筋を載せる。どちらも、謙信が景勝をどう位置づけていたかを、死後に推し量る書き方で、謙信の遺言そのものを確かめた記事ではない。",
+      "uncertain": true,
+      "sourceId": [
+        "koyo-gunkan",
+        "hojo-godaiki"
+      ],
+      "links": [
+        {
+          "text": "北条氏康",
+          "person_id": "hojo-ujiyasu"
+        },
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "title": "勝頼への黄金",
+      "body": "景虎を助けようとした武田勝頼を、景勝は謙信が貯えていた黄金で動かしたと、複数の軍記が書く。金額は、甲陽軍鑑が長閑・大炊介に二千両ずつ、北条五代記が長閑・道印に千両ずつと勝頼に五千両、異本小田原記が数千両と書き、常山紀談はOCR本文で黄金一万両、寵臣に二千両ずつと読める。景勝の側が、勝頼の寵臣を買収して景虎を孤立させた、という筋は一致するが、数字は揃わない。",
+      "uncertain": true,
+      "sourceId": [
+        "koyo-gunkan",
+        "hojo-godaiki",
+        "ihon-odawaraki",
+        "jozan-kidan"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "title": "秀吉の前で当てられた景勝の刀",
+      "body": "常山紀談には、豊臣秀吉が居並ぶ大名たちの刀を言い当てる話があり、そこで景勝は、父（謙信）の時から長剣を好み、寸の延びた刀を持つ人として語られる（OCR本文による）。秀家は美麗な刀、利家は先陣・殿の武功を思わせる刀と並べて書き分けた逸話で、事実かどうかは確かめていない。",
+      "uncertain": true,
+      "links": [
+        {
+          "text": "秀吉",
+          "person_id": "toyotomi-hideyoshi"
+        },
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ],
+      "sourceId": "jozan-kidan"
+    }
+  ],
+  "questions": [
+    {
+      "place": "lens",
+      "title": "景勝は謙信の遺志で後継者になったのか？",
+      "text": "甲陽軍鑑は謙信が景虎と景勝の二人を養子に定め、跡を二つに分けるつもりだったとし、北条五代記は景勝が成人するまで景虎に預けたという話を載せる。謙信の遺言があったのか、あったとすればどう書かれていたのかを、書状などで確かめる。",
+      "sourceId": [
+        "koyo-gunkan",
+        "hojo-godaiki"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "place": "lens",
+      "title": "景勝は「謀略」で家督を奪ったのか？",
+      "text": "本城を先に押さえたこと、黄金で勝頼を動かしたことなど、軍記は景勝の機敏さを書く一方、後北条家の側の書は{{野心}}（北条五代記）としても描く。どれが勝者の記録に基づくのか、景虎方・北条方・武田方の書き方の偏りを分けて確かめる。",
+      "sourceId": [
+        "hojo-godaiki",
+        "koyo-gunkan",
+        "ihon-odawaraki"
+      ],
+      "links": [
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "place": "lens",
+      "title": "秀吉に従ったのはいつ、どんな形か？",
+      "text": "天正記は天正11年に景勝が秀吉に従ったと書く。Wikipediaは天正11年の和睦と天正14年の叙任を挙げる。上洛・臣従の年、人質の有無、柴田勝家との関係を確かめる。",
+      "sourceId": [
+        "tensho-ki",
+        "wikipedia"
+      ],
+      "links": [
+        {
+          "text": "柴田勝家",
+          "person_id": "shibata-katsuie"
+        },
+        {
+          "text": "秀吉",
+          "person_id": "toyotomi-hideyoshi"
+        }
+      ]
+    },
+    {
+      "title": "景勝の父・長尾政景はどう亡くなったのか？",
+      "text": "異本小田原記は、謙信が池尻で政景を水に沈めたと書く。政景の死は永禄7年とされるが、事故か暗殺か、謙信が関わったのかは、軍記だけでは確かめられない。景勝と謙信の関係の見方に関わる。",
+      "sourceId": [
+        "ihon-odawaraki",
+        "wikipedia"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ]
+    },
+    {
+      "title": "会津移封は何を意味したのか？",
+      "text": "会津120万石への国替えと、慶長5年の会津征伐・関ヶ原の関係を、川角太閤記の「石田三成の内証」の見方と、三河物語の見方から見直す。景勝は関ヶ原の本戦に出ておらず、なぜ米沢30万石に減らされたのかも確かめる。",
+      "sourceId": [
+        "kawasumi-taikoki",
+        "mikawa-monogatari",
+        "wikipedia"
+      ],
+      "links": [
+        {
+          "text": "関ヶ原",
+          "battle_id": "sekigahara"
+        }
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "title": "御館の乱を制して家督を継ぐ",
+      "description": "謙信の死後、北条氏康の子の養子・景虎を破って、上杉家の家督と越後を受け継いだ。",
+      "sourceId": [
+        "hojo-godaiki",
+        "koyo-gunkan",
+        "wikipedia"
+      ],
+      "links": [
+        {
+          "text": "北条氏康",
+          "person_id": "hojo-ujiyasu"
+        },
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "title": "織田軍の北陸攻めをしのぐ",
+      "description": "柴田勝家らの北陸攻めに、5千の兵で後詰して持ちこたえ、本能寺の変で危機を脱した。",
+      "sourceId": "koyo-gunkan",
+      "links": [
+        {
+          "text": "柴田勝家",
+          "person_id": "shibata-katsuie"
+        }
+      , {"text": "本能寺の変", "battle_id": "honnoji-no-hen"}]
+    },
+    {
+      "title": "豊臣政権の大名として生き残る",
+      "description": "秀吉に従い、五大老の一人となり、会津120万石を領した。関ヶ原のあとは米沢30万石に減らされたが、家を存続させた。",
+      "sourceId": [
+        "tensho-ki",
+        "hoan-taikoki",
+        "wikipedia"
+      ],
+      "links": [
+        {
+          "text": "関ヶ原",
+          "battle_id": "sekigahara"
+        },
+        {
+          "text": "秀吉",
+          "person_id": "toyotomi-hideyoshi"
+        }
+      ]
+    }
+  ],
+  "reputation": [
+    {
+      "era": "存命時",
+      "title": "武田方から見た景勝（甲陽軍鑑）",
+      "body": "甲陽軍鑑は、謙信の死後の景勝を、24歳でも{{弓箭に利発なる大将}}と書き、景虎方の北条丹後守を夜襲で破った武勇を載せる。さらに、天正10年に柴田らが攻めたとき、{{謙信の弓矢強き威光は景勝当五月の手柄なる武勇也}}と評す。一方、軍鑑の別の箇所は{{今景勝は若く候間}}と、謙信より劣るとも書く。年次の誤りが多い書で、評の言葉は勝頼を戒める文脈で出てくる。",
+      "sourceId": "koyo-gunkan",
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "era": "存命時",
+      "title": "織田方から見た景勝（信長公記）",
+      "body": "信長公記は、景勝を実名でなく{{長尾喜平次}}と呼び、越中の小出城をめぐる記事に、河田豊前が呼んだ大将として名を出す。評価の言葉はなく、織田方が越後勢を、越中の支配をおびやかす外の勢力と見ていたことだけが読み取れる。",
+      "sourceId": "shincho-koki",
+      "links": [
+        {
+          "text": "信長",
+          "person_id": "oda-nobunaga"
+        }
+      ]
+    },
+    {
+      "era": "存命時",
+      "title": "秀吉方から見た景勝（天正記）",
+      "body": "秀吉方の大村由己の天正記は、柴田勝家を滅ぼしたのち、東国の家康、北国の景勝、西国の輝元が、みな秀吉のもとに集まったとして、景勝を秀吉の天下を支える三大名の一人に数える。秀吉の顕彰を目的にした文章で、景勝の主体的な選択を書く書ではない。",
+      "links": [
+        {
+          "text": "家康",
+          "person_id": "tokugawa-ieyasu"
+        },
+        {
+          "text": "輝元",
+          "person_id": "mori-terumoto"
+        },
+        {
+          "text": "柴田勝家",
+          "person_id": "shibata-katsuie"
+        },
+        {
+          "text": "秀吉",
+          "person_id": "toyotomi-hideyoshi"
+        }
+      ],
+      "sourceId": "tensho-ki"
+    },
+    {
+      "era": "死去後",
+      "title": "徳川方・徳川寄りの書（三河物語・川角太閤記）",
+      "body": "三河物語は、会津の景勝が上洛を拒んだので家康が討とうとした、と書き、のち景勝らが敵対しても討たれず国郡を与えられたのは家康の慈悲だと結ぶ。川角太閤記は、景勝の上洛拒絶の裏に石田三成の内証があったとの伝聞を載せる。どちらも、関ヶ原を家康の勝利として語る立場からの書き方で、景勝自身の意図は書かない。",
+      "links": [
+        {
+          "text": "家康",
+          "person_id": "tokugawa-ieyasu"
+        },
+        {
+          "text": "関ヶ原",
+          "battle_id": "sekigahara"
+        }
+      ],
+      "sourceId": [
+        "mikawa-monogatari",
+        "kawasumi-taikoki"
+      ]
+    },
+    {
+      "era": "死去後",
+      "title": "江戸時代中期の逸話集（常山紀談）",
+      "body": "常山紀談は、秀吉の前で刀を言い当てられる大名の一人に景勝を載せ、長剣を好んだ人と描く。また、新発田重家（原文は新発田治長）を討ち、直江兼続に米沢30万石を与えたことも書く。武将の気質を示す短い話が中心で、景勝の政治を論じる書ではない（OCR本文による）。",
+      "sourceId": "jozan-kidan",
+      "links": [
+        {
+          "text": "直江兼続",
+          "person_id": "naoe-kanetsugu"
+        },
+        {
+          "text": "秀吉",
+          "person_id": "toyotomi-hideyoshi"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "上杉謙信（人物叢書 新装版）",
+      "author": "山田邦明",
+      "publisher": "吉川弘文館",
+      "year": 2020,
+      "isbn": "9784642053006",
+      "note": "謙信の評伝。景勝の養子入りと後継をめぐる謙信の考えを、書状から確かめるのに使う予定（本は未見。謙信のページと同じ本）。",
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ]
+    }
+  ],
+  "spots": [
+    {
+      "type": "城跡",
+      "name": "春日山城跡",
+      "castle_id": "kasugayama",
+      "prefecture": "新潟県",
+      "city": "上越市",
+      "lat": 37.1127,
+      "lng": 138.2144,
+      "approx": true,
+      "description": "謙信の本拠。御館の乱で景勝が本城を押さえ、景虎が二の曲輪にいたと軍記が書く。国の史跡。",
+      "sourceId": [
+        "hojo-godaiki",
+        "wikipedia"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "type": "博物館",
+      "name": "米沢市上杉博物館",
+      "prefecture": "山形県",
+      "city": "米沢市",
+      "lat": 37.9155,
+      "lng": 140.1205,
+      "approx": true,
+      "description": "景勝の遺品の太刀「姫鶴一文字」（重要文化財）や肖像を所蔵するとされる（Wikipedia経由）。座標は市の中心付近のおおよその位置で、館そのものの位置は確かめていない。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "type": "神社仏閣",
+      "name": "上杉家廟所（米沢）",
+      "prefecture": "山形県",
+      "city": "米沢市",
+      "lat": 37.916,
+      "lng": 140.1155,
+      "approx": true,
+      "description": "景勝の遺灰と衣冠が納められたとされる（Wikipedia経由）。米沢藩歴代藩主の廟所。",
+      "sourceId": "wikipedia"
+    },
+    {
+      "type": "神社仏閣",
+      "name": "高野山 清浄心院",
+      "prefecture": "和歌山県",
+      "city": "高野町",
+      "lat": 34.2133,
+      "lng": 135.5854,
+      "approx": true,
+      "description": "景勝の遺骨が納められたとされる（Wikipedia経由）。高野山の中心付近のおおよその位置で、院そのものの位置は確かめていない。",
+      "sourceId": "wikipedia"
+    }
+  ],
+  "graves": {
+    "status": "諸説あり",
+    "note": "遺灰と衣冠は米沢市の上杉家廟所に、遺骨は和歌山県高野町の高野山清浄心院に納められたとされる（Wikipedia経由）。原典と現地は未確認。要確認（ページ末尾の調査メモ）。",
+    "sourceId": "wikipedia",
+    "places": [
+      {
+        "name": "上杉家廟所（米沢）",
+        "prefecture": "山形県",
+        "city": "米沢市",
+        "lat": 37.916,
+        "lng": 140.1155,
+        "approx": true,
+        "description": "遺灰と衣冠が納められたとされる（Wikipedia経由）。"
+      },
+      {
+        "name": "高野山 清浄心院",
+        "prefecture": "和歌山県",
+        "city": "高野町",
+        "lat": 34.2133,
+        "lng": 135.5854,
+        "approx": true,
+        "description": "遺骨が納められたとされる（Wikipedia経由）。"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "shincho-koki",
+      "title": "信長公記",
+      "author": "太田牛一",
+      "type": "史料",
+      "primary": "一次資料",
+      "url": "https://ja.wikisource.org/wiki/信長公記",
+      "year": "江戸時代初期成立",
+      "note": "天正9年3月の条に、河田豊前の調略で越後から{{長尾喜平次}}が越中へ出て小出城を取り巻き、3月24日に陣を払ったことを書く（実名は書かない）。Wikisource（我自刊我書本系）の本文で確認。原本画像とは未照合。"
+    },
+    {
+      "id": "tensho-ki",
+      "title": "天正記（柴田退治記）",
+      "author": "大村由己",
+      "type": "史料",
+      "primary": "一次資料",
+      "url": "https://ja.wikisource.org/wiki/天正記",
+      "year": "天正10〜16年（1582〜88）ごろ、編ごとに成立",
+      "note": "柴田勝家を滅ぼした年の記事に、{{越後守護長尾喜平治景勝}}が秀吉に従ったこと、東国の家康・北国の景勝・西国の輝元が秀吉に集まったことを書く。秀吉方の顕彰の文章。成立年はWikipedia「天正記」による。Wikisource（続群書類従本を底本とする）の本文で確認。",
+      "links": [
+        {
+          "text": "柴田勝家",
+          "person_id": "shibata-katsuie"
+        },
+        {
+          "text": "秀吉",
+          "person_id": "toyotomi-hideyoshi"
+        },
+        {
+          "text": "家康",
+          "person_id": "tokugawa-ieyasu"
+        },
+        {
+          "text": "輝元",
+          "person_id": "mori-terumoto"
+        }
+      ]
+    },
+    {
+      "id": "koyo-gunkan",
+      "title": "甲陽軍鑑",
+      "type": "史料",
+      "primary": "二次資料",
+      "url": "https://ja.wikisource.org/wiki/甲陽軍鑑",
+      "note": "謙信の跡をめぐる喜平次（景勝）と三郎（景虎）の争い、北条丹後守の善光寺での敗死、勝頼への賄賂、景勝が勝頼の妹聟になったこと、天正10年の柴田勢との対陣と本能寺の変の知らせを書く。景勝の年齢（24歳・28歳）も載せる。江戸時代初期の編纂物で、年次の誤りが多い。Wikisource（内藤傳右衛門・温故堂本を底本とする）の本文で確認。原本画像とは未照合。",
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "id": "hojo-godaiki",
+      "title": "北条五代記",
+      "author": "三浦浄心",
+      "type": "史料",
+      "primary": "二次資料",
+      "url": "https://ja.wikisource.org/wiki/北条五代記",
+      "year": "江戸時代成立",
+      "note": "景虎の養子入り、謙信の死と景勝の本城占拠、景虎の御館への退去、北条丹後守の敗死、勝頼への金、景虎の滅亡を載せる。景虎を養子にした後北条家の側から書いた軍記。Wikisource（新字版）の本文で確認。原本画像とは未照合。",
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "id": "ihon-odawaraki",
+      "title": "異本小田原記",
+      "type": "史料",
+      "primary": "二次資料",
+      "url": "https://ja.wikisource.org/wiki/異本小田原記",
+      "year": "江戸時代成立",
+      "note": "景勝の出自（父は長尾越前守で、謙信が池尻で沈めたという話）、景虎の養子入り、景勝の本城占拠、御館での評定、荻田孫三郎の話、勝頼への金、景虎の自害を載せる。後北条家の側の軍記で、年などが他書と合わない箇所が多い。Wikisourceの本文で確認。原本画像とは未照合。",
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "id": "jozan-kidan",
+      "title": "常山紀談",
+      "author": "湯浅常山",
+      "publisher": "至誠堂（大町桂月校訂）",
+      "year": "1912",
+      "type": "史料",
+      "primary": "二次資料",
+      "url": "https://dl.ndl.go.jp/pid/778101",
+      "urlLabel": "NDLデジタルコレクションの1912年刊本",
+      "note": "景勝が新発田（治長）を討ったこと、八王子城を前田利家とともに攻めたこと、刀の逸話、直江兼続に米沢30万石を与えたことを載せる。長坂釣閑・跡部大炊の邪佞の条では、景虎と景勝の争いと勝頼への黄金を書く。NDLのOCR本文による（原本画像とは未照合）。",
+      "links": [
+        {
+          "text": "直江兼続",
+          "person_id": "naoe-kanetsugu"
+        },
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "id": "kawasumi-taikoki",
+      "title": "川角太閤記",
+      "author": "川角三郎右衛門",
+      "type": "史料",
+      "primary": "二次資料",
+      "url": "https://ja.wikisource.org/wiki/川角太閤記",
+      "year": "江戸時代初期成立",
+      "note": "景勝の会津への国替え（佐渡島・川中島が会津に付いたこと、越後に堀秀治らが入ったこと）と、秀吉没後の上洛をめぐる家康とのやりとり、石田三成の内証の伝聞を書く。成立年はWikipedia「川角太閤記」による。Wikisourceの本文で確認。原本画像とは未照合。",
+      "links": [
+        {
+          "text": "秀吉",
+          "person_id": "toyotomi-hideyoshi"
+        },
+        {
+          "text": "家康",
+          "person_id": "tokugawa-ieyasu"
+        }
+      ]
+    },
+    {
+      "id": "hoan-taikoki",
+      "title": "太閤記（甫庵太閤記）",
+      "author": "小瀬甫庵",
+      "type": "史料",
+      "primary": "二次資料",
+      "url": "https://ja.wikisource.org/wiki/太閤記",
+      "year": "江戸時代前期成立",
+      "note": "小田原攻めで利家に従った{{越後守上杉弾正忠景勝}}の動き、秀吉が挙げた宿老5人（家康・輝元・秀家・利家・景勝）、景勝の官職の呼び名（越後宰相・会津中納言）を書く。Wikisourceの本文で確認。原本画像とは未照合。",
+      "links": [
+        {
+          "text": "秀吉",
+          "person_id": "toyotomi-hideyoshi"
+        },
+        {
+          "text": "家康",
+          "person_id": "tokugawa-ieyasu"
+        },
+        {
+          "text": "輝元",
+          "person_id": "mori-terumoto"
+        }
+      ]
+    },
+    {
+      "id": "mikawa-monogatari",
+      "title": "三河物語",
+      "author": "大久保彦左衛門",
+      "type": "史料",
+      "primary": "二次資料",
+      "url": "https://ja.wikisource.org/wiki/三河物語",
+      "year": "江戸時代前期成立",
+      "note": "会津の景勝が国へ帰って上洛せず、家康が討とうとしたこと、のち景勝らが国郡を与えられたことを、家康の慈悲として書く。徳川家の家臣が書いた書で、徳川寄りの見方。Wikisourceの本文で確認。原本画像とは未照合。",
+      "links": [
+        {
+          "text": "家康",
+          "person_id": "tokugawa-ieyasu"
+        }
+      ]
+    },
+    {
+      "id": "kugyo-bunin",
+      "title": "公卿補任",
+      "type": "史料",
+      "primary": "二次資料",
+      "url": "https://dl.ndl.go.jp/pid/991100",
+      "urlLabel": "NDLデジタルコレクション『国史大系』第10巻（1901年）",
+      "note": "天正16年に景勝と毛利輝元が参議に任じられたこと、文禄3年に権中納言となったこと、慶長3年に辞退したことが読み取れる記載がある。NDLのOCR本文で、表組みが崩れて名前と日付の対応が不確かな箇所が多く、原本画像とは未照合。重要な日付は原本画像で確かめる必要がある。",
+      "links": [
+        {
+          "text": "輝元",
+          "person_id": "mori-terumoto"
+        }
+      ]
+    },
+    {
+      "id": "wikipedia",
+      "title": "上杉景勝（Wikipedia）",
+      "url": "https://ja.wikipedia.org/wiki/上杉景勝",
+      "type": "ネット記事",
+      "note": "生没年月日・父母・妻子・官位の変遷・領地・事績・墓所・遺品を入口として参照した。原典未確認（2026-11-02）。"
+    }
+  ],
+  "toVerify": [
+    {
+      "section": "生年",
+      "title": "生年月日（弘治元年11月27日）",
+      "text": "弘治元年11月27日（1556年1月8日）はWikipedia経由で、1555年とする記載もあるという。甲陽軍鑑の年齢（天正6年に24歳、天正10年に28歳）は弘治元年生まれと矛盾しないが、月日は確かめていない。",
+      "checkWith": [
+        "『上杉家御年譜』（米沢藩の編纂物）",
+        "上杉景勝を扱う評伝・論文（CiNii）"
+      ]
+    },
+    {
+      "section": "呼び名",
+      "title": "幼名・初名と改名の時期",
+      "text": "卯松・顕景はWikipedia経由。同時代の文書での署名と改名の時期を確かめていない。",
+      "checkWith": [
+        "『新潟県史 資料編』の景勝発給文書の署名",
+        "『上杉家御年譜』"
+      ]
+    },
+    {
+      "section": "官位",
+      "title": "弾正少弼・従四位下・参議の叙任と位階",
+      "text": "弾正少弼（天正3年）・従四位下（天正14年）はWikipedia経由。参議の位階は、公卿補任のOCRは従四位下と読め、Wikipediaは従三位とする。権中納言の任官日（文禄3年8月18日）と辞任（慶長3年4月）も、公卿補任のOCRは名前と日付の対応が不確か。",
+      "checkWith": [
+        "公卿補任（国史大系）の原本画像（NDLデジタルコレクション pid 991100）",
+        "口宣案・公家の日記（言経卿記など）"
+      ]
+    },
+    {
+      "section": "家系",
+      "title": "景虎の妻（景勝の姉か妹か）と菊姫の輿入れの年",
+      "text": "Wikipediaは景虎の継室を景勝の姉とし、北条五代記は妹と書く。菊姫の輿入れは軍鑑が{{同年秋}}とするだけで、年を確かめていない。景勝の継室・子・養子もWikipedia経由。",
+      "checkWith": [
+        "『新潟県史 通史編3 中世』",
+        "上杉家御年譜",
+        "山田邦明『上杉謙信』（吉川弘文館、2020年）"
+      ],
+      "links": [
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "section": "家系",
+      "title": "父・長尾政景の死（池尻）",
+      "text": "異本小田原記は謙信が池尻で沈めたと書く。事故か暗殺か、謙信の関与の有無は、軍記では確かめられない。",
+      "checkWith": [
+        "『新潟県史 通史編3 中世』",
+        "政景の死を扱う研究論文（CiNii）"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        }
+      ]
+    },
+    {
+      "section": "家臣団",
+      "title": "新発田重家と常山紀談の「治長」",
+      "text": "常山紀談の新発田治長（OCR本文）と、景勝に背いた新発田重家が同じ人物か確かめていない。",
+      "checkWith": [
+        "『新発田市史』",
+        "新発田重家の乱を扱う論文（CiNii）",
+        "常山紀談の原本画像（NDLデジタルコレクション）"
+      ]
+    },
+    {
+      "section": "領地",
+      "title": "会津の石高・領域と米沢移封の年",
+      "text": "会津120万石と米沢30万石の石高、米沢移封の年（慶長6年か、年譜の慶長5年8月か）はWikipedia経由。川角太閤記は佐渡島・川中島が会津に付いたと書き、他の書との範囲の違いを確かめていない。",
+      "checkWith": [
+        "『上杉家御年譜』",
+        "『米沢市史』",
+        "『福島県史』の会津領の項"
+      ]
+    },
+    {
+      "section": "年表",
+      "title": "謙信没後の日付と景虎の最期",
+      "text": "謙信の没日（天正6年3月13日）と景勝の本城入りは北条五代記に頼る。景虎の最期（勝頼の差し金か、景勝の手で自害か）は軍記で食い違い、Wikipediaは鮫ヶ尾城で自害（3月24日）とする。御館の乱の期間・日付は、書によって大きく異なる。",
+      "checkWith": [
+        "上杉家文書の天正6〜7年の書状",
+        "『新潟県史 資料編』の御館の乱関係文書",
+        "山田邦明『上杉謙信』（2020年）"
+      ],
+      "links": [
+        {
+          "text": "謙信",
+          "person_id": "uesugi-kenshin"
+        },
+        {
+          "text": "景虎",
+          "person_id": "uesugi-kagetora"
+        }
+      ]
+    },
+    {
+      "section": "年表",
+      "title": "天正10年の北陸攻めの場所と経緯",
+      "text": "甲陽軍鑑は城を能登の内と書くが、景勝の抱えた城がどこか確かめていない。柴田勢との対陣の場所（成願寺川など）も軍記の記述による。信長公記は天正10年の景勝の動きを書かない。",
+      "checkWith": [
+        "『富山県史』の魚津城の項",
+        "上杉家文書の天正10年の書状"
+      ],
+      "links": [
+        {
+          "text": "信長",
+          "person_id": "oda-nobunaga"
+        }
+      ]
+    },
+    {
+      "section": "年表",
+      "title": "秀吉への臣従の年",
+      "text": "天正記は天正11年、Wikipediaは天正11年の和睦と天正14年の叙任を挙げる。上洛・臣従の経緯を確かめていない。",
+      "checkWith": [
+        "上杉家文書の秀吉関係の書状",
+        "『新潟県史 通史編3 中世』"
+      ]
+    },
+    {
+      "section": "年表",
+      "title": "小田原攻め・朝鮮出兵・大坂の陣の動き",
+      "text": "松井田城・八王子城の戦いの日付と景勝の役割、朝鮮出兵・大坂の陣への参加は、太閤記・常山紀談・Wikipediaに頼る。座標は城の位置のおおよその点。",
+      "checkWith": [
+        "『八王子市史』の八王子城の項",
+        "『米沢市史』",
+        "上杉家御年譜"
+      ]
+    },
+    {
+      "section": "ゆかりの地",
+      "title": "墓所・遺品・博物館の位置",
+      "text": "上杉家廟所と高野山の納骨、姫鶴一文字の所蔵はWikipedia経由。座標は町の中心付近のおおよその位置。",
+      "checkWith": [
+        "米沢市上杉博物館・上杉家廟所の解説",
+        "高野山清浄心院の公式な解説"
+      ]
+    }
+  ],
+  "tags": [
+    "上杉家",
+    "戦国大名",
+    "越後"
+  ],
+  "updatedAt": "2026-11-02"
+}

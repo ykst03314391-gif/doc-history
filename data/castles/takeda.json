@@ -218,5 +218,6 @@
     }
   ],
   "tags": ["山城", "但馬", "国史跡", "日本100名城", "天空の城"],
+  "links": [{"text": "関ヶ原の戦い", "battle_id": "sekigahara"}, {"text": "但馬平定", "battle_id": "tajima-campaign"}],
   "updatedAt": "2026-11-01"
 }

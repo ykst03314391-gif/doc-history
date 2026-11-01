@@ -273,7 +273,7 @@
     {
       "title": "箕作城攻めで名を挙げる",
       "description": "永禄11年（1568）の上洛戦で、佐久間信盛・秀吉・丹羽長秀と並んで箕作城攻めを命じられ、夜のうちに落とした。",
-      "links": [{"text": "丹羽長秀", "person_id": "niwa-nagahide"}], "sourceId": "shincho-koki"
+      "links": [{"text": "丹羽長秀", "person_id": "niwa-nagahide"}, {"text": "佐久間信盛", "person_id": "sakuma-nobumori"}], "sourceId": "shincho-koki"
     },
     {
       "title": "長島攻めの先陣に立つ",

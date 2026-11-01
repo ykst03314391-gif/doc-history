@@ -45,7 +45,7 @@
   "family": [
     { "relation": "妻", "name": "だし", "note": "信長公記は、天正7年（1579）12月16日に六条河原を引き回された女性の一人に{{たし}}（21歳）を挙げ、{{たしと申はきこへ有美人也}}と書く。ただし村重の妻とは書いておらず、妻とするのは後の史料と研究による（天野2017、70頁。頁はWikipedia経由で本は未見。要確認）。", "sourceId": ["shincho-koki", "amano-2017"] },
     { "relation": "妻", "name": "池田長正の娘", "note": "池田氏の当主・池田長正の娘を娶って池田家中での地位を固めたとされる（天野2017、12頁・70頁。Wikipedia経由で本は未見。要確認）。", "sourceId": "amano-2017" },
-    { "relation": "子", "name": "荒木村次", "note": "嫡子とされ、尼崎城にいたと伝わる。信長公記には名が出てこず、陰徳太平記（OCR本文）と寛政重修諸家譜による。妻は明智光秀の娘で、のち離縁されたという話も陰徳太平記にあるが、要確認。", "sourceId": ["intoku-taiheiki", "wikipedia"] },
+    { "relation": "子", "name": "荒木村次", "note": "嫡子とされ、尼崎城にいたと伝わる。信長公記には名が出てこず、陰徳太平記（OCR本文）と寛政重修諸家譜による。妻は明智光秀の娘で、のち離縁されたという話も陰徳太平記にあるが、要確認。", "links": [{"text": "明智光秀", "person_id": "akechi-mitsuhide"}], "sourceId": ["intoku-taiheiki", "wikipedia"] },
     { "relation": "その他", "name": "岩佐又兵衛", "note": "絵師・岩佐又兵衛は村重の子とも孫とも伝えられるが、確かな史料はない（畠山浩一の研究による。Wikipedia経由、要確認）。", "sourceId": "wikipedia" },
     { "relation": "その他", "name": "妹（野村丹後の妻）", "note": "信長公記は、日和鳥塚を守った野村丹後の後家を{{荒木妹丹後後家}}と書く。丹後は村重の義弟にあたる。", "sourceId": "shincho-koki" },
     { "relation": "その他", "name": "荒木の娘たち", "note": "信長公記は六条河原の一覧に{{荒木娘}}（15歳、隼人の妻で懐妊中）・{{荒木娘}}だご（13歳）を載せる。村重の娘かほかの一族の娘かは書かれておらず、要確認。", "sourceId": "shincho-koki" }
@@ -107,7 +107,7 @@
       "lng": 135.8575,
       "approx": true,
       "description": "{{荒木信濃守}}は細川藤孝とともに逢坂まで信長を出迎え、信長は知恩院に陣取った。{{大ごうの御腰物}}を賜った。信長に仕えていたことを確かめられる最も早い記録である。",
-      "sourceId": "shincho-koki"
+      "links": [{"text": "細川藤孝", "person_id": "hosokawa-fujitaka"}], "sourceId": "shincho-koki"
     },
     {
       "year": 1573,
@@ -206,7 +206,7 @@
       "day": 15,
       "title": "滝川一益の調略で城が開く",
       "description": "滝川一益が中西新八郎らを調略し、信長方の兵が伊丹城に入った。日和鳥塚の野村丹後らも崩され、丹後は自害した。",
-      "links": [{ "text": "滝川一益", "person_id": "takigawa-kazumasu" }],
+      "links": [{ "text": "滝川一益", "person_id": "takigawa-kazumasu" }, {"text": "伊丹城", "castle_id": "arioka"}],
       "battle_id": "arioka-siege",
       "sourceId": "shincho-koki"
     },
@@ -291,7 +291,7 @@
       "title": "安土へ向かうも、家臣に諫められて引き返す",
       "body": "陰徳太平記（毛利方の軍記）は、謀反の前に村重が安土へ向かいかけたが、家臣に「行けば殺される」と諫められて引き返したと語る。中川清秀の兵が大坂へ米を売っていた疑いや、明智光秀が内通していたという話もあわせて語るが、いずれも信長公記にはなく、毛利方の脚色を含むとみて、そのまま事実とはしない（OCR本文による）。",
       "uncertain": true,
-      "links": [{"text": "中川清秀", "person_id": "nakagawa-kiyohide"}], "sourceId": "intoku-taiheiki"
+      "links": [{"text": "中川清秀", "person_id": "nakagawa-kiyohide"}, {"text": "明智光秀", "person_id": "akechi-mitsuhide"}], "sourceId": "intoku-taiheiki"
     },
     {
       "title": "黒田官兵衛の幽閉",
@@ -362,7 +362,7 @@
     {
       "era": "江戸",
       "body": "陰徳太平記は、毛利方の軍記として、安土へ向かいかけた村重が家臣に諫められる場面や、明智光秀が村重に内通していたという話を載せる。毛利に近い立場から書かれた軍記で、脚色が多い。",
-      "sourceId": "intoku-taiheiki"
+      "links": [{"text": "明智光秀", "person_id": "akechi-mitsuhide"}], "sourceId": "intoku-taiheiki"
     },
     {
       "era": "現代",

@@ -27,6 +27,6 @@
     { "id": "tamonin-nikki", "title": "多聞院日記", "author": "英俊ほか", "note": "興福寺多聞院の僧の日記。天正13年6月21日・22日・27日と7月の条（秀吉の出馬の延期、筒井定次が大和の衆を連れて出陣）、8月の条（戦後の国割の伝え聞き）。奈良での伝え聞き。NDLの三教書院版のOCR本文による（原本画像とは未照合）", "type": "史料", "primary": "一次資料" }
   ],
   "tags": ["豊臣秀長", "長宗我部元親", "羽柴秀吉", "四国"],
-  "links": [{"text": "小早川隆景", "person_id": "kobayakawa-takakage"}, {"text": "毛利輝元", "person_id": "mori-terumoto"}, {"text": "黒田孝高", "person_id": "kuroda-yoshitaka"}],
+  "links": [{"text": "小早川隆景", "person_id": "kobayakawa-takakage"}, {"text": "毛利輝元", "person_id": "mori-terumoto"}, {"text": "黒田孝高", "person_id": "kuroda-yoshitaka"}, {"text": "長宗我部元親", "person_id": "chosokabe-motochika"}],
   "updatedAt": "2026-11-01"
 }

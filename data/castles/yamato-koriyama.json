@@ -296,5 +296,6 @@
     }
   ],
   "tags": ["平山城", "大和", "豊臣家", "国史跡", "続日本100名城", "転用石"],
+  "links": [{"text": "関ヶ原の戦い", "battle_id": "sekigahara"}, {"text": "豊臣秀長", "person_id": "toyotomi-hidenaga"}, {"text": "筒井順慶", "person_id": "tsutsui-junkei"}, {"text": "増田長盛", "person_id": "mashita-nagamori"}, {"text": "大坂城", "castle_id": "osaka"}],
   "updatedAt": "2026-11-01"
 }

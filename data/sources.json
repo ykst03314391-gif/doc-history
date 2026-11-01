@@ -131,6 +131,98 @@
         {
           "type": "battle",
           "id": "tajima-campaign"
+        },
+        {
+          "type": "person",
+          "id": "akechi-hidemitsu"
+        },
+        {
+          "type": "person",
+          "id": "ando-morinari"
+        },
+        {
+          "type": "person",
+          "id": "ashikaga-yoshiaki"
+        },
+        {
+          "type": "person",
+          "id": "hashiba-hidekatsu"
+        },
+        {
+          "type": "person",
+          "id": "hayashi-hidesada"
+        },
+        {
+          "type": "person",
+          "id": "hirate-masahide"
+        },
+        {
+          "type": "person",
+          "id": "hosokawa-fujitaka"
+        },
+        {
+          "type": "person",
+          "id": "inaba-yoshimichi"
+        },
+        {
+          "type": "person",
+          "id": "isono-kazumasa"
+        },
+        {
+          "type": "person",
+          "id": "kawajiri-hidetaka"
+        },
+        {
+          "type": "person",
+          "id": "maeda-toshiie"
+        },
+        {
+          "type": "person",
+          "id": "mori-nagayoshi"
+        },
+        {
+          "type": "person",
+          "id": "mori-ranmaru"
+        },
+        {
+          "type": "person",
+          "id": "murai-sadakatsu"
+        },
+        {
+          "type": "person",
+          "id": "nohime"
+        },
+        {
+          "type": "person",
+          "id": "oda-hidenobu"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobuhide"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobukatsu"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobutaka"
+        },
+        {
+          "type": "person",
+          "id": "saito-dosan"
+        },
+        {
+          "type": "person",
+          "id": "sakuma-nobumori"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-kagekatsu"
+        },
+        {
+          "type": "person",
+          "id": "ujiie-bokuzen"
         }
       ]
     },
@@ -216,6 +308,54 @@
         {
           "type": "person",
           "id": "toyotomi-hideyoshi"
+        },
+        {
+          "type": "person",
+          "id": "akechi-hidemitsu"
+        },
+        {
+          "type": "person",
+          "id": "hashiba-hidekatsu"
+        },
+        {
+          "type": "person",
+          "id": "hosokawa-fujitaka"
+        },
+        {
+          "type": "person",
+          "id": "kawajiri-hidetaka"
+        },
+        {
+          "type": "person",
+          "id": "maeda-gen-i"
+        },
+        {
+          "type": "person",
+          "id": "maeda-toshiie"
+        },
+        {
+          "type": "person",
+          "id": "mori-nagayoshi"
+        },
+        {
+          "type": "person",
+          "id": "mori-ranmaru"
+        },
+        {
+          "type": "person",
+          "id": "oda-hidenobu"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobukatsu"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobutaka"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-kagekatsu"
         }
       ]
     },
@@ -276,6 +416,26 @@
         {
           "type": "battle",
           "id": "neshirozaka"
+        },
+        {
+          "type": "person",
+          "id": "akechi-hidemitsu"
+        },
+        {
+          "type": "person",
+          "id": "hosokawa-fujitaka"
+        },
+        {
+          "type": "person",
+          "id": "maeda-toshiie"
+        },
+        {
+          "type": "person",
+          "id": "mori-ranmaru"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-kagekatsu"
         }
       ]
     },
@@ -309,6 +469,66 @@
         {
           "type": "battle",
           "id": "kawanakajima"
+        },
+        {
+          "type": "person",
+          "id": "ando-morinari"
+        },
+        {
+          "type": "person",
+          "id": "ashikaga-yoshiaki"
+        },
+        {
+          "type": "person",
+          "id": "hirate-masahide"
+        },
+        {
+          "type": "person",
+          "id": "hojo-ujiyasu"
+        },
+        {
+          "type": "person",
+          "id": "inaba-yoshimichi"
+        },
+        {
+          "type": "person",
+          "id": "kakizaki-kageie"
+        },
+        {
+          "type": "person",
+          "id": "kawajiri-hidetaka"
+        },
+        {
+          "type": "person",
+          "id": "mori-nagayoshi"
+        },
+        {
+          "type": "person",
+          "id": "nagao-tamekage"
+        },
+        {
+          "type": "person",
+          "id": "naoe-kagetsuna"
+        },
+        {
+          "type": "person",
+          "id": "saito-dosan"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-kagekatsu"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-kagetora"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-norimasa"
+        },
+        {
+          "type": "person",
+          "id": "ujiie-bokuzen"
         }
       ]
     },
@@ -398,6 +618,74 @@
         {
           "type": "battle",
           "id": "neshirozaka"
+        },
+        {
+          "type": "person",
+          "id": "ando-morinari"
+        },
+        {
+          "type": "person",
+          "id": "hashiba-hidekatsu"
+        },
+        {
+          "type": "person",
+          "id": "hayashi-hidesada"
+        },
+        {
+          "type": "person",
+          "id": "hirate-masahide"
+        },
+        {
+          "type": "person",
+          "id": "hosokawa-fujitaka"
+        },
+        {
+          "type": "person",
+          "id": "inaba-yoshimichi"
+        },
+        {
+          "type": "person",
+          "id": "maeda-gen-i"
+        },
+        {
+          "type": "person",
+          "id": "maeda-toshiie"
+        },
+        {
+          "type": "person",
+          "id": "mori-nagayoshi"
+        },
+        {
+          "type": "person",
+          "id": "murai-sadakatsu"
+        },
+        {
+          "type": "person",
+          "id": "naoe-kanetsugu"
+        },
+        {
+          "type": "person",
+          "id": "oda-hidenobu"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobukatsu"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobutaka"
+        },
+        {
+          "type": "person",
+          "id": "saito-dosan"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-kagekatsu"
+        },
+        {
+          "type": "person",
+          "id": "ujiie-bokuzen"
         }
       ]
     },
@@ -472,6 +760,26 @@
         {
           "type": "person",
           "id": "toyotomi-hideyoshi"
+        },
+        {
+          "type": "person",
+          "id": "ashikaga-yoshiaki"
+        },
+        {
+          "type": "person",
+          "id": "oda-hidenobu"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobuhide"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobukatsu"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-kagekatsu"
         }
       ]
     },
@@ -553,6 +861,22 @@
         {
           "type": "person",
           "id": "toyotomi-hideyoshi"
+        },
+        {
+          "type": "person",
+          "id": "hosokawa-fujitaka"
+        },
+        {
+          "type": "person",
+          "id": "maeda-gen-i"
+        },
+        {
+          "type": "person",
+          "id": "murai-sadakatsu"
+        },
+        {
+          "type": "person",
+          "id": "sakuma-nobumori"
         }
       ]
     },
@@ -623,6 +947,58 @@
         {
           "type": "battle",
           "id": "neshirozaka"
+        },
+        {
+          "type": "person",
+          "id": "akechi-hidemitsu"
+        },
+        {
+          "type": "person",
+          "id": "ashikaga-yoshiaki"
+        },
+        {
+          "type": "person",
+          "id": "hosokawa-fujitaka"
+        },
+        {
+          "type": "person",
+          "id": "kakizaki-kageie"
+        },
+        {
+          "type": "person",
+          "id": "maeda-toshiie"
+        },
+        {
+          "type": "person",
+          "id": "mori-nagayoshi"
+        },
+        {
+          "type": "person",
+          "id": "mori-ranmaru"
+        },
+        {
+          "type": "person",
+          "id": "naoe-kanetsugu"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobukatsu"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobutaka"
+        },
+        {
+          "type": "person",
+          "id": "sakuma-nobumori"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-kagekatsu"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-norimasa"
         }
       ]
     },
@@ -664,6 +1040,18 @@
         {
           "type": "person",
           "id": "tokugawa-ieyasu"
+        },
+        {
+          "type": "person",
+          "id": "maeda-gen-i"
+        },
+        {
+          "type": "person",
+          "id": "naoe-kanetsugu"
+        },
+        {
+          "type": "person",
+          "id": "oda-hidenobu"
         }
       ]
     },
@@ -680,6 +1068,18 @@
         {
           "type": "person",
           "id": "asai-shinpachi"
+        },
+        {
+          "type": "person",
+          "id": "isono-kazumasa"
+        },
+        {
+          "type": "person",
+          "id": "saito-dosan"
+        },
+        {
+          "type": "person",
+          "id": "ujiie-bokuzen"
         }
       ]
     },
@@ -697,6 +1097,26 @@
         {
           "type": "person",
           "id": "takigawa-kazumasu"
+        },
+        {
+          "type": "person",
+          "id": "hojo-ujiyasu"
+        },
+        {
+          "type": "person",
+          "id": "nagao-tamekage"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-kagekatsu"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-kagetora"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-norimasa"
         }
       ]
     },
@@ -721,6 +1141,38 @@
         {
           "type": "person",
           "id": "chosokabe-motochika"
+        },
+        {
+          "type": "person",
+          "id": "hojo-ujiyasu"
+        },
+        {
+          "type": "person",
+          "id": "kakizaki-kageie"
+        },
+        {
+          "type": "person",
+          "id": "kawajiri-hidetaka"
+        },
+        {
+          "type": "person",
+          "id": "mori-nagayoshi"
+        },
+        {
+          "type": "person",
+          "id": "nagao-tamekage"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-kagekatsu"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-kagetora"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-norimasa"
         }
       ]
     },
@@ -775,6 +1227,22 @@
         {
           "type": "battle",
           "id": "neshirozaka"
+        },
+        {
+          "type": "person",
+          "id": "akechi-hidemitsu"
+        },
+        {
+          "type": "person",
+          "id": "ashikaga-yoshiaki"
+        },
+        {
+          "type": "person",
+          "id": "hosokawa-fujitaka"
+        },
+        {
+          "type": "person",
+          "id": "nagao-tamekage"
         }
       ]
     },
@@ -808,6 +1276,14 @@
         {
           "type": "person",
           "id": "toyotomi-hidetsugu"
+        },
+        {
+          "type": "person",
+          "id": "hosokawa-fujitaka"
+        },
+        {
+          "type": "person",
+          "id": "maeda-gen-i"
         }
       ]
     },
@@ -849,6 +1325,18 @@
         {
           "type": "person",
           "id": "toyotomi-hideyoshi"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobukatsu"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobutaka"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-kagekatsu"
         }
       ]
     },
@@ -866,6 +1354,68 @@
         {
           "type": "person",
           "id": "toyotomi-hideyoshi"
+        },
+        {
+          "type": "person",
+          "id": "mori-ranmaru"
+        }
+      ]
+    },
+    {
+      "id": "sakuma-gunki",
+      "level": 2,
+      "title": "佐久間軍記",
+      "yomi": "さくまぐんき",
+      "author": "（不詳）",
+      "kind": "史料",
+      "era": "江戸時代成立",
+      "note": "佐久間氏の軍記。尾張の織田家の動きや佐久間一族の事績を載せる。後世の成立で、史実性は要検討。Wikisource翻刻で確認。",
+      "url": "https://ja.wikisource.org/wiki/佐久間軍記",
+      "usedIn": [
+        {
+          "type": "person",
+          "id": "hayashi-hidesada"
+        },
+        {
+          "type": "person",
+          "id": "oda-hidenobu"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobuhide"
+        },
+        {
+          "type": "person",
+          "id": "sakuma-nobumori"
+        }
+      ]
+    },
+    {
+      "id": "rojin-zatsuwa",
+      "level": 2,
+      "title": "老人雑話",
+      "yomi": "ろうじんざつわ",
+      "author": "江村専斎（談）・伊藤宗恕（筆記）",
+      "kind": "史料",
+      "era": "江戸時代前期成立",
+      "note": "京の医者・江村専斎（1565〜1664）の談話を孫が書き留めた聞き書き。国民文庫刊行会『雑史集』（1912年）所収の本文で確認。",
+      "url": "https://dl.ndl.go.jp/pid/1906666",
+      "usedIn": [
+        {
+          "type": "person",
+          "id": "ashikaga-yoshiaki"
+        },
+        {
+          "type": "person",
+          "id": "hosokawa-fujitaka"
+        },
+        {
+          "type": "person",
+          "id": "saito-dosan"
+        },
+        {
+          "type": "person",
+          "id": "toyotomi-hidenaga"
         }
       ]
     }

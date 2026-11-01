@@ -23,19 +23,19 @@
   },
   "family": [
     {"relation": "父", "person_id": "toyotomi-hidenaga", "name": "豊臣秀長"},
-    {"relation": "母", "name": "不明", "note": "興俊尼（光秀尼）とする説などがある。奈良名所八重桜は、興俊尼が産んだ秀長の娘が「安芸の毛利家の室」になったと書く"},
+    {"relation": "母", "name": "不明", "note": "興俊尼（光秀尼）とする説などがある。奈良名所八重桜は、興俊尼が産んだ秀長の娘が「安芸の毛利家の室」になったと書く", "links": [{"text": "興俊尼", "person_id": "koshunni"}]},
     {"relation": "養母", "person_id": "jiunin", "name": "慈雲院", "note": "父の正室。養母だったとする見方がある（諸説）"},
     {"relation": "養父", "person_id": "toyotomi-hideyoshi", "name": "豊臣秀吉", "note": "養女となって嫁いだ"},
     {"relation": "夫", "person_id": "mori-hidemoto", "name": "毛利秀元"}
   ],
   "timeline": [
     {"year": 1588, "title": "誕生", "description": "秀長の娘として生まれたとされる"},
-    {"year": 1591, "month": 1, "title": "父秀長の死", "description": "父が郡山城で病没する"},
+    {"year": 1591, "month": 1, "title": "父秀長の死", "description": "父が郡山城で病没する", "links": [{"text": "郡山城", "castle_id": "yamato-koriyama"}]},
     {"year": 1595, "month": 2, "title": "毛利秀元に嫁ぐ", "description": "秀吉の養女として、毛利秀元に嫁いだとされる（原典未確認）", "links": [{"text": "毛利秀元", "person_id": "mori-hidemoto"}]},
     {"year": 1609, "month": 11, "day": 29, "title": "死去", "description": "22歳で没した"}
   ],
   "episodes": [
-    {"title": "文禄3年の祝言は誰のものか", "body": "興福寺の僧の日記（多聞院日記）の文禄3年3月2日の条に「於郡山金吾殿へ祝言ノ儀式在之、大納言殿ノソハムスメ也、秋篠ノ沙弥ノ子也」とある。相手は金吾殿（秀俊、のちの小早川秀秋）で、花嫁は秀長の側室の娘、秋篠氏につながる人と書かれている。この娘が大善院なのかどうか、のちの毛利秀元との縁組とどうつながるのかは、はっきりしない。", "sourceId": "tamonin-nikki", "uncertain": true}
+    {"title": "文禄3年の祝言は誰のものか", "body": "興福寺の僧の日記（多聞院日記）の文禄3年3月2日の条に「於郡山金吾殿へ祝言ノ儀式在之、大納言殿ノソハムスメ也、秋篠ノ沙弥ノ子也」とある。相手は金吾殿（秀俊、のちの小早川秀秋）で、花嫁は秀長の側室の娘、秋篠氏につながる人と書かれている。この娘が大善院なのかどうか、のちの毛利秀元との縁組とどうつながるのかは、はっきりしない。", "links": [{"text": "毛利秀元", "person_id": "mori-hidemoto"}], "sourceId": "tamonin-nikki", "uncertain": true}
   ],
   "spots": [
     {"type": "神社仏閣", "name": "功山寺", "prefecture": "山口県", "city": "下関市", "description": "長府毛利家ゆかりの寺。位牌が祀られているとされる"}

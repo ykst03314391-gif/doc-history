@@ -3,17 +3,119 @@
   "name": "織田信孝",
   "kana": "おだ のぶたか",
   "summary": "織田信長の三男。伊勢の神戸家を継ぎ、神戸信孝とも呼ばれる。天正10年（1582）に四国攻めの大将とされたが本能寺の変で取りやめとなり、山崎の戦いに加わった。のち柴田勝家と結んで羽柴秀吉と対立し、勝家の敗死の後に自害した。",
+  "lens": {
+    "title": "三法師を巡る争いで、信孝は何を望んだのか",
+    "question": "信長の三男で、仇討ちの旗頭となった信孝は、なぜ清洲会議で三法師の後見になれず、勝家と結んで秀吉に敗れたのか。軍記と後世の逸話を分けて、同時代の史料で言えることを確かめる。",
+    "view": ""
+  },
   "aliases": [
-    {"type": "その他", "value": "神戸信孝", "note": "神戸家の養子だったころの名"}
+    {"type": "その他", "value": "神戸信孝", "note": "神戸家の養子だったころの名。信長公記は{{神戸三七信孝}}と書く", "sourceId": "shincho-koki"},
+    {"type": "通称", "value": "三七", "note": "信長公記・天正記が{{三七信孝}}と書く", "sourceId": "tensho-ki"}
   ],
+  "nameHistory": [
+    {"year": 1577, "era": "天正5年ごろ", "value": "神戸三七信孝", "note": "信長公記が雑賀攻めの条で、北畠中将信雄と並べて{{神戸三七信孝}}と書く。Wikisourceの本文は{{信孝（のぶよし）}}と振り仮名を付ける。「のぶよし」が底本のものか翻刻者のものか確かめていない（要確認、ページ末尾の調査メモ）", "sourceId": "shincho-koki"},
+    {"year": 1582, "era": "天正10年", "value": "織田三七信孝", "note": "天正記（惟任退治記・柴田退治記）が{{織田三七信孝}}と書き、清洲で{{濃州屋形}}に定められたとする", "sourceId": "tensho-ki"}
+  ],
+  "kamon": {"name": "織田木瓜（織田家の紋）"},
   "birth": {
     "year": 1558,
-    "era": "永禄元年"
+    "era": "永禄元年",
+    "uncertain": true,
+    "note": "永禄元年（1558）はWikipedia経由で、原典で確かめていない。信長公記は誕生の年を書かない。信雄と同じ年の生まれとされるが、生まれの順は要確認（ページ末尾の調査メモ）",
+    "sourceId": "wikipedia"
   },
   "death": {
     "year": 1583,
-    "era": "天正11年5月2日"
+    "era": "天正11年5月2日",
+    "uncertain": true,
+    "note": "天正11年（1583）5月2日はWikipedia経由。グレゴリオ暦の月日は換算を確かめていないので入れない。三河物語は自害の地を{{ぬまのうつみ}}（尾張の野間の内海）と書き、天正記は岐阜での自害と読める書き方をする（要確認、ページ末尾の調査メモ）",
+    "sourceId": "wikipedia"
   },
+  "ranks": [
+    {"title": "（官位・官職）", "note": "信長公記・天正記は官位を書かない。Wikipediaは従五位下・侍従とするが、原典で確かめていない（要確認、ページ末尾の調査メモ）", "sourceId": "wikipedia"}
+  ],
+  "family": [
+    {"relation": "父", "person_id": "oda-nobunaga", "name": "織田信長", "note": "信長公記は、信孝が信長に従って雑賀・播磨・摂津へ出陣したことを書く。", "sourceId": "shincho-koki"},
+    {"relation": "母", "name": "坂氏の女（とされる）", "note": "信長公記は母を書かない。Wikipedia経由で、原典未確認（要確認、ページ末尾の調査メモ）", "sourceId": "wikipedia"},
+    {"relation": "兄", "person_id": "oda-nobutada", "name": "織田信忠", "note": "信長公記は信忠を{{信長公之嫡男}}と書く。", "sourceId": "shincho-koki"},
+    {"relation": "兄", "person_id": "oda-nobukatsu", "name": "織田信雄", "note": "信長公記は、北畠中将信雄、神戸三七信孝の順に並べる。天正記は、のち信雄が岐阜を攻め、信孝が自害したと書く。", "sourceId": ["shincho-koki", "tensho-ki"]},
+    {"relation": "養父", "name": "神戸具盛（とされる）", "note": "神戸家の養子となったとされるが、信長公記は養子の話を書かない。Wikipedia経由で、原典未確認（要確認、ページ末尾の調査メモ）", "sourceId": "wikipedia"},
+    {"relation": "甥", "person_id": "oda-hidenobu", "name": "三法師（織田秀信）", "note": "信忠の遺児。天正記（柴田退治記）は、信孝が若君を預かっていたが、のち秀吉の求めで手放したと書く。", "sourceId": "tensho-ki"},
+    {"relation": "従兄弟（義兄弟）", "person_id": "tsuda-nobuzumi", "name": "津田信澄", "note": "惟任退治記が、本能寺の変の後、信孝と丹羽長秀が大坂で信澄を殺したと書く。信澄は光秀の娘婿とされる。", "links": [{"text": "本能寺の変", "battle_id": "honnoji-no-hen"}, {"text": "丹羽長秀", "person_id": "niwa-nagahide"}], "sourceId": "tensho-ki"}
+  ],
+  "lords": [
+    {"person_id": "oda-nobunaga", "name": "織田信長", "to": 1582, "note": "父。信長公記は、信孝が雑賀攻め・神吉城攻め・摂津の陣に従い、天正10年4月に{{阿波国神戸三七御拝領}}と書く。", "sourceId": "shincho-koki"}
+  ],
+  "retainers": [
+    {"name": "幸田彦右衛門", "to": 1583, "note": "常山紀談（OCR）が、天正11年4月に秀吉の先手が信孝の領地へ入ったとき、弟とともに戦死したと書く。", "sourceId": "jozan-kidan"}
+  ],
+  "yorikiNote": "丹羽長秀は、天正10年に信孝の四国渡海の副将として堺に付けられたと惟任退治記が書く。",
+  "territories": [
+    {"year": 1577, "name": "伊勢国神戸（神戸城）", "prefecture": "三重県", "province": "伊勢国", "note": "太閤記が{{勢州神戸之城主}}と書く。神戸家を継いだ経緯と時期は確かめていない（要確認、ページ末尾の調査メモ）", "sourceId": "hoan-taikoki", "mapNote": "領国の郡は確かめていないので、伊勢国全体の塗りは使わず、神戸のおおよその位置に印だけ置く", "until": 1583, "place": "神戸城跡（鈴鹿市）付近", "lat": 34.89, "lng": 136.57, "approx": true},
+    {"year": 1582, "name": "美濃国（岐阜）", "prefecture": "岐阜県", "province": "美濃国", "note": "天正記が{{織田三七信孝定濃州屋形}}と、清洲での談合で美濃の主に定められたと書く。", "links": [{"text": "岐阜", "castle_id": "gifu"}], "sourceId": "tensho-ki", "until": 1583, "untilNote": "天正10年12月、秀吉が岐阜を攻め、信孝は人質を出して和睦した。翌年に再び挙兵して自害した（柴田退治記）", "place": "岐阜城", "lat": 35.4339, "lng": 136.7822}
+  ],
+  "timeline": [
+    {"year": 1577, "title": "雑賀攻めに従う", "description": "信長公記は、信長に従う者として北畠中将信雄と{{神戸三七信孝}}を挙げ、雑賀での戦いで信忠・信雄・織田上野守・信孝が二の目を押し付けて出たと書く。年は書かれず、天正5年（1577）は通説による。", "links": [{"text": "信雄", "person_id": "oda-nobukatsu"}], "sourceId": ["shincho-koki", "wikipedia"]},
+    {"year": 1578, "title": "播磨・摂津へ出陣する", "description": "信長公記は、天正6年の播磨出陣で神吉城を攻めた中に信孝の名を挙げ、荒木村重の謀反のあとも摂津の陣に並ぶと書く。11月3日、信長が安土から出陣するとき、安土の留守居に、稲葉伊予・不破河内・丸毛兵庫とともに信孝が付けられたとする。", "battle_id": "miki-siege", "links": [{"text": "荒木村重", "person_id": "araki-murashige"}], "sourceId": "shincho-koki"},
+    {"year": 1581, "title": "京の馬揃に十騎で加わる", "description": "信長公記は、天正9年の馬揃で、信孝が馬乗十騎を連れたと書く。", "sourceId": "shincho-koki"},
+    {"year": 1582, "title": "四国攻めの大将となる", "description": "信長公記は、天正10年4月21日に、信長が{{阿波国神戸三七御拝領}}と四国渡海を信孝に命じたと書く。惟任退治記は、本能寺の変のとき、信孝が丹羽長秀・蜂屋頼隆らと堺にいて、渡海の準備をしていたと書く。", "links": [{"text": "四国攻め", "battle_id": "shikoku-campaign"}, {"text": "丹羽長秀", "person_id": "niwa-nagahide"}, {"text": "本能寺の変", "battle_id": "honnoji-no-hen"}], "sourceId": ["shincho-koki", "tensho-ki"], "place": "堺", "lat": 34.573, "lng": 135.483, "approx": true},
+    {"year": 1582, "title": "本能寺の変の後、大坂で津田信澄を殺す", "description": "惟任退治記は、変のあと、信孝と丹羽長秀が大坂城に居た津田信澄を攻めて殺したと書く。信澄は光秀の娘婿とされ、疑われたためと読める。このときの経緯は、このページで当たった史料では確かめきれない（要確認、ページ末尾の調査メモ）", "links": [{"text": "津田信澄", "person_id": "tsuda-nobuzumi"}, {"text": "丹羽長秀", "person_id": "niwa-nagahide"}, {"text": "大坂城", "castle_id": "osaka"}], "battle_id": "honnoji-no-hen", "sourceId": "tensho-ki", "place": "大坂", "lat": 34.6873, "lng": 135.5262, "approx": true},
+    {"year": 1582, "title": "山崎の戦いで光秀を討つ", "description": "惟任退治記は、山崎の戦いの軍勢に{{織田三七信孝}}を挙げる。信孝が総大将として担がれた形で、秀吉・丹羽長秀・池田恒興らが従ったとされる。この名分の形は、後世の説明を含み、要確認（ページ末尾の調査メモ）", "battle_id": "yamazaki", "links": [{"text": "丹羽長秀", "person_id": "niwa-nagahide"}], "sourceId": "tensho-ki"},
+    {"year": 1582, "title": "清洲会議で美濃を与えられる", "description": "天正記（柴田退治記）は、秀吉・柴田らの談合が清洲城で行われ、{{織田三七信孝定濃州屋形}}と、信孝が美濃の主に定められたと書く。信孝は三法師の後見を望んだとされるが、柴田退治記はそのことを書かない。", "castle_id": "kiyosu", "links": [{"text": "三法師", "person_id": "oda-hidenobu"}], "sourceId": "tensho-ki"},
+    {"year": 1582, "title": "秀吉に岐阜を攻められ、三法師を渡す", "description": "柴田退治記は、天正10年12月に秀吉が岐阜に攻め寄せ、信孝が老母と息女を人質に出し、三法師を渡して和睦したと書く。", "castle_id": "gifu", "links": [{"text": "三法師", "person_id": "oda-hidenobu"}], "sourceId": "tensho-ki"},
+    {"year": 1583, "title": "賤ヶ岳の戦いの前に、柴田勝家・滝川一益と結ぶ", "description": "柴田退治記は、信孝が勝家と滝川一益に与したと書き、秀吉が岐阜と伊勢を同時に攻めた。常山紀談（OCR）は、4月18日に秀吉の先手が信孝の領地に入り、幸田彦右衛門兄弟が討死したと書く。", "links": [{"text": "柴田勝家", "person_id": "shibata-katsuie"}, {"text": "賤ヶ岳の戦い", "battle_id": "shizugatake"}, {"text": "滝川一益", "person_id": "takigawa-kazumasu"}], "sourceId": ["tensho-ki", "jozan-kidan"]},
+    {"year": 1583, "title": "自害する", "description": "柴田退治記は、勝家の敗死ののち、信雄が人数を率いて岐阜へ攻め入り、信孝が自害したと書く。三河物語は、秀吉が信長の子の三七殿を野間の内海で切腹させたと書く。最期の地は書き方が分かれる。常山紀談（OCR）は、乳母が人質として磔にされたと書くが、後世の逸話で要検討（要確認、ページ末尾の調査メモ）", "castle_id": "gifu", "sourceId": ["tensho-ki", "mikawa-monogatari", "jozan-kidan"]}
+  ],
+  "achievements": [
+    {"title": "四国攻めの大将に任じられる", "description": "天正10年4月、阿波を与えられ、信長から四国渡海の大将に当てられた。", "sourceId": "shincho-koki"},
+    {"title": "山崎の戦いの名分に立つ", "description": "光秀を討つ軍勢の旗頭に信長の子として立ち、仇討ちの名分を支えたとされる。", "sourceId": "tensho-ki"}
+  ],
+  "episodes": [
+    {"title": "津田信澄の殺害", "body": "惟任退治記は、本能寺の変を聞いた信孝と丹羽長秀が、大坂で光秀の娘婿の津田信澄を攻めて殺したと書く。信孝と信澄は従兄弟にあたる。信澄が実際に光秀に通じていたかは、このページで当たった史料では確かめられない。", "links": [{"text": "本能寺の変", "battle_id": "honnoji-no-hen"}, {"text": "丹羽長秀", "person_id": "niwa-nagahide"}, {"text": "津田信澄", "person_id": "tsuda-nobuzumi"}], "sourceId": "tensho-ki"},
+    {"title": "乳母の磔", "body": "常山紀談（OCR）は、信孝が秀吉に背いたとき、人質に出していた乳母が磔にされたと書く。信孝の怒りを語る逸話で、同時代の史料では確かめられず、要検討。", "uncertain": true, "sourceId": "jozan-kidan"}
+  ],
+  "questions": [
+    {"place": "lens", "title": "清洲会議で、信孝は何を望み、何を得たのか？", "text": "柴田退治記は、信孝が美濃の主に定められたと書く。三法師の後見を望んだとされる点は、同時代の文書や記録でどこまで確かめられるか。", "links": [{"text": "三法師", "person_id": "oda-hidenobu"}], "sourceId": "tensho-ki"},
+    {"place": "family", "title": "信雄と信孝は、どちらが兄なのか？", "text": "同じ永禄元年の生まれとされ、母の違いで扱いが分かれると伝わる。信長公記・天正記は信雄を先に書く。", "sourceId": ["shincho-koki", "wikipedia"]},
+    {"place": "lens", "title": "最期の地は、岐阜か、野間か？", "text": "天正記は岐阜と読める書き方、三河物語は野間の内海と書く。どちらが正しいか、のちの軍記や寺の伝えとあわせて確かめる。", "sourceId": ["tensho-ki", "mikawa-monogatari"]}
+  ],
+  "reputation": [
+    {"era": "存命時", "title": "秀吉方の文章での扱い", "body": "天正記は、信孝が勝家と結んだことを書き、岐阜攻めのあと自害したと簡潔に書く。秀吉方の顕彰の文章で、信孝側の事情を読み取るには限りがある。", "sourceId": "tensho-ki"},
+    {"era": "死去後", "title": "三河物語の秀吉批判", "body": "三河物語は、秀吉が信長の恩を忘れ、{{御子の三七殿をぬまのうつみにて御腹をきらせ}}たと書く。徳川方の立場からの秀吉批判の文脈で、信孝を同情的に書く。", "sourceId": "mikawa-monogatari"}
+  ],
+  "references": [
+    {"title": "織田信長合戦全録 桶狭間から本能寺まで", "author": "谷口克広", "publisher": "中央公論新社（中公新書）", "year": 2002, "isbn": "9784121016256", "affiliateUrl": "https://www.amazon.co.jp/dp/4121016254", "note": "信長の合戦を通して描く本。信孝が加わった出陣を、信長公記と照らして確かめるのに使う予定。本は未見。"},
+    {"title": "織田信長 戦国時代の「正義」を貫く", "author": "柴裕之", "publisher": "平凡社", "year": 2020, "isbn": "9784582477474", "affiliateUrl": "https://www.amazon.co.jp/dp/458247747X", "note": "信長と子たちの関係の描き方を確かめるのに使う予定。本は未見。"}
+  ],
+  "spots": [
+    {"type": "城跡", "name": "岐阜城", "castle_id": "gifu", "prefecture": "岐阜県", "city": "岐阜市", "lat": 35.4339, "lng": 136.7822, "description": "信孝が美濃の主として拠った城。"},
+    {"type": "城跡", "name": "清洲城跡", "castle_id": "kiyosu", "prefecture": "愛知県", "city": "清須市", "lat": 35.2153, "lng": 136.8394, "description": "織田家の跡目の談合が行われた城。"},
+    {"type": "城跡", "name": "神戸城跡", "prefecture": "三重県", "city": "鈴鹿市", "lat": 34.89, "lng": 136.57, "approx": true, "description": "太閤記が信孝の城とする。座標は鈴鹿市神戸付近のおおよその位置"}
+  ],
+  "graves": {
+    "status": "諸説あり",
+    "note": "最期の地と同じく墓所も伝えが分かれる。愛知県美浜町の野間の大御堂寺（信孝の墓とされる）などが挙げられるが、原典で確かめていない（Wikipedia経由、要確認、ページ末尾の調査メモ）。",
+    "sourceId": "wikipedia",
+    "places": [
+      {"name": "大御堂寺（野間大坊）", "prefecture": "愛知県", "city": "知多郡美浜町", "description": "三河物語が書く野間の内海に近い。信孝の墓があるとされる。確かめていない"}
+    ]
+  },
+  "sources": [
+    {"id": "shincho-koki", "title": "信長公記", "author": "太田牛一", "url": "https://ja.wikisource.org/wiki/信長公記", "year": "江戸時代初期成立（池田家文庫本に慶長15年〈1610〉の奥書）", "note": "雑賀攻め・神吉城・荒木謀反の摂津の陣・馬揃での{{神戸三七信孝}}、天正10年4月の{{阿波国神戸三七御拝領}}を伝える。成立年はWikipedia「信長公記」による。Wikisource（我自刊我書本を底本とする新字版）の本文で確認（原本画像とは未照合）。", "type": "史料", "primary": "一次資料"},
+    {"id": "tensho-ki", "title": "天正記（惟任退治記・柴田退治記）", "author": "大村由己", "url": "https://ja.wikisource.org/wiki/天正記", "year": "天正10〜11年（1582〜83）ごろ", "note": "堺での四国渡海の準備、津田信澄の殺害、山崎の戦い、清洲での{{濃州屋形}}、岐阜攻めと信孝の自害を書く。秀吉方の顕彰の文章。成立年はWikipedia「天正記」による。Wikisourceの本文で確認。", "type": "史料", "primary": "一次資料"},
+    {"id": "hoan-taikoki", "title": "太閤記", "author": "小瀬甫庵", "url": "https://ja.wikisource.org/wiki/太閤記", "year": "寛永3年（1626）初版", "note": "{{勢州神戸之城主}}と書く。脚色の多い二次史料。Wikisourceの本文で確認。", "type": "史料", "primary": "二次資料"},
+    {"id": "mikawa-monogatari", "title": "三河物語", "author": "大久保忠教", "url": "https://ja.wikisource.org/wiki/三河物語", "note": "{{御子の三七殿をぬまのうつみにて御腹をきらせ}}と書く。徳川家の立場からの秀吉批判の文脈。Wikisourceの本文で確認。成立年は未確認。", "type": "史料", "primary": "二次資料"},
+    {"id": "jozan-kidan", "title": "常山紀談", "author": "湯浅常山", "url": "https://dl.ndl.go.jp/pid/778101", "urlLabel": "NDLデジタルコレクション（上巻）", "year": "江戸中期", "note": "幸田彦右衛門兄弟の討死と乳母の磔の話を書く。逸話集で、史実性は要検討。NDL次世代デジタルライブラリーのOCR本文による（原本画像とは未照合）。", "type": "史料", "primary": "二次資料"},
+    {"id": "wikipedia", "title": "織田信孝（Wikipedia）", "url": "https://ja.wikipedia.org/wiki/織田信孝", "note": "生年、没日、官位、母、養子の経緯、墓所の入口に使った。原典は未確認。2026-11-02に参照。", "type": "ネット記事"}
+  ],
+  "toVerify": [
+    {"section": "生年", "title": "生年・没日と信雄との生まれの順", "text": "永禄元年（1558）、天正11年5月2日、信雄との先後はWikipedia経由で原典で確かめていない。グレゴリオ暦の月日は換算を確かめていない。", "checkWith": ["寛政重修諸家譜（織田氏）", "谷口克広『織田信長家臣人名辞典』", "柴裕之の信長の子たちに関する研究"]},
+    {"section": "呼び名", "title": "「信孝」の読み", "text": "Wikisourceの信長公記は{{信孝（のぶよし）}}と振り仮名を付けるが、底本のものか翻刻者のものか分からない。", "checkWith": ["信長公記の原本画像", "奥野高廣『織田信長文書の研究』の信孝の署名"]},
+    {"section": "家系", "title": "神戸家の養子の経緯と母", "text": "神戸具盛の養子となった時期と経緯、母（坂氏の女とされる）はWikipedia経由。信長公記は書かない。", "checkWith": ["勢州軍記", "鈴鹿市史・三重県史", "『織田信長家臣人名辞典』"]},
+    {"section": "年表", "title": "津田信澄の殺害と、山崎の戦いでの位置", "text": "信澄殺害の経緯と、信孝が山崎で総大将として扱われたかは、軍記ごとに書き方が違う。同時代の文書で確かめていない。", "checkWith": ["多聞院日記・兼見卿記の天正10年6月の条", "『日本史』（フロイス）", "柴裕之『清須会議』"]},
+    {"section": "年表", "title": "清洲会議での三法師の後見", "text": "信孝が三法師の後見を望んだことは、柴田退治記には書かれない。同時代の文書で確かめていない。", "checkWith": ["清洲会議に関する書状", "柴裕之『清須会議』"], "links": [{"text": "三法師", "person_id": "oda-hidenobu"}]},
+    {"section": "年表", "title": "最期の地と墓所", "text": "岐阜か野間かが史料で分かれ、墓所の伝えも一つでない。乳母の磔の話も後世の逸話で、確かめていない。", "checkWith": ["尾張・美濃の地誌", "大御堂寺の記録", "賤ヶ岳前後の秀吉書状"]}
+  ],
   "tags": ["織田家", "伊勢"],
   "updatedAt": "2026-11-02"
 }

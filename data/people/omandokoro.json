@@ -33,16 +33,16 @@
   ],
   "family": [
     { "relation": "夫", "name": "木下弥右衛門", "note": "最初の夫。秀吉・ともの父とされる" },
-    { "relation": "夫", "name": "竹阿弥", "note": "弥右衛門の死後の再婚相手とされる。太閤素生記は、織田信秀の同朋で中々村の出の竹阿弥が後家の大政所のもとに入り、生まれた男子（秀長）と女子（朝日姫）を「竹阿弥子也」と書く", "article_id": "hidenaga-father-chikuami" },
-    { "relation": "子", "person_id": "tomo", "name": "とも（日秀尼）", "note": "長女。豊臣秀次・秀保の母" },
+    { "relation": "夫", "name": "竹阿弥", "note": "弥右衛門の死後の再婚相手とされる。太閤素生記は、織田信秀の同朋で中々村の出の竹阿弥が後家の大政所のもとに入り、生まれた男子（秀長）と女子（朝日姫）を「竹阿弥子也」と書く", "article_id": "hidenaga-father-chikuami", "links": [{"text": "織田信秀", "person_id": "oda-nobuhide"}, {"text": "朝日姫", "person_id": "asahi-hime"}] },
+    { "relation": "子", "person_id": "tomo", "name": "とも（日秀尼）", "note": "長女。豊臣秀次・秀保の母", "links": [{"text": "豊臣秀次", "person_id": "toyotomi-hidetsugu"}] },
     { "relation": "子", "person_id": "toyotomi-hideyoshi", "name": "豊臣秀吉" },
     { "relation": "子", "person_id": "toyotomi-hidenaga", "name": "豊臣秀長", "note": "秀吉と父が同じか違うかには議論がある" },
-    { "relation": "子", "person_id": "asahi-hime", "name": "朝日姫", "note": "のちに徳川家康の正室となる" }
+    { "relation": "子", "person_id": "asahi-hime", "name": "朝日姫", "note": "のちに徳川家康の正室となる", "links": [{"text": "徳川家康", "person_id": "tokugawa-ieyasu"}] }
   ],
   "timeline": [
     { "year": 1513, "title": "誕生", "description": "尾張で生まれたとされる（生年は没年からの逆算）" },
     { "year": 1585, "month": 7, "title": "「大政所」となる", "description": "子の秀吉が関白となり、関白の母として「大政所」と呼ばれるようになる" },
-    { "year": 1586, "month": 10, "title": "岡崎へ下向", "description": "上洛を渋る徳川家康に対し、秀吉は娘の朝日姫を見舞うという名目で母を三河の岡崎へ送った。事実上の人質で、これを受けて家康は上洛し秀吉に臣従した" },
+    { "year": 1586, "month": 10, "title": "岡崎へ下向", "description": "上洛を渋る徳川家康に対し、秀吉は娘の朝日姫を見舞うという名目で母を三河の岡崎へ送った。事実上の人質で、これを受けて家康は上洛し秀吉に臣従した", "links": [{"text": "徳川家康", "person_id": "tokugawa-ieyasu"}, {"text": "朝日姫", "person_id": "asahi-hime"}] },
     { "year": 1586, "month": 11, "title": "帰京", "description": "家康が上洛して秀吉に臣従したのち、京へ戻る" },
     { "year": 1592, "month": 7, "day": 22, "title": "死去", "description": "秀吉が朝鮮出兵のため肥前名護屋にいるあいだに病が重くなり、聚楽第で没した。秀吉は急いで上方へ戻ったが、間に合わなかったと伝わる" }
   ],

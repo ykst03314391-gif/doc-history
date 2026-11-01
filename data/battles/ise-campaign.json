@@ -10,9 +10,9 @@
     "天正記（柴田退治記）によれば、羽柴軍は三手に分かれて伊勢へ入った。秀長は筒井順慶・稲葉一鉄らとともに土岐多羅越え、三好秀次（のちの豊臣秀次）は大君畑越え、秀吉自身は安楽越えを進んだ。軍勢は桑名・長島まで押し寄せて周辺を焼き、続いて滝川益重（儀太夫）の峯城と佐治新介の亀山城を囲んだ。亀山城は金掘り（坑道を掘る攻め方）で石垣を崩され、佐治新介は降伏した。",
     "やがて勝家が近江へ出てきたため、秀吉は伊勢に押さえの兵を残して北へ向かい、賤ヶ岳の戦いとなる。峯城は秀吉が大垣にいた4月に落ちたと柴田退治記は伝える。長島城の一益は、勝家が滅んだ後に城を明け渡して降った。"
   ],
-  "links": [{ "text": "秀長", "person_id": "toyotomi-hidenaga" }, { "text": "三好秀次", "person_id": "toyotomi-hidetsugu" }, { "text": "滝川一益", "person_id": "takigawa-kazumasu" }, {"text": "柴田勝家", "person_id": "shibata-katsuie"}, {"text": "筒井順慶", "person_id": "tsutsui-junkei"}],
+  "links": [{ "text": "秀長", "person_id": "toyotomi-hidenaga" }, { "text": "三好秀次", "person_id": "toyotomi-hidetsugu" }, { "text": "滝川一益", "person_id": "takigawa-kazumasu" }, {"text": "柴田勝家", "person_id": "shibata-katsuie"}, {"text": "筒井順慶", "person_id": "tsutsui-junkei"}, {"text": "賤ヶ岳の戦い", "battle_id": "shizugatake"}, {"text": "羽柴秀吉", "person_id": "toyotomi-hideyoshi"}, {"text": "稲葉一鉄", "person_id": "inaba-yoshimichi"}],
   "sides": [
-    { "name": "羽柴軍", "outcome": "勝利", "commanders": [{ "person_id": "toyotomi-hideyoshi", "name": "羽柴秀吉" }], "participants": [{ "person_id": "toyotomi-hidenaga", "name": "羽柴秀長" }, { "person_id": "toyotomi-hidetsugu", "name": "三好秀次" }, { "person_id": "tsutsui-junkei", "name": "筒井順慶" }, { "name": "稲葉一鉄" }, { "person_id": "oda-nobukatsu", "name": "織田信雄" }, { "name": "蒲生氏郷" }], "note": "秀長は土岐多羅越えの一手を率いた（柴田退治記）" },
+    { "name": "羽柴軍", "outcome": "勝利", "commanders": [{ "person_id": "toyotomi-hideyoshi", "name": "羽柴秀吉" }], "participants": [{ "person_id": "toyotomi-hidenaga", "name": "羽柴秀長" }, { "person_id": "toyotomi-hidetsugu", "name": "三好秀次" }, { "person_id": "tsutsui-junkei", "name": "筒井順慶" }, { "person_id": "inaba-yoshimichi", "name": "稲葉一鉄" }, { "person_id": "oda-nobukatsu", "name": "織田信雄" }, { "name": "蒲生氏郷" }], "note": "秀長は土岐多羅越えの一手を率いた（柴田退治記）" },
     { "name": "滝川軍", "outcome": "敗北", "commanders": [{ "person_id": "takigawa-kazumasu", "name": "滝川一益" }], "participants": [{ "name": "滝川益重" }, { "name": "佐治新介" }], "note": "柴田勝家・織田信孝と結んでいた" }
   ],
   "result": "羽柴軍が亀山城・峯城を落とし、滝川一益はのちに降伏した",
