@@ -48,10 +48,11 @@
 ```
 { "name": string,               // 陣営名（例：織田軍）
   "outcome"?: "勝利" | "敗北" | "引き分け" | "決着つかず",
-  "commanders"?: [ { "person_id"?: string, "name": string } ],   // 大将・総大将
-  "participants"?: [ { "person_id"?: string, "name": string } ], // 従軍した主な武将
-  "note"?: string }
+  "commanders"?: [ { "person_id"?: string, "name": string, "uncertain"?: boolean } ],   // 大将・総大将
+  "participants"?: [ { "person_id"?: string, "name": string, "uncertain"?: boolean } ], // 従軍した主な武将
+  "note"?: string }               // 陣営の補足。カードの下に小さく出す
 ```
+> 従軍したか確かでない武将は `uncertain: true` にすると名前の後ろに「要確認」の札が出る。理由は陣営の `note` に書く。
 > `commanders` は総大将・主将。`participants` はそのほかの従軍した主な武将。
 > どちらも `person_id` があれば人物ページへリンクする。
 

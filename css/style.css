@@ -750,6 +750,7 @@ html { scroll-behavior: smooth; }
 .side-win .side-outcome { background: var(--accent); }
 .side-draw .side-outcome { background: var(--gold); }
 .side-cmd { font-size: 0.95rem; margin-top: 4px; }
+.side-note { font-size: 0.85rem; margin: 6px 0 0; line-height: 1.6; }
 .side-label {
   display: inline-block;
   font-size: 0.68rem;

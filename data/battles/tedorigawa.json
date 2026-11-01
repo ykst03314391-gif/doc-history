@@ -11,7 +11,7 @@
     "破竹の勢いだった織田軍を、謙信が正面から退けた数少ない例として知られる。詳しい経緯は考察記事で扱う。"
   ],
   "sides": [
-    { "name": "上杉軍", "outcome": "勝利", "commanders": [{ "person_id": "uesugi-kenshin", "name": "上杉謙信" }], "participants": [{ "person_id": "kakizaki-kageie", "name": "柿崎景家" }, { "person_id": "naoe-kagetsuna", "name": "直江景綱" }] },
+    { "name": "上杉軍", "outcome": "勝利", "commanders": [{ "person_id": "uesugi-kenshin", "name": "上杉謙信" }], "participants": [{ "person_id": "kakizaki-kageie", "name": "柿崎景家", "uncertain": true }, { "person_id": "naoe-kagetsuna", "name": "直江景綱", "uncertain": true }], "note": "柿崎景家は天正2年（1574）、直江景綱は天正5年（1577）3月に没したとする説があり、9月の手取川の戦いに加わったかは要確認（それぞれの人物ページの調査メモ）" },
     { "name": "織田軍", "outcome": "敗北", "commanders": [{ "person_id": "shibata-katsuie", "name": "柴田勝家" }], "participants": [{ "person_id": "toyotomi-hideyoshi", "name": "羽柴秀吉" }, { "person_id": "niwa-nagahide", "name": "丹羽長秀" }, { "person_id": "takigawa-kazumasu", "name": "滝川一益" }], "note": "羽柴秀吉は届けを出さずに帰陣し、信長の怒りを買った（信長公記）。勝家との対立が原因とするのは後の編纂物" }
   ],
   "result": "上杉謙信が織田軍を破ったと伝わる（規模には諸説あり）",

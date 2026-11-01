@@ -58,9 +58,11 @@
 
   function commander(c) {
     const label = esc(c.name || c.person_id || "");
-    return c.person_id
+    const name = c.person_id
       ? `<a href="person.html?id=${encodeURIComponent(c.person_id)}">${label}</a>`
       : label;
+    // 従軍したか確かでない武将には「要確認」の札を付ける（理由は陣営の note に書く）
+    return c.uncertain ? `${name}<span class="uncertain-badge">要確認</span>` : name;
   }
 
   function outcomeClass(o) {
@@ -134,6 +136,7 @@
               </div>
               ${cmds ? `<div class="side-cmd"><span class="side-label">大将</span>${cmds}</div>` : ""}
               ${parts ? `<div class="side-cmd"><span class="side-label">従軍</span>${parts}</div>` : ""}
+              ${s.note ? `<p class="side-note muted">${linkText(s.note, b.links)}</p>` : ""}
             </div>`;
         })
         .join(`<div class="side-vs">対</div>`);
