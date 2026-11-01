@@ -121,6 +121,14 @@
           "id": "chosokabe-motochika"
         },
         {
+          "type": "person",
+          "id": "tokugawa-ieyasu"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-kenshin"
+        },
+        {
           "type": "battle",
           "id": "tajima-campaign"
         }
@@ -184,6 +192,30 @@
         {
           "type": "person",
           "id": "chosokabe-motochika"
+        },
+        {
+          "type": "person",
+          "id": "akechi-mitsuhide"
+        },
+        {
+          "type": "person",
+          "id": "araki-murashige"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobunaga"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobutada"
+        },
+        {
+          "type": "person",
+          "id": "tokugawa-ieyasu"
+        },
+        {
+          "type": "person",
+          "id": "toyotomi-hideyoshi"
         }
       ]
     },
@@ -226,6 +258,22 @@
           "id": "chosokabe-motochika"
         },
         {
+          "type": "person",
+          "id": "akechi-mitsuhide"
+        },
+        {
+          "type": "person",
+          "id": "tokugawa-ieyasu"
+        },
+        {
+          "type": "person",
+          "id": "toyotomi-hidenaga"
+        },
+        {
+          "type": "person",
+          "id": "toyotomi-hideyoshi"
+        },
+        {
           "type": "battle",
           "id": "neshirozaka"
         }
@@ -253,6 +301,10 @@
         {
           "type": "person",
           "id": "uesugi-kenshin"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobutada"
         },
         {
           "type": "battle",
@@ -324,6 +376,26 @@
           "id": "chosokabe-motochika"
         },
         {
+          "type": "person",
+          "id": "akechi-mitsuhide"
+        },
+        {
+          "type": "person",
+          "id": "bessho-nagaharu"
+        },
+        {
+          "type": "person",
+          "id": "mori-hidemoto"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobutada"
+        },
+        {
+          "type": "person",
+          "id": "tokugawa-ieyasu"
+        },
+        {
           "type": "battle",
           "id": "neshirozaka"
         }
@@ -347,6 +419,18 @@
         {
           "type": "person",
           "id": "toyotomi-hideyasu"
+        },
+        {
+          "type": "person",
+          "id": "toyotomi-hidenaga"
+        },
+        {
+          "type": "person",
+          "id": "toyotomi-hidetsugu"
+        },
+        {
+          "type": "person",
+          "id": "toyotomi-hideyoshi"
         }
       ]
     },
@@ -372,6 +456,22 @@
         {
           "type": "person",
           "id": "tokugawa-ieyasu"
+        },
+        {
+          "type": "person",
+          "id": "mori-hidemoto"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobunaga"
+        },
+        {
+          "type": "person",
+          "id": "toyotomi-hidetsugu"
+        },
+        {
+          "type": "person",
+          "id": "toyotomi-hideyoshi"
         }
       ]
     },
@@ -417,6 +517,42 @@
         {
           "type": "person",
           "id": "tsutsui-sadatsugu"
+        },
+        {
+          "type": "person",
+          "id": "akechi-mitsuhide"
+        },
+        {
+          "type": "person",
+          "id": "chosokabe-motochika"
+        },
+        {
+          "type": "person",
+          "id": "kobori-masatsugu"
+        },
+        {
+          "type": "person",
+          "id": "kuwayama-shigeharu"
+        },
+        {
+          "type": "person",
+          "id": "mori-hidemoto"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobunaga"
+        },
+        {
+          "type": "person",
+          "id": "takigawa-kazumasu"
+        },
+        {
+          "type": "person",
+          "id": "tokugawa-ieyasu"
+        },
+        {
+          "type": "person",
+          "id": "toyotomi-hideyoshi"
         }
       ]
     },
@@ -461,6 +597,30 @@
           "id": "tsutsui-sadatsugu"
         },
         {
+          "type": "person",
+          "id": "akechi-mitsuhide"
+        },
+        {
+          "type": "person",
+          "id": "araki-murashige"
+        },
+        {
+          "type": "person",
+          "id": "mori-hidemoto"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobutada"
+        },
+        {
+          "type": "person",
+          "id": "todo-takatora"
+        },
+        {
+          "type": "person",
+          "id": "uesugi-kenshin"
+        },
+        {
           "type": "battle",
           "id": "neshirozaka"
         }
@@ -484,6 +644,26 @@
         {
           "type": "person",
           "id": "tsutsui-sadatsugu"
+        },
+        {
+          "type": "person",
+          "id": "chosokabe-motochika"
+        },
+        {
+          "type": "person",
+          "id": "mori-hidemoto"
+        },
+        {
+          "type": "person",
+          "id": "oda-nobutada"
+        },
+        {
+          "type": "person",
+          "id": "todo-takatora"
+        },
+        {
+          "type": "person",
+          "id": "tokugawa-ieyasu"
         }
       ]
     },
@@ -577,8 +757,115 @@
           "id": "tsutsui-sadatsugu"
         },
         {
+          "type": "person",
+          "id": "araki-murashige"
+        },
+        {
+          "type": "person",
+          "id": "chosokabe-motochika"
+        },
+        {
+          "type": "person",
+          "id": "kuwayama-shigeharu"
+        },
+        {
+          "type": "person",
+          "id": "mori-hidemoto"
+        },
+        {
           "type": "battle",
           "id": "neshirozaka"
+        }
+      ]
+    },
+    {
+      "id": "hyuga-komonjo",
+      "level": 1,
+      "title": "日向古文書集成",
+      "yomi": "ひゅうがこもんじょしゅうせい",
+      "author": "宮崎県 編",
+      "kind": "史料",
+      "era": "1938年刊（収録文書は中世〜近世）",
+      "note": "宮崎県が編んだ日向関係の古文書集。慶長2年の朝鮮出兵の陣立書など、秀吉の朱印状の写しを含む。国立国会図書館デジタルコレクションのOCR本文を使用（表組みの崩れが大きい）。",
+      "url": "https://dl.ndl.go.jp/pid/1217883",
+      "usedIn": [
+        {
+          "type": "person",
+          "id": "chosokabe-motochika"
+        },
+        {
+          "type": "person",
+          "id": "kuwayama-shigeharu"
+        },
+        {
+          "type": "person",
+          "id": "mori-hidemoto"
+        },
+        {
+          "type": "person",
+          "id": "toyotomi-hidenaga"
+        },
+        {
+          "type": "person",
+          "id": "toyotomi-hidetsugu"
+        }
+      ]
+    },
+    {
+      "id": "kansei-chosyu-shokafu",
+      "level": 2,
+      "title": "寛政重脩諸家譜",
+      "yomi": "かんせいちょうしゅうしょかふ",
+      "author": "堀田正敦ら 編",
+      "kind": "史料",
+      "era": "江戸時代後期編纂",
+      "note": "江戸幕府が大名・旗本の家の系譜をまとめた書。桑山家の項（巻第九百九十一・九百九十二）は、国民図書版第6輯166–167頁・171頁。本は未見で、Wikipediaが頁を挙げて引くのによる。",
+      "usedIn": [
+        {
+          "type": "person",
+          "id": "kuwayama-shigeharu"
+        }
+      ]
+    },
+    {
+      "id": "mikawa-monogatari",
+      "level": 2,
+      "title": "三河物語",
+      "yomi": "みかわものがたり",
+      "author": "大久保忠教",
+      "kind": "史料",
+      "era": "元和8年（1622）成立",
+      "note": "徳川の家臣・大久保忠教が子孫のために書いた覚書。家康の人質時代、桶狭間後の岡崎入り、小牧・長久手、信康事件、秀吉の死、関ヶ原などを記す。主観・記憶違いを含む（信康の件を「丑之年」と書く）。",
+      "url": "https://dl.ndl.go.jp/pid/1906666",
+      "usedIn": [
+        {
+          "type": "person",
+          "id": "tokugawa-ieyasu"
+        },
+        {
+          "type": "person",
+          "id": "toyotomi-hidenaga"
+        },
+        {
+          "type": "person",
+          "id": "toyotomi-hideyoshi"
+        }
+      ]
+    },
+    {
+      "id": "oji-monogatari",
+      "level": 2,
+      "title": "祖父物語",
+      "yomi": "おじものがたり",
+      "author": "（不詳）",
+      "kind": "史料",
+      "era": "江戸時代前期",
+      "note": "別名「朝日物語」。秀吉の出自・逸話を多く載せる二次史料。Wikisource翻刻で確認。",
+      "url": "https://ja.wikisource.org/wiki/祖父物語",
+      "usedIn": [
+        {
+          "type": "person",
+          "id": "toyotomi-hideyoshi"
         }
       ]
     }

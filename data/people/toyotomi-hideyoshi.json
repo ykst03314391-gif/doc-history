@@ -2,96 +2,1096 @@
   "id": "toyotomi-hideyoshi",
   "name": "豊臣秀吉",
   "kana": "とよとみ ひでよし",
-  "summary": "尾張の下層民から身を起こして織田信長に仕え、信長の死後に山崎の戦いで明智光秀を破り、天下を統一した。三英傑の一人。",
-  "portrait": {"src": "assets/img/portraits/toyotomi-hideyoshi.jpg", "caption": "豊臣秀吉像（伝 狩野光信筆）", "holder": "高台寺（京都市）", "note": "部分", "source": {"name": "Wikimedia Commons", "url": "https://commons.wikimedia.org/wiki/File:Toyotomi_hideyoshi.jpg"}, "license": "パブリックドメイン"},
+  "summary": "尾張の出身で、織田信長に仕えて羽柴筑前守と名乗り、播磨・因幡・備中の攻略を任された。本能寺の変の後は山崎の戦い（天正10年〈1582〉）で明智光秀を破り、関白・太政大臣となって天下を統一した。出自や若いころの話は多くが江戸時代の書物によるもので、確かめられることは少ない。",
+  "lens": {
+    "title": "「草履取りから天下人」秀吉は本当か",
+    "question": "よく知られた出世話は、いつ、どの書物から来て、どこまで当たっているのか。",
+    "view": ""
+  },
+  "portrait": {
+    "src": "assets/img/portraits/toyotomi-hideyoshi.jpg",
+    "caption": "豊臣秀吉像（伝 狩野光信筆）",
+    "holder": "高台寺（京都市）",
+    "note": "部分",
+    "source": {
+      "name": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Toyotomi_hideyoshi.jpg"
+    },
+    "license": "パブリックドメイン"
+  },
   "aliases": [
-    { "type": "通称", "value": "藤吉郎" },
-    { "type": "その他", "value": "木下秀吉", "note": "信長に仕えた当初の名乗り" },
-    { "type": "その他", "value": "羽柴秀吉", "note": "織田家中で用いた名乗り" },
-    { "type": "その他", "value": "太閤", "note": "関白を退いた後の呼称" }
+    {
+      "type": "通称",
+      "value": "藤吉郎"
+    },
+    {
+      "type": "その他",
+      "value": "木下藤吉郎",
+      "note": "信長公記に最初に出る名乗り（永禄11年〈1568〉）"
+    },
+    {
+      "type": "その他",
+      "value": "羽柴筑前守秀吉",
+      "note": "天正元年（1573）から"
+    },
+    {
+      "type": "その他",
+      "value": "太閤",
+      "note": "関白を甥の秀次に譲った後の呼称"
+    }
   ],
-  "kamon": { "name": "五三桐" },
+  "nameHistory": [
+    {
+      "era": "幼少期",
+      "value": "猿・日吉丸・小竹",
+      "note": "太閤素生記は藤吉郎の幼名を「猿」とし、小竹とする説と日輪の夢による日吉丸の説は{{二名共ニ不信}}（信じられない）とする。祖父物語は幼名を小竹（オコチク）とする。いずれも江戸時代の記録で、同時代の史料には幼名は出ない。",
+      "sourceId": [
+        "taiko-soseiki",
+        "oji-monogatari"
+      ]
+    },
+    {
+      "year": 1568,
+      "era": "永禄11年",
+      "value": "木下藤吉郎",
+      "note": "信長公記の初出は9月12日の箕作山攻めの{{木下藤吉郎}}。元亀元年（1570）の金ケ崎でも{{木下藤吉郎残しをかせられ}}、元亀2年（1571）の横山城でも同じ名で出る。信長に仕えた時期そのものは信長公記から分からない。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1572,
+      "era": "元亀3年",
+      "value": "羽柴藤吉郎",
+      "note": "虎御前山の記事の{{羽柴藤吉郎}}。木下から羽柴へ改めた時期と理由は信長公記に書かれない。丹羽長秀・柴田勝家から一字ずつ取ったという説明は、確かめられていない（要確認）。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1573,
+      "era": "元亀4年7月",
+      "value": "羽柴筑前守秀吉",
+      "note": "淀城攻めの記事に{{羽柴筑前守秀吉}}とあり、筑前守と秀吉の初出。天正元年8月の小谷攻めの後の記事でも同じ名乗り。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1582,
+      "era": "天正10年10月",
+      "value": "平秀吉",
+      "note": "天正記の任官之記は10月3日の叙任を{{従五位下平秀吉}}と書く。平姓を名乗っていた。",
+      "sourceId": "tensho-ki"
+    },
+    {
+      "year": 1585,
+      "era": "天正13年7月",
+      "value": "藤原秀吉",
+      "note": "公卿補任は{{七月十一日爲關白。改平姓爲藤原。同日從一位}}と書き、天正記も{{賜藤原姓任関白}}と書く。多聞院日記は近衛殿の猶子となったと記す。",
+      "sourceId": [
+        "kugyo-bunin",
+        "tensho-ki",
+        "tamonin-nikki"
+      ]
+    },
+    {
+      "year": 1586,
+      "era": "天正14年",
+      "value": "豊臣秀吉",
+      "note": "公卿補任は天正14年の項に{{月日改藤原姓為豊臣云々}}と書く（OCRは「藤」を別の字に読むため補った）。「云々」とあり、賜姓の月日は伝聞の書き方で、はっきりしない（要確認）。",
+      "sourceId": "kugyo-bunin"
+    }
+  ],
   "birth": {
-    "year": 1537,
-    "era": "天文6年",
-    "note": "生年には諸説あり",
-    "uncertain": true
+    "year": 1536,
+    "era": "天文5年",
+    "note": "太閤素生記は{{天文五丙申年正月大朔日}}（正月1日）生まれ、祖父物語は申年6月15日生まれとし、日付が食い違う。慶長3年（1598）に63歳で死去とする記述（三河物語・太閤素生記）とも合う。公卿補任の天正13年の項の年齢欄はOCRで「五十」と読め、数え50歳なら天文5年生まれに合う。天文6年（1537）説もあるが、その根拠は確かめられていない（要確認）。",
+    "uncertain": true,
+    "sourceId": [
+      "taiko-soseiki",
+      "oji-monogatari",
+      "mikawa-monogatari"
+    ]
   },
   "death": {
     "year": 1598,
     "month": 9,
     "day": 18,
     "era": "慶長3年8月18日",
-    "note": "伏見城で病没"
+    "note": "公卿補任・太閤素生記は慶長3年8月18日の死去とし、素生記は午の刻に伏見で亡くなったと書く。三河物語は同日に63歳で亡くなったとする。",
+    "sourceId": [
+      "kugyo-bunin",
+      "taiko-soseiki",
+      "mikawa-monogatari"
+    ]
   },
   "birthplace": {
     "name": "尾張国愛知郡中村",
     "prefecture": "愛知県",
-    "city": "名古屋市"
+    "city": "名古屋市",
+    "note": "太閤素生記は中々村、祖父物語は清須の水野郷とし、生地も一致しない。中村とするのは素生記系の伝え。",
+    "sourceId": [
+      "taiko-soseiki",
+      "oji-monogatari"
+    ]
   },
   "ranks": [
-    { "year": 1585, "title": "関白", "sourceId": "hoan-taikoki" },
-    { "year": 1586, "title": "太政大臣", "note": "あわせて「豊臣」姓を賜る", "sourceId": "hoan-taikoki" }
-  ],
-  "family": [
-    { "relation": "妻", "name": "ねね（高台院）" },
-    { "relation": "母", "person_id": "omandokoro", "name": "大政所" },
-    { "relation": "姉", "person_id": "tomo", "name": "とも（日秀尼）", "note": "秀次・秀勝・秀保の母" },
-    { "relation": "弟", "person_id": "toyotomi-hidenaga", "name": "豊臣秀長", "note": "秀吉を支えた補佐役" },
-    { "relation": "妹", "person_id": "asahi-hime", "name": "朝日姫", "note": "徳川家康の正室となる" },
-    { "relation": "養子", "person_id": "toyotomi-hidetsugu", "name": "豊臣秀次" },
-    { "relation": "子", "name": "豊臣秀頼" }
-  ],
-  "lords": [
-    { "person_id": "oda-nobunaga", "name": "織田信長", "to": 1582, "note": "足軽から仕え、重臣にまで出世した" }
-  ],
-  "retainers": [
-    { "name": "加藤清正" },
-    { "name": "福島正則" },
-    { "name": "石田三成" }
-  ],
-  "territories": [
-    { "year": 1573, "name": "近江国（長浜）", "prefecture": "滋賀県", "note": "浅井氏旧領を与えられ長浜城主となる", "sourceId": "shincho-koki" },
-    { "year": 1583, "name": "摂津国（大坂）", "prefecture": "大阪府", "note": "大坂城を築き本拠とする", "sourceId": "hoan-taikoki" }
-  ],
-  "timeline": [
-    { "year": 1573, "title": "長浜城主", "description": "近江に所領を得て、羽柴姓を名乗る", "sourceId": "shincho-koki" },
-    { "year": 1582, "month": 6, "title": "中国大返し", "description": "本能寺の変を受け、備中高松城の陣から驚異的な速さで畿内へ引き返す", "sourceId": "hoan-taikoki" },
-    { "year": 1582, "month": 6, "day": 13, "title": "山崎の戦い", "description": "明智光秀を破り、主君・信長の仇を討つ", "battle_id": "yamazaki", "sourceId": "hoan-taikoki" },
-    { "year": 1583, "title": "賤ヶ岳の戦い", "description": "柴田勝家を破り、織田家中の主導権を握る", "battle_id": "shizugatake", "sourceId": "hoan-taikoki" },
-    { "year": 1585, "title": "関白就任", "description": "関白に任じられ、天下人としての地位を固める", "sourceId": "hoan-taikoki" },
-    { "year": 1590, "title": "天下統一", "description": "小田原征伐で北条氏を降し、全国統一を成し遂げる", "sourceId": "hoan-taikoki" },
-    { "year": 1598, "title": "死去", "description": "伏見城で病没。幼い秀頼を遺す", "sourceId": "hoan-taikoki" }
-  ],
-  "episodes": [
     {
-      "title": "草履取りの逸話",
-      "body": "寒い日に信長の草履を懐で温めておき、その気配りで見出されたと伝わる。後世の創作という指摘も強い。",
-      "uncertain": true
+      "year": 1573,
+      "era": "元亀4年",
+      "title": "筑前守",
+      "note": "信長公記は淀城攻めの記事に{{羽柴筑前守秀吉}}と書く。任官の正確な日は信長公記から分からない（朝廷の官位だったのかどうかも含めて要確認）。",
+      "sourceId": "shincho-koki"
     },
     {
-      "title": "墨俣一夜城",
-      "body": "美濃攻めに際し、短期間で墨俣に城を築いて信長を助けたとされる逸話。史実性には議論がある。",
-      "uncertain": true
+      "year": 1582,
+      "era": "天正10年10月3日",
+      "title": "左近衛権少将（従五位下）",
+      "note": "天正記の任官之記に{{従五位下平秀吉}}、左近衛権少将とある。",
+      "sourceId": "tensho-ki"
+    },
+    {
+      "year": 1583,
+      "era": "天正11年5月22日",
+      "title": "参議（従四位下）",
+      "note": "天正記の任官之記による。公卿補任も天正11年の項に参議として載る。",
+      "sourceId": [
+        "tensho-ki",
+        "kugyo-bunin"
+      ]
+    },
+    {
+      "year": 1584,
+      "era": "天正12年11月22日",
+      "title": "権大納言（従三位）",
+      "note": "公卿補任による（OCR本文。日付の字は原本画像と照合していない）。",
+      "sourceId": "kugyo-bunin"
+    },
+    {
+      "year": 1585,
+      "era": "天正13年3月10日",
+      "title": "内大臣",
+      "note": "公卿補任は内大臣の項に{{平秀吉}}（年齢欄は「五十」と読める）、{{三月十日任}}と書く。天正記も同年3月10日とする。",
+      "sourceId": [
+        "kugyo-bunin",
+        "tensho-ki"
+      ]
+    },
+    {
+      "year": 1585,
+      "era": "天正13年7月11日",
+      "title": "関白（従一位）",
+      "note": "公卿補任は{{七月十一日爲關白。改平姓爲藤原。同日從一位}}と書く。多聞院日記は7月に{{秀吉關白ニ任}}、13日に関白拝賀と記す。",
+      "sourceId": [
+        "kugyo-bunin",
+        "tamonin-nikki"
+      ]
+    },
+    {
+      "year": 1586,
+      "era": "天正14年12月19日",
+      "title": "太政大臣（豊臣姓）",
+      "note": "公卿補任は天正14年12月19日の太政大臣任官を載せ、同じ年の項に{{月日改藤原姓為豊臣云々}}とある（OCRは「藤」を別の字に読むため補った）。豊臣姓を賜った月日は確かめられていない（要確認）。",
+      "sourceId": "kugyo-bunin"
+    },
+    {
+      "year": 1591,
+      "era": "天正19年12月",
+      "title": "前関白（関白を秀次に譲る）",
+      "note": "公卿補任の天正19年の項は、秀吉を前関白・太政大臣とし、秀次が12月4日に内大臣、12月28日に関白となったと載せる。秀吉が関白を辞した日はOCRでは読み取れず、確かめられていない（要確認）。",
+      "sourceId": "kugyo-bunin"
+    }
+  ],
+  "family": [
+    {
+      "relation": "母",
+      "person_id": "omandokoro",
+      "name": "大政所",
+      "note": "太閤素生記は、のちの大政所を「ごきそ村」の生まれとする。天正記の任官之記は、宮仕えの後に一子（秀吉）を産んだという貴種説を載せるが、これは秀吉を持ち上げる側の書き方である。",
+      "sourceId": [
+        "taiko-soseiki",
+        "tensho-ki"
+      ]
+    },
+    {
+      "relation": "父",
+      "name": "木下弥右衛門",
+      "note": "父の名は書物で異なる。太閤素生記は木下弥右衛門（信秀の鉄砲足軽。天文12年〈1543〉に死去、秀吉8歳）、甫庵の太閤記は筑阿弥（中村の住人）、祖父物語は竹アミ（信長の同朋、羽狭間村の生まれ）とする。どれも江戸時代の記録で、同時代の史料はない（要確認）。",
+      "sourceId": [
+        "taiko-soseiki",
+        "hoan-taikoki",
+        "oji-monogatari"
+      ]
+    },
+    {
+      "relation": "姉",
+      "person_id": "tomo",
+      "name": "とも（瑞龍院日秀）",
+      "note": "太閤素生記は、三好武蔵守に嫁して秀次・秀勝（丹波少将）・辰千代を産んだとする。",
+      "sourceId": "taiko-soseiki"
+    },
+    {
+      "relation": "弟",
+      "person_id": "toyotomi-hidenaga",
+      "name": "豊臣秀長",
+      "note": "太閤素生記は、弥右衛門の死後に母が竹阿弥（信秀の同朋）に嫁して秀長と朝日姫が生まれたとし、種違いの弟とする。祖父物語は竹アミを信長の同朋とし、甫庵の太閤記は筑阿弥を父とする。異父弟かどうかは下の問いと要確認（調査メモ）に回す。",
+      "sourceId": [
+        "taiko-soseiki",
+        "oji-monogatari",
+        "hoan-taikoki"
+      ]
+    },
+    {
+      "relation": "妹",
+      "person_id": "asahi-hime",
+      "name": "朝日姫",
+      "note": "太閤素生記は、徳川家康への嫁入りを{{天正十三乙酉年}}とする。朝日姫のページは天正14年とし、食い違う（要確認）。",
+      "sourceId": "taiko-soseiki"
+    },
+    {
+      "relation": "妻",
+      "name": "ねね（高台院）",
+      "note": "太閤素生記は本妻を禰々（浅野又右衛門の姪）とする。",
+      "sourceId": "taiko-soseiki"
+    },
+    {
+      "relation": "側室",
+      "name": "淀の御方（茶々）",
+      "note": "太閤素生記は、浅井の娘で信長の妹の腹と書き、秀頼の母とする。",
+      "sourceId": "taiko-soseiki"
+    },
+    {
+      "relation": "甥",
+      "person_id": "toyotomi-hidetsugu",
+      "name": "豊臣秀次",
+      "note": "ともの長子。のち関白を譲られた。公卿補任は天正19年12月4日に内大臣、同28日に関白と書く。秀吉の養子とした時期と経緯は確かめていない（要確認）。",
+      "sourceId": "kugyo-bunin"
+    },
+    {
+      "relation": "甥",
+      "person_id": "toyotomi-hideyasu",
+      "name": "豊臣秀保",
+      "note": "ともの子とされ、秀長の養子となった。太閤素生記は秀保を辰千代とし、猿沢の池で溺死したとするが、秀保のページは十津川での急死とする（要確認）。",
+      "sourceId": "taiko-soseiki"
+    },
+    {
+      "relation": "甥",
+      "name": "豊臣秀勝（丹波少将）",
+      "note": "ともの子。太閤素生記による。",
+      "sourceId": "taiko-soseiki"
+    },
+    {
+      "relation": "子",
+      "name": "豊臣秀頼",
+      "note": "太閤素生記は淀の御方（茶々）の子とする。",
+      "sourceId": "taiko-soseiki"
+    }
+  ],
+  "lords": [
+    {
+      "person_id": "oda-nobunaga",
+      "name": "織田信長",
+      "from": 1568,
+      "to": 1582,
+      "note": "信長公記の初出は永禄11年（1568）の箕作山攻め。仕えはじめた時期は信長公記から分からない。草履取として仕えたという話は、太閤素生記・川角太閤記の秀吉自身の言によるもの。",
+      "sourceId": [
+        "shincho-koki",
+        "taiko-soseiki",
+        "kawasumi-taikoki"
+      ]
+    }
+  ],
+  "retainers": [
+    {
+      "name": "蜂須賀小六",
+      "note": "信長公記の天正9年（1581）、伯耆の記事に{{蜂須賀小六　木下平大夫}}と並んで出る。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "name": "木下平大夫",
+      "note": "同上。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "name": "宮部善祥坊",
+      "note": "天正9年（1581）の鳥取城の開城後に城代とされた。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "name": "加藤清正",
+      "note": "太閤記の七本鑓の一人（賀藤虎助）。七本鑓は賤ヶ岳の戦いの話で、甫庵の書くものだから脚色を含む。",
+      "sourceId": "hoan-taikoki"
+    },
+    {
+      "name": "福島正則",
+      "note": "同じく七本鑓（福島市松）。",
+      "sourceId": "hoan-taikoki"
+    },
+    {
+      "name": "脇坂安治",
+      "note": "七本鑓（脇坂甚内）。",
+      "sourceId": "hoan-taikoki"
+    },
+    {
+      "name": "糟屋武則",
+      "note": "七本鑓（糟屋助右衛門）。",
+      "sourceId": "hoan-taikoki"
+    },
+    {
+      "name": "平野長泰",
+      "note": "七本鑓（平野権平）。",
+      "sourceId": "hoan-taikoki"
+    },
+    {
+      "name": "片桐且元",
+      "note": "七本鑓（片桐助作）。",
+      "sourceId": "hoan-taikoki"
+    },
+    {
+      "name": "加藤嘉明",
+      "note": "七本鑓（賀藤孫六郎）。",
+      "sourceId": "hoan-taikoki"
+    }
+  ],
+  "yoriki": [
+    {
+      "name": "竹中半兵衛",
+      "to": 1579,
+      "note": "信長公記は天正7年（1579）6月22日に、播磨で死んだ{{羽柴筑前与力に被仰付候竹中半兵衛}}と書く。与力となった年は信長公記から分からない（要確認）。",
+      "sourceId": "shincho-koki"
+    }
+  ],
+  "yorikiNote": {
+    "text": "黒田官兵衛（小寺官兵衛）らの扱いは確かめていない。与力・家臣の全体は、黒田基樹『信長時代の羽柴秀吉』などで確かめる（要確認）。"
+  },
+  "territories": [
+    {
+      "year": 1573,
+      "name": "近江国北部（長浜）",
+      "prefecture": "滋賀県",
+      "note": "信長公記は天正元年（1573）8月の小谷攻めの後に{{爰にて江北浅井跡一職進退に羽柴筑前守秀吉御朱印を以て被下}}と書く。浅井氏の旧領を与えられたが、郡名は書かれていない。",
+      "sourceId": "shincho-koki",
+      "district": [
+        "近江国東浅井郡",
+        "近江国伊香郡",
+        "近江国坂田郡"
+      ],
+      "until": 1582,
+      "untilNote": "天正記の柴田退治記は、天正10年（1582）12月の長浜を{{彼地秀吉久相居之要害也}}と書き、そこを守る柴田勝豊（勝家の養子）が降参したと書く。この間に長浜から出た時期は確かめていない（要確認）。",
+      "mapNote": "信長公記は郡名を挙げない。塗った3郡は、旧浅井領としてこの三郡を当てた仮の範囲で、実際の範囲は確かめていない（要確認）",
+      "place": "長浜城",
+      "approx": true,
+      "lat": 35.3787,
+      "lng": 136.265
+    },
+    {
+      "year": 1577,
+      "name": "播磨国（姫路）",
+      "prefecture": "兵庫県",
+      "note": "天正5年（1577）10月23日に播磨へ出陣し、11月27日に上月城を攻めた。のち姫路を拠点とした。播磨の全域を領したのかどうかは確かめていない（要確認）。",
+      "sourceId": "shincho-koki",
+      "place": "姫路",
+      "approx": true,
+      "lat": 34.8394,
+      "lng": 134.6939
+    },
+    {
+      "year": 1583,
+      "name": "摂津国（大坂）",
+      "prefecture": "大阪府",
+      "note": "多聞院日記は天正11年（1583）の8月末から9月初めにかけて、諸国から人夫を集めて大坂の普請が行われたと記す。",
+      "sourceId": "tamonin-nikki",
+      "district": [
+        "摂津国東成郡",
+        "摂津国西成郡"
+      ],
+      "place": "大坂城",
+      "approx": true,
+      "lat": 34.6873,
+      "lng": 135.5262
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1536,
+      "title": "誕生",
+      "description": "太閤素生記は天文5年正月1日、中々村の生まれとする。祖父物語は申年6月15日、清須の水野郷とする。生年・生地ともに江戸時代の記録によるもので、確かめきれない（要確認）。",
+      "sourceId": [
+        "taiko-soseiki",
+        "oji-monogatari"
+      ]
+    },
+    {
+      "year": 1537,
+      "toYear": 1567,
+      "title": "記録の空白",
+      "description": "信長公記に初めて出るのは永禄11年（1568）で、それ以前の秀吉の動きは同時代の史料では確かめられない。太閤素生記は天文20年（1551）に16歳で出奔し、遠江で松下加兵衛に仕え、18歳で戻って信長の草履取、小人頭になったとするが、素生記は甫庵の太閤記の加兵衛・具足の話を{{不信}}とする。この空白を逸話で埋めることはしない。",
+      "sourceId": [
+        "taiko-soseiki",
+        "shincho-koki"
+      ]
+    },
+    {
+      "year": 1568,
+      "month": 9,
+      "day": 12,
+      "title": "箕作山攻め",
+      "description": "信長公記の初出。{{木下藤吉郎}}が佐久間・丹羽・浅井新八とともに箕作山を攻める。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1570,
+      "month": 4,
+      "title": "金ケ崎",
+      "description": "信長公記は{{木下藤吉郎残しをかせられ}}と書く。信長の撤退のとき、金ケ崎に残された。「殿」を務めたという有名な話の出どころは、信長公記のこの一句。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1571,
+      "month": 5,
+      "day": 6,
+      "title": "箕浦の戦い",
+      "description": "{{木下藤吉郎}}が横山に人数を置く。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1573,
+      "month": 7,
+      "title": "淀城攻め",
+      "description": "{{羽柴筑前守秀吉}}が淀城を攻める。筑前守・秀吉の初出。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1573,
+      "month": 8,
+      "title": "小谷落城と近江北部",
+      "description": "浅井氏の滅亡後、秀吉は旧浅井領を信長から与えられ、のち長浜を拠点とした。長浜は信長公記に{{羽柴筑前所}}と出る。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1577,
+      "title": "北国からの無断帰陣",
+      "description": "天正5年（1577）の手取川の戦いの出陣で、無断で帰陣したとして、信長から折檻を受けた。信長公記は{{今度北国より帰陣仕御折檻迷惑之故}}と書く。勝家との対立が理由かどうかは、後の編纂物の説明。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1577,
+      "month": 10,
+      "day": 23,
+      "title": "播磨へ出陣",
+      "description": "10月23日に播磨へ出陣し、11月27日に上月城を攻める。以後、播磨・因幡・備中の攻略を任される。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1578,
+      "toYear": 1580,
+      "title": "三木城攻め",
+      "description": "天正8年（1580）1月17日、別所長治・友之・山城が三木で自害する。信長公記は{{羽柴筑前　一身以覚悟大敵を如此被成退治候之事武勇と言調略と言弓矢面目不可過之}}と書き、秀吉の働きを称える。",
+      "battle_id": "miki-siege",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1580,
+      "month": 8,
+      "title": "信長の評",
+      "description": "佐久間信盛への折檻状で、信長は{{羽柴藤吉郎数ケ国無比類}}と書く。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1581,
+      "month": 10,
+      "day": 25,
+      "title": "鳥取城の開城",
+      "description": "6月25日に因幡へ出勢し、10月25日に鳥取城が開城した。宮部善祥坊が城代となる。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1582,
+      "title": "備中高松",
+      "description": "備中で高松城を水攻めにする。信長は自ら中国へ向かう段取りで、明智光秀らが先陣とされていた。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "year": 1582,
+      "month": 6,
+      "day": 2,
+      "title": "本能寺の変",
+      "description": "光秀が信長を討つ。秀吉が事前に知っていたかどうかなどの議論は、ここでは扱わない。",
+      "battle_id": "honnoji-no-hen",
+      "sourceId": "tensho-ki"
+    },
+    {
+      "year": 1582,
+      "month": 6,
+      "day": 6,
+      "title": "中国からの引き返し",
+      "description": "天正記の惟任退治記は、6月6日に備中を引き、備前沼城に入り、7日に姫路、9日に姫路を立って尼崎、摂津富田に着陣したと書く。いわゆる「中国大返し」の道のりの記録は、秀吉側の天正記にある。",
+      "sourceId": "tensho-ki"
+    },
+    {
+      "year": 1582,
+      "month": 6,
+      "day": 13,
+      "title": "山崎の戦い",
+      "description": "天正記は、光秀が{{同十三日被刎汝首}}と書く。",
+      "battle_id": "yamazaki",
+      "sourceId": "tensho-ki"
+    },
+    {
+      "year": 1582,
+      "month": 10,
+      "day": 3,
+      "title": "左近衛権少将に任官",
+      "description": "{{従五位下平秀吉}}、左近衛権少将。",
+      "sourceId": "tensho-ki"
+    },
+    {
+      "year": 1582,
+      "month": 10,
+      "day": 15,
+      "title": "信長の葬礼",
+      "description": "大徳寺で行われた。秀長が警固大将を務め、輿の前を池田輝政、後ろを羽柴於次丸秀勝が担いだと天正記は書く。",
+      "sourceId": "tensho-ki"
+    },
+    {
+      "year": 1582,
+      "month": 12,
+      "title": "柴田勝豊の降参",
+      "description": "天正記は、長浜を守る柴田勝豊（勝家の養子）が降参したと書く。",
+      "sourceId": "tensho-ki"
+    },
+    {
+      "year": 1583,
+      "month": 4,
+      "day": 21,
+      "title": "賤ヶ岳の戦い",
+      "description": "4月21日に戦い、23日に北庄を攻めて勝家は自害した。",
+      "battle_id": "shizugatake",
+      "sourceId": "tensho-ki"
+    },
+    {
+      "year": 1583,
+      "month": 5,
+      "day": 22,
+      "title": "参議に任官",
+      "description": "従四位下・参議。",
+      "sourceId": "tensho-ki"
+    },
+    {
+      "year": 1583,
+      "title": "大坂の普請",
+      "description": "諸国から人夫を集めて大坂の普請が行われたと多聞院日記は記す。",
+      "sourceId": "tamonin-nikki"
+    },
+    {
+      "year": 1584,
+      "title": "小牧・長久手",
+      "description": "家康と対陣した。三河物語に記事があるが、本ページでは詳しい内容を確かめていない（要確認）。",
+      "sourceId": "mikawa-monogatari"
+    },
+    {
+      "year": 1585,
+      "month": 3,
+      "title": "紀州攻め",
+      "description": "天正記は3月21日に動座したと書く。",
+      "battle_id": "kishu-campaign",
+      "sourceId": "tensho-ki"
+    },
+    {
+      "year": 1585,
+      "month": 6,
+      "title": "四国攻め",
+      "description": "天正記は、4月24日に兵を発し、6月11日に班師、6月20日に出勢したと書く。総大将は秀長・秀次。元親は阿波・讃岐・伊予を差し出して土佐一国を許された。",
+      "battle_id": "shikoku-campaign",
+      "sourceId": "tensho-ki"
+    },
+    {
+      "year": 1585,
+      "month": 7,
+      "day": 11,
+      "title": "関白に任官",
+      "description": "藤原姓となり、従一位。多聞院日記は近衛殿の猶子となったと記す。",
+      "sourceId": [
+        "kugyo-bunin",
+        "tamonin-nikki"
+      ]
+    },
+    {
+      "year": 1586,
+      "month": 12,
+      "day": 19,
+      "title": "太政大臣、豊臣姓",
+      "description": "公卿補任による。",
+      "sourceId": "kugyo-bunin"
+    },
+    {
+      "year": 1587,
+      "title": "九州攻め",
+      "description": "詳しい経過は確かめていない（要確認）。",
+      "battle_id": "kyushu-campaign"
+    },
+    {
+      "year": 1588,
+      "month": 4,
+      "day": 14,
+      "title": "聚楽第行幸",
+      "description": "公卿補任は天正16年4月14日の関白亭への行幸（5日間）を載せる。甫庵の太閤記は、このときの起請文を載せる。",
+      "sourceId": [
+        "kugyo-bunin",
+        "hoan-taikoki"
+      ]
+    },
+    {
+      "year": 1590,
+      "title": "小田原・奥州",
+      "description": "川角太閤記は7月12日に氏政が切腹したと書き、氏直は高野へ上ったとする。小田原城の受取は黒田官兵衛、会津黒川に在陣して木村弥一右衛門に奥州仕置を当座任せたと書く。日付や経緯は史料ごとに食い違う箇所があり、確かめきれていない（要確認）。",
+      "sourceId": [
+        "kawasumi-taikoki",
+        "hoan-taikoki"
+      ]
+    },
+    {
+      "year": 1591,
+      "month": 12,
+      "title": "関白を秀次に譲る",
+      "description": "秀次が12月28日に関白となる。",
+      "sourceId": "kugyo-bunin"
+    },
+    {
+      "year": 1592,
+      "title": "朝鮮出兵",
+      "description": "甫庵の太閤記は、{{中納言秀次卿に…関白職等を譲り置、某は…令渡海}}と、渡海の意向を語らせる。出兵の経過は確かめていない（要確認）。",
+      "sourceId": "hoan-taikoki"
+    },
+    {
+      "year": 1595,
+      "title": "秀次の自害",
+      "description": "公卿補任は文禄4年7月15日に自害（高野山で出家）と載せる。",
+      "sourceId": "kugyo-bunin"
+    },
+    {
+      "year": 1598,
+      "month": 9,
+      "day": 18,
+      "title": "死去",
+      "description": "慶長3年8月18日、伏見で死去。",
+      "sourceId": [
+        "kugyo-bunin",
+        "taiko-soseiki",
+        "mikawa-monogatari"
+      ]
+    }
+  ],
+  "episodes": [],
+  "questions": [
+    {
+      "place": "lens",
+      "title": "草履取だったのか",
+      "text": "信長の草履取として仕えたという話は、太閤素生記（信長の草履取から小人頭）と、川角太閤記が伝える秀吉自身の言（{{昨今迄の草刈わらんべなり或時は草履取なと仕候}}）にある。ただし懐で草履を温めた話は、見た範囲の史料では見つからず、信長公記にもない。",
+      "sourceId": [
+        "taiko-soseiki",
+        "kawasumi-taikoki",
+        "shincho-koki"
+      ]
+    },
+    {
+      "place": "lens",
+      "title": "墨俣の一夜城は本当か",
+      "text": "甫庵の太閤記は永禄6年（1563）、巣俟に陣取る話を載せるが、信長公記に墨俣の秀吉は出ない（洲股は信長自身の永禄4年の築城に出るだけ）。",
+      "sourceId": [
+        "hoan-taikoki",
+        "shincho-koki"
+      ]
+    },
+    {
+      "place": "lens",
+      "title": "信長に小便をかけられたのか",
+      "text": "祖父物語は、信長が二階門から小便をかけ、{{汝カ心ヲ見ントテシタル事ナリ…木下藤吉トソナサレケル}}と、名の由来を語る。他の書物には見えず、史実かどうかは確かめられない。",
+      "sourceId": "oji-monogatari"
+    },
+    {
+      "place": "family",
+      "title": "父は誰なのか",
+      "text": "木下弥右衛門（素生記）・筑阿弥（甫庵）・竹アミ（祖父物語）と、父の名が書物で分かれる。母の再婚相手と父を同一人物とするか別人とするかでも違う。",
+      "sourceId": [
+        "taiko-soseiki",
+        "hoan-taikoki",
+        "oji-monogatari"
+      ]
+    },
+    {
+      "place": "family",
+      "title": "秀長とは異父弟なのか",
+      "text": "種違いの弟とする見方と、父も同じとする見方がある。どちらも江戸時代の書物による。",
+      "article_id": "hidenaga-father-chikuami",
+      "sourceId": [
+        "taiko-soseiki",
+        "hoan-taikoki"
+      ]
+    },
+    {
+      "place": "nameHistory",
+      "title": "なぜ木下から羽柴へ改めたのか",
+      "text": "改名の理由を述べる同時代の史料は見つからない。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "title": "手取川から無断で帰ったのはなぜか",
+      "text": "信長公記は折檻を受けたことを書くが、理由は書かない。",
+      "article_id": "tedorigawa-kenshin",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "title": "信長は敵の家臣を取り立てたのか",
+      "text": "信長の取り立てと、秀吉が他家の家臣を大名に取り立てた例との違いを見る。",
+      "article_id": "retainers-became-daimyo"
     }
   ],
   "achievements": [
-    { "title": "天下統一", "description": "信長の事業を継ぎ、全国の戦国大名を従えて統一を完成させた" },
-    { "title": "太閤検地・刀狩", "description": "全国的な検地と刀狩により、兵農分離と近世的な支配体制の基礎を築いた" }
+    {
+      "title": "中国攻め",
+      "description": "天正5年（1577）に播磨へ入り、三木城・鳥取城を落として備中に至った。信長は佐久間信盛への折檻状で、その働きを{{羽柴藤吉郎数ケ国無比類}}と書く。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "title": "信長の死後の主導権",
+      "description": "山崎の戦いで光秀を破り、賤ヶ岳の戦いで柴田勝家を破った。",
+      "sourceId": "tensho-ki"
+    },
+    {
+      "title": "関白・太政大臣",
+      "description": "天正13年（1585）に関白、天正14年（1586）に太政大臣となり、豊臣姓を名乗った。",
+      "sourceId": "kugyo-bunin"
+    }
+  ],
+  "reputation": [
+    {
+      "era": "存命時",
+      "title": "信長の評価",
+      "body": "天正8年（1580）、信長は佐久間信盛の折檻状に{{羽柴藤吉郎数ケ国無比類}}と書き、秀吉の働きを比べるもののないものとした。",
+      "sourceId": "shincho-koki"
+    },
+    {
+      "era": "存命時",
+      "title": "貴種の子とする書き方",
+      "body": "天正記の任官之記は、母が宮仕えの後に一子を産んだと書き、{{如何様非王氏者争得此俊傑乎}}（王氏の出でなくて、どうしてこの俊傑が得られようか）と述べる。秀吉を持ち上げる側が書いたもので、そのまま事実とはできない。",
+      "sourceId": "tensho-ki"
+    },
+    {
+      "era": "江戸時代",
+      "title": "民のためでなく身ひとりの栄華",
+      "body": "甫庵の太閤記の評は、{{秀吉日本国中検地し侍りて}}と検地を挙げつつ、民のためではなく身ひとりの栄華のためだったと厳しく批判する。",
+      "sourceId": "hoan-taikoki"
+    },
+    {
+      "era": "江戸時代",
+      "title": "伝記の材料としての書物",
+      "body": "太閤素生記は、甫庵の太閤記が伝える松下加兵衛・具足の話を{{不信}}とする。江戸時代の書物の間でも、秀吉の若いころの話は互いに食い違う。",
+      "sourceId": "taiko-soseiki"
+    }
   ],
   "references": [
-    { "title": "太閤記", "author": "小瀬甫庵", "note": "秀吉の伝記。脚色も多いとされる", "affiliateUrl": "" }
+    {
+      "title": "羽柴秀吉とその一族 秀吉の出自から秀長の家族まで",
+      "author": "黒田基樹",
+      "publisher": "KADOKAWA（角川選書）",
+      "year": 2025,
+      "isbn": "9784047037397",
+      "affiliateUrl": "",
+      "note": "書誌のみ確認し、本は未見。出自と一族を扱う。"
+    },
+    {
+      "title": "信長時代の羽柴秀吉",
+      "author": "黒田基樹",
+      "publisher": "KADOKAWA（角川選書）",
+      "isbn": "9784044900113",
+      "affiliateUrl": "",
+      "note": "出版社の紹介では、560通の文書から読み解くとされる。本は未見。"
+    },
+    {
+      "title": "秀吉の虚像と実像",
+      "author": "堀新・井上泰至 編",
+      "publisher": "笠間書院",
+      "year": 2016,
+      "isbn": "9784305708144",
+      "affiliateUrl": "",
+      "note": "実像編は古文書・古記録、虚像編は軍記物などから秀吉像の形成をたどる。本は未見。"
+    }
   ],
   "spots": [
-    { "type": "城跡", "name": "大阪城", "prefecture": "大阪府", "city": "大阪市", "description": "秀吉が築いた本拠。現在の天守は後世の再建" },
-    { "type": "神社仏閣", "name": "豊国神社", "prefecture": "京都府", "city": "京都市", "description": "豊臣秀吉を祀る神社" },
-    { "type": "その他", "name": "中村公園", "prefecture": "愛知県", "city": "名古屋市", "description": "秀吉生誕の地と伝わる一帯" }
+    {
+      "type": "城跡",
+      "name": "大阪城",
+      "lat": 34.6873,
+      "lng": 135.5262,
+      "approx": true,
+      "prefecture": "大阪府",
+      "city": "大阪市",
+      "description": "天正11年（1583）に普請が始まった。現在の天守は後世の再建。"
+    },
+    {
+      "type": "城跡",
+      "name": "長浜城",
+      "lat": 35.3787,
+      "lng": 136.265,
+      "approx": true,
+      "prefecture": "滋賀県",
+      "city": "長浜市",
+      "description": "小谷落城の後、秀吉が拠点とした城。"
+    },
+    {
+      "type": "城跡",
+      "name": "備中高松城",
+      "lat": 34.6975,
+      "lng": 133.8392,
+      "approx": true,
+      "prefecture": "岡山県",
+      "city": "岡山市",
+      "description": "天正10年（1582）の水攻めの城。"
+    },
+    {
+      "type": "城跡",
+      "name": "三木城",
+      "lat": 34.7927,
+      "lng": 134.9958,
+      "approx": true,
+      "prefecture": "兵庫県",
+      "city": "三木市",
+      "description": "別所長治が自害した城。"
+    },
+    {
+      "type": "神社仏閣",
+      "name": "豊国神社（京都）",
+      "lat": 34.9889,
+      "lng": 135.7745,
+      "approx": true,
+      "prefecture": "京都府",
+      "city": "京都市東山区",
+      "description": "豊国大明神として秀吉を祀る。座標はおおよその位置。"
+    },
+    {
+      "type": "神社仏閣",
+      "name": "高台寺",
+      "lat": 35.0007,
+      "lng": 135.781,
+      "approx": true,
+      "prefecture": "京都府",
+      "city": "京都市東山区",
+      "description": "ねね（高台院）が開いた寺。肖像画（伝 狩野光信筆）を所蔵する。座標はおおよその位置。"
+    },
+    {
+      "type": "その他",
+      "name": "中村公園",
+      "lat": 35.1737,
+      "lng": 136.8669,
+      "approx": true,
+      "prefecture": "愛知県",
+      "city": "名古屋市中村区",
+      "description": "生誕の地と伝わる一帯。生地には中々村・清須水野郷の異説がある。座標はおおよその位置。"
+    }
   ],
+  "graves": {
+    "status": "現存",
+    "note": "太閤素生記は、秀吉が豊国大明神として祀られたと伝える。墓所は京都の阿弥陀ヶ峰にある豊国廟とされるが、廟の来歴は本ページで確かめていない（要確認）。",
+    "sourceId": "taiko-soseiki",
+    "places": [
+      {
+        "name": "豊国廟",
+        "lat": 34.9937,
+        "lng": 135.7833,
+        "approx": true,
+        "prefecture": "京都府",
+        "city": "京都市東山区",
+        "description": "秀吉の墓所とされる。座標はおおよその位置。"
+      }
+    ]
+  },
   "images": [],
-  "sources": [
-    { "id": "shincho-koki", "title": "信長公記", "author": "太田牛一", "note": "秀吉の信長期（藤吉郎・羽柴期）を伝える一次史料", "type": "史料", "primary": "一次資料" },
-    { "id": "hoan-taikoki", "title": "太閤記", "author": "小瀬甫庵", "note": "秀吉の一代記。脚色が多い二次史料で史料批判を要する", "type": "史料", "primary": "二次資料" }
+  "toVerify": [
+    {
+      "section": "誕生",
+      "title": "生年（天文5年か天文6年か）",
+      "text": "素生記・祖父物語・三河物語は、天文5年（申）生まれ、63歳没に合う。天文6年説の根拠は未確認。誕生の日・場所も書物で異なる。公卿補任の年齢欄はOCRのため、原本画像で確かめるまで決め手にしない。",
+      "checkWith": [
+        "公卿補任の原本画像（天正13年・慶長3年の年齢欄）",
+        "黒田基樹『羽柴秀吉とその一族』",
+        "堀新・井上泰至編『秀吉の虚像と実像』"
+      ]
+    },
+    {
+      "section": "家系",
+      "title": "父の名と秀長との関係",
+      "text": "父は木下弥右衛門・筑阿弥・竹アミと書物で分かれる。母の再婚の有無・時期、秀長が種違いの弟か、も同じ書物の違いに由来する。",
+      "checkWith": [
+        "黒田基樹『羽柴秀吉とその一族』",
+        "記事 hidenaga-father-chikuami",
+        "太閤素生記の原本"
+      ]
+    },
+    {
+      "section": "家系",
+      "title": "秀次を養子とした時期",
+      "text": "秀次を養子とした時期と経緯は、確かめていない。ねねの兄（木下肥後守）など、妻方の親族もまだ書いていない。",
+      "checkWith": [
+        "黒田基樹『羽柴秀吉とその一族』"
+      ]
+    },
+    {
+      "section": "家系",
+      "title": "他ページとの食い違い",
+      "text": "朝日姫の嫁入りは、素生記が天正13年、朝日姫のページが天正14年。秀保の死は、素生記が猿沢の池での溺死、秀保のページが十津川での急死。大政所の死は、素生記が文禄2年、大政所のページ・多聞院日記が天正20年7月22日。",
+      "checkWith": [
+        "多聞院日記の原本",
+        "公卿補任",
+        "各人物ページの出典"
+      ]
+    },
+    {
+      "section": "呼び名",
+      "title": "羽柴改姓と豊臣賜姓",
+      "text": "木下から羽柴へ改めた時期と理由、豊臣姓を賜った月日は、同時代の史料では確かめられていない。",
+      "checkWith": [
+        "黒田基樹『信長時代の羽柴秀吉』",
+        "公卿補任の原本画像"
+      ]
+    },
+    {
+      "section": "官位",
+      "title": "筑前守・関白辞任の日",
+      "text": "筑前守の任官の経緯と、関白を辞した日は確かめていない。",
+      "checkWith": [
+        "公卿補任の原本画像",
+        "黒田基樹『信長時代の羽柴秀吉』"
+      ]
+    },
+    {
+      "section": "領地",
+      "title": "近江北部・播磨の範囲",
+      "text": "信長公記は郡名を書かない。塗った3郡は仮の範囲。播磨の領有の範囲も未確認。長浜から出た時期も確かめていない。",
+      "checkWith": [
+        "黒田基樹『信長時代の羽柴秀吉』",
+        "秀吉の領知に関する文書"
+      ]
+    },
+    {
+      "section": "年表",
+      "title": "小牧・長久手、九州、小田原、朝鮮",
+      "text": "これらの経過と日付は史料ごとに食い違いがあり、確かめていない。甫庵の太閤記の小田原の記事には、日付に疑問がある箇所がある。",
+      "checkWith": [
+        "黒田基樹・堀新らの研究",
+        "各合戦ページ（作成予定）"
+      ]
+    },
+    {
+      "section": "家臣",
+      "title": "家臣団",
+      "text": "石田三成・五奉行・黒田官兵衛ら、家臣の記述は確かめていない。",
+      "checkWith": [
+        "黒田基樹『信長時代の羽柴秀吉』"
+      ]
+    },
+    {
+      "section": "史跡",
+      "title": "豊国廟",
+      "text": "豊国廟の来歴は未確認。なお史跡の座標はおおよその位置で、地図で確かめていない。",
+      "checkWith": [
+        "国土地理院地図",
+        "各寺社の公式案内"
+      ]
+    }
   ],
-  "tags": ["豊臣家", "三英傑", "戦国大名"],
-  "updatedAt": "2026-10-21"
+  "sourcesChecked": true,
+  "sources": [
+    {
+      "id": "shincho-koki",
+      "title": "信長公記",
+      "author": "太田牛一",
+      "url": "https://ja.wikisource.org/wiki/信長公記",
+      "note": "Wikisource翻刻（reference/wikisource/shincho-koki.txt）で確認。永禄11年の初出（箕作山）から天正10年まで、木下藤吉郎・羽柴筑前守の記事を読み、墨俣・草履取の話がないことも確かめた。",
+      "year": "江戸時代初期（慶長期）",
+      "type": "史料",
+      "primary": "一次資料"
+    },
+    {
+      "id": "tensho-ki",
+      "title": "天正記",
+      "author": "大村由己",
+      "url": "https://ja.wikisource.org/wiki/天正記",
+      "note": "Wikisource翻刻で確認（惟任退治記・任官之記・柴田退治記・四国御発向並北国御動座記・紀州御発向記）。引用は返り点・送り仮名を除いて示した。秀吉側の顕彰の書で、貴種説など持ち上げる箇所に注意。",
+      "year": "天正10〜16年",
+      "type": "史料",
+      "primary": "一次資料"
+    },
+    {
+      "id": "kugyo-bunin",
+      "title": "公卿補任",
+      "author": "（朝廷の記録）",
+      "url": "",
+      "note": "NDL OCR本文による（原本画像とは未照合）。官位と日付はOCRのため、旧字体のまま引用した。文字の乱れた箇所があり、秀吉が関白を辞した日は読み取れず確かめていない。",
+      "year": "",
+      "type": "史料",
+      "primary": "一次資料"
+    },
+    {
+      "id": "taiko-soseiki",
+      "title": "太閤素生記",
+      "author": "土屋知貞",
+      "url": "",
+      "note": "NDL OCR本文による（原本画像とは未照合）。出自・家系を書く江戸時代の記録で、他ページと食い違う記述がある。",
+      "year": "江戸時代前期",
+      "type": "史料",
+      "primary": "二次資料"
+    },
+    {
+      "id": "hoan-taikoki",
+      "title": "太閤記",
+      "author": "小瀬甫庵",
+      "url": "https://ja.wikisource.org/wiki/太閤記",
+      "note": "Wikisource翻刻で確認（巻一・起請文・七本鑓・小田原・巻十三・評）。脚色の多い二次史料。",
+      "year": "江戸時代前期",
+      "type": "史料",
+      "primary": "二次資料"
+    },
+    {
+      "id": "kawasumi-taikoki",
+      "title": "川角太閤記",
+      "author": "川角三郎右衛門",
+      "url": "https://ja.wikisource.org/wiki/川角太閤記",
+      "note": "Wikisource翻刻で確認（小田原・奥州仕置・鎌倉での秀吉の言）。聞書で、日付に誤りがありうる。",
+      "year": "江戸時代前期",
+      "type": "史料",
+      "primary": "二次資料"
+    },
+    {
+      "id": "tamonin-nikki",
+      "title": "多聞院日記",
+      "author": "多聞院の僧たち",
+      "url": "",
+      "note": "NDL OCR本文による（原本画像とは未照合）。天正10年〜16年の記事を確認。慶長期の秀吉の死の記事は確かめていない。",
+      "year": "",
+      "type": "史料",
+      "primary": "一次資料"
+    },
+    {
+      "id": "oji-monogatari",
+      "title": "祖父物語",
+      "author": "（不詳）",
+      "url": "https://ja.wikisource.org/wiki/祖父物語",
+      "note": "Wikisource翻刻で確認（出自・小便の話・山崎）。別名「朝日物語」。逸話を多く含む二次史料。",
+      "year": "江戸時代前期",
+      "type": "史料",
+      "primary": "二次資料"
+    },
+    {
+      "id": "mikawa-monogatari",
+      "title": "三河物語",
+      "author": "大久保彦左衛門",
+      "url": "https://ja.wikisource.org/wiki/三河物語",
+      "note": "Wikisource翻刻で、死去の記事のみ確認。他の記事は読んでいない。",
+      "year": "江戸時代前期",
+      "type": "史料",
+      "primary": "二次資料"
+    }
+  ],
+  "tags": [
+    "豊臣家",
+    "三英傑",
+    "戦国大名"
+  ],
+  "updatedAt": "2026-11-01"
 }
