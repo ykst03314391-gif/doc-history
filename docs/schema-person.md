@@ -103,6 +103,8 @@ Portrait = {
 > 肖像画が見つからない人物は `portrait` を省く。人物ページと一覧には「画像なし」の絵（`assets/img/portraits/noimage.svg`）を自動で表示する。
 > 一覧（`data/people/index.json`）には `thumb` に顔を切り出した正方形サムネイル（`assets/img/portraits/thumbs/<person_id>.jpg`、160×160）を書くと、武将一覧のカード右上に丸く表示する。
 
+> 一覧（`data/people/index.json`）に `update: { date, items }`（最後に手を入れた日付〔YYYY-MM-DD〕と、何を直したかを短く書いた箇条の配列）を書くと、人物名から探す（`people.html`）の上に「最近更新した人物」として日付の新しい順に3人まで並べる。箇条は2つまで出し、3つ以上あれば「ほか」を添える。残すのは最後の更新だけで、次に手を入れたら書き換える（履歴は持たない）。
+
 > 一覧（`data/people/index.json`）の `category` が `"other"` の人物は武将一覧（`people.html`）に出さず、「その他の人物」（`others.html`）に並べる。`"other"` にするのは、武将ではない人物（家族・茶人など）と、主な武将の周りに名前の出てくる脇役の武将（どれを移すかは管理人が決める）。個別ファイルにも同じ `category` を書く。どちらも読み（`kana`）の50音順で、行ごとに見出しを付ける。
 
 > 一覧（`data/people/index.json`）の生没年は `birthYear`/`deathYear`（西暦）に加え、`birthEra`/`deathEra` に個別JSONの `birth.era`/`death.era` と同じ和暦を書く。カードには「天文9年（1540） 〜 天正19年1月22日（1591）」の形で表示する（和暦が無ければ西暦のみ）。

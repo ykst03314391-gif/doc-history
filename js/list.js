@@ -44,6 +44,38 @@
       </a>`;
   }
 
+  // 「最近更新した人物」（people.html だけにある）。index.json の update（最後の更新の日付と、何を直したかの箇条）の新しい順に3人
+  // 更新の中身は2つまで箇条書きにし、3つ以上なら「ほか」を添える
+  function updateItemsHTML(items) {
+    if (!items.length) return "";
+    const lis = items.slice(0, 2).map((t) => `<li>${esc(t)}</li>`).join("");
+    const more = items.length > 2 ? `<li class="recent-more">ほか</li>` : "";
+    return `<ul class="recent-items">${lis}${more}</ul>`;
+  }
+  function renderRecent(all) {
+    const box = document.getElementById("recent");
+    if (!box) return;
+    const recent = all
+      .filter((p) => p.update && p.update.date)
+      .sort((a, b) => b.update.date.localeCompare(a.update.date))
+      .slice(0, 3);
+    if (!recent.length) return;
+    document.getElementById("recent-list").innerHTML = recent
+      .map((p) => {
+        const thumb = `<img class="person-thumb" src="${esc(p.thumb || "assets/img/portraits/noimage.svg")}" alt="" loading="lazy">`;
+        return `
+          <a class="card person-card recent-card" href="person.html?id=${encodeURIComponent(p.id)}">
+            ${thumb}
+            <p class="recent-date">${esc(p.update.date.replace(/-/g, "."))} 更新</p>
+            <h3>${esc(p.name)}</h3>
+            <p class="kana">${esc(p.kana || "")}</p>
+            ${updateItemsHTML(p.update.items || [])}
+          </a>`;
+      })
+      .join("");
+    box.hidden = false;
+  }
+
   const { kanaRow, isProvince, provinceRank, regionOf, regionRank, setupSwitch, by, diff } = window.ListOrder;
   const UNKNOWN = "出身国不明";
 
@@ -245,6 +277,7 @@
     if (!res.ok) throw new Error(res.status);
     const data = await res.json();
     const all = data.people || [];
+    renderRecent(all);
     otherCount = all.filter((p) => p.category === "other").length;
     // このページのカテゴリの人物だけを、読み（kana）の50音順に並べる
     people = all

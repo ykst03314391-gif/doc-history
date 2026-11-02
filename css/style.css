@@ -814,6 +814,22 @@ footer.site-footer {
 }
 .error { color: var(--accent); }
 
+/* ---- 人物一覧の「最近更新した人物」（3枚を横に並べる） ---- */
+.recent-updates { margin: 0 0 22px; }
+.recent-title { margin: 0 0 10px; font-size: 1rem; color: var(--ink-soft); }
+.recent-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+@media (max-width: 760px) {
+  .recent-grid { grid-template-columns: 1fr; }
+}
+.recent-card .recent-date { margin: 0 0 2px; font-size: 0.9rem; color: var(--accent); }
+.recent-items { clear: both; margin: 8px 0 0; padding-left: 1.2em; font-size: 0.92rem; color: var(--ink-soft); }
+.recent-items li { margin: 0 0 2px; }
+.recent-items .recent-more { list-style: none; margin-left: -1.2em; }
+
 /* ---- 仮置きデータ注記（DB系ページ） ---- */
 .provisional-notice {
   margin: 0 0 22px;
