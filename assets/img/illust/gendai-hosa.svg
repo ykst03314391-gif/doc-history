@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="本を手にした現代の服装の人が、兄の一歩後ろに控える「名補佐役」の秀長を思い浮かべているイメージイラスト">
+  <defs>
+    <symbol id="st" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M0,-70 V0" stroke="#23201c" stroke-width="1.5"/>
+      <path d="M-26,-140 L26,-140 L30,-90 L-30,-90 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L24,-128 L18,-92 L-18,-92 L-24,-128 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-140 L0,-120 L9,-140 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-162" r="20" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-19,-168 A20,20 0 0 1 19,-168 Q0,-160 -19,-168 Z" fill="#23201c"/>
+      <path d="M-3,-180 L-3,-190 L14,-187 L14,-183 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <path d="M40,400 H760" stroke="#d9d2c5" stroke-width="3"/>
+
+  <!-- 現代の人 -->
+  <path d="M168,300 L158,398 L190,398 L198,312 L206,398 L238,398 L230,300 Z" fill="#4f4940" stroke="#23201c" stroke-width="2"/>
+  <path d="M150,200 Q200,186 250,200 L240,306 L160,306 Z" fill="#cfdbe6" stroke="#23201c" stroke-width="2"/>
+  <path d="M188,196 L200,214 L212,196" fill="none" stroke="#23201c" stroke-width="2"/>
+  <path d="M152,204 L140,262 L186,262" fill="none" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M248,204 L260,262 L214,262" fill="none" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="170" y="238" width="60" height="42" rx="2" fill="#8a6d1f" stroke="#23201c" stroke-width="2"/>
+  <path d="M200,238 V280" stroke="#efe2b8" stroke-width="2"/>
+  <circle cx="182" cy="262" r="7" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
+  <circle cx="218" cy="262" r="7" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
+  <circle cx="200" cy="158" r="28" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+  <path d="M172,156 Q170,126 200,124 Q232,124 229,154 Q214,140 186,146 Z" fill="#23201c"/>
+  <path d="M206,160 q6,-4 12,0" stroke="#23201c" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M212,176 q5,3 10,0" stroke="#23201c" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- 思い浮かべる像 -->
+  <circle cx="252" cy="128" r="7" fill="#f4f1ea" stroke="#a39a8c" stroke-width="2"/>
+  <circle cx="284" cy="108" r="11" fill="#f4f1ea" stroke="#a39a8c" stroke-width="2"/>
+  <circle cx="326" cy="92" r="15" fill="#f4f1ea" stroke="#a39a8c" stroke-width="2"/>
+  <ellipse cx="560" cy="200" rx="215" ry="150" fill="#f4f1ea" stroke="#a39a8c" stroke-width="2.5"/>
+  <use href="#st" x="460" y="135" width="90" height="150" color="#9b2d20"/>
+  <use href="#st" x="590" y="160" width="72" height="120" color="#2f5d7c"/>
+  <path d="M590,290 Q620,300 650,290" stroke="#a39a8c" stroke-width="2" fill="none"/>
+
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" text-anchor="middle">
+    <text x="560" y="104" font-size="22" font-weight="700" fill="#2f5d7c">「名補佐役」秀長</text>
+    <text x="560" y="322" font-size="16" fill="#4f4940">一歩下がって、兄を陰で支える</text>
+    <text x="198" y="432" font-size="18" font-weight="700" fill="#23201c">いまの私たち</text>
+  </g>
+</svg>
