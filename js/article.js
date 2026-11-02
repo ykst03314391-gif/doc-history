@@ -45,8 +45,9 @@
       : "";
 
     // 本文の画像 ![[castle:<id>]] / ![[battle:<id>]] / ![[person:<id>]]（| のあとに説明を書けば差し替え）。
-    // 写真・肖像と権利表記は城・合戦の index.json の photo、人物の詳細ファイルの portrait から引く
-    const imgRe = /^!\[\[(castle|battle|person):([a-z0-9-]+)(?:\|([^\]\n]*))?\]\][ \t]*$/gm;
+    // 写真・肖像と権利表記は城・合戦の index.json の photo、人物の詳細ファイルの portrait から引く。
+    // ![[illust:<名前>|説明]] は挿絵（assets/img/illust/<名前>.svg。AIで作ったもので、DBは引かない）
+    const imgRe = /^!\[\[(castle|battle|person|illust):([a-z0-9-]+)(?:\|([^\]\n]*))?\]\][ \t]*$/gm;
     const refs = [...md.matchAll(imgRe)];
     const photos = new Map();
     if (refs.length) {
@@ -63,6 +64,13 @@
       ps.forEach((p, i) => p && p.portrait && p.portrait.src && photos.set("person:" + pids[i], p.portrait));
     }
     const figureHTML = (key, cap) => {
+      if (key.startsWith("illust:")) {
+        return `<figure class="article-figure article-figure--illust">` +
+          `<img src="assets/img/illust/${esc(key.slice(7))}.svg" alt="${esc(cap)}" loading="lazy"><figcaption>` +
+          (cap ? `<span class="portrait-title">${esc(cap)}</span>` : "") +
+          `<span class="img-credit">イラスト：戦国クロニクル（AIで作成）</span>` +
+          `</figcaption></figure>`;
+      }
       const ph = photos.get(key);
       if (!ph) return "";
       const credit = window.PhotoCredit.credit(ph);
@@ -104,22 +112,40 @@
     // 関連書籍（アフィリエイト）。可読性のため本文には挟まず、記事の末尾にだけ置く
     let books = "";
     if (meta && meta.references && meta.references.length) {
+      // 書影は Amazon の画像を引かず、書名を縦書きにした札で代える
       const items = meta.references
         .map((r) => {
-          const label =
-            esc(r.title) + (r.author ? ` <span class="muted">${esc(r.author)}</span>` : "");
-          const body = r.affiliateUrl
-            ? `<a href="${esc(r.affiliateUrl)}" target="_blank" rel="noopener sponsored nofollow">${label}</a>`
-            : label;
-          return `<li>${body}${r.note ? ` <span class="muted">（${esc(r.note)}）</span>` : ""}</li>`;
+          const buy = r.affiliateUrl
+            ? `<a class="btn btn-primary book-buy" href="${esc(r.affiliateUrl)}" target="_blank" rel="noopener sponsored nofollow">Amazonで見る</a>`
+            : "";
+          return `<li class="book-card">
+              <div class="book-cover" aria-hidden="true"><span>${esc(r.title)}</span></div>
+              <div class="book-info">
+                <p class="book-title">${esc(r.title)}</p>
+                ${r.author ? `<p class="book-author">${esc(r.author)}</p>` : ""}
+                ${r.note ? `<p class="book-note">${esc(r.note)}</p>` : ""}
+                ${buy}
+              </div>
+            </li>`;
         })
         .join("");
       books = `<section class="article-books">
           <h3>関連書籍</h3>
-          <ul class="list">${items}</ul>
+          <ul class="book-list">${items}</ul>
           <p class="affiliate-disclosure">※ 関連書籍のリンクにはアフィリエイトを含みます。Amazonのアソシエイトとして、当サイトは適格販売により収入を得ています。</p>
         </section>`;
     }
+
+    // 誤り・出典のご指摘の窓口（docs/公開の方針.md「読者の声の受け方」）。
+    // 外部のフォームの URL が決まるまでは、押せない見本として出す
+    const FEEDBACK_URL = "";
+    const feedback = `<section class="article-feedback">
+        <h3>誤り・出典のご指摘</h3>
+        <p>事実や出典の誤り、原文との食い違いに気づいたら、お知らせください。いただいた内容は公開せず、管理人だけが読んで記事を直す手がかりにします。</p>
+        ${FEEDBACK_URL
+          ? `<a class="btn" href="${esc(FEEDBACK_URL)}" target="_blank" rel="noopener">ご指摘のフォームを開く</a>`
+          : `<span class="btn is-disabled" aria-disabled="true">ご指摘のフォームを開く</span> <span class="muted">（見本：フォームは未作成）</span>`}
+      </section>`;
 
     // 本文をDOM化して、冒頭画像の挿入と目次(TOC)生成を行う
     const tmp = document.createElement("div");
@@ -179,7 +205,7 @@
       toc = `<nav class="side-toc" aria-label="目次"><p class="toc-title">目次</p><ol>${items}</ol></nav>`;
     }
 
-    el.innerHTML = `${head}${toc}<div class="article-body">${tmp.innerHTML}</div>${related}${sources}${books}`;
+    el.innerHTML = `${head}${toc}<div class="article-body">${tmp.innerHTML}</div>${related}${sources}${books}${feedback}`;
   } catch (err) {
     el.innerHTML = `<p class="error">記事を読み込めませんでした（ID: ${esc(id)}）。ローカルで開いている場合は簡易サーバー経由で表示してください（README参照）。</p>`;
     console.error(err);

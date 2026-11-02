@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="天下人・主家・家臣の関係図。秀吉の時代は天下人が主家を通さず家臣を取り立てた例があるが、織田家の時代に信長が秀長を取り立てた記録はない">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#9b2d20"/>
+    </marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#a39a8c"/>
+    </marker>
+    <marker id="ai" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#4f4940"/>
+    </marker>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" fill="#23201c">
+    <!-- column titles -->
+    <text x="200" y="46" font-size="22" font-weight="700" text-anchor="middle">秀吉の時代</text>
+    <text x="580" y="46" font-size="22" font-weight="700" text-anchor="middle">織田家の時代</text>
+    <path d="M390,30 V420" stroke="#d9d2c5" stroke-width="2" stroke-dasharray="4 6"/>
+
+    <!-- left column -->
+    <g>
+      <rect x="110" y="72" width="180" height="70" rx="6" fill="#f4f1ea" stroke="#b08d33" stroke-width="2"/>
+      <text x="200" y="98" font-size="14" fill="#4f4940" text-anchor="middle">天下人</text>
+      <text x="200" y="126" font-size="22" font-weight="700" text-anchor="middle">豊臣秀吉</text>
+
+      <rect x="110" y="192" width="180" height="70" rx="6" fill="#f4f1ea" stroke="#d9d2c5" stroke-width="2"/>
+      <text x="200" y="218" font-size="14" fill="#4f4940" text-anchor="middle">主家</text>
+      <text x="200" y="246" font-size="22" font-weight="700" text-anchor="middle">大友家</text>
+
+      <rect x="110" y="312" width="180" height="70" rx="6" fill="#f4f1ea" stroke="#d9d2c5" stroke-width="2"/>
+      <text x="200" y="338" font-size="14" fill="#4f4940" text-anchor="middle">家臣</text>
+      <text x="200" y="366" font-size="22" font-weight="700" text-anchor="middle">立花宗茂</text>
+
+      <path d="M200,142 V186" stroke="#4f4940" stroke-width="2" marker-end="url(#ai)"/>
+      <path d="M200,262 V306" stroke="#4f4940" stroke-width="2" marker-end="url(#ai)"/>
+      <!-- direct promotion -->
+      <path d="M110,110 Q40,227 104,345" fill="none" stroke="#9b2d20" stroke-width="4" marker-end="url(#ah)"/>
+      <text x="40" y="232" font-size="15" font-weight="700" fill="#9b2d20" text-anchor="middle" writing-mode="tb">直接取り立て</text>
+      <text x="200" y="408" font-size="15" fill="#9b2d20" text-anchor="middle">→ 柳川の大名に</text>
+    </g>
+
+    <!-- right column -->
+    <g>
+      <rect x="490" y="72" width="180" height="70" rx="6" fill="#f4f1ea" stroke="#b08d33" stroke-width="2"/>
+      <text x="580" y="98" font-size="14" fill="#4f4940" text-anchor="middle">天下人</text>
+      <text x="580" y="126" font-size="22" font-weight="700" text-anchor="middle">織田信長</text>
+
+      <rect x="490" y="192" width="180" height="70" rx="6" fill="#f4f1ea" stroke="#d9d2c5" stroke-width="2"/>
+      <text x="580" y="218" font-size="14" fill="#4f4940" text-anchor="middle">主家</text>
+      <text x="580" y="246" font-size="22" font-weight="700" text-anchor="middle">羽柴家（秀吉）</text>
+
+      <rect x="490" y="312" width="180" height="70" rx="6" fill="#f4f1ea" stroke="#9b2d20" stroke-width="2.5"/>
+      <text x="580" y="338" font-size="14" fill="#4f4940" text-anchor="middle">家臣</text>
+      <text x="580" y="366" font-size="22" font-weight="700" text-anchor="middle">羽柴秀長</text>
+
+      <path d="M580,142 V186" stroke="#4f4940" stroke-width="2" marker-end="url(#ai)"/>
+      <path d="M580,262 V306" stroke="#4f4940" stroke-width="2" marker-end="url(#ai)"/>
+      <!-- no record -->
+      <path d="M670,110 Q740,227 676,345" fill="none" stroke="#a39a8c" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#ag)"/>
+      <g stroke="#9b2d20" stroke-width="5" stroke-linecap="round">
+        <path d="M712,208 L742,238 M742,208 L712,238"/>
+      </g>
+      <text x="760" y="160" font-size="15" font-weight="700" fill="#4f4940" text-anchor="middle" writing-mode="tb">記録なし</text>
+      <text x="580" y="408" font-size="15" fill="#4f4940" text-anchor="middle">→ 兄の家の中にとどまる</text>
+    </g>
+  </g>
+</svg>
