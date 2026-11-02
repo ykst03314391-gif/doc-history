@@ -2,6 +2,7 @@
   "id": "toyotomi-hidenaga",
   "name": "豊臣秀長",
   "kana": "とよとみ ひでなが",
+  "role": "main",
   "summary": "豊臣秀吉の弟（異父弟とする説もある）。兄が織田家臣だった頃から但馬・播磨で軍を率い、天下統一戦では紀州攻めに加わり、四国・九州攻めで大将を務めた。大和・紀伊・和泉を与えられて郡山城に入り、「大和大納言」と呼ばれた。政権内の調整役だったとされるが、秀吉より先に病没した。",
   "lens": { "title": "「名補佐役」秀長は本当か", "question": "温厚で調整に長けた名補佐役という秀長像は、いつ、どこから来て、どこまで当たっているのか。", "view": "" },
   "portrait": {"src": "assets/img/portraits/toyotomi-hidenaga.jpg", "caption": "豊臣秀長像", "holder": "春岳院（奈良県大和郡山市）", "note": "天明8年（1788）の作（梅軒員信の画か）とされ、秀長の死から約200年後のもの。没後まもない文禄2年（1593）の賛がある像は京都・大光院に伝わる（特別展「豊臣兄弟！」出品目録）。", "source": {"name": "Wikimedia Commons", "url": "https://commons.wikimedia.org/wiki/File:Hidenaga_Toyotomi.jpg"}, "license": "パブリックドメイン"},

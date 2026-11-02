@@ -10,6 +10,9 @@
   const category = listEl.dataset.category || "";
   let people = [];
   let otherCount = 0;
+  // 人物ID → その人物が出てくる記事のタイトル・主役ページの人物名。主役（role: "main"）は一覧の上に別に出す
+  const articlesById = {};
+  const leadsById = {};
 
   const esc = (s) =>
     String(s ?? "").replace(/[&<>"']/g, (c) =>
@@ -27,6 +30,22 @@
     return `${fmtYear(p.birthEra, p.birthYear)} 〜 ${fmtYear(p.deathEra, p.deathYear)}`;
   }
 
+  // カードの「登場する記事」。記事は2本まで書名を出し、3本以上なら「ほか」を添える。記事がなく主役ページにだけ出てくるなら主役の名前を出す
+  function appearsHTML(p) {
+    const arts = articlesById[p.id] || [];
+    const leads = leadsById[p.id] || [];
+    if (arts.length) {
+      const more = arts.length > 2 ? `ほか${arts.length - 2}本` : "";
+      return `<p class="card-appears"><span class="card-appears-label">登場する記事</span>${arts
+        .slice(0, 2)
+        .map((t) => `「${esc(t)}」`)
+        .join("")}${more}</p>`;
+    }
+    if (leads.length)
+      return `<p class="card-appears"><span class="card-appears-label">主役ページ</span>${leads.map(esc).join("・")}</p>`;
+    return "";
+  }
+
   function cardHTML(p) {
     const tags = (p.tags || [])
       .map((t) => `<span class="tag">${esc(t)}</span>`)
@@ -40,9 +59,41 @@
         <p class="kana">${esc(p.kana || "")}</p>
         <p class="years">${esc(years(p))}</p>
         <p class="card-summary">${esc(p.summary || "")}</p>
+        ${appearsHTML(p)}
         <div class="tags">${tags}</div>
       </a>`;
   }
+
+  // 「考察の主役」（people.html だけにある）。考察記事を書く人物を、検索・並べ方とは別に一覧の上に出す
+  function renderLeads(leads) {
+    const box = document.getElementById("leads");
+    if (!box || !leads.length) return;
+    document.getElementById("leads-list").innerHTML = leads.map(cardHTML).join("");
+    box.hidden = false;
+  }
+
+  // 記事の relatedPeople と、主役の個別データの中の person_id から、誰がどこに出てくるかを集める
+  async function loadAppearances(leads) {
+    const arts = await fetch("data/articles/index.json")
+      .then((r) => (r.ok ? r.json() : {}))
+      .catch(() => ({}));
+    for (const a of arts.articles || []) {
+      if (a.draft) continue;
+      for (const id of a.relatedPeople || []) (articlesById[id] ||= []).push(a.title.replace(/ ― .*$/, ""));
+    }
+    await Promise.all(
+      leads.map((l) =>
+        fetch(`data/people/${encodeURIComponent(l.id)}.json`)
+          .then((r) => (r.ok ? r.text() : ""))
+          .catch(() => "")
+          .then((text) => {
+            const ids = new Set([...text.matchAll(/"person_id"\s*:\s*"([^"]+)"/g)].map((m) => m[1]));
+            for (const id of ids) if (id !== l.id) (leadsById[id] ||= []).push(l.name);
+          })
+      )
+    );
+  }
+  const appears = (p) => !!((articlesById[p.id] || []).length || (leadsById[p.id] || []).length);
 
   // 「最近更新した人物」（people.html だけにある）。index.json の update（最後の更新の日付と、何を直したかの箇条）の新しい順に3人
   // 更新の中身は2つまで箇条書きにし、3つ以上なら「ほか」を添える
@@ -209,6 +260,8 @@
       : "";
   }
 
+  // 記事・主役ページに出てくる人物を先に、出てこない人物を後ろに「記事にまだ出てこない人物」としてまとめる
+  const UNLISTED_ROW = { id: "row-unlisted", label: "記事にまだ出てこない人物" };
   function render(items, showOther) {
     const more = showOther && !category ? otherCardHTML() : "";
     if (!items.length) {
@@ -216,8 +269,24 @@
       renderToc(more ? [OTHER_ROW] : []);
       return;
     }
-    // items は50音順に並んでいる前提。並べ方に従って並べ替え、グループが変わるところに見出しを挟む
     const order = currentOrder();
+    const shown = items.filter(appears);
+    const rest = items.filter((p) => !appears(p));
+    const first = groupsHTML(shown, order, "row");
+    let html = first.html;
+    const rows = first.rows;
+    if (rest.length) {
+      const second = groupsHTML(rest, order, "row-u");
+      html += `<h3 class="list-section-heading" id="${UNLISTED_ROW.id}">${UNLISTED_ROW.label}<span class="list-section-note">（${rest.length}人）</span></h3>${second.html}`;
+      rows.push(UNLISTED_ROW);
+    }
+    if (more) rows.push(OTHER_ROW);
+    listEl.innerHTML = html + more;
+    renderToc(rows);
+  }
+
+  // items は50音順に並んでいる前提。並べ方に従って並べ替え、グループが変わるところに見出しを挟む
+  function groupsHTML(items, order, idPrefix) {
     let html = "";
     let current = null;
     let currentSuper = null;
@@ -228,14 +297,14 @@
       // 家別は家名の読みの50音順なので、行（あ行・か行…）の見出しの下に家の見出しを置く
       const sup = superOf(p, order);
       if (sup && sup !== currentSuper) {
-        const id = `row-${n++}`;
+        const id = `${idPrefix}-${n++}`;
         html += `<h3 class="kana-row-heading" id="${id}">${esc(sup)}</h3>`;
         rows.push({ id, label: sup, children: [] });
         currentSuper = sup;
         current = null;
       }
       if (row !== current) {
-        const id = `row-${n++}`;
+        const id = `${idPrefix}-${n++}`;
         const cls = sup ? "kana-row-heading group-subheading" : "kana-row-heading";
         html += `<h3 class="${cls}" id="${id}">${headingHTML(row, order, p)}</h3>`;
         (sup ? rows[rows.length - 1].children : rows).push({ id, label: row });
@@ -243,9 +312,7 @@
       }
       html += cardHTML(p);
     }
-    if (more) rows.push(OTHER_ROW);
-    listEl.innerHTML = html + more;
-    renderToc(rows);
+    return { html, rows };
   }
 
   function filter(q) {
@@ -279,9 +346,12 @@
     const all = data.people || [];
     renderRecent(all);
     otherCount = all.filter((p) => p.category === "other").length;
-    // このページのカテゴリの人物だけを、読み（kana）の50音順に並べる
+    const leads = all.filter((p) => p.role === "main");
+    await loadAppearances(leads);
+    if (!category) renderLeads(leads);
+    // このページのカテゴリの人物（主役を除く）だけを、読み（kana）の50音順に並べる
     people = all
-      .filter((p) => (category === "other") === (p.category === "other"))
+      .filter((p) => p.role !== "main" && (category === "other") === (p.category === "other"))
       .sort((a, b) =>
         (a.kana || a.name || "").localeCompare(b.kana || b.name || "", "ja")
       );

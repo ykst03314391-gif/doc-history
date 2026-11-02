@@ -184,6 +184,12 @@
     // 出典を1つずつ確かめた人物（sourcesChecked）は、冒頭の仮置きの注記を出さず、確認状況の案内を「要確認（調査メモ）」の冒頭に置く
     const notice = document.querySelector(".provisional-notice");
     if (notice && p.sourcesChecked) notice.remove();
+    // 凍結中（role: "frozen"）の人物は、主役ではないので書き足していないことを仮置きの注記の前に断る
+    if (notice && p.role === "frozen")
+      notice.insertAdjacentHTML(
+        "afterbegin",
+        `<p class="frozen-note"><strong>この人物は詳しく書き足していません</strong>：このサイトは考察記事の主役になる人物だけを詳しく書いています。この人物は記事や主役のページに出てくる脇役で、下の年表・家系などは以前に書いたまま、書き足しや出典の確認をしていません。中身は仮置きです。</p>`
+      );
 
     // 出典マーカー：項目の sourceId を、末尾「出典」欄の該当典拠に対応づけて小さく表示
     const srcMap = new Map((p.sources || []).map((s) => [s.id, s]));

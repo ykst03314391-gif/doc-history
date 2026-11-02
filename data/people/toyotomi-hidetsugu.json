@@ -2,6 +2,7 @@
   "id": "toyotomi-hidetsugu",
   "name": "豊臣秀次",
   "kana": "とよとみ ひでつぐ",
+  "role": "frozen",
   "summary": "豊臣秀吉・秀長の甥（姉ともの長男）。四国攻めでは叔父の秀長とともに大将を務め、近江八幡山、ついで尾張を任された。天正19年（1591）に秀吉から関白を譲られたが、文禄4年（1595）に高野山で切腹し、妻子も三条河原で処刑された。後世「殺生関白」と呼ばれる。",
   "lens": {"title": "「殺生関白」の像", "question": "人を斬り、狩りに溺れた暴君「殺生関白」という像は、いつ、どこから来て、同時代の史料とどこまで合っているのか。", "view": ""},
   "portrait": {"src": "assets/img/portraits/toyotomi-hidetsugu.jpg", "caption": "豊臣秀次像", "holder": "瑞泉寺（京都市中京区）", "note": "部分。17世紀前半の作とされ、原本は秀次の周りに殉死した家臣（雀部淡路守・不破万作ら）を描く。秀次の死から数十年後のもの", "source": {"name": "Wikimedia Commons", "url": "https://commons.wikimedia.org/wiki/File:Toyotomi_Hidetsugu-cropped.jpg"}, "license": "パブリックドメイン"},

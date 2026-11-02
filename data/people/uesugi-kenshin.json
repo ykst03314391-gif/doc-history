@@ -2,6 +2,7 @@
   "id": "uesugi-kenshin",
   "name": "上杉謙信",
   "kana": "うえすぎ けんしん",
+  "role": "main",
   "summary": "越後の戦国大名。長尾景虎として家督を継ぎ、関東管領の上杉の名と職を譲られて上杉政虎・輝虎と名乗った。武田信玄と川中島で幾度も対陣し、関東へ度々出兵、晩年は能登・加賀へ進んだ。天正6年（1578）、遠征の準備中に春日山城で急死した。",
   "lens": { "title": "「義の人・軍神」謙信は本当か", "question": "「義を重んじる軍神」という謙信像は、いつ、どこから来て、どこまで当たっているのか。", "view": "" },
   "portrait": {"src": "assets/img/portraits/uesugi-kenshin.jpg", "caption": "上杉謙信像", "holder": "上杉神社（山形県米沢市）", "note": "所蔵はCommonsの記載による。いつ誰が描いたか、没後どれくらい後のものかは確かめていない（要確認、ページ末尾の調査メモ）。", "source": {"name": "Wikimedia Commons", "url": "https://commons.wikimedia.org/wiki/File:Uesugi_Kenshin_Portrait_from_Uesugi_Shrine.png"}, "license": "パブリックドメイン"},

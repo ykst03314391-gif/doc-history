@@ -832,6 +832,28 @@ footer.site-footer {
 }
 .error { color: var(--accent); }
 
+/* ---- 人物一覧の「考察の主役」（主役を一覧の上に別に出す。2列で、カードの地をパネル色にして脇役と分ける） ---- */
+.lead-people { margin: 0 0 26px; }
+.lead-people-note { margin: -4px 0 12px; font-size: 0.9rem; }
+.recent-grid.lead-grid { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 760px) {
+  .recent-grid.lead-grid { grid-template-columns: 1fr; }
+}
+.lead-grid .card { border-left: 3px solid var(--accent); }
+/* カードの「登場する記事」「主役ページ」 */
+.card-appears { clear: both; margin: 8px 0 0; font-size: 0.85rem; color: var(--ink-soft); }
+.card-appears-label {
+  display: inline-block; margin-right: 6px; padding: 0 6px;
+  font-size: 0.7rem; color: var(--accent); border: 1px solid var(--accent-soft); border-radius: 3px;
+}
+/* 人物一覧の「記事にまだ出てこない人物」の区切り */
+.list-section-heading {
+  grid-column: 1 / -1; margin: 28px 0 -4px; padding-top: 14px;
+  border-top: 2px solid var(--line); font-size: 1.05rem; color: var(--ink);
+  scroll-margin-top: 18px;
+}
+.list-section-note { margin-left: 6px; font-size: 0.85rem; color: var(--ink-soft); font-weight: 500; }
+
 /* ---- 人物一覧の「最近更新した人物」（3枚を横に並べる） ---- */
 .recent-updates { margin: 0 0 22px; }
 .recent-title { margin: 0 0 10px; font-size: 1rem; color: var(--ink-soft); }
@@ -861,6 +883,8 @@ footer.site-footer {
   line-height: 1.75;
 }
 .provisional-notice strong { color: #8a6a1e; }
+/* 凍結中の人物の断り書き（仮置きの注記の頭に置く） */
+.provisional-notice .frozen-note { margin: 0 0 8px; padding-bottom: 8px; border-bottom: 1px dashed var(--gold); }
 /* 出典を確かめた人物の案内は、警告より控えめにする */
 .provisional-notice.is-checked { background: var(--bg-panel); border-color: var(--line); border-left-color: #2f5d7c; }
 .provisional-notice.is-checked strong { color: #2f5d7c; }
