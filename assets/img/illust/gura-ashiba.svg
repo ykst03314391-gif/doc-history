@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="ぐらぐらの足場の上に立つ秀長のイメージイラスト。足場の脚はどれも折れかけ、そばの「城」「家臣」の文字には×がついている">
+  <defs>
+    <symbol id="st" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M0,-70 V0" stroke="#23201c" stroke-width="1.5"/>
+      <path d="M-26,-140 L26,-140 L30,-90 L-30,-90 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L24,-128 L18,-92 L-18,-92 L-24,-128 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-140 L0,-120 L9,-140 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-162" r="20" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-19,-168 A20,20 0 0 1 19,-168 Q0,-160 -19,-168 Z" fill="#23201c"/>
+      <path d="M-3,-180 L-3,-190 L14,-187 L14,-183 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <path d="M40,385 H760" stroke="#a39a8c" stroke-width="3"/>
+
+  <!-- 脚（折れかけ） -->
+  <g stroke="#8a7a62" stroke-width="12" stroke-linecap="round" fill="none">
+    <path d="M230,242 Q220,275 234,300"/>
+    <path d="M226,322 Q216,355 230,384"/>
+    <path d="M400,226 Q412,262 398,292"/>
+    <path d="M404,316 Q392,352 404,384"/>
+    <path d="M570,212 Q558,250 572,282"/>
+    <path d="M568,308 Q582,348 568,384"/>
+  </g>
+  <g stroke="#9b2d20" stroke-width="5" stroke-linecap="round">
+    <path d="M214,302 L246,322 M246,302 L214,322"/>
+    <path d="M384,294 L416,314 M416,294 L384,314"/>
+    <path d="M554,286 L586,306 M586,286 L554,306"/>
+  </g>
+
+  <!-- 傾いた台 -->
+  <path d="M210,227 L590,195 L591,211 L211,243 Z" fill="#b8ab95" stroke="#23201c" stroke-width="2"/>
+
+  <!-- 秀長 -->
+  <g transform="rotate(-6 400 212)">
+    <use href="#st" x="352" y="52" width="96" height="160" color="#2f5d7c"/>
+  </g>
+  <path d="M440,72 Q434,84 440,88 Q446,84 440,72 Z" fill="#7fa6c6"/>
+  <path d="M452,92 Q447,101 452,104 Q457,101 452,92 Z" fill="#7fa6c6"/>
+
+  <!-- ぐらぐら -->
+  <g stroke="#9b2d20" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M190,200 q-14,20 0,40"/>
+    <path d="M172,192 q-18,28 0,56"/>
+    <path d="M612,165 q14,20 0,40"/>
+    <path d="M630,157 q18,28 0,56"/>
+  </g>
+
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" text-anchor="middle">
+    <text x="110" y="130" font-size="24" font-weight="700" fill="#9b2d20">ぐらぐら</text>
+    <text x="120" y="338" font-size="52" font-weight="700" fill="#4f4940">城</text>
+    <text x="690" y="338" font-size="52" font-weight="700" fill="#4f4940">家臣</text>
+    <text x="340" y="84" font-size="20" font-weight="700" fill="#2f5d7c" text-anchor="end">秀長</text>
+  </g>
+  <g stroke="#9b2d20" stroke-width="7" stroke-linecap="round">
+    <path d="M86,280 L154,352 M154,280 L86,352"/>
+    <path d="M636,280 L744,352 M744,280 L636,352"/>
+  </g>
+</svg>

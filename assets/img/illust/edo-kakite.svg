@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="江戸時代の書き手が、行灯のそばの文机で筆をとり、兄に怒られて平伏する弟の話を書いているイメージイラスト">
+  <defs>
+    <symbol id="sz" viewBox="-70 -150 140 150" overflow="visible">
+      <path d="M-36,-52 L36,-52 L62,0 L-62,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M-24,-100 L24,-100 L28,-50 L-28,-50 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-50,-100 L50,-100 L42,-88 L22,-88 L17,-52 L-17,-52 L-22,-88 L-42,-88 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-100 L0,-82 L9,-100 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-121" r="19" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-18,-127 A19,19 0 0 1 18,-127 Q0,-119 -18,-127 Z" fill="#23201c"/>
+      <path d="M-3,-139 L-3,-148 L13,-145 L13,-141 Z" fill="#23201c"/>
+    </symbol>
+    <symbol id="st" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M0,-70 V0" stroke="#23201c" stroke-width="1.5"/>
+      <path d="M-26,-140 L26,-140 L30,-90 L-30,-90 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L24,-128 L18,-92 L-18,-92 L-24,-128 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-140 L0,-120 L9,-140 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-162" r="20" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-19,-168 A20,20 0 0 1 19,-168 Q0,-160 -19,-168 Z" fill="#23201c"/>
+      <path d="M-3,-180 L-3,-190 L14,-187 L14,-183 Z" fill="#23201c"/>
+    </symbol>
+    <symbol id="bw" viewBox="-80 -110 160 110" overflow="visible">
+      <path d="M-30,-40 L50,-40 L62,0 L-50,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M12,-38 L44,-44 L4,-86 L-34,-74 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-34,-60 L-62,-8 L-44,-6 L-20,-52 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <rect x="-70" y="-10" width="20" height="7" rx="3" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="-48" cy="-72" r="17" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-34,-84 A17,17 0 0 1 -36,-58 Q-44,-72 -34,-84 Z" fill="#23201c"/>
+      <path d="M-30,-80 L-24,-90 L-20,-86 L-26,-76 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <rect x="0" y="360" width="800" height="90" fill="#efe9dc"/>
+  <path d="M0,360 H800" stroke="#d9d2c5" stroke-width="2"/>
+
+  <!-- 行灯 -->
+  <circle cx="120" cy="270" r="70" fill="#f6dfb0" opacity="0.5"/>
+  <rect x="96" y="232" width="48" height="76" fill="#f6dfb0" stroke="#6b5a46" stroke-width="2"/>
+  <path d="M96,232 H144 M120,232 V308" stroke="#6b5a46" stroke-width="1.5"/>
+  <path d="M100,308 L96,360 M140,308 L144,360" stroke="#6b5a46" stroke-width="3"/>
+
+  <!-- 書き手と文机 -->
+  <use href="#sz" x="239" y="165" width="182" height="195" color="#8a6d1f"/>
+  <circle cx="372" cy="284" r="9" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+  <path d="M376,272 L352,316" stroke="#23201c" stroke-width="4" stroke-linecap="round"/>
+  <rect x="290" y="306" width="110" height="12" fill="#fbfaf6" stroke="#a39a8c" stroke-width="1.5"/>
+  <rect x="200" y="318" width="260" height="22" fill="#6b5a46" stroke="#23201c" stroke-width="2"/>
+  <path d="M214,340 V360 M446,340 V360" stroke="#6b5a46" stroke-width="8"/>
+
+  <!-- 積んだ本 -->
+  <g stroke="#23201c" stroke-width="1.5">
+    <rect x="478" y="336" width="80" height="12" fill="#c9b98f"/>
+    <rect x="482" y="324" width="74" height="12" fill="#b8ab95"/>
+    <rect x="476" y="312" width="78" height="12" fill="#c9b98f"/>
+    <rect x="480" y="348" width="80" height="12" fill="#b8ab95"/>
+  </g>
+
+  <!-- 思い描く話 -->
+  <circle cx="402" cy="176" r="6" fill="#f4f1ea" stroke="#a39a8c" stroke-width="2"/>
+  <circle cx="430" cy="154" r="9" fill="#f4f1ea" stroke="#a39a8c" stroke-width="2"/>
+  <circle cx="462" cy="134" r="12" fill="#f4f1ea" stroke="#a39a8c" stroke-width="2"/>
+  <ellipse cx="625" cy="150" rx="150" ry="110" fill="#f4f1ea" stroke="#a39a8c" stroke-width="2.5"/>
+  <use href="#st" x="547" y="122" width="66" height="110" color="#9b2d20"/>
+  <g stroke="#9b2d20" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M596,118 Q601,124 596,130"/>
+    <path d="M614,118 Q609,124 614,130"/>
+    <path d="M599,115 Q605,120 611,115"/>
+    <path d="M599,133 Q605,128 611,133"/>
+  </g>
+  <use href="#bw" x="640" y="171" width="88" height="61" color="#2f5d7c"/>
+
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" text-anchor="middle">
+    <text x="625" y="84" font-size="17" font-weight="700" fill="#4f4940">罵られる弟</text>
+    <text x="330" y="400" font-size="20" font-weight="700" fill="#8a6d1f">江戸時代の書き手</text>
+    <text x="625" y="292" font-size="15" fill="#4f4940">（秀長の死から何十年もあと）</text>
+  </g>
+</svg>
