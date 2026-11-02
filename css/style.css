@@ -699,6 +699,24 @@ html { scroll-behavior: smooth; }
   font-weight: 700;
 }
 .sec-conclusion-label { display: block; font-size: 0.8rem; color: var(--accent); letter-spacing: 0.05em; }
+/* 本文の強調：太字は筆者の主張、マーカー（==…==）は論拠の要。リンクの点線と紛れないよう、下線ではなく金の蛍光線にする */
+.article-body strong { font-weight: 700; }
+.article-body mark {
+  color: inherit;
+  background: linear-gradient(transparent 62%, rgba(176, 141, 51, 0.32) 62%);
+  padding: 0 1px;
+}
+/* 冒頭で先に言う答え（問いのすぐ下） */
+.article-body .lead-answer {
+  margin: 22px 0 28px;
+  padding: 16px 20px;
+  background: #f3eee3;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+}
+.article-body .lead-answer p { margin: 0 0 8px; }
+.article-body .lead-answer p:last-child { margin-bottom: 0; }
+.lead-answer-label { display: block; margin-bottom: 6px; font-size: 0.85rem; font-weight: 700; color: var(--accent); letter-spacing: 0.05em; }
 .article-body blockquote {
   margin: 18px 0;
   padding: 8px 18px;

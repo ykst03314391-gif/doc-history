@@ -44,8 +44,11 @@
          </div>`
       : "";
 
-    // 本文（Markdown → HTML）。原文の引用 {{…}} は人物ページと同じく「…」に括って色を変える
-    const quoted = md.replace(/\{\{([^{}]*)\}\}/g, (m, q) => `<span class="quote">「${q}」</span>`);
+    // 本文（Markdown → HTML）。原文の引用 {{…}} は人物ページと同じく「…」に括って色を変える。
+    // ==…== は論拠の要を示すマーカー（太字 **…** は筆者の主張）
+    const quoted = md
+      .replace(/\{\{([^{}]*)\}\}/g, (m, q) => `<span class="quote">「${q}」</span>`)
+      .replace(/==([^=\n]+)==/g, (m, t) => `<mark>${t}</mark>`);
     const bodyHTML =
       typeof marked !== "undefined"
         ? marked.parse(quoted)
