@@ -11,9 +11,12 @@ window.PhotoCredit = (function () {
     return m ? `${m[1]}年${Number(m[2])}月${m[3] ? Number(m[3]) + "日" : ""}` : String(t || "");
   }
 
-  // 自分で撮った写真（own: true）は撮影者（省略時はサイト名）と撮影日だけを出し、ライセンスは書いてあれば出す。
+  // 自分で撮った写真（own: true）は転載可（CC BY 4.0）。撮影者（省略時はサイト名）と撮影日を出し、ライセンスは省略時に CC BY 4.0 とする。
   // それ以外（Commons など）は作者・ライセンス・出典を出し、CCの写真は縮小・トリミングしたことを書き添える
+  const OWN_LICENSE = { license: "CC BY 4.0", licenseUrl: "https://creativecommons.org/licenses/by/4.0/deed.ja" };
+
   function credit(ph) {
+    if (ph.own && !ph.license) ph = { ...ph, ...OWN_LICENSE };
     const who = ph.own
       ? `撮影：${esc(ph.author || "戦国クロニクル")}${ph.taken ? `（${esc(fmtTaken(ph.taken))}）` : ""}`
       : ph.author ? `撮影：${esc(ph.author)}` : "";
