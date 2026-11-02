@@ -38,13 +38,19 @@
       <legend>並べ方</legend>
       <label><input type="radio" name="order" value="kana" checked><span>50音順</span></label>
       <label><input type="radio" name="order" value="region"><span>地域別</span></label>
-      <label><input type="radio" name="order" value="province"><span>国別</span></label>
       <label><input type="radio" name="order" value="type"><span>種類別</span></label>
-      <label><input type="radio" name="order" value="treasure"><span>国宝</span></label>
-      <label><input type="radio" name="order" value="meijo"><span>日本100名城</span></label>
-      <span class="order-note muted">50音順以外は、同じ見出しの中を北から並べています</span>
+      <span class="order-note muted">地域別は地域（北から）の下に国を並べています。50音順以外は、同じ見出しの中を北から並べています</span>
     </fieldset>
 
+    <fieldset id="filters" class="order-switch filter-switch">
+      <legend>絞り込み</legend>
+      <label><input type="checkbox" value="国宝"><span>国宝</span></label>
+      <label><input type="checkbox" value="日本100名城"><span>日本100名城</span></label>
+      <label><input type="checkbox" value="続日本100名城"><span>続日本100名城</span></label>
+      <span class="order-note muted">チェックを入れた条件のどれかに当たる城だけを出します。どの並べ方とも組み合わせられます</span>
+    </fieldset>
+
+    <nav id="list-toc" class="side-toc" aria-label="目次" hidden></nav>
     <div id="list" class="card-grid" aria-live="polite"></div>
     <section id="photo-credits" class="photo-credits"></section>
   </main>
@@ -55,5 +61,6 @@
 
   <script src="js/order.js"></script>
   <script src="js/castles.js"></script>
+  <script src="js/toc.js"></script>
 </body>
 </html>

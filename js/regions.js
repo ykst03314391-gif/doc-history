@@ -1,23 +1,28 @@
 // 地域から探す：全人物データを集約し、都道府県ごとに逆引き表示
 (async function () {
-  const btnEl = document.getElementById("pref-buttons");
+  // 都道府県の選択ボックス（地域ごとの optgroup の中に県を並べる）
+  const selectEl = document.getElementById("pref-select");
   const resultEl = document.getElementById("result");
+  // 表示中の県の節（展示・人物・史跡）の目次（.side-toc。いま開いている節の強調は js/toc.js）
+  const tocEl = document.getElementById("region-toc");
 
   const esc = (s) =>
     String(s ?? "").replace(/[&<>"']/g, (c) =>
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
     );
 
-  // 都道府県コード順（データのある県のみボタン表示）
-  const PREF_ORDER = [
-    "北海道","青森県","岩手県","宮城県","秋田県","山形県","福島県",
-    "茨城県","栃木県","群馬県","埼玉県","千葉県","東京都","神奈川県",
-    "新潟県","富山県","石川県","福井県","山梨県","長野県","岐阜県",
-    "静岡県","愛知県","三重県","滋賀県","京都府","大阪府","兵庫県",
-    "奈良県","和歌山県","鳥取県","島根県","岡山県","広島県","山口県",
-    "徳島県","香川県","愛媛県","高知県","福岡県","佐賀県","長崎県",
-    "熊本県","大分県","宮崎県","鹿児島県","沖縄県"
+  // 地方ごとの都道府県（都道府県コード順）。データのある県だけを選択ボックスに出す
+  const PREF_GROUPS = [
+    ["北海道", ["北海道"]],
+    ["東北", ["青森県","岩手県","宮城県","秋田県","山形県","福島県"]],
+    ["関東", ["茨城県","栃木県","群馬県","埼玉県","千葉県","東京都","神奈川県"]],
+    ["中部", ["新潟県","富山県","石川県","福井県","山梨県","長野県","岐阜県","静岡県","愛知県"]],
+    ["近畿", ["三重県","滋賀県","京都府","大阪府","兵庫県","奈良県","和歌山県"]],
+    ["中国", ["鳥取県","島根県","岡山県","広島県","山口県"]],
+    ["四国", ["徳島県","香川県","愛媛県","高知県"]],
+    ["九州・沖縄", ["福岡県","佐賀県","長崎県","熊本県","大分県","宮崎県","鹿児島県","沖縄県"]],
   ];
+  const PREF_ORDER = PREF_GROUPS.flatMap(([, prefs]) => prefs);
 
   // regions[pref] = { people: Map<id,{name,reasons:Set}>, spots: [], exhibits: [] }
   const regions = {};
@@ -100,18 +105,22 @@
     const activePrefs = PREF_ORDER.filter((pf) => regions[pf]);
     if (!activePrefs.length) {
       resultEl.innerHTML = `<p class="muted">まだ地域データがありません。</p>`;
-      btnEl.innerHTML = "";
+      selectEl.innerHTML = "";
       return;
     }
 
-    // ボタン生成
-    btnEl.innerHTML = activePrefs
-      .map((pf) => {
-        const r = regions[pf];
-        const count = r.people.size + r.spots.length + r.exhibits.length;
-        return `<button class="pref-btn" data-pref="${esc(pf)}">${esc(pf)}<span class="pref-count">${count}</span></button>`;
-      })
-      .join("");
+    // 選択ボックス：地域を大分類（optgroup）、県を小分類にする。県名の後ろの数は載っている件数
+    selectEl.innerHTML = PREF_GROUPS.map(([region, prefs]) => {
+      const opts = prefs
+        .filter((pf) => regions[pf])
+        .map((pf) => {
+          const r = regions[pf];
+          const count = r.people.size + r.spots.length + r.exhibits.length;
+          return `<option value="${esc(pf)}">${esc(pf)}（${count}）</option>`;
+        })
+        .join("");
+      return opts ? `<optgroup label="${esc(region)}">${opts}</optgroup>` : "";
+    }).join("");
 
     function renderPref(pf) {
       const r = regions[pf];
@@ -127,7 +136,7 @@
               </a>`;
           })
           .join("");
-        peopleHTML = `<section class="section"><h2>ゆかりの人物</h2><div class="mini-grid">${items}</div></section>`;
+        peopleHTML = `<section class="section" id="sec-people"><h2>ゆかりの人物</h2><div class="mini-grid">${items}</div></section>`;
       }
       // スポット
       let spotHTML = "";
@@ -143,7 +152,7 @@
               </div>`;
           })
           .join("");
-        spotHTML = `<section class="section"><h2>史跡・スポット</h2>${items}</section>`;
+        spotHTML = `<section class="section" id="sec-spots"><h2>史跡・スポット</h2>${items}</section>`;
       }
       // 開催中・開催予定の展示
       let exhibitHTML = "";
@@ -160,19 +169,31 @@
               </div>`;
           })
           .join("");
-        exhibitHTML = `<section class="section"><h2>今見られる展示・イベント</h2>${items}</section>`;
+        exhibitHTML = `<section class="section" id="sec-exhibits"><h2>今見られる展示・イベント</h2>${items}</section>`;
       }
       resultEl.innerHTML = `<h3 class="region-title">${esc(pf)}</h3>${exhibitHTML}${peopleHTML}${spotHTML}`;
+      selectEl.value = pf;
 
-      // ボタンの選択状態
-      btnEl.querySelectorAll(".pref-btn").forEach((b) =>
-        b.classList.toggle("is-active", b.dataset.pref === pf)
-      );
+      // 目次：この県に載っている節だけ（件数つき）
+      const toc = [
+        ["sec-exhibits", "今見られる展示・イベント", r.exhibits.length],
+        ["sec-people", "ゆかりの人物", r.people.size],
+        ["sec-spots", "史跡・スポット", r.spots.length],
+      ].filter(([, , n]) => n);
+      tocEl.hidden = !toc.length;
+      tocEl.innerHTML = toc.length
+        ? `<p class="toc-title">目次</p><ol>${toc
+            .map(([id, label, n]) => `<li><a href="#${id}">${esc(label)}（${n}）</a></li>`)
+            .join("")}</ol>`
+        : "";
     }
 
-    btnEl.addEventListener("click", (e) => {
-      const b = e.target.closest(".pref-btn");
-      if (b) renderPref(b.dataset.pref);
+    // 県を選んだら表示を替え、URL の ?pref= にも残す（再読み込み・共有しても同じ県を開く）
+    selectEl.addEventListener("change", () => {
+      const url = new URL(location.href);
+      url.searchParams.set("pref", selectEl.value);
+      history.replaceState(null, "", url);
+      renderPref(selectEl.value);
     });
 
     // 初期表示：?pref= の県、なければ最初の県

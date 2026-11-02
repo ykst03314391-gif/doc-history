@@ -13,7 +13,7 @@
 | `alias` | string? | 別名（例：岐阜城 → `稲葉山城`） |
 | `type` | string | 縄張りの分類（`山城` / `平山城` / `平城`） |
 | `prefecture` / `city` | string | 現在の所在地 |
-| `province` | string | 令制国（例：`越後国`）。一覧の地域別・国別に使う |
+| `province` | string | 令制国（例：`越後国`）。一覧の地域別（地域の下に国を並べる）に使う |
 | `lat` / `lng` | number | 城の座標。一覧で同じ見出しの中を北から並べるのに使う |
 | `builtYear` | number \| null | 築城年（西暦）。不詳なら `null` |
 | `builder` | string? | 築城者（`builtYear` があるときに併記） |

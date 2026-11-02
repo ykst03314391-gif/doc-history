@@ -2,8 +2,12 @@
 (async function () {
   const listEl = document.getElementById("list");
   const searchEl = document.getElementById("search");
-  // 並べ方の切替。50音順／地域別／国別／種類別／国宝／日本100名城
+  // 並べ方の切替。50音順／地域別／種類別
   const orderEl = document.getElementById("order");
+  // 絞り込み（国宝・日本100名城・続日本100名城）。どの並べ方とも組み合わせられる
+  const filtersEl = document.getElementById("filters");
+  // 一覧の見出しの目次（.side-toc。いま開いている見出しの強調は js/toc.js）
+  const tocEl = document.getElementById("list-toc");
   const { kanaRow, REGIONS, isProvince, provinceRank, regionOf, regionRank, setupSwitch, by, diff } = window.ListOrder;
   let castles = [];
   let peopleById = {};
@@ -97,9 +101,9 @@
   }
 
   const TYPES = ["山城", "平山城", "平城"];
-  const MEIJO = ["日本100名城", "続日本100名城"];
 
-  // 並べ方ごとに [見出し, 城の配列, 空のときの注記] の並びを作る。items は50音順に並んでいる前提
+  // 並べ方ごとに [見出し, 城の配列, 空のときの注記, 下の段の見出し] の並びを作る。items は50音順に並んでいる前提。
+  // 下の段の見出しは [見出し, 城の配列] の並びで、あれば城はそちらに分けて並べる（地域別の国）
   function groupsFor(order, items) {
     if (order === "kana") {
       const rows = [...new Set(items.map((c) => kanaRow(c.kana)))];
@@ -109,49 +113,83 @@
     if (order === "region") {
       const sorted = [...items].sort(by(byRegion, byProvince, byNorth));
       const label = (c) => (prov(c) ? regionOf(prov(c)) : "国不明");
-      return grouped(sorted, [...REGIONS, "国不明"], label);
-    }
-    if (order === "province") {
-      const sorted = [...items].sort(by(byProvince, byNorth));
-      const label = (c) => (prov(c) ? `${prov(c)}（${regionOf(prov(c))}）` : "国不明");
-      return grouped(sorted, [...new Set(sorted.map(label))], label);
+      return grouped(sorted, [...REGIONS, "国不明"], label).map(([region, list, note]) => {
+        if (region === "国不明") return [region, list, note];
+        const provs = [...new Set(list.map(prov))];
+        return [region, list, note, grouped(list, provs, prov)];
+      });
     }
     if (order === "type") {
       const label = (c) => (TYPES.includes(c.type) ? c.type : "その他");
       return grouped(north, [...TYPES, "その他"], label);
     }
-    // 国宝・100名城は、該当する城だけを出す
-    if (order === "treasure") {
-      const label = (c) => (hasTag(c, "国宝") ? "国宝" : null);
-      const note = { 国宝: "掲載している城に、国宝の城はまだありません。" };
-      return grouped(north, ["国宝"], label, note);
-    }
-    if (order === "meijo") {
-      const label = (c) => MEIJO.find((t) => hasTag(c, t)) || null;
-      const note = { 日本100名城: "該当する城がありません。" };
-      return grouped(north, MEIJO, label, note);
-    }
     return [["", items]];
+  }
+
+  // 目次は一覧の見出しから作るので、並べ方や検索で見出しが変わるたびに作り直す
+  function renderToc(rows) {
+    if (!tocEl) return;
+    tocEl.hidden = !rows.length;
+    const li = (r) =>
+      r.children
+        ? `<li class="toc-group"><a class="toc-group-link" href="#${r.id}">${esc(r.label)}</a><ol>${r.children.map(li).join("")}</ol></li>`
+        : `<li><a href="#${r.id}">${esc(r.label)}</a></li>`;
+    tocEl.innerHTML = rows.length ? `<p class="toc-title">目次</p><ol>${rows.map(li).join("")}</ol>` : "";
   }
 
   function render(items) {
     if (!items.length) {
-      listEl.innerHTML = `<p class="muted">該当する城がありません。</p>`;
+      const tags = checkedTags();
+      const msg = tags.length && !searchEl.value.trim()
+        ? `掲載している城に、${tags.join("・")}の城はまだありません。`
+        : "該当する城がありません。";
+      listEl.innerHTML = `<p class="muted">${esc(msg)}</p>`;
+      renderToc([]);
       return;
     }
+    let n = 0;
+    const rows = [];
+    const heading = (label, cls) => {
+      const id = `row-${n++}`;
+      return [id, `<h3 class="${cls}" id="${id}">${esc(label)}</h3>`];
+    };
     listEl.innerHTML = groupsFor(currentOrder(), items)
-      .map(([label, list, note]) =>
-        (label ? `<h3 class="kana-row-heading">${esc(label)}</h3>` : "") +
-        (list.length ? list.map(cardHTML).join("") : `<p class="muted list-note">${esc(note)}</p>`)
-      )
+      .map(([label, list, note, subs]) => {
+        if (!label) return list.map(cardHTML).join("");
+        const [id, html] = heading(label, "kana-row-heading");
+        const row = { id, label };
+        rows.push(row);
+        if (!list.length) return html + `<p class="muted list-note">${esc(note)}</p>`;
+        if (!subs) return html + list.map(cardHTML).join("");
+        row.children = [];
+        return (
+          html +
+          subs
+            .map(([subLabel, subList]) => {
+              const [subId, subHtml] = heading(subLabel, "kana-row-heading group-subheading");
+              row.children.push({ id: subId, label: subLabel });
+              return subHtml + subList.map(cardHTML).join("");
+            })
+            .join("")
+        );
+      })
       .join("");
+    renderToc(rows);
+  }
+
+  // 絞り込みでチェックの入っているタグ。複数あれば、どれか1つに当たる城を出す
+  function checkedTags() {
+    if (!filtersEl) return [];
+    return [...filtersEl.querySelectorAll("input:checked")].map((i) => i.value);
   }
 
   function filter(q) {
     q = q.trim().toLowerCase();
-    if (!q) return render(castles);
+    const tags = checkedTags();
+    const base = tags.length ? castles.filter((c) => tags.some((t) => hasTag(c, t))) : castles;
+    if (!q) return render(base);
     render(
-      castles.filter((c) => {
+      base.filter((c) => {
         const hay = [
           c.name, c.kana, c.alias, c.type, c.prefecture, c.province, c.city, c.builder, c.summary,
           ...(c.tags || []),
@@ -164,11 +202,21 @@
     );
   }
 
-  const currentOrder = setupSwitch(
-    orderEl,
-    ["kana", "region", "province", "type", "treasure", "meijo"],
-    () => filter(searchEl.value)
-  );
+  const currentOrder = setupSwitch(orderEl, ["kana", "region", "type"], () => filter(searchEl.value));
+
+  // 絞り込みの状態は URL の ?filter=国宝,日本100名城 に残す（並べ方の ?order= と同じく、再読み込みしても保つ）
+  if (filtersEl) {
+    const initial = (new URLSearchParams(location.search).get("filter") || "").split(",");
+    for (const i of filtersEl.querySelectorAll("input")) i.checked = initial.includes(i.value);
+    filtersEl.addEventListener("change", () => {
+      const url = new URL(location.href);
+      const tags = checkedTags();
+      if (tags.length) url.searchParams.set("filter", tags.join(","));
+      else url.searchParams.delete("filter");
+      history.replaceState(null, "", url);
+      filter(searchEl.value);
+    });
+  }
 
   async function load(url) {
     const res = await fetch(url);

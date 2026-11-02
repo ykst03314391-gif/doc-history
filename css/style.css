@@ -238,6 +238,15 @@ html { scroll-behavior: smooth; }
 .order-switch input:checked + span { background: var(--ink); color: var(--bg-panel); border-color: var(--ink); }
 .order-switch input:focus-visible + span { outline: 2px solid var(--ink); outline-offset: 2px; }
 .order-switch .order-note { font-size: 0.8rem; flex-basis: 100%; }
+/* 絞り込み（城一覧）。並べ方と違って複数選べるので、□／✓ の印を付ける。
+   印の幅を固定して、チェックを入れてもボタンの位置が動かないようにする */
+.filter-switch label span::before {
+  content: "□";
+  display: inline-block;
+  width: 1.2em;
+  text-align: left;
+}
+.filter-switch input:checked + span::before { content: "✓"; }
 
 /* ---- 合戦カードの対戦陣営と勝敗 ---- */
 .battle-sides { margin: 4px 0 6px; font-size: 0.92rem; }
@@ -551,33 +560,22 @@ html { scroll-behavior: smooth; }
 .spot-place { color: var(--ink-soft); font-size: 0.85rem; }
 
 /* ---- 地域から探す ---- */
-.pref-buttons { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 26px; }
-.pref-btn {
+/* 都道府県の選択ボックス（地域ごとの optgroup の中に県を並べる） */
+.pref-picker { display: flex; align-items: center; gap: 10px; margin: 8px 0 26px; }
+.pref-picker label { font-size: 0.9rem; color: var(--ink-soft); }
+.pref-select {
   font-family: var(--serif);
-  font-size: 0.9rem;
-  background: var(--bg-panel);
+  font-size: 1rem;
   color: var(--ink);
+  background: var(--bg-panel);
   border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 5px 14px;
+  border-radius: var(--radius);
+  padding: 8px 12px;
+  min-width: 14em;
   cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  transition: background 0.12s, color 0.12s;
 }
-.pref-btn:hover { background: #efe9dc; }
-.pref-btn.is-active { background: var(--accent); color: #fff; border-color: var(--accent); }
-.pref-count {
-  font-size: 0.7rem;
-  background: var(--line);
-  color: var(--ink-soft);
-  border-radius: 999px;
-  padding: 0 7px;
-  min-width: 1.4em;
-  text-align: center;
-}
-.pref-btn.is-active .pref-count { background: rgba(255,255,255,0.3); color: #fff; }
+/* 目次から飛ぶ先の節 */
+#result section.section { scroll-margin-top: 18px; }
 
 .region-title {
   font-size: 1.5rem;
@@ -1238,7 +1236,8 @@ footer.site-footer {
   font-size: 0.75rem;
   font-feature-settings: "palt";
 }
-.castle-card .meta-item { white-space: nowrap; }
+/* 項目の途中ではなるべく折り返さず、1行に収まらない長い項目（築城の説明など）だけ中で折り返す */
+.castle-card .meta-item { display: inline-block; max-width: 100%; }
 .castle-photo { margin: 0; width: 300px; flex-shrink: 0; }
 .castle-photo img {
   display: block;

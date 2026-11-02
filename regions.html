@@ -32,7 +32,11 @@
     <div class="provisional-notice" role="note">
       <strong>⚠ 仮置きデータ</strong>：ここに掲載しているデータベース情報（人物・合戦・大名家など）は<strong>すべて暫定（仮置き）</strong>です。出典の裏取りが済んでおらず、記載中の出典（信長公記など）も未検証。内容は今後、一次資料に当たって順次修正します。現時点で正確性は保証しません。
     </div>
-    <div id="pref-buttons" class="pref-buttons" aria-label="都道府県を選択"></div>
+    <div class="pref-picker">
+      <label for="pref-select">都道府県</label>
+      <select id="pref-select" class="pref-select"></select>
+    </div>
+    <nav id="region-toc" class="side-toc" aria-label="目次" hidden></nav>
     <div id="result" aria-live="polite"><p class="muted">読み込み中…</p></div>
   </main>
 
@@ -41,5 +45,6 @@
   </footer>
 
   <script src="js/regions.js"></script>
+  <script src="js/toc.js"></script>
 </body>
 </html>
