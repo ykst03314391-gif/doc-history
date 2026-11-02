@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="主人と忠実な家臣のイメージイラスト（上段に座る兄と、その前に平伏する弟）">
+  <defs>
+    <symbol id="sz" viewBox="-70 -150 140 150" overflow="visible">
+      <path d="M-36,-52 L36,-52 L62,0 L-62,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M-24,-100 L24,-100 L28,-50 L-28,-50 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-50,-100 L50,-100 L42,-88 L22,-88 L17,-52 L-17,-52 L-22,-88 L-42,-88 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-100 L0,-82 L9,-100 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-121" r="19" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-18,-127 A19,19 0 0 1 18,-127 Q0,-119 -18,-127 Z" fill="#23201c"/>
+      <path d="M-3,-139 L-3,-148 L13,-145 L13,-141 Z" fill="#23201c"/>
+    </symbol>
+    <symbol id="bw" viewBox="-80 -110 160 110" overflow="visible">
+      <path d="M-30,-40 L50,-40 L62,0 L-50,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M12,-38 L44,-44 L4,-86 L-34,-74 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-34,-60 L-62,-8 L-44,-6 L-20,-52 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <rect x="-70" y="-10" width="20" height="7" rx="3" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="-48" cy="-72" r="17" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-34,-84 A17,17 0 0 1 -36,-58 Q-44,-72 -34,-84 Z" fill="#23201c"/>
+      <path d="M-30,-80 L-24,-90 L-20,-86 L-26,-76 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <rect x="0" y="340" width="800" height="110" fill="#efe9dc"/>
+  <path d="M0,340 H800 M420,340 L400,450 M620,340 L650,450" stroke="#d9d2c5" stroke-width="2"/>
+
+  <!-- 屏風と上段 -->
+  <rect x="70" y="80" width="280" height="222" fill="#efe2b8" stroke="#b08d33" stroke-width="2"/>
+  <path d="M140,80 V302 M210,80 V302 M280,80 V302" stroke="#b08d33" stroke-width="1.5"/>
+  <rect x="50" y="300" width="330" height="42" fill="#d9cfbf" stroke="#8a7a62" stroke-width="2"/>
+
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif">
+    <use href="#sz" x="112" y="90" width="196" height="210" color="#9b2d20"/>
+    <use href="#bw" x="448" y="226" width="224" height="154" color="#2f5d7c"/>
+    <text x="215" y="390" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">兄（主）</text>
+    <text x="560" y="418" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">弟（家臣）</text>
+    <text x="580" y="110" font-size="22" fill="#4f4940" text-anchor="middle">背く気配は、一つもない</text>
+  </g>
+</svg>

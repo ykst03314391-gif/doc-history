@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="表彰台のイメージイラスト。一の台に兄の秀吉、二の台に秀長、三の台に諸大名">
+  <defs>
+    <symbol id="st" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M0,-70 V0" stroke="#23201c" stroke-width="1.5"/>
+      <path d="M-26,-140 L26,-140 L30,-90 L-30,-90 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L24,-128 L18,-92 L-18,-92 L-24,-128 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-140 L0,-120 L9,-140 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-162" r="20" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-19,-168 A20,20 0 0 1 19,-168 Q0,-160 -19,-168 Z" fill="#23201c"/>
+      <path d="M-3,-180 L-3,-190 L14,-187 L14,-183 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <path d="M40,400 H760" stroke="#d9d2c5" stroke-width="3"/>
+
+  <!-- 台 -->
+  <rect x="310" y="270" width="180" height="130" fill="#efe2b8" stroke="#b08d33" stroke-width="3"/>
+  <rect x="130" y="310" width="180" height="90" fill="#e6e0d4" stroke="#8a7a62" stroke-width="3"/>
+  <rect x="490" y="340" width="180" height="60" fill="#efe9dc" stroke="#d9d2c5" stroke-width="3"/>
+
+  <!-- 人 -->
+  <use href="#st" x="346" y="90" width="108" height="180" color="#9b2d20"/>
+  <use href="#st" x="166" y="130" width="108" height="180" color="#2f5d7c"/>
+  <g opacity="0.7">
+    <use href="#st" x="502" y="240" width="60" height="100" color="#a39a8c"/>
+    <use href="#st" x="550" y="240" width="60" height="100" color="#a39a8c"/>
+    <use href="#st" x="598" y="240" width="60" height="100" color="#a39a8c"/>
+  </g>
+
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" text-anchor="middle">
+    <text x="400" y="355" font-size="56" font-weight="700" fill="#8a6d1f">一</text>
+    <text x="220" y="375" font-size="48" font-weight="700" fill="#4f4940">二</text>
+    <text x="580" y="385" font-size="36" font-weight="700" fill="#a39a8c">三</text>
+    <text x="400" y="70" font-size="20" font-weight="700" fill="#9b2d20">兄・秀吉</text>
+    <text x="220" y="112" font-size="20" font-weight="700" fill="#2f5d7c">秀長</text>
+    <text x="580" y="226" font-size="17" fill="#4f4940">諸大名</text>
+  </g>
+</svg>

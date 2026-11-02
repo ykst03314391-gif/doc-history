@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="二つの見方を比べるイメージイラスト。左は「補佐役」の見方で、兄の家の外に弟が立って従う。右は同時代の姿で、天下の上に建つ兄の家の中に兄と弟が並ぶ">
+  <defs>
+    <symbol id="st" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M0,-70 V0" stroke="#23201c" stroke-width="1.5"/>
+      <path d="M-26,-140 L26,-140 L30,-90 L-30,-90 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L24,-128 L18,-92 L-18,-92 L-24,-128 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-140 L0,-120 L9,-140 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-162" r="20" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-19,-168 A20,20 0 0 1 19,-168 Q0,-160 -19,-168 Z" fill="#23201c"/>
+      <path d="M-3,-180 L-3,-190 L14,-187 L14,-183 Z" fill="#23201c"/>
+    </symbol>
+    <marker id="ai" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#4f4940"/>
+    </marker>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <path d="M400,30 V420" stroke="#d9d2c5" stroke-width="2" stroke-dasharray="4 6"/>
+
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" text-anchor="middle">
+    <!-- 左：補佐役の見方 -->
+    <text x="200" y="52" font-size="20" font-weight="700" fill="#4f4940">「補佐役」の見方</text>
+    <rect x="70" y="140" width="200" height="150" fill="#f4f1ea" stroke="#a39a8c" stroke-width="2.5"/>
+    <path d="M45,142 L170,92 L295,142 Z" fill="#4f4940" stroke="#23201c" stroke-width="2"/>
+    <text x="170" y="132" font-size="16" font-weight="700" fill="#fbfaf6">兄の家</text>
+    <use href="#st" x="134" y="160" width="72" height="120" color="#9b2d20"/>
+    <use href="#st" x="312" y="200" width="60" height="100" color="#2f5d7c"/>
+    <path d="M318,250 L282,236" stroke="#4f4940" stroke-width="2" marker-end="url(#ai)"/>
+    <text x="342" y="322" font-size="15" fill="#4f4940">従う</text>
+    <text x="200" y="370" font-size="18" fill="#4f4940">兄の家の外にいる補佐役</text>
+
+    <!-- 右：同時代の姿 -->
+    <text x="600" y="52" font-size="20" font-weight="700" fill="#9b2d20">同時代の姿</text>
+    <ellipse cx="600" cy="302" rx="185" ry="24" fill="#efe2b8" stroke="#b08d33" stroke-width="2.5"/>
+    <rect x="460" y="140" width="280" height="160" fill="#f4f1ea" stroke="#a39a8c" stroke-width="2.5"/>
+    <text x="760" y="296" font-size="17" font-weight="700" fill="#8a6d1f">天下</text>
+    <path d="M435,142 L600,84 L765,142 Z" fill="#4f4940" stroke="#23201c" stroke-width="2"/>
+    <text x="600" y="130" font-size="17" font-weight="700" fill="#fbfaf6">兄弟の家（羽柴家）</text>
+    <use href="#st" x="524" y="168" width="72" height="120" color="#9b2d20"/>
+    <use href="#st" x="617" y="178" width="66" height="110" color="#2f5d7c"/>
+    <text x="600" y="370" font-size="18" font-weight="700" fill="#9b2d20">兄の家の中の二人目</text>
+    <text x="600" y="398" font-size="15" fill="#4f4940">兄の天下は、自分の家の天下</text>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="羽柴家の席順のイメージイラスト。屋根の下、上座に当主の秀吉、そのすぐ下に一門筆頭の秀長、さらに下に一門・家臣が並ぶ">
+  <defs>
+    <symbol id="sz" viewBox="-70 -150 140 150" overflow="visible">
+      <path d="M-36,-52 L36,-52 L62,0 L-62,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M-24,-100 L24,-100 L28,-50 L-28,-50 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-50,-100 L50,-100 L42,-88 L22,-88 L17,-52 L-17,-52 L-22,-88 L-42,-88 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-100 L0,-82 L9,-100 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-121" r="19" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-18,-127 A19,19 0 0 1 18,-127 Q0,-119 -18,-127 Z" fill="#23201c"/>
+      <path d="M-3,-139 L-3,-148 L13,-145 L13,-141 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+
+  <!-- 家 -->
+  <rect x="90" y="110" width="620" height="315" fill="#f4f1ea" stroke="#a39a8c" stroke-width="3"/>
+  <path d="M50,114 L400,24 L750,114 Z" fill="#4f4940" stroke="#23201c" stroke-width="3"/>
+  <path d="M110,220 H690 M110,310 H690" stroke="#d9d2c5" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif">
+    <text x="400" y="96" font-size="24" font-weight="700" fill="#fbfaf6" text-anchor="middle">羽柴家</text>
+
+    <!-- 当主 -->
+    <use href="#sz" x="348" y="105" width="105" height="112" color="#9b2d20"/>
+    <text x="470" y="180" font-size="18" fill="#4f4940">当主</text>
+    <text x="470" y="204" font-size="22" font-weight="700" fill="#9b2d20">秀吉</text>
+
+    <!-- 一門筆頭 -->
+    <rect x="335" y="222" width="130" height="84" rx="8" fill="none" stroke="#9b2d20" stroke-width="3"/>
+    <use href="#sz" x="355" y="225" width="91" height="80" color="#2f5d7c"/>
+    <text x="482" y="262" font-size="18" fill="#9b2d20" font-weight="700">一門筆頭</text>
+    <text x="482" y="288" font-size="22" font-weight="700" fill="#2f5d7c">秀長</text>
+
+    <!-- 一門・家臣 -->
+    <use href="#sz" x="140" y="345" width="63" height="67" color="#b8ab95"/>
+    <use href="#sz" x="220" y="345" width="63" height="67" color="#b8ab95"/>
+    <use href="#sz" x="518" y="345" width="63" height="67" color="#b8ab95"/>
+    <use href="#sz" x="598" y="345" width="63" height="67" color="#b8ab95"/>
+    <text x="400" y="390" font-size="20" fill="#4f4940" text-anchor="middle">一門・家臣</text>
+  </g>
+</svg>

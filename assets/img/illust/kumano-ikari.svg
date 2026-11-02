@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="兄が弟を怒っているイメージイラスト（立って指さす兄と、平伏する弟）">
+  <defs>
+    <symbol id="st" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M0,-70 V0" stroke="#23201c" stroke-width="1.5"/>
+      <path d="M-26,-140 L26,-140 L30,-90 L-30,-90 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L24,-128 L18,-92 L-18,-92 L-24,-128 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-140 L0,-120 L9,-140 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-162" r="20" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-19,-168 A20,20 0 0 1 19,-168 Q0,-160 -19,-168 Z" fill="#23201c"/>
+      <path d="M-3,-180 L-3,-190 L14,-187 L14,-183 Z" fill="#23201c"/>
+    </symbol>
+    <symbol id="bw" viewBox="-80 -110 160 110" overflow="visible">
+      <path d="M-30,-40 L50,-40 L62,0 L-50,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M12,-38 L44,-44 L4,-86 L-34,-74 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-34,-60 L-62,-8 L-44,-6 L-20,-52 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <rect x="-70" y="-10" width="20" height="7" rx="3" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="-48" cy="-72" r="17" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-34,-84 A17,17 0 0 1 -36,-58 Q-44,-72 -34,-84 Z" fill="#23201c"/>
+      <path d="M-30,-80 L-24,-90 L-20,-86 L-26,-76 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <rect x="0" y="360" width="800" height="90" fill="#efe9dc"/>
+  <path d="M0,360 H800 M200,360 L160,450 M400,360 V450 M600,360 L640,450" stroke="#d9d2c5" stroke-width="2"/>
+
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif">
+    <text x="560" y="70" font-size="18" fill="#4f4940" text-anchor="middle">天正16年（1588）、熊野の木の一件</text>
+
+    <!-- 兄 -->
+    <use href="#st" x="150" y="110" width="160" height="267" color="#9b2d20"/>
+    <path d="M290,186 L398,222 L392,242 L284,214 Z" fill="#9b2d20" stroke="#23201c" stroke-width="2"/>
+    <circle cx="404" cy="233" r="9" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+    <path d="M412,234 L432,238" stroke="#23201c" stroke-width="4" stroke-linecap="round"/>
+    <g stroke="#9b2d20" stroke-width="4" fill="none" stroke-linecap="round">
+      <path d="M262,104 Q270,112 262,120"/>
+      <path d="M288,104 Q280,112 288,120"/>
+      <path d="M267,99 Q275,107 283,99"/>
+      <path d="M267,125 Q275,117 283,125"/>
+      <path d="M190,86 l10,-14 l10,14 l10,-14 l10,14 l10,-14 l10,14"/>
+    </g>
+    <text x="230" y="412" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">兄・秀吉</text>
+
+    <!-- 弟 -->
+    <use href="#bw" x="470" y="237" width="208" height="143" color="#2f5d7c"/>
+    <path d="M498,250 Q490,264 498,268 Q506,264 498,250 Z" fill="#7fa6c6"/>
+    <path d="M486,266 Q480,276 486,279 Q492,276 486,266 Z" fill="#7fa6c6"/>
+    <text x="575" y="412" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">弟・秀長</text>
+  </g>
+</svg>
