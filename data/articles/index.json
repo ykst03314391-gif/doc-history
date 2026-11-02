@@ -153,12 +153,14 @@
       "title": "秀長は大和の「名君」だったのか",
       "series": "myth-busting",
       "category": "考察",
-      "summary": "郡山城の秀長は善政の名君と語られることが多い。多聞院日記に残る武具の提出・寺領の削減・庄屋の入牢の記事から、大和支配の実像を見直す。",
-      "date": "",
+      "summary": "郡山城の秀長は善政の名君と語られる。だが興福寺の僧の日記には、寺領の削減、奈良の商売の停止、町への金の押し貸し、庄屋の入牢が並び、「あさまし」が繰り返される。その厳しさは誰の政治だったのか、「名君」の像はどこから来たのかを、『多聞院日記』で確かめる。",
+      "date": "2026-11-02",
       "author": "管理人",
-      "relatedPeople": ["toyotomi-hidenaga"],
-      "tags": ["豊臣秀長", "大和", "郡山城", "多聞院日記", "考察"],
-      "draft": true
+      "image": { "src": "assets/img/portraits/toyotomi-hidenaga.jpg", "caption": "豊臣秀長像（春岳院蔵、天明8年〈1788〉の作とされる）※参考イメージ", "credit": "Wikimedia Commons", "license": "パブリックドメイン" },
+      "relatedPeople": ["toyotomi-hidenaga", "toyotomi-hideyoshi", "tsutsui-sadatsugu", "kobori-masatsugu"],
+      "relatedBattles": [],
+      "tags": ["豊臣秀長", "大和", "郡山城", "多聞院日記", "奈良借", "箱本", "考察"],
+      "references": []
     },
     {
       "id": "hidenaga-if-lived",
