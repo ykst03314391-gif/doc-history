@@ -2,7 +2,7 @@
 (async function () {
   const listEl = document.getElementById("list");
   const searchEl = document.getElementById("search");
-  // 並べ方の切替（武将一覧だけにある）。50音順／地域別／国別／家別
+  // 並べ方の切替（武将一覧だけにある）。50音順／地域別／家別
   const orderEl = document.getElementById("order");
   // 一覧の見出しの目次（.side-toc。いま開いている見出しの強調は js/toc.js）
   const tocEl = document.getElementById("list-toc");
@@ -110,12 +110,15 @@
   function groupOf(p, order) {
     if (order === "kana") return kanaRow(p.kana);
     if (order === "clan") return clanLabel(p);
-    const prov = provinceById[p.id];
-    if (!prov) return UNKNOWN;
-    return order === "region" ? regionOf(prov) : `${prov}（${regionOf(prov)}）`;
+    return provinceById[p.id] || UNKNOWN;
   }
-  // 見出しの上の段（家別のときだけ、家名の読みの行。家のない人は段を分けない）
+  // 見出しの上の段。地域別は国の上に地域、家別は家の上に家名の読みの行（あ行…）。
+  // 出身国・家の分からない人は段を分けない
   function superOf(p, order) {
+    if (order === "region") {
+      const prov = provinceById[p.id];
+      return prov ? regionOf(prov) : null;
+    }
     if (order !== "clan") return null;
     const c = clanOf(p);
     return c ? kanaRow(clanSortKey(c.clan)) : null;
@@ -137,7 +140,7 @@
     const prov = (p) => provinceById[p.id];
     const byProvince = (a, b) => diff(provinceRank(prov(a)), provinceRank(prov(b)));
     const byRegion = (a, b) => diff(regionRank(prov(a)), regionRank(prov(b)));
-    return [...items].sort(order === "region" ? by(byRegion, byProvince) : byProvince);
+    return [...items].sort(by(byRegion, byProvince));
   }
 
   // 武将一覧の末尾に置く「その他の人物」への入口カード
@@ -226,8 +229,8 @@
     );
   }
 
-  // 並べ方を切り替える。地域別・国別は各人物データを、家別は大名家データを読み終えてから描く
-  const currentOrder = setupSwitch(orderEl, ["kana", "region", "province", "clan"], applyOrder);
+  // 並べ方を切り替える。地域別は各人物データを、家別は大名家データを読み終えてから描く
+  const currentOrder = setupSwitch(orderEl, ["kana", "region", "clan"], applyOrder);
   async function applyOrder() {
     const order = currentOrder();
     if (order !== "kana") {
