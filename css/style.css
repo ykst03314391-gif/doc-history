@@ -1029,6 +1029,21 @@ footer.site-footer {
 }
 .article-hero figcaption { font-size: 0.82rem; color: var(--ink-soft); margin-top: 6px; }
 
+/* 記事本文の画像（![[castle:…]] など。写真は横長、肖像は縦長なので幅を変える） */
+.article-figure { margin: 18px 0 22px; }
+.article-figure img {
+  display: block;
+  max-width: min(100%, 460px);
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+.article-figure--portrait img { max-width: min(100%, 240px); }
+.article-figure figcaption { font-size: 0.78rem; line-height: 1.5; color: var(--ink-soft); margin-top: 6px; max-width: 460px; }
+.article-figure figcaption span { display: block; }
+.article-figure .portrait-title { color: var(--ink); font-size: 0.85rem; }
+.article-figure .img-credit { margin-top: 4px; overflow-wrap: anywhere; }
+
 /* 記事末尾の関連書籍（アフィリエイト・可読性のため本文とは区切る） */
 .article-books { margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--line); }
 .article-books h3 { margin: 0 0 10px; }

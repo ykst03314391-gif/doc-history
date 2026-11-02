@@ -44,9 +44,53 @@
          </div>`
       : "";
 
+    // 本文の画像 ![[castle:<id>]] / ![[battle:<id>]] / ![[person:<id>]]（| のあとに説明を書けば差し替え）。
+    // 写真・肖像と権利表記は城・合戦の index.json の photo、人物の詳細ファイルの portrait から引く
+    const imgRe = /^!\[\[(castle|battle|person):([a-z0-9-]+)(?:\|([^\]\n]*))?\]\][ \t]*$/gm;
+    const refs = [...md.matchAll(imgRe)];
+    const photos = new Map();
+    if (refs.length) {
+      const getJSON = (url) => fetch(url).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+      const kinds = new Set(refs.map((r) => r[1]));
+      const [ci, bi] = await Promise.all([
+        kinds.has("castle") ? getJSON("data/castles/index.json") : null,
+        kinds.has("battle") ? getJSON("data/battles/index.json") : null,
+      ]);
+      ((ci && ci.castles) || []).forEach((c) => c.photo && photos.set("castle:" + c.id, c.photo));
+      ((bi && bi.battles) || []).forEach((b) => b.photo && photos.set("battle:" + b.id, b.photo));
+      const pids = [...new Set(refs.filter((r) => r[1] === "person").map((r) => r[2]))];
+      const ps = await Promise.all(pids.map((pid) => getJSON(`data/people/${pid}.json`)));
+      ps.forEach((p, i) => p && p.portrait && p.portrait.src && photos.set("person:" + pids[i], p.portrait));
+    }
+    const figureHTML = (key, cap) => {
+      const ph = photos.get(key);
+      if (!ph) return "";
+      const srcLink = ph.source && ph.source.url
+        ? `<a href="${esc(ph.source.url)}" target="_blank" rel="noopener">${esc(ph.source.name || "出典")}</a>`
+        : esc((ph.source && ph.source.name) || "");
+      const lic = ph.licenseUrl
+        ? `<a href="${esc(ph.licenseUrl)}" target="_blank" rel="noopener">${esc(ph.license)}</a>`
+        : esc(ph.license || "");
+      const credit = [
+        ph.holder ? `所蔵：${esc(ph.holder)}` : "",
+        ph.author ? `撮影：${esc(ph.author)}` : "",
+        lic,
+        srcLink ? `出典：${srcLink}` : "",
+        ph.licenseUrl ? "縮小・トリミングして使用" : "",
+      ].filter(Boolean).join(" ／ ");
+      const title = cap || ph.caption || "";
+      return `<figure class="article-figure${key.startsWith("person:") ? " article-figure--portrait" : ""}">` +
+        `<img src="${esc(ph.src)}" alt="${esc(title)}" loading="lazy"><figcaption>` +
+        (title ? `<span class="portrait-title">${esc(title)}</span>` : "") +
+        (!cap && ph.note ? `<span class="portrait-note">${esc(ph.note)}</span>` : "") +
+        (credit ? `<span class="img-credit">${credit}</span>` : "") +
+        `</figcaption></figure>`;
+    };
+
     // 本文（Markdown → HTML）。原文の引用 {{…}} は人物ページと同じく「…」に括って色を変える。
     // ==…== は論拠の要を示すマーカー（太字 **…** は筆者の主張）
     const quoted = md
+      .replace(imgRe, (m, kind, rid, cap) => `\n${figureHTML(kind + ":" + rid, (cap || "").trim())}\n`)
       .replace(/\{\{([^{}]*)\}\}/g, (m, q) => `<span class="quote">「${q}」</span>`)
       .replace(/==([^=\n]+)==/g, (m, t) => `<mark>${t}</mark>`);
     const bodyHTML =
@@ -96,7 +140,12 @@
     // 冒頭画像（最初の見出しの直後に差し込む）
     if (meta && meta.image && meta.image.src) {
       const im = meta.image;
-      const credit = [im.credit, im.license].filter(Boolean).map(esc).join("／");
+      const link = (t, url) =>
+        url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(t)}</a>` : esc(t);
+      const credit = [
+        im.credit ? link(im.credit, im.sourceUrl) : "",
+        im.license ? link(im.license, im.licenseUrl) : "",
+      ].filter(Boolean).join("／");
       const cap =
         im.caption || credit
           ? `<figcaption>${esc(im.caption || "")}${credit ? ` <span class="img-credit">（${credit}）</span>` : ""}</figcaption>`
