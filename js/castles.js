@@ -45,21 +45,11 @@
       </div>`;
   }
 
-  // 写真のクレジット（作者・ライセンス・出典。CCの写真は縮小・トリミングしている）
-  function creditHTML(ph) {
-    const lic = ph.licenseUrl
-      ? `<a href="${esc(ph.licenseUrl)}" target="_blank" rel="noopener">${esc(ph.license)}</a>`
-      : esc(ph.license);
-    const src = `<a href="${esc(ph.source.url)}" target="_blank" rel="noopener">${esc(ph.source.name)}</a>`;
-    return [ph.author ? `撮影：${esc(ph.author)}` : "", lic, src, ph.licenseUrl ? "縮小・トリミングして使用" : ""]
-      .filter(Boolean)
-      .join(" ／ ");
-  }
-
+  // 写真のクレジット（作者・ライセンス・出典。書き方は js/photo.js）
   function creditsHTML(items) {
     const rows = items
       .filter((c) => c.photo)
-      .map((c) => `<li><span class="credit-name">${esc(c.name)}</span>${esc(c.photo.caption)}：${creditHTML(c.photo)}</li>`)
+      .map((c) => `<li><span class="credit-name">${esc(c.name)}</span>${esc(c.photo.caption)}：${window.PhotoCredit.credit(c.photo)}</li>`)
       .join("");
     return rows ? `<h2>写真の出典</h2><ul class="photo-credit-list">${rows}</ul>` : "";
   }

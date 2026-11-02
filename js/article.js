@@ -65,19 +65,7 @@
     const figureHTML = (key, cap) => {
       const ph = photos.get(key);
       if (!ph) return "";
-      const srcLink = ph.source && ph.source.url
-        ? `<a href="${esc(ph.source.url)}" target="_blank" rel="noopener">${esc(ph.source.name || "出典")}</a>`
-        : esc((ph.source && ph.source.name) || "");
-      const lic = ph.licenseUrl
-        ? `<a href="${esc(ph.licenseUrl)}" target="_blank" rel="noopener">${esc(ph.license)}</a>`
-        : esc(ph.license || "");
-      const credit = [
-        ph.holder ? `所蔵：${esc(ph.holder)}` : "",
-        ph.author ? `撮影：${esc(ph.author)}` : "",
-        lic,
-        srcLink ? `出典：${srcLink}` : "",
-        ph.licenseUrl ? "縮小・トリミングして使用" : "",
-      ].filter(Boolean).join(" ／ ");
+      const credit = window.PhotoCredit.credit(ph);
       const title = cap || ph.caption || "";
       return `<figure class="article-figure${key.startsWith("person:") ? " article-figure--portrait" : ""}">` +
         `<img src="${esc(ph.src)}" alt="${esc(title)}" loading="lazy"><figcaption>` +

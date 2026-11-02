@@ -103,15 +103,7 @@
     const ph = (((ciRes && ciRes.castles) || []).find((x) => x.id === c.id) || {}).photo;
     let photoHTML = "";
     if (ph) {
-      const lic = ph.licenseUrl
-        ? `<a href="${esc(ph.licenseUrl)}" target="_blank" rel="noopener">${esc(ph.license)}</a>`
-        : esc(ph.license);
-      const credit = [
-        ph.author ? `撮影：${esc(ph.author)}` : "",
-        lic,
-        `出典：<a href="${esc(ph.source.url)}" target="_blank" rel="noopener">${esc(ph.source.name)}</a>`,
-        ph.licenseUrl ? "縮小・トリミングして使用" : "",
-      ].filter(Boolean).join(" ／ ");
+      const credit = window.PhotoCredit.credit(ph);
       photoHTML = `
         <figure class="castle-photo">
           <img src="${esc(ph.src)}" alt="${esc(ph.caption)}">

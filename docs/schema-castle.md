@@ -32,13 +32,17 @@ Photo = {
   "thumb": string,      // assets/img/castles/thumbs/<id>.jpg（160×160）
   "caption": string,
   "note"?: string,      // 復興天守・模擬天守など、戦国期の姿でない場合は必ず書く
-  "author"?: string,    // 撮影者（Commons の作者名）
-  "license": string,    // "CC BY-SA 4.0" / "CC0" / "パブリックドメイン" など
+  "own"?: true,         // 管理人が自分で撮った写真
+  "taken"?: string,     // 撮影日 "2026-11" / "2026-11-02"（own のとき。季節・整備の状況で見え方が変わるため）
+  "author"?: string,    // 撮影者（Commons の作者名。own のときは省略すると「戦国クロニクル」と出す）
+  "license"?: string,   // "CC BY-SA 4.0" / "CC0" / "パブリックドメイン" など（own でなければ必須）
   "licenseUrl"?: string,
-  "source": { "name": string, "url": string }  // Commons のファイルページ
+  "source"?: { "name": string, "url": string }  // Commons のファイルページ（own でなければ必須）
 }
 ```
-> 建物の写真には撮影者の著作権があるので、CC0・パブリックドメイン・CC BY・CC BY-SA のものだけを使う。CCの写真は「作者・ライセンス（リンク）・出典・縮小・トリミングしたこと」を表示する（城一覧の下の「写真の出典」と詳細ページのキャプション）。
+> 建物の写真には撮影者の著作権があるので、他人の写真は CC0・パブリックドメイン・CC BY・CC BY-SA のものだけを使う。CCの写真は「作者・ライセンス（リンク）・出典・縮小・トリミングしたこと」を表示する（城一覧の下の「写真の出典」と詳細ページのキャプション）。
+>
+> 自分で撮った写真は `own: true` にし、`source` は書かない。表記は「撮影：戦国クロニクル（2026年11月）」になる。`license` は書いたときだけ出す（転載を許すかどうかは管理人が決める）。載せる前の確認は `.claude/rules/own-photo.md`。表記の組み立ては城・合戦・記事で共用の `js/photo.js`。
 
 ## 詳細（<id>.json）
 

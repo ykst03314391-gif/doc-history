@@ -25,6 +25,7 @@ python -m http.server 8765
 - **スキーマは `docs/schema-*.md`**。フィールドを足したら該当スキーマ文書も更新する。
 - **相互参照は ID**（`person_id` / `battle_id` / `castle_id` / `article_id`）。説明文中の語をリンクにするには、各項目に `links: [{ text, person_id | battle_id | castle_id }]` を付ける（`person.js` の `linkText`）。出典は各項目の `sourceId` → その人物の `sources[].id`。
 - **原文の引用は `{{…}}`**（「」ではない）。表示で「…」に括って色を変え、書名・現代語訳の「」と区別する。
+- 写真の権利表記（撮影者・ライセンス・出典）は `js/photo.js` で組み立て、城・合戦の一覧と詳細、記事の本文画像で共用する。**管理人が自分で撮った写真を載せるときは、組み込む前に `.claude/rules/own-photo.md` の確認（撮影場所の決まり・写っている人・説明板・位置情報など）をする**。
 - 人物の領地地図は Leaflet＋OSM。国は `territories[].province`、国の一部なら `district`（郡）で塗る。境界データ `assets/geo/*.geojson` は `tools/build-*.py` で生成（元データはリポジトリに入れない）。合戦・トピックの地図は OSM iframe（公開時に Google Maps Embed へ切り替える予定）。
 
 ## 文字と色（`css/style.css`）

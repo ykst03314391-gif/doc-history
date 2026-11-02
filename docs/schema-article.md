@@ -54,7 +54,7 @@
 | `date` | string | 公開日（YYYY-MM-DD） |
 | `updatedAt` | string | 更新日（YYYY-MM-DD、任意） |
 | `author` | string | 執筆者（任意） |
-| `image` | Image | 冒頭画像 `{ "src", "caption"?, "credit"?, "sourceUrl"?, "license"?, "licenseUrl"? }`（任意）。一覧カードのサムネイルにもなる。`credit` は「撮影：〇〇、Wikimedia Commons」のように撮影者と出典を書き、`sourceUrl`（出典のページ）・`licenseUrl`（CC ライセンスの条文）があればリンクにする。城・合戦・人物の写真を使うときは、その `photo`／`portrait` の表記を写す。詳細ページで**タイトル直下**に表示。**権利注意**：パブリックドメイン画像（Wikimedia Commons の肖像画等）を `credit`/`license` 明記で、または自作画像を使う。参考イメージは caption に明記 |
+| `image` | Image | 冒頭画像 `{ "src", "caption"?, "credit"?, "sourceUrl"?, "license"?, "licenseUrl"? }`（任意）。一覧カードのサムネイルにもなる。`credit` は「撮影：〇〇、Wikimedia Commons」のように撮影者と出典を書き、`sourceUrl`（出典のページ）・`licenseUrl`（CC ライセンスの条文）があればリンクにする。城・合戦・人物の写真を使うときは、その `photo`／`portrait` の表記を写す。詳細ページで**タイトル直下**に表示。**権利注意**：パブリックドメイン画像（Wikimedia Commons の肖像画等）を `credit`/`license` 明記で、または自作画像を使う。自分で撮った写真は `credit` を「撮影：戦国クロニクル（2026年11月）」とし、載せる前に `.claude/rules/own-photo.md` の確認をする。参考イメージは caption に明記 |
 | `references` | Reference[] | 関連書籍（アフィリエイト）`{ "title", "author"?, "affiliateUrl"?, "note"? }`（任意）。記事**末尾**に「関連書籍」として表示。開示文つき・`rel="sponsored"`。可読性のため本文には挟まない |
 | `relatedPeople` | string[] | 関連する人物の `person_id`（DB連携。詳細ページで相互リンク） |
 | `relatedBattles` | string[] | 関連する合戦の `battle_id`（任意、将来用） |
