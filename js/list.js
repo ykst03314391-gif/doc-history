@@ -98,8 +98,12 @@
     if (!c) return NO_CLAN;
     return c.retainer ? `${c.clan}の家臣` : c.clan;
   }
+  // 家名の読み。大名家データにない家は、名字が家名と同じ一門の人物の読み（名字の部分）から取る
   function clanSortKey(name) {
-    return (clanKana[name] && clanKana[name].kana) || name;
+    if (clanKana[name] && clanKana[name].kana) return clanKana[name].kana;
+    const stem = name.replace(/家$/, "");
+    const m = people.find((p) => (p.name || "").startsWith(stem) && p.kana);
+    return m ? m.kana.split(/\s/)[0] + "け" : name;
   }
 
   // 並べ方ごとの見出しと順序
@@ -109,6 +113,12 @@
     const prov = provinceById[p.id];
     if (!prov) return UNKNOWN;
     return order === "region" ? regionOf(prov) : `${prov}（${regionOf(prov)}）`;
+  }
+  // 見出しの上の段（家別のときだけ、家名の読みの行。家のない人は段を分けない）
+  function superOf(p, order) {
+    if (order !== "clan") return null;
+    const c = clanOf(p);
+    return c ? kanaRow(clanSortKey(c.clan)) : null;
   }
   function sortFor(order, items) {
     if (order === "kana") return items;
@@ -150,12 +160,16 @@
 
   const OTHER_ROW = { id: "row-other", label: "その他" };
   // 目次は一覧の見出しから作るので、並べ方や検索で見出しが変わるたびに作り直す
+  function tocGroupHTML(r) {
+    const items = r.children.map((c) => `<li><a href="#${c.id}">${esc(c.label)}</a></li>`).join("");
+    return `<li class="toc-group"><a class="toc-group-link" href="#${r.id}">${esc(r.label)}</a><ol>${items}</ol></li>`;
+  }
   function renderToc(rows) {
     if (!tocEl) return;
     tocEl.hidden = !rows.length;
     tocEl.innerHTML = rows.length
       ? `<p class="toc-title">目次</p><ol>${rows
-          .map((r) => `<li><a href="#${r.id}">${esc(r.label)}</a></li>`)
+          .map((r) => (r.children ? tocGroupHTML(r) : `<li><a href="#${r.id}">${esc(r.label)}</a></li>`))
           .join("")}</ol>`
       : "";
   }
@@ -171,12 +185,25 @@
     const order = currentOrder();
     let html = "";
     let current = null;
+    let currentSuper = null;
     const rows = [];
+    let n = 0;
     for (const p of sortFor(order, items)) {
       const row = groupOf(p, order);
+      // 家別は家名の読みの50音順なので、行（あ行・か行…）の見出しの下に家の見出しを置く
+      const sup = superOf(p, order);
+      if (sup && sup !== currentSuper) {
+        const id = `row-${n++}`;
+        html += `<h3 class="kana-row-heading" id="${id}">${esc(sup)}</h3>`;
+        rows.push({ id, label: sup, children: [] });
+        currentSuper = sup;
+        current = null;
+      }
       if (row !== current) {
-        html += `<h3 class="kana-row-heading" id="row-${rows.length}">${headingHTML(row, order, p)}</h3>`;
-        rows.push({ id: `row-${rows.length}`, label: row });
+        const id = `row-${n++}`;
+        const cls = sup ? "kana-row-heading group-subheading" : "kana-row-heading";
+        html += `<h3 class="${cls}" id="${id}">${headingHTML(row, order, p)}</h3>`;
+        (sup ? rows[rows.length - 1].children : rows).push({ id, label: row });
         current = row;
       }
       html += cardHTML(p);

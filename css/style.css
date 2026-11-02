@@ -260,6 +260,14 @@ html { scroll-behavior: smooth; }
   color: var(--ink-soft);
 }
 .kana-row-heading:first-child { margin-top: 0; }
+/* 家別の一覧で、行（あ行…）の見出しの下に置く家の見出し */
+.kana-row-heading.group-subheading {
+  margin-top: 2px;
+  padding-left: 0.8em;
+  border-bottom: 1px dotted var(--line);
+  font-size: 0.95rem;
+  color: var(--ink);
+}
 /* 見出しに入る項目がないときの注記 */
 .list-note { grid-column: 1 / -1; margin: 0; }
 .kana-row-heading a { color: inherit; }
