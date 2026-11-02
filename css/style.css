@@ -114,6 +114,8 @@ html { scroll-behavior: smooth; }
 .article-body h2 { scroll-margin-top: 18px; }
 /* DB詳細（人物・大名家・合戦）はセクション自体にidを振るので、その位置合わせ */
 #content section.section { scroll-margin-top: 18px; }
+/* 一覧ページの見出し（目次から飛ぶ先） */
+.kana-row-heading { scroll-margin-top: 18px; }
 .page-title {
   font-size: 1.6rem;
   border-left: 6px solid var(--accent);

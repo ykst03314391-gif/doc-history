@@ -28,13 +28,14 @@
   <main>
     <a href="people.html" class="back-link">← 武将一覧へ戻る</a>
     <h2 class="page-title">その他の人物</h2>
-    <p class="lead">武将ではないけれど、戦国の歴史に関わった人たち（武将の家族など）です。</p>
+    <p class="lead">武将の家族や茶人など武将ではない人たちと、主な武将の周りに名前の出てくる武将たちです。</p>
 
     <div class="provisional-notice" role="note">
       <strong>⚠ 仮置きデータ</strong>：ここに掲載しているデータベース情報（人物・合戦・大名家など）は<strong>すべて暫定（仮置き）</strong>です。出典の裏取りが済んでおらず、記載中の出典（信長公記など）も未検証。内容は今後、一次資料に当たって順次修正します。現時点で正確性は保証しません。
     </div>
     <input type="search" id="search" class="search-box" placeholder="名前・かな・タグで検索…">
 
+    <nav id="list-toc" class="side-toc" aria-label="目次" hidden></nav>
     <div id="list" class="card-grid" data-category="other" aria-live="polite"></div>
   </main>
 
@@ -44,5 +45,6 @@
 
   <script src="js/order.js"></script>
   <script src="js/list.js"></script>
+  <script src="js/toc.js"></script>
 </body>
 </html>

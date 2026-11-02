@@ -4,7 +4,9 @@
   const searchEl = document.getElementById("search");
   // 並べ方の切替（武将一覧だけにある）。50音順／地域別／国別／家別
   const orderEl = document.getElementById("order");
-  // data-category="other" なら武将ではない人物、無指定なら武将を一覧する
+  // 一覧の見出しの目次（.side-toc。いま開いている見出しの強調は js/toc.js）
+  const tocEl = document.getElementById("list-toc");
+  // data-category="other" なら武将ではない人物と脇役の武将、無指定なら武将を一覧する
   const category = listEl.dataset.category || "";
   let people = [];
   let otherCount = 0;
@@ -131,10 +133,10 @@
   // 武将一覧の末尾に置く「その他の人物」への入口カード
   function otherCardHTML() {
     return `
-      <h3 class="kana-row-heading">その他</h3>
+      <h3 class="kana-row-heading" id="row-other">その他</h3>
       <a class="card person-card card-more" href="others.html">
         <h3>その他の人物</h3>
-        <p class="card-summary">武将ではない人物（武将の家族など）の一覧です。${otherCount ? `現在${otherCount}人。` : ""}</p>
+        <p class="card-summary">武将ではない人物（武将の家族など）や、主な武将の周りの人物の一覧です。${otherCount ? `現在${otherCount}人。` : ""}</p>
       </a>`;
   }
 
@@ -146,25 +148,42 @@
     return `<a href="clan.html?id=${encodeURIComponent(info.id)}">${esc(row)}</a>`;
   }
 
+  const OTHER_ROW = { id: "row-other", label: "その他" };
+  // 目次は一覧の見出しから作るので、並べ方や検索で見出しが変わるたびに作り直す
+  function renderToc(rows) {
+    if (!tocEl) return;
+    tocEl.hidden = !rows.length;
+    tocEl.innerHTML = rows.length
+      ? `<p class="toc-title">目次</p><ol>${rows
+          .map((r) => `<li><a href="#${r.id}">${esc(r.label)}</a></li>`)
+          .join("")}</ol>`
+      : "";
+  }
+
   function render(items, showOther) {
     const more = showOther && !category ? otherCardHTML() : "";
     if (!items.length) {
       listEl.innerHTML = `<p class="muted">該当する人物がいません。</p>` + more;
+      renderToc(more ? [OTHER_ROW] : []);
       return;
     }
     // items は50音順に並んでいる前提。並べ方に従って並べ替え、グループが変わるところに見出しを挟む
     const order = currentOrder();
     let html = "";
     let current = null;
+    const rows = [];
     for (const p of sortFor(order, items)) {
       const row = groupOf(p, order);
       if (row !== current) {
-        html += `<h3 class="kana-row-heading">${headingHTML(row, order, p)}</h3>`;
+        html += `<h3 class="kana-row-heading" id="row-${rows.length}">${headingHTML(row, order, p)}</h3>`;
+        rows.push({ id: `row-${rows.length}`, label: row });
         current = row;
       }
       html += cardHTML(p);
     }
+    if (more) rows.push(OTHER_ROW);
     listEl.innerHTML = html + more;
+    renderToc(rows);
   }
 
   function filter(q) {

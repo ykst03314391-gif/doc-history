@@ -103,7 +103,7 @@ Portrait = {
 > 肖像画が見つからない人物は `portrait` を省く。人物ページと一覧には「画像なし」の絵（`assets/img/portraits/noimage.svg`）を自動で表示する。
 > 一覧（`data/people/index.json`）には `thumb` に顔を切り出した正方形サムネイル（`assets/img/portraits/thumbs/<person_id>.jpg`、160×160）を書くと、武将一覧のカード右上に丸く表示する。
 
-> 一覧（`data/people/index.json`）の `category` が `"other"` の人物は武将一覧（`people.html`）に出さず、「その他の人物」（`others.html`）に並べる。どちらも読み（`kana`）の50音順で、行ごとに見出しを付ける。
+> 一覧（`data/people/index.json`）の `category` が `"other"` の人物は武将一覧（`people.html`）に出さず、「その他の人物」（`others.html`）に並べる。`"other"` にするのは、武将ではない人物（家族・茶人など）と、主な武将の周りに名前の出てくる脇役の武将（どれを移すかは管理人が決める）。個別ファイルにも同じ `category` を書く。どちらも読み（`kana`）の50音順で、行ごとに見出しを付ける。
 
 > 一覧（`data/people/index.json`）の生没年は `birthYear`/`deathYear`（西暦）に加え、`birthEra`/`deathEra` に個別JSONの `birth.era`/`death.era` と同じ和暦を書く。カードには「天文9年（1540） 〜 天正19年1月22日（1591）」の形で表示する（和暦が無ければ西暦のみ）。
 
