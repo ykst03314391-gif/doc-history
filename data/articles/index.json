@@ -86,6 +86,21 @@
       "references": []
     },
     {
+      "id": "owari-economy",
+      "title": "尾張は「経済が強かった」って、具体的にどういうこと？ ― 津島・熱田と、織田家の銭の使い方",
+      "series": "economics",
+      "group": "大名家別の事例",
+      "category": "考察",
+      "summary": "格下の奉行の家だった織田弾正忠家は、なぜ尾張一の実力者になれたのか。「経済が強い」の中身を、津島・熱田のそばの城、町の人々との付き合い、内裏への四千貫や岐阜の蔵の一万六千貫に分けて『信長公記』『多聞院日記』で確かめると、見えてくるのは稼いだ額ではなく出した額だった。",
+      "image": {"src":  "assets/img/castles/kiyosu.jpg", "caption":  "清洲城の模擬天守（1989年の建物で、戦国時代の清洲城の姿ではない）。津島の年寄たちは、ここ清洲へ踊りを返しに来た", "credit":  "撮影：inunami、Wikimedia Commons", "sourceUrl":  "https://commons.wikimedia.org/wiki/File:Kiyosu_20220212154913_(52270310705).jpg", "license":  "CC BY 2.0", "licenseUrl":  "https://creativecommons.org/licenses/by/2.0"},
+      "date": "2026-11-02",
+      "author": "管理人",
+      "relatedPeople": ["oda-nobunaga", "oda-nobuhide", "ashikaga-yoshiaki", "oda-nobutada"],
+      "relatedBattles": [],
+      "tags": ["織田信長", "織田信秀", "尾張", "津島", "熱田", "経済", "考察"],
+      "references": []
+    },
+    {
       "id": "nobunaga-utsuke",
       "title": "「大うつけ」は、どこまで本当にあったのか？ ― 信長公記の首巻を読み分ける",
       "series": "myth-busting",
