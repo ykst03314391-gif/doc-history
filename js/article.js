@@ -48,7 +48,8 @@
     // 写真・肖像と権利表記は城・合戦の index.json の photo、人物の詳細ファイルの portrait から引く。
     // ![[illust:<名前>|説明]] は挿絵（assets/img/illust/<名前>.svg。AIで作ったもので、DBは引かない）
     // ![[zu:<名前>|題|説明]] は図解（assets/img/zu/<名前>.svg）。挿絵と見分けるため、罫線の箱に「図」の札と題を付ける
-    const imgRe = /^!\[\[(castle|battle|person|illust|zu):([a-z0-9-]+)(?:\|([^\]\n]*))?\]\][ \t]*$/gm;
+    // ![[manga:<名前>|題|説明]] は記事末の漫画（assets/img/manga/<名前>.svg）。朱の「漫画」の札と題を付ける
+    const imgRe = /^!\[\[(castle|battle|person|illust|zu|manga):([a-z0-9-]+)(?:\|([^\]\n]*))?\]\][ \t]*$/gm;
     const refs = [...md.matchAll(imgRe)];
     const photos = new Map();
     if (refs.length) {
@@ -74,6 +75,17 @@
           `<img src="assets/img/zu/${esc(key.slice(3))}.svg" alt="${esc(title + (desc ? "。" + desc : ""))}" loading="lazy"><figcaption>` +
           (desc ? `<span class="zu-desc">${esc(desc)}</span>` : "") +
           `<span class="img-credit">作図：戦国クロニクル（AIで作成）</span>` +
+          `</figcaption></figure>`;
+      }
+      if (key.startsWith("manga:")) {
+        const i = cap.indexOf("|");
+        const title = (i < 0 ? cap : cap.slice(0, i)).trim();
+        const desc = i < 0 ? "" : cap.slice(i + 1).trim();
+        return `<figure class="article-figure article-figure--manga">` +
+          `<div class="manga-head"><span class="manga-label">漫画</span>${esc(title)}</div>` +
+          `<img src="assets/img/manga/${esc(key.slice(6))}.svg" alt="${esc(title + (desc ? "。" + desc : ""))}" loading="lazy"><figcaption>` +
+          (desc ? `<span class="manga-desc">${esc(desc)}</span>` : "") +
+          `<span class="img-credit">イラスト：戦国クロニクル（AIで作成）</span>` +
           `</figcaption></figure>`;
       }
       if (key.startsWith("illust:")) {

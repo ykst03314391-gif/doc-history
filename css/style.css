@@ -1090,6 +1090,20 @@ footer.site-footer {
   vertical-align: 2px;
 }
 .article-figure--zu .zu-desc { color: var(--ink-soft); font-size: 0.85rem; }
+/* 記事末の漫画（1・2・4コマ。四コマは縦長なので幅を絞る） */
+.article-figure--manga { margin-top: 28px; }
+.article-figure--manga img { max-width: min(100%, 420px); }
+.manga-head { font-weight: 700; font-size: 0.95rem; margin-bottom: 8px; }
+.manga-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  color: #fff;
+  background: var(--accent);
+  border-radius: 3px;
+  padding: 1px 7px;
+  margin-right: 8px;
+  vertical-align: 2px;
+}
 
 /* 記事末尾の関連書籍（アフィリエイト・可読性のため本文とは区切る） */
 .article-books { margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--line); }
