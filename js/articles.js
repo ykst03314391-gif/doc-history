@@ -66,6 +66,8 @@
       }
       groups.get(a.group).push(a);
     }
+    // ただし「総論」は特集の入口なので先頭に置く
+    groupOrder.sort((a, b) => (b === "総論") - (a === "総論"));
 
     let inner = ungrouped.length ? grid(ungrouped) : "";
     for (const g of groupOrder) {

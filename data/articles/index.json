@@ -71,6 +71,20 @@
       ]
     },
     {
+      "id": "nobunaga-company",
+      "title": "信長は現代の会社っぽい？！ ― リストラ・買収・先行事例の取り入れ",
+      "series": "economics",
+      "group": "大名家別の事例",
+      "category": "考察",
+      "summary": "働かない重役をクビにし、名門を買い取って子会社にし、よその良いやり方をすぐ取り入れる。佐久間信盛の折檻状、北畠家の家督、関所・楽市・天守を『信長公記』で確かめ、信長の「会社っぽさ」とたとえに合わないところを見る。",
+      "date": "2026-11-02",
+      "author": "管理人",
+      "relatedPeople": ["oda-nobunaga", "sakuma-nobumori", "hayashi-hidesada", "ando-morinari", "oda-nobukatsu", "oda-nobutaka", "tokugawa-ieyasu", "akechi-mitsuhide", "toyotomi-hideyoshi", "shibata-katsuie"],
+      "relatedBattles": [],
+      "tags": ["織田信長", "佐久間信盛", "北畠家", "楽市楽座", "天守", "経済", "考察"],
+      "references": []
+    },
+    {
       "id": "tedorigawa-kenshin",
       "title": "上杉謙信はなぜ手取川で織田軍に勝てたのか",
       "category": "考察",
