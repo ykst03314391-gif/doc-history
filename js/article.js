@@ -47,7 +47,8 @@
     // 本文の画像 ![[castle:<id>]] / ![[battle:<id>]] / ![[person:<id>]]（| のあとに説明を書けば差し替え）。
     // 写真・肖像と権利表記は城・合戦の index.json の photo、人物の詳細ファイルの portrait から引く。
     // ![[illust:<名前>|説明]] は挿絵（assets/img/illust/<名前>.svg。AIで作ったもので、DBは引かない）
-    const imgRe = /^!\[\[(castle|battle|person|illust):([a-z0-9-]+)(?:\|([^\]\n]*))?\]\][ \t]*$/gm;
+    // ![[zu:<名前>|題|説明]] は図解（assets/img/zu/<名前>.svg）。挿絵と見分けるため、罫線の箱に「図」の札と題を付ける
+    const imgRe = /^!\[\[(castle|battle|person|illust|zu):([a-z0-9-]+)(?:\|([^\]\n]*))?\]\][ \t]*$/gm;
     const refs = [...md.matchAll(imgRe)];
     const photos = new Map();
     if (refs.length) {
@@ -64,6 +65,17 @@
       ps.forEach((p, i) => p && p.portrait && p.portrait.src && photos.set("person:" + pids[i], p.portrait));
     }
     const figureHTML = (key, cap) => {
+      if (key.startsWith("zu:")) {
+        const i = cap.indexOf("|");
+        const title = (i < 0 ? cap : cap.slice(0, i)).trim();
+        const desc = i < 0 ? "" : cap.slice(i + 1).trim();
+        return `<figure class="article-figure article-figure--zu">` +
+          `<div class="zu-head"><span class="zu-label">図</span>${esc(title)}</div>` +
+          `<img src="assets/img/zu/${esc(key.slice(3))}.svg" alt="${esc(title + (desc ? "。" + desc : ""))}" loading="lazy"><figcaption>` +
+          (desc ? `<span class="zu-desc">${esc(desc)}</span>` : "") +
+          `<span class="img-credit">作図：戦国クロニクル（AIで作成）</span>` +
+          `</figcaption></figure>`;
+      }
       if (key.startsWith("illust:")) {
         return `<figure class="article-figure article-figure--illust">` +
           `<img src="assets/img/illust/${esc(key.slice(7))}.svg" alt="${esc(cap)}" loading="lazy"><figcaption>` +

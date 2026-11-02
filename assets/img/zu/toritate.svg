@@ -10,7 +10,7 @@
       <path d="M0,0 L10,5 L0,10 Z" fill="#4f4940"/>
     </marker>
   </defs>
-  <rect width="800" height="450" fill="#fbfaf6"/>
+
 
   <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" fill="#23201c">
     <!-- column titles -->

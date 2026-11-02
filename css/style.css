@@ -1068,6 +1068,28 @@ footer.site-footer {
 .article-figure .portrait-title { color: var(--ink); font-size: 0.85rem; }
 .article-figure .img-credit { margin-top: 4px; overflow-wrap: anywhere; }
 .article-figure--illust img, .article-figure--illust figcaption { max-width: min(100%, 640px); }
+/* 図解：挿絵と見分けるため、罫線の箱に入れ「図」の札と題を付ける */
+.article-figure--zu {
+  max-width: min(100%, 640px);
+  padding: 12px 14px 10px;
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+.article-figure--zu img { max-width: 100%; border: none; border-radius: 0; }
+.article-figure--zu figcaption { max-width: none; }
+.zu-head { font-weight: 700; font-size: 0.95rem; margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+.zu-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  color: #fff;
+  background: #2f5d7c;
+  border-radius: 3px;
+  padding: 1px 7px;
+  margin-right: 8px;
+  vertical-align: 2px;
+}
+.article-figure--zu .zu-desc { color: var(--ink-soft); font-size: 0.85rem; }
 
 /* 記事末尾の関連書籍（アフィリエイト・可読性のため本文とは区切る） */
 .article-books { margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--line); }
