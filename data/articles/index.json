@@ -235,6 +235,19 @@
       "relatedBattles": ["arioka-siege"],
       "tags": ["織田信長", "豊臣秀次", "斎藤道三", "松永久秀", "荒木村重", "逸話", "信長公記", "多聞院日記", "考察"],
       "references": []
+    },
+    {
+      "id": "sengoku-news",
+      "title": "新聞もスマホもない時代、ニュースはどう届いたのか ― 本能寺の変の知らせを追う",
+      "category": "考察",
+      "summary": "新聞もテレビも電話もない戦国時代、人々はどうやって出来事を知ったのか。本能寺の変の知らせが奈良の寺と秀吉の陣にどう届いたかを『多聞院日記』などで追うと、知らせは人が運び、本当と嘘が混じっていたことが見えてくる。確かめた信長、知らせを止めた秀吉、嘘の知らせで城を奪った越中の一揆も見る。",
+      "image": {"src":  "assets/img/battles/honnoji-no-hen.jpg", "caption":  "本能寺跡の石碑（変のときの本能寺はこの場所にあった）", "credit":  "撮影：Saigen Jiro、Wikimedia Commons", "sourceUrl":  "https://commons.wikimedia.org/wiki/File:Honnoji-ato,_sekihi.jpg", "license":  "CC0", "licenseUrl":  "http://creativecommons.org/publicdomain/zero/1.0/deed.en"},
+      "date": "2026-11-02",
+      "author": "管理人",
+      "relatedPeople": ["oda-nobunaga", "toyotomi-hideyoshi", "akechi-mitsuhide", "tsutsui-junkei", "hosokawa-fujitaka", "tokugawa-ieyasu", "shibata-katsuie", "saito-dosan"],
+      "relatedBattles": ["honnoji-no-hen", "yamazaki"],
+      "tags": ["情報伝達", "本能寺の変", "多聞院日記", "噂", "飛脚", "考察"],
+      "references": []
     }
   ]
 }
