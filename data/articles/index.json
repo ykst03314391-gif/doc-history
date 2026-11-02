@@ -167,12 +167,12 @@
       "title": "秀長が長生きしていたら、豊臣政権は続いたのか",
       "series": "myth-busting",
       "category": "考察",
-      "summary": "「秀長がいれば利休も秀次も死なずに済み、朝鮮出兵も止められた」とよく言われる。秀長の死の後に起きたことは本当に防げたのか、秀長は何を担っていたのか、秀頼が生まれた後の秀長自身は安泰だったのか。多聞院日記を中心に、三つの問いに分けて考える。",
+      "summary": "「秀長がいれば利休も秀次も死なずに済み、朝鮮出兵も止められた」とよく言われる。秀長が兄より長く生きたと仮定して、秀長の死の後に起きたことは防げたのか、秀長は何を担っていたのか、唐入りで秀長は何を担いえたのか、秀頼が生まれた後の秀長自身は安泰だったのか。多聞院日記を中心に、四つの問いに分けて考える。",
       "date": "2026-11-02",
       "author": "管理人",
-      "relatedPeople": ["toyotomi-hidenaga", "toyotomi-hideyoshi", "toyotomi-hidetsugu", "toyotomi-hideyasu", "sen-no-rikyu", "mashita-nagamori", "tokugawa-ieyasu"],
-      "relatedBattles": [],
-      "tags": ["豊臣秀長", "豊臣政権", "千利休", "豊臣秀次", "朝鮮出兵", "考察"],
+      "relatedPeople": ["toyotomi-hidenaga", "toyotomi-hideyoshi", "toyotomi-hidetsugu", "toyotomi-hideyasu", "sen-no-rikyu", "mashita-nagamori", "tokugawa-ieyasu", "todo-takatora", "kuroda-yoshitaka"],
+      "relatedBattles": ["sekigahara"],
+      "tags": ["豊臣秀長", "豊臣政権", "千利休", "豊臣秀次", "朝鮮出兵", "関ヶ原の戦い", "考察"],
       "references": [
         { "title": "羽柴秀長の生涯 秀吉を支えた「補佐役」の実像（平凡社新書）", "author": "黒田基樹", "affiliateUrl": "https://www.amazon.co.jp/dp/XXXXXXXXXX?tag=YOUR_ASSOCIATE_TAG-22", "note": "※リンクは仮。登録後に実商品URL＋タグへ差し替え。「秀長が長生きしていたら」の見立てを含む評伝" }
       ]
