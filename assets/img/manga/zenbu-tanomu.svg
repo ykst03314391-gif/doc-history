@@ -1,64 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 1082" role="img" aria-label="四コマ漫画（創作。秀長が長生きしていたら、のもしもの場面）。一、秀吉が「小一郎、秀頼を頼むぞ」と言い、秀長が「お任せを」。二、秀吉「大名も奉行も、頼むぞ」、秀長「お任せを」。三、秀吉「唐入りの後始末も、家康の相手も頼むぞ」、秀長「……お任せを」。四、秀長が「……して兄上、わしが倒れたら？」と聞くと、秀吉は「……」と黙り込む">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 1082" role="img" aria-label="四コマ漫画（創作。秀長が長生きしていたら、のもしもの場面）。一、秀吉が「小一郎、秀頼を頼むぞ」と言い、秀長が「お任せを」。二、秀吉「大名も奉行も、頼むぞ」、秀長「お任せを」。三、秀吉「唐入りの後始末も、家康の相手も頼むぞ」、秀長「……お任せを」。四、秀長が「……して兄上、わしが倒れたら？」と聞くと、秀吉は「……」と黙り込む。人物はみな服を着ない四つ足の猫のキャラ（ぱぱねこ）で描き。秀長は折烏帽子と首の小豆、秀吉は立烏帽子と首の瓢箪で見分ける">
   <defs>
-    <symbol id="st" viewBox="-60 -200 120 200" overflow="visible">
-      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
-      <path d="M0,-70 V0" stroke="#23201c" stroke-width="1.5"/>
-      <path d="M-26,-140 L26,-140 L30,-90 L-30,-90 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
-      <path d="M-54,-140 L54,-140 L44,-128 L24,-128 L18,-92 L-18,-92 L-24,-128 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
-      <path d="M-9,-140 L0,-120 L9,-140 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
-      <circle cx="0" cy="-162" r="20" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
-      <path d="M-19,-168 A20,20 0 0 1 19,-168 Q0,-160 -19,-168 Z" fill="#23201c"/>
-      <path d="M-3,-180 L-3,-190 L14,-187 L14,-183 Z" fill="#23201c"/>
-    </symbol>
-    <symbol id="bw" viewBox="-80 -110 160 110" overflow="visible">
-      <path d="M-30,-40 L50,-40 L62,0 L-50,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
-      <path d="M12,-38 L44,-44 L4,-86 L-34,-74 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
-      <path d="M-34,-60 L-62,-8 L-44,-6 L-20,-52 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
-      <rect x="-70" y="-10" width="20" height="7" rx="3" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
-      <circle cx="-48" cy="-72" r="17" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
-      <path d="M-34,-84 A17,17 0 0 1 -36,-58 Q-44,-72 -34,-84 Z" fill="#23201c"/>
-      <path d="M-30,-80 L-24,-90 L-20,-86 L-26,-76 Z" fill="#23201c"/>
-    </symbol>
-    <!-- 現代の記者（手帳を持つ） -->
-    <symbol id="md" viewBox="130 110 140 300" overflow="visible">
-      <path d="M168,300 L158,398 L190,398 L198,312 L206,398 L238,398 L230,300 Z" fill="#4f4940" stroke="#23201c" stroke-width="2"/>
-      <path d="M150,200 Q200,186 250,200 L240,306 L160,306 Z" fill="#cfdbe6" stroke="#23201c" stroke-width="2"/>
-      <path d="M188,196 L200,214 L212,196" fill="none" stroke="#23201c" stroke-width="2"/>
-      <path d="M152,204 L140,262 L186,262" fill="none" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
-      <path d="M248,204 L260,262 L214,262" fill="none" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
-      <rect x="170" y="238" width="60" height="42" rx="2" fill="#8a6d1f" stroke="#23201c" stroke-width="2"/>
-      <path d="M200,238 V280" stroke="#efe2b8" stroke-width="2"/>
-      <circle cx="182" cy="262" r="7" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
-      <circle cx="218" cy="262" r="7" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
-      <circle cx="200" cy="158" r="28" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
-      <path d="M172,156 Q170,126 200,124 Q232,124 229,154 Q214,140 186,146 Z" fill="#23201c"/>
-    </symbol>
-      <symbol id="mk" viewBox="-70 -150 140 150" overflow="visible">
-      <path d="M-40,-96 L40,-96 L62,0 L-62,0 Z" fill="currentColor" fill-opacity="0.85" stroke="#23201c" stroke-width="2"/>
-      <path d="M-40,-96 L30,-30" stroke="#efe2b8" stroke-width="6"/>
-      <path d="M-9,-96 L0,-80 L9,-96 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
-      <circle cx="0" cy="-117" r="19" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
-    </symbol>
-    <!-- 町人（両手を挙げる） -->
-    <symbol id="ch" viewBox="-60 -200 120 200" overflow="visible">
-      <path d="M-30,-110 L30,-110 L40,0 L-40,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
-      <path d="M-9,-110 L0,-92 L9,-110 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
-      <path d="M-28,-104 L-52,-170 M28,-104 L52,-170" stroke="currentColor" stroke-width="14" stroke-linecap="round"/>
-      <circle cx="-52" cy="-172" r="8" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/><circle cx="52" cy="-172" r="8" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
-      <circle cx="0" cy="-132" r="20" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
-      <path d="M-19,-138 A20,20 0 0 1 19,-138 Q0,-130 -19,-138 Z" fill="#23201c"/>
-      <path d="M-3,-150 L-3,-158 L10,-156 L10,-152 Z" fill="#23201c"/>
-      <path d="M-8,-124 Q0,-116 8,-124" fill="none" stroke="#23201c" stroke-width="2"/>
-    </symbol>
-<symbol id="sz" viewBox="-70 -150 140 150" overflow="visible">
-      <path d="M-36,-52 L36,-52 L62,0 L-62,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
-      <path d="M-24,-100 L24,-100 L28,-50 L-28,-50 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
-      <path d="M-50,-100 L50,-100 L42,-88 L22,-88 L17,-52 L-17,-52 L-22,-88 L-42,-88 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
-      <path d="M-9,-100 L0,-82 L9,-100 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
-      <circle cx="0" cy="-121" r="19" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
-      <path d="M-18,-127 A19,19 0 0 1 18,-127 Q0,-119 -18,-127 Z" fill="#23201c"/>
-      <path d="M-3,-139 L-3,-148 L13,-145 L13,-141 Z" fill="#23201c"/>
-    </symbol>
+    <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
+    <g id="pn-head">
+      <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <circle cx="45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-78,10 C-80,-30 -50,-47 0,-47 C50,-47 80,-30 78,10 C78,40 50,52 0,52 C-50,52 -78,40 -78,10 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-40,-3 Q-28,-15 -16,-3 M16,-3 Q28,-15 40,-3" fill="none" stroke="#23201c" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/>
+      <path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" fill="none" stroke="#23201c" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-50,10 L-92,5 M-50,18 L-94,19 M-48,26 L-90,33 M50,10 L92,5 M50,18 L94,19 M48,26 L90,33" stroke="#23201c" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+    <!-- 基本形のぱぱねこ（四つ足・服なし。足もと中央 0,0、頭は左、しっぽは右） -->
+    <g id="pn-base">
+      <path d="M-109,-82 C-123,-48 -123,-8 -117,0 L-99,0 L-81,-18 L-39,-18 L-37,0 L-23,0 L-21,-16 L55,-16 L57,0 L71,0 L73,-16 L97,-18 Q93,-26 99,-30 Q125,-46 127,-86 L127,-110 Q127,-118 119,-118 L111,-118 Q103,-118 102,-108 Q99,-88 87,-86 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+      <use href="#pn-head" transform="translate(-51,-132) scale(0.95)"/>
+    </g>
+
   </defs>
   <rect width="420" height="1082" fill="#fbfaf6"/>
 
@@ -66,8 +23,8 @@
     <!-- コマ1 -->
     <rect x="20" y="20" width="380" height="250" fill="#fbfaf6"/>
     <path d="M20,235 H400" stroke="#d9d2c5" stroke-width="2"/>
-    <use href="#st" x="40" y="110" width="78" height="125" color="#b08d33"/>
-    <use href="#st" x="300" y="115" width="75" height="120" color="#2f5d7c"/>
+    <g transform="translate(80.9,235.0) scale(-0.432,0.432)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-20,-44 L-14,-100 Q2,-112 16,-98 L20,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,64 34,44" fill="none" stroke="#9b2d20" stroke-width="3"/><path d="M0,58 V62" stroke="#23201c" stroke-width="3"/><circle cx="0" cy="68" r="7" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><circle cx="0" cy="86" r="12" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><path d="M-7,76 Q0,79 7,76" fill="none" stroke="#9b2d20" stroke-width="2.5"/></g></g>
+    <g transform="translate(336.0,235.0) scale(0.415,0.415)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
     <path d="M100,90 L84,118 L124,94 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
     <ellipse cx="200" cy="64" rx="150" ry="32" fill="#fff" stroke="#23201c" stroke-width="2"/>
     <text x="200" y="57" font-size="15">小一郎、</text><text x="200" y="81" font-size="15">秀頼を頼むぞ</text>
@@ -79,8 +36,8 @@
     <!-- コマ2 -->
     <rect x="20" y="284" width="380" height="250" fill="#fbfaf6"/>
     <path d="M20,499 H400" stroke="#d9d2c5" stroke-width="2"/>
-    <use href="#st" x="40" y="374" width="78" height="125" color="#b08d33"/>
-    <use href="#st" x="300" y="379" width="75" height="120" color="#2f5d7c"/>
+    <g transform="translate(80.9,499.0) scale(-0.432,0.432)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-20,-44 L-14,-100 Q2,-112 16,-98 L20,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,64 34,44" fill="none" stroke="#9b2d20" stroke-width="3"/><path d="M0,58 V62" stroke="#23201c" stroke-width="3"/><circle cx="0" cy="68" r="7" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><circle cx="0" cy="86" r="12" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><path d="M-7,76 Q0,79 7,76" fill="none" stroke="#9b2d20" stroke-width="2.5"/></g></g>
+    <g transform="translate(336.0,499.0) scale(0.415,0.415)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
     <path d="M100,354 L84,382 L124,358 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
     <ellipse cx="200" cy="328" rx="150" ry="32" fill="#fff" stroke="#23201c" stroke-width="2"/>
     <text x="200" y="321" font-size="15">大名も奉行も、</text><text x="200" y="345" font-size="15">頼むぞ</text>
@@ -92,8 +49,8 @@
     <!-- コマ3 -->
     <rect x="20" y="548" width="380" height="250" fill="#fbfaf6"/>
     <path d="M20,763 H400" stroke="#d9d2c5" stroke-width="2"/>
-    <use href="#st" x="40" y="638" width="78" height="125" color="#b08d33"/>
-    <use href="#st" x="300" y="643" width="75" height="120" color="#2f5d7c"/>
+    <g transform="translate(80.9,763.0) scale(-0.432,0.432)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-20,-44 L-14,-100 Q2,-112 16,-98 L20,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,64 34,44" fill="none" stroke="#9b2d20" stroke-width="3"/><path d="M0,58 V62" stroke="#23201c" stroke-width="3"/><circle cx="0" cy="68" r="7" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><circle cx="0" cy="86" r="12" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><path d="M-7,76 Q0,79 7,76" fill="none" stroke="#9b2d20" stroke-width="2.5"/></g></g>
+    <g transform="translate(336.0,763.0) scale(0.415,0.415)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
     <path d="M100,618 L84,646 L124,622 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
     <ellipse cx="200" cy="592" rx="150" ry="32" fill="#fff" stroke="#23201c" stroke-width="2"/>
     <text x="200" y="585" font-size="15">唐入りの後始末も、</text><text x="200" y="609" font-size="15">家康の相手も頼むぞ</text>
@@ -105,8 +62,8 @@
     <!-- コマ4 -->
     <rect x="20" y="812" width="380" height="250" fill="#fbfaf6"/>
     <path d="M20,1027 H400" stroke="#d9d2c5" stroke-width="2"/>
-    <use href="#st" x="40" y="902" width="78" height="125" color="#b08d33"/>
-    <use href="#st" x="300" y="907" width="75" height="120" color="#2f5d7c"/>
+    <g transform="translate(80.9,1027.0) scale(-0.432,0.432)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-20,-44 L-14,-100 Q2,-112 16,-98 L20,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,64 34,44" fill="none" stroke="#9b2d20" stroke-width="3"/><path d="M0,58 V62" stroke="#23201c" stroke-width="3"/><circle cx="0" cy="68" r="7" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><circle cx="0" cy="86" r="12" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><path d="M-7,76 Q0,79 7,76" fill="none" stroke="#9b2d20" stroke-width="2.5"/></g></g>
+    <g transform="translate(336.0,1027.0) scale(0.415,0.415)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
     <path d="M300,882 L322,912 L280,886 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
     <ellipse cx="205" cy="856" rx="150" ry="32" fill="#fff" stroke="#23201c" stroke-width="2"/>
     <text x="205" y="849" font-size="15">……して兄上、</text><text x="205" y="873" font-size="15">わしが倒れたら？</text>

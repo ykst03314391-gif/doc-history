@@ -1,24 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="兄が弟を怒っているイメージイラスト（立って指さす兄と、平伏する弟）">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="兄が弟を怒っているイメージイラスト（立って指さす兄と、平伏する弟）。人物はみな服を着ない四つ足の猫のキャラ（ぱぱねこ）で描き、秀吉は立烏帽子と首の瓢箪、秀長は折烏帽子と首の小豆で見分ける">
   <defs>
-    <symbol id="st" viewBox="-60 -200 120 200" overflow="visible">
-      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
-      <path d="M0,-70 V0" stroke="#23201c" stroke-width="1.5"/>
-      <path d="M-26,-140 L26,-140 L30,-90 L-30,-90 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
-      <path d="M-54,-140 L54,-140 L44,-128 L24,-128 L18,-92 L-18,-92 L-24,-128 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
-      <path d="M-9,-140 L0,-120 L9,-140 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
-      <circle cx="0" cy="-162" r="20" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
-      <path d="M-19,-168 A20,20 0 0 1 19,-168 Q0,-160 -19,-168 Z" fill="#23201c"/>
-      <path d="M-3,-180 L-3,-190 L14,-187 L14,-183 Z" fill="#23201c"/>
-    </symbol>
-    <symbol id="bw" viewBox="-80 -110 160 110" overflow="visible">
-      <path d="M-30,-40 L50,-40 L62,0 L-50,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
-      <path d="M12,-38 L44,-44 L4,-86 L-34,-74 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
-      <path d="M-34,-60 L-62,-8 L-44,-6 L-20,-52 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
-      <rect x="-70" y="-10" width="20" height="7" rx="3" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
-      <circle cx="-48" cy="-72" r="17" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
-      <path d="M-34,-84 A17,17 0 0 1 -36,-58 Q-44,-72 -34,-84 Z" fill="#23201c"/>
-      <path d="M-30,-80 L-24,-90 L-20,-86 L-26,-76 Z" fill="#23201c"/>
-    </symbol>
+    <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
+    <g id="pn-head">
+      <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <circle cx="45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-78,10 C-80,-30 -50,-47 0,-47 C50,-47 80,-30 78,10 C78,40 50,52 0,52 C-50,52 -78,40 -78,10 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-40,-3 Q-28,-15 -16,-3 M16,-3 Q28,-15 40,-3" fill="none" stroke="#23201c" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/>
+      <path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" fill="none" stroke="#23201c" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-50,10 L-92,5 M-50,18 L-94,19 M-48,26 L-90,33 M50,10 L92,5 M50,18 L94,19 M48,26 L90,33" stroke="#23201c" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+    <!-- 基本形のぱぱねこ（四つ足・服なし。足もと中央 0,0、頭は左、しっぽは右） -->
+    <g id="pn-base">
+      <path d="M-109,-82 C-123,-48 -123,-8 -117,0 L-99,0 L-81,-18 L-39,-18 L-37,0 L-23,0 L-21,-16 L55,-16 L57,0 L71,0 L73,-16 L97,-18 Q93,-26 99,-30 Q125,-46 127,-86 L127,-110 Q127,-118 119,-118 L111,-118 Q103,-118 102,-108 Q99,-88 87,-86 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+      <use href="#pn-head" transform="translate(-51,-132) scale(0.95)"/>
+    </g>
+    <!-- 伏せる（基本形を低くし、頭を前へ下げる。足もと中央 0,0、頭は左） -->
+    <g id="pn-fuse">
+      <path d="M-109,-82 C-123,-48 -123,-8 -117,0 L-99,0 L-81,-18 L-39,-18 L-37,0 L-23,0 L-21,-16 L55,-16 L57,0 L71,0 L73,-16 L97,-18 Q93,-26 99,-30 Q125,-46 127,-86 L127,-110 Q127,-118 119,-118 L111,-118 Q103,-118 102,-108 Q99,-88 87,-86 Z" transform="scale(1,0.7)" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+      <use href="#pn-head" transform="translate(-100,-58) rotate(-12) scale(0.95)"/>
+    </g>
   </defs>
   <rect width="800" height="450" fill="#fbfaf6"/>
   <rect x="0" y="360" width="800" height="90" fill="#efe9dc"/>
@@ -28,21 +29,22 @@
     <text x="560" y="70" font-size="18" fill="#4f4940" text-anchor="middle">天正16年（1588）、熊野の木の一件</text>
 
     <!-- 兄 -->
-    <use href="#st" x="150" y="110" width="160" height="267" color="#9b2d20"/>
-    <path d="M290,186 L398,222 L392,242 L284,214 Z" fill="#9b2d20" stroke="#23201c" stroke-width="2"/>
-    <circle cx="404" cy="233" r="9" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
-    <path d="M412,234 L432,238" stroke="#23201c" stroke-width="4" stroke-linecap="round"/>
+    <g transform="translate(220,372) scale(-1,1)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-44,-27 L-18,-17 M18,-17 L44,-27" stroke="#23201c" stroke-width="4" stroke-linecap="round"/><path d="M-20,-44 L-14,-100 Q2,-112 16,-98 L20,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,64 34,44" fill="none" stroke="#9b2d20" stroke-width="3"/><path d="M0,58 V62" stroke="#23201c" stroke-width="3"/><circle cx="0" cy="68" r="7" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><circle cx="0" cy="86" r="12" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><path d="M-7,76 Q0,79 7,76" fill="none" stroke="#9b2d20" stroke-width="2.5"/></g></g>
+    <!-- 弟を指す前足 -->
+    <path d="M318,318 L430,262" stroke="#23201c" stroke-width="24" stroke-linecap="round"/>
+    <path d="M318,318 L430,262" stroke="#fbfaf6" stroke-width="19" stroke-linecap="round"/>
+    <path d="M318,318 L330,312" stroke="#fbfaf6" stroke-width="22" stroke-linecap="butt"/>
     <g stroke="#9b2d20" stroke-width="4" fill="none" stroke-linecap="round">
-      <path d="M262,104 Q270,112 262,120"/>
-      <path d="M288,104 Q280,112 288,120"/>
-      <path d="M267,99 Q275,107 283,99"/>
-      <path d="M267,125 Q275,117 283,125"/>
-      <path d="M190,86 l10,-14 l10,14 l10,-14 l10,14 l10,-14 l10,14"/>
+      <path d="M352,164 Q360,172 352,180"/>
+      <path d="M378,164 Q370,172 378,180"/>
+      <path d="M357,159 Q365,167 373,159"/>
+      <path d="M357,185 Q365,177 373,185"/>
+      <path d="M140,180 l10,-14 l10,14 l10,-14 l10,14 l10,-14 l10,14"/>
     </g>
     <text x="230" y="412" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">兄・秀吉</text>
 
     <!-- 弟 -->
-    <use href="#bw" x="470" y="237" width="208" height="143" color="#2f5d7c"/>
+    <g transform="translate(574,380) scale(0.650,0.650)"><use href="#pn-fuse"/><g transform="translate(-100,-58) rotate(-12) scale(0.95)"><path d="M-42,-14 L-22,-21 M22,-21 L42,-14" stroke="#23201c" stroke-width="3.5" stroke-linecap="round"/><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
     <path d="M498,250 Q490,264 498,268 Q506,264 498,250 Z" fill="#7fa6c6"/>
     <path d="M486,266 Q480,276 486,279 Q492,276 486,266 Z" fill="#7fa6c6"/>
     <text x="575" y="412" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">弟・秀長</text>

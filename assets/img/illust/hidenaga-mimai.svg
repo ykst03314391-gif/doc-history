@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="病の弟を見舞う兄の想像図（行灯の灯る座敷で、布団に伏し額に手ぬぐいをのせた弟の猫の枕元に、烏帽子の兄の猫が座り、心配そうに弟の頭へ手を伸ばしている）">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="病の弟を見舞う兄の想像図（行灯の灯る座敷で、折烏帽子をかぶり首に小豆を下げて掛け布団にくるまり、額に手ぬぐいをのせて伏す四つ足の弟の猫（布団の端からしっぽが立つ）の枕元に、高い烏帽子をかぶり首に瓢箪を下げた四つ足の兄の猫が寄り、心配そうに前足を弟の頭へ伸ばしている）">
   <defs>
     <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
     <g id="pn-head">
@@ -30,28 +30,44 @@
   <ellipse cx="555" cy="334" rx="48" ry="12" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
   <g transform="translate(565,292) rotate(-14) scale(0.72)">
     <use href="#pn-head"/>
+    <!-- 低い折烏帽子（秀長の印。先を後ろへ折る） -->
+    <path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/>
+    <!-- 首に下げた小豆（大納言小豆。秀長の印） -->
+    <path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/>
     <!-- 額の手ぬぐい -->
     <rect x="-30" y="-50" width="60" height="18" rx="3" fill="#fff" stroke="#23201c" stroke-width="2.5"/>
     <path d="M-20,-50 V-32 M0,-50 V-32 M20,-50 V-32" stroke="#2f5d7c" stroke-width="2" opacity="0.6"/>
   </g>
   <path d="M623,262 q-6,10 0,14 q6,-4 0,-14 Z" fill="#cfe0ec" stroke="#2f5d7c" stroke-width="1.2"/>
+  <!-- 掛け布団の下の弟（基本形の四つ足。服は着せず、低い折烏帽子で見分ける。前足と、布団の端から立つしっぽ） -->
+  <path d="M760,304 Q766,286 764,274 Q764,264 772,264 L780,264 Q788,264 788,274 Q788,294 780,306 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
   <path d="M610,310 Q614,292 650,292 L766,298 Q788,300 788,322 L788,340 L606,340 Z" fill="#2f5d7c" fill-opacity="0.85" stroke="#23201c" stroke-width="2"/>
   <path d="M652,312 Q710,304 776,314" stroke="#23201c" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M640,312 L614,322" stroke="#23201c" stroke-width="17" stroke-linecap="round"/>
+  <path d="M640,312 L614,322" stroke="#fbfaf6" stroke-width="12" stroke-linecap="round"/>
+  <ellipse cx="604" cy="326" rx="12" ry="7" fill="#fbfaf6" stroke="#23201c" stroke-width="2"/>
 
-  <!-- 枕元の兄 -->
-  <path d="M196,262 L304,262 L334,340 L166,340 Z" fill="#9b2d20" stroke="#23201c" stroke-width="2"/>
-  <path d="M234,262 L250,292 L266,262" fill="#efe9dc" stroke="#23201c" stroke-width="1.5"/>
-  <path d="M292,280 L496,268" stroke="#23201c" stroke-width="26" stroke-linecap="round"/>
-  <path d="M292,280 L496,268" stroke="#9b2d20" stroke-width="22" stroke-linecap="round"/>
+  <!-- 枕元の兄（基本形の四つ足のぱぱねこ。服は着せず、高い立烏帽子で見分ける。前足を弟へ伸ばす） -->
+  <g transform="translate(477.2,21.6) scale(-0.8,0.8)">
+    <path d="M126,316 C114,350 124,378 158,380 L196,380 L198,398 L212,398 L214,382 L290,382 L292,398 L306,398 L308,382 L332,380 Q328,372 334,368 Q352,350 352,322 Q340,314 322,312 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M196,380 L198,398 L212,398 L214,382 M290,382 L292,398 L306,398 L308,382" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M334,320 Q340,300 338,290 Q338,280 346,280 L354,280 Q362,280 362,290 Q362,318 350,332 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+  <path d="M372,302 L496,268" stroke="#23201c" stroke-width="22" stroke-linecap="round"/>
+  <path d="M372,302 L496,268" stroke="#fbfaf6" stroke-width="17" stroke-linecap="round"/>
   <circle cx="506" cy="268" r="12" fill="#fbfaf6" stroke="#23201c" stroke-width="2"/>
-  <use href="#pn-head" x="250" y="215"/>
-  <!-- 心配の眉と烏帽子 -->
-  <path d="M208,201 L228,194 M272,194 L292,201" stroke="#23201c" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M232,170 L238,136 Q252,126 264,138 L268,170 Z" fill="#23201c"/>
+  <g transform="translate(330,234) scale(0.8)">
+    <use href="#pn-head"/>
+    <!-- 心配の眉と、高い立烏帽子（秀吉の印） -->
+    <path d="M-42,-14 L-22,-21 M22,-21 L42,-14" stroke="#23201c" stroke-width="3" stroke-linecap="round"/>
+    <path d="M-20,-44 L-14,-100 Q2,-112 16,-98 L20,-44 Z" fill="#23201c"/>
+    <!-- 首に下げた瓢箪（秀吉の印） -->
+    <path d="M-34,44 Q0,64 34,44" fill="none" stroke="#9b2d20" stroke-width="3"/><path d="M0,58 V62" stroke="#23201c" stroke-width="3"/><circle cx="0" cy="68" r="7" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><circle cx="0" cy="86" r="12" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><path d="M-7,76 Q0,79 7,76" fill="none" stroke="#9b2d20" stroke-width="2.5"/>
+  </g>
 
   <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" text-anchor="middle">
     <text x="195" y="70" font-size="18" fill="#4f4940">天正18年（1590）10月、郡山</text>
-    <text x="250" y="415" font-size="20" font-weight="700" fill="#9b2d20">兄・秀吉</text>
+    <text x="290" y="415" font-size="20" font-weight="700" fill="#9b2d20">兄・秀吉</text>
     <text x="640" y="415" font-size="20" font-weight="700" fill="#2f5d7c">弟・秀長</text>
   </g>
 </svg>

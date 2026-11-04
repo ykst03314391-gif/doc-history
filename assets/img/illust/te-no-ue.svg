@@ -1,46 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="大きな主人の手のひらの上に、小さな家臣が座っているイメージイラスト。手の上には城（領国）と与力の大名も載っている">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="大きな主人の手のひらの上に、小さな家臣が座っているイメージイラスト。手の上には城（領国）と与力の大名も載っている。人物はみな服を着ない四つ足の猫のキャラ（ぱぱねこ）で描き、秀吉は立烏帽子と首の瓢箪、秀長は折烏帽子と首の小豆で見分ける">
   <defs>
-    <symbol id="sz" viewBox="-70 -150 140 150" overflow="visible">
-      <path d="M-36,-52 L36,-52 L62,0 L-62,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
-      <path d="M-24,-100 L24,-100 L28,-50 L-28,-50 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
-      <path d="M-50,-100 L50,-100 L42,-88 L22,-88 L17,-52 L-17,-52 L-22,-88 L-42,-88 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
-      <path d="M-9,-100 L0,-82 L9,-100 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
-      <circle cx="0" cy="-121" r="19" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
-      <path d="M-18,-127 A19,19 0 0 1 18,-127 Q0,-119 -18,-127 Z" fill="#23201c"/>
-      <path d="M-3,-139 L-3,-148 L13,-145 L13,-141 Z" fill="#23201c"/>
-    </symbol>
+    <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
+    <g id="pn-head">
+      <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <circle cx="45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-78,10 C-80,-30 -50,-47 0,-47 C50,-47 80,-30 78,10 C78,40 50,52 0,52 C-50,52 -78,40 -78,10 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-40,-3 Q-28,-15 -16,-3 M16,-3 Q28,-15 40,-3" fill="none" stroke="#23201c" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/>
+      <path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" fill="none" stroke="#23201c" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-50,10 L-92,5 M-50,18 L-94,19 M-48,26 L-90,33 M50,10 L92,5 M50,18 L94,19 M48,26 L90,33" stroke="#23201c" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+    <!-- 基本形のぱぱねこ（四つ足・服なし。足もと中央 0,0、頭は左、しっぽは右） -->
+    <g id="pn-base">
+      <path d="M-109,-82 C-123,-48 -123,-8 -117,0 L-99,0 L-81,-18 L-39,-18 L-37,0 L-23,0 L-21,-16 L55,-16 L57,0 L71,0 L73,-16 L97,-18 Q93,-26 99,-30 Q125,-46 127,-86 L127,-110 Q127,-118 119,-118 L111,-118 Q103,-118 102,-108 Q99,-88 87,-86 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+      <use href="#pn-head" transform="translate(-51,-132) scale(0.95)"/>
+    </g>
   </defs>
   <rect width="800" height="450" fill="#fbfaf6"/>
 
   <!-- 大きな主人 -->
-  <rect x="60" y="225" width="190" height="240" fill="#efe9dc" stroke="#23201c" stroke-width="3"/>
-  <path d="M-10,235 L320,235 L292,275 L232,275 L222,460 L88,460 L78,275 L18,275 Z" fill="#9b2d20" stroke="#23201c" stroke-width="3"/>
-  <path d="M130,235 L155,290 L180,235 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="2"/>
-  <circle cx="155" cy="135" r="92" fill="#ecdcc2" stroke="#23201c" stroke-width="3"/>
-  <path d="M65,115 A92,92 0 0 1 245,115 Q155,150 65,115 Z" fill="#23201c"/>
-  <path d="M140,46 L140,24 L196,32 L196,42 Z" fill="#23201c"/>
-  <g stroke="#23201c" stroke-width="4" stroke-linecap="round" fill="none">
-    <path d="M150,158 q12,-8 24,0"/>
-    <path d="M200,158 q12,-8 24,0"/>
-    <path d="M178,198 q18,12 36,0"/>
-  </g>
+  <path d="M-20,460 Q-14,252 155,236 Q312,244 304,460 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="3"/>
+  <g transform="translate(155,150) scale(1.45)"><use href="#pn-head"/><path d="M-20,-44 L-14,-100 Q2,-112 16,-98 L20,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,64 34,44" fill="none" stroke="#9b2d20" stroke-width="3"/><path d="M0,58 V62" stroke="#23201c" stroke-width="3"/><circle cx="0" cy="68" r="7" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><circle cx="0" cy="86" r="12" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><path d="M-7,76 Q0,79 7,76" fill="none" stroke="#9b2d20" stroke-width="2.5"/></g>
 
   <!-- 腕と手 -->
-  <path d="M236,250 L392,300 L386,348 L230,300 Z" fill="#9b2d20" stroke="#23201c" stroke-width="3"/>
-  <ellipse cx="418" cy="290" rx="13" ry="32" transform="rotate(-35 418 290)" fill="#ecdcc2" stroke="#23201c" stroke-width="3"/>
-  <path d="M380,298 Q386,352 470,354 L642,347 Q684,344 690,322 Q694,302 674,302 L662,318 Q560,326 470,322 Q420,320 402,296 Z" fill="#ecdcc2" stroke="#23201c" stroke-width="3"/>
+  <path d="M236,262 L392,300 L386,348 L240,318 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="3"/>
+  <ellipse cx="418" cy="290" rx="13" ry="32" transform="rotate(-35 418 290)" fill="#fbfaf6" stroke="#23201c" stroke-width="3"/>
+  <path d="M380,298 Q386,352 470,354 L642,347 Q684,344 690,322 Q694,302 674,302 L662,318 Q560,326 470,322 Q420,320 402,296 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="3"/>
 
   <!-- 手の上 -->
   <path d="M410,322 L452,322 L446,304 L416,304 Z" fill="#b8ab95" stroke="#23201c" stroke-width="1.5"/>
   <rect x="419" y="286" width="24" height="18" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
   <path d="M412,288 L450,288 L442,276 L420,276 Z" fill="#4f4940"/>
   <path d="M422,276 L440,276 L434,265 L428,265 Z" fill="#4f4940"/>
-  <use href="#sz" x="495" y="247" width="70" height="75" color="#2f5d7c"/>
-  <use href="#sz" x="580" y="277" width="42" height="45" color="#a39a8c"/>
-  <use href="#sz" x="612" y="277" width="42" height="45" color="#a39a8c"/>
+  <g transform="translate(530,322) scale(0.305,0.305)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
+  <g transform="translate(601,322) scale(0.183,0.183)"><use href="#pn-base"/></g>
+  <g transform="translate(633,322) scale(0.183,0.183)"><use href="#pn-base"/></g>
 
   <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" fill="#23201c">
     <text x="600" y="78" font-size="24" font-weight="700" text-anchor="middle">みな兄から与えられたもの</text>
+    <text x="150" y="410" font-size="22" font-weight="700" fill="#9b2d20" text-anchor="middle">兄・秀吉</text>
     <g stroke="#4f4940" stroke-width="1.5">
       <path d="M431,212 V258"/>
       <path d="M530,170 V240"/>
