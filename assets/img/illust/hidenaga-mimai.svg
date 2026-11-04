@@ -1,47 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="病の弟を見舞う兄のイメージイラスト（行灯の灯る座敷で、布団に伏す弟の枕元に兄が座り、手を伸ばしている）">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="病の弟を見舞う兄の想像図（行灯の灯る座敷で、布団に伏し額に手ぬぐいをのせた弟の猫の枕元に、烏帽子の兄の猫が座り、心配そうに弟の頭へ手を伸ばしている）">
   <defs>
-    <symbol id="sz" viewBox="-70 -150 140 150" overflow="visible">
-      <path d="M-36,-52 L36,-52 L62,0 L-62,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
-      <path d="M-24,-100 L24,-100 L28,-50 L-28,-50 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
-      <path d="M-50,-100 L50,-100 L42,-88 L22,-88 L17,-52 L-17,-52 L-22,-88 L-42,-88 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
-      <path d="M-9,-100 L0,-82 L9,-100 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
-      <circle cx="0" cy="-121" r="19" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
-      <path d="M-18,-127 A19,19 0 0 1 18,-127 Q0,-119 -18,-127 Z" fill="#23201c"/>
-      <path d="M-3,-139 L-3,-148 L13,-145 L13,-141 Z" fill="#23201c"/>
-    </symbol>
+    <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
+    <g id="pn-head">
+      <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <circle cx="45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-78,10 C-80,-30 -50,-47 0,-47 C50,-47 80,-30 78,10 C78,40 50,52 0,52 C-50,52 -78,40 -78,10 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-40,-3 Q-28,-15 -16,-3 M16,-3 Q28,-15 40,-3" fill="none" stroke="#23201c" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/>
+      <path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" fill="none" stroke="#23201c" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-50,10 L-92,5 M-50,18 L-94,19 M-48,26 L-90,33 M50,10 L92,5 M50,18 L94,19 M48,26 L90,33" stroke="#23201c" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
   </defs>
   <rect width="800" height="450" fill="#fbfaf6"/>
   <rect x="0" y="340" width="800" height="110" fill="#efe9dc"/>
   <path d="M0,340 H800 M200,340 L170,450 M600,340 L630,450" stroke="#d9d2c5" stroke-width="2"/>
 
   <!-- 障子と月 -->
-  <rect x="560" y="70" width="190" height="230" fill="#f4f1ea" stroke="#8a7a62" stroke-width="3"/>
-  <circle cx="680" cy="125" r="26" fill="#efe2b8"/>
-  <path d="M607,70 V300 M655,70 V300 M703,70 V300 M560,116 H750 M560,162 H750 M560,208 H750 M560,254 H750" stroke="#b8ab95" stroke-width="2"/>
+  <rect x="380" y="60" width="190" height="170" fill="#f4f1ea" stroke="#8a7a62" stroke-width="3"/>
+  <circle cx="500" cy="110" r="26" fill="#efe2b8"/>
+  <path d="M427,60 V230 M475,60 V230 M523,60 V230 M380,103 H570 M380,146 H570 M380,189 H570" stroke="#b8ab95" stroke-width="2"/>
 
   <!-- 行灯 -->
-  <circle cx="100" cy="270" r="70" fill="#f6dfb0" opacity="0.5"/>
-  <rect x="76" y="232" width="48" height="76" fill="#f6dfb0" stroke="#6b5a46" stroke-width="2"/>
-  <path d="M76,232 H124 M100,232 V308" stroke="#6b5a46" stroke-width="1.5"/>
-  <path d="M80,308 L76,350 M120,308 L124,350" stroke="#6b5a46" stroke-width="3"/>
+  <circle cx="90" cy="270" r="70" fill="#f6dfb0" opacity="0.5"/>
+  <rect x="66" y="232" width="48" height="76" fill="#f6dfb0" stroke="#6b5a46" stroke-width="2"/>
+  <path d="M66,232 H114 M90,232 V308" stroke="#6b5a46" stroke-width="1.5"/>
+  <path d="M70,308 L66,350 M110,308 L114,350" stroke="#6b5a46" stroke-width="3"/>
 
   <!-- 布団の弟 -->
-  <rect x="370" y="334" width="330" height="36" rx="8" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
-  <ellipse cx="404" cy="330" rx="26" ry="11" fill="#fbfaf6" stroke="#23201c" stroke-width="1.5"/>
-  <circle cx="410" cy="312" r="19" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
-  <path d="M396,300 A19,19 0 0 0 393,322 Q404,310 396,300 Z" fill="#23201c"/>
-  <path d="M392,306 L380,300 L382,295 L394,301 Z" fill="#23201c"/>
-  <path d="M428,316 Q432,296 470,296 L668,300 Q690,302 690,324 L690,338 L426,338 Z" fill="#2f5d7c" fill-opacity="0.85" stroke="#23201c" stroke-width="2"/>
-  <path d="M470,312 Q560,306 670,314" stroke="#23201c" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <ellipse cx="555" cy="334" rx="48" ry="12" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+  <g transform="translate(565,292) rotate(-14) scale(0.72)">
+    <use href="#pn-head"/>
+    <!-- 額の手ぬぐい -->
+    <rect x="-30" y="-50" width="60" height="18" rx="3" fill="#fff" stroke="#23201c" stroke-width="2.5"/>
+    <path d="M-20,-50 V-32 M0,-50 V-32 M20,-50 V-32" stroke="#2f5d7c" stroke-width="2" opacity="0.6"/>
+  </g>
+  <path d="M623,262 q-6,10 0,14 q6,-4 0,-14 Z" fill="#cfe0ec" stroke="#2f5d7c" stroke-width="1.2"/>
+  <path d="M610,310 Q614,292 650,292 L766,298 Q788,300 788,322 L788,340 L606,340 Z" fill="#2f5d7c" fill-opacity="0.85" stroke="#23201c" stroke-width="2"/>
+  <path d="M652,312 Q710,304 776,314" stroke="#23201c" stroke-width="1.5" fill="none" opacity="0.5"/>
 
   <!-- 枕元の兄 -->
-  <use href="#sz" x="176" y="200" width="168" height="180" color="#9b2d20"/>
-  <path d="M314,262 L364,288 L356,304 L306,282 Z" fill="#9b2d20" stroke="#23201c" stroke-width="2"/>
-  <circle cx="366" cy="298" r="9" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+  <path d="M196,262 L304,262 L334,340 L166,340 Z" fill="#9b2d20" stroke="#23201c" stroke-width="2"/>
+  <path d="M234,262 L250,292 L266,262" fill="#efe9dc" stroke="#23201c" stroke-width="1.5"/>
+  <path d="M292,280 L496,268" stroke="#23201c" stroke-width="26" stroke-linecap="round"/>
+  <path d="M292,280 L496,268" stroke="#9b2d20" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="506" cy="268" r="12" fill="#fbfaf6" stroke="#23201c" stroke-width="2"/>
+  <use href="#pn-head" x="250" y="215"/>
+  <!-- 心配の眉と烏帽子 -->
+  <path d="M208,201 L228,194 M272,194 L292,201" stroke="#23201c" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M232,170 L238,136 Q252,126 264,138 L268,170 Z" fill="#23201c"/>
 
   <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" text-anchor="middle">
-    <text x="330" y="70" font-size="18" fill="#4f4940">天正18年（1590）10月、郡山</text>
-    <text x="260" y="415" font-size="20" font-weight="700" fill="#9b2d20">兄・秀吉</text>
-    <text x="540" y="415" font-size="20" font-weight="700" fill="#2f5d7c">弟・秀長</text>
+    <text x="195" y="70" font-size="18" fill="#4f4940">天正18年（1590）10月、郡山</text>
+    <text x="250" y="415" font-size="20" font-weight="700" fill="#9b2d20">兄・秀吉</text>
+    <text x="640" y="415" font-size="20" font-weight="700" fill="#2f5d7c">弟・秀長</text>
   </g>
 </svg>
