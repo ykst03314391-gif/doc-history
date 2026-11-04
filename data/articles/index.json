@@ -244,19 +244,6 @@
       "references": []
     },
     {
-      "id": "sengoku-scandals",
-      "title": "人としてやばい戦国武将のエピソード ― その「不祥事」は誰が書き残したのか",
-      "category": "考察",
-      "summary": "留守中に出歩いた女房衆の成敗、金で塗った敵将の首を肴にした正月の宴、甥の妻子の処刑、牛裂き、大仏殿、殺生関白。戦国武将のやばい話を七つ集め、主君の身内・敵や世間・後の時代のどれが書いたかで分けると、盛られた話と、淡々と書かれたぶん本当に怖い話が見えてくる。",
-      "image": {"src": "assets/img/portraits/toyotomi-hidetsugu.jpg", "caption": "豊臣秀次像（瑞泉寺蔵、部分。17世紀前半の作とされ、秀次の死から数十年後のもの）※参考イメージ", "credit": "Wikimedia Commons", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyotomi_Hidetsugu-cropped.jpg", "license": "パブリックドメイン"},
-      "date": "2026-11-02",
-      "author": "管理人",
-      "relatedPeople": ["oda-nobunaga", "araki-murashige", "toyotomi-hideyoshi", "toyotomi-hidetsugu", "saito-dosan", "tokugawa-ieyasu"],
-      "relatedBattles": ["arioka-siege"],
-      "tags": ["織田信長", "豊臣秀次", "斎藤道三", "松永久秀", "荒木村重", "逸話", "信長公記", "多聞院日記", "考察"],
-      "references": []
-    },
-    {
       "id": "sengoku-news",
       "title": "新聞もスマホもない時代、ニュースはどう届いたのか ― 本能寺の変の知らせを追う",
       "category": "考察",
@@ -267,6 +254,19 @@
       "relatedPeople": ["oda-nobunaga", "toyotomi-hideyoshi", "akechi-mitsuhide", "tsutsui-junkei", "hosokawa-fujitaka", "tokugawa-ieyasu", "shibata-katsuie", "saito-dosan"],
       "relatedBattles": ["honnoji-no-hen", "yamazaki"],
       "tags": ["情報伝達", "本能寺の変", "多聞院日記", "噂", "飛脚", "考察"],
+      "references": []
+    },
+    {
+      "id": "sengoku-scandals",
+      "title": "人としてやばい戦国武将のエピソード ― その「不祥事」は誰が書き残したのか",
+      "category": "考察",
+      "summary": "留守中に出歩いた女房衆の成敗、金で塗った敵将の首を肴にした正月の宴、甥の妻子の処刑、牛裂き、大仏殿、殺生関白。戦国武将のやばい話を七つ集め、主君の身内・敵や世間・後の時代のどれが書いたかで分けると、盛られた話と、淡々と書かれたぶん本当に怖い話が見えてくる。",
+      "image": {"src": "assets/img/portraits/toyotomi-hidetsugu.jpg", "caption": "豊臣秀次像（瑞泉寺蔵、部分。17世紀前半の作とされ、秀次の死から数十年後のもの）※参考イメージ", "credit": "Wikimedia Commons", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyotomi_Hidetsugu-cropped.jpg", "license": "パブリックドメイン"},
+      "date": "2026-11-02",
+      "author": "管理人",
+      "relatedPeople": ["oda-nobunaga", "araki-murashige", "toyotomi-hideyoshi", "toyotomi-hidetsugu", "saito-dosan", "tokugawa-ieyasu"],
+      "relatedBattles": ["arioka-siege"],
+      "tags": ["織田信長", "豊臣秀次", "斎藤道三", "松永久秀", "荒木村重", "逸話", "信長公記", "多聞院日記", "考察"],
       "references": []
     }
   ]
