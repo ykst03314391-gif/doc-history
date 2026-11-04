@@ -724,44 +724,21 @@ html { scroll-behavior: smooth; }
 .article-body .lead-answer p { margin: 0 0 8px; }
 .article-body .lead-answer p:last-child { margin-bottom: 0; }
 .lead-answer-label { display: block; margin-bottom: 6px; font-size: 0.85rem; font-weight: 700; color: var(--accent); letter-spacing: 0.05em; }
-/* ぱぱねこ（管理人）の見立て：史料から言えることと分けて、筆者の意見を顔付きの吹き出しで示す */
+/* ぱぱねこ（管理人）の見立て：史料から言えることと分けて、筆者の意見を顔付きの札の囲みで示す */
+/* 枠・地・朱の左罫・札は論点の結論（.sec-conclusion）とそろえる。段落が続くので文字は本文の太さのまま */
 .article-body .my-view {
-  position: relative;
-  margin: 22px 0 24px 84px;
-  padding: 12px 18px;
-  background: var(--bg-panel);
-  border: 1px solid var(--ink-soft);
-  border-radius: 12px;
+  max-width: 40em; /* 本文の段落・結論の囲みと同じ幅にし、1行を長くしすぎない */
+  margin: 26px 0 24px;
+  padding: 14px 22px 16px;
+  background: #f3eee3;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
 }
-.article-body .my-view::before {
-  content: "";
-  position: absolute;
-  left: -8px;
-  top: 24px;
-  width: 14px;
-  height: 14px;
-  background: var(--bg-panel);
-  border-left: 1px solid var(--ink-soft);
-  border-bottom: 1px solid var(--ink-soft);
-  transform: rotate(45deg);
-}
-.article-body .my-view .my-view-face {
-  position: absolute;
-  left: -84px;
-  top: 4px;
-  width: 70px;
-  height: auto;
-  margin: 0;
-}
-.my-view-label { display: block; margin-bottom: 4px; font-size: 0.85rem; font-weight: 700; color: var(--ink-soft); letter-spacing: 0.05em; }
-.article-body .my-view p { margin: 0 0 8px; }
+.my-view-label { display: block; margin-bottom: 6px; font-size: 0.8rem; color: var(--accent); letter-spacing: 0.05em; }
+.article-body .my-view p { margin: 0 0 14px; }
 .article-body .my-view p:last-child { margin-bottom: 0; }
-@media (max-width: 600px) {
-  .article-body .my-view { margin-left: 56px; padding: 10px 14px; }
-  .article-body .my-view .my-view-face { left: -56px; width: 46px; }
-}
 /* 答え・結論の札にもぱぱねこの顔（顔が付いているところ＝管理人の判断） */
-.lead-answer-label::before, .sec-conclusion-label::before {
+.lead-answer-label::before, .sec-conclusion-label::before, .my-view-label::before {
   content: "";
   display: inline-block;
   width: 30px;

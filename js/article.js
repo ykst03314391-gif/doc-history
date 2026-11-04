@@ -120,7 +120,7 @@
       .replace(/==([^=\n]+)==/g, (m, t) => `<mark>${t}</mark>`)
       // 筆者（ぱぱねこ＝管理人）の意見の囲み。<div class="my-view"> と </div> を空行で挟んで書く（中は Markdown のまま）
       .replace(/<div class="my-view">/g,
-        `<div class="my-view"><img class="my-view-face" src="assets/img/chara/papaneko-face.svg" alt="ぱぱねこ"><span class="my-view-label">ぱぱねこの見立て</span>`);
+        `<div class="my-view"><span class="my-view-label">ぱぱねこの見立て</span>`);
     const bodyHTML =
       typeof marked !== "undefined"
         ? marked.parse(quoted)
