@@ -1100,6 +1100,10 @@ footer.site-footer {
 /* 記事末の漫画（1・2・4コマ。四コマは縦長なので幅を絞る） */
 .article-figure--manga { margin-top: 28px; }
 .article-figure--manga img { max-width: min(100%, 420px); }
+/* 漫画を2本並べるとき（article.js が .manga-row で包む）。狭い画面では縦に積む */
+.manga-row { display: flex; gap: 20px; align-items: flex-start; margin-top: 28px; }
+.manga-row .article-figure--manga { flex: 1 1 0; min-width: 0; margin: 0; }
+@media (max-width: 600px) { .manga-row { flex-direction: column; } }
 .manga-head { font-weight: 700; font-size: 0.95rem; margin-bottom: 8px; }
 .manga-label {
   display: inline-block;

@@ -111,6 +111,9 @@
     // ==…== は論拠の要を示すマーカー（太字 **…** は筆者の主張）
     const quoted = md
       .replace(imgRe, (m, kind, rid, cap) => `\n${figureHTML(kind + ":" + rid, (cap || "").trim())}\n`)
+      // 漫画が続けて2本以上あるときは、1つの枠に入れて横に並べる（狭い画面では縦に積む）
+      .replace(/(?:<figure class="article-figure article-figure--manga">[\s\S]*?<\/figure>\s*){2,}/g,
+        (m) => `\n<div class="manga-row">${m.trim().replace(/<\/figure>\s+<figure/g, "</figure><figure")}</div>\n\n`)
       .replace(/\{\{([^{}]*)\}\}/g, (m, q) => `<span class="quote">「${q}」</span>`)
       .replace(/==([^=\n]+)==/g, (m, t) => `<mark>${t}</mark>`);
     const bodyHTML =
