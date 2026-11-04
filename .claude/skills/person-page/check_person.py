@@ -127,6 +127,12 @@ def check(pid):
     elif mentions:
         warns.append(f"本文の「要確認」{mentions} か所 ／ toVerify {tv} 項目（数は一致しなくてよい。対応は目で確かめる）")
 
+    # 分量の上限（SKILL.md の「分量の上限」）
+    limits = {"timeline": 30, "family": 15, "retainers": 15, "reputation": 15, "spots": 15, "sources": 50, "toVerify": 30}
+    for k, n in limits.items():
+        if len(p.get(k, []) or []) > n:
+            warns.append(f"{k} が {len(p[k])} 件で、上限 {n} を超えている")
+
     # 概要ページ（脇役）に詳細を書いていないか
     if not detailed:
         extra = [k for k in ("timeline", "family", "episodes", "sources", "lens") if k in p]
