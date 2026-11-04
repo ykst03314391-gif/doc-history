@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="幼子を抱く当主と、少し離れて控える大人の身内のイメージイラスト">
+  <defs>
+    <symbol id="sz" viewBox="-70 -150 140 150" overflow="visible">
+      <path d="M-36,-52 L36,-52 L62,0 L-62,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M-24,-100 L24,-100 L28,-50 L-28,-50 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-50,-100 L50,-100 L42,-88 L22,-88 L17,-52 L-17,-52 L-22,-88 L-42,-88 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-100 L0,-82 L9,-100 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-121" r="19" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-18,-127 A19,19 0 0 1 18,-127 Q0,-119 -18,-127 Z" fill="#23201c"/>
+      <path d="M-3,-139 L-3,-148 L13,-145 L13,-141 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <rect x="0" y="340" width="800" height="110" fill="#efe9dc"/>
+  <path d="M0,340 H800 M200,340 L170,450 M600,340 L630,450" stroke="#d9d2c5" stroke-width="2"/>
+  <rect x="120" y="90" width="280" height="210" fill="#efe2b8" stroke="#b08d33" stroke-width="2"/>
+  <rect x="100" y="300" width="320" height="42" fill="#d9cfbf" stroke="#8a7a62" stroke-width="2"/>
+  <use href="#sz" x="162" y="100" width="196" height="210" color="#9b2d20"/>
+  <ellipse cx="262" cy="240" rx="34" ry="22" fill="#fbfaf6" stroke="#23201c" stroke-width="2"/>
+  <circle cx="240" cy="236" r="12" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
+  <rect x="470" y="330" width="260" height="20" fill="#000" opacity="0.08"/>
+  <use href="#sz" x="530" y="200" width="150" height="160" color="#2f5d7c"/>
+  <text x="260" y="390" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">実の子を抱く当主</text>
+  <text x="605" y="395" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">跡を継ぐはずだった大人</text>
+</svg>

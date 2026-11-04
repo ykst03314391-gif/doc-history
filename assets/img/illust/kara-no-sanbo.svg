@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="何ものっていない三方の前で、疲れてうなだれる人物のイメージイラスト">
+  <defs>
+    <symbol id="bw" viewBox="-80 -110 160 110" overflow="visible">
+      <path d="M-30,-40 L50,-40 L62,0 L-50,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M12,-38 L44,-44 L4,-86 L-34,-74 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-34,-60 L-62,-8 L-44,-6 L-20,-52 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <rect x="-70" y="-10" width="20" height="7" rx="3" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="-48" cy="-72" r="17" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-34,-84 A17,17 0 0 1 -36,-58 Q-44,-72 -34,-84 Z" fill="#23201c"/>
+      <path d="M-30,-80 L-24,-90 L-20,-86 L-26,-76 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <rect x="0" y="340" width="800" height="110" fill="#efe9dc"/>
+  <path d="M0,340 H800 M200,340 L170,450 M600,340 L630,450" stroke="#d9d2c5" stroke-width="2"/>
+  <path d="M300,250 H500 L486,270 H314 Z" fill="#e6d6b0" stroke="#23201c" stroke-width="2"/>
+  <path d="M330,270 H470 L460,340 H340 Z" fill="#d9c49a" stroke="#23201c" stroke-width="2"/>
+  <circle cx="400" cy="305" r="14" fill="#fbfaf6" stroke="#23201c" stroke-width="1.5"/>
+  <use href="#bw" x="520" y="260" width="170" height="116" color="#8a7a62"/>
+  <path d="M560,240 q6,-10 12,0 M590,232 q6,-10 12,0" stroke="#4f4940" stroke-width="2" fill="none"/>
+  <text x="400" y="220" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="24" font-weight="700" fill="#9b2d20" text-anchor="middle">恩賞の地は、ない</text>
+  <text x="605" y="410" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="18" font-weight="400" fill="#4f4940" text-anchor="middle">朝鮮から帰った大名</text>
+</svg>

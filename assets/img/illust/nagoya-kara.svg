@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="名護屋の丘から海を望む人物の後ろ姿と、沖へ向かう多くの船のイメージイラスト">
+  <defs>
+    <symbol id="sb" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L30,-92 L-30,-92 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <circle cx="0" cy="-162" r="20" fill="#23201c"/>
+      <path d="M-4,-182 L-4,-192 L4,-192 L4,-182 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <rect x="0" y="170" width="800" height="280" fill="#dfe4e0"/>
+  <path d="M0,170 H800" stroke="#b8ab95" stroke-width="2"/>
+  <path d="M520,175 Q560,160 600,175 Z M640,172 Q670,162 700,172 Z" fill="#c9bfa9"/>
+  <g fill="#8a7a62" stroke="#23201c" stroke-width="1">
+    <path d="M300,240 h40 l-6,8 h-28 Z"/><path d="M318,240 V222 h12 Z" fill="#efe9dc"/>
+    <path d="M420,215 h30 l-5,6 h-20 Z"/><path d="M434,215 V200 h10 Z" fill="#efe9dc"/>
+    <path d="M520,200 h22 l-4,5 h-14 Z"/><path d="M530,200 V190 h8 Z" fill="#efe9dc"/>
+    <path d="M230,280 h50 l-8,10 h-34 Z"/><path d="M252,280 V256 h16 Z" fill="#efe9dc"/>
+    <path d="M610,190 h16 l-3,4 h-10 Z"/>
+  </g>
+  <path d="M0,450 L0,330 Q120,300 260,330 Q330,350 360,450 Z" fill="#c9bfa9" stroke="#8a7a62" stroke-width="2"/>
+  <path d="M30,300 H200 V340 H30 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2"/>
+  <path d="M30,312 H200 M30,328 H200" stroke="#d9d2c5" stroke-width="2"/>
+  <use href="#sb" x="210" y="300" width="72" height="120" color="#9b2d20"/>
+  <text x="560" y="80" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="22" font-weight="700" fill="#4f4940" text-anchor="middle">天正20年　名護屋</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="秀長の死を日記に書き留める僧のイメージイラスト（灯の下で文机に向かう僧と、窓の外の遠い城）">
+  <defs>
+    <symbol id="mk" viewBox="-70 -150 140 150" overflow="visible">
+      <path d="M-40,-96 L40,-96 L62,0 L-62,0 Z" fill="currentColor" fill-opacity="0.85" stroke="#23201c" stroke-width="2"/>
+      <path d="M-40,-96 L30,-30" stroke="#efe2b8" stroke-width="6"/>
+      <path d="M-9,-96 L0,-80 L9,-96 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-117" r="19" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <rect x="0" y="340" width="800" height="110" fill="#efe9dc"/>
+  <path d="M0,340 H800 M200,340 L170,450 M600,340 L630,450" stroke="#d9d2c5" stroke-width="2"/>
+  <rect x="470" y="60" width="260" height="210" fill="#f4f1ea" stroke="#8a7a62" stroke-width="3"/>
+  <path d="M470,200 Q540,150 600,180 Q660,140 730,170 V270 H470 Z" fill="#d9d2c5"/>
+  <path d="M575,170 h40 v-14 h-8 v-12 h-24 v12 h-8 Z" fill="#8a7a62"/>
+  <path d="M570,156 L620,156 L610,146 L580,146 Z" fill="#6b5a46"/>
+  <path d="M557,60 V270 M643,60 V270" stroke="#b8ab95" stroke-width="2"/>
+  <circle cx="110" cy="270" r="72" fill="#f6dfb0" opacity="0.5"/>
+  <rect x="86" y="232" width="48" height="76" fill="#f6dfb0" stroke="#6b5a46" stroke-width="2"/>
+  <path d="M90,308 L86,350 M130,308 L134,350" stroke="#6b5a46" stroke-width="3"/>
+  <rect x="190" y="300" width="230" height="20" fill="#8a7a62" stroke="#23201c" stroke-width="2"/>
+  <path d="M200,320 V352 M410,320 V352" stroke="#23201c" stroke-width="4"/>
+  <rect x="240" y="288" width="120" height="14" fill="#fbfaf6" stroke="#23201c" stroke-width="1.5"/>
+  <use href="#mk" x="230" y="210" width="140" height="150" color="#4f4940"/>
+  <path d="M318,262 L344,292" stroke="#23201c" stroke-width="3"/>
+  <text x="600" y="300" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="18" font-weight="400" fill="#4f4940" text-anchor="middle">郡山</text>
+  <text x="300" y="395" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">多聞院英俊</text>
+  <text x="600" y="40" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="22" font-weight="400" fill="#9b2d20" text-anchor="middle">国之樣如何可成行哉</text>
+</svg>

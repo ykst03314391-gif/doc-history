@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="海の向こうの交渉と、兄のもとに届く話とがずれているイメージイラスト">
+  <defs>
+    <symbol id="sz" viewBox="-70 -150 140 150" overflow="visible">
+      <path d="M-36,-52 L36,-52 L62,0 L-62,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M-24,-100 L24,-100 L28,-50 L-28,-50 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-50,-100 L50,-100 L42,-88 L22,-88 L17,-52 L-17,-52 L-22,-88 L-42,-88 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-100 L0,-82 L9,-100 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-121" r="19" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-18,-127 A19,19 0 0 1 18,-127 Q0,-119 -18,-127 Z" fill="#23201c"/>
+      <path d="M-3,-139 L-3,-148 L13,-145 L13,-141 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <rect x="0" y="0" width="330" height="450" fill="#dfe4e0"/>
+  <path d="M330,0 Q350,120 330,225 Q310,330 330,450" stroke="#b8ab95" stroke-width="3" fill="none"/>
+  <rect x="90" y="270" width="150" height="16" fill="#8a7a62" stroke="#23201c" stroke-width="2"/>
+  <use href="#sz" x="40" y="200" width="100" height="108" color="#8a6d1f"/>
+  <use href="#sz" x="190" y="200" width="100" height="108" color="#4f4940"/>
+  <text x="165" y="360" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">海の向こうの交渉</text>
+  <text x="165" y="390" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="18" font-weight="400" fill="#4f4940" text-anchor="middle">（実情）</text>
+  <rect x="520" y="110" width="230" height="200" fill="#efe2b8" stroke="#b08d33" stroke-width="2"/>
+  <use href="#sz" x="545" y="130" width="180" height="190" color="#9b2d20"/>
+  <text x="635" y="360" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">兄のもとに届く話</text>
+  <path d="M260,200 Q400,120 500,170" stroke="#4f4940" stroke-width="3" fill="none" stroke-dasharray="8 7"/>
+  <path d="M500,170 l-16,-2 l8,12 Z" fill="#4f4940"/>
+  <text x="400" y="130" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="40" font-weight="700" fill="#9b2d20" text-anchor="middle">？</text>
+  <text x="420" y="420" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="18" font-weight="400" fill="#4f4940" text-anchor="middle">朝鮮の半分は手に入った（という噂）</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="高野山へ向かう人物の後ろ姿のイメージイラスト（杉木立の山道を登っていく）">
+  <defs>
+    <symbol id="sb" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L30,-92 L-30,-92 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <circle cx="0" cy="-162" r="20" fill="#23201c"/>
+      <path d="M-4,-182 L-4,-192 L4,-192 L4,-182 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <path d="M0,260 Q160,120 330,210 Q470,90 640,180 Q720,140 800,170 V450 H0 Z" fill="#d9d2c5"/>
+  <path d="M0,330 Q200,250 400,300 Q600,240 800,290 V450 H0 Z" fill="#c9bfa9"/>
+  <path d="M420,450 Q440,380 400,330 Q370,290 420,250" fill="none" stroke="#efe9dc" stroke-width="34"/>
+  <g fill="#6b7a5a" stroke="#23201c" stroke-width="1.5">
+    <path d="M120,360 L150,200 L180,360 Z"/><path d="M200,380 L232,220 L264,380 Z"/>
+    <path d="M560,370 L592,210 L624,370 Z"/><path d="M640,390 L672,240 L704,390 Z"/>
+    <path d="M300,330 L320,230 L340,330 Z"/><path d="M500,310 L518,220 L536,310 Z"/>
+  </g>
+  <use href="#sb" x="385" y="300" width="60" height="100" color="#efe9dc"/>
+  <text x="660" y="70" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="24" font-weight="700" fill="#4f4940" text-anchor="middle">高野山へ</text>
+</svg>

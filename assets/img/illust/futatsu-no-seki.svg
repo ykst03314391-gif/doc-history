@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="空いた二つの席のイメージイラスト（畳の上に誰も座っていない座布団が二つ並ぶ）">
+  <defs>
+    
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <rect x="0" y="340" width="800" height="110" fill="#efe9dc"/>
+  <path d="M0,340 H800 M200,340 L170,450 M600,340 L630,450" stroke="#d9d2c5" stroke-width="2"/>
+  <rect x="300" y="70" width="200" height="200" fill="#f4f1ea" stroke="#8a7a62" stroke-width="2"/>
+  <path d="M400,90 Q370,150 400,250" stroke="#23201c" stroke-width="3" fill="none"/>
+  <rect x="150" y="310" width="170" height="44" rx="8" fill="#c66b5f" fill-opacity="0.5" stroke="#23201c" stroke-width="2"/>
+  <rect x="480" y="310" width="170" height="44" rx="8" fill="#7fa6c6" fill-opacity="0.5" stroke="#23201c" stroke-width="2"/>
+  <path d="M215,300 Q235,282 255,300 Z" fill="#6b5a46" stroke="#23201c" stroke-width="2"/>
+  <text x="235" y="395" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">内々の儀は宗易</text>
+  <text x="565" y="395" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">公儀の事は宰相</text>
+  <text x="400" y="435" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="18" font-weight="400" fill="#4f4940" text-anchor="middle">二人の死を結ぶ同時代の記録は、見当たらない</text>
+</svg>

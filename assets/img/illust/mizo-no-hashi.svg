@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="溝に架かる板の上に立つ人物と、溝の両側に分かれた二つの集団のイメージイラスト">
+  <defs>
+    <symbol id="st" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M0,-70 V0" stroke="#23201c" stroke-width="1.5"/>
+      <path d="M-26,-140 L26,-140 L30,-90 L-30,-90 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L24,-128 L18,-92 L-18,-92 L-24,-128 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-140 L0,-120 L9,-140 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-162" r="20" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-19,-168 A20,20 0 0 1 19,-168 Q0,-160 -19,-168 Z" fill="#23201c"/>
+      <path d="M-3,-180 L-3,-190 L14,-187 L14,-183 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <rect x="0" y="300" width="800" height="150" fill="#efe9dc"/>
+  <path d="M330,300 L360,450 H440 L470,300 Z" fill="#8a7a62"/>
+  <path d="M330,300 L360,450 M470,300 L440,450" stroke="#23201c" stroke-width="2"/>
+  <rect x="300" y="292" width="200" height="14" fill="#c9a86a" stroke="#23201c" stroke-width="2"/>
+  <use href="#st" x="362" y="132" width="76" height="160" color="#2f5d7c"/>
+  <use href="#st" x="60" y="170" width="70" height="130" color="#8a6d1f"/><use href="#st" x="130" y="160" width="70" height="140" color="#8a6d1f"/><use href="#st" x="200" y="175" width="70" height="125" color="#8a6d1f"/>
+  <use href="#st" x="530" y="175" width="70" height="125" color="#4f4940"/><use href="#st" x="600" y="160" width="70" height="140" color="#4f4940"/><use href="#st" x="670" y="170" width="70" height="130" color="#4f4940"/>
+  <text x="165" y="350" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">現地で戦う大名</text>
+  <text x="635" y="350" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">秀吉の目と耳の奉行</text>
+  <text x="400" y="110" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="20" font-weight="700" fill="#2f5d7c" text-anchor="middle">つなぐ役</text>
+</svg>

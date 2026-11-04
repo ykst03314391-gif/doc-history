@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="切れた糸のイメージイラスト（上の兄から一つの結び目を通って大名と奉行へ延びる糸が、結び目のところで切れている）">
+  <defs>
+    <symbol id="sz" viewBox="-70 -150 140 150" overflow="visible">
+      <path d="M-36,-52 L36,-52 L62,0 L-62,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M-24,-100 L24,-100 L28,-50 L-28,-50 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-50,-100 L50,-100 L42,-88 L22,-88 L17,-52 L-17,-52 L-22,-88 L-42,-88 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-100 L0,-82 L9,-100 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-121" r="19" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-18,-127 A19,19 0 0 1 18,-127 Q0,-119 -18,-127 Z" fill="#23201c"/>
+      <path d="M-3,-139 L-3,-148 L13,-145 L13,-141 Z" fill="#23201c"/>
+    </symbol>
+    <symbol id="st" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M0,-70 V0" stroke="#23201c" stroke-width="1.5"/>
+      <path d="M-26,-140 L26,-140 L30,-90 L-30,-90 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L24,-128 L18,-92 L-18,-92 L-24,-128 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-140 L0,-120 L9,-140 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-162" r="20" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-19,-168 A20,20 0 0 1 19,-168 Q0,-160 -19,-168 Z" fill="#23201c"/>
+      <path d="M-3,-180 L-3,-190 L14,-187 L14,-183 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <use href="#sz" x="330" y="20" width="140" height="150" color="#9b2d20"/>
+  <text x="400" y="195" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="18" font-weight="700" fill="#23201c" text-anchor="middle">秀吉</text>
+  <path d="M400,200 V250" stroke="#9b2d20" stroke-width="3"/>
+  <circle cx="400" cy="270" r="22" fill="#fbfaf6" stroke="#2f5d7c" stroke-width="3" stroke-dasharray="6 5"/>
+  <text x="400" y="277" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="16" font-weight="700" fill="#2f5d7c" text-anchor="middle">秀長</text>
+  <path d="M385,288 L200,350 M415,288 L600,350" stroke="#9b2d20" stroke-width="3" stroke-dasharray="10 8"/>
+  <path d="M385,250 L415,292 M415,250 L385,292" stroke="#9b2d20" stroke-width="2" opacity="0.6"/>
+  <use href="#st" x="130" y="340" width="50" height="84" color="#8a6d1f"/><use href="#st" x="180" y="340" width="50" height="84" color="#8a6d1f"/><use href="#st" x="230" y="340" width="50" height="84" color="#8a6d1f"/>
+  <use href="#st" x="520" y="340" width="50" height="84" color="#4f4940"/><use href="#st" x="570" y="340" width="50" height="84" color="#4f4940"/><use href="#st" x="620" y="340" width="50" height="84" color="#4f4940"/>
+  <text x="205" y="444" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="18" font-weight="700" fill="#23201c" text-anchor="middle">大名</text>
+  <text x="595" y="444" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="18" font-weight="700" fill="#23201c" text-anchor="middle">奉行</text>
+  <text x="640" y="260" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="18" font-weight="400" fill="#4f4940" text-anchor="middle">結び目は、仕組みではなく一人の人</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="浜に立つ兄と、船で海を渡っていく弟のイメージイラスト">
+  <defs>
+    <symbol id="st" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M0,-70 V0" stroke="#23201c" stroke-width="1.5"/>
+      <path d="M-26,-140 L26,-140 L30,-90 L-30,-90 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L24,-128 L18,-92 L-18,-92 L-24,-128 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-140 L0,-120 L9,-140 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-162" r="20" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-19,-168 A20,20 0 0 1 19,-168 Q0,-160 -19,-168 Z" fill="#23201c"/>
+      <path d="M-3,-180 L-3,-190 L14,-187 L14,-183 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <rect x="0" y="200" width="800" height="250" fill="#dfe4e0"/>
+  <path d="M0,200 H800" stroke="#b8ab95" stroke-width="2"/>
+  <path d="M0,450 L0,300 Q150,300 260,450 Z" fill="#e6d6b0" stroke="#8a7a62" stroke-width="2"/>
+  <use href="#st" x="60" y="200" width="96" height="160" color="#9b2d20"/>
+  <path d="M440,330 H680 L650,370 H470 Z" fill="#8a7a62" stroke="#23201c" stroke-width="2"/>
+  <path d="M600,330 V220" stroke="#23201c" stroke-width="4"/>
+  <path d="M604,226 L660,240 L655,310 L604,316 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+  <use href="#st" x="490" y="210" width="72" height="120" color="#2f5d7c"/>
+  <path d="M700,360 Q730,350 760,360 M380,380 Q410,370 440,380" stroke="#fbfaf6" stroke-width="4" fill="none"/>
+  <text x="110" y="400" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">兄（浜に残る）</text>
+  <text x="560" y="410" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">弟（名代として渡る）</text>
+  <text x="400" y="90" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="22" font-weight="400" fill="#4f4940" text-anchor="middle">四国攻めの形を、唐入りでも</text>
+</svg>

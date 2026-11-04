@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="兄と甥のあいだに座り、両手を広げて取りなす弟のイメージイラスト">
+  <defs>
+    <symbol id="sz" viewBox="-70 -150 140 150" overflow="visible">
+      <path d="M-36,-52 L36,-52 L62,0 L-62,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M-24,-100 L24,-100 L28,-50 L-28,-50 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-50,-100 L50,-100 L42,-88 L22,-88 L17,-52 L-17,-52 L-22,-88 L-42,-88 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-100 L0,-82 L9,-100 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-121" r="19" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-18,-127 A19,19 0 0 1 18,-127 Q0,-119 -18,-127 Z" fill="#23201c"/>
+      <path d="M-3,-139 L-3,-148 L13,-145 L13,-141 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <rect x="0" y="340" width="800" height="110" fill="#efe9dc"/>
+  <path d="M0,340 H800 M200,340 L170,450 M600,340 L630,450" stroke="#d9d2c5" stroke-width="2"/>
+  <use href="#sz" x="40" y="160" width="180" height="190" color="#9b2d20"/>
+  <use href="#sz" x="580" y="160" width="180" height="190" color="#8a6d1f"/>
+  <use href="#sz" x="320" y="200" width="160" height="170" color="#2f5d7c"/>
+  <path d="M340,270 L270,250 M460,270 L530,250" stroke="#23201c" stroke-width="4" stroke-linecap="round"/>
+  <text x="130" y="395" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">兄（秀吉）</text>
+  <text x="670" y="395" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">甥（秀次）</text>
+  <text x="400" y="410" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="20" font-weight="700" fill="#23201c" text-anchor="middle">弟（取りなす）</text>
+  <text x="400" y="120" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="22" font-weight="400" fill="#4f4940" text-anchor="middle">もし、あいだに入れたなら</text>
+</svg>
