@@ -493,14 +493,40 @@
     const restQs = qs.filter((q) => !qPlace(q));
     if (restQs.length) put("questions", "諸説・疑問", `<ul class="entry-list">${qItems(restQs)}</ul>`);
 
+    // 筆者の見立て。管理人がまだ書いていないあいだ（AI のたたき台＝viewDraft、または主役で空）は、
+    // この欄に何を書くかの説明を添える。管理人が書き終えたら（viewDraft を消したら）説明は出ない
+    function lensView(lens, isMain) {
+      const guide = `<div class="lens-view-guide"><p class="lens-view-guide-title">この欄に書くこと</p><ul>
+          <li>上の問いへの、管理人（ぱぱねこ）自身の答え。この人物をどういう人として見るか。</li>
+          <li>下の論点の記事の結論を踏まえ、それらを貫く見方を2〜3段落で。論点ごとの結論をくり返すのではなく、まとめて言えることを書く。</li>
+          <li>史料から言えることは記事の「先に答えを言うと」・結論に任せ、ここは史料の外へ一歩出る考え（推し量り・好み・評価）を、「私は〜と見る」のように筆者の言葉で書く。</li>
+          <li>否定した通説をくり返して広め直さない。</li>
+        </ul></div>`;
+      if (lens.view) {
+        const draft = lens.viewDraft
+          ? `<p class="lens-view-draft-note"><strong>仮の文です。</strong>AI（Claude）が考察記事の「ぱぱねこの見立て」から作ったたたき台で、管理人はまだ書いていません。</p>${guide}`
+          : "";
+        return `<div class="lens-view${lens.viewDraft ? " is-draft" : ""}"><span class="lens-view-label">筆者の見立て</span>${draft}${paras(lens.view, "", lens.links)}</div>`;
+      }
+      if (isMain) {
+        return `<div class="lens-view is-draft"><span class="lens-view-label">筆者の見立て</span><p class="lens-view-draft-note"><strong>まだ書いていません。</strong></p>${guide}</div>`;
+      }
+      return "";
+    }
+
     // この人物への問い：ページ全体で捉え直す大きな問いと、筆者の見立て（view）。その下に place: "lens" の問いを並べる
     if (lens) {
       const lensQs = qs.filter((q) => qPlace(q) === "lens");
       put("lens", lens.title || "この人物への問い", `<div class="lens">
           <p class="lens-question">${fmtText(esc(lens.question))}</p>
-          ${lens.view ? `<div class="lens-view"><span class="lens-view-label">筆者の見立て</span>${paras(lens.view, "", lens.links)}</div>` : ""}
+          ${lensView(lens, p.role === "main")}
         </div>
-        ${lensQs.length ? `<ul class="entry-list">${qItems(lensQs)}</ul>` : ""}`);
+        ${lensQs.length ? `<div class="lens-subs">
+          <p class="lens-subs-title">この問いを${lensQs.length}つの論点に分けて考える</p>
+          <ol class="entry-list lens-subs-list">${lensQs
+            .map((q, i) => entry({ when: `論点${i + 1}`, main: esc(q.title), note: q.text, links: q.links, tail: srcMarks(q.sourceId), extra: articleLink(q.article_id) }))
+            .join("")}</ol>
+        </div>` : ""}`);
     }
 
     // ゆかりの地・史跡（墓所もここにまとめる。墓所の状態は不明・なしも必ず明示）

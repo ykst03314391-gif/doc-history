@@ -386,6 +386,17 @@ html { scroll-behavior: smooth; }
 }
 .lens-view p { margin: 0.3em 0; max-width: 40em; }
 .lens-view-label { font-size: 0.8rem; font-weight: 700; color: var(--accent); }
+/* AI が作った仮の見立て（viewDraft）。仮置きの注記と同じ金の左罫・淡い黄の地で見分ける */
+.lens-view.is-draft { background: #fbf3df; border-color: var(--gold); border-left: 5px solid var(--gold); }
+.lens-view-draft-note { font-size: 0.85rem; color: var(--ink-soft); }
+.lens-view-draft-note strong { color: #8a6a1e; }
+/* 見立てを書く前の、この欄に書くことの説明（管理人向け。書き終えたら出ない） */
+.lens-view-guide { margin: 6px 0 12px; padding: 8px 12px; border: 1px dashed var(--gold); font-size: 0.85rem; color: var(--ink-soft); line-height: 1.7; }
+.lens-view-guide-title { margin: 0 0 2px !important; font-weight: 700; color: #8a6a1e; }
+.lens-view-guide ul { margin: 0; padding-left: 1.3em; }
+/* 大きな問いの下の論点（place: "lens"）。問いと同じ朱の左罫で、問いの中の節だと分かるように字下げする */
+.lens-subs { margin: 0 0 0 4px; padding-left: 16px; border-left: 2px solid var(--accent-soft); }
+.lens-subs-title { margin: 0 0 2px; font-size: 0.9rem; font-weight: 700; color: var(--ink-soft); }
 /* 欄の末尾に置く「この欄をめぐる疑問」 */
 .sec-questions { margin-top: 18px; padding-left: 12px; border-left: 3px solid var(--accent-soft); }
 .sec-questions-title { margin: 0 0 6px; font-size: 0.9rem; font-weight: 700; color: var(--ink-soft); }
