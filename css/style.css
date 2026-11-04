@@ -760,6 +760,16 @@ html { scroll-behavior: smooth; }
   .article-body .my-view { margin-left: 56px; padding: 10px 14px; }
   .article-body .my-view .my-view-face { left: -56px; width: 46px; }
 }
+/* 答え・結論の札にもぱぱねこの顔（顔が付いているところ＝管理人の判断） */
+.lead-answer-label::before, .sec-conclusion-label::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: -5px;
+  background: url("../assets/img/chara/papaneko-face.svg") center / contain no-repeat;
+}
 .article-author-face { width: 30px; height: auto; vertical-align: middle; margin-right: 4px; }
 /* サイト紹介の「書いている人」 */
 .author-profile { display: flex; gap: 18px; align-items: flex-start; }
