@@ -1,5 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 1082" role="img" aria-label="四コマ漫画（創作）。一、家臣が「殿、いっそ独り立ちなさっては？」と言い、秀長が「ほう、何を元手に？」。二、家臣「大和と紀伊の国で！」、秀長「兄上にもらった国じゃ」。三、家臣「では、配下の大名衆と！」、秀長「兄上が付けた者たちじゃ」。四、家臣「……では、せめて跡継ぎは」、秀長「それも兄上が決める」。人物はみな服を着ない四つ足の猫のキャラ（ぱぱねこ）で描き。秀長は折烏帽子と首の小豆で見分ける">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 1082" role="img" aria-label="四コマ漫画（創作）。一、家臣が「殿、いっそ独り立ちなさっては？」と言い、秀長が「ほう、何を元手に？」。二、家臣「大和と紀伊の国で！」、秀長「兄上にもらった国じゃ」。三、家臣「では、配下の大名衆と！」、秀長「兄上が付けた者たちじゃ」。四、家臣「……では、せめて跡継ぎは」、秀長「それも兄上が決める」。家臣ははじめ喜んだ顔で、最後は涙の顔。秀長は最後に澄ました顔。人物はみな服を着ない四つ足の猫のキャラ（ぱぱねこ）で描き。秀長は折烏帽子と首の小豆で見分ける">
   <defs>
+    <!-- 表情（眉なし。目と口だけを描き替える。見本は chara/papaneko-hyojo.svg）。頭の座標で重ねる -->
+    <g id="pn-ex-cover"><path d="M-47,-24 H47 V40 H-47 Z" fill="#fbfaf6" stroke="none"/><ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/></g>
+    <g id="pn-ex-ki" fill="none" stroke="#23201c" stroke-linecap="round" stroke-linejoin="round"><use href="#pn-ex-cover"/><path d="M-44,0 Q-29,-20 -14,0 M14,0 Q29,-20 44,0" stroke-width="3"/><path d="M-16,17 Q-8,27 0,14 Q8,27 16,17" stroke-width="2"/><path d="M-9,23 Q0,42 9,23 Q0,27 -9,23 Z" fill="#23201c" stroke-width="1.5"/><path d="M-64,24 l6,-8 M-56,24 l6,-8 M-48,24 l6,-8 M42,24 l6,-8 M50,24 l6,-8 M58,24 l6,-8" stroke-width="1.5"/></g>
+    <g id="pn-ex-do" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-42,-12 L-17,-2 M17,-2 L42,-12" stroke-width="3"/><path d="M-16,28 Q-8,15 0,27 Q8,15 16,28" stroke-width="2"/></g>
+    <g id="pn-ex-ai" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-42,0 L-18,-9 M18,-9 L42,0" stroke-width="2.5"/><path d="M-11,27 Q-5,19 0,25 Q5,19 11,27" stroke-width="2"/></g>
+    <g id="pn-ex-ikari"><path d="M70,-50 q8,0 8,-8 M86,-58 q0,8 8,8 M94,-34 q-8,0 -8,8 M78,-26 q0,-8 -8,-8" fill="none" stroke="#9b2d20" stroke-width="3.5" stroke-linecap="round"/></g>
+    <g id="pn-ex-namida"><path d="M-34,6 Q-41,18 -34,22 Q-27,18 -34,6 Z" fill="#dfe9f0" stroke="#2f5d7c" stroke-width="2"/></g>
+    <g id="pn-ex-raku" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-40,-8 Q-28,2 -16,-8 M16,-8 Q28,2 40,-8" stroke-width="2.5"/><path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" stroke-width="2"/><path d="M-62,24 l6,-8 M-54,24 l6,-8 M48,24 l6,-8 M56,24 l6,-8" stroke-width="1.5"/></g>
     <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
     <g id="pn-head">
       <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
@@ -23,7 +31,7 @@
     <!-- コマ1 -->
     <rect x="20" y="20" width="380" height="250" fill="#fbfaf6"/>
     <path d="M20,235 H400" stroke="#d9d2c5" stroke-width="2"/>
-    <g transform="translate(85.5,236.0) scale(-0.468,0.468)"><use href="#pn-base"/></g>
+    <g transform="translate(85.5,236.0) scale(-0.468,0.468)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-ki"/></g></g>
     <g transform="translate(336.0,235.0) scale(0.415,0.415)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
     <path d="M90,90 L74,138 L116,94 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
     <ellipse cx="190" cy="64" rx="150" ry="32" fill="#fff" stroke="#23201c" stroke-width="2"/>
@@ -36,7 +44,7 @@
     <!-- コマ2 -->
     <rect x="20" y="284" width="380" height="250" fill="#fbfaf6"/>
     <path d="M20,499 H400" stroke="#d9d2c5" stroke-width="2"/>
-    <g transform="translate(85.5,500.0) scale(-0.468,0.468)"><use href="#pn-base"/></g>
+    <g transform="translate(85.5,500.0) scale(-0.468,0.468)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-ki"/></g></g>
     <g transform="translate(336.0,499.0) scale(0.415,0.415)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
     <path d="M90,354 L74,402 L116,358 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
     <ellipse cx="190" cy="328" rx="150" ry="32" fill="#fff" stroke="#23201c" stroke-width="2"/>
@@ -62,8 +70,8 @@
     <!-- コマ4 -->
     <rect x="20" y="812" width="380" height="250" fill="#fbfaf6"/>
     <path d="M20,1027 H400" stroke="#d9d2c5" stroke-width="2"/>
-    <g transform="translate(85.5,1028.0) scale(-0.468,0.468)"><use href="#pn-base"/></g>
-    <g transform="translate(336.0,1027.0) scale(0.415,0.415)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
+    <g transform="translate(85.5,1028.0) scale(-0.468,0.468)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-ai"/><use href="#pn-ex-namida"/></g></g>
+    <g transform="translate(336.0,1027.0) scale(0.415,0.415)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-raku"/><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
     <path d="M90,882 L74,930 L116,886 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
     <ellipse cx="190" cy="856" rx="150" ry="32" fill="#fff" stroke="#23201c" stroke-width="2"/>
     <text x="190" y="849" font-size="15">……では、せめて</text><text x="190" y="873" font-size="15">跡継ぎは</text>

@@ -1,5 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="病の弟を見舞う兄の想像図（行灯の灯る座敷で、折烏帽子をかぶり首に小豆を下げて掛け布団にくるまり、額に手ぬぐいをのせて伏す四つ足の弟の猫（布団の端からしっぽが立つ）の枕元に、高い烏帽子をかぶり首に瓢箪を下げた四つ足の兄の猫が寄り、心配そうに前足を弟の頭へ伸ばしている）">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="病の弟を見舞う兄の想像図（行灯の灯る座敷で、折烏帽子をかぶり首に小豆を下げて掛け布団にくるまり、額に手ぬぐいをのせて伏す四つ足の弟の猫（布団の端からしっぽが立つ）の枕元に、高い烏帽子をかぶり首に瓢箪を下げた四つ足の兄の猫が寄り、心配そうに前足を弟の頭へ伸ばしている）（兄は涙ぐんだ悲しい顔、弟は弱った顔）">
   <defs>
+    <!-- 表情（眉なし。目と口だけを描き替える。見本は chara/papaneko-hyojo.svg）。頭の座標で重ねる -->
+    <g id="pn-ex-cover"><path d="M-47,-24 H47 V40 H-47 Z" fill="#fbfaf6" stroke="none"/><ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/></g>
+    <g id="pn-ex-ki" fill="none" stroke="#23201c" stroke-linecap="round" stroke-linejoin="round"><use href="#pn-ex-cover"/><path d="M-44,0 Q-29,-20 -14,0 M14,0 Q29,-20 44,0" stroke-width="3"/><path d="M-16,17 Q-8,27 0,14 Q8,27 16,17" stroke-width="2"/><path d="M-9,23 Q0,42 9,23 Q0,27 -9,23 Z" fill="#23201c" stroke-width="1.5"/><path d="M-64,24 l6,-8 M-56,24 l6,-8 M-48,24 l6,-8 M42,24 l6,-8 M50,24 l6,-8 M58,24 l6,-8" stroke-width="1.5"/></g>
+    <g id="pn-ex-do" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-42,-12 L-17,-2 M17,-2 L42,-12" stroke-width="3"/><path d="M-16,28 Q-8,15 0,27 Q8,15 16,28" stroke-width="2"/></g>
+    <g id="pn-ex-ai" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-42,0 L-18,-9 M18,-9 L42,0" stroke-width="2.5"/><path d="M-11,27 Q-5,19 0,25 Q5,19 11,27" stroke-width="2"/></g>
+    <g id="pn-ex-namida"><path d="M-34,6 Q-41,18 -34,22 Q-27,18 -34,6 Z" fill="#dfe9f0" stroke="#2f5d7c" stroke-width="2"/></g>
+    <g id="pn-ex-raku" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-40,-8 Q-28,2 -16,-8 M16,-8 Q28,2 40,-8" stroke-width="2.5"/><path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" stroke-width="2"/><path d="M-62,24 l6,-8 M-54,24 l6,-8 M48,24 l6,-8 M56,24 l6,-8" stroke-width="1.5"/></g>
     <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
     <g id="pn-head">
       <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
@@ -29,7 +36,7 @@
   <!-- 布団の弟 -->
   <ellipse cx="555" cy="334" rx="48" ry="12" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
   <g transform="translate(565,292) rotate(-14) scale(0.72)">
-    <use href="#pn-head"/>
+    <use href="#pn-head"/><use href="#pn-ex-ai"/>
     <!-- 低い折烏帽子（秀長の印。先を後ろへ折る） -->
     <path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/>
     <!-- 首に下げた小豆（大納言小豆。秀長の印） -->
@@ -57,9 +64,9 @@
   <path d="M372,302 L496,268" stroke="#fbfaf6" stroke-width="17" stroke-linecap="round"/>
   <circle cx="506" cy="268" r="12" fill="#fbfaf6" stroke="#23201c" stroke-width="2"/>
   <g transform="translate(330,234) scale(0.8)">
-    <use href="#pn-head"/>
-    <!-- 心配の眉と、高い立烏帽子（秀吉の印） -->
-    <path d="M-42,-14 L-22,-21 M22,-21 L42,-14" stroke="#23201c" stroke-width="3" stroke-linecap="round"/>
+    <use href="#pn-head"/><use href="#pn-ex-ai"/><use href="#pn-ex-namida"/>
+    <!-- 高い立烏帽子（秀吉の印） -->
+    
     <path d="M-20,-44 L-14,-100 Q2,-112 16,-98 L20,-44 Z" fill="#23201c"/>
     <!-- 首に下げた瓢箪（秀吉の印） -->
     <path d="M-34,44 Q0,64 34,44" fill="none" stroke="#9b2d20" stroke-width="3"/><path d="M0,58 V62" stroke="#23201c" stroke-width="3"/><circle cx="0" cy="68" r="7" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><circle cx="0" cy="86" r="12" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><path d="M-7,76 Q0,79 7,76" fill="none" stroke="#9b2d20" stroke-width="2.5"/>

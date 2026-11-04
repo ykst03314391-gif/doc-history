@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 250" role="img" aria-label="ぱぱねこの表情の見本（眉なし）。ふだん・喜・怒・哀・楽の5つを、目と口と添える印だけで描き分ける">
+  <!-- ぱぱねこの表情の見本。決まりは chara/README.md の「表情（喜怒哀楽）」。眉は描かない -->
+  <defs>
+    <!-- 変えない部分：耳・頭の輪郭・鼻・ひげ（中心 0,0） -->
+    <g id="pn-face-base">
+      <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="3"/>
+      <circle cx="45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="3"/>
+      <path d="M-78,10 C-80,-30 -50,-47 0,-47 C50,-47 80,-30 78,10 C78,40 50,52 0,52 C-50,52 -78,40 -78,10 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="3"/>
+      <ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-50,10 L-92,5 M-50,18 L-94,19 M-48,26 L-90,33 M50,10 L92,5 M50,18 L94,19 M48,26 L90,33" stroke="#23201c" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </defs>
+  <rect width="1100" height="250" fill="#f4f1ea"/>
+
+  <g fill="none" stroke="#23201c" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ふだん：閉じた笑い目（∩）と ω -->
+    <g transform="translate(110,110)">
+      <use href="#pn-face-base"/>
+      <path d="M-40,-3 Q-28,-15 -16,-3 M16,-3 Q28,-15 40,-3" stroke-width="3"/>
+      <path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" stroke-width="2.5"/>
+    </g>
+
+    <!-- 喜：高く大きな笑い目、ω の下に開いた口、頬の斜線、きらめき -->
+    <g transform="translate(330,110)">
+      <use href="#pn-face-base"/>
+      <path d="M-44,0 Q-29,-20 -14,0 M14,0 Q29,-20 44,0" stroke-width="3.5"/>
+      <path d="M-16,17 Q-8,27 0,14 Q8,27 16,17" stroke-width="2.5"/>
+      <path d="M-9,23 Q0,42 9,23 Q0,27 -9,23 Z" fill="#23201c" stroke-width="2"/>
+      <path d="M-64,24 l6,-8 M-56,24 l6,-8 M-48,24 l6,-8 M42,24 l6,-8 M50,24 l6,-8 M58,24 l6,-8" stroke-width="1.8"/>
+      <path d="M-92,-46 v16 M-100,-38 h16 M88,-62 v12 M82,-56 h12" stroke="#b08d33" stroke-width="2.5"/>
+    </g>
+
+    <!-- 怒：内側が下がる一文字の目（＼／）、への字に返した ω、朱の怒りの印 -->
+    <g transform="translate(550,110)">
+      <use href="#pn-face-base"/>
+      <path d="M-42,-12 L-17,-2 M17,-2 L42,-12" stroke-width="3.5"/>
+      <path d="M-16,28 Q-8,15 0,27 Q8,15 16,28" stroke-width="2.5"/>
+      <path d="M70,-50 q8,0 8,-8 M86,-58 q0,8 8,8 M94,-34 q-8,0 -8,8 M78,-26 q0,-8 -8,-8" stroke="#9b2d20" stroke-width="3.5"/>
+    </g>
+
+    <!-- 哀：外側が下がる一文字の目（／＼）、小さく返した ω、藍の涙 -->
+    <g transform="translate(770,110)">
+      <use href="#pn-face-base"/>
+      <path d="M-42,0 L-18,-9 M18,-9 L42,0" stroke-width="3"/>
+      <path d="M-11,27 Q-5,19 0,25 Q5,19 11,27" stroke-width="2.5"/>
+      <path d="M-34,6 Q-41,18 -34,22 Q-27,18 -34,6 Z" fill="#dfe9f0" stroke="#2f5d7c" stroke-width="2"/>
+    </g>
+
+    <!-- 楽：ゆるんだ目（∪）、ω、頬の斜線、音符 -->
+    <g transform="translate(990,110)">
+      <use href="#pn-face-base"/>
+      <path d="M-40,-8 Q-28,2 -16,-8 M16,-8 Q28,2 40,-8" stroke-width="3"/>
+      <path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" stroke-width="2.5"/>
+      <path d="M-62,24 l6,-8 M-54,24 l6,-8 M48,24 l6,-8 M56,24 l6,-8" stroke-width="1.8"/>
+      <path d="M78,-50 v-24 l12,4" stroke-width="2.5"/>
+      <ellipse cx="74" cy="-50" rx="5" ry="4" fill="#23201c" stroke="none"/>
+    </g>
+  </g>
+
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="20" font-weight="700" text-anchor="middle" fill="#23201c">
+    <text x="110" y="200">ふだん</text>
+    <text x="330" y="200" fill="#9b2d20">喜</text>
+    <text x="550" y="200" fill="#9b2d20">怒</text>
+    <text x="770" y="200" fill="#2f5d7c">哀</text>
+    <text x="990" y="200" fill="#8a6d1f">楽</text>
+  </g>
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="13" text-anchor="middle" fill="#4f4940">
+    <text x="110" y="226">笑い目∩・ω</text>
+    <text x="330" y="226">大きな∩・開いた口・きらめき</text>
+    <text x="550" y="226">＼／の目・返した ω・怒りの印</text>
+    <text x="770" y="226">／＼の目・小さく返した ω・涙</text>
+    <text x="990" y="226">ゆるんだ∪・ω・音符</text>
+  </g>
+</svg>

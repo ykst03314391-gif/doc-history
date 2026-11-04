@@ -1,5 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="雲の上からのぞく南蛮帽子の信長が、ひびの入った敵の家（朝倉・武田）から家臣を一人つまみ出しているイメージイラスト（敵の家の左の一匹は、武田の印の二本角の飾りを頭に付ける）。隣の羽柴家には手を伸ばしておらず、家の中に秀吉と秀長が並んで座っている。人物はみな服を着ない四つ足の猫のキャラ（ぱぱねこ）で描き、秀吉は高い立烏帽子と首の瓢箪、秀長は低い折烏帽子と首の小豆で見分ける">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="雲の上からのぞく南蛮帽子の信長が、ひびの入った敵の家（朝倉・武田）から家臣を一人つまみ出しているイメージイラスト（敵の家の左の一匹は、武田の印の二本角の飾りを頭に付ける）。隣の羽柴家には手を伸ばしておらず、家の中に秀吉と秀長が並んで座っている。信長は楽しげな顔、敵の家の家臣は困った顔。人物はみな服を着ない四つ足の猫のキャラ（ぱぱねこ）で描き、秀吉は高い立烏帽子と首の瓢箪、秀長は低い折烏帽子と首の小豆で見分ける">
   <defs>
+    <!-- 表情（眉なし。目と口だけを描き替える。見本は chara/papaneko-hyojo.svg）。頭の座標で重ねる -->
+    <g id="pn-ex-cover"><path d="M-47,-24 H47 V40 H-47 Z" fill="#fbfaf6" stroke="none"/><ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/></g>
+    <g id="pn-ex-ki" fill="none" stroke="#23201c" stroke-linecap="round" stroke-linejoin="round"><use href="#pn-ex-cover"/><path d="M-44,0 Q-29,-20 -14,0 M14,0 Q29,-20 44,0" stroke-width="3"/><path d="M-16,17 Q-8,27 0,14 Q8,27 16,17" stroke-width="2"/><path d="M-9,23 Q0,42 9,23 Q0,27 -9,23 Z" fill="#23201c" stroke-width="1.5"/><path d="M-64,24 l6,-8 M-56,24 l6,-8 M-48,24 l6,-8 M42,24 l6,-8 M50,24 l6,-8 M58,24 l6,-8" stroke-width="1.5"/></g>
+    <g id="pn-ex-do" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-42,-12 L-17,-2 M17,-2 L42,-12" stroke-width="3"/><path d="M-16,28 Q-8,15 0,27 Q8,15 16,28" stroke-width="2"/></g>
+    <g id="pn-ex-ai" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-42,0 L-18,-9 M18,-9 L42,0" stroke-width="2.5"/><path d="M-11,27 Q-5,19 0,25 Q5,19 11,27" stroke-width="2"/></g>
+    <g id="pn-ex-namida"><path d="M-34,6 Q-41,18 -34,22 Q-27,18 -34,6 Z" fill="#dfe9f0" stroke="#2f5d7c" stroke-width="2"/></g>
+    <g id="pn-ex-raku" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-40,-8 Q-28,2 -16,-8 M16,-8 Q28,2 40,-8" stroke-width="2.5"/><path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" stroke-width="2"/><path d="M-62,24 l6,-8 M-54,24 l6,-8 M48,24 l6,-8 M56,24 l6,-8" stroke-width="1.5"/></g>
     <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
     <g id="pn-head">
       <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
@@ -27,8 +34,8 @@
     <path d="M300,212 l-12,26 l10,20 l-14,30 l8,18" fill="none" stroke="#23201c" stroke-width="2"/>
     <path d="M92,220 l10,22 l-8,16" fill="none" stroke="#23201c" stroke-width="2"/>
     <!-- 二本角の飾り（武田の印） -->
-    <g transform="translate(132,345) scale(-0.38,0.38)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-42 Q-46,-74 -30,-110 Q-28,-78 -8,-46 Z M24,-42 Q46,-74 30,-110 Q28,-78 8,-46 Z" fill="#e3c46a" stroke="#23201c" stroke-width="3" stroke-linejoin="round"/></g></g>
-    <g transform="translate(236,345) scale(0.38,0.38)"><use href="#pn-base"/></g>
+    <g transform="translate(132,345) scale(-0.38,0.38)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-ai"/><path d="M-24,-42 Q-46,-74 -30,-110 Q-28,-78 -8,-46 Z M24,-42 Q46,-74 30,-110 Q28,-78 8,-46 Z" fill="#e3c46a" stroke="#23201c" stroke-width="3" stroke-linejoin="round"/></g></g>
+    <g transform="translate(236,345) scale(0.38,0.38)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-ai"/></g></g>
   </g>
 
   <!-- 羽柴家 -->
@@ -39,7 +46,7 @@
   <g transform="translate(664,352) scale(0.4,0.4)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
 
   <!-- 雲の上の信長 -->
-  <g transform="translate(400,72) scale(0.68)"><use href="#pn-head"/><path d="M22,-84 Q46,-116 76,-110 Q52,-104 28,-76 Z" fill="#e3c46a" stroke="#23201c" stroke-width="2"/><path d="M-26,-56 Q-28,-106 0,-108 Q28,-106 26,-56 Z" fill="#23201c"/><path d="M-26,-68 Q0,-63 26,-68 L26,-59 Q0,-54 -26,-59 Z" fill="#9b2d20"/><ellipse cx="0" cy="-56" rx="44" ry="9" fill="#23201c"/></g>
+  <g transform="translate(400,72) scale(0.68)"><use href="#pn-head"/><use href="#pn-ex-raku"/><path d="M22,-84 Q46,-116 76,-110 Q52,-104 28,-76 Z" fill="#e3c46a" stroke="#23201c" stroke-width="2"/><path d="M-26,-56 Q-28,-106 0,-108 Q28,-106 26,-56 Z" fill="#23201c"/><path d="M-26,-68 Q0,-63 26,-68 L26,-59 Q0,-54 -26,-59 Z" fill="#9b2d20"/><ellipse cx="0" cy="-56" rx="44" ry="9" fill="#23201c"/></g>
   <g fill="#fbfaf6" stroke="#a39a8c" stroke-width="2">
     <circle cx="334" cy="134" r="28"/>
     <circle cx="374" cy="126" r="34"/>
@@ -50,7 +57,7 @@
   <!-- 伸びる手と、つまみ出される家臣 -->
   <path d="M344,100 L262,88" stroke="#23201c" stroke-width="22" stroke-linecap="round"/>
   <path d="M344,100 L262,88" stroke="#fbfaf6" stroke-width="17" stroke-linecap="round"/>
-  <g transform="translate(266,154) scale(0.28,0.28)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-42,-14 L-22,-21 M22,-21 L42,-14" stroke="#23201c" stroke-width="3.5" stroke-linecap="round"/></g></g>
+  <g transform="translate(266,154) scale(0.28,0.28)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-ai"/></g></g>
   <circle cx="254" cy="92" r="11" fill="#fbfaf6" stroke="#23201c" stroke-width="2"/>
   <g stroke="#9b2d20" stroke-width="2.5" fill="none" stroke-linecap="round">
     <path d="M218,122 q-8,6 0,12"/>

@@ -1,5 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 1082" role="img" aria-label="四コマ漫画（創作）。一、現代の記者が秀長に「秀長さん、補佐役で満足でしたか？」と尋ねる。二、秀長「ほさやく……？ そんな言葉、聞いたことがないぞ」。三、秀長が胸を張って「わしは兄上の家の二番目じゃ。兄上の天下は、わが家の天下よ」。四、後ろから兄の秀吉が「小一郎、熊野の木の件じゃが」と声をかけ、秀長は「ははーっ！」と平伏する。人物はみな服を着ない四つ足の猫のキャラ（ぱぱねこ）で描き、記者はぱぱねこ本人。秀長は折烏帽子と首の小豆、秀吉は立烏帽子と首の瓢箪で見分ける">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 1082" role="img" aria-label="四コマ漫画（創作）。一、現代の記者が秀長に「秀長さん、補佐役で満足でしたか？」と尋ねる。二、秀長「ほさやく……？ そんな言葉、聞いたことがないぞ」。三、秀長が胸を張って「わしは兄上の家の二番目じゃ。兄上の天下は、わが家の天下よ」。四、後ろから兄の秀吉が「小一郎、熊野の木の件じゃが」と声をかけ、秀長は「ははーっ！」と平伏する。三の秀長は得意げな顔、四の秀吉は怒った顔、平伏する秀長は困った顔。人物はみな服を着ない四つ足の猫のキャラ（ぱぱねこ）で描き、記者はぱぱねこ本人。秀長は折烏帽子と首の小豆、秀吉は立烏帽子と首の瓢箪で見分ける">
   <defs>
+    <!-- 表情（眉なし。目と口だけを描き替える。見本は chara/papaneko-hyojo.svg）。頭の座標で重ねる -->
+    <g id="pn-ex-cover"><path d="M-47,-24 H47 V40 H-47 Z" fill="#fbfaf6" stroke="none"/><ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/></g>
+    <g id="pn-ex-ki" fill="none" stroke="#23201c" stroke-linecap="round" stroke-linejoin="round"><use href="#pn-ex-cover"/><path d="M-44,0 Q-29,-20 -14,0 M14,0 Q29,-20 44,0" stroke-width="3"/><path d="M-16,17 Q-8,27 0,14 Q8,27 16,17" stroke-width="2"/><path d="M-9,23 Q0,42 9,23 Q0,27 -9,23 Z" fill="#23201c" stroke-width="1.5"/><path d="M-64,24 l6,-8 M-56,24 l6,-8 M-48,24 l6,-8 M42,24 l6,-8 M50,24 l6,-8 M58,24 l6,-8" stroke-width="1.5"/></g>
+    <g id="pn-ex-do" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-42,-12 L-17,-2 M17,-2 L42,-12" stroke-width="3"/><path d="M-16,28 Q-8,15 0,27 Q8,15 16,28" stroke-width="2"/></g>
+    <g id="pn-ex-ai" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-42,0 L-18,-9 M18,-9 L42,0" stroke-width="2.5"/><path d="M-11,27 Q-5,19 0,25 Q5,19 11,27" stroke-width="2"/></g>
+    <g id="pn-ex-ikari"><path d="M70,-50 q8,0 8,-8 M86,-58 q0,8 8,8 M94,-34 q-8,0 -8,8 M78,-26 q0,-8 -8,-8" fill="none" stroke="#9b2d20" stroke-width="3.5" stroke-linecap="round"/></g>
+    <g id="pn-ex-namida"><path d="M-34,6 Q-41,18 -34,22 Q-27,18 -34,6 Z" fill="#dfe9f0" stroke="#2f5d7c" stroke-width="2"/></g>
+    <g id="pn-ex-raku" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-40,-8 Q-28,2 -16,-8 M16,-8 Q28,2 40,-8" stroke-width="2.5"/><path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" stroke-width="2"/><path d="M-62,24 l6,-8 M-54,24 l6,-8 M48,24 l6,-8 M56,24 l6,-8" stroke-width="1.5"/></g>
     <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
     <g id="pn-head">
       <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
@@ -58,7 +66,7 @@
       <path d="M120,558 V570"/><path d="M78,572 L86,581"/><path d="M162,572 L154,581"/>
       <path d="M62,605 H74"/><path d="M166,605 H178"/>
     </g>
-    <g transform="translate(120.0,763.0) scale(-0.620,0.620)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
+    <g transform="translate(120.0,763.0) scale(-0.620,0.620)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-ki"/><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
     <path d="M190,620 L160,608 L194,640 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
     <ellipse cx="285" cy="648" rx="105" ry="76" fill="#fff" stroke="#23201c" stroke-width="2"/>
     <path d="M187,622 L190,636" stroke="#fff" stroke-width="5"/>
@@ -71,7 +79,7 @@
     <!-- 四 -->
     <rect x="20" y="812" width="380" height="250" fill="#fbfaf6"/>
     <path d="M20,1027 H400" stroke="#d9d2c5" stroke-width="2"/>
-    <g transform="translate(104.7,1027.0) scale(-0.620,0.620)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-20,-44 L-14,-100 Q2,-112 16,-98 L20,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,64 34,44" fill="none" stroke="#9b2d20" stroke-width="3"/><path d="M0,58 V62" stroke="#23201c" stroke-width="3"/><circle cx="0" cy="68" r="7" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><circle cx="0" cy="86" r="12" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><path d="M-7,76 Q0,79 7,76" fill="none" stroke="#9b2d20" stroke-width="2.5"/></g></g>
+    <g transform="translate(104.7,1027.0) scale(-0.620,0.620)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-do"/><use href="#pn-ex-ikari"/><path d="M-20,-44 L-14,-100 Q2,-112 16,-98 L20,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,64 34,44" fill="none" stroke="#9b2d20" stroke-width="3"/><path d="M0,58 V62" stroke="#23201c" stroke-width="3"/><circle cx="0" cy="68" r="7" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><circle cx="0" cy="86" r="12" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><path d="M-7,76 Q0,79 7,76" fill="none" stroke="#9b2d20" stroke-width="2.5"/></g></g>
     <g stroke="#9b2d20" stroke-width="3" fill="none" stroke-linecap="round">
       <path d="M136,830 Q142,836 136,842"/>
       <path d="M156,830 Q150,836 156,842"/>
@@ -83,7 +91,7 @@
     <path d="M171,866 L172,881" stroke="#fff" stroke-width="5"/>
     <text x="275" y="862" font-size="15">小一郎、</text>
     <text x="275" y="886" font-size="15">熊野の木の件じゃが</text>
-    <g transform="translate(300,1027) scale(0.52,0.52)"><use href="#pn-fuse"/><g transform="translate(-100,-58) rotate(-12) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
+    <g transform="translate(300,1027) scale(0.52,0.52)"><use href="#pn-fuse"/><g transform="translate(-100,-58) rotate(-12) scale(0.95)"><use href="#pn-ex-ai"/><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
     <path d="M214,940 Q208,952 214,955 Q220,952 214,940 Z" fill="#7fa6c6"/>
     <path d="M202,952 Q197,961 202,964 Q207,961 202,952 Z" fill="#7fa6c6"/>
     <text x="330" y="932" font-size="17" font-weight="700">ははーっ！</text>

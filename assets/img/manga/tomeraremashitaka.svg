@@ -1,5 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 1082" role="img" aria-label="四コマ漫画（創作）。一、現代の記者が秀長に「秀長さん、長生きしていたら唐入りを止められましたか？」と尋ねる。二、秀長「止めはせん。兄上の大事業じゃ」。三、秀長が胸を張って「ただし、兄上が海を渡るのは止める。代わりにわしが渡る！」。四、記者が「……お体は？」と聞くと、秀長は咳き込んで「ゴホッ……だ、誰か薬を……」。人物はみな服を着ない四つ足の猫のキャラ（ぱぱねこ）で描き、記者はぱぱねこ本人。秀長は折烏帽子と首の小豆で見分ける">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 1082" role="img" aria-label="四コマ漫画（創作）。一、現代の記者が秀長に「秀長さん、長生きしていたら唐入りを止められましたか？」と尋ねる。二、秀長「止めはせん。兄上の大事業じゃ」。三、秀長が胸を張って「ただし、兄上が海を渡るのは止める。代わりにわしが渡る！」。四、記者が「……お体は？」と聞くと、秀長は咳き込んで「ゴホッ……だ、誰か薬を……」。三の秀長は得意げな顔、四の記者は心配顔、秀長は涙の顔。人物はみな服を着ない四つ足の猫のキャラ（ぱぱねこ）で描き、記者はぱぱねこ本人。秀長は折烏帽子と首の小豆で見分ける">
   <defs>
+    <!-- 表情（眉なし。目と口だけを描き替える。見本は chara/papaneko-hyojo.svg）。頭の座標で重ねる -->
+    <g id="pn-ex-cover"><path d="M-47,-24 H47 V40 H-47 Z" fill="#fbfaf6" stroke="none"/><ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/></g>
+    <g id="pn-ex-ki" fill="none" stroke="#23201c" stroke-linecap="round" stroke-linejoin="round"><use href="#pn-ex-cover"/><path d="M-44,0 Q-29,-20 -14,0 M14,0 Q29,-20 44,0" stroke-width="3"/><path d="M-16,17 Q-8,27 0,14 Q8,27 16,17" stroke-width="2"/><path d="M-9,23 Q0,42 9,23 Q0,27 -9,23 Z" fill="#23201c" stroke-width="1.5"/><path d="M-64,24 l6,-8 M-56,24 l6,-8 M-48,24 l6,-8 M42,24 l6,-8 M50,24 l6,-8 M58,24 l6,-8" stroke-width="1.5"/></g>
+    <g id="pn-ex-do" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-42,-12 L-17,-2 M17,-2 L42,-12" stroke-width="3"/><path d="M-16,28 Q-8,15 0,27 Q8,15 16,28" stroke-width="2"/></g>
+    <g id="pn-ex-ai" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-42,0 L-18,-9 M18,-9 L42,0" stroke-width="2.5"/><path d="M-11,27 Q-5,19 0,25 Q5,19 11,27" stroke-width="2"/></g>
+    <g id="pn-ex-ikari"><path d="M70,-50 q8,0 8,-8 M86,-58 q0,8 8,8 M94,-34 q-8,0 -8,8 M78,-26 q0,-8 -8,-8" fill="none" stroke="#9b2d20" stroke-width="3.5" stroke-linecap="round"/></g>
+    <g id="pn-ex-namida"><path d="M-34,6 Q-41,18 -34,22 Q-27,18 -34,6 Z" fill="#dfe9f0" stroke="#2f5d7c" stroke-width="2"/></g>
+    <g id="pn-ex-raku" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-40,-8 Q-28,2 -16,-8 M16,-8 Q28,2 40,-8" stroke-width="2.5"/><path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" stroke-width="2"/><path d="M-62,24 l6,-8 M-54,24 l6,-8 M48,24 l6,-8 M56,24 l6,-8" stroke-width="1.5"/></g>
     <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
     <g id="pn-head">
       <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
@@ -45,7 +53,7 @@
     <rect x="20" y="548" width="380" height="250" fill="#fbfaf6"/>
     <path d="M20,763 H400" stroke="#d9d2c5" stroke-width="2"/>
     <g stroke="#b08d33" stroke-width="3" stroke-linecap="round"><path d="M120,558 V570"/><path d="M78,572 L86,581"/><path d="M162,572 L154,581"/></g>
-    <g transform="translate(120.0,763.0) scale(-0.620,0.620)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
+    <g transform="translate(120.0,763.0) scale(-0.620,0.620)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-ki"/><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
     <path d="M190,634 L178,618 L206,640 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
     <ellipse cx="285" cy="648" rx="108" ry="78" fill="#fff" stroke="#23201c" stroke-width="2"/>
     <text x="285" y="617" font-size="15">ただし、兄上が</text>
@@ -56,11 +64,11 @@
     <!-- コマ -->
     <rect x="20" y="812" width="380" height="250" fill="#fbfaf6"/>
     <path d="M20,1027 H400" stroke="#d9d2c5" stroke-width="2"/>
-    <g transform="translate(330.5,1024.8) scale(0.500,0.500)"><use href="#pn-base"/></g>
+    <g transform="translate(330.5,1024.8) scale(0.500,0.500)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-ai"/></g></g>
     <path d="M312,862 L326,880 L328,860 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
     <ellipse cx="300" cy="842" rx="80" ry="24" fill="#fff" stroke="#23201c" stroke-width="2"/>
     <text x="300" y="847" font-size="15">……お体は？</text>
-    <g transform="translate(110.0,1027.0) scale(-0.620,0.620)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
+    <g transform="translate(110.0,1027.0) scale(-0.620,0.620)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-ai"/><use href="#pn-ex-namida"/><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
     <g stroke="#7fa6c6" stroke-width="3" fill="none" stroke-linecap="round"><path d="M126,896 q10,-8 18,0"/><path d="M132,884 q10,-8 18,0"/></g>
     <text x="112" y="840" font-size="16" font-weight="700">ゴホッ……</text>
     <text x="112" y="864" font-size="15">だ、誰か薬を……</text>

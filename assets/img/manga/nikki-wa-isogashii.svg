@@ -1,5 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 1082" role="img" aria-label="四コマ漫画（創作）。一、秀長が「奈良での商売は止める。売り買いは郡山でせよ」と命じ、家臣が「ははっ」。二、興福寺の僧が日記に向かって「さてさて、あさまし、あさまし……」。三、秀長が「春日社の屋根の修理はわしが持とう」と言い、家臣が「ははっ」。四、僧が日記に「……善政なり。」と書き、「忙しいのう」とつぶやく。人物はみな服を着ない四つ足の猫のキャラ（ぱぱねこ）で描き。秀長は折烏帽子と首の小豆、僧は首の数珠で見分ける">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 1082" role="img" aria-label="四コマ漫画（創作）。一、秀長が「奈良での商売は止める。売り買いは郡山でせよ」と命じ、家臣が「ははっ」。二、興福寺の僧が日記に向かって「さてさて、あさまし、あさまし……」。三、秀長が「春日社の屋根の修理はわしが持とう」と言い、家臣が「ははっ」。四、僧が日記に「……善政なり。」と書き、「忙しいのう」とつぶやく。二の僧は怒った顔、三の秀長は満足げ、四の僧は困った顔。人物はみな服を着ない四つ足の猫のキャラ（ぱぱねこ）で描き。秀長は折烏帽子と首の小豆、僧は首の数珠で見分ける">
   <defs>
+    <!-- 表情（眉なし。目と口だけを描き替える。見本は chara/papaneko-hyojo.svg）。頭の座標で重ねる -->
+    <g id="pn-ex-cover"><path d="M-47,-24 H47 V40 H-47 Z" fill="#fbfaf6" stroke="none"/><ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/></g>
+    <g id="pn-ex-ki" fill="none" stroke="#23201c" stroke-linecap="round" stroke-linejoin="round"><use href="#pn-ex-cover"/><path d="M-44,0 Q-29,-20 -14,0 M14,0 Q29,-20 44,0" stroke-width="3"/><path d="M-16,17 Q-8,27 0,14 Q8,27 16,17" stroke-width="2"/><path d="M-9,23 Q0,42 9,23 Q0,27 -9,23 Z" fill="#23201c" stroke-width="1.5"/><path d="M-64,24 l6,-8 M-56,24 l6,-8 M-48,24 l6,-8 M42,24 l6,-8 M50,24 l6,-8 M58,24 l6,-8" stroke-width="1.5"/></g>
+    <g id="pn-ex-do" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-42,-12 L-17,-2 M17,-2 L42,-12" stroke-width="3"/><path d="M-16,28 Q-8,15 0,27 Q8,15 16,28" stroke-width="2"/></g>
+    <g id="pn-ex-ai" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-42,0 L-18,-9 M18,-9 L42,0" stroke-width="2.5"/><path d="M-11,27 Q-5,19 0,25 Q5,19 11,27" stroke-width="2"/></g>
+    <g id="pn-ex-ikari"><path d="M70,-50 q8,0 8,-8 M86,-58 q0,8 8,8 M94,-34 q-8,0 -8,8 M78,-26 q0,-8 -8,-8" fill="none" stroke="#9b2d20" stroke-width="3.5" stroke-linecap="round"/></g>
+    <g id="pn-ex-namida"><path d="M-34,6 Q-41,18 -34,22 Q-27,18 -34,6 Z" fill="#dfe9f0" stroke="#2f5d7c" stroke-width="2"/></g>
+    <g id="pn-ex-raku" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-40,-8 Q-28,2 -16,-8 M16,-8 Q28,2 40,-8" stroke-width="2.5"/><path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" stroke-width="2"/><path d="M-62,24 l6,-8 M-54,24 l6,-8 M48,24 l6,-8 M56,24 l6,-8" stroke-width="1.5"/></g>
     <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
     <g id="pn-head">
       <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
@@ -41,7 +49,7 @@
     <!-- コマ2 -->
     <rect x="20" y="284" width="380" height="250" fill="#fbfaf6"/>
     <path d="M20,499 H400" stroke="#d9d2c5" stroke-width="2"/>
-    <g transform="translate(119.5,490.0) scale(-0.517,0.517)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-40,44 Q0,74 40,44" fill="none" stroke="#23201c" stroke-width="8" stroke-dasharray="0.1 10" stroke-linecap="round"/><path d="M0,59 V74" stroke="#6b5a46" stroke-width="4" stroke-linecap="round"/></g></g>
+    <g transform="translate(119.5,490.0) scale(-0.517,0.517)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-do"/><use href="#pn-ex-ikari"/><path d="M-40,44 Q0,74 40,44" fill="none" stroke="#23201c" stroke-width="8" stroke-dasharray="0.1 10" stroke-linecap="round"/><path d="M0,59 V74" stroke="#6b5a46" stroke-width="4" stroke-linecap="round"/></g></g>
     <rect x="160" y="454" width="120" height="45" fill="#8a7a62" stroke="#23201c" stroke-width="2"/>
     <rect x="170" y="442" width="90" height="14" fill="#fbfaf6" stroke="#23201c" stroke-width="1.5"/>
     <path d="M150,434 L186,448" stroke="#23201c" stroke-width="3"/>
@@ -54,7 +62,7 @@
     <!-- コマ3 -->
     <rect x="20" y="548" width="380" height="250" fill="#fbfaf6"/>
     <path d="M20,763 H400" stroke="#d9d2c5" stroke-width="2"/>
-    <g transform="translate(78.7,760.0) scale(-0.415,0.415)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
+    <g transform="translate(78.7,760.0) scale(-0.415,0.415)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-raku"/><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
     <g transform="translate(324.5,763.0) scale(0.409,0.409)"><use href="#pn-fuse"/></g>
     <path d="M110,620 L92,648 L134,624 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
     <ellipse cx="200" cy="594" rx="150" ry="32" fill="#fff" stroke="#23201c" stroke-width="2"/>
@@ -68,7 +76,7 @@
     <!-- コマ4 -->
     <rect x="20" y="812" width="380" height="250" fill="#fbfaf6"/>
     <path d="M20,1027 H400" stroke="#d9d2c5" stroke-width="2"/>
-    <g transform="translate(119.5,1018.0) scale(-0.517,0.517)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-40,44 Q0,74 40,44" fill="none" stroke="#23201c" stroke-width="8" stroke-dasharray="0.1 10" stroke-linecap="round"/><path d="M0,59 V74" stroke="#6b5a46" stroke-width="4" stroke-linecap="round"/></g></g>
+    <g transform="translate(119.5,1018.0) scale(-0.517,0.517)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-ai"/><path d="M-40,44 Q0,74 40,44" fill="none" stroke="#23201c" stroke-width="8" stroke-dasharray="0.1 10" stroke-linecap="round"/><path d="M0,59 V74" stroke="#6b5a46" stroke-width="4" stroke-linecap="round"/></g></g>
     <rect x="160" y="982" width="120" height="45" fill="#8a7a62" stroke="#23201c" stroke-width="2"/>
     <rect x="170" y="970" width="90" height="14" fill="#fbfaf6" stroke="#23201c" stroke-width="1.5"/>
     <path d="M150,962 L186,976" stroke="#23201c" stroke-width="3"/>
