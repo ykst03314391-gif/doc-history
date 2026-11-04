@@ -47,7 +47,7 @@
   </g>
   <path d="M623,262 q-6,10 0,14 q6,-4 0,-14 Z" fill="#cfe0ec" stroke="#2f5d7c" stroke-width="1.2"/>
   <!-- 掛け布団の下の弟（基本形の四つ足。服は着せず、低い折烏帽子で見分ける。前足と、布団の端から立つしっぽ） -->
-  <path d="M760,304 Q766,286 764,274 Q764,264 772,264 L780,264 Q788,264 788,274 Q788,294 780,306 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M764,308 Q772,296 772,280 Q774,264 786,264 Q796,266 794,280 L790,308 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
   <path d="M610,310 Q614,292 650,292 L766,298 Q788,300 788,322 L788,340 L606,340 Z" fill="#2f5d7c" fill-opacity="0.85" stroke="#23201c" stroke-width="2"/>
   <path d="M652,312 Q710,304 776,314" stroke="#23201c" stroke-width="1.5" fill="none" opacity="0.5"/>
   <path d="M640,312 L614,322" stroke="#23201c" stroke-width="17" stroke-linecap="round"/>
@@ -56,8 +56,8 @@
 
   <!-- 枕元の兄（基本形の四つ足のぱぱねこ。服は着せず、高い立烏帽子で見分ける。前足を弟へ伸ばす） -->
   <g transform="translate(477.2,21.6) scale(-0.8,0.8)">
-    <path d="M126,316 C114,350 124,378 158,380 L196,380 L198,398 L212,398 L214,382 L290,382 L292,398 L306,398 L308,382 L332,380 Q328,372 334,368 Q352,350 352,322 Q340,314 322,312 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
-    <path d="M196,380 L198,398 L212,398 L214,382 M290,382 L292,398 L306,398 L308,382" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M-104,-92 C-110,-70 -116,-40 -112,-26 Q-108,-19 -100,-19 L-62,-19 L-62,-10 Q-62,0 -55,0 Q-48,0 -48,-10 L-48,-19 L14,-19 L14,-10 Q14,0 21,0 Q28,0 28,-10 L28,-19 L60,-19 L60,-10 Q60,0 67,0 Q74,0 74,-10 L74,-19 Q90,-21 93,-38 L94,-66 Q90,-74 94,-82 L96,-112 Q97,-134 84,-135 Q73,-135 67,-120 Q61,-100 50,-87 Q40,-89 20,-88 L-104,-92 Z" transform="translate(235,398)" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M173,379 L173,388 Q173,398 180,398 Q187,398 187,388 L187,379 M249,379 L249,388 Q249,398 256,398 Q263,398 263,388 L263,379 M295,379 L295,388 Q295,398 302,398 Q309,398 309,388 L309,379" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
     <path d="M334,320 Q340,300 338,290 Q338,280 346,280 L354,280 Q362,280 362,290 Q362,318 350,332 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
   </g>
   <path d="M372,302 L496,268" stroke="#23201c" stroke-width="22" stroke-linecap="round"/>
