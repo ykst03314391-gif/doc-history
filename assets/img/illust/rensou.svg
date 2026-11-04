@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="人柄からの連想で名君の像が生まれることのイメージイラスト（本を読む現代の読者と、その頭に浮かぶ穏やかな殿様の姿）">
+  <defs>
+    <symbol id="sz" viewBox="-70 -150 140 150" overflow="visible">
+      <path d="M-36,-52 L36,-52 L62,0 L-62,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M-24,-100 L24,-100 L28,-50 L-28,-50 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-50,-100 L50,-100 L42,-88 L22,-88 L17,-52 L-17,-52 L-22,-88 L-42,-88 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-100 L0,-82 L9,-100 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-121" r="19" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-18,-127 A19,19 0 0 1 18,-127 Q0,-119 -18,-127 Z" fill="#23201c"/>
+      <path d="M-3,-139 L-3,-148 L13,-145 L13,-141 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <rect x="0" y="340" width="800" height="110" fill="#efe9dc"/>
+  <ellipse cx="520" cy="160" rx="200" ry="110" fill="#f4f1ea" stroke="#6b5a46" stroke-width="2" stroke-dasharray="6 6"/>
+  <circle cx="330" cy="270" r="10" fill="#f4f1ea" stroke="#6b5a46" stroke-width="2"/><circle cx="360" cy="240" r="14" fill="#f4f1ea" stroke="#6b5a46" stroke-width="2"/>
+  <use href="#sz" x="470" y="90" width="110" height="130" color="#2f5d7c"/>
+  <circle cx="600" cy="120" r="8" fill="#9b2d20"/><circle cx="430" cy="140" r="8" fill="#9b2d20"/>
+  <rect x="160" y="250" width="90" height="90" rx="10" fill="#cfdbe6" stroke="#23201c" stroke-width="2"/>
+  <circle cx="205" cy="225" r="26" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+  <path d="M180,222 Q182,196 205,198 Q230,198 230,222 Q216,210 190,216 Z" fill="#23201c"/>
+  <path d="M170,290 L240,282 L246,316 L176,322 Z" fill="#8a6d1f" stroke="#23201c" stroke-width="2"/>
+
+</svg>

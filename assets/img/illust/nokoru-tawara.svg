@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="削られていく寺の領地のイメージイラスト（三つの俵のうち二つが運び去られ、一つだけが寺の前に残る）">
+  <defs>
+    <symbol id="sb" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L30,-92 L-30,-92 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <circle cx="0" cy="-162" r="20" fill="#23201c"/>
+      <path d="M-4,-182 L-4,-192 L4,-192 L4,-182 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <rect x="0" y="340" width="800" height="110" fill="#efe9dc"/>
+  <path d="M80,250 L300,250 L286,228 L94,228 Z" fill="#6b5a46"/><rect x="92" y="250" width="196" height="38" fill="#efe9dc" stroke="#6b5a46" stroke-width="2"/>
+  <rect x="80" y="288" width="220" height="52" fill="#efe9dc" stroke="#6b5a46" stroke-width="2"/>
+  <ellipse cx="190" cy="320" rx="44" ry="28" fill="#d8c08a" stroke="#23201c" stroke-width="2"/><path d="M166,296 V344 M214,296 V344" stroke="#8a6d1f" stroke-width="3"/>
+  <ellipse cx="470" cy="330" rx="44" ry="28" fill="#e8dcc0" stroke="#23201c" stroke-width="2"/><path d="M446,306 V354 M494,306 V354" stroke="#8a6d1f" stroke-width="3"/>
+  <ellipse cx="600" cy="330" rx="44" ry="28" fill="#e8dcc0" stroke="#23201c" stroke-width="2"/><path d="M576,306 V354 M624,306 V354" stroke="#8a6d1f" stroke-width="3"/>
+  <path d="M500,270 L680,270" stroke="#9b2d20" stroke-width="3" stroke-dasharray="8 6"/>
+  <path d="M680,262 L700,270 L680,278 Z" fill="#9b2d20"/>
+  <use href="#sb" x="640" y="220" width="60" height="120" color="#8a6d1f"/>
+
+</svg>

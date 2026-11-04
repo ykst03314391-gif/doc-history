@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="郡山城の普請に駆り出された人夫の想像図（大きな石を綱で引く人々の後ろ姿と、積み上がる石垣）">
+  <defs>
+    <symbol id="sb" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L30,-92 L-30,-92 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <circle cx="0" cy="-162" r="20" fill="#23201c"/>
+      <path d="M-4,-182 L-4,-192 L4,-192 L4,-182 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <rect x="0" y="340" width="800" height="110" fill="#efe9dc"/>
+  <path d="M560,340 L600,140 L800,140 L800,340 Z" fill="#cfc6b4" stroke="#6b5a46" stroke-width="2"/>
+  <path d="M590,190 H800 M580,240 H800 M570,290 H800 M640,140 V190 M700,190 V240 M660,240 V290 M720,290 V340" stroke="#6b5a46" stroke-width="2"/>
+  <path d="M130,330 Q150,280 220,282 Q280,280 290,330 Z" fill="#b8ab95" stroke="#23201c" stroke-width="2"/>
+  <path d="M290,318 L520,300" stroke="#8a6d1f" stroke-width="3"/>
+  <use href="#sb" x="340" y="250" width="46" height="92" color="#6b5a46"/>
+  <use href="#sb" x="400" y="245" width="46" height="92" color="#8a6d1f"/>
+  <use href="#sb" x="460" y="240" width="46" height="92" color="#6b5a46"/>
+
+</svg>

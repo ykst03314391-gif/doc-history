@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 1082" role="img" aria-label="四コマ漫画（創作）。一、現代の記者が秀長に「秀長さん、大和では「名君」と呼ばれていますね」と尋ね、秀長が「うむ」と答える。二、郡山の町人が両手を挙げて「市が立つのは郡山だけ！秀長さま万歳！」。三、奈良の僧が日記に「あさまし……あさまし……あさまし……」と書く。四、秀長「……同じ政策なんじゃが」、記者「評判は住む町しだい、と」">
+  <defs>
+    <symbol id="st" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M0,-70 V0" stroke="#23201c" stroke-width="1.5"/>
+      <path d="M-26,-140 L26,-140 L30,-90 L-30,-90 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L24,-128 L18,-92 L-18,-92 L-24,-128 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-140 L0,-120 L9,-140 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-162" r="20" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-19,-168 A20,20 0 0 1 19,-168 Q0,-160 -19,-168 Z" fill="#23201c"/>
+      <path d="M-3,-180 L-3,-190 L14,-187 L14,-183 Z" fill="#23201c"/>
+    </symbol>
+    <symbol id="bw" viewBox="-80 -110 160 110" overflow="visible">
+      <path d="M-30,-40 L50,-40 L62,0 L-50,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M12,-38 L44,-44 L4,-86 L-34,-74 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-34,-60 L-62,-8 L-44,-6 L-20,-52 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <rect x="-70" y="-10" width="20" height="7" rx="3" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="-48" cy="-72" r="17" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-34,-84 A17,17 0 0 1 -36,-58 Q-44,-72 -34,-84 Z" fill="#23201c"/>
+      <path d="M-30,-80 L-24,-90 L-20,-86 L-26,-76 Z" fill="#23201c"/>
+    </symbol>
+    <!-- 現代の記者（手帳を持つ） -->
+    <symbol id="md" viewBox="130 110 140 300" overflow="visible">
+      <path d="M168,300 L158,398 L190,398 L198,312 L206,398 L238,398 L230,300 Z" fill="#4f4940" stroke="#23201c" stroke-width="2"/>
+      <path d="M150,200 Q200,186 250,200 L240,306 L160,306 Z" fill="#cfdbe6" stroke="#23201c" stroke-width="2"/>
+      <path d="M188,196 L200,214 L212,196" fill="none" stroke="#23201c" stroke-width="2"/>
+      <path d="M152,204 L140,262 L186,262" fill="none" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M248,204 L260,262 L214,262" fill="none" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+      <rect x="170" y="238" width="60" height="42" rx="2" fill="#8a6d1f" stroke="#23201c" stroke-width="2"/>
+      <path d="M200,238 V280" stroke="#efe2b8" stroke-width="2"/>
+      <circle cx="182" cy="262" r="7" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="218" cy="262" r="7" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="200" cy="158" r="28" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M172,156 Q170,126 200,124 Q232,124 229,154 Q214,140 186,146 Z" fill="#23201c"/>
+    </symbol>
+      <symbol id="mk" viewBox="-70 -150 140 150" overflow="visible">
+      <path d="M-40,-96 L40,-96 L62,0 L-62,0 Z" fill="currentColor" fill-opacity="0.85" stroke="#23201c" stroke-width="2"/>
+      <path d="M-40,-96 L30,-30" stroke="#efe2b8" stroke-width="6"/>
+      <path d="M-9,-96 L0,-80 L9,-96 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-117" r="19" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+    </symbol>
+    <!-- 町人（両手を挙げる） -->
+    <symbol id="ch" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-30,-110 L30,-110 L40,0 L-40,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-110 L0,-92 L9,-110 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <path d="M-28,-104 L-52,-170 M28,-104 L52,-170" stroke="currentColor" stroke-width="14" stroke-linecap="round"/>
+      <circle cx="-52" cy="-172" r="8" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/><circle cx="52" cy="-172" r="8" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-132" r="20" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-19,-138 A20,20 0 0 1 19,-138 Q0,-130 -19,-138 Z" fill="#23201c"/>
+      <path d="M-3,-150 L-3,-158 L10,-156 L10,-152 Z" fill="#23201c"/>
+      <path d="M-8,-124 Q0,-116 8,-124" fill="none" stroke="#23201c" stroke-width="2"/>
+    </symbol>
+  </defs>
+  <rect width="420" height="1082" fill="#fbfaf6"/>
+
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" text-anchor="middle" fill="#23201c">
+    <!-- コマ1 -->
+    <rect x="20" y="20" width="380" height="250" fill="#fbfaf6"/>
+    <path d="M20,235 H400" stroke="#d9d2c5" stroke-width="2"/>
+    <use href="#md" x="46" y="112" width="70" height="125"/>
+    <use href="#st" x="290" y="115" width="75" height="120" color="#2f5d7c"/>
+    <path d="M100,90 L86,112 L122,94 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+    <ellipse cx="200" cy="64" rx="145" ry="32" fill="#fff" stroke="#23201c" stroke-width="2"/>
+    <text x="200" y="57" font-size="15">秀長さん、大和では</text><text x="200" y="81" font-size="15">「名君」と呼ばれていますね</text>
+
+    <path d="M262,152 L292,156 L266,140 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+    <ellipse cx="240" cy="145" rx="30" ry="20" fill="#fff" stroke="#23201c" stroke-width="2"/>
+    <text x="240" y="150" font-size="15">うむ</text>
+
+    <rect x="20" y="20" width="380" height="250" fill="none" stroke="#23201c" stroke-width="2.5"/>
+    <!-- コマ2 -->
+    <rect x="20" y="284" width="380" height="250" fill="#fbfaf6"/>
+    <path d="M20,499 H400" stroke="#d9d2c5" stroke-width="2"/>
+    <g transform="translate(300,434) scale(0.9)"><rect x="-50" y="-10" width="100" height="40" fill="#8a7a62"/><path d="M-60,-10 L60,-10 L46,-30 L-46,-30 Z" fill="#6b5a46"/><rect x="-30" y="-60" width="60" height="30" fill="#8a7a62"/><path d="M-42,-60 L42,-60 L30,-80 L-30,-80 Z" fill="#6b5a46"/></g>
+    <use href="#ch" x="60" y="384" width="70" height="115" color="#8a6d1f"/>
+    <use href="#ch" x="310" y="404" width="57" height="95" color="#9b2d20"/>
+    <text x="370" y="324" font-size="12" fill="#4f4940" text-anchor="end">郡山</text>
+    <path d="M140,350 L110,384 L160,354 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+    <ellipse cx="215" cy="326" rx="125" ry="30" fill="#fff" stroke="#23201c" stroke-width="2"/>
+    <text x="215" y="319" font-size="15">市が立つのは郡山だけ！</text><text x="215" y="343" font-size="15">秀長さま万歳！</text>
+
+    <rect x="20" y="284" width="380" height="250" fill="none" stroke="#23201c" stroke-width="2.5"/>
+    <!-- コマ3 -->
+    <rect x="20" y="548" width="380" height="250" fill="#fbfaf6"/>
+    <path d="M20,763 H400" stroke="#d9d2c5" stroke-width="2"/>
+    <use href="#mk" x="80" y="643" width="100" height="110" color="#6b5a46"/>
+    <rect x="170" y="718" width="120" height="45" fill="#8a7a62" stroke="#23201c" stroke-width="2"/>
+    <rect x="180" y="706" width="90" height="14" fill="#fbfaf6" stroke="#23201c" stroke-width="1.5"/>
+    <path d="M160,698 L196,712" stroke="#23201c" stroke-width="3"/>
+    <text x="380" y="752" font-size="12" fill="#4f4940" text-anchor="end">奈良</text>
+    <path d="M200,656 L178,688 L220,660 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+    <ellipse cx="272" cy="616" rx="108" ry="48" fill="#fff" stroke="#23201c" stroke-width="2"/>
+    <text x="272" y="597" font-size="15">あさまし……</text><text x="272" y="621" font-size="15">あさまし……</text><text x="272" y="645" font-size="15">あさまし……</text>
+
+    <rect x="20" y="548" width="380" height="250" fill="none" stroke="#23201c" stroke-width="2.5"/>
+    <!-- コマ4 -->
+    <rect x="20" y="812" width="380" height="250" fill="#fbfaf6"/>
+    <path d="M20,1027 H400" stroke="#d9d2c5" stroke-width="2"/>
+    <use href="#st" x="40" y="907" width="75" height="120" color="#2f5d7c"/>
+    <use href="#md" x="310" y="904" width="70" height="125"/>
+    <path d="M90,882 L80,910 L112,885 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+    <ellipse cx="160" cy="856" rx="118" ry="30" fill="#fff" stroke="#23201c" stroke-width="2"/>
+    <text x="160" y="861" font-size="15">……同じ政策なんじゃが</text>
+
+    <path d="M300,940 L332,936 L306,958 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+    <ellipse cx="225" cy="942" rx="92" ry="34" fill="#fff" stroke="#23201c" stroke-width="2"/>
+    <text x="225" y="935" font-size="15">評判は</text><text x="225" y="959" font-size="15">住む町しだい、と</text>
+
+    <rect x="20" y="812" width="380" height="250" fill="none" stroke="#23201c" stroke-width="2.5"/>
+  </g>
+</svg>

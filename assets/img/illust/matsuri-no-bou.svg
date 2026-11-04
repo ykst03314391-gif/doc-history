@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="春日若宮の祭りで、棒を持って見物の群衆を払う秀長の想像図（後ろ姿の秀長と、進む僧の列）">
+  <defs>
+    <symbol id="sb" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L30,-92 L-30,-92 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <circle cx="0" cy="-162" r="20" fill="#23201c"/>
+      <path d="M-4,-182 L-4,-192 L4,-192 L4,-182 Z" fill="#23201c"/>
+    </symbol>
+    <symbol id="mk" viewBox="-70 -150 140 150" overflow="visible">
+      <path d="M-40,-96 L40,-96 L62,0 L-62,0 Z" fill="currentColor" fill-opacity="0.85" stroke="#23201c" stroke-width="2"/>
+      <path d="M-40,-96 L30,-30" stroke="#efe2b8" stroke-width="6"/>
+      <path d="M-9,-96 L0,-80 L9,-96 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-117" r="19" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <path d="M0,220 Q120,160 240,200 Q360,150 480,195 Q620,155 800,205 V340 H0 Z" fill="#e3dccd"/>
+  <rect x="0" y="340" width="800" height="110" fill="#efe9dc"/>
+  <path d="M0,300 H800" stroke="#9b2d20" stroke-width="3" opacity="0.5"/>
+  <use href="#mk" x="120" y="236" width="56" height="100" color="#6b5a46"/><use href="#mk" x="200" y="236" width="56" height="100" color="#6b5a46"/><use href="#mk" x="280" y="236" width="56" height="100" color="#6b5a46"/>
+  <use href="#sb" x="430" y="200" width="80" height="150" color="#2f5d7c"/>
+  <path d="M400,250 L520,210" stroke="#23201c" stroke-width="5"/>
+  <g fill="#cfc6b4" stroke="#23201c" stroke-width="1.5">
+  <circle cx="600" cy="240" r="16"/><circle cx="640" cy="232" r="16"/><circle cx="680" cy="244" r="16"/><circle cx="720" cy="236" r="16"/><circle cx="760" cy="246" r="16"/>
+  <path d="M580,340 L590,256 L780,256 L790,340 Z"/></g>
+
+</svg>

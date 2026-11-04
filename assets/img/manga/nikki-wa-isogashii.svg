@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 1082" role="img" aria-label="四コマ漫画（創作）。一、秀長が「奈良での商売は止める。売り買いは郡山でせよ」と命じ、家臣が「ははっ」。二、興福寺の僧が日記に向かって「さてさて、あさまし、あさまし……」。三、秀長が「春日社の屋根の修理はわしが持とう」と言い、家臣が「ははっ」。四、僧が日記に「……善政なり。」と書き、「忙しいのう」とつぶやく">
+  <defs>
+    <symbol id="st" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M0,-70 V0" stroke="#23201c" stroke-width="1.5"/>
+      <path d="M-26,-140 L26,-140 L30,-90 L-30,-90 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L24,-128 L18,-92 L-18,-92 L-24,-128 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-140 L0,-120 L9,-140 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-162" r="20" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-19,-168 A20,20 0 0 1 19,-168 Q0,-160 -19,-168 Z" fill="#23201c"/>
+      <path d="M-3,-180 L-3,-190 L14,-187 L14,-183 Z" fill="#23201c"/>
+    </symbol>
+    <symbol id="bw" viewBox="-80 -110 160 110" overflow="visible">
+      <path d="M-30,-40 L50,-40 L62,0 L-50,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M12,-38 L44,-44 L4,-86 L-34,-74 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-34,-60 L-62,-8 L-44,-6 L-20,-52 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <rect x="-70" y="-10" width="20" height="7" rx="3" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="-48" cy="-72" r="17" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-34,-84 A17,17 0 0 1 -36,-58 Q-44,-72 -34,-84 Z" fill="#23201c"/>
+      <path d="M-30,-80 L-24,-90 L-20,-86 L-26,-76 Z" fill="#23201c"/>
+    </symbol>
+    <!-- 現代の記者（手帳を持つ） -->
+    <symbol id="md" viewBox="130 110 140 300" overflow="visible">
+      <path d="M168,300 L158,398 L190,398 L198,312 L206,398 L238,398 L230,300 Z" fill="#4f4940" stroke="#23201c" stroke-width="2"/>
+      <path d="M150,200 Q200,186 250,200 L240,306 L160,306 Z" fill="#cfdbe6" stroke="#23201c" stroke-width="2"/>
+      <path d="M188,196 L200,214 L212,196" fill="none" stroke="#23201c" stroke-width="2"/>
+      <path d="M152,204 L140,262 L186,262" fill="none" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M248,204 L260,262 L214,262" fill="none" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+      <rect x="170" y="238" width="60" height="42" rx="2" fill="#8a6d1f" stroke="#23201c" stroke-width="2"/>
+      <path d="M200,238 V280" stroke="#efe2b8" stroke-width="2"/>
+      <circle cx="182" cy="262" r="7" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="218" cy="262" r="7" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="200" cy="158" r="28" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M172,156 Q170,126 200,124 Q232,124 229,154 Q214,140 186,146 Z" fill="#23201c"/>
+    </symbol>
+      <symbol id="mk" viewBox="-70 -150 140 150" overflow="visible">
+      <path d="M-40,-96 L40,-96 L62,0 L-62,0 Z" fill="currentColor" fill-opacity="0.85" stroke="#23201c" stroke-width="2"/>
+      <path d="M-40,-96 L30,-30" stroke="#efe2b8" stroke-width="6"/>
+      <path d="M-9,-96 L0,-80 L9,-96 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-117" r="19" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+    </symbol>
+    <!-- 町人（両手を挙げる） -->
+    <symbol id="ch" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-30,-110 L30,-110 L40,0 L-40,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-110 L0,-92 L9,-110 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <path d="M-28,-104 L-52,-170 M28,-104 L52,-170" stroke="currentColor" stroke-width="14" stroke-linecap="round"/>
+      <circle cx="-52" cy="-172" r="8" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/><circle cx="52" cy="-172" r="8" fill="#ecdcc2" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-132" r="20" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-19,-138 A20,20 0 0 1 19,-138 Q0,-130 -19,-138 Z" fill="#23201c"/>
+      <path d="M-3,-150 L-3,-158 L10,-156 L10,-152 Z" fill="#23201c"/>
+      <path d="M-8,-124 Q0,-116 8,-124" fill="none" stroke="#23201c" stroke-width="2"/>
+    </symbol>
+  </defs>
+  <rect width="420" height="1082" fill="#fbfaf6"/>
+
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" text-anchor="middle" fill="#23201c">
+    <!-- コマ1 -->
+    <rect x="20" y="20" width="380" height="250" fill="#fbfaf6"/>
+    <path d="M20,235 H400" stroke="#d9d2c5" stroke-width="2"/>
+    <use href="#st" x="40" y="112" width="75" height="120" color="#2f5d7c"/>
+    <use href="#bw" x="270" y="160" width="110" height="75" color="#8a6d1f"/>
+    <path d="M110,92 L92,120 L134,96 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+    <ellipse cx="200" cy="66" rx="150" ry="32" fill="#fff" stroke="#23201c" stroke-width="2"/>
+    <text x="200" y="59" font-size="15">奈良での商売は止める。</text><text x="200" y="83" font-size="15">売り買いは郡山でせよ</text>
+
+    <path d="M300,158 L296,172 L310,157 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+    <ellipse cx="300" cy="138" rx="36" ry="20" fill="#fff" stroke="#23201c" stroke-width="2"/>
+    <text x="300" y="143" font-size="15">ははっ</text>
+
+    <rect x="20" y="20" width="380" height="250" fill="none" stroke="#23201c" stroke-width="2.5"/>
+    <!-- コマ2 -->
+    <rect x="20" y="284" width="380" height="250" fill="#fbfaf6"/>
+    <path d="M20,499 H400" stroke="#d9d2c5" stroke-width="2"/>
+    <use href="#mk" x="70" y="384" width="96" height="106" color="#6b5a46"/>
+    <rect x="160" y="454" width="120" height="45" fill="#8a7a62" stroke="#23201c" stroke-width="2"/>
+    <rect x="170" y="442" width="90" height="14" fill="#fbfaf6" stroke="#23201c" stroke-width="1.5"/>
+    <path d="M150,434 L186,448" stroke="#23201c" stroke-width="3"/>
+    <text x="380" y="488" font-size="12" fill="#4f4940" text-anchor="end">興福寺の僧</text>
+    <path d="M196,388 L176,422 L220,392 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+    <ellipse cx="262" cy="350" rx="112" ry="46" fill="#fff" stroke="#23201c" stroke-width="2"/>
+    <text x="262" y="343" font-size="15">さてさて</text><text x="262" y="367" font-size="15">あさまし、あさまし……</text>
+
+    <rect x="20" y="284" width="380" height="250" fill="none" stroke="#23201c" stroke-width="2.5"/>
+    <!-- コマ3 -->
+    <rect x="20" y="548" width="380" height="250" fill="#fbfaf6"/>
+    <path d="M20,763 H400" stroke="#d9d2c5" stroke-width="2"/>
+    <use href="#st" x="40" y="640" width="75" height="120" color="#2f5d7c"/>
+    <use href="#bw" x="270" y="688" width="110" height="75" color="#8a6d1f"/>
+    <path d="M110,620 L92,648 L134,624 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+    <ellipse cx="200" cy="594" rx="150" ry="32" fill="#fff" stroke="#23201c" stroke-width="2"/>
+    <text x="200" y="587" font-size="15">春日社の屋根の修理は</text><text x="200" y="611" font-size="15">わしが持とう</text>
+
+    <path d="M300,686 L296,700 L310,685 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+    <ellipse cx="300" cy="666" rx="36" ry="20" fill="#fff" stroke="#23201c" stroke-width="2"/>
+    <text x="300" y="671" font-size="15">ははっ</text>
+
+    <rect x="20" y="548" width="380" height="250" fill="none" stroke="#23201c" stroke-width="2.5"/>
+    <!-- コマ4 -->
+    <rect x="20" y="812" width="380" height="250" fill="#fbfaf6"/>
+    <path d="M20,1027 H400" stroke="#d9d2c5" stroke-width="2"/>
+    <use href="#mk" x="70" y="912" width="96" height="106" color="#6b5a46"/>
+    <rect x="160" y="982" width="120" height="45" fill="#8a7a62" stroke="#23201c" stroke-width="2"/>
+    <rect x="170" y="970" width="90" height="14" fill="#fbfaf6" stroke="#23201c" stroke-width="1.5"/>
+    <path d="M150,962 L186,976" stroke="#23201c" stroke-width="3"/>
+    <text x="380" y="1016" font-size="12" fill="#4f4940" text-anchor="end">興福寺の僧</text>
+    <path d="M190,896 L170,932 L212,898 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+    <ellipse cx="250" cy="862" rx="126" ry="38" fill="#fff" stroke="#23201c" stroke-width="2"/>
+    <text x="250" y="867" font-size="17">……善政なり。</text>
+
+    <path d="M262,944 L236,952 L258,934 Z" fill="#fff" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/>
+    <ellipse cx="310" cy="937" rx="70" ry="22" fill="#fff" stroke="#23201c" stroke-width="2"/>
+    <text x="310" y="942" font-size="13">忙しいのう</text>
+
+    <rect x="20" y="812" width="380" height="250" fill="none" stroke="#23201c" stroke-width="2.5"/>
+  </g>
+</svg>

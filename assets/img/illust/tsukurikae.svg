@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="大和を作り替えた新しい領主のイメージイラスト（郡山城と奈良の寺を結ぶ道の上に立つ秀長の後ろ姿）">
+  <defs>
+    <symbol id="sb" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L30,-92 L-30,-92 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <circle cx="0" cy="-162" r="20" fill="#23201c"/>
+      <path d="M-4,-182 L-4,-192 L4,-192 L4,-182 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <path d="M0,230 Q120,170 240,210 Q360,160 480,205 Q620,165 800,215 V340 H0 Z" fill="#d9d2c5"/>
+  <rect x="0" y="340" width="800" height="110" fill="#efe9dc"/>
+  <g transform="translate(150,280) scale(1.2)"><rect x="-50" y="-10" width="100" height="40" fill="#8a7a62"/><path d="M-60,-10 L60,-10 L46,-30 L-46,-30 Z" fill="#6b5a46"/><rect x="-30" y="-60" width="60" height="30" fill="#8a7a62"/><path d="M-42,-60 L42,-60 L30,-80 L-30,-80 Z" fill="#6b5a46"/></g>
+  <path d="M620,330 L700,330 L688,318 L632,318 Z" fill="#8a7a62"/><rect x="646" y="308" width="28" height="22" fill="#efe9dc" stroke="#8a7a62"/><path d="M627,296 L693,296 L681,284 L639,284 Z" fill="#8a7a62"/><rect x="648" y="274" width="24" height="22" fill="#efe9dc" stroke="#8a7a62"/><path d="M634,262 L686,262 L674,250 L646,250 Z" fill="#8a7a62"/><rect x="650" y="240" width="20" height="22" fill="#efe9dc" stroke="#8a7a62"/><path d="M641,228 L679,228 L667,216 L653,216 Z" fill="#8a7a62"/><rect x="652" y="206" width="16" height="22" fill="#efe9dc" stroke="#8a7a62"/><path d="M648,194 L672,194 L660,182 L660,182 Z" fill="#8a7a62"/><rect x="654" y="172" width="12" height="22" fill="#efe9dc" stroke="#8a7a62"/><path d="M660,160 V130" stroke="#8a7a62" stroke-width="3"/>
+  <path d="M220,330 Q400,300 600,330" stroke="#d9d2c5" stroke-width="24" fill="none"/>
+  <use href="#sb" x="360" y="150" width="90" height="170" color="#2f5d7c"/>
+
+</svg>

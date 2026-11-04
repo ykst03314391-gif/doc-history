@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="同じ政策が郡山には善政、奈良にはあさましい政治になったことのイメージイラスト（天秤の片方に賑わう郡山、もう片方に沈む奈良）">
+  <defs>
+    
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <rect x="0" y="340" width="800" height="110" fill="#efe9dc"/>
+  <path d="M400,90 V330 M340,330 H460" stroke="#23201c" stroke-width="4"/>
+  <path d="M170,170 L630,130" stroke="#23201c" stroke-width="4"/>
+  <path d="M170,170 L120,250 M170,170 L220,250 M630,130 L580,210 M630,130 L680,210" stroke="#23201c" stroke-width="2"/>
+  <path d="M100,250 H240 Q170,280 100,250 Z M560,210 H700 Q630,240 560,210 Z" fill="#cfc6b4" stroke="#23201c" stroke-width="2"/>
+  <g transform="translate(170,240) scale(0.8)"><rect x="-50" y="-10" width="100" height="40" fill="#8a7a62"/><path d="M-60,-10 L60,-10 L46,-30 L-46,-30 Z" fill="#6b5a46"/><rect x="-30" y="-60" width="60" height="30" fill="#8a7a62"/><path d="M-42,-60 L42,-60 L30,-80 L-30,-80 Z" fill="#6b5a46"/></g>
+  <circle cx="120" cy="244" r="6" fill="#9b2d20"/><circle cx="222" cy="244" r="6" fill="#9b2d20"/>
+  <path d="M590,207 L670,207 L658,195 L602,195 Z" fill="#b8ab95"/><rect x="616" y="185" width="28" height="22" fill="#efe9dc" stroke="#b8ab95"/><path d="M597,173 L663,173 L651,161 L609,161 Z" fill="#b8ab95"/><rect x="618" y="151" width="24" height="22" fill="#efe9dc" stroke="#b8ab95"/><path d="M604,139 L656,139 L644,127 L616,127 Z" fill="#b8ab95"/><rect x="620" y="117" width="20" height="22" fill="#efe9dc" stroke="#b8ab95"/><path d="M611,105 L649,105 L637,93 L623,93 Z" fill="#b8ab95"/><rect x="622" y="83" width="16" height="22" fill="#efe9dc" stroke="#b8ab95"/><path d="M618,71 L642,71 L630,59 L630,59 Z" fill="#b8ab95"/><rect x="624" y="49" width="12" height="22" fill="#efe9dc" stroke="#b8ab95"/><path d="M630,37 V7" stroke="#b8ab95" stroke-width="3"/>
+  <text x="170" y="310" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="22" font-weight="700" fill="#9b2d20" text-anchor="middle">郡山</text>
+  <text x="630" y="270" font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="22" font-weight="700" fill="#6b5a46" text-anchor="middle">奈良</text>
+
+</svg>

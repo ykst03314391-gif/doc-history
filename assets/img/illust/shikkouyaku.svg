@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="兄の政権の命令を大和へ伝える秀長のイメージイラスト（奥の大きな影の兄から、手前の秀長を経て奈良の町へ届く書状）">
+  <defs>
+    <symbol id="st" viewBox="-60 -200 120 200" overflow="visible">
+      <path d="M-34,-92 L34,-92 L44,0 L-44,0 Z" fill="currentColor" fill-opacity="0.8" stroke="#23201c" stroke-width="2"/>
+      <path d="M0,-70 V0" stroke="#23201c" stroke-width="1.5"/>
+      <path d="M-26,-140 L26,-140 L30,-90 L-30,-90 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2"/>
+      <path d="M-54,-140 L54,-140 L44,-128 L24,-128 L18,-92 L-18,-92 L-24,-128 L-44,-128 Z" fill="currentColor" stroke="#23201c" stroke-width="2"/>
+      <path d="M-9,-140 L0,-120 L9,-140 Z" fill="#f4f1ea" stroke="#23201c" stroke-width="1.5"/>
+      <circle cx="0" cy="-162" r="20" fill="#ecdcc2" stroke="#23201c" stroke-width="2"/>
+      <path d="M-19,-168 A20,20 0 0 1 19,-168 Q0,-160 -19,-168 Z" fill="#23201c"/>
+      <path d="M-3,-180 L-3,-190 L14,-187 L14,-183 Z" fill="#23201c"/>
+    </symbol>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <rect x="0" y="340" width="800" height="110" fill="#efe9dc"/>
+  <circle cx="160" cy="180" r="120" fill="#e3dccd"/>
+  <use href="#st" x="90" y="80" width="140" height="250" color="#b08d33"/>
+  <use href="#st" x="370" y="170" width="84" height="160" color="#2f5d7c"/>
+  <rect x="440" y="250" width="40" height="18" fill="#fbfaf6" stroke="#23201c" stroke-width="2"/>
+  <path d="M490,262 L600,280" stroke="#9b2d20" stroke-width="3" stroke-dasharray="8 6"/>
+  <path d="M650,335 L730,335 L718,323 L662,323 Z" fill="#8a7a62"/><rect x="676" y="313" width="28" height="22" fill="#efe9dc" stroke="#8a7a62"/><path d="M657,301 L723,301 L711,289 L669,289 Z" fill="#8a7a62"/><rect x="678" y="279" width="24" height="22" fill="#efe9dc" stroke="#8a7a62"/><path d="M664,267 L716,267 L704,255 L676,255 Z" fill="#8a7a62"/><rect x="680" y="245" width="20" height="22" fill="#efe9dc" stroke="#8a7a62"/><path d="M671,233 L709,233 L697,221 L683,221 Z" fill="#8a7a62"/><rect x="682" y="211" width="16" height="22" fill="#efe9dc" stroke="#8a7a62"/><path d="M678,199 L702,199 L690,187 L690,187 Z" fill="#8a7a62"/><rect x="684" y="177" width="12" height="22" fill="#efe9dc" stroke="#8a7a62"/><path d="M690,165 V135" stroke="#8a7a62" stroke-width="3"/>
+  <path d="M620,340 L770,340 L756,318 L634,318 Z" fill="#6b5a46"/><rect x="632" y="340" width="126" height="38" fill="#efe9dc" stroke="#6b5a46" stroke-width="2"/>
+
+</svg>
