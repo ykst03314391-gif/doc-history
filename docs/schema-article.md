@@ -53,7 +53,7 @@
 | `summary` | string | 一覧・SEO 用の要約 |
 | `date` | string | 公開日（YYYY-MM-DD） |
 | `updatedAt` | string | 更新日（YYYY-MM-DD、任意） |
-| `author` | string | 執筆者（任意） |
+| `author` | string | 執筆者（任意）。省略するか「管理人」なら、日付の横にぱぱねこの顔と「ぱぱねこ」を出す（管理人＝ぱぱねこ）。ほかの人が書いたときだけ名前を書く |
 | `image` | Image | 冒頭画像 `{ "src", "caption"?, "credit"?, "sourceUrl"?, "license"?, "licenseUrl"? }`（任意）。一覧カードのサムネイルにもなる。`credit` は「撮影：〇〇、Wikimedia Commons」のように撮影者と出典を書き、`sourceUrl`（出典のページ）・`licenseUrl`（CC ライセンスの条文）があればリンクにする。城・合戦・人物の写真を使うときは、その `photo`／`portrait` の表記を写す。詳細ページで**タイトル直下**に表示。**権利注意**：パブリックドメイン画像（Wikimedia Commons の肖像画等）を `credit`/`license` 明記で、または自作画像を使う。自分で撮った写真は `credit` を「撮影：戦国クロニクル（2026年11月）」、`license` を "CC BY 4.0"（`licenseUrl` は https://creativecommons.org/licenses/by/4.0/deed.ja ）とし、載せる前に `.claude/rules/own-photo.md` の確認をする。参考イメージは caption に明記 |
 | `references` | Reference[] | 関連書籍（アフィリエイト）`{ "title", "author"?, "affiliateUrl"?, "note"? }`（任意）。記事**末尾**に「関連書籍」として表示。開示文つき・`rel="sponsored"`。可読性のため本文には挟まない |
 | `relatedPeople` | string[] | 関連する人物の `person_id`（DB連携。詳細ページで相互リンク） |
@@ -84,6 +84,7 @@
 | `{{…}}` | 藍の「…」 | 原文の引用。強調は重ねない |
 | `<div class="lead-answer"><span class="lead-answer-label">先に答えを言うと</span><p>…</p></div>` | 朱の上罫の囲み | 問いのすぐ下に置く、記事の答え（2〜3文） |
 | `<p class="sec-conclusion"><span class="sec-conclusion-label">論点①の結論</span>…</p>` | 朱の左罫の囲み | 論点ごとの結論 |
+| `<div class="my-view">`・空行・段落・空行・`</div>` | ぱぱねこの顔付きの吹き出し（札「ぱぱねこの見立て」は自動） | 筆者（管理人＝ぱぱねこ）の意見の段落。「私は〜と考える」「私には思える」のように、史料から言えることを越えた見立てを包む。中は Markdown のまま書ける。答え・結論の囲みには使わない |
 | `\| 年月日 \| できごと \| 出典 \|` の表 | 罫線の表（見出しの行は薄茶の地、3列目は小さく灰色） | 年表。出来事の流れは箇条書きにせず、必ず「年月日・できごと・出典」の3列の表にする。原典で確かめられなかった出典は「出典未確認」 |
 
 ### 本文の画像

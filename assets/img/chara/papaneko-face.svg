@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -70 200 130" role="img" aria-label="ぱぱねこ（管理人）の顔">
+  <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="3"/>
+  <circle cx="45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="3"/>
+  <path d="M-78,10 C-80,-30 -50,-47 0,-47 C50,-47 80,-30 78,10 C78,40 50,52 0,52 C-50,52 -78,40 -78,10 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="3"/>
+  <path d="M-40,-3 Q-28,-15 -16,-3 M16,-3 Q28,-15 40,-3" fill="none" stroke="#23201c" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2.5"/>
+  <path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" fill="none" stroke="#23201c" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M-50,10 L-92,5 M-50,18 L-94,19 M-48,26 L-90,33 M50,10 L92,5 M50,18 L94,19 M48,26 L90,33" stroke="#23201c" stroke-width="2" stroke-linecap="round"/>
+</svg>

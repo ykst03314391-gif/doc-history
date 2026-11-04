@@ -40,7 +40,9 @@
            ${series ? `<a class="series-badge" href="articles.html">特集：${esc(series.title)}</a>` : ""}
            <span class="article-cat">${esc(meta.category || "記事")}</span>
            <span class="article-date">${esc(meta.date || "")}</span>
-           ${meta.author ? `<span class="article-author">${esc(meta.author)}</span>` : ""}
+           ${!meta.author || meta.author === "管理人"
+             ? `<span class="article-author"><img class="article-author-face" src="assets/img/chara/papaneko-face.svg" alt="">ぱぱねこ</span>`
+             : `<span class="article-author">${esc(meta.author)}</span>`}
          </div>`
       : "";
 
@@ -115,7 +117,10 @@
       .replace(/(?:<figure class="article-figure article-figure--manga">[\s\S]*?<\/figure>\s*){2,}/g,
         (m) => `\n<div class="manga-row">${m.trim().replace(/<\/figure>\s+<figure/g, "</figure><figure")}</div>\n\n`)
       .replace(/\{\{([^{}]*)\}\}/g, (m, q) => `<span class="quote">「${q}」</span>`)
-      .replace(/==([^=\n]+)==/g, (m, t) => `<mark>${t}</mark>`);
+      .replace(/==([^=\n]+)==/g, (m, t) => `<mark>${t}</mark>`)
+      // 筆者（ぱぱねこ＝管理人）の意見の囲み。<div class="my-view"> と </div> を空行で挟んで書く（中は Markdown のまま）
+      .replace(/<div class="my-view">/g,
+        `<div class="my-view"><img class="my-view-face" src="assets/img/chara/papaneko-face.svg" alt="ぱぱねこ"><span class="my-view-label">ぱぱねこの見立て</span>`);
     const bodyHTML =
       typeof marked !== "undefined"
         ? marked.parse(quoted)

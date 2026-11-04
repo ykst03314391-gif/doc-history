@@ -724,6 +724,48 @@ html { scroll-behavior: smooth; }
 .article-body .lead-answer p { margin: 0 0 8px; }
 .article-body .lead-answer p:last-child { margin-bottom: 0; }
 .lead-answer-label { display: block; margin-bottom: 6px; font-size: 0.85rem; font-weight: 700; color: var(--accent); letter-spacing: 0.05em; }
+/* ぱぱねこ（管理人）の見立て：史料から言えることと分けて、筆者の意見を顔付きの吹き出しで示す */
+.article-body .my-view {
+  position: relative;
+  margin: 22px 0 24px 84px;
+  padding: 12px 18px;
+  background: var(--bg-panel);
+  border: 1px solid var(--ink-soft);
+  border-radius: 12px;
+}
+.article-body .my-view::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 24px;
+  width: 14px;
+  height: 14px;
+  background: var(--bg-panel);
+  border-left: 1px solid var(--ink-soft);
+  border-bottom: 1px solid var(--ink-soft);
+  transform: rotate(45deg);
+}
+.article-body .my-view .my-view-face {
+  position: absolute;
+  left: -84px;
+  top: 4px;
+  width: 70px;
+  height: auto;
+  margin: 0;
+}
+.my-view-label { display: block; margin-bottom: 4px; font-size: 0.85rem; font-weight: 700; color: var(--ink-soft); letter-spacing: 0.05em; }
+.article-body .my-view p { margin: 0 0 8px; }
+.article-body .my-view p:last-child { margin-bottom: 0; }
+@media (max-width: 600px) {
+  .article-body .my-view { margin-left: 56px; padding: 10px 14px; }
+  .article-body .my-view .my-view-face { left: -56px; width: 46px; }
+}
+.article-author-face { width: 30px; height: auto; vertical-align: middle; margin-right: 4px; }
+/* サイト紹介の「書いている人」 */
+.author-profile { display: flex; gap: 18px; align-items: flex-start; }
+.author-profile-face { flex: 0 0 auto; width: 110px; height: auto; }
+.author-profile p { margin: 0 0 8px; }
+@media (max-width: 600px) { .author-profile-face { width: 76px; } }
 .article-body blockquote {
   margin: 18px 0;
   padding: 8px 18px;
