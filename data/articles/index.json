@@ -184,6 +184,22 @@
       ]
     },
     {
+      "id": "hidenaga-hosayaku-origin",
+      "title": "秀長の「名補佐役」は、いつ、だれが言い出したのか",
+      "series": "myth-busting",
+      "category": "考察",
+      "summary": "温厚で兄の厳しさを補った「名補佐役」という秀長像は、20世紀の小説が作ったものなのか。大友宗麟の書状、江戸時代の藤堂家の記録『聿脩録』、大正の歴史家の本から、像の出どころをたどる。",
+      "date": "2026-11-05",
+      "image": { "src": "assets/img/portraits/toyotomi-hidenaga.jpg", "caption": "豊臣秀長像（春岳院蔵、天明8年〈1788〉の作とされる）※参考イメージ", "credit": "Wikimedia Commons", "license": "パブリックドメイン" },
+      "relatedPeople": ["toyotomi-hidenaga", "toyotomi-hideyoshi", "todo-takatora", "sen-no-rikyu"],
+      "tags": ["豊臣秀長", "補佐役", "藤堂高虎", "千利休", "人物像", "考察"],
+      "references": [
+        { "title": "大和大納言 豊臣秀長 補佐役か、もう一人の秀吉か", "author": "天野忠幸", "affiliateUrl": "https://www.amazon.co.jp/dp/4582477534", "note": "副題が「補佐役」の像を問い直す。畿内の戦国史の研究者による評伝" },
+        { "title": "羽柴秀長の生涯 秀吉を支えた「補佐役」の実像（平凡社新書）", "author": "黒田基樹", "affiliateUrl": "https://www.amazon.co.jp/dp/XXXXXXXXXX?tag=YOUR_ASSOCIATE_TAG-22", "note": "大名の「指南」役など、補佐役の中身を史料から組み直す。※リンクは仮。登録後に実商品URL＋タグへ差し替え" },
+        { "title": "豊臣秀長 ある補佐役の生涯（文春文庫、上下巻）", "author": "堺屋太一", "affiliateUrl": "https://www.amazon.co.jp/dp/XXXXXXXXXX?tag=YOUR_ASSOCIATE_TAG-22", "note": "「補佐役」の名を書名に掲げた小説（1985年）。像の出どころとして。※リンクは仮。登録後に実商品URL＋タグへ差し替え" }
+      ]
+    },
+    {
       "id": "hidenaga-if-lived",
       "title": "秀長が長生きしていたら、豊臣政権は続いたのか",
       "series": "myth-busting",
