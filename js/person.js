@@ -69,12 +69,24 @@
 
   // 説明文を句点ごとに改行する（かっこの中の句点では切らない）。tail（出典マーカーなど）は最後の文の末尾に付ける
   // links があれば、注記の中の語もサイト内ページへのリンクにする（年表の説明と同じ）
+  // データの改行（\n）は文の中でもそこで改行し、空行（\n\n）は少し間をあけて次の文・行を始める
   function sentences(text, tail = "", links) {
     const html = links && links.length;
-    return splitSentences(html ? linkText(text, links) : String(text ?? ""))
-      .map((t, i, a) => `<span class="sent">${fmtText(html ? t : esc(t))}${i === a.length - 1 ? tail : ""}</span>`)
+    return sentSpans(splitSentences(html ? linkText(text, links) : String(text ?? "")), html ? (t) => t : esc, tail);
+  }
+  // 文の並び（splitSentences の結果）を1文ずつの span にする。conv は文字列を HTML にする関数（esc など）
+  function sentSpans(list, conv, tail = "") {
+    return list
+      .map((t, i, a) => {
+        const gap = i > 0 && /^[ \t]*\n[ \t]*\n/.test(t);
+        const body = lineBreaks(fmtText(conv(t.replace(/^\s+/, ""))));
+        return `<span class="sent${gap ? " sent-gap" : ""}">${body}${i === a.length - 1 ? tail : ""}</span>`;
+      })
       .join("");
   }
+  // 文の中の改行（\n）を <br> に、空行（\n\n）を間をあけた改行にする
+  const lineBreaks = (html) =>
+    String(html).replace(/\s*\n[ \t]*\n\s*/g, '<span class="text-gap"></span>').replace(/\s*\n\s*/g, "<br>");
   // 説明文の表示を整える：引用（「」の中）の色を変え、文末が数文字だけ次の行に残らないようにする
   const fmtText = (html) => keepTail(markQuotes(html));
   // 史料の原文の引用は、データでは {{…}} と書く。表示では「…」で括り、色を変えて地の文・ほかの「」と見分ける
@@ -202,10 +214,10 @@
     }
     // 典拠が複数ある項目用（sourceId に配列も書ける）
     const srcMarks = (ids) => [].concat(ids || []).map(srcMark).join("");
-    // 改行（\n）で段落に分ける。tail（出典マーカーなど）は最後の段落の末尾に付ける
+    // 空行（\n\n）で段落に分け、段落の中の改行（\n）はそこで改行する。tail（出典マーカーなど）は最後の段落の末尾に付ける
     const paras = (text, tail = "", links) => {
-      const ps = String(text ?? "").split("\n");
-      return ps.map((t, i) => `<p>${fmtText(links && links.length ? linkText(t, links) : esc(t))}${i === ps.length - 1 ? tail : ""}</p>`).join("");
+      const ps = String(text ?? "").split(/\n[ \t]*\n+/).filter((t) => t.trim());
+      return ps.map((t, i) => `<p>${lineBreaks(fmtText(links && links.length ? linkText(t.trim(), links) : esc(t.trim())))}${i === ps.length - 1 ? tail : ""}</p>`).join("");
     };
     // ゆかりの地・墓所の名前（url があれば外部リンク）
     const spotName = (s) =>
@@ -235,7 +247,7 @@
           <img src="${esc(pt.src)}" alt="${esc(pt.caption || p.name + "の肖像")}" loading="lazy">
           <figcaption>
             ${pt.caption ? `<span class="portrait-title">${esc(pt.caption)}</span>` : ""}
-            ${pt.note ? `<span class="portrait-note">${esc(pt.note)}</span>` : ""}
+            ${pt.note ? `<span class="portrait-note">${lineBreaks(esc(pt.note))}</span>` : ""}
           </figcaption>
         </figure>`;
     } else {
@@ -310,7 +322,7 @@
           <h1>${esc(p.name)}${uncertain(p.birth && p.birth.uncertain)}</h1>
           <p class="kana">${esc(p.kana || "")}</p>
           <p><span class="years">${birth} 〜 ${death}</span></p>
-          ${p.summary ? `<p class="summary">${esc(p.summary)}</p>` : ""}
+          ${p.summary ? `<p class="summary">${lineBreaks(fmtText(esc(p.summary)))}</p>` : ""}
           ${factsHTML}
         </div>
       </div>
@@ -441,7 +453,7 @@
       const cap = il.caption || "";
       return `<figure class="article-figure article-figure--illust person-illust">
           <img src="${esc(il.src)}" alt="${esc(cap)}" loading="lazy"><figcaption>
-          ${cap ? `<span class="portrait-title">${esc(cap)}</span>` : ""}
+          ${cap ? `<span class="portrait-title">${lineBreaks(esc(cap))}</span>` : ""}
           <span class="img-credit">${esc(il.credit || "イラスト：ぱぱねこの戦国見立て（AIで作成）")}</span>
         </figcaption></figure>`;
     };
@@ -467,9 +479,7 @@
             : esc(e.title);
           // 説明は見出しの下に字下げして線を引く（他の一覧と同じ）。出典は説明の最後の文の末尾に付ける
           const desc = e.description
-            ? splitSentences(linkText(e.description, e.links))
-                .map((t, i, a) => `<span class="sent">${fmtText(t)}${i === a.length - 1 ? srcMarks(e.sourceId) : ""}</span>`)
-                .join("")
+            ? sentSpans(splitSentences(linkText(e.description, e.links)), (t) => t, srcMarks(e.sourceId))
             : srcMarks(e.sourceId);
           // toYear のある項目は、出来事ではなく期間についての注記（記録の空白など）として控えめに出す
           return `<li${e.toYear ? ' class="t-span"' : ""}>
@@ -560,7 +570,7 @@
       const lensQs = qs.filter((q) => qPlace(q) === "lens");
       const lensLabel = (q, i) => `論点${i + 1}${q.aspect ? `：${esc(q.aspect)}` : ""}`;
       put("lens", lens.title || "この人物への問い", `<div class="lens">
-          <p class="lens-question">${fmtText(esc(lens.question))}</p>
+          <p class="lens-question">${lineBreaks(fmtText(esc(lens.question)))}</p>
         </div>
         ${lensQs.length ? `<div class="lens-subs">
           <p class="lens-subs-title">この問いを${lensQs.length}つの論点に分けて考える</p>
@@ -572,7 +582,7 @@
       // 大きな問いと並ぶ問い（place: "lensSide"）。論点に分けず、問いごとに大きな問いと同じ高さの欄を立てる
       qs.filter((q) => qPlace(q) === "lensSide").forEach((q, i) => {
         put(`lensSide:${i}`, q.title, `<div class="lens">
-            <p class="lens-question">${fmtText(linkText(q.text, q.links))}</p>
+            <p class="lens-question">${lineBreaks(fmtText(linkText(q.text, q.links)))}</p>
           </div>
           <p class="lens-side-foot">${srcMarks(q.sourceId)}${articleLink(q.article_id)}</p>`);
       });
