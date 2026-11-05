@@ -408,6 +408,12 @@ html { scroll-behavior: smooth; }
 .facts dt { color: var(--ink-soft); font-weight: 700; }
 .facts dd { margin: 0; }
 .head-facts { margin: 16px 0 0; padding-top: 14px; border-top: 1px dashed var(--line); font-size: 0.95rem; }
+.rename-arrow { margin: 0 0.35em; color: var(--accent); }
+.kamon-fact { display: inline-flex; align-items: center; gap: 10px; }
+.kamon-fact > span { display: flex; flex-direction: column; }
+.kamon-fact-img { width: 44px; height: 44px; object-fit: contain; flex-shrink: 0; }
+.kamon-fact-note { font-size: 0.82rem; color: var(--ink-soft); }
+.kamon-fact .img-credit { font-size: 0.7rem; color: var(--ink-soft); overflow-wrap: anywhere; }
 
 /* 年表 */
 .timeline { list-style: none; padding: 0; margin: 0; }

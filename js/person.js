@@ -177,7 +177,7 @@
     </nav>`;
   }
 
-  function render(p, articles) {
+  function render(p, articles, kamonImages = {}) {
     document.title = `${p.name} ｜ 戦国クロニクル`;
     const html = [];
 
@@ -245,13 +245,35 @@
     }
     // 基本情報（別名・家紋など。見出しは立てず、ヘッダー枠内に置く）
     const facts = [];
+    // 改名：名乗りを改めた順に矢印でつなぎ、改めた年を（）で添える（データは古い順に並べる）
     if (p.aliases && p.aliases.length) {
       facts.push([
-        "別名",
-        p.aliases.map((a) => `${esc(a.value)}<span class="muted">（${esc(a.type)}）</span>`).join("、"),
+        "改名",
+        p.aliases
+          .map((a) => `${esc(a.value)}${a.year ? `<span class="muted">（${esc(a.year)}）</span>` : ""}`)
+          .join(`<span class="rename-arrow">→</span>`),
       ]);
     }
-    if (p.kamon) facts.push(["家紋", esc(p.kamon.name)]);
+    // 家紋：kamon.clan_id があれば、その大名家の家紋の絵（data/clans/index.json の kamonImage）を名前の前に出し、権利表記を添える
+    if (p.kamon) {
+      const k = p.kamon.clan_id && kamonImages[p.kamon.clan_id];
+      if (k) {
+        const lic = k.licenseUrl
+          ? `<a href="${esc(k.licenseUrl)}" target="_blank" rel="noopener">${esc(k.license)}</a>`
+          : esc(k.license || "");
+        const csrc = k.source ? `出典：<a href="${esc(k.source.url)}" target="_blank" rel="noopener">${esc(k.source.name)}</a>` : "";
+        const kcredit = [k.author ? `作者：${esc(k.author)}` : "", lic, csrc].filter(Boolean).join(" ／ ");
+        facts.push([
+          "家紋",
+          `<span class="kamon-fact"><img class="kamon-fact-img" src="${esc(k.src)}" alt="家紋：${esc(p.kamon.name)}" loading="lazy">` +
+            `<span><span>${esc(p.kamon.name)}</span>` +
+            (p.kamon.note ? `<span class="kamon-fact-note">${linkText(p.kamon.note, p.kamon.links)}</span>` : "") +
+            `<span class="img-credit">${kcredit}</span></span></span>`,
+        ]);
+      } else {
+        facts.push(["家紋", esc(p.kamon.name) + (p.kamon.note ? `<span class="muted">（${linkText(p.kamon.note, p.kamon.links)}）</span>` : "")]);
+      }
+    }
     if (p.birthplace) {
       const bp = p.birthplace;
       const place = [bp.name, bp.prefecture].filter(Boolean).map(esc).join(" / ");
@@ -1048,8 +1070,16 @@
     fetch("data/articles/index.json")
       .then((res) => (res.ok ? res.json() : { articles: [] }))
       .catch(() => ({ articles: [] })),
+    // 家紋の絵は大名家一覧のデータを使う（取得できなくても名前だけ出す）
+    fetch("data/clans/index.json")
+      .then((res) => (res.ok ? res.json() : { clans: [] }))
+      .catch(() => ({ clans: [] })),
   ])
-    .then(([p, adata]) => render(p, (adata && adata.articles) || []))
+    .then(([p, adata, cdata]) => {
+      const kamonImages = {};
+      ((cdata && cdata.clans) || []).forEach((c) => { if (c.kamonImage) kamonImages[c.id] = c.kamonImage; });
+      render(p, (adata && adata.articles) || [], kamonImages);
+    })
     .catch((err) => {
       contentEl.innerHTML = `<p class="error">人物データを読み込めませんでした（ID: ${esc(id)}）。ローカルで開いている場合は簡易サーバー経由で表示してください（README参照）。</p>`;
       console.error(err);
