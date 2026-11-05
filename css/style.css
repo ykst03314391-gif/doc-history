@@ -1396,6 +1396,9 @@ footer.site-footer {
 /* 冒頭の枠は、目次のレールの左端（本文の左 230px）まで広げる */
 @media (min-width: 900px) {
   #content:has(.side-toc) > .person-head { margin-left: -230px; }
+  /* 枠の上の「一覧へ戻る」と仮置き注記も、枠の左端にそろえる */
+  main#person:has(.side-toc) > .back-link,
+  main#person:has(.side-toc) > .provisional-notice { margin-left: -230px; }
 }
 .person-portrait--papaneko img { background: var(--bg-panel); }
 @media (max-width: 600px) {
