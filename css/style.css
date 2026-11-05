@@ -50,7 +50,18 @@ a:hover { text-decoration: underline; }
 }
 .site-title { font-size: 1.4rem; font-weight: 700; letter-spacing: 0.15em; margin: 0; }
 .site-title a { color: var(--bg); }
-.site-header nav a { color: #d8d2c6; margin-left: 16px; font-size: 0.95rem; }
+/* ナビはサイト名の下の行に回るので、行の幅いっぱいに均等に並べ、左右の空きの偏りをなくす */
+.site-header nav {
+  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 16px;
+}
+.site-header nav a { color: #d8d2c6; font-size: 0.95rem; }
+@media (max-width: 760px) {
+  .site-header nav { justify-content: flex-start; }
+}
 
 /* ---- レイアウト ---- */
 main {
