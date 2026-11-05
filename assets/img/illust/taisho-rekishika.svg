@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="大正の書斎で、眼鏡をかけた歴史家が、机の上の江戸時代の記録『聿脩録』を引いて、秀長を温厚な人と書く大正の本を作っているイメージイラスト。歴史家は穏やかな顔。人物はみな服を着ない四つ足の猫のキャラ（ぱぱねこ）で描き、歴史家は眼鏡で見分ける">
+  <defs>
+    <!-- 表情（眉なし。目と口だけを描き替える。見本は chara/papaneko-hyojo.svg）。頭の座標で重ねる -->
+    <g id="pn-ex-cover"><path d="M-47,-24 H47 V40 H-47 Z" fill="#fbfaf6" stroke="none"/><ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/></g>
+    <g id="pn-ex-ki" fill="none" stroke="#23201c" stroke-linecap="round" stroke-linejoin="round"><use href="#pn-ex-cover"/><path d="M-44,0 Q-29,-20 -14,0 M14,0 Q29,-20 44,0" stroke-width="3"/><path d="M-16,17 Q-8,27 0,14 Q8,27 16,17" stroke-width="2"/><path d="M-9,23 Q0,42 9,23 Q0,27 -9,23 Z" fill="#23201c" stroke-width="1.5"/><path d="M-64,24 l6,-8 M-56,24 l6,-8 M-48,24 l6,-8 M42,24 l6,-8 M50,24 l6,-8 M58,24 l6,-8" stroke-width="1.5"/></g>
+    <g id="pn-ex-do" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-42,-12 L-17,-2 M17,-2 L42,-12" stroke-width="3"/><path d="M-16,28 Q-8,15 0,27 Q8,15 16,28" stroke-width="2"/></g>
+    <g id="pn-ex-ai" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-42,0 L-18,-9 M18,-9 L42,0" stroke-width="2.5"/><path d="M-11,27 Q-5,19 0,25 Q5,19 11,27" stroke-width="2"/></g>
+    <g id="pn-ex-ikari"><path d="M70,-50 q8,0 8,-8 M86,-58 q0,8 8,8 M94,-34 q-8,0 -8,8 M78,-26 q0,-8 -8,-8" fill="none" stroke="#9b2d20" stroke-width="3.5" stroke-linecap="round"/></g>
+    <g id="pn-ex-namida"><path d="M-34,6 Q-41,18 -34,22 Q-27,18 -34,6 Z" fill="#dfe9f0" stroke="#2f5d7c" stroke-width="2"/></g>
+    <g id="pn-ex-raku" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-40,-8 Q-28,2 -16,-8 M16,-8 Q28,2 40,-8" stroke-width="2.5"/><path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" stroke-width="2"/><path d="M-62,24 l6,-8 M-54,24 l6,-8 M48,24 l6,-8 M56,24 l6,-8" stroke-width="1.5"/></g>
+    <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
+    <g id="pn-head">
+      <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <circle cx="45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-78,10 C-80,-30 -50,-47 0,-47 C50,-47 80,-30 78,10 C78,40 50,52 0,52 C-50,52 -78,40 -78,10 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-40,-3 Q-28,-15 -16,-3 M16,-3 Q28,-15 40,-3" fill="none" stroke="#23201c" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/>
+      <path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" fill="none" stroke="#23201c" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-50,10 L-92,5 M-50,18 L-94,19 M-48,26 L-90,33 M50,10 L92,5 M50,18 L94,19 M48,26 L90,33" stroke="#23201c" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+    <!-- 基本形のぱぱねこ（四つ足・服なし。足もと中央 0,0、頭は左、しっぽは右） -->
+    <g id="pn-base">
+      <path d="M-104,-92 C-110,-70 -116,-40 -116,-12 Q-116,0 -108,0 Q-100,0 -100,-10 L-100,-19 L-62,-19 L-62,-10 Q-62,0 -55,0 Q-48,0 -48,-10 L-48,-19 L14,-19 L14,-10 Q14,0 21,0 Q28,0 28,-10 L28,-19 L60,-19 L60,-10 Q60,0 67,0 Q74,0 74,-10 L74,-19 Q90,-21 93,-38 L94,-66 Q90,-74 94,-82 L96,-112 Q97,-134 84,-135 Q73,-135 67,-120 Q61,-100 50,-87 Q40,-89 20,-88 L-104,-92 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+      <use href="#pn-head" transform="translate(-51,-132) scale(0.95)"/>
+    </g>
+    <!-- 伏せる（基本形を低くし、頭を前へ下げる。足もと中央 0,0、頭は左） -->
+    <g id="pn-fuse">
+      <path d="M-104,-92 C-110,-70 -116,-40 -116,-12 Q-116,0 -108,0 Q-100,0 -100,-10 L-100,-19 L-62,-19 L-62,-10 Q-62,0 -55,0 Q-48,0 -48,-10 L-48,-19 L14,-19 L14,-10 Q14,0 21,0 Q28,0 28,-10 L28,-19 L60,-19 L60,-10 Q60,0 67,0 Q74,0 74,-10 L74,-19 Q90,-21 93,-38 L94,-66 Q90,-74 94,-82 L96,-112 Q97,-134 84,-135 Q73,-135 67,-120 Q61,-100 50,-87 Q40,-89 20,-88 L-104,-92 Z" transform="scale(1,0.7)" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+      <use href="#pn-head" transform="translate(-100,-58) rotate(-12) scale(0.95)"/>
+    </g>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif">
+<rect x="0" y="370" width="800" height="80" fill="#e3d6bd"/><path d="M0,370 H800" stroke="#a39a8c" stroke-width="2"/>
+<g stroke="#6b5a46" stroke-width="2"><rect x="640" y="70" width="130" height="300" fill="#e8dfcc"/><path d="M640,145 H770 M640,220 H770 M640,295 H770"/></g>
+<rect x="650" y="89" width="18" height="56" fill="#b8ab95" stroke="#23201c" stroke-width="1"/>
+<rect x="672" y="89" width="18" height="56" fill="#8a6d1f" stroke="#23201c" stroke-width="1"/>
+<rect x="694" y="89" width="18" height="56" fill="#c9b98f" stroke="#23201c" stroke-width="1"/>
+<rect x="716" y="89" width="18" height="56" fill="#6b5a46" stroke="#23201c" stroke-width="1"/>
+<rect x="738" y="89" width="18" height="56" fill="#b8ab95" stroke="#23201c" stroke-width="1"/>
+<rect x="650" y="164" width="18" height="56" fill="#c9b98f" stroke="#23201c" stroke-width="1"/>
+<rect x="672" y="164" width="18" height="56" fill="#6b5a46" stroke="#23201c" stroke-width="1"/>
+<rect x="694" y="164" width="18" height="56" fill="#8a6d1f" stroke="#23201c" stroke-width="1"/>
+<rect x="716" y="164" width="18" height="56" fill="#b8ab95" stroke="#23201c" stroke-width="1"/>
+<rect x="650" y="239" width="18" height="56" fill="#8a6d1f" stroke="#23201c" stroke-width="1"/>
+<rect x="672" y="239" width="18" height="56" fill="#c9b98f" stroke="#23201c" stroke-width="1"/>
+<rect x="694" y="239" width="18" height="56" fill="#b8ab95" stroke="#23201c" stroke-width="1"/>
+<rect x="716" y="239" width="18" height="56" fill="#6b5a46" stroke="#23201c" stroke-width="1"/>
+<rect x="738" y="239" width="18" height="56" fill="#c9b98f" stroke="#23201c" stroke-width="1"/>
+<rect x="300" y="288" width="310" height="16" fill="#6b5a46" stroke="#23201c" stroke-width="2"/><path d="M316,304 V370 M594,304 V370" stroke="#6b5a46" stroke-width="10"/>
+<circle cx="350" cy="250" r="60" fill="#f6dfb0" opacity="0.5"/><path d="M350,288 V236" stroke="#23201c" stroke-width="3"/><path d="M326,236 L374,236 L362,208 L338,208 Z" fill="#2f7a52" stroke="#23201c" stroke-width="2"/><ellipse cx="350" cy="288" rx="16" ry="4" fill="#23201c"/>
+<rect x="384" y="262" width="62" height="26" fill="#c9b98f" stroke="#23201c" stroke-width="2"/><rect x="420" y="265" width="14" height="20" fill="#fbfaf6" stroke="#23201c" stroke-width="1"/>
+<text x="415" y="254" font-size="12" fill="#4f4940" text-anchor="middle">聿脩録</text>
+<g stroke="#23201c" stroke-width="1.5"><rect x="520" y="270" width="80" height="18" fill="#2f5d7c"/><rect x="526" y="252" width="70" height="18" fill="#7a2a2a"/></g>
+<text x="560" y="244" font-size="12" fill="#4f4940" text-anchor="middle">大正の本</text>
+<path d="M450,262 Q485,226 516,252" fill="none" stroke="#9b2d20" stroke-width="3" stroke-dasharray="6 5"/><path d="M509,244 L518,254 L505,256" fill="none" stroke="#9b2d20" stroke-width="3"/>
+<text x="484" y="222" font-size="14" fill="#9b2d20" font-weight="700" text-anchor="middle">引く</text>
+<g transform="translate(190,372) scale(-0.620,0.620)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-raku"/><g fill="none" stroke="#23201c" stroke-width="2.5"><circle cx="-28" cy="-5" r="16"/><circle cx="28" cy="-5" r="16"/><path d="M-12,-8 Q0,-14 12,-8"/></g></g></g>
+<ellipse cx="200" cy="110" rx="120" ry="52" fill="#fff" stroke="#23201c" stroke-width="2"/><path d="M238.8,157.5 L228,196 L193.0,160.3 Z" fill="#fff" stroke="none"/><path d="M238.8,157.5 L228,196 L193.0,160.3" fill="none" stroke="#23201c" stroke-width="2" stroke-linejoin="round"/><text x="200" y="102.8" font-size="16" fill="#23201c" text-anchor="middle">秀長は温厚にして</text><text x="200" y="128.4" font-size="16" fill="#23201c" text-anchor="middle">長者の風あり、と</text>
+<text x="190" y="404" font-size="18" fill="#8a6d1f" font-weight="700" text-anchor="middle">大正の歴史家</text><text x="190" y="428" font-size="13" fill="#4f4940" text-anchor="middle">（1915〜1919年ごろ）</text>
+  </g>
+</svg>
