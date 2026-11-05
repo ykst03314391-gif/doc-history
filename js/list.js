@@ -64,14 +64,6 @@
       </a>`;
   }
 
-  // 「考察の主役」（people.html だけにある）。考察記事を書く人物を、検索・並べ方とは別に一覧の上に出す
-  function renderLeads(leads) {
-    const box = document.getElementById("leads");
-    if (!box || !leads.length) return;
-    document.getElementById("leads-list").innerHTML = leads.map(cardHTML).join("");
-    box.hidden = false;
-  }
-
   // 記事の relatedPeople と、主役の個別データの中の person_id から、誰がどこに出てくるかを集める
   async function loadAppearances(leads) {
     const arts = await fetch("data/articles/index.json")
@@ -348,10 +340,9 @@
     otherCount = all.filter((p) => p.category === "other").length;
     const leads = all.filter((p) => p.role === "main");
     await loadAppearances(leads);
-    if (!category) renderLeads(leads);
-    // このページのカテゴリの人物（主役を除く）だけを、読み（kana）の50音順に並べる
+    // このページのカテゴリの人物だけを、読み（kana）の50音順に並べる
     people = all
-      .filter((p) => p.role !== "main" && (category === "other") === (p.category === "other"))
+      .filter((p) => (category === "other") === (p.category === "other"))
       .sort((a, b) =>
         (a.kana || a.name || "").localeCompare(b.kana || b.name || "", "ja")
       );

@@ -888,14 +888,6 @@ footer.site-footer {
 }
 .error { color: var(--accent); }
 
-/* ---- 人物一覧の「考察の主役」（主役を一覧の上に別に出す。2列で、カードの地をパネル色にして脇役と分ける） ---- */
-.lead-people { margin: 0 0 26px; }
-.lead-people-note { margin: -4px 0 12px; font-size: 0.9rem; }
-.recent-grid.lead-grid { grid-template-columns: repeat(2, 1fr); }
-@media (max-width: 760px) {
-  .recent-grid.lead-grid { grid-template-columns: 1fr; }
-}
-.lead-grid .card { border-left: 3px solid var(--accent); }
 /* カードの「登場する記事」「主役ページ」 */
 .card-appears { clear: both; margin: 8px 0 0; font-size: 0.85rem; color: var(--ink-soft); }
 .card-appears-label {
