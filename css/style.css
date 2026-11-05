@@ -904,7 +904,7 @@ footer.site-footer {
 }
 .list-section-note { margin-left: 6px; font-size: 0.85rem; color: var(--ink-soft); font-weight: 500; }
 
-/* ---- 人物一覧の「最近更新した人物」（3枚を横に並べる） ---- */
+/* ---- 一覧ページの「最近更新した〇〇」（人物・記事・城・合戦・大名家。3枚を横に並べる。js/recent.js） ---- */
 .recent-updates { margin: 0 0 22px; }
 .recent-title { margin: 0 0 10px; font-size: 1rem; color: var(--ink-soft); }
 .recent-grid {

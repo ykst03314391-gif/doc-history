@@ -54,6 +54,8 @@ KamonImage = {
 | `tags` | string[] | タグ |
 | `updatedAt` | string | 更新日 |
 
+> 一覧（`index.json`）に `update: { date, items }`（最後に手を入れた日付〔YYYY-MM-DD〕と、何を直したかを短く書いた箇条の配列）を書くと、大名家から探す（`clans.html`）の上に「最近更新した大名家」として日付の新しい順に3件まで並べる（`js/recent.js`。人物と同じ。`docs/schema-person.md`）。残すのは最後の更新だけで、次に手を入れたら書き換える（履歴は持たない）。
+
 ### Member（所属人物）
 ```
 { "person_id"?: string,   // 人物ページがあればリンク

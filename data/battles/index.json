@@ -170,6 +170,7 @@
     },
     {
       "id": "komaki-nagakute",
+      "update": { "date": "2026-11-02", "items": ["概要ページを作った"] },
       "name": "小牧・長久手の戦い",
       "kana": "こまき・ながくてのたたかい",
       "year": 1584,
@@ -182,6 +183,7 @@
     },
     {
       "id": "kishu-campaign",
+      "update": { "date": "2026-11-01", "items": ["参加者の筒井順慶（前年に没）を養子の定次に改めた", "多聞院日記の根来寺・粉川寺の焼き討ちと雑賀の和議を足した"] },
       "photo": {"src": "assets/img/battles/kishu-campaign.jpg", "thumb": "assets/img/battles/thumbs/kishu-campaign.jpg", "caption": "太田城跡の石碑", "author": "Saigen Jiro", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "source": {"name": "Wikimedia Commons", "url": "https://commons.wikimedia.org/wiki/File:Ota_Castle_(Kii),_sekihi.jpg"}},
       "name": "紀州攻め",
       "kana": "きしゅうぜめ",
@@ -195,6 +197,7 @@
     },
     {
       "id": "shikoku-campaign",
+      "update": { "date": "2026-11-01", "items": ["多聞院日記で秀吉の出馬の延期と戦後の国割を足した", "筒井定次を参加者に加えた"] },
       "photo": {"src": "assets/img/battles/shikoku-campaign.jpg", "thumb": "assets/img/battles/thumbs/shikoku-campaign.jpg", "caption": "一宮城跡の本丸下の石垣", "license": "パブリックドメイン", "source": {"name": "Wikimedia Commons", "url": "https://commons.wikimedia.org/wiki/File:Itimayajo13.jpg"}},
       "name": "四国攻め",
       "kana": "しこくぜめ",
@@ -208,6 +211,7 @@
     },
     {
       "id": "kyushu-campaign",
+      "update": { "date": "2026-11-05", "items": ["島津義久・大友宗麟の人物ページへつないだ"] },
       "name": "九州攻め",
       "kana": "きゅうしゅうぜめ",
       "year": 1587,
@@ -220,6 +224,7 @@
     },
     {
       "id": "neshirozaka",
+      "update": { "date": "2026-11-05", "items": ["島津義久の人物ページへつないだ"] },
       "name": "根白坂の戦い",
       "kana": "ねじろざかのたたかい",
       "year": 1587,

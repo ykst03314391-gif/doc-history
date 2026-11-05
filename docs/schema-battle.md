@@ -44,6 +44,8 @@
 | `tags` | string[] | タグ |
 | `updatedAt` | string | 更新日 |
 
+> 一覧（`index.json`）に `update: { date, items }`（最後に手を入れた日付〔YYYY-MM-DD〕と、何を直したかを短く書いた箇条の配列）を書くと、合戦名から探す（`battles.html`）の上に「最近更新した合戦」として日付の新しい順に3件まで並べる（`js/recent.js`。人物と同じ。`docs/schema-person.md`）。残すのは最後の更新だけで、次に手を入れたら書き換える（履歴は持たない）。
+
 ### Side（陣営）
 ```
 { "name": string,               // 陣営名（例：織田軍）

@@ -155,6 +155,7 @@
     },
     {
       "id": "takeda",
+      "update": { "date": "2026-11-01", "items": ["秀長の在城を天正11年（姫路へ移る）までとした", "桑山重晴の入城の年の食い違いを要確認にした"] },
       "photo": {"src": "assets/img/castles/takeda.jpg", "thumb": "assets/img/castles/thumbs/takeda.jpg", "caption": "雲海に浮かぶ竹田城跡", "author": "bullets95", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0", "source": {"name": "Wikimedia Commons", "url": "https://commons.wikimedia.org/wiki/File:Flickr_-_bullets95_-_DSC01859.jpg"}},
       "name": "竹田城",
       "kana": "たけだじょう",
@@ -233,6 +234,7 @@
     },
     {
       "id": "yamato-koriyama",
+      "update": { "date": "2026-11-01", "items": ["筒井定次の伊賀移封・秀長の入国と死・増田長盛の拝領を多聞院日記で裏づけた"] },
       "photo": {"src": "assets/img/castles/yamato-koriyama.jpg", "thumb": "assets/img/castles/thumbs/yamato-koriyama.jpg", "caption": "郡山城の追手門", "note": "1983年の復元", "author": "Kooriyannma", "license": "CC BY 3.0", "licenseUrl": "https://creativecommons.org/licenses/by/3.0", "source": {"name": "Wikimedia Commons", "url": "https://commons.wikimedia.org/wiki/File:Kooriyama_jyou_006.JPG"}},
       "name": "郡山城",
       "kana": "こおりやまじょう",
@@ -272,6 +274,7 @@
     },
     {
       "id": "wakayama",
+      "update": { "date": "2026-11-02", "items": ["概要ページを作った"] },
       "name": "和歌山城",
       "kana": "わかやまじょう",
       "type": "平山城",
@@ -290,6 +293,7 @@
     },
     {
       "id": "oko",
+      "update": { "date": "2026-11-02", "items": ["概要ページを作った"] },
       "name": "岡豊城",
       "kana": "おこうじょう",
       "type": "山城",
@@ -308,6 +312,7 @@
     },
     {
       "id": "iga-ueno",
+      "update": { "date": "2026-11-02", "items": ["概要ページを作った"] },
       "name": "伊賀上野城",
       "kana": "いがうえのじょう",
       "alias": "上野城",

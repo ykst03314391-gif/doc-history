@@ -106,6 +106,8 @@
     const res = await fetch("data/battles/index.json");
     if (!res.ok) throw new Error(res.status);
     battles = (await res.json()).battles || [];
+    // 上の「最近更新した〇〇」（js/recent.js）
+    window.renderRecent(battles, { href: (b) => `battle.html?id=${encodeURIComponent(b.id)}`, thumb: (b) => b.photo && b.photo.thumb });
     filter(searchEl.value);
     const creditsEl = document.getElementById("photo-credits");
     if (creditsEl) creditsEl.innerHTML = creditsHTML([...battles].sort(by(byYear, byKana)));

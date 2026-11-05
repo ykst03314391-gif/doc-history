@@ -103,6 +103,8 @@
     clans = ((await res.json()).clans || []).sort((a, b) =>
       (a.kana || a.name || "").localeCompare(b.kana || b.name || "", "ja")
     );
+    // 上の「最近更新した〇〇」（js/recent.js）
+    window.renderRecent(clans, { href: (c) => `clan.html?id=${encodeURIComponent(c.id)}`, thumb: (c) => c.kamonImage && c.kamonImage.src });
     filter(searchEl.value);
     const creditsEl = document.getElementById("photo-credits");
     if (creditsEl) creditsEl.innerHTML = creditsHTML(clans);

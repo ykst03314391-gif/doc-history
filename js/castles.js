@@ -220,6 +220,8 @@
       load("data/people/index.json"),
       load("data/battles/index.json"),
     ]);
+    // 上の「最近更新した〇〇」（js/recent.js）
+    window.renderRecent(castleData.castles || [], { href: (c) => `castle.html?id=${encodeURIComponent(c.id)}`, thumb: (c) => c.photo && c.photo.thumb });
     // 読み（kana）の50音順に並べておく。ほかの並べ方でも同順位のあいだはこの順が残る
     castles = (castleData.castles || []).sort((a, b) =>
       (a.kana || a.name || "").localeCompare(b.kana || b.name || "", "ja")

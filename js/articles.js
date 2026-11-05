@@ -123,6 +123,8 @@
     series = data.series || [];
     seriesMap = new Map(series.map((s) => [s.id, s]));
     articles = (data.articles || []).filter((a) => !a.draft);
+    // 上の「最近更新した〇〇」（js/recent.js）
+    window.renderRecent(articles, { href: (a) => `article.html?id=${encodeURIComponent(a.id)}`, thumb: (a) => a.image && a.image.src, title: (a) => a.title, kana: () => "", useDate: true });
     renderGrouped();
     searchEl.addEventListener("input", (e) => onSearch(e.target.value));
   } catch (err) {

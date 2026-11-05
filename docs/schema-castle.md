@@ -68,6 +68,8 @@ Photo = {
 | `sources` | Source[] | 出典（人物スキーマと同形式。`note` も表示） |
 | `tags` / `updatedAt` | | 他スキーマと同じ |
 
+> 一覧（`index.json`）に `update: { date, items }`（最後に手を入れた日付〔YYYY-MM-DD〕と、何を直したかを短く書いた箇条の配列）を書くと、城から探す（`castles.html`）の上に「最近更新した城」として日付の新しい順に3件まで並べる（`js/recent.js`。人物と同じ。`docs/schema-person.md`）。残すのは最後の更新だけで、次に手を入れたら書き換える（履歴は持たない）。
+
 記事のメタに `relatedCastles[]`（城の `id`）を書くと、城ページに「関連する考察・記事」として表示する。
 
 ## 表示仕様

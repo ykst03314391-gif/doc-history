@@ -61,6 +61,8 @@
 | `tags` | string[] | タグ（任意） |
 | `draft` | boolean | 下書き（true の記事は一覧に出さない、任意） |
 
+> 一覧（`index.json`）に `update: { date, items }`（最後に手を入れた日付〔YYYY-MM-DD〕と、何を直したかを短く書いた箇条の配列）を書くと、考察・記事（`articles.html`）の上に「最近更新した記事」として日付の新しい順に3件まで並べる（`js/recent.js`。人物と同じ。`docs/schema-person.md`）。`update` のない記事は公開日（`date`）で並べ、「公開」と出す（`draft` の記事は出さない）。残すのは最後の更新だけで、次に手を入れたら書き換える（履歴は持たない）。
+
 ## 本文（Markdown）の書き方の指針
 
 > **前提：記事は2層でつくる。** まず `drafts/<id>.md` に**論文版オリジナル**（厳密・出典完備・論証つき）を書き、この Web 記事（`data/articles/<id>.md`）はそれを**噛み砕いた公開版**にする。詳細は [`../drafts/README.md`](../drafts/README.md)・README「記事は2層でつくる」。
