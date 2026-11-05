@@ -1,7 +1,6 @@
-// トップページ：新着記事・収録人物をピックアップ表示
+// トップページ：新着・更新と新着記事を表示
 (async function () {
   const artEl = document.getElementById("latest-articles");
-  const topicsEl = document.getElementById("latest-topics");
 
   const esc = (s) =>
     String(s ?? "").replace(/[&<>"']/g, (c) =>
@@ -101,51 +100,5 @@
   } catch (err) {
     artEl.innerHTML = `<p class="error">記事の読み込みに失敗しました（README参照）。</p>`;
     console.error(err);
-  }
-
-  // 最新トピック（最大3件）
-  if (topicsEl) {
-    try {
-      const res = await fetch("data/topics/index.json");
-      if (!res.ok) throw new Error(res.status);
-      const topics = ((await res.json()).topics || [])
-        .filter((t) => !t.draft)
-        .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")))
-        .slice(0, 3);
-      topicsEl.innerHTML = topics.length
-        ? topics
-            .map((t) => {
-              const meta = [];
-              if (t.period && (t.period.from || t.period.to))
-                meta.push(`会期：${esc(t.period.from || "")}〜${esc(t.period.to || "")}`);
-              if (t.place && (t.place.name || t.place.prefecture))
-                meta.push(`会場：${esc([t.place.prefecture, t.place.name].filter(Boolean).join(" "))}`);
-              if (t.platform) meta.push(`対応：${esc(t.platform)}`);
-              const timg =
-                t.images && t.images.length && t.images[0].src
-                  ? `<img class="card-thumb" src="${esc(t.images[0].src)}" alt="" loading="lazy">`
-                  : "";
-              return `
-        <a class="topic-card topic-card--link${timg ? " topic-card--thumb" : ""}" href="topic.html?id=${encodeURIComponent(t.id)}">
-          ${timg}
-          <div class="topic-card-body">
-            <div class="topic-head">
-              <span class="topic-stream stream-${esc(t.stream)}">${esc(t.stream || "情報")}</span>
-              <span class="topic-date">${esc(t.date || "")}</span>
-            </div>
-            <h3 class="topic-title">${esc(t.title)}</h3>
-            ${t.summary ? `<p class="topic-summary">${esc(t.summary)}</p>` : ""}
-            ${meta.length ? `<p class="topic-meta">${meta.join("　／　")}</p>` : ""}
-            ${t.take ? `<div class="topic-take"><span class="take-label">ひとこと</span>${esc(t.take)}</div>` : ""}
-            <span class="topic-more">詳しく見る →</span>
-          </div>
-        </a>`;
-            })
-            .join("")
-        : `<p class="muted">まだトピックがありません。</p>`;
-    } catch (err) {
-      topicsEl.innerHTML = `<p class="error">トピックの読み込みに失敗しました。</p>`;
-      console.error(err);
-    }
   }
 })();
