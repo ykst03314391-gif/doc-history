@@ -48,7 +48,9 @@ a:hover { text-decoration: underline; }
   gap: 16px;
   flex-wrap: wrap;
 }
-.site-title { font-size: 1.4rem; font-weight: 700; letter-spacing: 0.15em; margin: 0; }
+.site-header .inner { justify-content: center; }
+/* 題字として中央に置く。letter-spacing は最後の字の後ろにも付くので、その分を左に足して見た目の中心をそろえる */
+.site-title { font-size: 1.4rem; font-weight: 700; letter-spacing: 0.15em; padding-left: 0.15em; margin: 0; text-align: center; }
 .site-title a { color: var(--bg); }
 /* ナビはサイト名の下の行に回るので、行の幅いっぱいに均等に並べ、左右の空きの偏りをなくす */
 .site-header nav {
@@ -60,7 +62,7 @@ a:hover { text-decoration: underline; }
 }
 .site-header nav a { color: #d8d2c6; font-size: 0.95rem; }
 @media (max-width: 760px) {
-  .site-header nav { justify-content: flex-start; }
+  .site-header nav { justify-content: center; }
 }
 
 /* ---- レイアウト ---- */
