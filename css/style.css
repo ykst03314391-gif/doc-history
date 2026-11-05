@@ -381,6 +381,8 @@ html { scroll-behavior: smooth; }
 /* 大きな問いの下の論点（place: "lens"）。問いと同じ朱の左罫で、問いの中の節だと分かるように字下げする */
 .lens-subs { margin: 0 0 0 4px; padding-left: 16px; border-left: 2px solid var(--accent-soft); }
 .lens-subs-title { margin: 0 0 2px; font-size: 0.9rem; font-weight: 700; color: var(--ink-soft); }
+/* 大きな問いと並ぶ問い（place: "lensSide"）の欄の、出典と記事へのリンク */
+.lens-side-foot { margin: 0; padding-left: 16px; }
 /* 論点を束ねた答え「ぱぱねこのまとめ」。押すと開く。枠・地は記事の「先に答えを言うと」とそろえ、論点の罫の外に出して区切る */
 .lens-summary { margin: 18px 0 0; background: #f3eee3; border: 1px solid var(--line); border-top: 3px solid var(--accent); }
 .lens-summary-label { padding: 10px 18px; cursor: pointer; font-size: 0.95rem; font-weight: 700; color: var(--accent); letter-spacing: 0.05em; list-style: none; }

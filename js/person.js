@@ -141,7 +141,7 @@
 
   // 欄の組と並び。考察が主役なので「捉え直す」を先頭に、出典と調査メモを最後に置く
   const GROUPS = [
-    { title: "捉え直す", sub: "本当にそうか？", keys: ["lens", "reputation", "questions", "articles"] },
+    { title: "捉え直す", sub: "本当にそうか？", keys: ["lens", "lensSide", "reputation", "questions", "articles"] },
     { title: "どんな人だっけ？", sub: "事績と生涯", keys: ["achievements", "timeline", "territories", "episodes"] },
     { title: "誰だっけ？", sub: "家系・主従・呼び名", keys: ["family", "lords", "retainers", "yoriki", "ranks", "nameHistory"] },
     { title: "もっと知りたい！", sub: "読む本・行く現地", keys: ["references", "spots"] },
@@ -509,10 +509,11 @@
       list
         .map((q) => entry({ main: esc(q.title), note: q.text, links: q.links, tail: srcMarks(q.sourceId), extra: articleLink(q.article_id) }))
         .join("");
-    const qPlace = (q) => (q.place === "lens" ? (lens ? "lens" : "") : q.place && S[q.place] ? q.place : "");
+    const qPlace = (q) =>
+      q.place === "lens" || q.place === "lensSide" ? (lens ? q.place : "") : q.place && S[q.place] ? q.place : "";
     const qs = p.questions || [];
     for (const place of new Set(qs.map(qPlace))) {
-      if (!place || place === "lens") continue;
+      if (!place || place === "lens" || place === "lensSide") continue;
       S[place].inner += `<div class="sec-questions"><p class="sec-questions-title">この欄をめぐる疑問</p><ul class="entry-list">${qItems(qs.filter((q) => qPlace(q) === place))}</ul></div>`;
     }
     const restQs = qs.filter((q) => !qPlace(q));
@@ -530,20 +531,24 @@
         : "";
     if (lens) {
       const lensQs = qs.filter((q) => qPlace(q) === "lens");
-      // 番外編（bangai）は論点の番号に数えず、番号の後ろに「番外編」の札で出す
-      const numberedCount = lensQs.filter((q) => !q.bangai).length;
-      let lensNo = 0;
-      const lensLabel = (q) => `${q.bangai ? "番外編" : `論点${++lensNo}`}${q.aspect ? `：${esc(q.aspect)}` : ""}`;
+      const lensLabel = (q, i) => `論点${i + 1}${q.aspect ? `：${esc(q.aspect)}` : ""}`;
       put("lens", lens.title || "この人物への問い", `<div class="lens">
           <p class="lens-question">${fmtText(esc(lens.question))}</p>
         </div>
         ${lensQs.length ? `<div class="lens-subs">
-          <p class="lens-subs-title">この問いを${numberedCount}つの論点に分けて考える</p>
+          <p class="lens-subs-title">この問いを${lensQs.length}つの論点に分けて考える</p>
           <ol class="entry-list lens-subs-list">${lensQs
-            .map((q) => entry({ when: lensLabel(q), main: esc(q.title), note: q.text, links: q.links, tail: srcMarks(q.sourceId), extra: articleLink(q.article_id) }))
+            .map((q, i) => entry({ when: lensLabel(q, i), main: esc(q.title), note: q.text, links: q.links, tail: srcMarks(q.sourceId), extra: articleLink(q.article_id) }))
             .join("")}</ol>
         </div>` : ""}
         ${lensSummary(lens)}`);
+      // 大きな問いと並ぶ問い（place: "lensSide"）。論点に分けず、問いごとに大きな問いと同じ高さの欄を立てる
+      qs.filter((q) => qPlace(q) === "lensSide").forEach((q, i) => {
+        put(`lensSide:${i}`, q.title, `<div class="lens">
+            <p class="lens-question">${fmtText(linkText(q.text, q.links))}</p>
+          </div>
+          <p class="lens-side-foot">${srcMarks(q.sourceId)}${articleLink(q.article_id)}</p>`);
+      });
     }
 
     // ゆかりの地・史跡（墓所もここにまとめる。墓所の状態は不明・なしも必ず明示）
@@ -695,7 +700,10 @@
     // 欄を組ごとに並べる（組の見出しは README の人物データベースの問いかけ）。中身のない組は出さない
     let gn = 0;
     for (const grp of GROUPS) {
-      const keys = grp.keys.filter((k) => S[k]);
+      // lensSide は、大きな問いと並ぶ問いの欄（lensSide:0, lensSide:1 …）をまとめて指す
+      const keys = grp.keys
+        .flatMap((k) => (k === "lensSide" ? Object.keys(S).filter((x) => x.startsWith("lensSide:")) : [k]))
+        .filter((k) => S[k]);
       if (!keys.length) continue;
       const gid = "grp-" + ++gn;
       tocGroups.push({ id: gid, title: grp.title, items: [] });
