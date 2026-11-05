@@ -42,6 +42,7 @@
 | `reputation` | Reputation[] | 人物評価（存命時・死去後、または同時代・江戸・明治・昭和・現代の時代別） |
 | `references` | Reference[] | 参考書籍（アフィリエイト対象） |
 | `portrait` | Portrait? | 肖像画。見出しの右に表示（下記） |
+| `papaneko` | { src, caption?, note?, credit? }? | ぱぱねこ版のその人物の絵（`assets/img/chara/<person_id>.svg`）。肖像画の右に並べて出し、表記（省略時「イラスト：ぱぱねこの戦国見立て（AIで作成）」、管理人の手描きなら `credit` に「イラスト：ぱぱねこの戦国見立て」）はページ末尾の「画像の出典」に出す。キャプションには「（イメージ）」を付ける |
 | `spots` | Spot[] | ゆかりの地（城跡・銅像・刀剣・肖像画・博物館・名物など） |
 | `graves` | Graves | 墓所（現存・諸説あり・不明・なしを必ず明示する） |
 | `images` | Image[] | 人物画像 |

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" role="img" aria-label="ぱぱねこ版の豊臣秀長（イメージ）（肖像画のように上畳に座り、低い折烏帽子をかぶって直垂を着、藍の紐で首に小豆を下げ、両の前足で閉じた扇を持つ猫。右上に藍の字で「豊臣秀長」の名札）">
+  <defs>
+    <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
+    <g id="pn-head">
+      <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <circle cx="45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-78,10 C-80,-30 -50,-47 0,-47 C50,-47 80,-30 78,10 C78,40 50,52 0,52 C-50,52 -78,40 -78,10 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-40,-3 Q-28,-15 -16,-3 M16,-3 Q28,-15 40,-3" fill="none" stroke="#23201c" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/>
+      <path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" fill="none" stroke="#23201c" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-50,10 L-92,5 M-50,18 L-94,19 M-48,26 L-90,33 M50,10 L92,5 M50,18 L94,19 M48,26 L90,33" stroke="#23201c" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+  </defs>
+  <rect width="400" height="480" fill="#fbfaf6"/>
+
+  <!-- 上畳（繧繝縁の見立て） -->
+  <rect x="36" y="378" width="328" height="70" fill="#ece3c9" stroke="#8a7a62" stroke-width="2"/>
+  <rect x="36" y="378" width="328" height="14" fill="#efe9dc" stroke="#8a7a62" stroke-width="2"/>
+  <path d="M36,385 H364" stroke="#9b2d20" stroke-width="2" stroke-dasharray="10 6" opacity="0.7"/>
+  <path d="M36,385 H364" stroke="#2f5d7c" stroke-width="2" stroke-dasharray="6 10" stroke-dashoffset="-10" opacity="0.6"/>
+  <path d="M60,410 H340 M60,430 H340" stroke="#d9d2c5" stroke-width="1.5"/>
+
+  <!-- 座った体と直垂（袖を広げて座る肖像画の形） -->
+  <path d="M150,226 Q112,238 100,290 L66,398 Q200,418 334,398 L300,290 Q288,238 250,226 Z" fill="#efe9dc" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- 袖の線と袴の襞 -->
+  <path d="M122,256 Q96,320 108,396 M278,256 Q304,320 292,396" fill="none" stroke="#23201c" stroke-width="2" stroke-linecap="round"/>
+  <path d="M160,352 L150,404 M200,356 V408 M240,352 L250,404" fill="none" stroke="#8a7a62" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- 胸紐（直垂の菊綴の見立て） -->
+  <path d="M136,300 l-6,10 M264,300 l6,10" stroke="#2f5d7c" stroke-width="3" stroke-linecap="round"/>
+  <!-- 襟 -->
+  <path d="M168,230 L200,296 L232,230" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M180,232 L200,276 L220,232" fill="none" stroke="#23201c" stroke-width="1.5"/>
+
+  <!-- 閉じた扇と、それを持つ前足 -->
+  <path d="M200,350 L230,272" stroke="#6b5a46" stroke-width="8" stroke-linecap="round"/>
+  <path d="M200,350 L230,272" stroke="#c9b48a" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="190" cy="336" rx="17" ry="12" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+  <ellipse cx="216" cy="326" rx="17" ry="12" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+  <path d="M184,330 v6 M192,329 v6 M210,320 v6 M218,319 v6" stroke="#23201c" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- 頭と、秀長の印（低い折烏帽子・藍の紐の小豆） -->
+  <g transform="translate(200,166) scale(1.25)">
+    <use href="#pn-head"/>
+    <!-- 低い折烏帽子（先を後ろへ折る） -->
+    <path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/>
+    <!-- 首に下げた小豆（大納言小豆） -->
+    <path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/>
+    <ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/>
+    <path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- 名札（肖像画の賛の見立て。秀長は藍の字） -->
+  <rect x="334" y="30" width="40" height="132" fill="none" stroke="#2f5d7c" stroke-width="1.5" opacity="0.6"/>
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif" font-size="26" font-weight="700" fill="#2f5d7c" text-anchor="middle">
+    <text x="354" y="64">豊</text>
+    <text x="354" y="94">臣</text>
+    <text x="354" y="124">秀</text>
+    <text x="354" y="154">長</text>
+  </g>
+</svg>

@@ -245,6 +245,19 @@
           <figcaption><span class="portrait-note">肖像画は未発見</span></figcaption>
         </figure>`;
     }
+    // ぱぱねこ版の絵（papaneko）：肖像画の右に並べる。キャプションは「（イメージ）」、表記はページ末尾の「画像の出典」へ
+    if (p.papaneko && p.papaneko.src) {
+      const pn = p.papaneko;
+      imageCredits.push([pn.caption || "ぱぱねこ版の絵", esc(pn.credit || "イラスト：ぱぱねこの戦国見立て（AIで作成）")]);
+      portrait = `<div class="person-figs">${portrait}
+        <figure class="person-portrait person-portrait--papaneko">
+          <img src="${esc(pn.src)}" alt="${esc(pn.caption || "ぱぱねこ版の" + p.name)}" loading="lazy">
+          <figcaption>
+            ${pn.caption ? `<span class="portrait-title">${esc(pn.caption)}</span>` : ""}
+            ${pn.note ? `<span class="portrait-note">${esc(pn.note)}</span>` : ""}
+          </figcaption>
+        </figure></div>`;
+    }
     // 基本情報（別名・家紋など。見出しは立てず、ヘッダー枠内に置く）
     const facts = [];
     // 改名：名乗りを改めた順に矢印でつなぎ、改めた年を（）で添える（データは古い順に並べる）

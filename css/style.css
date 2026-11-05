@@ -1390,10 +1390,20 @@ footer.site-footer {
 .portrait-note { margin-top: 2px; }
 .person-portrait .img-credit { margin-top: 4px; }
 .person-portrait--none { width: 140px; }
+/* 肖像画とぱぱねこ版の絵（papaneko）を横に並べる（肖像画が左、ぱぱねこ版が右） */
+.person-figs { display: flex; flex-direction: row; gap: 14px; flex-shrink: 0; align-items: flex-start; }
+.person-figs .person-portrait { width: 200px; }
+/* 冒頭の枠は、目次のレールの左端（本文の左 230px）まで広げる */
+@media (min-width: 900px) {
+  #content:has(.side-toc) > .person-head { margin-left: -230px; }
+}
+.person-portrait--papaneko img { background: var(--bg-panel); }
 @media (max-width: 600px) {
   .person-head.has-portrait { flex-direction: column; }
   .person-portrait { width: 100%; max-width: 240px; margin: 0 auto; }
   .person-portrait--none { max-width: 140px; }
+  .person-figs { flex-direction: row; width: 100%; max-width: 420px; margin: 0 auto; align-items: flex-start; }
+  .person-figs .person-portrait { flex: 1; min-width: 0; margin: 0; }
 }
 /* 武将一覧のサムネイル：肖像画の顔を切り出した正方形（portraits/thumbs/）をカード右上に置く */
 .person-thumb {
