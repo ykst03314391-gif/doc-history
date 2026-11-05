@@ -170,7 +170,7 @@
     },
     {
       "id": "komaki-nagakute",
-      "update": { "date": "2026-11-02", "items": ["概要ページを作った"] },
+      "update": { "date": "2026-11-02", "new": true, "items": ["概要ページを作った"] },
       "name": "小牧・長久手の戦い",
       "kana": "こまき・ながくてのたたかい",
       "year": 1584,

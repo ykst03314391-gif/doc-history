@@ -943,6 +943,31 @@ footer.site-footer {
 .recent-items { clear: both; margin: 8px 0 0; padding-left: 1.2em; font-size: 0.92rem; color: var(--ink-soft); }
 .recent-items li { margin: 0 0 2px; }
 
+/* ---- トップの「新着・更新」（記事・人物・城・合戦・大名家をまとめた1行ずつの一覧。js/home.js） ---- */
+.whats-new { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.whats-new li { border-bottom: 1px solid var(--line); }
+.whats-new-row {
+  display: flex; align-items: baseline; gap: 10px;
+  padding: 9px 4px; color: var(--ink); text-decoration: none;
+}
+.whats-new-row:hover { background: var(--bg-panel); }
+.whats-new-row:hover .whats-new-name { color: var(--accent); }
+.whats-new-date { flex: none; width: 6.2em; font-size: 0.9rem; color: var(--accent); }
+.whats-new-badge {
+  flex: none; padding: 1px 7px; border-radius: 3px; font-size: 0.72rem; line-height: 1.6;
+}
+.whats-new-badge.is-new { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
+.whats-new-badge.is-update { color: var(--accent); border: 1px solid var(--accent); }
+.whats-new-kind { flex: none; width: 3.4em; font-size: 0.85rem; color: var(--ink-soft); }
+.whats-new-body { flex: 1; min-width: 0; display: flex; align-items: baseline; gap: 12px; }
+.whats-new-name { flex: none; max-width: 60%; font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.whats-new-items { flex: 1; min-width: 0; font-size: 0.9rem; color: var(--ink-soft); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 760px) {
+  .whats-new-row { flex-wrap: wrap; gap: 4px 8px; }
+  .whats-new-body { flex-basis: 100%; flex-direction: column; gap: 0; }
+  .whats-new-name { max-width: 100%; white-space: normal; }
+}
+
 /* ---- 仮置きデータ注記（DB系ページ） ---- */
 .provisional-notice {
   margin: 0 0 22px;
