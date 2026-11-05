@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="天正19年正月、秀長の死の後の郡山城で、秀吉の使者が朱印状を示し、家老の横浜一庵が頭を下げて受ける想像図。中ほどに幼い跡継ぎの秀保が座り、奥には秀長が残した金銀の箱が積まれる">
+  <defs>
+    <!-- 表情（眉なし。目と口だけを描き替える。見本は chara/papaneko-hyojo.svg）。頭の座標で重ねる -->
+    <g id="pn-ex-cover"><path d="M-47,-24 H47 V40 H-47 Z" fill="#fbfaf6" stroke="none"/><ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/></g>
+    <g id="pn-ex-ki" fill="none" stroke="#23201c" stroke-linecap="round" stroke-linejoin="round"><use href="#pn-ex-cover"/><path d="M-44,0 Q-29,-20 -14,0 M14,0 Q29,-20 44,0" stroke-width="3"/><path d="M-16,17 Q-8,27 0,14 Q8,27 16,17" stroke-width="2"/><path d="M-9,23 Q0,42 9,23 Q0,27 -9,23 Z" fill="#23201c" stroke-width="1.5"/><path d="M-64,24 l6,-8 M-56,24 l6,-8 M-48,24 l6,-8 M42,24 l6,-8 M50,24 l6,-8 M58,24 l6,-8" stroke-width="1.5"/></g>
+    <g id="pn-ex-do" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-42,-12 L-17,-2 M17,-2 L42,-12" stroke-width="3"/><path d="M-16,28 Q-8,15 0,27 Q8,15 16,28" stroke-width="2"/></g>
+    <g id="pn-ex-ai" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-42,0 L-18,-9 M18,-9 L42,0" stroke-width="2.5"/><path d="M-11,27 Q-5,19 0,25 Q5,19 11,27" stroke-width="2"/></g>
+    <g id="pn-ex-ikari"><path d="M70,-50 q8,0 8,-8 M86,-58 q0,8 8,8 M94,-34 q-8,0 -8,8 M78,-26 q0,-8 -8,-8" fill="none" stroke="#9b2d20" stroke-width="3.5" stroke-linecap="round"/></g>
+    <g id="pn-ex-namida"><path d="M-34,6 Q-41,18 -34,22 Q-27,18 -34,6 Z" fill="#dfe9f0" stroke="#2f5d7c" stroke-width="2"/></g>
+    <g id="pn-ex-raku" fill="none" stroke="#23201c" stroke-linecap="round"><use href="#pn-ex-cover"/><path d="M-40,-8 Q-28,2 -16,-8 M16,-8 Q28,2 40,-8" stroke-width="2.5"/><path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" stroke-width="2"/><path d="M-62,24 l6,-8 M-54,24 l6,-8 M48,24 l6,-8 M56,24 l6,-8" stroke-width="1.5"/></g>
+    <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
+    <g id="pn-head">
+      <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <circle cx="45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-78,10 C-80,-30 -50,-47 0,-47 C50,-47 80,-30 78,10 C78,40 50,52 0,52 C-50,52 -78,40 -78,10 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-40,-3 Q-28,-15 -16,-3 M16,-3 Q28,-15 40,-3" fill="none" stroke="#23201c" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/>
+      <path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" fill="none" stroke="#23201c" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-50,10 L-92,5 M-50,18 L-94,19 M-48,26 L-90,33 M50,10 L92,5 M50,18 L94,19 M48,26 L90,33" stroke="#23201c" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+    <!-- 基本形のぱぱねこ（四つ足・服なし。足もと中央 0,0、頭は左、しっぽは右） -->
+    <g id="pn-base">
+      <path d="M-104,-92 C-110,-70 -116,-40 -116,-12 Q-116,0 -108,0 Q-100,0 -100,-10 L-100,-19 L-62,-19 L-62,-10 Q-62,0 -55,0 Q-48,0 -48,-10 L-48,-19 L14,-19 L14,-10 Q14,0 21,0 Q28,0 28,-10 L28,-19 L60,-19 L60,-10 Q60,0 67,0 Q74,0 74,-10 L74,-19 Q90,-21 93,-38 L94,-66 Q90,-74 94,-82 L96,-112 Q97,-134 84,-135 Q73,-135 67,-120 Q61,-100 50,-87 Q40,-89 20,-88 L-104,-92 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+      <use href="#pn-head" transform="translate(-51,-132) scale(0.95)"/>
+    </g>
+    <!-- 伏せる（基本形を低くし、頭を前へ下げる。足もと中央 0,0、頭は左） -->
+    <g id="pn-fuse">
+      <path d="M-104,-92 C-110,-70 -116,-40 -116,-12 Q-116,0 -108,0 Q-100,0 -100,-10 L-100,-19 L-62,-19 L-62,-10 Q-62,0 -55,0 Q-48,0 -48,-10 L-48,-19 L14,-19 L14,-10 Q14,0 21,0 Q28,0 28,-10 L28,-19 L60,-19 L60,-10 Q60,0 67,0 Q74,0 74,-10 L74,-19 Q90,-21 93,-38 L94,-66 Q90,-74 94,-82 L96,-112 Q97,-134 84,-135 Q73,-135 67,-120 Q61,-100 50,-87 Q40,-89 20,-88 L-104,-92 Z" transform="scale(1,0.7)" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+      <use href="#pn-head" transform="translate(-100,-58) rotate(-12) scale(0.95)"/>
+    </g>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif">
+<rect x="0" y="370" width="800" height="80" fill="#efe9dc"/><path d="M0,370 H800" stroke="#d9d2c5" stroke-width="2"/><path d="M40,370 V100 H760 V370" fill="none" stroke="#6b5a46" stroke-width="6"/><path d="M40,100 H760" stroke="#6b5a46" stroke-width="12"/><rect x="600" y="318" width="46" height="40" fill="#c9b98f" stroke="#6b5a46" stroke-width="2"/><circle cx="623" cy="338" r="5" fill="#e3c46a" stroke="#23201c" stroke-width="1.5"/><rect x="600" y="276" width="46" height="40" fill="#c9b98f" stroke="#6b5a46" stroke-width="2"/><circle cx="623" cy="296" r="5" fill="#e3c46a" stroke="#23201c" stroke-width="1.5"/><rect x="650" y="318" width="46" height="40" fill="#c9b98f" stroke="#6b5a46" stroke-width="2"/><circle cx="673" cy="338" r="5" fill="#e3c46a" stroke="#23201c" stroke-width="1.5"/><rect x="650" y="276" width="46" height="40" fill="#c9b98f" stroke="#6b5a46" stroke-width="2"/><circle cx="673" cy="296" r="5" fill="#e3c46a" stroke="#23201c" stroke-width="1.5"/><rect x="700" y="318" width="46" height="40" fill="#c9b98f" stroke="#6b5a46" stroke-width="2"/><circle cx="723" cy="338" r="5" fill="#e3c46a" stroke="#23201c" stroke-width="1.5"/><rect x="700" y="276" width="46" height="40" fill="#c9b98f" stroke="#6b5a46" stroke-width="2"/><circle cx="723" cy="296" r="5" fill="#e3c46a" stroke="#23201c" stroke-width="1.5"/><text x="675" y="250" font-size="14" fill="#23201c" text-anchor="middle" font-weight="700">金銀</text><g transform="translate(400,370) scale(0.300,0.300)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-"/><path d="M-18,-44 L-14,-74 Q0,-82 14,-74 L18,-44 Z" fill="#23201c"/></g></g><text x="400" y="404" font-size="16" fill="#23201c" font-weight="700" text-anchor="middle">秀保</text><g transform="translate(160,370) scale(-0.500,0.500)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><use href="#pn-ex-"/><path d="M-18,-44 L-14,-74 Q0,-82 14,-74 L18,-44 Z" fill="#23201c"/></g></g><text x="160" y="404" font-size="16" fill="#9b2d20" font-weight="700" text-anchor="middle">秀吉の使者</text><g transform="translate(220,228) rotate(-6)"><rect x="0" y="0" width="70" height="50" fill="#fffdf6" stroke="#23201c" stroke-width="2"/><path d="M60,8 V40" stroke="#4f4940" stroke-width="2" stroke-dasharray="6 4"/><path d="M35,8 V40" stroke="#4f4940" stroke-width="2" stroke-dasharray="6 4"/><path d="M10,8 V40" stroke="#4f4940" stroke-width="2" stroke-dasharray="6 4"/><rect x="10" y="24" width="16" height="16" fill="#9b2d20"/></g><g transform="translate(560,372) scale(0.480,0.480)"><use href="#pn-fuse"/><g transform="translate(-100,-58) rotate(-12) scale(0.95)"><use href="#pn-ex-"/><path d="M-40,44 Q0,74 40,44" fill="none" stroke="#23201c" stroke-width="8" stroke-dasharray="0.1 10" stroke-linecap="round"/><path d="M0,59 V74" stroke="#6b5a46" stroke-width="4" stroke-linecap="round"/></g></g><text x="540" y="404" font-size="16" fill="#23201c" font-weight="700" text-anchor="middle">横浜一庵</text>
+  </g>
+</svg>
