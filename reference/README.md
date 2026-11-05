@@ -13,7 +13,7 @@
 ```
 reference/
 ├─ wikisource/  … Wikisource（新字版）翻刻を parse API で取得（13本）
-├─ ndl/         … NDL 次世代デジタルライブラリーの OCR 全文（10本・要校正）
+├─ ndl/         … NDL 次世代デジタルライブラリーの OCR 全文（11本・要校正）
 ├─ jstage/      … J-STAGE 由来の論文（現状なし）      ┐
 ├─ cinii/       … CiNii の論文書誌メモ（2本）          ├ 論文系は発行年でさらに分ける（例 cinii/2025/）
 └─ other/       … 機関リポジトリ/青空文庫/刊本 等      ┘
@@ -43,7 +43,7 @@ reference/
 | `wikisource/kanchiron.txt` | 『官地論』 | 二次（軍記） | `kanchiron` | 加賀富樫氏・加賀一向一揆 |
 | `wikisource/ihon-odawaraki.txt` | 『異本小田原記』 | 二次（軍記・北条五代記系の異本） | `ihon-odawaraki` | 後北条・小田原 |
 
-### `ndl/`（NDL 次世代デジタルライブラリー OCR・10本／要校正）
+### `ndl/`（NDL 次世代デジタルライブラリー OCR・11本／要校正）
 
 | ファイル | 原典 | 史料区分 | sourceId | 主な関連 |
 |---|---|---|---|---|
@@ -55,6 +55,7 @@ reference/
 | `ndl/nara-meisho-yaezakura.txt` | 『奈良名所八重桜』(延宝6年刊・全12巻) | 二次（名所記・**版本OCR/誤認識多**） | `nara-meisho-yaezakura`（未登録） | 奈良の寺社縁起・光秀尼の逸話 |
 | `ndl/hyuga-komonjo.txt` | 宮崎県 編『日向古文書集成』(1938) | **一次**（古文書の翻刻・写しを含む・**OCR/要校正**） | `hyuga-komonjo` | 九州攻め・島津・北郷・伊東、秀長の家臣福智長通の書状 |
 | `ndl/kugyo-bunin.txt` | 『公卿補任』(国史大系本 中編・正親町院〜後陽成院の部分) | 二次扱い（朝廷の公卿名簿・編纂物・**表組みOCRで段が崩れる**） | `kugyo-bunin` | 秀長・秀保・家康ら織豊期の公卿の任官日 |
+| `ndl/essa-shiryo.txt` | 高橋義彦 編『越佐史料』巻3〜5（1927〜30） | **一次**（古文書・日記の翻刻）と二次（年譜・軍記）が混在・**OCR/要校正**。各条の出典名で分ける | `essa-shiryo` | 上杉謙信・長尾為景・越後の家臣・川中島・関東出兵 |
 | `ndl/hoan-shinchoki.txt` | 太田牛一 輯録・小瀬甫庵 重撰『信長記』（甫庵信長記）巻1（元和8年刊本） | 二次（軍記・脚色多・**版本OCR/誤認識多**） | `hoan-shinchoki`（未登録） | 信長の若年期・信秀の葬儀・平手の諫死 |
 
 > - 各ファイルの「── コマ N ──」は NDL デジタルコレクションのコマ番号。画像は git 外の `D:\private\shiryo\<史料名>\` に同じ番号で保存している（`D:\private\shiryo\tools\` の取得スクリプトで再取得可）。
