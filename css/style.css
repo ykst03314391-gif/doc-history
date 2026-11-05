@@ -40,7 +40,7 @@ a:hover { text-decoration: underline; }
   border-bottom: 4px solid var(--accent);
 }
 .site-header .inner {
-  max-width: 1000px;
+  max-width: 1230px; /* 本文の枠（main）と同じ幅 */
   margin: 0 auto;
   padding: 18px 20px;
   display: flex;
@@ -66,8 +66,11 @@ a:hover { text-decoration: underline; }
 }
 
 /* ---- レイアウト ---- */
+/* ページの枠は、目次のある人物ページ（秀長型）にそろえて 1230px にする。
+   目次のあるページは、この中の左 250px を目次のレールに使い、本文は 960px になる。
+   目次のないページは、枠いっぱい（1190px）を本文に使う */
 main {
-  max-width: 1000px;
+  max-width: 1230px;
   margin: 0 auto;
   padding: 32px 20px 80px;
 }
@@ -116,12 +119,20 @@ main.reading { max-width: 880px; }
 }
 /* 左の余白にレールが収まらない幅：main の左に余白（レール幅＋余白 230px ＋本来の 20px）を取り、
    その分 max-width を広げて、余裕があるうちは本文の幅を保つ。
-   記事(880px)は 1340px、DB詳細(1000px)は 1460px から余白に収まるので、そこでこの調整は外れる */
+   記事(880px)は 1340px から余白に収まるので、そこでこの調整は外れる */
 @media (min-width: 900px) and (max-width: 1339px) {
   main.reading:has(.side-toc) { max-width: 1110px; padding-left: 250px; }
 }
-@media (min-width: 900px) and (max-width: 1459px) {
-  main:not(.reading):has(.side-toc) { max-width: 1230px; padding-left: 250px; }
+/* 記事以外は、どの幅でも枠（1230px）の左 250px を目次のレールに取る */
+@media (min-width: 900px) {
+  main:not(.reading):has(.side-toc:not([hidden])) { padding-left: 250px; }
+  /* 一覧ページの目次より上（題・説明・最近更新・仮置き注記）は、
+     人物ページの冒頭の枠と同じく、レールの左端から枠いっぱいに広げる。
+     目次は検索欄の前に置いてあり（HTML）、検索・並べ方・絞り込み・都道府県の選択とその説明は、
+     目次の右、下の一覧と同じ列に並ぶ */
+  main:not(.reading):has(> .side-toc:not([hidden])) > :has(~ .side-toc) { margin-left: -230px; }
+  /* 上の部分（最近更新・仮置き注記）と、目次・並べ方から下の一覧の部分との間をあける */
+  main:not(.reading):has(> .side-toc:not([hidden])) > :has(+ .side-toc) { margin-bottom: 44px; }
 }
 html { scroll-behavior: smooth; }
 .article-body h2 { scroll-margin-top: 18px; }
@@ -136,6 +147,8 @@ html { scroll-behavior: smooth; }
   margin: 0 0 6px;
 }
 .lead { color: var(--ink-soft); margin-top: 0; }
+/* 一覧ページの題の下の一文に続ける、並べ方の説明（人物・城・合戦・大名家） */
+.lead-note { font-size: 0.85rem; line-height: 1.7; margin: -0.6em 0 1.2em; }
 
 /* ---- ヒーロー（トップ） ---- */
 .hero {
@@ -596,6 +609,17 @@ html { scroll-behavior: smooth; }
   min-width: 14em;
   cursor: pointer;
 }
+/* 一覧ページの並べ方（人物・城・合戦・大名家）も同じプルダウンにする。
+   左端に選んでいる並べ方の名前を出し、並べ方・検索欄は同じ行の右端に寄せる */
+.list-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin: 0 0 18px; }
+.list-controls .order-picker { margin: 0; }
+.list-controls .pref-select { min-width: 9em; }
+.list-controls .search-box { width: 16em; max-width: 100%; margin: 0; }
+.list-controls > .search-box:only-child { margin-left: auto; }
+.order-current { margin-right: auto; font-size: 1.1rem; font-weight: 700; color: var(--accent); letter-spacing: 0.05em; }
+@media (max-width: 600px) {
+  .list-controls .search-box { width: 100%; }
+}
 /* 目次から飛ぶ先の節 */
 #result section.section { scroll-margin-top: 18px; }
 
@@ -918,7 +942,6 @@ footer.site-footer {
 .recent-card .recent-date { margin: 0 0 2px; font-size: 0.9rem; color: var(--accent); }
 .recent-items { clear: both; margin: 8px 0 0; padding-left: 1.2em; font-size: 0.92rem; color: var(--ink-soft); }
 .recent-items li { margin: 0 0 2px; }
-.recent-items .recent-more { list-style: none; margin-left: -1.2em; }
 
 /* ---- 仮置きデータ注記（DB系ページ） ---- */
 .provisional-notice {
@@ -947,18 +970,6 @@ footer.site-footer {
 .section-more a { font-weight: 700; }
 
 /* ---- 最新トピック（B＝最新情報） ---- */
-.topic-filter { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; }
-.topic-filter-btn {
-  font-family: var(--serif);
-  font-size: 0.9rem;
-  padding: 5px 14px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--bg-panel);
-  color: var(--ink-soft);
-  cursor: pointer;
-}
-.topic-filter-btn.is-active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 
 .topic-card {
   background: var(--bg-panel);
@@ -1402,8 +1413,9 @@ footer.site-footer {
 @media (min-width: 900px) {
   #content:has(.side-toc) > .person-head { margin-left: -230px; }
   /* 枠の上の「一覧へ戻る」と仮置き注記も、枠の左端にそろえる */
-  main#person:has(.side-toc) > .back-link,
-  main#person:has(.side-toc) > .provisional-notice { margin-left: -230px; }
+  /* 人物・合戦・城・大名家の詳細ページで共通 */
+  main:has(> #content > .side-toc) > .back-link,
+  main:has(> #content > .side-toc) > .provisional-notice { margin-left: -230px; }
 }
 .person-portrait--papaneko img { background: var(--bg-panel); }
 @media (max-width: 600px) {

@@ -31,7 +31,14 @@
       ここでは考察はしません——気になったら、<a href="articles.html">深掘りの考察記事</a>へどうぞ。
     </p>
 
-    <div id="filter" class="topic-filter" aria-label="ストリームで絞り込み"></div>
+    <!-- 左端に選んでいる区分の名前、右端に区分の選択（js/topics.js） -->
+    <div class="list-controls">
+      <span id="order-current" class="order-current" aria-live="polite">すべて</span>
+      <div class="pref-picker order-picker">
+        <label for="filter">区分</label>
+        <select id="filter" class="pref-select"></select>
+      </div>
+    </div>
     <div id="list" aria-live="polite"><p class="muted">読み込み中…</p></div>
   </main>
 

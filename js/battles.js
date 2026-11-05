@@ -4,6 +4,8 @@
   const searchEl = document.getElementById("search");
   // 並べ方の切替。年代順／50音順／地域別／国別（地域・国は主な戦場の国 province で分ける）
   const orderEl = document.getElementById("order");
+  // 一覧の見出しの目次（.side-toc。いま開いている見出しの強調は js/toc.js）
+  const tocEl = document.getElementById("list-toc");
   const { kanaRow, isProvince, provinceRank, regionOf, regionRank, setupSwitch, by, diff } = window.ListOrder;
   let battles = [];
 
@@ -57,9 +59,9 @@
   const byYear = (a, b) => diff(a.year || Infinity, b.year || Infinity);
   const byKana = (a, b) => (a.kana || a.name || "").localeCompare(b.kana || b.name || "", "ja");
 
-  // 並べ方ごとの見出し（年代順は見出しなし）と並び。同じ国の中は北から、同じ場所なら年代順
+  // 並べ方ごとの見出しと並び。年代順は10年ごと（1560年代など）、同じ国の中は北から、同じ場所なら年代順
   function groupOf(b, order) {
-    if (order === "year") return "";
+    if (order === "year") return b.year ? `${Math.floor(b.year / 10) * 10}年代` : "年不明";
     if (order === "kana") return kanaRow(b.kana);
     if (!prov(b)) return "国不明";
     return order === "region" ? regionOf(prov(b)) : `${prov(b)}（${regionOf(prov(b))}）`;
@@ -71,23 +73,48 @@
     return [...items].sort(by(...head, byNorth, byYear));
   }
 
+  // 目次は一覧の見出しから作るので、並べ方や検索で見出しが変わるたびに作り直す。
+  // 国別は、地域を組の見出し（その地域の最初の国へ飛ぶ）にして、その下に国を並べる
+  function renderToc(rows) {
+    if (!tocEl) return;
+    tocEl.hidden = !rows.length;
+    const li = (r) =>
+      r.children
+        ? `<li class="toc-group"><a class="toc-group-link" href="#${r.id}">${esc(r.label)}</a><ol>${r.children.map(li).join("")}</ol></li>`
+        : `<li><a href="#${r.id}">${esc(r.label)}</a></li>`;
+    tocEl.innerHTML = rows.length ? `<p class="toc-title">目次</p><ol>${rows.map(li).join("")}</ol>` : "";
+  }
+
   function render(items) {
     if (!items.length) {
       listEl.innerHTML = `<p class="muted">該当する合戦がありません。</p>`;
+      renderToc([]);
       return;
     }
     const order = currentOrder();
     let html = "";
     let current = null;
+    let n = 0;
+    const rows = [];
     for (const b of sortFor(order, items)) {
       const row = groupOf(b, order);
       if (row && row !== current) {
-        html += `<h3 class="kana-row-heading">${esc(row)}</h3>`;
+        const id = `row-${n++}`;
+        html += `<h3 class="kana-row-heading" id="${id}">${esc(row)}</h3>`;
         current = row;
+        if (order === "province" && prov(b)) {
+          const region = regionOf(prov(b));
+          let grp = rows[rows.length - 1];
+          if (!grp || grp.label !== region || !grp.children) rows.push((grp = { id, label: region, children: [] }));
+          grp.children.push({ id, label: prov(b) });
+        } else {
+          rows.push({ id, label: row });
+        }
       }
       html += cardHTML(b);
     }
     listEl.innerHTML = html;
+    renderToc(rows);
   }
 
   function filter(q) {

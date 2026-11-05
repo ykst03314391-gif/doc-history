@@ -164,7 +164,10 @@
     nav.className = "side-toc";
     nav.setAttribute("aria-label", "目次");
     nav.innerHTML = `<p class="toc-title">目次</p><ol>${items}</ol>`;
-    root.prepend(nav);
+    // 人物ページと同じく、冒頭の枠（.person-head）の後ろに置き、枠を目次のレールの左端から広げる
+    const head = root.querySelector(":scope > .person-head");
+    if (head) head.after(nav);
+    else root.prepend(nav);
   }
 
   Promise.all([

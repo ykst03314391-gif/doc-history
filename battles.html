@@ -27,6 +27,7 @@
   <main>
     <h2 class="page-title">合戦名から探す</h2>
     <p class="lead">合戦や政変を年代順に。武将や考察記事ともつながっています。</p>
+    <p class="lead-note muted">地域別・国別は主な戦場の国で分け、北から並べています。何か国にもわたる攻めも、主な戦場の国に入ります。</p>
     <section id="recent" class="recent-updates" hidden>
       <h3 class="recent-title">最近更新した合戦</h3>
       <div id="recent-list" class="recent-grid"></div>
@@ -35,16 +36,21 @@
     <div class="provisional-notice" role="note">
       <strong>⚠ 仮置きデータ</strong>：ここに掲載しているデータベース情報（人物・合戦・大名家など）は<strong>すべて暫定（仮置き）</strong>です。出典の裏取りが済んでおらず、記載中の出典（信長公記など）も未検証。内容は今後、一次資料に当たって順次修正します。現時点で正確性は保証しません。
     </div>
-    <input type="search" id="search" class="search-box" placeholder="合戦名・かな・武将で検索…">
-
-    <fieldset id="order" class="order-switch">
-      <legend>並べ方</legend>
-      <label><input type="radio" name="order" value="year" checked><span>年代順</span></label>
-      <label><input type="radio" name="order" value="kana"><span>50音順</span></label>
-      <label><input type="radio" name="order" value="region"><span>地域別</span></label>
-      <label><input type="radio" name="order" value="province"><span>国別</span></label>
-      <span class="order-note muted">地域別・国別は主な戦場の国で分け、北から並べています。何か国にもわたる攻めも、主な戦場の国に入ります</span>
-    </fieldset>
+    <nav id="list-toc" class="side-toc" aria-label="目次" hidden></nav>
+    <!-- 左端に選んでいる並べ方の名前、右端に並べ方・検索を1行に並べる（js/order.js） -->
+    <div class="list-controls">
+      <span id="order-current" class="order-current" aria-live="polite"></span>
+      <div class="pref-picker order-picker">
+        <label for="order">並べ方</label>
+        <select id="order" class="pref-select">
+          <option value="year" selected>年代順</option>
+          <option value="kana">50音順</option>
+          <option value="region">地域別</option>
+          <option value="province">国別</option>
+        </select>
+      </div>
+      <input type="search" id="search" class="search-box" placeholder="合戦名・かな・武将で検索…">
+    </div>
 
     <div id="list" class="card-grid" aria-live="polite"></div>
     <section id="photo-credits" class="photo-credits"></section>
@@ -58,5 +64,6 @@
   <script src="js/order.js"></script>
   <script src="js/recent.js"></script>
   <script src="js/battles.js"></script>
+  <script src="js/toc.js"></script>
 </body>
 </html>

@@ -27,22 +27,27 @@
   <main>
     <h2 class="page-title">人物名から探す</h2>
     <p class="lead">「これ、誰だっけ？ どんな人だっけ？」に、出典に基づいて答えます。</p>
+    <p class="lead-note muted">地域別は出身国で分け、地域（北から）の下に国を並べています。家別は家名の読みの50音順で、行（あ行・か行…）ごとに家を並べ、自分の家の項目がない家臣は仕えた家の後ろにまとめています。</p>
 
     <section id="recent" class="recent-updates" hidden>
       <h3 class="recent-title">最近更新した人物</h3>
       <div id="recent-list" class="recent-grid"></div>
     </section>
-    <input type="search" id="search" class="search-box" placeholder="名前・かな・タグで検索…">
-
-    <fieldset id="order" class="order-switch">
-      <legend>並べ方</legend>
-      <label><input type="radio" name="order" value="kana" checked><span>50音順</span></label>
-      <label><input type="radio" name="order" value="region"><span>地域別</span></label>
-      <label><input type="radio" name="order" value="clan"><span>家別</span></label>
-      <span class="order-note muted">地域別は出身国で分け、地域（北から）の下に国を並べています。家別は家名の読みの50音順で、行（あ行・か行…）ごとに家を並べ、自分の家の項目がない家臣は仕えた家の後ろにまとめています</span>
-    </fieldset>
-
     <nav id="list-toc" class="side-toc" aria-label="目次" hidden></nav>
+    <!-- 左端に選んでいる並べ方の名前、右端に並べ方・検索を1行に並べる（js/order.js） -->
+    <div class="list-controls">
+      <span id="order-current" class="order-current" aria-live="polite"></span>
+      <div class="pref-picker order-picker">
+        <label for="order">並べ方</label>
+        <select id="order" class="pref-select">
+          <option value="kana" selected>50音順</option>
+          <option value="region">地域別</option>
+          <option value="clan">家別</option>
+        </select>
+      </div>
+      <input type="search" id="search" class="search-box" placeholder="名前・かな・タグで検索…">
+    </div>
+
     <div id="list" class="card-grid" aria-live="polite"></div>
   </main>
 

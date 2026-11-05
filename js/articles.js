@@ -2,6 +2,9 @@
 (async function () {
   const listEl = document.getElementById("list");
   const searchEl = document.getElementById("search");
+  // 特集の目次（.side-toc。いま開いている見出しの強調は js/toc.js）と、検索の行の左端の名前
+  const tocEl = document.getElementById("list-toc");
+  const nameEl = document.getElementById("order-current");
   let articles = [];
   let series = [];
   let seriesMap = new Map();
@@ -42,7 +45,7 @@
   // 一般記事など、グループ分けなしのブロック
   function block(title, desc, items) {
     if (!items.length) return "";
-    return `<section class="section series-block">
+    return `<section class="section series-block" id="series-other">
       <h2 class="series-title">${esc(title)}</h2>
       ${desc ? `<p class="series-desc">${esc(desc)}</p>` : ""}
       ${grid(items)}
@@ -73,7 +76,7 @@
     for (const g of groupOrder) {
       inner += `<h3 class="series-group">${esc(g)}</h3>${grid(groups.get(g))}`;
     }
-    return `<section class="section series-block">
+    return `<section class="section series-block" id="series-${esc(s.id)}">
       <h2 class="series-title">${esc(s.title)}</h2>
       ${s.description ? `<p class="series-desc">${esc(s.description)}</p>` : ""}
       ${inner}
@@ -92,10 +95,22 @@
       .sort(byDateDesc);
     html += block("その他の考察・記事", "", general);
     listEl.innerHTML = html || `<p class="muted">まだ記事がありません。</p>`;
+    // 目次は、出した特集の見出しから作る
+    const rows = [...listEl.querySelectorAll(".series-block")].map(
+      (sec) => `<li><a href="#${sec.id}">${esc(sec.querySelector(".series-title").textContent)}</a></li>`
+    );
+    if (tocEl) {
+      tocEl.hidden = !rows.length;
+      tocEl.innerHTML = rows.length ? `<p class="toc-title">目次</p><ol>${rows.join("")}</ol>` : "";
+    }
+    if (nameEl) nameEl.textContent = "特集ごと";
   }
 
   // 検索結果はフラット表示
   function renderFlat(items) {
+    // 検索中は特集の見出しがないので、目次は出さない
+    if (tocEl) tocEl.hidden = true;
+    if (nameEl) nameEl.textContent = `検索結果（${items.length}件）`;
     if (!items.length) {
       listEl.innerHTML = `<p class="muted">該当する記事がありません。</p>`;
       return;

@@ -47,17 +47,32 @@ window.ListOrder = (function () {
   // 並べ方の切替（<fieldset id="order"> のラジオボタン）。選んだ並べ方は URL（?order=）に残す
   function setupSwitch(orderEl, orders, onChange) {
     if (!orderEl) return () => orders[0];
+    // 並べ方はプルダウン（<select id="order">）。ラジオボタンの組（<fieldset>）でも動く
+    const isSelect = orderEl.tagName === "SELECT";
     const current = () => {
+      if (isSelect) return orders.includes(orderEl.value) ? orderEl.value : orders[0];
       const v = orderEl.querySelector("input:checked");
       return v ? v.value : orders[0];
     };
     const initial = new URLSearchParams(location.search).get("order");
-    if (orders.includes(initial)) orderEl.querySelector(`input[value="${initial}"]`).checked = true;
+    if (orders.includes(initial)) {
+      if (isSelect) orderEl.value = initial;
+      else orderEl.querySelector(`input[value="${initial}"]`).checked = true;
+    }
+    // 並べ方の行の左端（#order-current）に、選んでいる並べ方の名前を出す
+    const nameEl = document.getElementById("order-current");
+    const showName = () => {
+      if (!nameEl || !isSelect) return;
+      const opt = orderEl.options[orderEl.selectedIndex];
+      nameEl.textContent = opt ? opt.textContent : "";
+    };
+    showName();
     orderEl.addEventListener("change", () => {
       const url = new URL(location.href);
       if (current() === orders[0]) url.searchParams.delete("order");
       else url.searchParams.set("order", current());
       history.replaceState(null, "", url);
+      showName();
       onChange(current());
     });
     return current;

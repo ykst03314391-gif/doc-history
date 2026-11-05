@@ -62,22 +62,17 @@
       : `<p class="muted">この分類のトピックはまだありません。</p>`;
   }
 
+  // 区分（ストリーム）の選択はプルダウン。選んだ区分の名前を行の左端（#order-current）に出す
   function buildFilter() {
     if (!filterEl) return;
     const streams = ["すべて", "新説", "お出かけ", "ゲーム"];
+    const nameEl = document.getElementById("order-current");
     filterEl.innerHTML = streams
-      .map(
-        (s) =>
-          `<button type="button" class="topic-filter-btn${s === current ? " is-active" : ""}" data-stream="${esc(s)}">${esc(s)}</button>`
-      )
+      .map((s) => `<option value="${esc(s)}"${s === current ? " selected" : ""}>${esc(s)}</option>`)
       .join("");
-    filterEl.addEventListener("click", (e) => {
-      const btn = e.target.closest("[data-stream]");
-      if (!btn) return;
-      current = btn.dataset.stream;
-      filterEl.querySelectorAll(".topic-filter-btn").forEach((b) =>
-        b.classList.toggle("is-active", b.dataset.stream === current)
-      );
+    filterEl.addEventListener("change", () => {
+      current = filterEl.value;
+      if (nameEl) nameEl.textContent = current;
       render();
     });
   }
