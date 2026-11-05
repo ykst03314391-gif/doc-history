@@ -216,6 +216,52 @@
       ]
     },
     {
+      "id": "hidenaga-taiga-drama",
+      "title": "大河「豊臣兄弟！」の秀長は、どの秀長像を描いているのか",
+      "series": "myth-busting",
+      "category": "考察",
+      "summary": "秀長が初めて主人公になった2026年の大河ドラマは、どの秀長像を選んだのか。作り手の言葉、大和の回と多聞院日記の対照、史料の空白の埋め方、ネットの賛否から、番外編として答え合わせする。",
+      "date": "2026-11-05",
+      "image": {
+        "src": "assets/img/portraits/toyotomi-hidenaga.jpg",
+        "caption": "豊臣秀長像（春岳院蔵、天明8年〈1788〉の作とされる）※参考イメージ",
+        "credit": "Wikimedia Commons",
+        "license": "パブリックドメイン"
+      },
+      "relatedPeople": [
+        "toyotomi-hidenaga",
+        "toyotomi-hideyoshi",
+        "niwa-nagahide",
+        "tokugawa-ieyasu",
+        "nakagawa-kiyohide"
+      ],
+      "relatedBattles": [
+        "shizugatake"
+      ],
+      "tags": [
+        "豊臣秀長",
+        "大河ドラマ",
+        "豊臣兄弟！",
+        "人物像",
+        "番外編",
+        "考察"
+      ],
+      "references": [
+        {
+          "title": "羽柴秀長の生涯 秀吉を支えた「補佐役」の実像（平凡社新書）",
+          "author": "黒田基樹",
+          "affiliateUrl": "https://www.amazon.co.jp/dp/4582860907",
+          "note": "ドラマの時代考証を務めた研究者の評伝。ドラマの「補佐役以上」の秀長の下敷きになっている"
+        },
+        {
+          "title": "羽柴秀長 秀吉の天下を支えた弟（角川選書）",
+          "author": "柴裕之",
+          "affiliateUrl": "https://www.amazon.co.jp/dp/4047037400",
+          "note": "もう一人の時代考証の研究者による評伝。一門の筆頭としての執政から死後まで"
+        }
+      ]
+    },
+    {
       "id": "hidenaga-if-lived",
       "title": "秀長が長生きしていたら、豊臣政権は続いたのか",
       "series": "myth-busting",

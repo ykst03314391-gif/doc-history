@@ -530,13 +530,17 @@
         : "";
     if (lens) {
       const lensQs = qs.filter((q) => qPlace(q) === "lens");
+      // 番外編（bangai）は論点の番号に数えず、番号の後ろに「番外編」の札で出す
+      const numberedCount = lensQs.filter((q) => !q.bangai).length;
+      let lensNo = 0;
+      const lensLabel = (q) => `${q.bangai ? "番外編" : `論点${++lensNo}`}${q.aspect ? `：${esc(q.aspect)}` : ""}`;
       put("lens", lens.title || "この人物への問い", `<div class="lens">
           <p class="lens-question">${fmtText(esc(lens.question))}</p>
         </div>
         ${lensQs.length ? `<div class="lens-subs">
-          <p class="lens-subs-title">この問いを${lensQs.length}つの論点に分けて考える</p>
+          <p class="lens-subs-title">この問いを${numberedCount}つの論点に分けて考える</p>
           <ol class="entry-list lens-subs-list">${lensQs
-            .map((q, i) => entry({ when: `論点${i + 1}${q.aspect ? `：${esc(q.aspect)}` : ""}`, main: esc(q.title), note: q.text, links: q.links, tail: srcMarks(q.sourceId), extra: articleLink(q.article_id) }))
+            .map((q) => entry({ when: lensLabel(q), main: esc(q.title), note: q.text, links: q.links, tail: srcMarks(q.sourceId), extra: articleLink(q.article_id) }))
             .join("")}</ol>
         </div>` : ""}
         ${lensSummary(lens)}`);
