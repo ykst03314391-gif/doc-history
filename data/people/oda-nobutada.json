@@ -4,7 +4,7 @@
   "kana": "おだ のぶただ",
   "role": "frozen",
   "summary": "織田信長の嫡男。天正3年（1575）に家督と美濃・尾張を譲られ、織田軍の総大将として松永久秀を滅ぼし、甲州征伐では武田勝頼を自害に追い込んだ。天正10年（1582）の本能寺の変の日、京の二条新御所で明智勢と戦って自害した。",
-  "lens": { "title": "「信長の凡庸な後継者」は本当か", "question": "信長の陰に隠れた凡庸な後継者という信忠像は、いつ、どこから来て、どこまで当たっているのか。", "view": "" },
+  "lens": { "title": "「信長の凡庸な後継者」は本当か", "question": "信長の陰に隠れた凡庸な後継者という信忠像は、いつ、どこから来て、どこまで当たっているのか。" },
   "portrait": {"src": "assets/img/portraits/oda-nobutada.jpg", "caption": "織田信忠像", "holder": "総見寺（滋賀県近江八幡市）", "note": "絹本著色（Wikimedia Commons のファイルページによる）。描いた人と描かれた時期は確かめられておらず、同時代の肖像かどうかは分からない。", "source": {"name": "Wikimedia Commons", "url": "https://commons.wikimedia.org/wiki/File:Oda_Nobutada3_(cropped).jpg"}, "license": "パブリックドメイン"},
   "aliases": [
     { "type": "幼名", "value": "奇妙（奇妙丸）", "note": "信長公記は{{奇妙公}}と書く。「丸」を付けた形は信長公記の本文では確かめていない" },

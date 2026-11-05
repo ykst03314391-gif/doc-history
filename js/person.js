@@ -145,7 +145,7 @@
     { title: "どんな人だっけ？", sub: "事績と生涯", keys: ["achievements", "timeline", "territories", "episodes"] },
     { title: "誰だっけ？", sub: "家系・主従・呼び名", keys: ["family", "lords", "retainers", "yoriki", "ranks", "nameHistory"] },
     { title: "もっと知りたい！", sub: "読む本・行く現地", keys: ["references", "spots"] },
-    { title: "出典と確認状況", sub: "", keys: ["sources", "toVerify"] },
+    { title: "出典と確認状況", sub: "", keys: ["sources", "toVerify", "imageCredits"] },
   ];
 
   // 欄の中身をいったん集め、最後に GROUPS の順で組み立てる
@@ -217,6 +217,8 @@
     // ヘッダー
     const birth = fmtDate(p.birth);
     const death = fmtDate(p.death);
+    // 冒頭の肖像画・家紋の絵の権利表記（所蔵・作者・ライセンス・出典）は、絵の横に置かず、ページ末尾の「画像の出典」にまとめる
+    const imageCredits = [];
     // 肖像画（パブリックドメインの画像のみ。所蔵と出典を必ず添える）
     let portrait = "";
     if (p.portrait && p.portrait.src) {
@@ -227,13 +229,13 @@
       const credit = [
         pt.holder ? `所蔵：${esc(pt.holder)}` : "",
         src ? `出典：${src}${pt.license ? `（${esc(pt.license)}）` : ""}` : "",
-      ].filter(Boolean).join("<br>");
+      ].filter(Boolean).join(" ／ ");
+      if (credit) imageCredits.push([pt.caption || "肖像画", credit]);
       portrait = `<figure class="person-portrait">
           <img src="${esc(pt.src)}" alt="${esc(pt.caption || p.name + "の肖像")}" loading="lazy">
           <figcaption>
             ${pt.caption ? `<span class="portrait-title">${esc(pt.caption)}</span>` : ""}
             ${pt.note ? `<span class="portrait-note">${esc(pt.note)}</span>` : ""}
-            ${credit ? `<span class="img-credit">${credit}</span>` : ""}
           </figcaption>
         </figure>`;
     } else {
@@ -262,13 +264,14 @@
           ? `<a href="${esc(k.licenseUrl)}" target="_blank" rel="noopener">${esc(k.license)}</a>`
           : esc(k.license || "");
         const csrc = k.source ? `出典：<a href="${esc(k.source.url)}" target="_blank" rel="noopener">${esc(k.source.name)}</a>` : "";
-        const kcredit = [k.author ? `作者：${esc(k.author)}` : "", lic, csrc].filter(Boolean).join(" ／ ");
+        const kcredit = [k.author ? `作者：${esc(k.author)}` : "", lic, csrc, k.note ? esc(k.note) : ""].filter(Boolean).join(" ／ ");
+        imageCredits.push([`家紋（${p.kamon.name}）`, kcredit]);
         facts.push([
           "家紋",
           `<span class="kamon-fact"><img class="kamon-fact-img" src="${esc(k.src)}" alt="家紋：${esc(p.kamon.name)}" loading="lazy">` +
             `<span><span>${esc(p.kamon.name)}</span>` +
             (p.kamon.note ? `<span class="kamon-fact-note">${linkText(p.kamon.note, p.kamon.links)}</span>` : "") +
-            `<span class="img-credit">${kcredit}</span></span></span>`,
+            `</span></span>`,
         ]);
       } else {
         facts.push(["家紋", esc(p.kamon.name) + (p.kamon.note ? `<span class="muted">（${linkText(p.kamon.note, p.kamon.links)}）</span>` : "")]);
@@ -515,40 +518,28 @@
     const restQs = qs.filter((q) => !qPlace(q));
     if (restQs.length) put("questions", "諸説・疑問", `<ul class="entry-list">${qItems(restQs)}</ul>`);
 
-    // 筆者の見立て。管理人がまだ書いていないあいだ（AI のたたき台＝viewDraft、または主役で空）は、
-    // この欄に何を書くかの説明を添える。管理人が書き終えたら（viewDraft を消したら）説明は出ない
-    function lensView(lens, isMain) {
-      const guide = `<div class="lens-view-guide"><p class="lens-view-guide-title">この欄に書くこと</p><ul>
-          <li>上の問いへの、管理人（ぱぱねこ）自身の答え。この人物をどういう人として見るか。</li>
-          <li>下の論点の記事の結論を踏まえ、それらを貫く見方を2〜3段落で。論点ごとの結論をくり返すのではなく、まとめて言えることを書く。</li>
-          <li>史料から言えることは記事の「先に答えを言うと」・結論に任せ、ここは史料の外へ一歩出る考え（推し量り・好み・評価）を、「私は〜と見る」のように筆者の言葉で書く。</li>
-          <li>否定した通説をくり返して広め直さない。</li>
-        </ul></div>`;
-      if (lens.view) {
-        const draft = lens.viewDraft
-          ? `<p class="lens-view-draft-note"><strong>仮の文です。</strong>AI（Claude）が考察記事の「ぱぱねこの見立て」から作ったたたき台で、管理人はまだ書いていません。</p>${guide}`
-          : "";
-        return `<div class="lens-view${lens.viewDraft ? " is-draft" : ""}"><span class="lens-view-label">筆者の見立て</span>${draft}${paras(lens.view, "", lens.links)}</div>`;
-      }
-      if (isMain) {
-        return `<div class="lens-view is-draft"><span class="lens-view-label">筆者の見立て</span><p class="lens-view-draft-note"><strong>まだ書いていません。</strong></p>${guide}</div>`;
-      }
-      return "";
-    }
-
-    // この人物への問い：ページ全体で捉え直す大きな問いと、筆者の見立て（view）。その下に place: "lens" の問いを並べる
+    // この人物への問い：ページ全体で捉え直す大きな問い。その下に place: "lens" の論点を並べ、
+    // 最後に論点を束ねた答え（answer）を「ぱぱねこのまとめ」の開閉ボタンに入れる（ふだんは閉じる）。
+    // 見立て（view。史料の外へ出る管理人の私見）は、管理人が書いたときだけ答えのあとに囲みで出す
+    const lensSummary = (lens) =>
+      lens.answer
+        ? `<details class="lens-summary"><summary class="lens-summary-label">ぱぱねこのまとめ</summary>
+          <div class="lens-summary-body">${paras(lens.answer)}${
+            lens.view ? `<div class="lens-summary-view"><span class="my-view-label">ぱぱねこの見立て</span>${paras(lens.view)}</div>` : ""
+          }</div></details>`
+        : "";
     if (lens) {
       const lensQs = qs.filter((q) => qPlace(q) === "lens");
       put("lens", lens.title || "この人物への問い", `<div class="lens">
           <p class="lens-question">${fmtText(esc(lens.question))}</p>
-          ${lensView(lens, p.role === "main")}
         </div>
         ${lensQs.length ? `<div class="lens-subs">
           <p class="lens-subs-title">この問いを${lensQs.length}つの論点に分けて考える</p>
           <ol class="entry-list lens-subs-list">${lensQs
-            .map((q, i) => entry({ when: `論点${i + 1}`, main: esc(q.title), note: q.text, links: q.links, tail: srcMarks(q.sourceId), extra: articleLink(q.article_id) }))
+            .map((q, i) => entry({ when: `論点${i + 1}${q.aspect ? `：${esc(q.aspect)}` : ""}`, main: esc(q.title), note: q.text, links: q.links, tail: srcMarks(q.sourceId), extra: articleLink(q.article_id) }))
             .join("")}</ol>
-        </div>` : ""}`);
+        </div>` : ""}
+        ${lensSummary(lens)}`);
     }
 
     // ゆかりの地・史跡（墓所もここにまとめる。墓所の状態は不明・なしも必ず明示）
@@ -684,6 +675,17 @@
         ? `<p class="muted"><strong>出典の確認状況</strong>：出典ごとの確認状況は、すぐ上の「出典」欄の各出典の説明に記しています。「原典未確認」とした記述は、研究書などからの孫引きです。</p>`
         : "";
       put("toVerify", "要確認（調査メモ）", `${checkedNote}<p class="muted">ページの記述のうち、まだ原典や原本で確かめられていない事柄と、確かめるのに当たる資料の控えです。</p><ul class="entry-list verify-list">${items}</ul>`);
+    }
+
+    // 画像の出典：冒頭の肖像画・家紋の絵の権利表記。ページの最後に置く
+    if (imageCredits.length) {
+      put(
+        "imageCredits",
+        "画像の出典",
+        `<ul class="photo-credit-list">${imageCredits
+          .map(([name, c]) => `<li><span class="credit-name">${esc(name)}</span>${c}</li>`)
+          .join("")}</ul>`
+      );
     }
 
     // 欄を組ごとに並べる（組の見出しは README の人物データベースの問いかけ）。中身のない組は出さない

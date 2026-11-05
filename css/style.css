@@ -370,7 +370,7 @@ html { scroll-behavior: smooth; }
 }
 .sec-group-title { font-size: 1.5rem; font-weight: 700; letter-spacing: 0.08em; }
 .sec-group-sub { font-size: 0.92rem; color: var(--ink-soft); }
-/* この人物への問い：大きな問いを朱の左罫で立て、筆者の見立ては枠で囲む */
+/* この人物への問い：大きな問いを朱の左罫で立てる */
 .lens-question {
   font-size: 1.1rem;
   font-weight: 700;
@@ -378,26 +378,18 @@ html { scroll-behavior: smooth; }
   padding-left: 12px;
   border-left: 4px solid var(--accent);
 }
-.lens-view {
-  margin: 0 0 18px;
-  padding: 10px 16px;
-  background: var(--bg-panel);
-  border: 1px solid var(--line);
-}
-/* 枠は冒頭の概要カードと同じく右端まで伸ばし、中の文も枠いっぱいに流す（枠の右に空白を残さない） */
-.lens-view p { margin: 0.3em 0; }
-.lens-view-label { font-size: 0.8rem; font-weight: 700; color: var(--accent); }
-/* AI が作った仮の見立て（viewDraft）。仮置きの注記と同じ金の左罫・淡い黄の地で見分ける */
-.lens-view.is-draft { background: #fbf3df; border-color: var(--gold); border-left: 5px solid var(--gold); }
-.lens-view-draft-note { font-size: 0.85rem; color: var(--ink-soft); }
-.lens-view-draft-note strong { color: #8a6a1e; }
-/* 見立てを書く前の、この欄に書くことの説明（管理人向け。書き終えたら出ない） */
-.lens-view-guide { margin: 6px 0 12px; padding: 8px 12px; border: 1px dashed var(--gold); font-size: 0.85rem; color: var(--ink-soft); line-height: 1.7; }
-.lens-view-guide-title { margin: 0 0 2px !important; font-weight: 700; color: #8a6a1e; }
-.lens-view-guide ul { margin: 0; padding-left: 1.3em; }
 /* 大きな問いの下の論点（place: "lens"）。問いと同じ朱の左罫で、問いの中の節だと分かるように字下げする */
 .lens-subs { margin: 0 0 0 4px; padding-left: 16px; border-left: 2px solid var(--accent-soft); }
 .lens-subs-title { margin: 0 0 2px; font-size: 0.9rem; font-weight: 700; color: var(--ink-soft); }
+/* 論点を束ねた答え「ぱぱねこのまとめ」。押すと開く。枠・地は記事の「先に答えを言うと」とそろえ、論点の罫の外に出して区切る */
+.lens-summary { margin: 18px 0 0; background: #f3eee3; border: 1px solid var(--line); border-top: 3px solid var(--accent); }
+.lens-summary-label { padding: 10px 18px; cursor: pointer; font-size: 0.95rem; font-weight: 700; color: var(--accent); letter-spacing: 0.05em; list-style: none; }
+.lens-summary-label::-webkit-details-marker { display: none; }
+.lens-summary-label::after { content: "（押すと開く）"; margin-left: 6px; font-size: 0.8rem; font-weight: 500; color: var(--ink-soft); }
+.lens-summary[open] .lens-summary-label::after { content: "（押すと閉じる）"; }
+.lens-summary-body { padding: 0 20px 16px; }
+.lens-summary-body p { margin: 0 0 8px; }
+.lens-summary-view { margin-top: 14px; padding: 10px 16px; border-left: 4px solid var(--accent); background: var(--bg-panel); }
 /* 欄の末尾に置く「この欄をめぐる疑問」 */
 .sec-questions { margin-top: 18px; padding-left: 12px; border-left: 3px solid var(--accent-soft); }
 .sec-questions-title { margin: 0 0 6px; font-size: 0.9rem; font-weight: 700; color: var(--ink-soft); }
@@ -413,7 +405,6 @@ html { scroll-behavior: smooth; }
 .kamon-fact > span { display: flex; flex-direction: column; }
 .kamon-fact-img { width: 44px; height: 44px; object-fit: contain; flex-shrink: 0; }
 .kamon-fact-note { font-size: 0.82rem; color: var(--ink-soft); }
-.kamon-fact .img-credit { font-size: 0.7rem; color: var(--ink-soft); overflow-wrap: anywhere; }
 
 /* 年表 */
 .timeline { list-style: none; padding: 0; margin: 0; }
@@ -754,7 +745,7 @@ html { scroll-behavior: smooth; }
 .article-body .my-view p { margin: 0 0 14px; }
 .article-body .my-view p:last-child { margin-bottom: 0; }
 /* 答え・結論の札にもぱぱねこの顔（顔が付いているところ＝管理人の判断） */
-.lead-answer-label::before, .sec-conclusion-label::before, .my-view-label::before {
+.lead-answer-label::before, .sec-conclusion-label::before, .my-view-label::before, .lens-summary-label::before {
   content: "";
   display: inline-block;
   width: 30px;

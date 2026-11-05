@@ -138,7 +138,10 @@ def check(pid):
         extra = [k for k in ("timeline", "family", "episodes", "sources", "lens") if k in p]
         if extra:
             warns.append(f"脇役（role なし）なのに詳細の欄がある: {', '.join(extra)}")
-    if p.get("role") != "main" and p.get("lens", {}).get("view"):
+    lens = p.get("lens") or {}
+    if p.get("role") == "main" and lens.get("question") and not lens.get("answer"):
+        warns.append("lens.answer（ぱぱねこのまとめ）がまだ無い（論点の記事がそろったら書く）")
+    if p.get("role") != "main" and lens.get("view"):
         warns.append("主役でないのに lens.view がある")
 
     return errs, warns
