@@ -436,6 +436,19 @@
         .join("");
     }
 
+    // 欄の挿絵（illusts）の figure。記事の挿絵と同じ形で、表記は図の下に出す
+    const illustFig = (il) => {
+      const cap = il.caption || "";
+      return `<figure class="article-figure article-figure--illust person-illust">
+          <img src="${esc(il.src)}" alt="${esc(cap)}" loading="lazy"><figcaption>
+          ${cap ? `<span class="portrait-title">${esc(cap)}</span>` : ""}
+          <span class="img-credit">${esc(il.credit || "イラスト：ぱぱねこの戦国見立て（AIで作成）")}</span>
+        </figcaption></figure>`;
+    };
+    // 年表の項目に添える挿絵（key が timeline で item がその項目の title のもの）は、その項目の説明の下に置く
+    const itemIllusts = (key, title) =>
+      (p.illusts || []).filter((il) => il.key === key && il.item && il.item === title && il.src).map(illustFig).join("");
+
     // 年表
     if (p.timeline && p.timeline.length) {
       // 同じ年で月の無い出来事は、データに書いた順のまま置く（月が無いからといって年の初めに回さない）
@@ -465,6 +478,7 @@
               <div class="entry-head"><span class="t-title">${num}${title}</span></div>
               ${desc ? `<div class="entry-note">${desc}</div>` : ""}
               ${related ? `<div class="t-related">${related}</div>` : ""}
+              ${itemIllusts("timeline", e.title)}
             </div>
           </li>`;
         })
@@ -697,6 +711,17 @@
         ? `<p class="muted"><strong>出典の確認状況</strong>：出典ごとの確認状況は、すぐ上の「出典」欄の各出典の説明に記しています。「原典未確認」とした記述は、研究書などからの孫引きです。</p>`
         : "";
       put("toVerify", "要確認（調査メモ）", `${checkedNote}<p class="muted">ページの記述のうち、まだ原典や原本で確かめられていない事柄と、確かめるのに当たる資料の控えです。</p><ul class="entry-list verify-list">${items}</ul>`);
+    }
+
+    // 欄の挿絵（illusts）：key の欄の見出しのすぐ下に置く。大きな問い（lens）だけは、問いの文の下に置く。
+    // item（年表の項目の title）があるものは、上の年表の組み立てでその項目の下に置いたので、ここでは扱わない。
+    // 置き場所の欄が無いときは出さない。同じ欄に2枚以上あるときはデータの順に並ぶよう、後ろから順に先頭へ差し込む
+    for (const il of [...(p.illusts || [])].reverse()) {
+      const sec = S[il.key];
+      if (!sec || !il.src || il.item) continue;
+      const fig = illustFig(il);
+      if (il.key === "lens") sec.inner = sec.inner.replace(/(<div class="lens">[\s\S]*?<\/div>)/, `$1${fig}`);
+      else sec.inner = fig + sec.inner;
     }
 
     // 画像の出典：冒頭の肖像画・家紋の絵の権利表記。ページの最後に置く

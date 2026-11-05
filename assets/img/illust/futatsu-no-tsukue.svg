@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="二つの机のイメージ。左は天正のころ、数珠を下げた興福寺の僧（四つ足の猫のキャラ）が日記を書き、右は文政のころ、頭巾の藤堂家の学者が古い本を積んで記録を編む。あいだに二百年あまりの霞がかかる">
+  <defs>
+    <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
+    <g id="pn-head">
+      <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <circle cx="45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-78,10 C-80,-30 -50,-47 0,-47 C50,-47 80,-30 78,10 C78,40 50,52 0,52 C-50,52 -78,40 -78,10 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-40,-3 Q-28,-15 -16,-3 M16,-3 Q28,-15 40,-3" fill="none" stroke="#23201c" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/>
+      <path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" fill="none" stroke="#23201c" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-50,10 L-92,5 M-50,18 L-94,19 M-48,26 L-90,33 M50,10 L92,5 M50,18 L94,19 M48,26 L90,33" stroke="#23201c" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+    <!-- 基本形のぱぱねこ（四つ足・服なし。足もと中央 0,0、頭は左、しっぽは右） -->
+    <g id="pn-base">
+      <path d="M-104,-92 C-110,-70 -116,-40 -116,-12 Q-116,0 -108,0 Q-100,0 -100,-10 L-100,-19 L-62,-19 L-62,-10 Q-62,0 -55,0 Q-48,0 -48,-10 L-48,-19 L14,-19 L14,-10 Q14,0 21,0 Q28,0 28,-10 L28,-19 L60,-19 L60,-10 Q60,0 67,0 Q74,0 74,-10 L74,-19 Q90,-21 93,-38 L94,-66 Q90,-74 94,-82 L96,-112 Q97,-134 84,-135 Q73,-135 67,-120 Q61,-100 50,-87 Q40,-89 20,-88 L-104,-92 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+      <use href="#pn-head" transform="translate(-51,-132) scale(0.95)"/>
+    </g>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif">
+<rect x="0" y="360" width="800" height="90" fill="#efe9dc"/><path d="M0,360 H800" stroke="#d9d2c5" stroke-width="2"/>
+<defs><linearGradient id="kasumi" x1="0" x2="1"><stop offset="0" stop-color="#fbfaf6" stop-opacity="0"/><stop offset="0.5" stop-color="#d9d2c5" stop-opacity="0.9"/><stop offset="1" stop-color="#fbfaf6" stop-opacity="0"/></linearGradient></defs>
+<rect x="330" y="0" width="140" height="450" fill="url(#kasumi)"/>
+<path d="M340,150 Q400,130 460,150 M335,220 Q400,200 465,220 M340,290 Q400,270 460,290" stroke="#b8ab95" stroke-width="3" fill="none" stroke-linecap="round"/>
+<text x="400" y="250" font-size="18" fill="#6b5a46" font-weight="700" text-anchor="middle">二百年あまり</text>
+<rect x="40" y="60" width="140" height="150" fill="#f4f1ea" stroke="#8a7a62" stroke-width="2"/><path d="M110,60 V210 M40,135 H180" stroke="#b8ab95" stroke-width="2"/>
+<rect x="170" y="302" width="130" height="12" fill="#6b5a46"/><path d="M180,314 V360 M290,314 V360" stroke="#6b5a46" stroke-width="5"/><path d="M180,300 L235,292 L290,300 L235,306 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2"/>
+<path d="M168,268 L196,298" stroke="#23201c" stroke-width="4" stroke-linecap="round"/>
+<g transform="translate(110,358) scale(-0.5,0.5)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-36,42 Q0,66 36,42" fill="none" stroke="#6b5a46" stroke-width="1.5"/><circle cx="-36" cy="42" r="5" fill="#6b5a46" stroke="#23201c" stroke-width="1.2"/><circle cx="-27" cy="47.2" r="5" fill="#6b5a46" stroke="#23201c" stroke-width="1.2"/><circle cx="-18" cy="51" r="5" fill="#6b5a46" stroke="#23201c" stroke-width="1.2"/><circle cx="-9" cy="53.2" r="5" fill="#6b5a46" stroke="#23201c" stroke-width="1.2"/><circle cx="0" cy="54" r="5" fill="#6b5a46" stroke="#23201c" stroke-width="1.2"/><circle cx="9" cy="53.2" r="5" fill="#6b5a46" stroke="#23201c" stroke-width="1.2"/><circle cx="18" cy="51" r="5" fill="#6b5a46" stroke="#23201c" stroke-width="1.2"/><circle cx="27" cy="47.2" r="5" fill="#6b5a46" stroke="#23201c" stroke-width="1.2"/><circle cx="36" cy="42" r="5" fill="#6b5a46" stroke="#23201c" stroke-width="1.2"/></g></g>
+<text x="165" y="40" font-size="17" fill="#4f4940" text-anchor="middle">天正のころ</text>
+<text x="165" y="400" font-size="19" fill="#8a6d1f" font-weight="700" text-anchor="middle">興福寺の僧</text>
+<text x="165" y="426" font-size="15" fill="#4f4940" text-anchor="middle">その日のうちに書いた日記</text>
+<rect x="620" y="60" width="140" height="150" fill="#f4f1ea" stroke="#8a7a62" stroke-width="2"/><path d="M690,60 V210 M620,135 H760" stroke="#b8ab95" stroke-width="2"/>
+<rect x="500" y="302" width="130" height="12" fill="#6b5a46"/><path d="M510,314 V360 M620,314 V360" stroke="#6b5a46" stroke-width="5"/>
+<rect x="512" y="270" width="40" height="32" fill="#c9b48a" stroke="#23201c" stroke-width="1.5"/><rect x="516" y="252" width="34" height="18" fill="#d8c08a" stroke="#23201c" stroke-width="1.5"/><path d="M560,300 L600,292 L625,300 L585,306 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2"/>
+<path d="M632,268 L604,298" stroke="#23201c" stroke-width="4" stroke-linecap="round"/>
+<g transform="translate(690,358) scale(0.5,0.5)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-40,-40 Q0,-80 40,-40 L36,-30 Q0,-44 -36,-30 Z" fill="#6b5a46" stroke="#23201c" stroke-width="2"/></g></g>
+<text x="635" y="40" font-size="17" fill="#4f4940" text-anchor="middle">文政のころ</text>
+<text x="635" y="400" font-size="19" fill="#8a6d1f" font-weight="700" text-anchor="middle">藤堂家の学者</text>
+<text x="635" y="426" font-size="15" fill="#4f4940" text-anchor="middle">古い話を集めて編んだ記録</text>
+  </g>
+</svg>

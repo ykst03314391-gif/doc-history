@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="呼び名の名札を掛け替えるイメージ。横木に、小竹・小一郎・長秀・秀長・宰相・中納言・大納言の名札が左から順に下がり、折烏帽子に小豆の秀長（四つ足の猫のキャラ、ぱぱねこ）が最後の「大納言」の札を見上げる">
+  <defs>
+    <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
+    <g id="pn-head">
+      <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <circle cx="45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-78,10 C-80,-30 -50,-47 0,-47 C50,-47 80,-30 78,10 C78,40 50,52 0,52 C-50,52 -78,40 -78,10 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-40,-3 Q-28,-15 -16,-3 M16,-3 Q28,-15 40,-3" fill="none" stroke="#23201c" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/>
+      <path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" fill="none" stroke="#23201c" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-50,10 L-92,5 M-50,18 L-94,19 M-48,26 L-90,33 M50,10 L92,5 M50,18 L94,19 M48,26 L90,33" stroke="#23201c" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+    <!-- 基本形のぱぱねこ（四つ足・服なし。足もと中央 0,0、頭は左、しっぽは右） -->
+    <g id="pn-base">
+      <path d="M-104,-92 C-110,-70 -116,-40 -116,-12 Q-116,0 -108,0 Q-100,0 -100,-10 L-100,-19 L-62,-19 L-62,-10 Q-62,0 -55,0 Q-48,0 -48,-10 L-48,-19 L14,-19 L14,-10 Q14,0 21,0 Q28,0 28,-10 L28,-19 L60,-19 L60,-10 Q60,0 67,0 Q74,0 74,-10 L74,-19 Q90,-21 93,-38 L94,-66 Q90,-74 94,-82 L96,-112 Q97,-134 84,-135 Q73,-135 67,-120 Q61,-100 50,-87 Q40,-89 20,-88 L-104,-92 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+      <use href="#pn-head" transform="translate(-51,-132) scale(0.95)"/>
+    </g>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif">
+<rect x="0" y="360" width="800" height="90" fill="#efe9dc"/><path d="M0,360 H800" stroke="#d9d2c5" stroke-width="2"/>
+<path d="M30,70 H770" stroke="#6b5a46" stroke-width="6" stroke-linecap="round"/>
+<path d="M80,70 V92" stroke="#6b5a46" stroke-width="2"/>
+<rect x="50" y="92" width="60" height="150" rx="4" fill="#ece5d6" stroke="#4f4940" stroke-width="2.5"/>
+<text x="80" y="167" font-size="24" fill="#4f4940" font-weight="700" text-anchor="middle" writing-mode="vertical-rl" style="writing-mode:vertical-rl" letter-spacing="2">小竹</text>
+<text x="80" y="266" font-size="14" fill="#4f4940" text-anchor="middle">幼名</text>
+<path d="M116,170 L150,170" stroke="#b8ab95" stroke-width="2.5"/><path d="M144,164 L152,170 L144,176" stroke="#b8ab95" stroke-width="2.5" fill="none"/>
+<path d="M186,70 V92" stroke="#6b5a46" stroke-width="2"/>
+<rect x="156" y="92" width="60" height="150" rx="4" fill="#ece5d6" stroke="#4f4940" stroke-width="2.5"/>
+<text x="186" y="167" font-size="24" fill="#4f4940" font-weight="700" text-anchor="middle" writing-mode="vertical-rl" style="writing-mode:vertical-rl" letter-spacing="2">小一郎</text>
+<text x="186" y="266" font-size="14" fill="#4f4940" text-anchor="middle">天正2年</text>
+<path d="M222,170 L256,170" stroke="#b8ab95" stroke-width="2.5"/><path d="M250,164 L258,170 L250,176" stroke="#b8ab95" stroke-width="2.5" fill="none"/>
+<path d="M292,70 V92" stroke="#6b5a46" stroke-width="2"/>
+<rect x="262" y="92" width="60" height="150" rx="4" fill="#ece5d6" stroke="#4f4940" stroke-width="2.5"/>
+<text x="292" y="167" font-size="24" fill="#4f4940" font-weight="700" text-anchor="middle" writing-mode="vertical-rl" style="writing-mode:vertical-rl" letter-spacing="2">長秀</text>
+<text x="292" y="266" font-size="14" fill="#4f4940" text-anchor="middle">天正10年</text>
+<path d="M328,170 L362,170" stroke="#b8ab95" stroke-width="2.5"/><path d="M356,164 L364,170 L356,176" stroke="#b8ab95" stroke-width="2.5" fill="none"/>
+<path d="M398,70 V92" stroke="#6b5a46" stroke-width="2"/>
+<rect x="368" y="92" width="60" height="150" rx="4" fill="#ece5d6" stroke="#4f4940" stroke-width="2.5"/>
+<text x="398" y="167" font-size="24" fill="#4f4940" font-weight="700" text-anchor="middle" writing-mode="vertical-rl" style="writing-mode:vertical-rl" letter-spacing="2">秀長</text>
+<text x="398" y="266" font-size="14" fill="#4f4940" text-anchor="middle">天正12年</text>
+<path d="M434,170 L468,170" stroke="#b8ab95" stroke-width="2.5"/><path d="M462,164 L470,170 L462,176" stroke="#b8ab95" stroke-width="2.5" fill="none"/>
+<path d="M504,70 V92" stroke="#6b5a46" stroke-width="2"/>
+<rect x="474" y="92" width="60" height="150" rx="4" fill="#ece5d6" stroke="#4f4940" stroke-width="2.5"/>
+<text x="504" y="167" font-size="24" fill="#4f4940" font-weight="700" text-anchor="middle" writing-mode="vertical-rl" style="writing-mode:vertical-rl" letter-spacing="2">宰相</text>
+<text x="504" y="266" font-size="14" fill="#4f4940" text-anchor="middle">天正13年</text>
+<path d="M540,170 L574,170" stroke="#b8ab95" stroke-width="2.5"/><path d="M568,164 L576,170 L568,176" stroke="#b8ab95" stroke-width="2.5" fill="none"/>
+<path d="M610,70 V92" stroke="#6b5a46" stroke-width="2"/>
+<rect x="580" y="92" width="60" height="150" rx="4" fill="#ece5d6" stroke="#4f4940" stroke-width="2.5"/>
+<text x="610" y="167" font-size="24" fill="#4f4940" font-weight="700" text-anchor="middle" writing-mode="vertical-rl" style="writing-mode:vertical-rl" letter-spacing="2">中納言</text>
+<text x="610" y="266" font-size="14" fill="#4f4940" text-anchor="middle">天正14年</text>
+<path d="M646,170 L680,170" stroke="#b8ab95" stroke-width="2.5"/><path d="M674,164 L682,170 L674,176" stroke="#b8ab95" stroke-width="2.5" fill="none"/>
+<path d="M716,70 V92" stroke="#6b5a46" stroke-width="2"/>
+<rect x="686" y="92" width="60" height="150" rx="4" fill="#fbfaf6" stroke="#2f5d7c" stroke-width="2.5"/>
+<text x="716" y="167" font-size="24" fill="#2f5d7c" font-weight="700" text-anchor="middle" writing-mode="vertical-rl" style="writing-mode:vertical-rl" letter-spacing="2">大納言</text>
+<text x="716" y="266" font-size="14" fill="#4f4940" text-anchor="middle">天正15年</text>
+<g transform="translate(690,400) scale(-0.42,0.42)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
+<text x="600" y="330" font-size="20" fill="#2f5d7c" font-weight="700" text-anchor="middle">秀長</text>
+<text x="30" y="40" font-size="18" fill="#4f4940" text-anchor="start">呼び名は、名乗りと官位で変わっていった</text>
+  </g>
+</svg>

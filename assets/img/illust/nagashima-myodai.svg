@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="天正2年（1574）、伊勢・長島の一向一揆攻めで、折烏帽子に小豆の木下小一郎（秀長）が采配を掲げ、旗を立てた羽柴勢を率いて葦の茂る川辺を一揆勢の砦へ向かう想像図。左上の吹き出しには、越前の境を守る立烏帽子に瓢箪の兄・秀吉。人物はみな四つ足の猫のキャラ（ぱぱねこ）">
+  <defs>
+    <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
+    <g id="pn-head">
+      <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <circle cx="45" cy="-45" r="20" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-78,10 C-80,-30 -50,-47 0,-47 C50,-47 80,-30 78,10 C78,40 50,52 0,52 C-50,52 -78,40 -78,10 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5"/>
+      <path d="M-40,-3 Q-28,-15 -16,-3 M16,-3 Q28,-15 40,-3" fill="none" stroke="#23201c" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="0" cy="9" rx="5" ry="4" fill="none" stroke="#23201c" stroke-width="2"/>
+      <path d="M-16,17 Q-8,29 0,14 Q8,29 16,17" fill="none" stroke="#23201c" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-50,10 L-92,5 M-50,18 L-94,19 M-48,26 L-90,33 M50,10 L92,5 M50,18 L94,19 M48,26 L90,33" stroke="#23201c" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+    <!-- 基本形のぱぱねこ（四つ足・服なし。足もと中央 0,0、頭は左、しっぽは右） -->
+    <g id="pn-base">
+      <path d="M-104,-92 C-110,-70 -116,-40 -116,-12 Q-116,0 -108,0 Q-100,0 -100,-10 L-100,-19 L-62,-19 L-62,-10 Q-62,0 -55,0 Q-48,0 -48,-10 L-48,-19 L14,-19 L14,-10 Q14,0 21,0 Q28,0 28,-10 L28,-19 L60,-19 L60,-10 Q60,0 67,0 Q74,0 74,-10 L74,-19 Q90,-21 93,-38 L94,-66 Q90,-74 94,-82 L96,-112 Q97,-134 84,-135 Q73,-135 67,-120 Q61,-100 50,-87 Q40,-89 20,-88 L-104,-92 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/>
+      <use href="#pn-head" transform="translate(-51,-132) scale(0.95)"/>
+    </g>
+  </defs>
+  <rect width="800" height="450" fill="#fbfaf6"/>
+  <g font-family="'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif">
+<rect width="800" height="450" fill="#f4f1ea"/>
+<path d="M0,250 Q200,236 400,248 Q600,236 800,250 V450 H0 Z" fill="#dfe6e6"/>
+<path d="M330,290 q12,-6 24,0 q12,6 24,0" stroke="#a9b8bb" stroke-width="2" fill="none"/><path d="M450,330 q12,-6 24,0 q12,6 24,0" stroke="#a9b8bb" stroke-width="2" fill="none"/><path d="M280,380 q12,-6 24,0 q12,6 24,0" stroke="#a9b8bb" stroke-width="2" fill="none"/><path d="M520,410 q12,-6 24,0 q12,6 24,0" stroke="#a9b8bb" stroke-width="2" fill="none"/><path d="M640,300 q12,-6 24,0 q12,6 24,0" stroke="#a9b8bb" stroke-width="2" fill="none"/>
+<path d="M0,330 Q140,310 300,340 L300,450 H0 Z" fill="#d9d2c5"/>
+<path d="M560,250 Q680,226 800,238 V280 Q680,272 560,282 Z" fill="#c9cdb8" stroke="#8a8f7a" stroke-width="2"/>
+<path d="M580,270 V230" stroke="#6b5a46" stroke-width="5" stroke-linecap="round"/><path d="M598,270 V230" stroke="#6b5a46" stroke-width="5" stroke-linecap="round"/><path d="M616,270 V230" stroke="#6b5a46" stroke-width="5" stroke-linecap="round"/><path d="M634,270 V230" stroke="#6b5a46" stroke-width="5" stroke-linecap="round"/><path d="M652,270 V230" stroke="#6b5a46" stroke-width="5" stroke-linecap="round"/><path d="M670,270 V230" stroke="#6b5a46" stroke-width="5" stroke-linecap="round"/><path d="M688,270 V230" stroke="#6b5a46" stroke-width="5" stroke-linecap="round"/><path d="M706,270 V230" stroke="#6b5a46" stroke-width="5" stroke-linecap="round"/><path d="M724,270 V230" stroke="#6b5a46" stroke-width="5" stroke-linecap="round"/><path d="M742,270 V230" stroke="#6b5a46" stroke-width="5" stroke-linecap="round"/><path d="M760,270 V230" stroke="#6b5a46" stroke-width="5" stroke-linecap="round"/><path d="M778,270 V230" stroke="#6b5a46" stroke-width="5" stroke-linecap="round"/>
+<path d="M576,244 H790" stroke="#6b5a46" stroke-width="3"/>
+<text x="690" y="210" font-size="17" fill="#4f4940" font-weight="700" text-anchor="middle">一揆勢</text>
+<path d="M330,330 q-4,-30 -10,-46 M336,330 q2,-34 8,-50" stroke="#8a8f7a" stroke-width="2" fill="none"/><path d="M380,350 q-4,-30 -10,-46 M386,350 q2,-34 8,-50" stroke="#8a8f7a" stroke-width="2" fill="none"/><path d="M460,300 q-4,-30 -10,-46 M466,300 q2,-34 8,-50" stroke="#8a8f7a" stroke-width="2" fill="none"/><path d="M520,320 q-4,-30 -10,-46 M526,320 q2,-34 8,-50" stroke="#8a8f7a" stroke-width="2" fill="none"/><path d="M250,440 q-4,-30 -10,-46 M256,440 q2,-34 8,-50" stroke="#8a8f7a" stroke-width="2" fill="none"/>
+<g transform="translate(70,420) scale(-0.3,0.3)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/></g></g>
+<g transform="translate(150,440) scale(-0.32,0.32)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/></g></g>
+<path d="M100,412 V320 M180,432 V336" stroke="#6b5a46" stroke-width="3"/>
+<path d="M100,320 h26 v56 h-26 Z M180,336 h26 v56 h-26 Z" fill="#fbfaf6" stroke="#9b2d20" stroke-width="2"/>
+<g transform="translate(255,390) scale(-0.42,0.42)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
+<path d="M300,330 L338,296" stroke="#23201c" stroke-width="3" stroke-linecap="round"/><path d="M338,296 l10,-14 l4,8 l-10,4 Z" fill="#fbfaf6" stroke="#23201c" stroke-width="1.5"/>
+<text x="380" y="432" font-size="19" fill="#2f5d7c" font-weight="700" text-anchor="middle">木下小一郎（秀長）</text>
+<ellipse cx="170" cy="120" rx="150" ry="88" fill="#fbfaf6" stroke="#b8ab95" stroke-width="2.5" stroke-dasharray="7 6"/>
+<circle cx="215" cy="232" r="9" fill="#fbfaf6" stroke="#b8ab95" stroke-width="2"/><circle cx="232" cy="262" r="6" fill="#fbfaf6" stroke="#b8ab95" stroke-width="2"/>
+<path d="M40,170 L100,100 L150,140 L200,80 L290,170 Z" fill="#e4dccb" stroke="#b8ab95" stroke-width="2"/>
+<g transform="translate(150,172) scale(0.27,0.27)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-20,-44 L-14,-100 Q2,-112 16,-98 L20,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,64 34,44" fill="none" stroke="#9b2d20" stroke-width="3"/><path d="M0,58 V62" stroke="#23201c" stroke-width="3"/><circle cx="0" cy="68" r="7" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><circle cx="0" cy="86" r="12" fill="#e3c46a" stroke="#23201c" stroke-width="2.5"/><path d="M-7,76 Q0,79 7,76" fill="none" stroke="#9b2d20" stroke-width="2.5"/></g></g>
+<text x="170" y="60" font-size="15" fill="#9b2d20" font-weight="700" text-anchor="middle">越前の境を守る兄・秀吉</text>
+<text x="770" y="40" font-size="17" fill="#4f4940" text-anchor="end">天正2年（1574）、伊勢・長島</text>
+  </g>
+</svg>
