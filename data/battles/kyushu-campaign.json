@@ -11,10 +11,10 @@
     "勝ち目がないと見た島津家は、重臣の伊集院忠棟を秀長の陣へ送り、義久の助命を願った。秀長がこれを秀吉に取り次ぎ、5月、義久は剃髪して薩摩の泰平寺で秀吉に降った。義久は本領を安堵され、弟たちと家老が人質として差し出された。甫庵太閤記では、降伏の窓口に立ったのは秀長だった。",
     "日向の島津家・北郷家などに伝わった古文書（日向古文書集成）には、秀長の側の動きを示す文書が残る。天正15年正月19日、義久は豊後で仙石・長宗我部の軍を破ったいきさつを「羽柴美濃守」（秀長）と石田三成に書き送り、取りなしを求めている。5月3日には秀長が日向の義門寺に、自分の軍勢の乱暴狼藉・放火・竹木の伐採を禁じる制札を出した（署名は「中納言」）。5月13日、秀長の家臣の福智長通は島津義弘に、秀長が明日14日に都於郡を発ち、家久も同行すると伝え、義弘にも秀長と同道して鹿児島へ参るよう勧めている。5月27日には秀長が家久に佐土原城と本領を返すと伝え、6月15日・7月5日には日向の北郷時久に法度の書付を送ったり、日向に秋月・高橋が置かれることを知らせたりしている。降伏の後の日向の仕置も、秀長の手で進められていたことになる。"
   ],
-  "links": [{ "text": "根白坂の戦い", "battle_id": "neshirozaka" }, { "text": "藤堂高虎", "person_id": "todo-takatora" }],
+  "links": [{ "text": "島津義久", "person_id": "shimazu-yoshihisa" }, { "text": "大友宗麟", "person_id": "otomo-sorin" }, { "text": "根白坂の戦い", "battle_id": "neshirozaka" }, { "text": "藤堂高虎", "person_id": "todo-takatora" }],
   "sides": [
     { "name": "豊臣軍", "outcome": "勝利", "commanders": [{ "person_id": "toyotomi-hideyoshi", "name": "豊臣秀吉" }, { "person_id": "toyotomi-hidenaga", "name": "羽柴秀長" }], "participants": [{ "name": "宮部継潤" }, { "person_id": "todo-takatora", "name": "藤堂高虎" }, { "person_id": "kuroda-yoshitaka", "name": "黒田孝高" }, { "person_id": "kobayakawa-takakage", "name": "小早川隆景" }], "note": "秀吉は肥後・薩摩路、秀長は豊後・日向路の大将" },
-    { "name": "島津軍", "outcome": "敗北", "commanders": [{ "name": "島津義久" }], "participants": [{ "name": "島津義弘" }, { "name": "島津家久" }, { "name": "伊集院忠棟" }], "note": "義久は降伏し、本領を安堵された" }
+    { "name": "島津軍", "outcome": "敗北", "commanders": [{ "person_id": "shimazu-yoshihisa", "name": "島津義久" }], "participants": [{ "name": "島津義弘" }, { "name": "島津家久" }, { "name": "伊集院忠棟" }], "note": "義久は降伏し、本領を安堵された" }
   ],
   "result": "島津義久が降伏し、九州は秀吉に従った",
   "relatedPeople": ["toyotomi-hideyoshi", "toyotomi-hidenaga", "todo-takatora"],

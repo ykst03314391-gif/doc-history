@@ -200,6 +200,22 @@
       ]
     },
     {
+      "id": "hidenaga-hosayaku-shigoto",
+      "title": "秀長は「補佐役」として、何を任され、どこまで果たしたのか",
+      "series": "myth-busting",
+      "category": "考察",
+      "summary": "「名補佐役だったか」ではなく、兄から任された仕事とその結果で秀長を測り直す。日向に残った秀長の書状、天正記、多聞院日記から、戦場・大名との窓口・自分の家中の三つの仕事ぶりを確かめる。",
+      "date": "2026-11-05",
+      "image": { "src": "assets/img/portraits/toyotomi-hidenaga.jpg", "caption": "豊臣秀長像（春岳院蔵、天明8年〈1788〉の作とされる）※参考イメージ", "credit": "Wikimedia Commons", "license": "パブリックドメイン" },
+      "relatedPeople": ["toyotomi-hidenaga", "toyotomi-hideyoshi", "otomo-sorin", "shimazu-yoshihisa", "chosokabe-motochika", "tokugawa-ieyasu", "toyotomi-hideyasu", "todo-takatora"],
+      "relatedBattles": ["tajima-campaign", "kishu-campaign", "shikoku-campaign", "kyushu-campaign", "neshirozaka"],
+      "tags": ["豊臣秀長", "補佐役", "九州攻め", "四国攻め", "取次", "考察"],
+      "references": [
+        { "title": "羽柴秀長の生涯 秀吉を支えた「補佐役」の実像（平凡社新書）", "author": "黒田基樹", "affiliateUrl": "https://www.amazon.co.jp/dp/4582860907", "note": "大名の「指南」役など、補佐役の仕事の中身を史料から組み直す" },
+        { "title": "羽柴秀長文書集", "author": "黒田基樹・柴裕之 編", "affiliateUrl": "https://www.amazon.co.jp/dp/XXXXXXXXXX?tag=YOUR_ASSOCIATE_TAG-22", "note": "秀長自身が出した書状を集めた史料集（2025）。この記事で確かめきれなかった四国・九州の書状がまとまっている。※リンクは仮。登録後に実商品URL＋タグへ差し替え" }
+      ]
+    },
+    {
       "id": "hidenaga-if-lived",
       "title": "秀長が長生きしていたら、豊臣政権は続いたのか",
       "series": "myth-busting",

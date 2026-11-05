@@ -1432,6 +1432,23 @@
           "id": "toyotomi-hidenaga"
         }
       ]
+    },
+    {
+      "id": "tosa-monogatari",
+      "level": 2,
+      "title": "土佐物語",
+      "yomi": "とさものがたり",
+      "author": "（不詳）",
+      "kind": "史料",
+      "era": "江戸時代中期成立（享保5年〈1720〉の奥書）",
+      "note": "長宗我部氏の興亡を記す土佐の軍記。四国攻めで秀長が和議を持ちかけ、元親の上京と出仕を世話したと書く。会話・数字の脚色が多い。黒川真道編『国史叢書 土佐物語』（1914）の OCR で確認。",
+      "url": "https://dl.ndl.go.jp/pid/3441712",
+      "usedIn": [
+        {
+          "type": "article",
+          "id": "hidenaga-hosayaku-shigoto"
+        }
+      ]
     }
   ]
 }

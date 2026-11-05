@@ -478,6 +478,28 @@
       "tags": ["毛利家", "小早川家", "豊臣大名"]
     },
     {
+      "id": "otomo-sorin",
+      "name": "大友宗麟",
+      "kana": "おおとも そうりん",
+      "summary": "豊後の大名。島津家に押され、天正14年に大坂へ上って秀吉に助けを求めた。",
+      "birthYear": 1530,
+      "birthEra": "享禄3年",
+      "deathYear": 1587,
+      "deathEra": "天正15年",
+      "tags": ["大友家", "九州", "キリシタン大名"]
+    },
+    {
+      "id": "shimazu-yoshihisa",
+      "name": "島津義久",
+      "kana": "しまづ よしひさ",
+      "summary": "薩摩の島津家の当主。九州の大半を従えたが、九州攻めで秀吉に降った。",
+      "birthYear": 1533,
+      "birthEra": "天文2年",
+      "deathYear": 1611,
+      "deathEra": "慶長16年",
+      "tags": ["島津家", "九州"]
+    },
+    {
       "id": "mori-terumoto",
       "name": "毛利輝元",
       "kana": "もうり てるもと",
