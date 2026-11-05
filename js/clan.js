@@ -58,7 +58,7 @@
   }
 
   function render(c, kamonImage) {
-    document.title = `${c.name} ｜ 戦国クロニクル`;
+    document.title = `${c.name} ｜ ぱぱねこの戦国見立て`;
     const html = [];
 
     // ヘッダー

@@ -54,7 +54,7 @@
 | `date` | string | 公開日（YYYY-MM-DD） |
 | `updatedAt` | string | 更新日（YYYY-MM-DD、任意） |
 | `author` | string | 執筆者（任意）。省略するか「管理人」なら、日付の横にぱぱねこの顔と「ぱぱねこ」を出す（管理人＝ぱぱねこ）。ほかの人が書いたときだけ名前を書く |
-| `image` | Image | 冒頭画像 `{ "src", "caption"?, "credit"?, "sourceUrl"?, "license"?, "licenseUrl"? }`（任意）。一覧カードのサムネイルにもなる。`credit` は「撮影：〇〇、Wikimedia Commons」のように撮影者と出典を書き、`sourceUrl`（出典のページ）・`licenseUrl`（CC ライセンスの条文）があればリンクにする。城・合戦・人物の写真を使うときは、その `photo`／`portrait` の表記を写す。詳細ページで**タイトル直下**に表示。**権利注意**：パブリックドメイン画像（Wikimedia Commons の肖像画等）を `credit`/`license` 明記で、または自作画像を使う。自分で撮った写真は `credit` を「撮影：戦国クロニクル（2026年11月）」、`license` を "CC BY 4.0"（`licenseUrl` は https://creativecommons.org/licenses/by/4.0/deed.ja ）とし、載せる前に `.claude/rules/own-photo.md` の確認をする。参考イメージは caption に明記 |
+| `image` | Image | 冒頭画像 `{ "src", "caption"?, "credit"?, "sourceUrl"?, "license"?, "licenseUrl"? }`（任意）。一覧カードのサムネイルにもなる。`credit` は「撮影：〇〇、Wikimedia Commons」のように撮影者と出典を書き、`sourceUrl`（出典のページ）・`licenseUrl`（CC ライセンスの条文）があればリンクにする。城・合戦・人物の写真を使うときは、その `photo`／`portrait` の表記を写す。詳細ページで**タイトル直下**に表示。**権利注意**：パブリックドメイン画像（Wikimedia Commons の肖像画等）を `credit`/`license` 明記で、または自作画像を使う。自分で撮った写真は `credit` を「撮影：ぱぱねこの戦国見立て（2026年11月）」、`license` を "CC BY 4.0"（`licenseUrl` は https://creativecommons.org/licenses/by/4.0/deed.ja ）とし、載せる前に `.claude/rules/own-photo.md` の確認をする。参考イメージは caption に明記 |
 | `references` | Reference[] | 関連書籍（アフィリエイト）`{ "title", "author"?, "affiliateUrl"?, "note"? }`（任意）。記事**末尾**に「関連書籍」として表示。開示文つき・`rel="sponsored"`。可読性のため本文には挟まない |
 | `relatedPeople` | string[] | 関連する人物の `person_id`（DB連携。詳細ページで相互リンク） |
 | `relatedBattles` | string[] | 関連する合戦の `battle_id`（任意、将来用） |
@@ -96,9 +96,9 @@
 | `![[castle:<castle_id>]]` | `data/castles/index.json` の `photo` |
 | `![[battle:<battle_id>]]` | `data/battles/index.json` の `photo` |
 | `![[person:<person_id>]]` | `data/people/<person_id>.json` の `portrait`（縦長なので小さめに出す） |
-| `![[illust:<名前>\|説明]]` | 挿絵 `assets/img/illust/<名前>.svg`（DBは引かず、表記は「イラスト：戦国クロニクル（AIで作成）」と出す。場面の絵なら説明に「（想像図）」、たとえの絵なら「（イメージ）」と書く） |
-| `![[zu:<名前>\|題\|説明]]` | 図解 `assets/img/zu/<名前>.svg`（関係図など。罫線の箱に入れ、藍の「図」の札と題を付けて挿絵と見分ける。説明は図の下に出し、表記は「作図：戦国クロニクル（AIで作成）」。SVG の地色は塗らない） |
-| `![[manga:<名前>\|題\|説明]]` | 記事末の漫画 `assets/img/manga/<名前>.svg`（1・2・4コマのどれか。2本を空行1つで続けて書くと横に並ぶ〔ぱぱねこが当時の人物に聞く形と当時の人物だけの形。キャラは `chara/README.md`〕。朱の「漫画」の札と題を付け、説明は絵の下に出す。説明に「（創作）」と書く。表記は「イラスト：戦国クロニクル（AIで作成）」） |
+| `![[illust:<名前>\|説明]]` | 挿絵 `assets/img/illust/<名前>.svg`（DBは引かず、表記は「イラスト：ぱぱねこの戦国見立て（AIで作成）」と出す。場面の絵なら説明に「（想像図）」、たとえの絵なら「（イメージ）」と書く） |
+| `![[zu:<名前>\|題\|説明]]` | 図解 `assets/img/zu/<名前>.svg`（関係図など。罫線の箱に入れ、藍の「図」の札と題を付けて挿絵と見分ける。説明は図の下に出し、表記は「作図：ぱぱねこの戦国見立て（AIで作成）」。SVG の地色は塗らない） |
+| `![[manga:<名前>\|題\|説明]]` | 記事末の漫画 `assets/img/manga/<名前>.svg`（1・2・4コマのどれか。2本を空行1つで続けて書くと横に並ぶ〔ぱぱねこが当時の人物に聞く形と当時の人物だけの形。キャラは `chara/README.md`〕。朱の「漫画」の札と題を付け、説明は絵の下に出す。説明に「（創作）」と書く。表記は「イラスト：ぱぱねこの戦国見立て（AIで作成）」） |
 
 - `![[castle:arioka|有岡城跡。村重はここを出て尼崎へ移った]]` のように `|` のあとに書くと、説明を差し替える（そのときは DB の `note` は出さない。「模擬天守」などの断りが要る写真は、差し替えた説明にも書く）。
 - DB に写真・肖像のない ID は何も出さない。DB にない画像を使いたいときは、先にその城・合戦・人物の `photo`／`portrait` に権利表記つきで登録する。

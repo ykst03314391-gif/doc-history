@@ -81,7 +81,7 @@
     const b = await bRes.json();
     const articles = (aRes && aRes.articles) || [];
 
-    document.title = `${b.name} ｜ 戦国クロニクル`;
+    document.title = `${b.name} ｜ ぱぱねこの戦国見立て`;
     const html = [];
 
     // ヘッダー

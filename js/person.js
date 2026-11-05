@@ -178,7 +178,7 @@
   }
 
   function render(p, articles, kamonImages = {}) {
-    document.title = `${p.name} ｜ 戦国クロニクル`;
+    document.title = `${p.name} ｜ ぱぱねこの戦国見立て`;
     const html = [];
 
     // 出典を1つずつ確かめた人物（sourcesChecked）は、冒頭の仮置きの注記を出さず、確認状況の案内を「要確認（調査メモ）」の冒頭に置く

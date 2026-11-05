@@ -18,7 +18,7 @@ window.PhotoCredit = (function () {
   function credit(ph) {
     if (ph.own && !ph.license) ph = { ...ph, ...OWN_LICENSE };
     const who = ph.own
-      ? `撮影：${esc(ph.author || "戦国クロニクル")}${ph.taken ? `（${esc(fmtTaken(ph.taken))}）` : ""}`
+      ? `撮影：${esc(ph.author || "ぱぱねこの戦国見立て")}${ph.taken ? `（${esc(fmtTaken(ph.taken))}）` : ""}`
       : ph.author ? `撮影：${esc(ph.author)}` : "";
     const src = ph.source && ph.source.name ? `出典：${link(ph.source.name, ph.source.url)}` : "";
     return [

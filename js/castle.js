@@ -90,7 +90,7 @@
       return ` <span class="src-mark" title="出典${prim}：${esc(label)}">出典: ${esc(label)}</span>`;
     }
 
-    document.title = `${c.name} ｜ 戦国クロニクル`;
+    document.title = `${c.name} ｜ ぱぱねこの戦国見立て`;
     const html = [];
 
     // ヘッダー

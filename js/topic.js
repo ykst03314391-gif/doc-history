@@ -50,7 +50,7 @@
   }
 
   function render(t, peopleName, articleTitle) {
-    if (t.title) document.title = `${t.title} ｜ 戦国クロニクル`;
+    if (t.title) document.title = `${t.title} ｜ ぱぱねこの戦国見立て`;
 
     const source =
       t.source && t.source.name

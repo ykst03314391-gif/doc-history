@@ -32,7 +32,7 @@
     const people = peopleRes.ok ? (await peopleRes.json()).people || [] : [];
     const nameOf = (pid) => (people.find((p) => p.id === pid) || {}).name || pid;
 
-    if (meta && meta.title) document.title = `${meta.title} ｜ 戦国クロニクル`;
+    if (meta && meta.title) document.title = `${meta.title} ｜ ぱぱねこの戦国見立て`;
 
     // ヘッダー（カテゴリ・日付）。タイトルは本文 Markdown の見出しに任せる
     const head = meta
@@ -76,7 +76,7 @@
           `<div class="zu-head"><span class="zu-label">図</span>${esc(title)}</div>` +
           `<img src="assets/img/zu/${esc(key.slice(3))}.svg" alt="${esc(title + (desc ? "。" + desc : ""))}" loading="lazy"><figcaption>` +
           (desc ? `<span class="zu-desc">${esc(desc)}</span>` : "") +
-          `<span class="img-credit">作図：戦国クロニクル（AIで作成）</span>` +
+          `<span class="img-credit">作図：ぱぱねこの戦国見立て（AIで作成）</span>` +
           `</figcaption></figure>`;
       }
       if (key.startsWith("manga:")) {
@@ -87,14 +87,14 @@
           `<div class="manga-head"><span class="manga-label">漫画</span>${esc(title)}</div>` +
           `<img src="assets/img/manga/${esc(key.slice(6))}.svg" alt="${esc(title + (desc ? "。" + desc : ""))}" loading="lazy"><figcaption>` +
           (desc ? `<span class="manga-desc">${esc(desc)}</span>` : "") +
-          `<span class="img-credit">イラスト：戦国クロニクル（AIで作成）</span>` +
+          `<span class="img-credit">イラスト：ぱぱねこの戦国見立て（AIで作成）</span>` +
           `</figcaption></figure>`;
       }
       if (key.startsWith("illust:")) {
         return `<figure class="article-figure article-figure--illust">` +
           `<img src="assets/img/illust/${esc(key.slice(7))}.svg" alt="${esc(cap)}" loading="lazy"><figcaption>` +
           (cap ? `<span class="portrait-title">${esc(cap)}</span>` : "") +
-          `<span class="img-credit">イラスト：戦国クロニクル（AIで作成）</span>` +
+          `<span class="img-credit">イラスト：ぱぱねこの戦国見立て（AIで作成）</span>` +
           `</figcaption></figure>`;
       }
       const ph = photos.get(key);
