@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="秀長の家系図のイメージ。上に父の候補の木下弥右衛門と竹阿弥、まんなかに母の大政所。子の段に姉のとも・兄の秀吉・秀長・妹の朝日姫が並び、秀長へは二人の父の候補から点線と「？」が引かれる。秀長の下には早世した与一郎と、養子の秀保。左下から、帽子のぱぱねこ（四つ足の猫のキャラ）が虫めがねで見上げる">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="秀長の家系図のイメージ。上に父の候補の木下弥右衛門と竹阿弥、まんなかに母の大政所。子の段に姉のとも・兄の秀吉・秀長・妹の朝日姫が並び（秀吉と秀長の札には、立烏帽子と折烏帽子のぱぱねこの顔）、秀長へは二人の父の候補から点線と「？」が引かれる。秀長の下には早世した与一郎と、養子の秀保。左下から、ぱぱねこ（四つ足の猫のキャラ）が虫めがねで見上げる">
   <defs>
     <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
     <g id="pn-head">
@@ -25,16 +25,19 @@
 <path d="M335,70 H395 M505,70 H565" stroke="#23201c" stroke-width="2"/>
 <path d="M450,92 V140 M220,140 H680 M220,140 V170 M370,140 V170 M530,140 V170 M680,140 V170" stroke="#23201c" stroke-width="2" fill="none"/>
 <rect x="165.0" y="170.0" width="110" height="44" rx="4" fill="#fbfaf6" stroke="#23201c" stroke-width="2"/><text x="220" y="190" font-size="17" fill="#23201c" font-weight="700" text-anchor="middle">とも</text><text x="220" y="209" font-size="12" fill="#4f4940" text-anchor="middle">姉</text>
-<rect x="315.0" y="170.0" width="110" height="44" rx="4" fill="#fbfaf6" stroke="#9b2d20" stroke-width="2"/><text x="370" y="190" font-size="17" fill="#9b2d20" font-weight="700" text-anchor="middle">秀吉</text><text x="370" y="209" font-size="12" fill="#4f4940" text-anchor="middle">兄</text>
-<rect x="470.0" y="168.0" width="120" height="48" rx="4" fill="#e8eef2" stroke="#2f5d7c" stroke-width="2"/><text x="530" y="198" font-size="20" fill="#2f5d7c" font-weight="700" text-anchor="middle">秀長</text>
+<rect x="315.0" y="170.0" width="110" height="44" rx="4" fill="#fbfaf6" stroke="#9b2d20" stroke-width="2"/><text x="392" y="190" font-size="17" fill="#9b2d20" font-weight="700" text-anchor="middle">秀吉</text><text x="392" y="209" font-size="12" fill="#4f4940" text-anchor="middle">兄</text>
+<rect x="470.0" y="168.0" width="120" height="48" rx="4" fill="#e8eef2" stroke="#2f5d7c" stroke-width="2"/><text x="555" y="199" font-size="20" fill="#2f5d7c" font-weight="700" text-anchor="middle">秀長</text>
 <rect x="625.0" y="170.0" width="110" height="44" rx="4" fill="#fbfaf6" stroke="#23201c" stroke-width="2"/><text x="680" y="190" font-size="17" fill="#23201c" font-weight="700" text-anchor="middle">朝日姫</text><text x="680" y="209" font-size="12" fill="#4f4940" text-anchor="middle">妹</text>
 <path d="M260,95 Q420,130 510,168 M640,95 Q600,130 550,168" stroke="#9b2d20" stroke-width="2.5" stroke-dasharray="7 6" fill="none"/>
 <text x="430" y="132" font-size="30" fill="#9b2d20" font-weight="700" text-anchor="middle">？</text>
 <text x="610" y="132" font-size="30" fill="#9b2d20" font-weight="700" text-anchor="middle">？</text>
+<!-- 秀吉と秀長の顔（ぱぱねこ。秀吉は高い立烏帽子、秀長は低い折烏帽子） -->
+<g transform="translate(343,196) scale(0.17)"><use href="#pn-head"/><path d="M-20,-44 L-14,-100 Q2,-112 16,-98 L20,-44 Z" fill="#23201c"/></g>
+<g transform="translate(500,196) scale(0.19)"><use href="#pn-head"/><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/></g>
 <path d="M530,216 V260 M470,260 H600 M470,260 V285 M600,260 V285" stroke="#23201c" stroke-width="2" fill="none"/>
 <rect x="415.0" y="284.0" width="110" height="44" rx="4" fill="#fbfaf6" stroke="#23201c" stroke-width="2" stroke-dasharray="6 5"/><text x="470" y="304" font-size="17" fill="#23201c" font-weight="700" text-anchor="middle">与一郎</text><text x="470" y="323" font-size="12" fill="#4f4940" text-anchor="middle">早世</text>
 <rect x="545.0" y="284.0" width="110" height="44" rx="4" fill="#fbfaf6" stroke="#23201c" stroke-width="2"/><text x="600" y="304" font-size="17" fill="#23201c" font-weight="700" text-anchor="middle">秀保</text><text x="600" y="323" font-size="12" fill="#4f4940" text-anchor="middle">甥を養子に</text>
-<g transform="translate(140,440) scale(-0.55,0.55)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-42,-40 Q0,-82 42,-40 Z" fill="#2f5d7c" stroke="#23201c" stroke-width="2"/><path d="M30,-42 L66,-36" stroke="#2f5d7c" stroke-width="6" stroke-linecap="round"/></g></g>
+<g transform="translate(140,440) scale(-0.55,0.55)"><use href="#pn-base"/></g>
 <circle cx="250" cy="330" r="28" fill="#eef3f4" fill-opacity="0.6" stroke="#23201c" stroke-width="4"/><path d="M230,350 L200,382" stroke="#6b5a46" stroke-width="8" stroke-linecap="round"/>
 <text x="150" y="318" font-size="18" fill="#23201c" font-weight="700" text-anchor="middle">ぱぱねこ</text>
   </g>

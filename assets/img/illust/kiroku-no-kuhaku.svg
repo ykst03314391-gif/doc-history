@@ -27,10 +27,16 @@
 <rect x="0" y="326" width="800" height="124" fill="#efe9dc"/>
 <path d="M0,350 H800" stroke="#d9d2c5" stroke-width="2"/><path d="M0,380 H800" stroke="#d9d2c5" stroke-width="2"/><path d="M0,415 H800" stroke="#d9d2c5" stroke-width="2"/>
 <path d="M120,450 Q300,380 520,340" stroke="#e4dccb" stroke-width="34" fill="none"/>
-<g transform="translate(470,352) scale(0.34,0.34)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
-<text x="470" y="395" font-size="18" fill="#2f5d7c" font-weight="700" text-anchor="middle">若いころの秀長</text>
 <defs><filter id="bokashi" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="14"/></filter></defs>
 <g filter="url(#bokashi)" fill="#fbfaf6"><ellipse cx="120" cy="250" rx="220" ry="70" opacity="0.95"/><ellipse cx="300" cy="300" rx="170" ry="55" opacity="0.9"/><ellipse cx="400" cy="315" rx="70" ry="45" opacity="0.75"/><ellipse cx="620" cy="235" rx="200" ry="40" opacity="0.7"/><ellipse cx="80" cy="380" rx="160" ry="40" opacity="0.8"/></g>
+<!-- 秀長は家と重ならない位置に大きめに置く。顔のあたりは霞に溶けて消えかけ、足もとだけがはっきり見える -->
+<defs>
+  <linearGradient id="kasumi-fade" gradientUnits="userSpaceOnUse" x1="0" y1="295" x2="0" y2="372"><stop offset="0" stop-color="#fff" stop-opacity="0.08"/><stop offset="0.55" stop-color="#fff" stop-opacity="0.45"/><stop offset="1" stop-color="#fff" stop-opacity="1"/></linearGradient>
+  <mask id="kasumi-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="800" height="450"><rect width="800" height="450" fill="url(#kasumi-fade)"/></mask>
+</defs>
+<g mask="url(#kasumi-mask)"><g transform="translate(400,392) scale(0.45,0.45)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g></g>
+<g filter="url(#bokashi)" fill="#fbfaf6"><ellipse cx="390" cy="318" rx="110" ry="42" opacity="0.6"/></g>
+<text x="400" y="440" font-size="18" fill="#2f5d7c" font-weight="700" text-anchor="middle">若いころの秀長</text>
 <text x="30" y="40" font-size="18" fill="#4f4940" text-anchor="start">天文〜元亀のころ（1541〜1572）、尾張・中村</text>
 <text x="770" y="160" font-size="18" fill="#8a6d1f" font-weight="700" text-anchor="end">同時代の史料に</text>
 <text x="770" y="186" font-size="18" fill="#8a6d1f" font-weight="700" text-anchor="end">ほとんど出てこない30年</text>
