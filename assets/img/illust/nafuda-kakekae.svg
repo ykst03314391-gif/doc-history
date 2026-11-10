@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="呼び名の名札を掛け替えるイメージ。横木に、小竹・小一郎・長秀・秀長・宰相・中納言・大納言の名札が左から順に下がり、折烏帽子に小豆の秀長（四つ足の猫のキャラ、ぱぱねこ）が最後の「大納言」の札を見上げる">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="呼び名の名札を掛け替えるイメージ。横木に、小竹・小一郎・長秀・秀長・宰相・中納言・大納言の名札が左から順に下がり、折烏帽子に小豆の秀長（四つ足の猫のキャラ、ぱぱねこ）が最後の「大納言」の札を見上げる。「小竹」の札の下には陣笠に槍の雑兵の姿の秀長、「秀長」の札の下には鍬形の兜の武将の姿の秀長が立つ">
   <defs>
     <!-- ぱぱねこの頭（中心 0,0。顔の決まりは chara/README.md） -->
     <g id="pn-head">
@@ -54,8 +54,13 @@
 <rect x="686" y="92" width="60" height="150" rx="4" fill="#fbfaf6" stroke="#2f5d7c" stroke-width="2.5"/>
 <text x="716" y="167" font-size="24" fill="#2f5d7c" font-weight="700" text-anchor="middle" writing-mode="vertical-rl" style="writing-mode:vertical-rl" letter-spacing="2">大納言</text>
 <text x="716" y="266" font-size="14" fill="#4f4940" text-anchor="middle">天正15年</text>
+<!-- 小竹の札の下に雑兵の秀長（陣笠・槍）、秀長の札の下に武将の秀長（鍬形の兜）。どちらも首の小豆で秀長と見分ける -->
+<g transform="translate(80,402) scale(-0.3,0.3)"><use href="#pn-base"/><path d="M-80,-40 L-112,-300" stroke="#6b5a46" stroke-width="7" stroke-linecap="round"/><path d="M-112,-300 L-120,-346 L-104,-302 Z" fill="#a39a8c" stroke="#23201c" stroke-width="2"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-72,-36 Q0,-100 72,-36 Z" fill="#4f4940" stroke="#23201c" stroke-width="2.5" stroke-linejoin="round"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
+<g transform="translate(398,402) scale(-0.36,0.36)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-6,-80 Q-30,-104 -46,-150 Q-20,-112 0,-88 Q20,-112 46,-150 Q30,-104 6,-80 Z" fill="#e3c46a" stroke="#23201c" stroke-width="2"/><path d="M-36,-38 Q-36,-86 0,-88 Q36,-86 36,-38 Z" fill="#23201c"/><path d="M-44,-38 H44" stroke="#23201c" stroke-width="7" stroke-linecap="round"/><circle cx="0" cy="-74" r="6" fill="#e3c46a" stroke="#23201c" stroke-width="1.5"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
+<text x="80" y="436" font-size="15" fill="#2f5d7c" font-weight="700" text-anchor="middle">小竹のころ</text>
+<text x="398" y="436" font-size="15" fill="#2f5d7c" font-weight="700" text-anchor="middle">秀長のころ</text>
 <g transform="translate(690,400) scale(-0.42,0.42)"><use href="#pn-base"/><g transform="translate(-51,-132) scale(0.95)"><path d="M-24,-44 L-20,-68 Q-4,-78 14,-72 L34,-80 L30,-62 L22,-58 L24,-44 Z" fill="#23201c"/><path d="M-34,44 Q0,62 34,44" fill="none" stroke="#2f5d7c" stroke-width="3"/><ellipse cx="0" cy="68" rx="14" ry="10" fill="#7a2a2a" stroke="#23201c" stroke-width="2.5"/><path d="M-6,62 L5,61" stroke="#f4f1ea" stroke-width="2.5" stroke-linecap="round"/></g></g>
-<text x="600" y="330" font-size="20" fill="#2f5d7c" font-weight="700" text-anchor="middle">秀長</text>
+<text x="695" y="436" font-size="15" fill="#2f5d7c" font-weight="700" text-anchor="middle">大納言のころ</text>
 <text x="30" y="40" font-size="18" fill="#4f4940" text-anchor="start">呼び名は、名乗りと官位で変わっていった</text>
   </g>
 </svg>
