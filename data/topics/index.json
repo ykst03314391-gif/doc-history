@@ -20,8 +20,8 @@
       "revision": "そもそも大規模な決戦ではなく、退却戦の小競り合いに近かったのではないか。『信長公記』の沈黙と、上杉側史料への依存から、「大勝」像は誇張の可能性がある。",
       "comment": "史料の『沈黙』を史料批判の材料にする姿勢に共感する。ただ私は、規模の大小より“土地と情報の差”——能登を押さえた謙信に対し、加賀の奥で川を背にした織田軍——が勝敗の背景にあったと見ている（史料で確かめた結論ではなく推測）。詳しくは下の考察記事に書いた。",
       "buy": [
-        { "shop": "Amazon", "url": "https://www.amazon.co.jp/dp/XXXXXXXXXX?tag=YOUR_ASSOCIATE_TAG-22", "note": "本郷和人『戦国武将の選択』（※リンクは仮。登録後に差し替え）" },
-        { "shop": "楽天ブックス", "url": "https://hb.afl.rakuten.co.jp/PLACEHOLDER?pc=戦国武将の選択", "note": "※リンクは仮。登録後に差し替え" }
+        { "shop": "Amazon", "url": "https://www.amazon.co.jp/dp/4819112643", "note": "本郷和人『戦国武将の選択』（産経セレクト）" },
+        { "shop": "楽天ブックス", "url": "https://books.rakuten.co.jp/search?isbnJan=9784819112642", "note": "本郷和人『戦国武将の選択』（産経セレクト）" }
       ],
       "source": { "name": "藤城徹『企業診断』72(9), 2025（本郷和人の議論整理）", "url": "" },
       "relatedArticles": ["tedorigawa-kenshin"],
@@ -103,8 +103,8 @@
         { "label": "開発・発売", "value": "コーエーテクモゲームス（シブサワ・コウ 45周年作品）" }
       ],
       "buy": [
-        { "shop": "Amazon", "url": "https://www.amazon.co.jp/s?k=%E4%BF%A1%E9%95%B7%E3%81%AE%E9%87%8E%E6%9C%9B%20%E9%A3%9B%E7%BF%94&tag=YOUR_ASSOCIATE_TAG-22", "note": "※タグ・商品URLは仮。アソシエイト登録後に差し替え" },
-        { "shop": "楽天ブックス", "url": "https://hb.afl.rakuten.co.jp/PLACEHOLDER?pc=信長の野望+飛翔", "note": "※リンクは仮。登録後に差し替え" }
+        { "shop": "Amazon", "url": "https://www.amazon.co.jp/s?k=%E4%BF%A1%E9%95%B7%E3%81%AE%E9%87%8E%E6%9C%9B%20%E9%A3%9B%E7%BF%94", "note": "発売前で商品ページがないため、検索結果へのリンク" },
+        { "shop": "楽天ブックス", "url": "https://books.rakuten.co.jp/search?sitem=%E4%BF%A1%E9%95%B7%E3%81%AE%E9%87%8E%E6%9C%9B%20%E9%A3%9B%E7%BF%94", "note": "発売前で商品ページがないため、検索結果へのリンク" }
       ],
       "take": "初心者が信長の生涯から入れる「ストーリーモード」が気になる。ゲームの武将評価が実像とどう違うかは、いずれ企画『信長の野望、実は間違ってる？』で。",
       "source": { "name": "コーエーテクモゲームス GAMECITY（公式サイト）", "url": "https://www.gamecity.ne.jp/hishou/jp/" },
