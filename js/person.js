@@ -557,15 +557,14 @@
     if (restQs.length) put("questions", "諸説・疑問", `<ul class="entry-list">${qItems(restQs)}</ul>`);
 
     // この人物への問い：ページ全体で捉え直す大きな問い。その下に place: "lens" の論点を並べ、
-    // 最後に論点を束ねた答え（answer）を「ぱぱねこのまとめ」の開閉ボタンに入れる（ふだんは閉じる）。
-    // 見立て（view。史料の外へ出る管理人の私見）は、管理人が書いたときだけ答えのあとに囲みで出す
+    // 最後に論点を束ねた答え（answer）を「まとめ」の開閉ボタンに入れる（ふだんは閉じる）。
+    // 見立て（view。史料の外へ出る管理人の私見）は、管理人が書いたときだけ、まとめの下に閉じずに囲みで出す
     const lensSummary = (lens) =>
-      lens.answer
-        ? `<details class="lens-summary"><summary class="lens-summary-label">ぱぱねこのまとめ</summary>
-          <div class="lens-summary-body">${paras(lens.answer)}${
-            lens.view ? `<div class="lens-summary-view"><span class="my-view-label">ぱぱねこの見立て</span>${paras(lens.view)}</div>` : ""
-          }</div></details>`
-        : "";
+      (lens.answer
+        ? `<details class="lens-summary"><summary class="lens-summary-label">まとめ</summary>
+          <div class="lens-summary-body">${paras(lens.answer)}</div></details>`
+        : "") +
+      (lens.view ? `<div class="lens-summary-view"><span class="my-view-label">ぱぱねこの見立て</span>${paras(lens.view)}</div>` : "");
     if (lens) {
       const lensQs = qs.filter((q) => qPlace(q) === "lens");
       const lensLabel = (q, i) => `論点${i + 1}${q.aspect ? `：${esc(q.aspect)}` : ""}`;
