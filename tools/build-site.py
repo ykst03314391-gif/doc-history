@@ -220,6 +220,11 @@ def main():
         warnings.append("article.html?id= が残っています：" + "、".join(sorted(left)))
     if dead:
         warnings.append("出さない記事へのリンクが残っています：" + "、".join(sorted(dead)))
+    # 見立ての仮置き（管理人が書くまでの空きの囲み）が、出す記事に残っていないか
+    holes = sorted(p.stem for p in (DIST / "data" / "articles").glob("*.md")
+                   if "管理人が書くまでの仮置き" in p.read_text(encoding="utf-8"))
+    if holes:
+        warnings.append("見立ての仮置きが残ったまま出る記事があります：" + "、".join(holes))
 
     print(f"dist/ に書き出しました（{as_of} 時点で公開の記事 {len(arts)} 本）。")
     if hidden:
@@ -228,7 +233,7 @@ def main():
             print(f"  {a['id']}（公開日 {a.get('publish') or 'なし'}）")
     for w in warnings:
         print("注意：" + w)
-    return 1 if left or dead else 0
+    return 1 if left or dead or holes else 0
 
 
 if __name__ == "__main__":
