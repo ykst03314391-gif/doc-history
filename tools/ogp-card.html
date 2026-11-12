@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+  SNS で共有したときのカード画像（assets/img/ogp.png、1200×630）の元。
+  書き出し（PowerShell）：
+  & "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --headless=new --disable-gpu --hide-scrollbars --user-data-dir="$PWD\tmp\edge" --window-size="1200,630" --virtual-time-budget=5000 --screenshot="$PWD\assets\img\ogp.png" "file:///$($PWD -replace '\\','/')/tools/ogp-card.html"
+-->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Shippori+Mincho+B1:wght@700&display=swap">
+<style>
+  html, body { margin: 0; }
+  body {
+    width: 1200px; height: 630px; box-sizing: border-box;
+    background: #f4f1ea; color: #23201c;
+    font-family: "Noto Serif JP", "Yu Mincho", serif;
+    display: flex; align-items: center; gap: 64px; padding: 0 96px;
+    border-top: 14px solid #9b2d20;
+  }
+  .face { width: 300px; flex: none; }
+  .eyebrow { font-size: 30px; color: #4f4940; margin: 0 0 18px; }
+  h1 { font-family: "Shippori Mincho B1", "Noto Serif JP", serif; font-size: 84px; line-height: 1.2; margin: 0; }
+  .lead { font-size: 38px; margin: 30px 0 0; }
+  .lead em { font-style: normal; color: #9b2d20; font-weight: 700; }
+</style>
+</head>
+<body>
+  <img class="face" src="../assets/img/chara/papaneko-face.svg" alt="">
+  <div>
+    <p class="eyebrow">戦国時代を、自分の視点で捉え直す</p>
+    <h1>ぱぱねこの<br>戦国見立て</h1>
+    <p class="lead">通説を、<em>もう一度</em>疑ってみる。</p>
+  </div>
+</body>
+</html>

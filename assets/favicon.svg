@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- ぱぱねこの顔（assets/img/chara/papaneko-face.svg）を、小さく出しても潰れないよう線を太くしたもの。顔の清書ができたら合わせて直す -->
+  <rect width="64" height="64" rx="12" fill="#f4f1ea"/>
+  <g transform="translate(32 35) scale(0.27)" fill="none" stroke="#23201c" stroke-linecap="round">
+    <circle cx="-45" cy="-45" r="20" fill="#fbfaf6" stroke-width="9"/>
+    <circle cx="45" cy="-45" r="20" fill="#fbfaf6" stroke-width="9"/>
+    <path d="M-78,10 C-80,-30 -50,-47 0,-47 C50,-47 80,-30 78,10 C78,40 50,52 0,52 C-50,52 -78,40 -78,10 Z" fill="#fbfaf6" stroke-width="9"/>
+    <path d="M-42,-3 Q-28,-17 -14,-3 M14,-3 Q28,-17 42,-3" stroke-width="9"/>
+    <path d="M-18,20 Q-9,32 0,16 Q9,32 18,20" stroke-width="8"/>
+    <path d="M-56,8 L-96,1 M-56,20 L-98,21 M-54,32 L-94,41 M56,8 L96,1 M56,20 L98,21 M54,32 L94,41" stroke-width="6"/>
+  </g>
+</svg>
