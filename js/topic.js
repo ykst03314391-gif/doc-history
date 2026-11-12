@@ -60,9 +60,10 @@
         : "";
 
     const relArticles = (t.relatedArticles || [])
+      .filter((aid) => articleTitle.has(aid))
       .map(
         (aid) =>
-          `<a class="topic-to-article" href="article.html?id=${encodeURIComponent(aid)}">→ 深掘りを読む：${esc(articleTitle.get(aid) || "考察記事")}</a>`
+          `<a class="topic-to-article" href="article.html?id=${encodeURIComponent(aid)}">→ 深掘りを読む：${esc(articleTitle.get(aid))}</a>`
       )
       .join("");
     const relPeople = (t.relatedPeople || [])
@@ -218,7 +219,8 @@
     const peopleName = new Map();
     const articleTitle = new Map();
     if (pRes && pRes.ok) for (const p of (await pRes.json()).people || []) peopleName.set(p.id, p.name);
-    if (aRes && aRes.ok) for (const a of (await aRes.json()).articles || []) articleTitle.set(a.id, a.title);
+    // 下書き・未公開（公開用の書き出しで draft になる）の記事は、リンクを出さない
+    if (aRes && aRes.ok) for (const a of (await aRes.json()).articles || []) if (!a.draft) articleTitle.set(a.id, a.title);
     render(topic, peopleName, articleTitle);
   } catch (err) {
     el.innerHTML = `<p class="error">トピックの読み込みに失敗しました（README参照）。</p>`;

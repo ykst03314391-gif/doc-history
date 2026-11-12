@@ -51,7 +51,8 @@
 | `group` | string | 特集内のサブグループ名（例：`総論` / `大名家別の事例`）。任意 |
 | `category` | string | 分類：`考察` / `新説` / `コラム` / `旅・史跡` / `ゲーム考察` など |
 | `summary` | string | 一覧・SEO 用の要約 |
-| `date` | string | 公開日（YYYY-MM-DD） |
+| `date` | string | 書いた日（YYYY-MM-DD）。公開用の書き出し（`tools/build-site.py`）では `publish` の日に置き換わる |
+| `publish` | string | 公開日（YYYY-MM-DD、任意）。公開用の書き出しでは、この日を迎えた記事だけを出す。**書いていない記事は出さない**（書き忘れでうっかり出ないように）。ふだんの確認（`python -m http.server`）では、`publish` にかかわらず全部出る |
 | `updatedAt` | string | 更新日（YYYY-MM-DD、任意） |
 | `author` | string | 執筆者（任意）。省略するか「管理人」なら、日付の横にぱぱねこの顔と「ぱぱねこ」を出す（管理人＝ぱぱねこ）。ほかの人が書いたときだけ名前を書く |
 | `image` | Image | 冒頭画像 `{ "src", "caption"?, "credit"?, "sourceUrl"?, "license"?, "licenseUrl"? }`（任意）。一覧カードのサムネイルにもなる。`credit` は「撮影：〇〇、Wikimedia Commons」のように撮影者と出典を書き、`sourceUrl`（出典のページ）・`licenseUrl`（CC ライセンスの条文）があればリンクにする。城・合戦・人物の写真を使うときは、その `photo`／`portrait` の表記を写す。詳細ページで**タイトル直下**に表示。**権利注意**：パブリックドメイン画像（Wikimedia Commons の肖像画等）を `credit`/`license` 明記で、または自作画像を使う。自分で撮った写真は `credit` を「撮影：ぱぱねこの戦国見立て（2026年11月）」、`license` を "CC BY 4.0"（`licenseUrl` は https://creativecommons.org/licenses/by/4.0/deed.ja ）とし、載せる前に `.claude/rules/own-photo.md` の確認をする。参考イメージは caption に明記 |
@@ -59,7 +60,7 @@
 | `relatedPeople` | string[] | 関連する人物の `person_id`（DB連携。詳細ページで相互リンク） |
 | `relatedBattles` | string[] | 関連する合戦の `battle_id`（任意、将来用） |
 | `tags` | string[] | タグ（任意） |
-| `draft` | boolean | 下書き（true の記事は一覧に出さない、任意） |
+| `draft` | boolean | 下書き（true の記事は一覧に出さない、任意）。公開用の書き出しでも出さないが、人物ページの「考察（執筆中）」の予告には残る（`publish` を待つだけの記事は、予告にも出ない） |
 
 > 一覧（`index.json`）に `update: { date, items }`（最後に手を入れた日付〔YYYY-MM-DD〕と、何を直したかを短く書いた箇条の配列）を書くと、考察・記事（`articles.html`）の上に「最近更新した記事」として日付の新しい順に3件まで並べる（`js/recent.js`。人物と同じ。`docs/schema-person.md`）。`update` のない記事は公開日（`date`）で並べ、「公開」と出す（`draft` の記事は出さない）。残すのは最後の更新だけで、次に手を入れたら書き換える（履歴は持たない）。
 

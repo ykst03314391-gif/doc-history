@@ -48,6 +48,8 @@
       .map((u) => {
         const page = PAGES[u.type];
         if (!page) return "";
+        // 下書き・未公開（公開用の書き出しで draft になる）の記事へはリンクしない
+        if (u.type === "article" && !names.article[u.id]) return "";
         const name = names[u.type][u.id] || u.id;
         // 記事は公開用の書き出し（tools/build-site.py）で article-<id>.html に替わるので、その形で書いておく
         const href = u.type === "article"
@@ -88,7 +90,7 @@
         names[type] = {};
         try {
           const idx = await loadJSON(page.index);
-          (idx[page.key] || []).forEach((x) => (names[type][x.id] = x[page.name]));
+          (idx[page.key] || []).forEach((x) => { if (!x.draft) names[type][x.id] = x[page.name]; });
         } catch (e) {
           /* 名前が引けなくてもリンクは出す */
         }
