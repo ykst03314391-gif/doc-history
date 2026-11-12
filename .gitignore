@@ -15,3 +15,6 @@ tmp/
 
 # Claude Code ローカル設定
 .claude/settings.local.json
+
+# 公開用の書き出し（tools/build-site.py）
+dist/

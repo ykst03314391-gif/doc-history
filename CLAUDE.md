@@ -18,6 +18,8 @@ python -m http.server 8765
 
 確認用に立てたサーバーは、ユーザーが「閉じて」と言うまで止めない。
 
+公開するときだけ `python tools/build-site.py` で `dist/`（git には入れない）に書き出し、その中身を上げる。記事は `article.html?id=<id>` が `article-<id>.html`（SNS カード用に題・説明を `<head>` に書き込んだもの）に替わり、サイト内の記事へのリンクも書き替わる。そのため、JS で記事へのリンクを組み立てるときは `article.html?id=${…}` の形で書く（別の形にすると書き替えから漏れ、スクリプトが警告を出す）。公開先の URL は `tools/site.json` の `baseUrl`。
+
 ## 構成
 
 - **ページ = HTML 1枚 + `js/<page>.js` 1本**。一覧（`people.html`→`list.js`、`battles.html`→`battles.js` など）と詳細（`person.html?id=…`→`person.js` など）の組。`people.html` と `others.html` は `list.js` を共用し、`data-category="other"` で武将以外の人物を出す。`js/order.js` は一覧の並べ方（50音・地域・国・家）の共通処理で、令制国の並び順もここにある。

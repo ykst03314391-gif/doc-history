@@ -7,7 +7,9 @@
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
     );
 
-  const id = new URLSearchParams(location.search).get("id");
+  // 開発中は article.html?id=…、公開用に書き出した article-<id>.html では <meta name="article-id"> から取る
+  const idMeta = document.querySelector('meta[name="article-id"]');
+  const id = new URLSearchParams(location.search).get("id") || (idMeta && idMeta.content);
   if (!id || !/^[a-z0-9-]+$/.test(id)) {
     el.innerHTML = `<p class="error">記事IDが指定されていません。</p>`;
     return;

@@ -49,7 +49,11 @@
         const page = PAGES[u.type];
         if (!page) return "";
         const name = names[u.type][u.id] || u.id;
-        return `<a class="tag tag-link" href="${page.href}?id=${encodeURIComponent(u.id)}">${esc(page.label)}：${esc(name)}</a>`;
+        // 記事は公開用の書き出し（tools/build-site.py）で article-<id>.html に替わるので、その形で書いておく
+        const href = u.type === "article"
+          ? `article.html?id=${encodeURIComponent(u.id)}`
+          : `${page.href}?id=${encodeURIComponent(u.id)}`;
+        return `<a class="tag tag-link" href="${href}">${esc(page.label)}：${esc(name)}</a>`;
       })
       .join("");
     return `<div class="tags src-used">${links}</div>`;
