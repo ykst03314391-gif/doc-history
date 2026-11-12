@@ -48,7 +48,7 @@ python -m http.server 8765
 
 色は `:root` の変数で持つ。新しい色はなるべく増やさず、既存の変数か下の色に合わせる。ダークモードはない。
 
-- **フォント**：全体は明朝体 `--serif`（Noto Serif JP〔Google Fonts、500/700〕→ Yu Mincho → Hiragino Mincho ProN）で、本文の太さは 500、行間は 1.8。ゴシック体（Yu Gothic → Hiragino Sans → Meiryo）は、リンク先の説明につける小さな札（`.entry-link-note`）にだけ使い、書誌と見分ける。
+- **フォント**：全体は明朝体 `--serif`（Noto Serif JP〔Google Fonts、400/700〕→ Yu Mincho → Hiragino Mincho ProN）で、本文の太さは 400、行間は 1.8。見出し（`h1`〜`h3`・`.site-title`・`.sec-group-title`）だけ `--serif-head`（Shippori Mincho B1〔700〕を先頭に、あとは `--serif` と同じ）。Google Fonts は CSS の `@import` ではなく、各 HTML の `<head>` の `<link>`（preconnect つき）で読む。ページを足すときはこの3行も写す。ゴシック体（Yu Gothic → Hiragino Sans → Meiryo）は、リンク先の説明につける小さな札（`.entry-link-note`）にだけ使い、書誌と見分ける。
 - **サイズ**（rem）
   - 見出し：人物名 `h1` 2、記事タイトル 1.9、節見出し `.section h2` 1.25（頭に朱の「◆ 」）、記事の `h2` 1.35、`h3` 1.1
   - 本文：1。注記・説明（`.entry-note`・`.t-desc`）は 0.9〜0.92 で `--ink-soft`
