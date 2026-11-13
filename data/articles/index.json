@@ -297,6 +297,24 @@
       ]
     },
     {
+      "id": "hidenaga-zou",
+      "title": "「補佐役」という秀長像は当たっているのか",
+      "series": "myth-busting",
+      "category": "考察",
+      "summary": "兄に従い、温厚に周りをまとめた「補佐役」。この秀長像を、兄との関係・領主として・政権の中で・像の出どころ・仕事ぶりの五つの面から一本ずつ確かめてきた記事の答えを並べ、一つの問いに答える。",
+      "date": "2026-11-13",
+      "author": "管理人",
+      "image": { "src": "assets/img/portraits/toyotomi-hidenaga.jpg", "caption": "豊臣秀長像（春岳院蔵、天明8年〈1788〉の作とされる）※参考イメージ", "credit": "Wikimedia Commons", "license": "パブリックドメイン" },
+      "relatedPeople": ["toyotomi-hidenaga", "toyotomi-hideyoshi", "sen-no-rikyu"],
+      "relatedBattles": ["shikoku-campaign", "kyushu-campaign"],
+      "tags": ["豊臣秀長", "豊臣秀吉", "補佐役", "豊臣政権", "考察"],
+      "references": [
+        { "title": "羽柴秀長 秀吉の天下を支えた弟（角川選書）", "author": "柴裕之", "affiliateUrl": "https://www.amazon.co.jp/dp/4047037400", "note": "一門筆頭としての秀長を描く評伝" },
+        { "title": "大和大納言 豊臣秀長 補佐役か、もう一人の秀吉か", "author": "天野忠幸", "affiliateUrl": "https://www.amazon.co.jp/dp/4582477534", "note": "副題そのものがこの記事の問い。畿内の戦国史の研究者による評伝" },
+        { "title": "豊臣秀長 ある補佐役の生涯（文春文庫、上下巻）", "author": "堺屋太一", "affiliateUrl": "https://www.amazon.co.jp/dp/4167193140", "note": "「名補佐役」の秀長像を広めた小説（1985年）。リンクは上巻" }
+      ]
+    },
+    {
       "id": "sibling-conflict",
       "title": "兄弟間での争い ― 兄に背いた兄弟は、何を頼ったか",
       "category": "考察",

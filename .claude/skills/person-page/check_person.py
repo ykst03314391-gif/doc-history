@@ -141,6 +141,12 @@ def check(pid):
     lens = p.get("lens") or {}
     if p.get("role") == "main" and lens.get("question") and not lens.get("answer"):
         warns.append("lens.answer（まとめ）がまだ無い（論点の記事がそろったら書く）")
+    if lens.get("article_id"):
+        if lens.get("view"):
+            warns.append("lens.article_id（総論の記事）があるのに lens.view がある（見立ては総論の記事に書く）")
+        side = [q for q in (p.get("questions") or []) if q.get("place") in ("lens", "lensSide")]
+        if side:
+            warns.append(f"lens.article_id（総論の記事）があるのに place が lens・lensSide の論点が {len(side)} 件ある（総論の記事の節に移す）")
     if p.get("role") != "main" and lens.get("view"):
         warns.append("主役でないのに lens.view がある")
 
