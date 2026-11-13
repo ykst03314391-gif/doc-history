@@ -991,11 +991,11 @@ footer.site-footer {
 .recent-items li { margin: 0 0 2px; }
 
 /* ---- トップの「新着・更新」（記事・人物・城・合戦・大名家をまとめた1行ずつの一覧。js/home.js） ---- */
-/* 新着・更新：日付・新規／更新・種別・名前だけの簡易な箇条書き（5件まで。js/home.js） */
+/* 新着・更新：1行目に日付・新規／更新・種別・名前、2行目に中身の一言の箇条書き（5件まで。js/home.js） */
 .whats-new { list-style: none; margin: 0; padding: 0; }
 .whats-new-row {
-  display: flex; align-items: baseline; gap: 8px;
-  padding: 3px 2px; color: var(--ink); text-decoration: none; font-size: 0.95rem;
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px;
+  padding: 6px 2px; color: var(--ink); text-decoration: none; font-size: 0.95rem;
 }
 .whats-new-row::before { content: "・"; flex: none; color: var(--accent-soft); }
 .whats-new-row:hover { text-decoration: none; }
@@ -1007,7 +1007,15 @@ footer.site-footer {
 .whats-new-badge.is-new { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
 .whats-new-badge.is-update { color: var(--accent); border: 1px solid var(--accent); }
 .whats-new-kind { flex: none; font-size: 0.8rem; color: var(--ink-soft); }
-.whats-new-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.whats-new-name { flex: 1 1 12em; min-width: 0; font-weight: 700; }
+/* 2行目：中身が最低限わかる一言。「・」の幅だけ字下げし、2行まで（あふれたら…） */
+.whats-new-note {
+  flex-basis: 100%; padding-left: 1.4em; font-size: 0.85rem; line-height: 1.6; color: var(--ink-soft);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+@media (max-width: 600px) {
+  .whats-new-name { flex-basis: 100%; padding-left: 1.4em; }
+}
 
 /* ---- 仮置きデータ注記（DB系ページ） ---- */
 .provisional-notice {

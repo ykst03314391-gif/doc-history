@@ -8,7 +8,8 @@
     );
 
   // 新着・更新（記事・人物・城・合戦・大名家をまとめて、日付の新しい順に5件まで）。
-  // 簡易な箇条書きにするため、日付・新規／更新・種別・名前だけを出し、何を直したか（items）は出さない
+  // 箇条書きの1行目に日付・新規／更新・種別・名前、2行目に中身が最低限わかる一言（note）を小さく出す：
+  // 更新は何を直したか（items）、新しい記事は要約（summary）、新しい DB の項目は items か要約
   // 記事は公開日（date）を「新規」、update を「更新」として別々に数える。
   // DB の項目は update だけを見て、update.new が true なら「新規」、ほかは「更新」
   await (async function renderWhatsNew() {
@@ -26,9 +27,9 @@
       const arts = ((await (await fetch("data/articles/index.json")).json()).articles || []).filter((a) => !a.draft);
       for (const a of arts) {
         const href = `article.html?id=${encodeURIComponent(a.id)}`;
-        if (a.date) events.push({ date: a.date, isNew: true, kind: "記事", name: a.title, href, items: [], order: 0 });
+        if (a.date) events.push({ date: a.date, isNew: true, kind: "記事", name: a.title, href, note: a.summary || "", order: 0 });
         if (a.update && a.update.date && a.update.date !== a.date)
-          events.push({ date: a.update.date, isNew: false, kind: "記事", name: a.title, href, items: a.update.items || [], order: 0 });
+          events.push({ date: a.update.date, isNew: false, kind: "記事", name: a.title, href, note: (a.update.items || []).join("／"), order: 0 });
       }
     } catch (err) {
       console.error(err);
@@ -40,7 +41,7 @@
           for (const x of all) {
             const u = x.update;
             if (!u || !u.date) continue;
-            events.push({ date: u.date, isNew: !!u.new, kind: k.label, name: x.name, href: k.href(x), items: u.new ? [] : u.items || [], order: i + 1 });
+            events.push({ date: u.date, isNew: !!u.new, kind: k.label, name: x.name, href: k.href(x), note: (u.items || []).join("／") || x.summary || "", order: i + 1 });
           }
         } catch (err) {
           console.error(err);
@@ -60,6 +61,7 @@
             <span class="whats-new-badge ${e.isNew ? "is-new" : "is-update"}">${e.isNew ? "新規" : "更新"}</span>
             <span class="whats-new-kind">${esc(e.kind)}</span>
             <span class="whats-new-name">${esc(e.name)}</span>
+            ${e.note ? `<span class="whats-new-note">${esc(String(e.note).replace(/\s*\n\s*/g, ""))}</span>` : ""}
           </a>
         </li>`
       )
