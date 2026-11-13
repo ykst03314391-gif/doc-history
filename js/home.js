@@ -1,7 +1,5 @@
-// トップページ：新着・更新と新着記事を表示
+// トップページ：連載と、新着・更新（記事も DB の更新も1つの表に）を表示
 (async function () {
-  const artEl = document.getElementById("latest-articles");
-
   const esc = (s) =>
     String(s ?? "").replace(/[&<>"']/g, (c) =>
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
@@ -68,43 +66,16 @@
     box.hidden = false;
   })();
 
-  // 新着記事（最大3件）
+  // 連載（js/rensai.js）。表紙が出ている連載があるときだけ欄を出す
   try {
     const res = await fetch("data/articles/index.json");
     if (!res.ok) throw new Error(res.status);
-    const artData = await res.json();
-    // 連載（js/rensai.js）
-    const rens = window.Rensai ? window.Rensai.list(artData) : [];
+    const rens = window.Rensai ? window.Rensai.list(await res.json()) : [];
     if (rens.length) {
       document.getElementById("rensai-cards").innerHTML = rens.map(window.Rensai.cardHTML).join("");
       document.getElementById("rensai-home").hidden = false;
     }
-    const articles = (artData.articles || [])
-      .filter((a) => !a.draft)
-      .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")))
-      .slice(0, 3);
-    artEl.innerHTML = articles.length
-      ? articles
-          .map((a) => {
-            const thumb =
-              a.image && a.image.src
-                ? `<img class="card-thumb" src="${esc(a.image.src)}" alt="" loading="lazy">`
-                : "";
-            return `
-        <a class="card${thumb ? " card--thumb" : ""}" href="article.html?id=${encodeURIComponent(a.id)}">
-          ${thumb}
-          <div class="card-main">
-            <p class="article-cat">${esc(a.category || "記事")}</p>
-            <h3>${esc(a.title)}</h3>
-            <p class="years">${esc(a.date || "")}</p>
-            <p class="card-summary">${esc(a.summary || "")}</p>
-          </div>
-        </a>`;
-          })
-          .join("")
-      : `<p class="muted">まだ記事がありません。</p>`;
   } catch (err) {
-    artEl.innerHTML = `<p class="error">記事の読み込みに失敗しました（README参照）。</p>`;
     console.error(err);
   }
 })();
