@@ -1,8 +1,8 @@
-// 記事一覧ページ：特集ごとにグループ表示（検索時はフラット表示）
+// 記事一覧ページ：テーマごとにグループ表示（検索時はフラット表示）
 (async function () {
   const listEl = document.getElementById("list");
   const searchEl = document.getElementById("search");
-  // 特集の目次（.side-toc。いま開いている見出しの強調は js/toc.js）と、検索の行の左端の名前
+  // テーマの目次（.side-toc。いま開いている見出しの強調は js/toc.js）と、検索の行の左端の名前
   const tocEl = document.getElementById("list-toc");
   const nameEl = document.getElementById("order-current");
   let articles = [];
@@ -53,7 +53,7 @@
     </section>`;
   }
 
-  // 特集ブロック（内部を group でサブ分類）
+  // テーマブロック（内部を group でサブ分類）
   function seriesBlock(s) {
     const arts = articles.filter((a) => a.series === s.id).sort(byDateDesc);
     if (!arts.length) return "";
@@ -70,7 +70,7 @@
       }
       groups.get(a.group).push(a);
     }
-    // ただし「総論」は特集の入口なので先頭に置く
+    // ただし「総論」はテーマの入口なので先頭に置く
     groupOrder.sort((a, b) => (b === "総論") - (a === "総論"));
 
     let inner = ungrouped.length ? grid(ungrouped) : "";
@@ -84,7 +84,7 @@
     </section>`;
   }
 
-  // 特集ごと＋一般記事でグループ表示
+  // テーマごと＋一般記事でグループ表示
   function renderGrouped() {
     let html = "";
     // 連載（考察の主の形）をいちばん上に置く
@@ -105,7 +105,7 @@
       .sort(byDateDesc);
     html += block("その他の考察・記事", "", general);
     listEl.innerHTML = html || `<p class="muted">まだ記事がありません。</p>`;
-    // 目次は、出した特集の見出しから作る
+    // 目次は、出したテーマの見出しから作る
     const rows = [...listEl.querySelectorAll(".series-block")].map(
       (sec) => `<li><a href="#${sec.id}">${esc(sec.querySelector(".series-title").textContent)}</a></li>`
     );
@@ -113,12 +113,12 @@
       tocEl.hidden = !rows.length;
       tocEl.innerHTML = rows.length ? `<p class="toc-title">目次</p><ol>${rows.join("")}</ol>` : "";
     }
-    if (nameEl) nameEl.textContent = "連載と特集ごと";
+    if (nameEl) nameEl.textContent = "連載とテーマごと";
   }
 
   // 検索結果はフラット表示
   function renderFlat(items) {
-    // 検索中は特集の見出しがないので、目次は出さない
+    // 検索中はテーマの見出しがないので、目次は出さない
     if (tocEl) tocEl.hidden = true;
     if (nameEl) nameEl.textContent = `検索結果（${items.length}件）`;
     if (!items.length) {

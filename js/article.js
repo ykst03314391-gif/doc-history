@@ -47,7 +47,7 @@
       : "";
     const head = meta
       ? `${renBadge}<div class="article-head">
-           ${series ? `<a class="series-badge" href="articles.html">特集：${esc(series.title)}</a>` : ""}
+           ${series ? `<a class="series-badge" href="articles.html">テーマ：${esc(series.title)}</a>` : ""}
            <span class="article-cat">${esc(meta.category || "記事")}</span>
            <span class="article-date">${esc(meta.date || "")}</span>
            ${!meta.author || meta.author === "管理人"

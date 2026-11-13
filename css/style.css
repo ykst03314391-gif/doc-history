@@ -679,7 +679,7 @@ html { scroll-behavior: smooth; }
   padding: 1px 9px;
   margin: 0 0 8px;
 }
-/* 特集（series） */
+/* テーマ（series） */
 .series-block { margin-bottom: 40px; }
 .series-title {
   font-size: 1.35rem;
@@ -1303,7 +1303,7 @@ footer.site-footer {
 .topic-people { margin: 0; }
 .topic-note { margin: 18px 0 0; font-size: 0.85rem; }
 
-/* リンクではない静的な機能カード（aboutの特集紹介など） */
+/* リンクではない静的な機能カード（aboutのテーマ紹介など） */
 .feature-card--static { cursor: default; }
 .feature-card--static:hover { transform: none; box-shadow: var(--shadow); }
 
