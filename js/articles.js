@@ -152,6 +152,11 @@
     // 上の「最近更新した〇〇」（js/recent.js）
     window.renderRecent(articles, { href: (a) => `article.html?id=${encodeURIComponent(a.id)}`, thumb: (a) => a.image && a.image.src, title: (a) => a.title, kana: () => "", useDate: true });
     renderGrouped();
+    // 棚は読み込んだあとに組むので、#rensai（メニューの「連載から探す」）などの飛び先へは、組んだあとで移る
+    if (location.hash) {
+      const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      if (target) target.scrollIntoView();
+    }
     searchEl.addEventListener("input", (e) => onSearch(e.target.value));
   } catch (err) {
     listEl.innerHTML = `<p class="error">記事の読み込みに失敗しました。ローカルで開いている場合は簡易サーバー経由で表示してください（README参照）。</p>`;
