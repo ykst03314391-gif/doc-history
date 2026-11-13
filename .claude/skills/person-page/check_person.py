@@ -139,9 +139,11 @@ def check(pid):
         if extra:
             warns.append(f"脇役（role なし）なのに詳細の欄がある: {', '.join(extra)}")
     lens = p.get("lens") or {}
-    if p.get("role") == "main" and lens.get("question") and not lens.get("answer"):
+    if p.get("role") == "main" and lens.get("question") and not lens.get("answer") and not lens.get("article_id"):
         warns.append("lens.answer（まとめ）がまだ無い（論点の記事がそろったら書く）")
     if lens.get("article_id"):
+        if lens.get("answer"):
+            warns.append("lens.article_id（総論の記事）があるのに lens.answer がある（答えは総論の記事に書く）")
         if lens.get("view"):
             warns.append("lens.article_id（総論の記事）があるのに lens.view がある（見立ては総論の記事に書く）")
         side = [q for q in (p.get("questions") or []) if q.get("place") in ("lens", "lensSide")]

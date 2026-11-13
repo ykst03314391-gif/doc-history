@@ -566,18 +566,17 @@
         : "") +
       (lens.view ? `<div class="lens-summary-view"><span class="my-view-label">ぱぱねこの見立て</span>${paras(lens.view)}</div>` : "");
     // 総論の記事（lens.article_id）があるときは、論点・まとめの全文・見立てはその記事に任せ、
-    // ここには問いと答えの要点（answer）と、記事へのリンクだけを出す（人物 → 総論の記事 → 各論点の記事）
+    // ここには問いと記事への入口だけを出す（人物 → 総論の記事 → 各論点の記事）。答えも管理人の判断なので記事の側に置く
     const lensArticle = lens && lens.article_id ? (articles || []).find((x) => x.id === lens.article_id) : null;
     if (lens && lensArticle && !lensArticle.draft) {
       usedArticleIds.add(lensArticle.id);
       put("lens", lens.title || "この人物への問い", `<div class="lens">
           <p class="lens-question">${lineBreaks(fmtText(esc(lens.question)))}</p>
         </div>
-        ${lens.answer ? `<div class="lens-point"><p class="lens-point-label">答えの要点</p>${paras(lens.answer)}</div>` : ""}
         <a class="lens-go" href="article.html?id=${encodeURIComponent(lensArticle.id)}">
           <span class="lens-go-label">この問いを捉え直す</span>
           <span class="lens-go-title">${esc(lensArticle.title)}</span>
-          <span class="lens-go-note">論点ごとの答えと、ぱぱねこの見立て。各論点の考察記事へもここから</span>
+          <span class="lens-go-note">五つの面から確かめた答えと、ぱぱねこの見立て。各論点の考察記事へもここから</span>
         </a>`);
     } else if (lens) {
       const lensQs = qs.filter((q) => qPlace(q) === "lens");
