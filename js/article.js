@@ -30,6 +30,8 @@
       meta && meta.series
         ? (artData.series || []).find((s) => s.id === meta.series)
         : null;
+    // 連載（js/rensai.js）。表紙なら「（表紙）」、論点の記事なら「②／5」の札を題の上に出し、表紙へつなぐ
+    const ren = window.Rensai ? window.Rensai.of(artData, id) : null;
     const md = await mdRes.text();
     const people = peopleRes.ok ? (await peopleRes.json()).people || [] : [];
     const nameOf = (pid) => (people.find((p) => p.id === pid) || {}).name || pid;
@@ -37,8 +39,14 @@
     if (meta && meta.title) document.title = `${meta.title} ｜ ぱぱねこの戦国見立て`;
 
     // ヘッダー（カテゴリ・日付）。タイトルは本文 Markdown の見出しに任せる
+    const circled = (n) => (n >= 1 && n <= 20 ? String.fromCharCode(0x2460 + n - 1) : String(n));
+    const renBadge = ren
+      ? `<a class="rensai-badge" href="article.html?id=${encodeURIComponent(ren.r.hub)}">連載：${esc(ren.r.title)}<span class="rensai-badge-pos">${
+          ren.role === "hub" ? "表紙" : ren.role === "item" ? `${circled(ren.no)}／${ren.r.items.length}` : "番外"
+        }</span></a>`
+      : "";
     const head = meta
-      ? `<div class="article-head">
+      ? `${renBadge}<div class="article-head">
            ${series ? `<a class="series-badge" href="articles.html">特集：${esc(series.title)}</a>` : ""}
            <span class="article-cat">${esc(meta.category || "記事")}</span>
            <span class="article-date">${esc(meta.date || "")}</span>
@@ -127,6 +135,39 @@
       typeof marked !== "undefined"
         ? marked.parse(quoted)
         : `<pre>${esc(md)}</pre>`;
+
+    // 連載の案内。表紙には連載の記事の一覧と人物ページ（資料）、論点の記事には前後と表紙へのリンクを、本文のすぐ後に置く
+    let rensaiNav = "";
+    if (ren) {
+      const r = ren.r;
+      const link = (a, label) =>
+        `<a href="article.html?id=${encodeURIComponent(a.id)}"><span class="rensai-nav-label">${label}</span>${esc(a.title)}</a>`;
+      if (ren.role === "hub") {
+        const rows = r.items
+          .map((a, i) => `<li${a.id === id ? ' class="is-current"' : ""}>${link(a, circled(i + 1))}</li>`)
+          .concat(r.extras.map((a) => `<li>${link(a, "番外")}</li>`))
+          .join("");
+        rensaiNav = `<section class="rensai-nav">
+            <h3>連載「${esc(r.title)}」の記事</h3>
+            <ol class="rensai-list">${rows}</ol>
+            ${r.person_id ? `<p class="rensai-person"><span class="rensai-nav-label">資料</span><a href="person.html?id=${encodeURIComponent(r.person_id)}">${esc(nameOf(r.person_id))}の人物ページ</a>（年表・家系・出典などの脚注）</p>` : ""}
+          </section>`;
+      } else {
+        const seq = r.items.concat(r.extras);
+        const i = seq.findIndex((a) => a.id === id);
+        const prev = i > 0 ? seq[i - 1] : null;
+        const next = i >= 0 && i < seq.length - 1 ? seq[i + 1] : null;
+        const lab = (a) => (r.items.includes(a) ? circled(r.items.indexOf(a) + 1) : "番外");
+        rensaiNav = `<nav class="rensai-nav rensai-pager" aria-label="連載の前後の記事">
+            <p class="rensai-pager-title">連載「${esc(r.title)}」</p>
+            <div class="rensai-pager-row">
+              <span class="rensai-pager-prev">${prev ? link(prev, `← ${lab(prev)}`) : ""}</span>
+              <a class="rensai-pager-hub" href="article.html?id=${encodeURIComponent(r.hub)}">表紙へ</a>
+              <span class="rensai-pager-next">${next ? link(next, `${lab(next)} →`) : ""}</span>
+            </div>
+          </nav>`;
+      }
+    }
 
     // 関連人物（DB連携）
     let related = "";
@@ -239,7 +280,7 @@
       toc = `<nav class="side-toc" aria-label="目次"><p class="toc-title">目次</p><ol>${items}</ol></nav>`;
     }
 
-    el.innerHTML = `${head}${toc}<div class="article-body">${tmp.innerHTML}</div>${related}${sources}${books}${feedback}`;
+    el.innerHTML = `${head}${toc}<div class="article-body">${tmp.innerHTML}</div>${rensaiNav}${related}${sources}${books}${feedback}`;
   } catch (err) {
     el.innerHTML = `<p class="error">記事を読み込めませんでした（ID: ${esc(id)}）。ローカルで開いている場合は簡易サーバー経由で表示してください（README参照）。</p>`;
     console.error(err);

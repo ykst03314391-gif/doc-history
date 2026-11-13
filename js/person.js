@@ -152,6 +152,7 @@
   }
 
   // 欄の組と並び。考察が主役なので「捉え直す」を先頭に、出典と調査メモを最後に置く
+  // （連載のある人物は、考察を連載に任せるので「捉え直す」を事実の組の後ろへ下げる。render の中）
   const GROUPS = [
     { title: "捉え直す", sub: "本当にそうか？", keys: ["lens", "lensSide", "reputation", "questions", "articles"] },
     { title: "どんな人だっけ？", sub: "事績と生涯", keys: ["achievements", "timeline", "territories", "episodes"] },
@@ -189,7 +190,7 @@
     </nav>`;
   }
 
-  function render(p, articles, kamonImages = {}) {
+  function render(p, articles, kamonImages = {}, artData = {}) {
     document.title = `${p.name} ｜ ぱぱねこの戦国見立て`;
     const html = [];
 
@@ -542,6 +543,7 @@
     // place があれば置き場所を変える：lens は冒頭の「この人物への問い」の下、family・nameHistory などはその欄の末尾。
     // 置き場所の欄が無ければ、ふつうの「諸説・疑問」に出す
     const lens = p.lens && p.lens.question ? p.lens : null;
+    const rensai = window.Rensai ? window.Rensai.ofPerson(artData, p.id) : null;
     const qItems = (list) =>
       list
         .map((q) => entry({ main: esc(q.title), note: q.text, links: q.links, tail: srcMarks(q.sourceId), extra: articleLink(q.article_id) }))
@@ -567,8 +569,19 @@
       (lens.view ? `<div class="lens-summary-view"><span class="my-view-label">ぱぱねこの見立て</span>${paras(lens.view)}</div>` : "");
     // 総論の記事（lens.article_id）があるときは、論点・まとめの全文・見立てはその記事に任せ、
     // ここには問いと記事への入口だけを出す（人物 → 総論の記事 → 各論点の記事）。答えも管理人の判断なので記事の側に置く
+    // 連載（js/rensai.js）があれば、入口は連載の表紙にする
     const lensArticle = lens && lens.article_id ? (articles || []).find((x) => x.id === lens.article_id) : null;
-    if (lens && lensArticle && !lensArticle.draft) {
+    if (lens && rensai) {
+      usedArticleIds.add(rensai.hub);
+      put("lens", lens.title || "この人物への問い", `<div class="lens">
+          <p class="lens-question">${lineBreaks(fmtText(esc(lens.question)))}</p>
+        </div>
+        <a class="lens-go" href="article.html?id=${encodeURIComponent(rensai.hub)}">
+          <span class="lens-go-label">この人物の連載</span>
+          <span class="lens-go-title">${esc(rensai.title)}</span>
+          <span class="lens-go-note">表紙「${esc(rensai.hubArticle.title)}」と、${rensai.items.length}本の記事${rensai.extras.length ? `・番外${rensai.extras.length}本` : ""}。答えとぱぱねこの見立ては表紙に</span>
+        </a>`);
+    } else if (lens && lensArticle && !lensArticle.draft) {
       usedArticleIds.add(lensArticle.id);
       put("lens", lens.title || "この人物への問い", `<div class="lens">
           <p class="lens-question">${lineBreaks(fmtText(esc(lens.question)))}</p>
@@ -576,7 +589,7 @@
         <a class="lens-go" href="article.html?id=${encodeURIComponent(lensArticle.id)}">
           <span class="lens-go-label">この問いを捉え直す</span>
           <span class="lens-go-title">${esc(lensArticle.title)}</span>
-          <span class="lens-go-note">五つの面から確かめた答えと、ぱぱねこの見立て。各論点の考察記事へもここから</span>
+          <span class="lens-go-note">論点ごとの答えと、ぱぱねこの見立て。各論点の考察記事へもここから</span>
         </a>`);
     } else if (lens) {
       const lensQs = qs.filter((q) => qPlace(q) === "lens");
@@ -758,8 +771,10 @@
     }
 
     // 欄を組ごとに並べる（組の見出しは README の人物データベースの問いかけ）。中身のない組は出さない
+    // 連載のある人物は、考察を連載（記事）に任せ、人物ページは事実の脚注にするので、「捉え直す」の組を事実の組の後ろへ下げる
+    const groups = rensai ? [GROUPS[1], GROUPS[2], GROUPS[0], ...GROUPS.slice(3)] : GROUPS;
     let gn = 0;
-    for (const grp of GROUPS) {
+    for (const grp of groups) {
       // lensSide は、大きな問いと並ぶ問いの欄（lensSide:0, lensSide:1 …）をまとめて指す
       const keys = grp.keys
         .flatMap((k) => (k === "lensSide" ? Object.keys(S).filter((x) => x.startsWith("lensSide:")) : [k]))
@@ -1152,7 +1167,7 @@
     .then(([p, adata, cdata]) => {
       const kamonImages = {};
       ((cdata && cdata.clans) || []).forEach((c) => { if (c.kamonImage) kamonImages[c.id] = c.kamonImage; });
-      render(p, (adata && adata.articles) || [], kamonImages);
+      render(p, (adata && adata.articles) || [], kamonImages, adata || {});
     })
     .catch((err) => {
       contentEl.innerHTML = `<p class="error">人物データを読み込めませんでした（ID: ${esc(id)}）。ローカルで開いている場合は簡易サーバー経由で表示してください（README参照）。</p>`;

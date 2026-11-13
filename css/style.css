@@ -705,6 +705,37 @@ html { scroll-behavior: smooth; }
   padding: 3px 12px;
 }
 .series-badge:hover { background: var(--accent); text-decoration: none; }
+/* 連載（js/rensai.js）。記事の題の上の札、記事の後の一覧・前後、トップと考察一覧のカード */
+.rensai-badge { display: inline-flex; align-items: center; gap: 8px; margin: 0 0 10px; padding: 4px 6px 4px 14px; border: 1px solid var(--accent); border-radius: 999px; font-size: 0.8rem; font-weight: 700; color: var(--accent); background: var(--bg-panel); }
+.rensai-badge:hover { background: #f3eee3; text-decoration: none; }
+.rensai-badge-pos { padding: 1px 10px; border-radius: 999px; background: var(--accent); color: #fff; font-weight: 700; }
+.rensai-nav { margin: 24px 0; padding: 14px 18px; background: var(--bg-panel); border: 1px solid var(--line); border-top: 3px solid var(--accent); }
+.rensai-nav h3 { margin: 0 0 8px; font-size: 1.05rem; }
+.rensai-list { list-style: none; margin: 0; padding: 0; }
+.rensai-list li { padding: 6px 0; border-bottom: 1px dotted var(--line); }
+.rensai-list li:last-child { border-bottom: none; }
+.rensai-nav-label { display: inline-block; min-width: 1.4em; margin-right: 6px; font-weight: 700; color: var(--accent); }
+.rensai-person { margin: 10px 0 0; padding-top: 10px; border-top: 1px solid var(--line); font-size: 0.92rem; }
+.rensai-pager-title { margin: 0 0 8px; font-size: 0.9rem; font-weight: 700; color: var(--ink-soft); }
+.rensai-pager-row { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: start; font-size: 0.92rem; }
+.rensai-pager-next { text-align: right; }
+.rensai-pager-hub { padding: 2px 12px; border: 1px solid var(--accent); border-radius: 999px; font-weight: 700; white-space: nowrap; }
+.rensai-pager .rensai-nav-label { min-width: 0; }
+@media (max-width: 600px) {
+  .rensai-pager-row { grid-template-columns: 1fr; }
+  .rensai-pager-next { text-align: left; }
+  .rensai-pager-hub { justify-self: start; }
+}
+.rensai-cards { display: grid; gap: 16px; }
+.rensai-card { display: grid; grid-template-columns: 140px 1fr; gap: 16px; padding: 16px; background: var(--bg-panel); border: 1px solid var(--line); border-left: 4px solid var(--accent); color: var(--ink); }
+.rensai-card:hover { background: #f3eee3; text-decoration: none; }
+.rensai-card img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: top; }
+.rensai-card-label { display: block; font-size: 0.8rem; font-weight: 700; color: var(--accent); letter-spacing: 0.05em; }
+.rensai-card-title { margin: 2px 0 6px; font-size: 1.2rem; }
+.rensai-card-q { margin: 0 0 6px; font-weight: 700; }
+.rensai-card-desc { margin: 0 0 6px; font-size: 0.9rem; color: var(--ink-soft); }
+.rensai-card-count { font-size: 0.85rem; color: var(--ink-soft); }
+@media (max-width: 600px) { .rensai-card { grid-template-columns: 90px 1fr; gap: 12px; } }
 
 .article-head {
   display: flex;

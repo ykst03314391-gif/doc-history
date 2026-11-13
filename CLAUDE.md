@@ -23,7 +23,8 @@ python -m http.server 8765
 ## 構成
 
 - **ページ = HTML 1枚 + `js/<page>.js` 1本**。一覧（`people.html`→`list.js`、`battles.html`→`battles.js` など）と詳細（`person.html?id=…`→`person.js` など）の組。`people.html` と `others.html` は `list.js` を共用し、`data-category="other"` で武将以外の人物を出す。`js/order.js` は一覧の並べ方（50音・地域・国・家）の共通処理で、令制国の並び順もここにある。
-- **データは `data/<種別>/`**：`index.json`（一覧カード用の要約）＋ `<id>.json`（詳細）。人物・合戦・城・大名家を足す／名前や要約・生没年・タグを変えるときは **`index.json` と個別ファイルの両方**を直す。記事は `data/articles/index.json`（メタ・series）＋ `data/articles/<id>.md`（本文。CDN の marked で描画）。トピックは `data/topics/index.json` のみ。
+- **データは `data/<種別>/`**：`index.json`（一覧カード用の要約）＋ `<id>.json`（詳細）。人物・合戦・城・大名家を足す／名前や要約・生没年・タグを変えるときは **`index.json` と個別ファイルの両方**を直す。記事は `data/articles/index.json`（メタ・series・rensai）＋ `data/articles/<id>.md`（本文。CDN の marked で描画）。トピックは `data/topics/index.json` のみ。
+- **考察の主の形は連載**：1つの大きな問いを、表紙の記事（総論）と論点の記事で追う（`index.json` の `rensai`、`js/rensai.js`）。読者の流れは、トップ・考察一覧の連載 → 表紙 → 論点の記事、と表紙 → 人物ページ（脚注）。連載のある人物のページは「捉え直す」の組を事実の後ろへ下げる。いまは「秀長を捉え直す」だけ（`docs/schema-article.md` の「連載」）。
 - **スキーマは `docs/schema-*.md`**。フィールドを足したら該当スキーマ文書も更新する。
 - **相互参照は ID**（`person_id` / `battle_id` / `castle_id` / `article_id`）。説明文中の語をリンクにするには、各項目に `links: [{ text, person_id | battle_id | castle_id }]` を付ける（`person.js` の `linkText`）。出典は各項目の `sourceId` → その人物の `sources[].id`。
 - **原文の引用は `{{…}}`**（「」ではない）。表示で「…」に括って色を変え、書名・現代語訳の「」と区別する。

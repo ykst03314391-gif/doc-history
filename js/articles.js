@@ -8,6 +8,7 @@
   let articles = [];
   let series = [];
   let seriesMap = new Map();
+  let rawData = {};
 
   const esc = (s) =>
     String(s ?? "").replace(/[&<>"']/g, (c) =>
@@ -86,6 +87,15 @@
   // 特集ごと＋一般記事でグループ表示
   function renderGrouped() {
     let html = "";
+    // 連載（考察の主の形）をいちばん上に置く
+    const rens = window.Rensai ? window.Rensai.list(rawData) : [];
+    if (rens.length) {
+      html += `<section class="section series-block" id="rensai">
+        <h2 class="series-title">連載</h2>
+        <p class="series-desc">1つの大きな問いを、表紙の記事と何本かの記事で追う。表紙から読むと、問いと答えの全体が見える。</p>
+        <div class="rensai-cards">${rens.map(window.Rensai.cardHTML).join("")}</div>
+      </section>`;
+    }
     const sorted = series
       .slice()
       .sort((a, b) => (a.order || 99) - (b.order || 99));
@@ -103,7 +113,7 @@
       tocEl.hidden = !rows.length;
       tocEl.innerHTML = rows.length ? `<p class="toc-title">目次</p><ol>${rows.join("")}</ol>` : "";
     }
-    if (nameEl) nameEl.textContent = "特集ごと";
+    if (nameEl) nameEl.textContent = "連載と特集ごと";
   }
 
   // 検索結果はフラット表示
@@ -135,6 +145,7 @@
     const res = await fetch("data/articles/index.json");
     if (!res.ok) throw new Error(res.status);
     const data = await res.json();
+    rawData = data;
     series = data.series || [];
     seriesMap = new Map(series.map((s) => [s.id, s]));
     articles = (data.articles || []).filter((a) => !a.draft);

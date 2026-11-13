@@ -73,7 +73,14 @@
   try {
     const res = await fetch("data/articles/index.json");
     if (!res.ok) throw new Error(res.status);
-    const articles = ((await res.json()).articles || [])
+    const artData = await res.json();
+    // 連載（js/rensai.js）
+    const rens = window.Rensai ? window.Rensai.list(artData) : [];
+    if (rens.length) {
+      document.getElementById("rensai-cards").innerHTML = rens.map(window.Rensai.cardHTML).join("");
+      document.getElementById("rensai-home").hidden = false;
+    }
+    const articles = (artData.articles || [])
       .filter((a) => !a.draft)
       .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")))
       .slice(0, 3);
