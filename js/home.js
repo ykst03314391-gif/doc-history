@@ -8,7 +8,7 @@
     );
 
   // 新着・更新（記事・人物・城・合戦・大名家をまとめて、日付の新しい順に5件まで）。
-  // 箇条書きの1行目に日付・新規／更新・種別・名前、2行目に中身が最低限わかる一言（note）を小さく出す：
+  // 表にして、日付・区分（新規／更新と種別）・内容（名前と、中身が最低限わかる一言 note）を出す：
   // 更新は何を直したか（items）、新しい記事は要約（summary）、新しい DB の項目は items か要約
   // 記事は公開日（date）を「新規」、update を「更新」として別々に数える。
   // DB の項目は update だけを見て、update.new が true なら「新規」、ほかは「更新」
@@ -52,20 +52,19 @@
     events.sort((a, b) => b.date.localeCompare(a.date) || a.order - b.order || b.isNew - a.isNew);
     const shown = events.slice(0, 5);
     if (!shown.length) return;
-    listEl.innerHTML = shown
+    // 表：日付｜区分（新規／更新の札と種別）｜内容（名前と、中身が最低限わかる一言）
+    listEl.innerHTML = `<thead><tr><th>日付</th><th>区分</th><th>内容</th></tr></thead><tbody>${shown
       .map(
         (e) => `
-        <li>
-          <a class="whats-new-row" href="${esc(e.href)}">
-            <span class="whats-new-date">${esc(e.date.replace(/-/g, "."))}</span>
-            <span class="whats-new-badge ${e.isNew ? "is-new" : "is-update"}">${e.isNew ? "新規" : "更新"}</span>
-            <span class="whats-new-kind">${esc(e.kind)}</span>
-            <span class="whats-new-name">${esc(e.name)}</span>
-            ${e.note ? `<span class="whats-new-note">${esc(String(e.note).replace(/\s*\n\s*/g, ""))}</span>` : ""}
-          </a>
-        </li>`
+        <tr>
+          <td class="whats-new-date">${esc(e.date.replace(/-/g, "."))}</td>
+          <td class="whats-new-type"><span class="whats-new-badge ${e.isNew ? "is-new" : "is-update"}">${e.isNew ? "新規" : "更新"}</span><span class="whats-new-kind">${esc(e.kind)}</span></td>
+          <td><a class="whats-new-name" href="${esc(e.href)}">${esc(e.name)}</a>${
+            e.note ? `<span class="whats-new-note">${esc(String(e.note).replace(/\s*\n\s*/g, ""))}</span>` : ""
+          }</td>
+        </tr>`
       )
-      .join("");
+      .join("")}</tbody>`;
     box.hidden = false;
   })();
 
