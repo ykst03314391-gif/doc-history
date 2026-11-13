@@ -7,7 +7,8 @@
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
     );
 
-  // 新着・更新（記事・人物・城・合戦・大名家をまとめて、日付の新しい順に8件）
+  // 新着・更新（記事・人物・城・合戦・大名家をまとめて、日付の新しい順に5件まで）。
+  // 簡易な箇条書きにするため、日付・新規／更新・種別・名前だけを出し、何を直したか（items）は出さない
   // 記事は公開日（date）を「新規」、update を「更新」として別々に数える。
   // DB の項目は update だけを見て、update.new が true なら「新規」、ほかは「更新」
   await (async function renderWhatsNew() {
@@ -48,7 +49,7 @@
     );
     // 日付の新しい順。同じ日は記事→人物→城→合戦→大名家、その中は新規を先に
     events.sort((a, b) => b.date.localeCompare(a.date) || a.order - b.order || b.isNew - a.isNew);
-    const shown = events.slice(0, 8);
+    const shown = events.slice(0, 5);
     if (!shown.length) return;
     listEl.innerHTML = shown
       .map(
@@ -58,10 +59,7 @@
             <span class="whats-new-date">${esc(e.date.replace(/-/g, "."))}</span>
             <span class="whats-new-badge ${e.isNew ? "is-new" : "is-update"}">${e.isNew ? "新規" : "更新"}</span>
             <span class="whats-new-kind">${esc(e.kind)}</span>
-            <span class="whats-new-body">
-              <span class="whats-new-name">${esc(e.name)}</span>
-              ${e.items.length ? `<span class="whats-new-items">${esc(e.items.join("／"))}</span>` : ""}
-            </span>
+            <span class="whats-new-name">${esc(e.name)}</span>
           </a>
         </li>`
       )
