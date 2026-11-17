@@ -66,29 +66,12 @@
       "image": {
         "src": "assets/img/photo/koriyama-tenshudai.jpg",
         "caption": "郡山城の天守台",
-        "credit": "撮影：ぱぱねこの戦国見立て（2026年11月）",
+        "credit": "撮影：ぱぱねこ（2026年11月）",
         "license": "CC BY 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/4.0/deed.ja"
       },
       "relatedPeople": ["toyotomi-hidenaga", "toyotomi-hideyoshi"],
       "tags": ["豊臣秀長", "郡山城", "大坂城", "旅", "番外編"]
-    },
-    {
-      "id": "chiba-satomi-sengoku",
-      "title": "里見と北条が争った房総へ ― 千葉の戦国ゆかりの地をめぐる",
-      "series": "travel",
-      "group": "千葉県",
-      "category": "旅・史跡",
-      "summary": "信長も秀吉もほとんど出てこない。房総半島の戦国は、里見・北条・千葉が海をはさんで争う「もう一つの戦国」だ。久留里城・館山城・国府台・大多喜・本佐倉を歩き、中央からは見えない地方の視点で戦国を捉え直す。",
-      "date": "2026-07-07",
-      "author": "管理人",
-      "image": { "src": "assets/img/chiba-satomi.svg", "caption": "房総の戦国（イメージ）※当サイト作成のオリジナルイラスト", "credit": "ぱぱねこの戦国見立て", "license": "オリジナル" },
-      "relatedPeople": [],
-      "relatedBattles": [],
-      "tags": ["千葉県", "里見氏", "後北条氏", "千葉氏", "国府台合戦", "城めぐり", "旅・史跡"],
-      "references": [
-        { "title": "南総里見八犬伝（ビギナーズ・クラシックス 日本の古典、角川ソフィア文庫）", "author": "曲亭馬琴（石川博 編）", "affiliateUrl": "https://www.amazon.co.jp/dp/4043574223", "note": "長い原作の要所を一冊で読める入門版。里見家を題材にした物語" }
-      ]
     },
     {
       "id": "araki-murashige-survival",

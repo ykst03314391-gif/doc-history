@@ -1596,3 +1596,60 @@ footer.site-footer {
 .rensai-list li.is-planned { color: var(--ink-soft); }
 .rensai-list li.is-planned .rensai-nav-label { color: var(--ink-soft); }
 .rensai-person + .rensai-person { margin-top: 6px; padding-top: 0; border-top: none; }
+/* 歩いた順の地図（![[map:…]]。article.js の initRouteMaps）。図解と同じ罫線の箱に「地図」の札（緑）と題 */
+.article-figure--map {
+  max-width: min(100%, 640px);
+  padding: 12px 14px 10px;
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+.article-figure--map figcaption { max-width: none; }
+.article-figure--map .zu-desc { color: var(--ink-soft); font-size: 0.85rem; }
+.map-label { background: #2f7a52; }
+.route-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.route-tab {
+  font: inherit;
+  font-size: 0.8rem;
+  padding: 2px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.route-tab[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+.route-map { height: 340px; border: 1px solid var(--line); border-radius: 4px; }
+.route-pin span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+.route-list { list-style: none; margin: 10px 0 4px; padding: 0; font-size: 0.9rem; }
+.route-list li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; padding: 3px 0; }
+.route-no {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: #9b2d20;
+  align-self: center;
+}
+.route-day-1 .route-no { background: #2f5d7c; }
+.route-when { font-size: 0.72rem; color: var(--accent); }
+.route-day-1 .route-when { color: #2f5d7c; }
+.route-note { flex-basis: 100%; padding-left: 28px; font-size: 0.8rem; color: var(--ink-soft); }
+@media (max-width: 600px) { .route-map { height: 280px; } }

@@ -64,8 +64,9 @@
     // ![[illust:<名前>|説明]] は挿絵（assets/img/illust/<名前>.svg。AIで作ったもので、DBは引かない）
     // ![[zu:<名前>|題|説明]] は図解（assets/img/zu/<名前>.svg）。挿絵と見分けるため、罫線の箱に「図」の札と題を付ける
     // ![[manga:<名前>|題|説明]] は記事末の漫画（assets/img/manga/<名前>.svg）。朱の「漫画」の札と題を付ける
-    // ![[photo:<名前>|説明]] は管理人が撮った写真（assets/img/photo/<名前>.jpg。表記は記事の photoTaken から「撮影：ぱぱねこの戦国見立て（2026年11月）／CC BY 4.0」）
-    const imgRe = /^!\[\[(castle|battle|person|illust|zu|manga|photo):([a-z0-9-]+)(?:\|([^\]\n]*))?\]\][ \t]*$/gm;
+    // ![[photo:<名前>|説明]] は管理人が撮った写真（assets/img/photo/<名前>.jpg。表記は記事の photoTaken から「撮影：ぱぱねこ（2026年11月）／CC BY 4.0」）
+    // ![[map:<名前>|題|説明]] は歩いた順の地図（data/maps/<名前>.json。日ごとの地点を番号付きのピンと線で示す。initRouteMaps）
+    const imgRe = /^!\[\[(castle|battle|person|illust|zu|manga|photo|map):([a-z0-9-]+)(?:\|([^\]\n]*))?\]\][ \t]*$/gm;
     const refs = [...md.matchAll(imgRe)];
     const photos = new Map();
     if (refs.length) {
@@ -82,6 +83,17 @@
       ps.forEach((p, i) => p && p.portrait && p.portrait.src && photos.set("person:" + pids[i], p.portrait));
     }
     const figureHTML = (key, cap) => {
+      if (key.startsWith("map:")) {
+        const i = cap.indexOf("|");
+        const title = (i < 0 ? cap : cap.slice(0, i)).trim();
+        const desc = i < 0 ? "" : cap.slice(i + 1).trim();
+        return `<figure class="article-figure article-figure--map" data-map="${esc(key.slice(4))}">` +
+          `<div class="zu-head"><span class="zu-label map-label">地図</span>${esc(title)}</div>` +
+          `<div class="route-tabs"></div><div class="route-map"></div><ol class="route-list"></ol><figcaption>` +
+          (desc ? `<span class="zu-desc">${esc(desc)}</span>` : "") +
+          `<span class="img-credit">地図：ぱぱねこの戦国見立て（地図データ © OpenStreetMap contributors）</span>` +
+          `</figcaption></figure>`;
+      }
       if (key.startsWith("zu:")) {
         const i = cap.indexOf("|");
         const title = (i < 0 ? cap : cap.slice(0, i)).trim();
@@ -296,8 +308,104 @@
     }
 
     el.innerHTML = `${head}${toc}<div class="article-body">${tmp.innerHTML}</div>${rensaiNav}${related}${sources}${books}${feedback}`;
+    initRouteMaps(el);
   } catch (err) {
     el.innerHTML = `<p class="error">記事を読み込めませんでした（ID: ${esc(id)}）。ローカルで開いている場合は簡易サーバー経由で表示してください（README参照）。</p>`;
     console.error(err);
   }
 })();
+
+// 歩いた順の地図（![[map:<名前>|題|説明]]）。data/maps/<名前>.json の days[].points を、
+// 通し番号のピンと日ごとの点線でつなぐ。日が離れた場所にまたがるので、日ごとの切り替えと「全体」を付ける
+const ROUTE_LEAFLET = "https://unpkg.com/leaflet@1.9.4/dist/";
+function loadRouteLeaflet() {
+  if (window.L) return Promise.resolve(window.L);
+  return new Promise((resolve, reject) => {
+    // CSS が効く前に地図を作ると大きさを読み違えるので、CSS と JS の両方を待つ
+    let pending = 2;
+    const done = () => --pending === 0 && resolve(window.L);
+    const css = document.createElement("link");
+    css.rel = "stylesheet";
+    css.href = ROUTE_LEAFLET + "leaflet.css";
+    css.onload = done;
+    css.onerror = reject;
+    document.head.appendChild(css);
+    const js = document.createElement("script");
+    js.src = ROUTE_LEAFLET + "leaflet.js";
+    js.onload = done;
+    js.onerror = reject;
+    document.head.appendChild(js);
+  });
+}
+async function initRouteMaps(root) {
+  const figs = [...root.querySelectorAll(".article-figure--map[data-map]")];
+  if (!figs.length) return;
+  const esc = (s) =>
+    String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  let L;
+  try {
+    L = await loadRouteLeaflet();
+  } catch (e) {
+    figs.forEach((f) => f.querySelector(".route-map").remove());
+    console.error(e);
+  }
+  for (const fig of figs) {
+    let data;
+    try {
+      const r = await fetch(`data/maps/${fig.dataset.map}.json`);
+      if (!r.ok) throw new Error(r.status);
+      data = await r.json();
+    } catch (e) {
+      fig.remove();
+      console.error(e);
+      continue;
+    }
+    const days = (data.days || []).filter((d) => (d.points || []).length);
+    // 通し番号（1日目から続けて数える）
+    let n = 0;
+    days.forEach((d) => d.points.forEach((p) => (p.no = ++n)));
+    fig.querySelector(".route-list").innerHTML = days
+      .map((d, di) => d.points
+        .map((p) => `<li value="${p.no}" class="route-day-${di % 2}"><span class="route-no">${p.no}</span>` +
+          `<span class="route-when">${esc(d.label)}</span>${esc(p.name)}${p.note ? `<span class="route-note">${esc(p.note)}</span>` : ""}</li>`)
+        .join(""))
+      .join("");
+    const mapEl = fig.querySelector(".route-map");
+    if (!L || !mapEl) continue;
+    const map = L.map(mapEl, { scrollWheelZoom: false });
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 18,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map);
+    const colors = ["#9b2d20", "#2f5d7c"];
+    days.forEach((d, di) => {
+      const c = colors[di % colors.length];
+      const ll = d.points.map((p) => [p.lat, p.lng]);
+      if (ll.length > 1) L.polyline(ll, { color: c, weight: 3, dashArray: "6 6", opacity: 0.85 }).addTo(map);
+      d.points.forEach((p) => {
+        const icon = L.divIcon({ className: "route-pin", html: `<span style="background:${c}">${p.no}</span>`, iconSize: [26, 26], iconAnchor: [13, 13] });
+        L.marker([p.lat, p.lng], { icon, title: p.name })
+          .bindPopup(`<strong>${p.no}. ${esc(p.name)}</strong><br>${esc(d.label)}${p.note ? `<br>${esc(p.note)}` : ""}`)
+          .addTo(map);
+      });
+    });
+    const fit = (pts) => {
+      const ll = pts.map((p) => [p.lat, p.lng]);
+      if (ll.length === 1) map.setView(ll[0], 16);
+      else map.fitBounds(ll, { padding: [36, 36], maxZoom: 16 });
+    };
+    // 切り替え（日が2つ以上あるときだけ）。初めは1日目を出す
+    const views = days.map((d) => ({ label: d.label.replace(/（.*$/, ""), pts: d.points }));
+    if (days.length > 1) views.push({ label: "全体", pts: days.flatMap((d) => d.points) });
+    const tabs = fig.querySelector(".route-tabs");
+    const show = (i) => {
+      fit(views[i].pts);
+      [...tabs.children].forEach((b, j) => b.setAttribute("aria-pressed", String(i === j)));
+    };
+    if (views.length > 1) {
+      tabs.innerHTML = views.map((v) => `<button type="button" class="route-tab">${esc(v.label)}</button>`).join("");
+      [...tabs.children].forEach((b, i) => b.addEventListener("click", () => show(i)));
+    } else tabs.remove();
+    show(0);
+  }
+}
