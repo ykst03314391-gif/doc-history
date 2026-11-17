@@ -27,10 +27,29 @@
       "hub": "hidenaga-zou",
       "person_id": "toyotomi-hidenaga",
       "articles": ["hidenaga-independence", "hidenaga-yamato-rule", "hidenaga-if-lived", "hidenaga-hosayaku-origin", "hidenaga-hosayaku-shigoto"],
-      "extra": ["hidenaga-taiga-drama"]
+      "extra": ["hidenaga-taiga-drama", "hidenaga-tabi"]
     }
   ],
   "articles": [
+    {
+      "id": "hidenaga-tabi",
+      "title": "秀長の町を歩く ― 郡山城・春岳院・大納言塚、そして大坂城",
+      "series": "travel",
+      "group": "奈良県",
+      "category": "旅・史跡",
+      "summary": "用事で大阪へ行った機会に、秀長の菩提寺・春岳院、居城の郡山城跡、墓所の大納言塚を歩き、翌日は雨の大阪城へ。整備された城跡の外にも残る石垣、住宅街にぽつんとある墓、郡山と大坂の近さを、2日間の旅の記録として書く。",
+      "date": "2026-11-16",
+      "photoTaken": "2026-11",
+      "image": {
+        "src": "assets/img/photo/koriyama-tenshudai.jpg",
+        "caption": "郡山城の天守台",
+        "credit": "撮影：ぱぱねこの戦国見立て（2026年11月）",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/deed.ja"
+      },
+      "relatedPeople": ["toyotomi-hidenaga", "toyotomi-hideyoshi"],
+      "tags": ["豊臣秀長", "郡山城", "大坂城", "旅", "番外編"]
+    },
     {
       "id": "chiba-satomi-sengoku",
       "title": "里見と北条が争った房総へ ― 千葉の戦国ゆかりの地をめぐる",

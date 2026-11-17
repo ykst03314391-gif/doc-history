@@ -61,7 +61,8 @@
     // ![[illust:<名前>|説明]] は挿絵（assets/img/illust/<名前>.svg。AIで作ったもので、DBは引かない）
     // ![[zu:<名前>|題|説明]] は図解（assets/img/zu/<名前>.svg）。挿絵と見分けるため、罫線の箱に「図」の札と題を付ける
     // ![[manga:<名前>|題|説明]] は記事末の漫画（assets/img/manga/<名前>.svg）。朱の「漫画」の札と題を付ける
-    const imgRe = /^!\[\[(castle|battle|person|illust|zu|manga):([a-z0-9-]+)(?:\|([^\]\n]*))?\]\][ \t]*$/gm;
+    // ![[photo:<名前>|説明]] は管理人が撮った写真（assets/img/photo/<名前>.jpg。表記は記事の photoTaken から「撮影：ぱぱねこの戦国見立て（2026年11月）／CC BY 4.0」）
+    const imgRe = /^!\[\[(castle|battle|person|illust|zu|manga|photo):([a-z0-9-]+)(?:\|([^\]\n]*))?\]\][ \t]*$/gm;
     const refs = [...md.matchAll(imgRe)];
     const photos = new Map();
     if (refs.length) {
@@ -107,7 +108,9 @@
           `<span class="img-credit">イラスト：ぱぱねこの戦国見立て（AIで作成）</span>` +
           `</figcaption></figure>`;
       }
-      const ph = photos.get(key);
+      const ph = key.startsWith("photo:")
+        ? { src: `assets/img/photo/${key.slice(6)}.jpg`, own: true, taken: (meta && meta.photoTaken) || "" }
+        : photos.get(key);
       if (!ph) return "";
       const credit = window.PhotoCredit.credit(ph);
       const title = cap || ph.caption || "";

@@ -1,6 +1,7 @@
 ---
 paths:
   - "assets/img/**"
+  - "pic/**"
   - "data/castles/index.json"
   - "data/battles/index.json"
 ---
@@ -28,4 +29,5 @@ paths:
 1. 画像を `assets/img/castles/<id>.jpg`（合戦は `battles/`）に幅720pxで、`thumbs/<id>.jpg` に160×160で書き出す。Pillow で開き、**EXIF を付けずに**保存する（`save` に `exif` を渡さない）。書き出したあと、EXIF が残っていないことを確かめる。元の写真ファイルはリポジトリに入れない。
 2. `index.json` の `photo` を `{ "src", "thumb", "caption", "note"?, "own": true, "taken": "2026-11" }` で書く。`source` は書かない。`author` は管理人が名前を出したいときだけ書く（省略すると「ぱぱねこの戦国見立て」）。`license` は書かない（省略すると `js/photo.js` が CC BY 4.0 を出す。転載可・撮影者名は「ぱぱねこの戦国見立て」と管理人が決めた）。
 3. それまで Commons の写真を使っていた城・合戦なら、差し替えてよいか管理人に聞いてから差し替え、使わなくなった画像ファイルを消す。
-4. 記事の冒頭画像（`image`）に使うときは、`credit` を「撮影：ぱぱねこの戦国見立て（2026年11月）」とし、`license` に "CC BY 4.0"、`licenseUrl` に "https://creativecommons.org/licenses/by/4.0/deed.ja" を書く。
+4. 城・合戦の DB に載せない写真を記事の本文に入れるとき（旅の記事など）は、`assets/img/photo/<名前>.jpg` に幅720pxで書き出し（1 と同じく EXIF を付けない）、本文に `![[photo:<名前>|説明]]` と書き、記事のメタに `photoTaken`（例 "2026-11"）を書く（`docs/schema-article.md`）。元の写真は `pic/`（git に入れない）に置いてもらう。
+5. 記事の冒頭画像（`image`）に使うときは、`credit` を「撮影：ぱぱねこの戦国見立て（2026年11月）」とし、`license` に "CC BY 4.0"、`licenseUrl` に "https://creativecommons.org/licenses/by/4.0/deed.ja" を書く。

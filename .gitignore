@@ -18,3 +18,6 @@ tmp/
 
 # 公開用の書き出し（tools/build-site.py）
 dist/
+
+# 管理人の写真の元ファイル（リポジトリに入れない。書き出したものだけ assets/img/ に置く）
+pic/
