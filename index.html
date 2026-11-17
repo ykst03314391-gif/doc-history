@@ -53,6 +53,15 @@
       </div>
     </section>
 
+    <!-- 新着・更新（記事・人物・城・合戦・大名家をまとめて日付順に。js/home.js） -->
+    <section class="section" id="whats-new" hidden>
+      <h2>新着・更新</h2>
+      <p class="lead">最近、新しく書いたもの・書き直したもの。</p>
+      <table id="whats-new-list" class="whats-new"></table>
+      <p class="section-more"><a href="articles.html">考察・記事をすべて見る →</a></p>
+      <div id="whats-new-credits" class="whats-new-credits"></div>
+    </section>
+
     <!-- 連載（考察の主の形。js/rensai.js。表紙が出ている連載が無ければ隠したまま） -->
     <section class="section" id="rensai-home" hidden>
       <h2>連載</h2>
@@ -60,19 +69,13 @@
       <div id="rensai-cards" class="rensai-cards"></div>
     </section>
 
-    <!-- 新着・更新（記事・人物・城・合戦・大名家をまとめて日付順に。js/home.js） -->
-    <section class="section" id="whats-new" hidden>
-      <h2>新着・更新</h2>
-      <p class="lead">最近、新しく書いたもの・書き直したもの。</p>
-      <table id="whats-new-list" class="whats-new"></table>
-      <p class="section-more"><a href="articles.html">考察・記事をすべて見る →</a></p>
-    </section>
   </main>
 
   <footer class="site-footer">
     <p>ぱぱねこの戦国見立て（開発中）／ 掲載情報には諸説あります。</p>
   </footer>
 
+  <script src="js/photo.js"></script>
   <script src="js/rensai.js"></script>
   <script src="js/home.js"></script>
 </body>

@@ -1022,8 +1022,21 @@ footer.site-footer {
   margin-top: 2px; font-size: 0.85rem; color: var(--ink-soft);
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
 }
+/* 内容の欄：左にサムネ、右に名前と一言 */
+.whats-new-body { display: flex; gap: 12px; align-items: flex-start; }
+.whats-new-thumb {
+  flex: 0 0 auto; display: block; width: 96px; height: 64px;
+  border-radius: 4px; overflow: hidden; background: #efe9dc; border: 1px solid var(--line);
+}
+.whats-new-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.whats-new-thumb.is-kamon img { object-fit: contain; padding: 6px; box-sizing: border-box; }
+.whats-new-text { min-width: 0; flex: 1; }
+.whats-new-credits { margin-top: 14px; font-size: 0.78rem; color: var(--ink-soft); }
+.whats-new-credits-title { margin: 0 0 2px; font-weight: 700; }
 @media (max-width: 600px) {
   .whats-new th, .whats-new td { padding: 7px 6px; }
+  .whats-new-body { gap: 8px; }
+  .whats-new-thumb { width: 64px; height: 48px; }
 }
 
 /* ---- 仮置きデータ注記（DB系ページ） ---- */
