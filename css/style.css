@@ -736,6 +736,18 @@ html { scroll-behavior: smooth; }
 .rensai-card-desc { margin: 0 0 6px; font-size: 0.9rem; color: var(--ink-soft); }
 .rensai-card-count { font-size: 0.85rem; color: var(--ink-soft); }
 @media (max-width: 600px) { .rensai-card { grid-template-columns: 90px 1fr; gap: 12px; } }
+.rensai-card--noimg, .rensai-card--mini { grid-template-columns: 1fr; }
+/* 同じ人物の連載が2本以上あるときの組（js/rensai.js の sectionHTML）。頭に人物の顔と名前、中に画像なしの小さなカード */
+.rensai-group { padding: 16px; background: var(--bg-panel); border: 1px solid var(--line); border-top: 3px solid var(--accent); }
+.rensai-group-head { display: grid; grid-template-columns: 64px 1fr; gap: 14px; align-items: center; margin: 0 0 14px; }
+.rensai-group-head img { width: 64px; height: 64px; object-fit: cover; object-position: top; border-radius: 50%; border: 1px solid var(--line); }
+.rensai-group-name { margin: 2px 0 4px; font-size: 1.3rem; }
+.rensai-group-note { margin: 0; font-size: 0.9rem; color: var(--ink-soft); }
+.rensai-group-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.rensai-card--mini { display: block; padding: 12px 14px; background: var(--bg); }
+.rensai-card--mini .rensai-card-title { font-size: 1.1rem; }
+.rensai-card--mini .rensai-card-q { font-size: 0.95rem; }
+.rensai-card--mini .rensai-card-desc { font-size: 0.85rem; }
 
 .article-head {
   display: flex;
@@ -1579,3 +1591,8 @@ footer.site-footer {
   color: var(--ink-soft);
   vertical-align: 1px;
 }
+/* 人物ページの連載の入口が2本以上のとき（js/person.js） */
+.lens-go-list { display: grid; gap: 8px; }
+.rensai-list li.is-planned { color: var(--ink-soft); }
+.rensai-list li.is-planned .rensai-nav-label { color: var(--ink-soft); }
+.rensai-person + .rensai-person { margin-top: 6px; padding-top: 0; border-top: none; }

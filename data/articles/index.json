@@ -27,7 +27,24 @@
       "hub": "hidenaga-zou",
       "person_id": "toyotomi-hidenaga",
       "articles": ["hidenaga-independence", "hidenaga-yamato-rule", "hidenaga-if-lived", "hidenaga-hosayaku-origin", "hidenaga-hosayaku-shigoto"],
-      "extra": ["hidenaga-taiga-drama", "hidenaga-tabi"]
+      "extra": ["hidenaga-taiga-drama"]
+    },
+    {
+      "id": "hidenaga-ie",
+      "title": "秀長と家",
+      "description": "（仮置き）兄と父は同じだったのか、名をなぜ改めたのか、実の子はいたのか。生まれから跡継ぎまで、一代で絶えた秀長の「家」をたどる連載。",
+      "hub": "hidenaga-ie",
+      "person_id": "toyotomi-hidenaga",
+      "articles": ["hidenaga-father-chikuami", "hidenaga-name-change", "hidenaga-son-yoichiro"]
+    },
+    {
+      "id": "hidenaga-ato",
+      "title": "秀長の跡",
+      "description": "（仮置き）秀長が大和に城と町を築いてから約430年。郡山城・大納言塚・春岳院・大坂城を歩き、秀長の跡がいま何に、どんな形で残っているのかを確かめる連載。",
+      "hub": "hidenaga-ato",
+      "person_id": "toyotomi-hidenaga",
+      "articles": [],
+      "extra": ["hidenaga-tabi"]
     }
   ],
   "articles": [
@@ -343,6 +360,29 @@
         { "title": "大和大納言 豊臣秀長 補佐役か、もう一人の秀吉か", "author": "天野忠幸", "affiliateUrl": "https://www.amazon.co.jp/dp/4582477534", "note": "副題そのものがこの記事の問い。畿内の戦国史の研究者による評伝" },
         { "title": "豊臣秀長 ある補佐役の生涯（文春文庫、上下巻）", "author": "堺屋太一", "affiliateUrl": "https://www.amazon.co.jp/dp/4167193140", "note": "「名補佐役」の秀長像を広めた小説（1985年）。リンクは上巻" }
       ]
+    },
+    {
+      "id": "hidenaga-ie",
+      "title": "秀長の家は、なぜ一代で絶えたのか",
+      "series": "myth-busting",
+      "category": "考察",
+      "summary": "（仮置き）連載「秀長と家」の表紙。父・改名・実の子の三つの論点の記事がそろってから、総論として書く。",
+      "date": "",
+      "author": "管理人",
+      "relatedPeople": ["toyotomi-hidenaga"],
+      "tags": ["豊臣秀長", "考察"]
+    },
+    {
+      "id": "hidenaga-ato",
+      "title": "秀長の跡は、いまどこに残っているのか",
+      "series": "travel",
+      "group": "奈良県",
+      "category": "考察",
+      "summary": "（仮置き）連載「秀長の跡」の表紙。郡山城・大納言塚・春岳院・大坂城に、秀長の跡がいま何に、どんな形で残っているのかを問う。",
+      "date": "",
+      "author": "管理人",
+      "relatedPeople": ["toyotomi-hidenaga"],
+      "tags": ["豊臣秀長", "郡山城", "考察"]
     },
     {
       "id": "sibling-conflict",

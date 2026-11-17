@@ -148,12 +148,21 @@
       if (ren.role === "hub") {
         const rows = r.items
           .map((a, i) => `<li${a.id === id ? ' class="is-current"' : ""}>${link(a, circled(i + 1))}</li>`)
+          .concat(r.planned.map((a) => `<li class="is-planned"><span class="rensai-nav-label">執筆中</span>${esc(a.title)}</li>`))
           .concat(r.extras.map((a) => `<li>${link(a, "番外")}</li>`))
           .join("");
+        // 同じ人物を主役にしたほかの連載
+        const others = r.person_id ? window.Rensai.ofPerson(artData, r.person_id).filter((x) => x.id !== r.id) : [];
+        const otherRow = others.length
+          ? `<p class="rensai-person"><span class="rensai-nav-label">ほかの連載</span>${others
+              .map((x) => `<a href="article.html?id=${encodeURIComponent(x.hub)}">${esc(x.title)}</a>`)
+              .join("・")}</p>`
+          : "";
         rensaiNav = `<section class="rensai-nav">
             <h3>連載「${esc(r.title)}」の記事</h3>
-            <ol class="rensai-list">${rows}</ol>
+            ${rows ? `<ol class="rensai-list">${rows}</ol>` : ""}
             ${r.person_id ? `<p class="rensai-person"><span class="rensai-nav-label">資料</span><a href="person.html?id=${encodeURIComponent(r.person_id)}">${esc(nameOf(r.person_id))}の人物ページ</a>（年表・家系・出典などの脚注）</p>` : ""}
+            ${otherRow}
           </section>`;
       } else {
         const seq = r.items.concat(r.extras);

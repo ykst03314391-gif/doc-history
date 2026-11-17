@@ -543,7 +543,8 @@
     // place があれば置き場所を変える：lens は冒頭の「この人物への問い」の下、family・nameHistory などはその欄の末尾。
     // 置き場所の欄が無ければ、ふつうの「諸説・疑問」に出す
     const lens = p.lens && p.lens.question ? p.lens : null;
-    const rensai = window.Rensai ? window.Rensai.ofPerson(artData, p.id) : null;
+    // この人物を主役にした連載（何本あってもよい）。1本も無ければ空の配列
+    const rensais = window.Rensai ? window.Rensai.ofPerson(artData, p.id) : [];
     const qItems = (list) =>
       list
         .map((q) => entry({ main: esc(q.title), note: q.text, links: q.links, tail: srcMarks(q.sourceId), extra: articleLink(q.article_id) }))
@@ -571,16 +572,22 @@
     // ここには問いと記事への入口だけを出す（人物 → 総論の記事 → 各論点の記事）。答えも管理人の判断なので記事の側に置く
     // 連載（js/rensai.js）があれば、入口は連載の表紙にする
     const lensArticle = lens && lens.article_id ? (articles || []).find((x) => x.id === lens.article_id) : null;
-    if (lens && rensai) {
-      usedArticleIds.add(rensai.hub);
+    // 連載が2本以上あれば、入口を連載の数だけ並べる（大きな問いに答える連載を先に）
+    if (lens && rensais.length) {
+      const ordered = rensais.slice().sort((a, b) => (b.hub === lens.article_id) - (a.hub === lens.article_id));
+      const many = ordered.length > 1;
+      const go = (r, i) => {
+        usedArticleIds.add(r.hub);
+        return `<a class="lens-go" href="article.html?id=${encodeURIComponent(r.hub)}">
+          <span class="lens-go-label">この人物の連載${many ? ` ${i + 1}／${ordered.length}` : ""}</span>
+          <span class="lens-go-title">${esc(r.title)}</span>
+          <span class="lens-go-note">表紙「${esc(r.hubArticle.title)}」と、${r.items.length}本の記事${r.extras.length ? `・番外${r.extras.length}本` : ""}${r.planned.length ? `（ほかに執筆中${r.planned.length}本）` : ""}。答えとぱぱねこの見立ては表紙に</span>
+        </a>`;
+      };
       put("lens", lens.title || "この人物への問い", `<div class="lens">
           <p class="lens-question">${lineBreaks(fmtText(esc(lens.question)))}</p>
         </div>
-        <a class="lens-go" href="article.html?id=${encodeURIComponent(rensai.hub)}">
-          <span class="lens-go-label">この人物の連載</span>
-          <span class="lens-go-title">${esc(rensai.title)}</span>
-          <span class="lens-go-note">表紙「${esc(rensai.hubArticle.title)}」と、${rensai.items.length}本の記事${rensai.extras.length ? `・番外${rensai.extras.length}本` : ""}。答えとぱぱねこの見立ては表紙に</span>
-        </a>`);
+        <div class="lens-go-list">${ordered.map(go).join("")}</div>`);
     } else if (lens && lensArticle && !lensArticle.draft) {
       usedArticleIds.add(lensArticle.id);
       put("lens", lens.title || "この人物への問い", `<div class="lens">
@@ -772,7 +779,7 @@
 
     // 欄を組ごとに並べる（組の見出しは README の人物データベースの問いかけ）。中身のない組は出さない
     // 連載のある人物は、考察を連載（記事）に任せ、人物ページは事実の脚注にするので、「捉え直す」の組を事実の組の後ろへ下げる
-    const groups = rensai ? [GROUPS[1], GROUPS[2], GROUPS[0], ...GROUPS.slice(3)] : GROUPS;
+    const groups = rensais.length ? [GROUPS[1], GROUPS[2], GROUPS[0], ...GROUPS.slice(3)] : GROUPS;
     let gn = 0;
     for (const grp of groups) {
       // lensSide は、大きな問いと並ぶ問いの欄（lensSide:0, lensSide:1 …）をまとめて指す

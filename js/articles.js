@@ -9,6 +9,7 @@
   let series = [];
   let seriesMap = new Map();
   let rawData = {};
+  let people = [];
 
   const esc = (s) =>
     String(s ?? "").replace(/[&<>"']/g, (c) =>
@@ -93,7 +94,7 @@
       html += `<section class="section series-block" id="rensai">
         <h2 class="series-title">連載</h2>
         <p class="series-desc">1つの大きな問いを、表紙の記事と何本かの記事で追う。表紙から読むと、問いと答えの全体が見える。</p>
-        <div class="rensai-cards">${rens.map(window.Rensai.cardHTML).join("")}</div>
+        <div class="rensai-cards">${window.Rensai.sectionHTML(rens, people)}</div>
       </section>`;
     }
     const sorted = series
@@ -146,6 +147,13 @@
     if (!res.ok) throw new Error(res.status);
     const data = await res.json();
     rawData = data;
+    // 連載の欄で、人物ごとの組の頭に名前と顔を出すため
+    try {
+      const pr = await fetch("data/people/index.json");
+      if (pr.ok) people = (await pr.json()).people || [];
+    } catch (e) {
+      console.error(e);
+    }
     series = data.series || [];
     seriesMap = new Map(series.map((s) => [s.id, s]));
     articles = (data.articles || []).filter((a) => !a.draft);

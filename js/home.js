@@ -72,7 +72,10 @@
     if (!res.ok) throw new Error(res.status);
     const rens = window.Rensai ? window.Rensai.list(await res.json()) : [];
     if (rens.length) {
-      document.getElementById("rensai-cards").innerHTML = rens.map(window.Rensai.cardHTML).join("");
+      // 人物ごとの組の頭に名前と顔を出すため、人物の一覧も読む
+      const pr = await fetch("data/people/index.json");
+      const people = pr.ok ? (await pr.json()).people || [] : [];
+      document.getElementById("rensai-cards").innerHTML = window.Rensai.sectionHTML(rens, people);
       document.getElementById("rensai-home").hidden = false;
     }
   } catch (err) {
