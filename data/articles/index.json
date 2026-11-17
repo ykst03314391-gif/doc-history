@@ -23,11 +23,10 @@
     {
       "id": "hidenaga",
       "title": "秀長と「補佐役」",
-      "description": "兄に従い、温厚に周りをまとめた「補佐役」。よく語られるこの秀長像を、兄との関係・領主として・政権の中で・像の出どころ・仕事ぶりの五つの面から、一本ずつ確かめる連載。",
+      "description": "兄に従い、温厚に周りをまとめた「補佐役」。よく語られるこの秀長像を、兄との関係・政権の中で・仕事ぶりの三つの面から、一本ずつ確かめる連載。",
       "hub": "hidenaga-zou",
       "person_id": "toyotomi-hidenaga",
-      "articles": ["hidenaga-independence", "hidenaga-yamato-rule", "hidenaga-if-lived", "hidenaga-hosayaku-origin", "hidenaga-hosayaku-shigoto"],
-      "extra": ["hidenaga-taiga-drama"]
+      "articles": ["hidenaga-independence", "hidenaga-if-lived", "hidenaga-hosayaku-shigoto"]
     },
     {
       "id": "hidenaga-ie",
@@ -38,13 +37,21 @@
       "articles": ["hidenaga-father-chikuami", "hidenaga-name-change", "hidenaga-son-yoichiro"]
     },
     {
-      "id": "hidenaga-ato",
-      "title": "秀長の跡",
-      "description": "（仮置き）秀長が大和に城と町を築いてから約430年。郡山城・大納言塚・春岳院・大坂城を歩き、秀長の跡がいま何に、どんな形で残っているのかを確かめる連載。",
-      "hub": "hidenaga-ato",
+      "id": "hidenaga-jinbutsuzou",
+      "title": "秀長の人物像",
+      "description": "（仮置き）温厚な「名補佐役」という秀長の像は、いつ、だれが作り、どう広まってきたのか。大和の「善政の名君」という像は当たっているのか。江戸後期の家の記録から近代の歴史家、昭和の小説まで、秀長の人物像の移り変わりをたどる連載。",
+      "hub": "hidenaga-jinbutsuzou",
       "person_id": "toyotomi-hidenaga",
-      "articles": [],
+      "articles": ["hidenaga-hosayaku-origin", "hidenaga-yamato-rule"],
       "extra": ["hidenaga-tabi"]
+    },
+    {
+      "id": "hidenaga-taiga",
+      "title": "秀長と大河",
+      "description": "（仮置き）2026年の大河ドラマ「豊臣兄弟！」で、秀長は初めて主人公になった。ドラマの秀長は、どの秀長像を描いているのか。研究の秀長と江戸時代からの型を並べて確かめる連載。",
+      "hub": "hidenaga-taiga-drama",
+      "person_id": "toyotomi-hidenaga",
+      "articles": []
     }
   ],
   "articles": [
@@ -348,7 +355,7 @@
       "title": "「補佐役」という秀長像は当たっているのか",
       "series": "myth-busting",
       "category": "考察",
-      "summary": "兄に従い、温厚に周りをまとめた「補佐役」。この秀長像を、兄との関係・領主として・政権の中で・像の出どころ・仕事ぶりの五つの面から一本ずつ確かめてきた記事の答えを並べ、一つの問いに答える。",
+      "summary": "兄に従い、温厚に周りをまとめた「補佐役」。この秀長像を、兄との関係・政権の中で・仕事ぶりの三つの面から一本ずつ確かめてきた記事の答えを並べ、一つの問いに答える。",
       "date": "2026-11-13",
       "author": "管理人",
       "image": { "src": "assets/img/portraits/toyotomi-hidenaga.jpg", "caption": "豊臣秀長像（春岳院蔵、天明8年〈1788〉の作とされる）※参考イメージ", "credit": "Wikimedia Commons", "license": "パブリックドメイン" },
@@ -373,16 +380,15 @@
       "tags": ["豊臣秀長", "考察"]
     },
     {
-      "id": "hidenaga-ato",
-      "title": "秀長の跡は、いまどこに残っているのか",
-      "series": "travel",
-      "group": "奈良県",
+      "id": "hidenaga-jinbutsuzou",
+      "title": "秀長の人物像は、いつ、どのように作られてきたのか",
+      "series": "myth-busting",
       "category": "考察",
-      "summary": "（仮置き）連載「秀長の跡」の表紙。郡山城・大納言塚・春岳院・大坂城に、秀長の跡がいま何に、どんな形で残っているのかを問う。",
+      "summary": "（仮置き）連載「秀長の人物像」の表紙。温厚な「名補佐役」という秀長の像が、江戸時代から昭和の小説まで、だれの手でどう作られ、広まってきたのかを問う。",
       "date": "",
       "author": "管理人",
       "relatedPeople": ["toyotomi-hidenaga"],
-      "tags": ["豊臣秀長", "郡山城", "考察"]
+      "tags": ["豊臣秀長", "人物像", "考察"]
     },
     {
       "id": "sibling-conflict",
