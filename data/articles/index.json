@@ -42,8 +42,7 @@
       "description": "（仮置き）温厚な「名補佐役」という秀長の像は、いつ、だれが作り、どう広まってきたのか。大和の「善政の名君」という像は当たっているのか。江戸後期の家の記録から近代の歴史家、昭和の小説まで、秀長の人物像の移り変わりをたどる連載。",
       "hub": "hidenaga-jinbutsuzou",
       "person_id": "toyotomi-hidenaga",
-      "articles": ["hidenaga-hosayaku-origin", "hidenaga-yamato-rule"],
-      "extra": ["hidenaga-tabi"]
+      "articles": ["hidenaga-hosayaku-origin", "hidenaga-yamato-rule"]
     },
     {
       "id": "hidenaga-taiga",

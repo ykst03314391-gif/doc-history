@@ -10,6 +10,8 @@
 すること：
 - 記事は、data/articles/index.json の publish（公開日、YYYY-MM-DD）が書き出しの日（--as-of）までのものだけを出す。
   publish が無い記事・下書き（draft: true）は出さない（書き忘れた記事がうっかり出ないように）。
+  本文の一部も <!-- publish:日付 -->…<!-- /publish -->（その日から出す）と
+  <!-- until:日付 -->…<!-- /until -->（その前日まで出す代わりの文）で、日付ごとに出し分ける。
   出さない記事は、本文の .md を消し、ほかの記事の本文からのリンクは文字だけにする。
   dist の index.json からは、公開を待つ記事を題名ごと外す（下書きは人物ページの「考察（執筆中）」の予告のため残す）。
   一覧・人物ページ・トピック・出典一覧の JS は、index.json に無い記事と下書きにはリンクを出さない。
@@ -51,6 +53,8 @@ DETAIL_PAGES = {
 JS_LINK_RE = re.compile(r"article\.html\?id=(\$\{[^}]*\})")
 # 本文・データの中のリンク： article.html?id=<id> → article-<id>.html（#… はそのまま後ろに残る）
 DATA_LINK_RE = re.compile(r"article\.html\?id=([a-z0-9-]+)")
+# 本文の一部の公開日： <!-- publish:YYYY-MM-DD -->…<!-- /publish --> と <!-- until:YYYY-MM-DD -->…<!-- /until -->
+SECTION_RE = re.compile(r"<!--\s*(publish|until):(\d{4}-\d{2}-\d{2})\s*-->\n?([\s\S]*?)<!--\s*/\1\s*-->\n?")
 
 
 def article_file(aid):
@@ -106,6 +110,7 @@ def main():
     if base and not base.endswith("/"):
         base += "/"
     warnings = []
+    bad_marks = False
     if not base:
         warnings.append("baseUrl が空なので、og:image・og:url・canonical・sitemap.xml は作っていません（公開先が決まったら tools/site.json に書く）。")
 
@@ -141,6 +146,21 @@ def main():
         a["date"] = str(a["publish"])
     (DIST / "data" / "articles" / "index.json").write_text(
         json.dumps(art_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    # 本文の一部の公開日：<!-- publish:日付 -->…<!-- /publish --> はその日から出し、
+    # <!-- until:日付 -->…<!-- /until --> はその日の前日まで出す（代わりの文。「次週公開」など）
+    for a in arts:
+        md = DIST / "data" / "articles" / f"{a['id']}.md"
+        if md.exists():
+            s = md.read_text(encoding="utf-8")
+            t = SECTION_RE.sub(lambda m: m.group(3) if (m.group(2) <= as_of) == (m.group(1) == "publish") else "", s)
+            if "<!-- publish:" in t or "<!-- until:" in t or "<!-- /publish" in t or "<!-- /until" in t:
+                warnings.append(f"本文の一部の公開日の印が閉じていません：{a['id']}")
+                bad_marks = True
+            if t != s:
+                md.write_text(t, encoding="utf-8", newline="")
+            later = sorted({d for k, d in re.findall(r"<!--\s*(publish|until):(\d{4}-\d{2}-\d{2})", s) if d > as_of})
+            if later:
+                print(f"  {a['id']}：本文の一部が {'・'.join(later)} に替わります")
     # 出さない記事への本文中のリンク [文字](article.html?id=<id>…) は、文字だけにする
     hidden_link_re = re.compile(r"\[([^\]]*)\]\(article\.html\?id=(" + "|".join(map(re.escape, sorted(hidden_ids))) + r")(?:#[^)]*)?\)") if hidden_ids else None
 
@@ -233,7 +253,7 @@ def main():
             print(f"  {a['id']}（公開日 {a.get('publish') or 'なし'}）")
     for w in warnings:
         print("注意：" + w)
-    return 1 if left or dead or holes else 0
+    return 1 if left or dead or holes or bad_marks else 0
 
 
 if __name__ == "__main__":

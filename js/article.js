@@ -32,7 +32,10 @@
         : null;
     // 連載（js/rensai.js）。表紙なら「（表紙）」、論点の記事なら「②／5」の札を題の上に出し、表紙へつなぐ
     const ren = window.Rensai ? window.Rensai.of(artData, id) : null;
-    const md = await mdRes.text();
+    // 本文の一部の公開日（docs/schema-article.md「本文の一部の公開日」）。ローカルでは仕上がりの形で見せるため、
+    // 公開日までの代わりの文（until）を消し、後から出す部分（publish）は印だけ残してそのまま出す。
+    // 公開用の書き出し（tools/build-site.py）が、その日の形に組み替える
+    const md = (await mdRes.text()).replace(/<!--\s*until:\d{4}-\d{2}-\d{2}\s*-->[\s\S]*?<!--\s*\/until\s*-->\n?/g, "");
     const people = peopleRes.ok ? (await peopleRes.json()).people || [] : [];
     const nameOf = (pid) => (people.find((p) => p.id === pid) || {}).name || pid;
 
@@ -47,7 +50,7 @@
       : "";
     const head = meta
       ? `${renBadge}<div class="article-head">
-           ${series ? `<a class="series-badge" href="articles.html">テーマ：${esc(series.title)}</a>` : ""}
+           ${series ? (series.id === "travel" ? `<a class="series-badge" href="travel.html">旅の記録</a>` : `<a class="series-badge" href="articles.html">テーマ：${esc(series.title)}</a>`) : ""}
            <span class="article-cat">${esc(meta.category || "記事")}</span>
            <span class="article-date">${esc(meta.date || "")}</span>
            ${!meta.author || meta.author === "管理人"

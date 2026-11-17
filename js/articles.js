@@ -100,7 +100,8 @@
     const sorted = series
       .slice()
       .sort((a, b) => (a.order || 99) - (b.order || 99));
-    for (const s of sorted) html += seriesBlock(s);
+    // 旅のテーマは、メニューの「旅の記録」（travel.html・js/travel.js）に出す
+    for (const s of sorted) if (s.id !== "travel") html += seriesBlock(s);
     const general = articles
       .filter((a) => !a.series || !seriesMap.has(a.series))
       .sort(byDateDesc);
@@ -156,7 +157,7 @@
     }
     series = data.series || [];
     seriesMap = new Map(series.map((s) => [s.id, s]));
-    articles = (data.articles || []).filter((a) => !a.draft);
+    articles = (data.articles || []).filter((a) => !a.draft && a.series !== "travel");
     // 上の「最近更新した〇〇」（js/recent.js）
     window.renderRecent(articles, { href: (a) => `article.html?id=${encodeURIComponent(a.id)}`, thumb: (a) => a.image && a.image.src, title: (a) => a.title, kana: () => "", useDate: true });
     renderGrouped();
